@@ -186,11 +186,24 @@ function validateLearningGraph(profile, collections, errors) {
   if (visited !== indegree.size) errors.push(`${profile}/learningRelations: cycle detected (${indegree.size - visited} nodes)`);
 
   const alignmentCounts = new Map();
+  const facetKeysByStandard = new Map();
   for (const topic of collections.topics?.records ?? []) {
-    for (const alignment of topic.standardAlignments ?? []) alignmentCounts.set(alignment.standardId, (alignmentCounts.get(alignment.standardId) ?? 0) + 1);
+    for (const alignment of topic.standardAlignments ?? []) {
+      alignmentCounts.set(alignment.standardId, (alignmentCounts.get(alignment.standardId) ?? 0) + 1);
+      if (profile === 'middle') {
+        if (!facetKeysByStandard.has(alignment.standardId)) facetKeysByStandard.set(alignment.standardId, new Set());
+        const keys = facetKeysByStandard.get(alignment.standardId);
+        if (keys.has(topic.facetKey)) errors.push(`${profile}/standards/${alignment.standardId}: duplicate topic facet ${topic.facetKey}`);
+        keys.add(topic.facetKey);
+      }
+    }
   }
   for (const standard of collections.standards?.records ?? []) {
-    if (alignmentCounts.get(standard.id) !== 1) errors.push(`${profile}/standards/${standard.id}: expected exactly one generated topic alignment`);
+    const alignmentCount = alignmentCounts.get(standard.id) ?? 0;
+    if (profile === 'middle') {
+      if (alignmentCount < 2 || alignmentCount > 5) errors.push(`${profile}/standards/${standard.id}: expected 2-5 generated topic alignments`);
+      if (!facetKeysByStandard.get(standard.id)?.has('core')) errors.push(`${profile}/standards/${standard.id}: missing stable core topic`);
+    } else if (alignmentCount !== 1) errors.push(`${profile}/standards/${standard.id}: expected exactly one generated topic alignment`);
     if (!standard.sourceLocator?.pdfPage || !standard.sourceLocator?.sha256) errors.push(`${profile}/standards/${standard.id}: incomplete official source locator`);
   }
 }

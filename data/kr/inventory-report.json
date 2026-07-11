@@ -4,6 +4,17 @@
     "reviewRecords": 0,
     "transitionAlignments": 398
   },
+  "comparisonBaselines": {
+    "elementary": {
+      "clusters": 153,
+      "dataRelease": "kr-full-depth-v0.4",
+      "learningRelations": 1894,
+      "repository": "https://github.com/DECK6/korean-elementary-learning-map",
+      "standards": 620,
+      "topics": 1956,
+      "topicsPerStandard": 3.1548387096774193
+    }
+  },
   "diagnosticCount": 0,
   "diagnostics": [],
   "extractedOccurrenceCount": 52478,
@@ -22,6 +33,20 @@
     "subjectGroups": 34,
     "topics": 50749
   },
+  "highScopeBreakdown": {
+    "allHighSchools": {
+      "courses": 231,
+      "domains": 689,
+      "standards": 3124,
+      "topics": 3124
+    },
+    "specializedVocational": {
+      "courses": 528,
+      "domains": 4480,
+      "standards": 47625,
+      "topics": 47625
+    }
+  },
   "middle": {
     "clusters": 149,
     "courses": 24,
@@ -31,9 +56,25 @@
     "reviewRecords": 0,
     "standards": 714,
     "subjectGroups": 13,
-    "topics": 714
+    "topics": 2160
+  },
+  "middleTopicDecomposition": {
+    "policy": "middle-subject-facet-decomposition-v1",
+    "stableCoreTopics": 714,
+    "subjectFacetTopics": 1446,
+    "topicsPerStandard": {
+      "average": 3.0252100840336134,
+      "distribution": {
+        "2": 77,
+        "3": 564,
+        "4": 51,
+        "5": 22
+      },
+      "maximum": 5,
+      "minimum": 2
+    }
   },
   "repeatedProfessionalCommonOccurrenceCount": 912,
   "uniqueStandardCount": 51463,
-  "version": "0.2.0-candidate"
+  "version": "0.3.0-candidate"
 }

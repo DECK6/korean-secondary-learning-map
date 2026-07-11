@@ -97,9 +97,10 @@ function termKey(term) {
   return `${JSON.stringify(term.value)}${term.language ? `@${term.language}` : `^^<${term.datatype.value}>`}`;
 }
 function quadKey(quad) { return [quad.subject, quad.predicate, quad.object, quad.graph].map(termKey).join(' '); }
-function signatureState() { return { count: 0, typeCount: 0, sumA: 0, sumB: 0, xorA: 0, xorB: 0 }; }
+function signatureState() { return { count: 0, typeCount: 0, subjects: new Set(), sumA: 0, sumB: 0, xorA: 0, xorB: 0 }; }
 function addQuad(state, quad) {
   state.count += 1;
+  state.subjects.add(termKey(quad.subject));
   if (quad.predicate.value === RDF_TYPE) state.typeCount += 1;
   const key = quadKey(quad);
   let hashA = 0x811c9dc5;
@@ -116,7 +117,7 @@ function addQuad(state, quad) {
 }
 function finishSignature(state) {
   const signature = [state.sumA, state.sumB, state.xorA >>> 0, state.xorB >>> 0].map((value) => value.toString(16).padStart(8, '0')).join('');
-  return { count: state.count, typeCount: state.typeCount, signature };
+  return { count: state.count, typeCount: state.typeCount, subjectCount: state.subjects.size, signature };
 }
 async function turtleGraphSignature(path) {
   const state = signatureState();
@@ -169,7 +170,7 @@ tripleCount = turtleSignature.count;
 const jsonldDocument = await readJson(join(root, 'dist/ontology/learning-map.jsonld'));
 const jsonldSignature = jsonLdGraphSignature(jsonldDocument);
 if (turtleSignature.count !== jsonldSignature.count || turtleSignature.signature !== jsonldSignature.signature) errors.push(`RDF isomorphism failed: Turtle ${turtleSignature.count}/${turtleSignature.signature.slice(0, 12)} != JSON-LD ${jsonldSignature.count}/${jsonldSignature.signature.slice(0, 12)}`);
-if (turtleSignature.typeCount !== manifest.graphNodeCount || jsonldSignature.typeCount !== manifest.graphNodeCount) errors.push(`ontology graph node count mismatch: manifest ${manifest.graphNodeCount}, Turtle ${turtleSignature.typeCount}, JSON-LD ${jsonldSignature.typeCount}`);
+if (turtleSignature.subjectCount !== manifest.graphNodeCount || jsonldSignature.subjectCount !== manifest.graphNodeCount) errors.push(`ontology graph node count mismatch: manifest ${manifest.graphNodeCount}, Turtle ${turtleSignature.subjectCount}, JSON-LD ${jsonldSignature.subjectCount}`);
 if (tripleCount < manifest.graphNodeCount) errors.push(`generated Turtle has too few triples: ${tripleCount}`);
 
 if (errors.length) {

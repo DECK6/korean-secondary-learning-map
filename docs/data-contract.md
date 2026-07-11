@@ -55,7 +55,7 @@ data/kr/
 ```json
 {
   "id": "stable-id",
-  "releaseId": "kr-2022-secondary-v0.2.0-candidate",
+  "releaseId": "kr-2022-secondary-v0.3.0-candidate",
   "labelKorean": "표시 이름",
   "sourceRefs": ["source-id"],
   "verificationStatus": "official-source-checked",
@@ -70,9 +70,9 @@ data/kr/
 
 ```json
 {
-  "id": "kr-2022-middle-high-bridge-v0.2.0-candidate",
-  "middleReleaseId": "kr-2022-middle-v0.2.0-candidate",
-  "highReleaseId": "kr-2022-high-v0.2.0-candidate",
+  "id": "kr-2022-middle-high-bridge-v0.3.0-candidate",
+  "middleReleaseId": "kr-2022-middle-v0.3.0-candidate",
+  "highReleaseId": "kr-2022-high-v0.3.0-candidate",
   "transitionCount": 0
 }
 ```
@@ -146,6 +146,8 @@ data/kr/
   "assessmentPrompts": [
     "증거를 끌어내는 평가 질문"
   ],
+  "decompositionKind": "subject-facet",
+  "facetKey": "representation-modeling",
   "standardAlignments": [
     {
       "standardId": "kr.standard.2022.high.example-code",
@@ -160,7 +162,7 @@ data/kr/
 
 중등에서는 하나의 주제가 여러 과목에서 재맥락화될 수 있다. 다만 과목별 의미가 달라지면 억지로 같은 노드를 공유하지 않고 `TransitionAlignment` 또는 `relatedTopic`으로 연결한다.
 
-현재 릴리스의 주제는 성취기준에서 기계적으로 파생된 1차 후보이며 `alignmentKind`와 생성 `basis`를 보존한다. 주제 수가 성취기준 수와 같다는 사실은 교과 전문가가 원자적 학습 단위를 확정했다는 뜻이 아니다.
+중학교는 초등 학습지도의 과목별 분해 밀도와 맞춰 성취기준당 2~5개 주제 후보를 둔다. 기존 1:1 주제는 `decompositionKind: standard-core`, `facetKey: core`로 식별자를 보존하고, 추가 주제는 `subject-facet`과 과목별 facet key를 갖는다. 국어는 기준당 4개, 도덕은 5개, 기술·가정/정보는 2개, 나머지는 3개다. 모든 분해는 후보이며 `middle-subject-facet-decomposition-v1` 생성 근거를 보존한다. 고등학교는 별도 분해 정책을 만들기 전까지 성취기준당 하나의 기계적 후보만 유지한다.
 
 ## 6. 학습 관계 주장
 

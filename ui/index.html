@@ -43,6 +43,7 @@
         <label>학교급<select id="level-filter"><option value="all">중·고 전체</option><option value="middle">중학교</option><option value="high">고등학교</option></select></label>
         <label>교과군<select id="group-filter"><option value="all">전체 교과군</option></select></label>
         <label>과목 범주<select id="category-filter"><option value="all">전체 범주</option></select></label>
+        <label>고교 범위<select id="program-filter"><option value="all">전체 범위</option><option value="all-high-schools">비직업계</option><option value="specialized-vocational">직업계 전문교과</option></select></label>
         <label class="search-label">과목 검색<input id="course-search" type="search" placeholder="예: 공통수학, 생명과학, 조리" autocomplete="off"></label>
       </div>
       <div class="explorer-grid">
@@ -52,8 +53,8 @@
     </section>
 
     <section id="transitions" class="panel tab-panel" role="tabpanel" aria-labelledby="tab-transitions" hidden>
-      <div class="section-heading"><div><p class="eyebrow">BRIDGE RELEASE</p><h2>중학교에서 고등학교로</h2></div><p>같은 교과군 안에서 어떤 중학교 주제가 고등학교 과목을 준비하는지 보여 주는 검토 후보입니다.</p></div>
-      <div class="filters compact"><label>교과군<select id="transition-group"><option value="all">전체 교과군</option></select></label><label class="search-label">전이 검색<input id="transition-search" type="search" placeholder="주제나 고등학교 과목"></label></div>
+      <div class="section-heading"><div><p class="eyebrow">BRIDGE RELEASE</p><h2>중학교에서 고등학교로</h2></div><p>같은 교과군 안에서 어떤 중학교 과목이 고등학교 과목으로 이어지는지 보여 주는 과정 수준의 검토 후보입니다.</p></div>
+      <div class="filters compact"><label>교과군<select id="transition-group"><option value="all">전체 교과군</option></select></label><label class="search-label">전이 검색<input id="transition-search" type="search" placeholder="중학교·고등학교 과목"></label></div>
       <div id="transition-list" class="transition-list"></div>
     </section>
 

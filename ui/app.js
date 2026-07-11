@@ -25,7 +25,7 @@ async function init() {
 
 function renderStats() {
   const s = map.statistics;
-  const items = [['공식 문서',s.officialDocuments],['중학교 과목',s.middleCourses],['중학교 성취기준',s.middleStandards],['고등학교 과목',s.highCourses],['고등학교 성취기준',s.highStandards]];
+  const items = [['공식 문서',s.officialDocuments],['중학교 성취기준',s.middleStandards],['중학교 세부 주제',s.middleTopics],['고교 비직업계 기준',s.highAcademicStandards],['직업계 전문 기준',s.highVocationalStandards]];
   $('#stats').innerHTML = items.map(([label,value]) => `<div class="stat"><strong>${number(value)}</strong><span>${label}</span></div>`).join('');
 }
 
@@ -51,13 +51,13 @@ function setupFilters() {
   $('#group-filter').insertAdjacentHTML('beforeend',groups.map((value)=>`<option>${escapeHtml(value)}</option>`).join(''));
   const categories = [...new Set(map.courses.map((course)=>course.category))];
   $('#category-filter').insertAdjacentHTML('beforeend',categories.map((value)=>`<option value="${value}">${categoryLabels[value]??value}</option>`).join(''));
-  ['level-filter','group-filter','category-filter'].forEach((id)=>$(`#${id}`).addEventListener('change',renderCourses));
+  ['level-filter','group-filter','category-filter','program-filter'].forEach((id)=>$(`#${id}`).addEventListener('change',renderCourses));
   $('#course-search').addEventListener('input',renderCourses);
   renderCourses();
 }
 function filteredCourses() {
-  const level=$('#level-filter').value, group=$('#group-filter').value, category=$('#category-filter').value, query=$('#course-search').value.trim().toLocaleLowerCase('ko');
-  return map.courses.filter((course)=>(level==='all'||course.level===level)&&(group==='all'||course.groupLabel===group)&&(category==='all'||course.category===category)&&(!query||`${course.label} ${course.groupLabel} ${categoryLabels[course.category]}`.toLocaleLowerCase('ko').includes(query)));
+  const level=$('#level-filter').value, group=$('#group-filter').value, category=$('#category-filter').value, program=$('#program-filter').value, query=$('#course-search').value.trim().toLocaleLowerCase('ko');
+  return map.courses.filter((course)=>(level==='all'||course.level===level)&&(group==='all'||course.groupLabel===group)&&(category==='all'||course.category===category)&&(program==='all'||course.programScope===program)&&(!query||`${course.label} ${course.groupLabel} ${categoryLabels[course.category]}`.toLocaleLowerCase('ko').includes(query)));
 }
 function renderCourses() {
   const courses=filteredCourses();
@@ -75,14 +75,14 @@ async function openCourse(id) {
 }
 function renderCourseDetail(detail) {
   const course=detail.course;
-  const topicByStandard=new Map();
+  const topicsByStandard=new Map();
   const domainById=new Map(detail.domains.map((domain)=>[domain.id,domain]));
-  detail.topics.forEach((topic)=>topic.standardAlignments.forEach((alignment)=>topicByStandard.set(alignment.standardId,topic)));
-  $('#course-detail').innerHTML=`<p class="eyebrow">${course.schoolLevel==='middle'?'MIDDLE SCHOOL':'HIGH SCHOOL'} · COURSE</p><h3>${escapeHtml(course.labelKorean)}</h3><div class="chips"><span class="chip">${escapeHtml(detail.subjectGroup.labelKorean)}</span><span class="chip">${categoryLabels[course.courseCategory]??course.courseCategory}</span><span class="chip">공식 코드 확인</span><span class="chip candidate">관계·해석 후보</span></div><div class="hierarchy"><span>L0 ${course.schoolLevel==='middle'?'중학교':'고등학교'}</span><i>→</i><span>L1 ${escapeHtml(detail.subjectGroup.labelKorean)}</span><i>→</i><span>L2 ${escapeHtml(course.labelKorean)}</span><i>→</i><span>L3 영역 ${number(detail.domains.length)}</span><i>→</i><span>L4 성취기준·주제 ${number(detail.standards.length)}</span><i>→</i><span>L5 근거</span></div><div class="standard-tools"><input id="standard-search" type="search" placeholder="성취기준 코드·요약 검색" aria-label="성취기준 검색"></div><div id="standard-list" class="standard-list"></div>`;
+  detail.topics.forEach((topic)=>topic.standardAlignments.forEach((alignment)=>{if(!topicsByStandard.has(alignment.standardId))topicsByStandard.set(alignment.standardId,[]);topicsByStandard.get(alignment.standardId).push(topic);}));
+  $('#course-detail').innerHTML=`<p class="eyebrow">${course.schoolLevel==='middle'?'MIDDLE SCHOOL':'HIGH SCHOOL'} · COURSE</p><h3>${escapeHtml(course.labelKorean)}</h3><div class="chips"><span class="chip">${escapeHtml(detail.subjectGroup.labelKorean)}</span><span class="chip">${categoryLabels[course.courseCategory]??course.courseCategory}</span><span class="chip">공식 코드 확인</span><span class="chip candidate">관계·해석 후보</span></div><div class="hierarchy"><span>L0 ${course.schoolLevel==='middle'?'중학교':'고등학교'}</span><i>→</i><span>L1 ${escapeHtml(detail.subjectGroup.labelKorean)}</span><i>→</i><span>L2 ${escapeHtml(course.labelKorean)}</span><i>→</i><span>L3 영역 ${number(detail.domains.length)}</span><i>→</i><span>L4 기준 ${number(detail.standards.length)} · 주제 ${number(detail.topics.length)}</span><i>→</i><span>L5 근거</span></div><div class="standard-tools"><input id="standard-search" type="search" placeholder="성취기준 코드·요약 검색" aria-label="성취기준 검색"></div><div id="standard-list" class="standard-list"></div>`;
   const renderStandards=()=>{
     const query=$('#standard-search').value.trim().toLocaleLowerCase('ko');
     const standards=detail.standards.filter((standard)=>!query||`${standard.code} ${standard.summary}`.toLocaleLowerCase('ko').includes(query)).slice(0,80);
-    $('#standard-list').innerHTML=standards.length?standards.map((standard)=>{const topic=topicByStandard.get(standard.id),domain=domainById.get(standard.domainId);return `<details class="standard"><summary><code>${escapeHtml(standard.code)}</code> ${escapeHtml(standard.summary)}</summary><div class="standard__body"><p><strong>영역</strong><br>${escapeHtml(domain?.labelKorean??'영역 미확인')}</p><p><strong>세부 주제</strong><br>${escapeHtml(topic?.labelKorean??'연결 주제 없음')}</p><p><strong>관찰 증거</strong><br>${escapeHtml(topic?.evidence?.[0]??'')}</p><p><strong>평가 질문</strong><br>${escapeHtml(topic?.assessmentPrompts?.[0]??'')}</p><p class="source-line">PDF p.${standard.sourceLocator.pdfPage} · ${escapeHtml(standard.sourceLocator.sourceId)} · SHA-256 ${escapeHtml(standard.sourceLocator.sha256.slice(0,16))}… · 기계적 파생 요약</p></div></details>`}).join(''):'<p class="empty-message">일치하는 성취기준이 없습니다.</p>';
+    $('#standard-list').innerHTML=standards.length?standards.map((standard)=>{const topics=topicsByStandard.get(standard.id)??[],domain=domainById.get(standard.domainId);return `<details class="standard"><summary><code>${escapeHtml(standard.code)}</code> ${escapeHtml(standard.summary)}</summary><div class="standard__body"><p><strong>영역</strong><br>${escapeHtml(domain?.labelKorean??'영역 미확인')}</p><p><strong>세부 주제 ${number(topics.length)}개</strong><br>${topics.map((topic)=>escapeHtml(topic.labelKorean)).join('<br>')||'연결 주제 없음'}</p><p><strong>관찰 증거</strong><br>${topics.map((topic)=>escapeHtml(topic.evidence?.[0]??'')).join('<br>')}</p><p><strong>평가 질문</strong><br>${topics.map((topic)=>escapeHtml(topic.assessmentPrompts?.[0]??'')).join('<br>')}</p><p class="source-line">PDF p.${standard.sourceLocator.pdfPage} · ${escapeHtml(standard.sourceLocator.sourceId)} · SHA-256 ${escapeHtml(standard.sourceLocator.sha256.slice(0,16))}… · 기계적 파생 요약</p></div></details>`}).join(''):'<p class="empty-message">일치하는 성취기준이 없습니다.</p>';
   }; $('#standard-search').addEventListener('input',renderStandards); renderStandards();
 }
 

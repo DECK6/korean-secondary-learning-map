@@ -47,12 +47,21 @@ slm:SourceLocatorShape a sh:NodeShape ;
 
 slm:TopicShape a sh:NodeShape ;
   sh:targetClass slm:LearningTopic ;
+  sh:property [ sh:path slm:schoolLevel ; sh:minCount 1 ; sh:maxCount 1 ; sh:in ("middle" "high") ] ;
   sh:property [ sh:path slm:topicInCourse ; sh:minCount 1 ; sh:class slm:Course ] ;
   sh:property [ sh:path slm:inDomain ; sh:minCount 1 ; sh:maxCount 1 ; sh:class slm:Domain ] ;
   sh:property [ sh:path slm:alignsToStandard ; sh:minCount 1 ; sh:class slm:AchievementStandard ] ;
   sh:property [ sh:path slm:evidence ; sh:minCount 1 ] ;
   sh:property [ sh:path slm:assessmentPrompt ; sh:minCount 1 ] ;
-  sh:property [ sh:path slm:hasSource ; sh:minCount 1 ; sh:class slm:SourceDocument ] .
+  sh:property [ sh:path slm:hasSource ; sh:minCount 1 ; sh:class slm:SourceDocument ] ;
+  sh:property [ sh:path slm:decompositionKind ; sh:maxCount 1 ; sh:in ("standard-core" "subject-facet") ] ;
+  sh:property [ sh:path slm:facetKey ; sh:maxCount 1 ; sh:pattern "^[a-z0-9-]+$" ] .
+
+slm:MiddleTopicShape a sh:NodeShape ;
+  sh:targetClass slm:MiddleLearningTopic ;
+  sh:property [ sh:path slm:schoolLevel ; sh:minCount 1 ; sh:maxCount 1 ; sh:hasValue "middle" ] ;
+  sh:property [ sh:path slm:decompositionKind ; sh:minCount 1 ; sh:maxCount 1 ; sh:in ("standard-core" "subject-facet") ] ;
+  sh:property [ sh:path slm:facetKey ; sh:minCount 1 ; sh:maxCount 1 ; sh:pattern "^[a-z0-9-]+$" ] .
 
 slm:ClusterShape a sh:NodeShape ;
   sh:targetClass slm:LearningCluster ;

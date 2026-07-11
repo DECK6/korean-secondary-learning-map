@@ -9,6 +9,7 @@ describe('repository schema contract', () => {
     expect(result.loaded.high.release.counts.coverageGaps).toBe(2);
     expect(result.loaded.bridges.release.counts.coverageGaps).toBe(1);
     expect(result.loaded.middle.release.counts.standards).toBe(714);
+    expect(result.loaded.middle.release.counts.topics).toBe(2160);
     expect(result.loaded.high.release.counts.standards).toBe(50749);
     expect(result.loaded.middle.release.counts.domains).toBe(149);
     expect(result.loaded.high.release.counts.domains).toBe(5169);
@@ -16,6 +17,8 @@ describe('repository schema contract', () => {
     expect(result.loaded.high.release.counts.learningRelations).toBe(0);
     expect(result.loaded.bridges.release.counts.transitionAlignments).toBe(398);
     expect(result.inventoryReport.diagnosticCount).toBe(0);
+    expect(result.inventoryReport.middleTopicDecomposition.topicsPerStandard.distribution).toEqual({ '2': 77, '3': 564, '4': 51, '5': 22 });
+    expect(result.inventoryReport.comparisonBaselines.elementary.dataRelease).toBe('kr-full-depth-v0.4');
   });
 
   test('requires high-school course category and program scope', async () => {

@@ -43,6 +43,8 @@
     "evidence": {"@id": "slm:evidence", "@language": "ko"},
     "assessmentPrompt": {"@id": "slm:assessmentPrompt", "@language": "ko"},
     "topicType": "slm:topicType",
+    "decompositionKind": "slm:decompositionKind",
+    "facetKey": "slm:facetKey",
     "alignmentKind": "slm:alignmentKind",
     "relationKind": "slm:relationKind",
     "claimStatus": "slm:claimStatus",

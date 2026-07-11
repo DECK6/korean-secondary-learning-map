@@ -80,6 +80,7 @@ for (const profile of ['middle', 'high']) {
       label: course.labelKorean,
       level: profile,
       category: course.courseCategory,
+      programScope: course.programScopes?.[0] ?? 'middle',
       groupId: course.subjectGroupId,
       groupLabel: groupById.get(course.subjectGroupId)?.labelKorean ?? '미분류',
       standardCount: standards.length,
@@ -110,6 +111,8 @@ const transitionIndex = transitions.map((record) => {
 
 const levelOrder = { middle: 0, high: 1 };
 courseIndex.sort((a, b) => levelOrder[a.level] - levelOrder[b.level] || a.groupLabel.localeCompare(b.groupLabel, 'ko') || a.label.localeCompare(b.label, 'ko'));
+const highAcademicCourseIds = new Set(profiles.high.courses.filter((course) => course.programScopes.includes('all-high-schools')).map((course) => course.id));
+const highVocationalCourseIds = new Set(profiles.high.courses.filter((course) => course.programScopes.includes('specialized-vocational')).map((course) => course.id));
 const index = {
   version: inventory.version,
   generatedFrom: '2022-revised-current-notice-baseline',
@@ -117,10 +120,18 @@ const index = {
     officialDocuments: sourceManifest.sourceCount,
     middleCourses: inventory.middle.courses,
     middleStandards: inventory.middle.standards,
+    middleTopics: inventory.middle.topics,
     highCourses: inventory.high.courses,
     highStandards: inventory.high.standards,
+    highAcademicCourses: highAcademicCourseIds.size,
+    highAcademicDomains: profiles.high.domains.filter((domain) => highAcademicCourseIds.has(domain.courseId)).length,
+    highAcademicStandards: profiles.high.standards.filter((standard) => highAcademicCourseIds.has(standard.courseId)).length,
+    highVocationalCourses: highVocationalCourseIds.size,
+    highVocationalDomains: profiles.high.domains.filter((domain) => highVocationalCourseIds.has(domain.courseId)).length,
+    highVocationalStandards: profiles.high.standards.filter((standard) => highVocationalCourseIds.has(standard.courseId)).length,
     transitions: inventory.bridges.transitionAlignments,
   },
+  comparisonBaselines: inventory.comparisonBaselines,
   subjectGroups: [...groupById.values()].map((group) => ({ id: group.id, label: group.labelKorean, level: group.schoolLevel })).sort((a, b) => a.level.localeCompare(b.level, 'en') || a.label.localeCompare(b.label, 'ko')),
   courses: courseIndex,
   transitions: transitionIndex,
@@ -131,6 +142,8 @@ const index = {
     '과목은 국가 교육과정 정의이며 특정 학교의 실제 개설을 뜻하지 않습니다.',
     '전이·선수·경로는 전문가 검토 전 후보이며 공식 필수 요건이 아닙니다.',
     '공식 교육과정 원문은 포함하지 않고 코드·출처 위치와 기계적 초안 요약만 제공합니다.',
+    `초등 ${inventory.comparisonBaselines.elementary.dataRelease}의 기준당 주제 ${inventory.comparisonBaselines.elementary.topicsPerStandard.toFixed(2)}개와 비교해 중학교는 ${inventory.middleTopicDecomposition.topicsPerStandard.average.toFixed(2)}개이며, 모두 전문가 검토 전 후보입니다.`,
+    '고등학교 합계는 비직업계 231과목과 직업계 전문교과 528과목을 포함하므로 학교급 수량을 그대로 비교하지 않습니다.',
   ],
 };
 await atomicJson(join(uiRoot, 'map-index.json'), index);

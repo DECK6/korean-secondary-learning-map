@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/controlled-vocabularies.schema.json",
-  "version": "0.2.0-candidate",
+  "version": "0.3.0-candidate",
   "schoolLevels": [
     { "id": "middle", "labelKorean": "중학교", "description": "중학교 1~3학년 교육과정 프로필", "status": "active" },
     { "id": "high", "labelKorean": "고등학교", "description": "고등학교 교육과정 프로필", "status": "active" }

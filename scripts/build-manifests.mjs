@@ -107,7 +107,7 @@ export async function renderManifests(root = projectRoot) {
   components.sort((a, b) => a.path.localeCompare(b.path, 'en'));
   const bundle = {
     formatVersion: '1',
-    bundleId: 'kr-2022-secondary-bundle-v0.2.0-candidate',
+    bundleId: 'kr-2022-secondary-bundle-v0.3.0-candidate',
     profiles: profileMeta,
     components,
   };

@@ -40,7 +40,14 @@ for (const profile of ['middle', 'high']) {
     if (!domainIds.has(topic.domainId)) errors.push(`${topic.id}: missing domain`);
     if (!topic.evidence?.length || !topic.assessmentPrompts?.length) errors.push(`${topic.id}: evidence or assessment prompt missing`);
     if (topic.reviewStatus !== 'candidate') errors.push(`${topic.id}: generated topic must remain candidate`);
+    if (profile === 'middle') {
+      if (!['standard-core', 'subject-facet'].includes(topic.decompositionKind) || !topic.facetKey) errors.push(`${topic.id}: middle topic decomposition provenance missing`);
+      if (topic.decompositionKind === 'standard-core' && topic.facetKey !== 'core') errors.push(`${topic.id}: stable core topic facet mismatch`);
+      if (topic.decompositionKind === 'subject-facet' && !topic.standardAlignments.some((alignment) => alignment.basis === 'middle-subject-facet-decomposition-v1')) errors.push(`${topic.id}: subject facet basis missing`);
+    }
   }
+  if (profile === 'middle' && (topics.length < standards.length * 2 || topics.length > standards.length * 5)) errors.push('middle topic decomposition must remain within 2-5 topics per standard');
+  if (profile === 'high' && topics.length !== standards.length) errors.push('high topic count must remain one mechanical candidate per standard until a separate decomposition policy exists');
   for (const cluster of clusters) {
     if (!domainIds.has(cluster.domainId)) errors.push(`${cluster.id}: missing domain`);
   }
@@ -66,6 +73,9 @@ const middleRelease = await readJson(join(root, 'data/kr/middle/release.json'));
 const highRelease = await readJson(join(root, 'data/kr/high/release.json'));
 if (uiIndex.statistics.middleCourses !== middleRelease.counts.courses || uiIndex.statistics.highCourses !== highRelease.counts.courses) errors.push('UI course statistics are stale');
 if (uiIndex.statistics.middleStandards !== middleRelease.counts.standards || uiIndex.statistics.highStandards !== highRelease.counts.standards) errors.push('UI standard statistics are stale');
+if (uiIndex.statistics.middleTopics !== middleRelease.counts.topics) errors.push('UI middle topic statistics are stale');
+if (uiIndex.statistics.highAcademicStandards + uiIndex.statistics.highVocationalStandards !== highRelease.counts.standards) errors.push('UI high-school scope split is stale');
+if (uiIndex.statistics.highAcademicCourses + uiIndex.statistics.highVocationalCourses !== highRelease.counts.courses) errors.push('UI high-school course scope split is stale');
 if (uiIndex.sourceSummary.rightsStatus !== 'hold' || uiIndex.sourceSummary.officialTextIncluded !== false) errors.push('UI rights boundary is stale');
 const html = await readFile(join(root, 'ui/index.html'), 'utf8');
 const css = await readFile(join(root, 'ui/styles.css'), 'utf8');

@@ -33,7 +33,7 @@
   "createdDate": "2026-07-11",
   "curriculumVersion": "2022-revised",
   "profile": "high",
-  "releaseId": "kr-2022-high-v0.2.0-candidate",
+  "releaseId": "kr-2022-high-v0.3.0-candidate",
   "rightsStatus": "hold",
   "schoolLevel": "high",
   "sourceManifest": "../shared/source-manifest.json",

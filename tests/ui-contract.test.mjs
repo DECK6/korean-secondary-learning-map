@@ -36,5 +36,10 @@ test('publishes one lazy detail payload per course', async () => {
   expect(index.courses.length).toBe(783);
   expect(new Set(index.courses.map((course) => course.detailFile)).size).toBe(783);
   expect(manifest.courseDetailCount).toBe(783);
+  expect(index.statistics.middleTopics).toBe(2160);
+  expect(index.statistics.highAcademicStandards).toBe(3124);
+  expect(index.statistics.highVocationalStandards).toBe(47625);
+  expect(index.statistics.highAcademicStandards + index.statistics.highVocationalStandards).toBe(index.statistics.highStandards);
+  expect(index.comparisonBaselines.elementary.topics).toBe(1956);
   expect(index.boundaries.some((text) => text.includes('공식 필수 요건이 아닙니다'))).toBe(true);
 });

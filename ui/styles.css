@@ -34,7 +34,7 @@ main { width:min(1500px,94vw); margin:-1.5rem auto 5rem; position:relative; z-in
 .section-heading { display:flex; align-items:end; justify-content:space-between; gap:2rem; margin-bottom:2rem; }
 .section-heading h2 { margin:0; font-size:clamp(1.8rem,4vw,3rem); letter-spacing:-.04em; }
 .section-heading>p { max-width:540px; color:var(--muted); line-height:1.7; font-size:.9rem; }
-.filters { display:grid; grid-template-columns:180px 220px 220px minmax(240px,1fr); gap:.8rem; padding:1rem; border:1px solid var(--line); background:#f1f1ea; border-radius:12px; margin-bottom:1.25rem; }
+.filters { display:grid; grid-template-columns:160px 180px 180px 180px minmax(240px,1fr); gap:.8rem; padding:1rem; border:1px solid var(--line); background:#f1f1ea; border-radius:12px; margin-bottom:1.25rem; }
 .filters.compact { grid-template-columns:230px 1fr; }
 label { display:grid; gap:.42rem; color:var(--muted); font-size:.72rem; font-weight:600; }
 select,input { width:100%; color:var(--ink); background:white; border:1px solid #ccd2cb; border-radius:7px; padding:.72rem .8rem; }

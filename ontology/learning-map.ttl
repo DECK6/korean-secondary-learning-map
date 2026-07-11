@@ -6,7 +6,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://dexa.art/learnmap/secondary/ontology> a owl:Ontology ;
-  owl:versionIRI <https://dexa.art/learnmap/secondary/ontology/0.2.0-candidate> ;
+  owl:versionIRI <https://dexa.art/learnmap/secondary/ontology/0.3.0-candidate> ;
   rdfs:label "대한민국 중등교육 학습지도 온톨로지"@ko .
 
 slm:CurriculumRelease a owl:Class .
@@ -17,6 +17,7 @@ slm:CourseOffering a owl:Class ; rdfs:comment "특정 학교의 실제 개설 �
 slm:Domain a owl:Class .
 slm:AchievementStandard a owl:Class .
 slm:LearningTopic a owl:Class .
+slm:MiddleLearningTopic a owl:Class ; rdfs:subClassOf slm:LearningTopic .
 slm:LearningCluster a owl:Class .
 slm:LearningRelation a owl:Class .
 slm:TransitionAlignment a owl:Class .
@@ -66,6 +67,8 @@ slm:description a owl:DatatypeProperty ; rdfs:range rdf:langString .
 slm:evidence a owl:DatatypeProperty ; rdfs:range rdf:langString .
 slm:assessmentPrompt a owl:DatatypeProperty ; rdfs:range rdf:langString .
 slm:topicType a owl:DatatypeProperty ; rdfs:range xsd:string .
+slm:decompositionKind a owl:DatatypeProperty ; rdfs:domain slm:LearningTopic ; rdfs:range xsd:string .
+slm:facetKey a owl:DatatypeProperty ; rdfs:domain slm:LearningTopic ; rdfs:range xsd:string .
 slm:alignmentKind a owl:DatatypeProperty ; rdfs:range xsd:string .
 slm:relationKind a owl:DatatypeProperty ; rdfs:range xsd:string .
 slm:claimStatus a owl:DatatypeProperty ; rdfs:range xsd:string .

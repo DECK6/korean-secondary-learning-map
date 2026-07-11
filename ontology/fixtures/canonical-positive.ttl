@@ -15,6 +15,6 @@ ex:course a slm:Course ; rdfs:label "과학"@ko ; slm:schoolLevel "middle" ; slm
 ex:domain a slm:Domain ; rdfs:label "과학과 인류의 지속가능한 삶"@ko ; slm:domainOfCourse ex:course ; slm:hasSource ex:source ; slm:reviewStatus "candidate" .
 ex:locator a slm:SourceLocator ; slm:officialCode "[9과01-01]" ; slm:sourcePage 1 ; slm:attachmentNumber "1" ; slm:fileSha256 "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" ; slm:sourceSection "과학 > 영역" ; slm:hasSource ex:source .
 ex:standard a slm:AchievementStandard ; slm:officialCode "[9과01-01]" ; slm:summaryKind "mechanical-derivative" ; slm:inCourse ex:course ; slm:inDomain ex:domain ; slm:hasLocator ex:locator ; slm:hasSource ex:source .
-ex:topic a slm:LearningTopic ; slm:topicInCourse ex:course ; slm:inDomain ex:domain ; slm:alignsToStandard ex:standard ; slm:evidence "설명한다"@ko ; slm:assessmentPrompt "근거를 말한다"@ko ; slm:hasSource ex:source .
+ex:topic a slm:LearningTopic, slm:MiddleLearningTopic ; slm:schoolLevel "middle" ; slm:topicInCourse ex:course ; slm:inDomain ex:domain ; slm:alignsToStandard ex:standard ; slm:decompositionKind "standard-core" ; slm:facetKey "core" ; slm:evidence "설명한다"@ko ; slm:assessmentPrompt "근거를 말한다"@ko ; slm:hasSource ex:source .
 ex:step a slm:PathwayStep ; slm:stepOrder 1 ; slm:stepKind "foundation" ; slm:reason "기초를 확인한다."@ko ; slm:stepCourse ex:course .
 ex:path a slm:IllustrativePathway ; slm:hasStep ex:step ; slm:notOfficialRequirement true ; slm:reviewStatus "candidate" .

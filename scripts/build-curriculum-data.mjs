@@ -303,6 +303,72 @@ function topicType(statement) {
   return 'conceptual';
 }
 
+const facet = (key, label, type, alignmentKind = 'supports') => ({ key, label, type, alignmentKind });
+
+function middleTopicFacets(record) {
+  if (record.courseTitle === '국어') return [
+    facet('language-analysis', '언어 자료 분석과 의미 구성', 'language'),
+    facet('communication-production', '의사소통 표현과 수행', 'procedural'),
+    facet('critical-reflection', '비판적 검토와 언어생활 성찰', 'meta', 'extends'),
+  ];
+  if (record.courseTitle === '도덕') return [
+    facet('ethical-concept', '윤리 개념과 가치 관계 이해', 'conceptual', 'introduces'),
+    facet('case-judgment', '도덕적 사례 분석과 근거 판단', 'representational'),
+    facet('dialogue-practice', '대화·토론과 공동체 실천', 'procedural'),
+    facet('reflection-action', '삶의 성찰과 실천 계획', 'meta', 'extends'),
+  ];
+  if (['기술·가정', '정보'].includes(record.courseTitle)) return [
+    facet('design-problem-solving', '설계·문제 해결과 안전한 수행', 'procedural'),
+  ];
+  if (record.courseTitle === '수학') return [
+    facet('representation-modeling', '표현·모델링과 수학적 연결', 'representational'),
+    facet('problem-solving-explanation', '문제 해결과 수학적 설명', 'procedural'),
+  ];
+  if (record.courseTitle === '과학') return [
+    facet('inquiry-data', '탐구 설계와 자료 해석', 'representational'),
+    facet('evidence-explanation', '증거 기반 설명과 적용', 'procedural'),
+  ];
+  if (['사회', '역사'].includes(record.courseTitle)) return [
+    facet('source-context', '자료·맥락 해석과 관점 비교', 'representational'),
+    facet('evidence-judgment', '근거 기반 판단과 사회적 적용', 'meta'),
+  ];
+  if (record.courseTitle === '체육') return [
+    facet('skill-strategy', '기능·전략과 안전한 수행', 'procedural'),
+    facet('participation-reflection', '참여·협력과 활동 성찰', 'meta'),
+  ];
+  if (record.courseTitle === '음악') return [
+    facet('performance-creation', '연주·창작과 음악적 표현', 'procedural'),
+    facet('appreciation-reflection', '감상·나눔과 음악문화 성찰', 'meta'),
+  ];
+  if (record.courseTitle === '미술') return [
+    facet('exploration-expression', '조형 탐색과 시각적 표현', 'representational'),
+    facet('appreciation-reflection', '감상·비평과 시각문화 성찰', 'meta'),
+  ];
+  if (record.courseTitle === '영어' || record.courseTitle.startsWith('생활 ')) return [
+    facet('reception-interaction', '이해·상호작용과 의미 협상', 'language'),
+    facet('production-reflection', '언어 산출과 의사소통 성찰', 'procedural'),
+  ];
+  return [
+    facet('application-evidence', '사례·자료 적용과 근거 제시', 'procedural'),
+    facet('reflection-transfer', '판단·성찰과 생활 맥락 전이', 'meta', 'extends'),
+  ];
+}
+
+function facetEvidence(summary, facetRecord) {
+  const byType = {
+    conceptual: `학습자가 ${summary}와 관련된 핵심 개념과 가치의 관계를 구분하고 자신의 말로 설명한다.`,
+    language: `학습자가 ${summary}와 관련된 언어 자료를 해석하고 상황과 목적에 맞게 의미를 구성하거나 표현한다.`,
+    meta: `학습자가 ${summary}에 대한 판단이나 수행을 근거와 함께 돌아보고 다음 적용에서 바꿀 점을 제안한다.`,
+    procedural: `학습자가 ${summary}와 관련된 과제에 적절한 절차와 전략을 선택해 수행하고 그 과정을 설명한다.`,
+    representational: `학습자가 ${summary}와 관련된 자료·표현·사례를 비교하거나 변환하고 그 의미와 관계를 설명한다.`,
+  };
+  return `${byType[facetRecord.type]} 이 증거는 ‘${facetRecord.label}’ 후보 단위에 한정한다.`;
+}
+
+function facetPrompt(summary, facetRecord) {
+  return `${summary}와 관련된 새로운 자료나 상황을 제시하고, ‘${facetRecord.label}’ 관점에서 해석·수행·판단한 과정과 근거를 설명하게 한다.`;
+}
+
 function sourceUrl(source) {
   const year = source.governingNotice.match(/(2022|2024|2026)/)?.[1] ?? '2022';
   return `https://ncic.re.kr/inv/org/download.do?year=${year}&seq=${source.attachmentNo}&orgType=ogi4`;
@@ -378,14 +444,14 @@ const records = [...byProfileAndCode.values()].sort((a, b) =>
 );
 
 const releases = {
-  middle: 'kr-2022-middle-v0.2.0-candidate',
-  high: 'kr-2022-high-v0.2.0-candidate',
-  bridges: 'kr-2022-middle-high-bridge-v0.2.0-candidate',
+  middle: 'kr-2022-middle-v0.3.0-candidate',
+  high: 'kr-2022-high-v0.3.0-candidate',
+  bridges: 'kr-2022-middle-high-bridge-v0.3.0-candidate',
 };
 
 const sourceManifest = {
   $schema: '../../../schema/source-manifest.schema.json',
-  version: '0.2.0-candidate',
+  version: '0.3.0-candidate',
   accessDate: catalog.catalogVersion,
   sourceCount: catalog.sources.length,
   sources: catalog.sources.map((source) => {
@@ -510,7 +576,7 @@ function buildProfile(profile) {
     });
 
     const topicId = `kr.topic.2022.${profile}.${hash(standardId, 20)}`;
-    topics.push({
+    const generatedTopics = [{
       id: topicId,
       labelKorean: `${record.courseTitle} — ${summary}`,
       labelEnglish: null,
@@ -522,11 +588,36 @@ function buildProfile(profile) {
       evidence: [`학습자가 ${summary}와 관련된 개념, 판단 근거 또는 수행 과정을 자신의 말이나 결과물로 보여 준다.`],
       assessmentPrompts: [`${summary}와 관련된 과제나 사례를 제시하고, 학습자가 해결 과정과 근거를 설명하거나 수행하게 한다.`],
       standardAlignments: [{ standardId, alignmentKind: 'supports', basis: 'official-standard-derived-topic-v2' }],
+      ...(profile === 'middle' ? { decompositionKind: 'standard-core', facetKey: 'core' } : {}),
       sourceRefs: [...record.sourceIds].sort(),
       verificationStatus: 'public-doc-derived',
       reviewStatus: 'candidate',
       sourceTextIncluded: false,
-    });
+    }];
+    if (profile === 'middle') {
+      for (const facetRecord of middleTopicFacets(record)) {
+        generatedTopics.push({
+          id: `kr.topic.2022.middle.${hash(`${standardId}|${facetRecord.key}`, 20)}`,
+          labelKorean: `${record.courseTitle} — ${summary} — ${facetRecord.label}`,
+          labelEnglish: null,
+          schoolLevel: 'middle',
+          courseIds: [courseId],
+          domainId,
+          types: [facetRecord.type],
+          description: `${record.courseTitle}의 ${record.domain} 영역에서 ${summary}를 ‘${facetRecord.label}’ 관점으로 분해한 세부 학습 주제 후보다.`,
+          evidence: [facetEvidence(summary, facetRecord)],
+          assessmentPrompts: [facetPrompt(summary, facetRecord)],
+          standardAlignments: [{ standardId, alignmentKind: facetRecord.alignmentKind, basis: 'middle-subject-facet-decomposition-v1' }],
+          decompositionKind: 'subject-facet',
+          facetKey: facetRecord.key,
+          sourceRefs: [...record.sourceIds].sort(),
+          verificationStatus: 'public-doc-derived',
+          reviewStatus: 'candidate',
+          sourceTextIncluded: false,
+        });
+      }
+    }
+    topics.push(...generatedTopics);
 
     const clusterKey = `${courseId}|${record.domain}`;
     if (!clustersByKey.has(clusterKey)) {
@@ -544,7 +635,7 @@ function buildProfile(profile) {
         sourceTextIncluded: false,
       });
     }
-    clustersByKey.get(clusterKey).topicIds.push(topicId);
+    clustersByKey.get(clusterKey).topicIds.push(...generatedTopics.map((topic) => topic.id));
   }
 
   const learningRelations = [];
@@ -829,13 +920,58 @@ await writeProfile('middle', middleCollections);
 await writeProfile('high', highCollections);
 await writeProfile('bridges', bridgeCollections);
 
+const middleTopicCountsByStandard = new Map();
+for (const topic of middle.topics) {
+  for (const alignment of topic.standardAlignments) middleTopicCountsByStandard.set(alignment.standardId, (middleTopicCountsByStandard.get(alignment.standardId) ?? 0) + 1);
+}
+const middleTopicDistribution = Object.fromEntries(
+  [...Map.groupBy([...middleTopicCountsByStandard.values()], (count) => count)]
+    .sort(([a], [b]) => a - b)
+    .map(([count, values]) => [String(count), values.length]),
+);
+function highScopeSummary(scope) {
+  const courseIds = new Set(high.courses.filter((course) => course.programScopes.includes(scope)).map((course) => course.id));
+  return {
+    courses: courseIds.size,
+    domains: high.domains.filter((domain) => courseIds.has(domain.courseId)).length,
+    standards: high.standards.filter((standard) => courseIds.has(standard.courseId)).length,
+    topics: high.topics.filter((topic) => topic.courseIds.some((courseId) => courseIds.has(courseId))).length,
+  };
+}
+
 await atomicJson(join(root, 'data/kr/inventory-report.json'), {
-  version: '0.2.0-candidate',
+  version: '0.3.0-candidate',
   extractedOccurrenceCount: extracted.length,
   repeatedProfessionalCommonOccurrenceCount,
   uniqueStandardCount: records.length,
+  comparisonBaselines: {
+    elementary: {
+      repository: 'https://github.com/DECK6/korean-elementary-learning-map',
+      dataRelease: 'kr-full-depth-v0.4',
+      standards: 620,
+      topics: 1956,
+      clusters: 153,
+      learningRelations: 1894,
+      topicsPerStandard: 1956 / 620,
+    },
+  },
   middle: Object.fromEntries(Object.entries(middleCollections).map(([key, values]) => [key, values.length])),
+  middleTopicDecomposition: {
+    policy: 'middle-subject-facet-decomposition-v1',
+    stableCoreTopics: middle.topics.filter((topic) => topic.decompositionKind === 'standard-core').length,
+    subjectFacetTopics: middle.topics.filter((topic) => topic.decompositionKind === 'subject-facet').length,
+    topicsPerStandard: {
+      minimum: Math.min(...middleTopicCountsByStandard.values()),
+      maximum: Math.max(...middleTopicCountsByStandard.values()),
+      average: middle.topics.length / middle.standards.length,
+      distribution: middleTopicDistribution,
+    },
+  },
   high: Object.fromEntries(Object.entries(highCollections).map(([key, values]) => [key, values.length])),
+  highScopeBreakdown: {
+    allHighSchools: highScopeSummary('all-high-schools'),
+    specializedVocational: highScopeSummary('specialized-vocational'),
+  },
   bridges: Object.fromEntries(Object.entries(bridgeCollections).map(([key, values]) => [key, values.length])),
   diagnosticCount: diagnostics.length,
   diagnostics,

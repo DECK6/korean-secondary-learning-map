@@ -159,7 +159,7 @@
         { "$ref": "core.schema.json#/$defs/baseRecord" },
         {
           "type": "object",
-          "required": ["schoolLevel", "courseIds", "domainId", "types", "description", "evidence", "assessmentPrompts", "standardAlignments"],
+          "required": ["schoolLevel", "courseIds", "domainId", "types", "description", "evidence", "assessmentPrompts", "standardAlignments", "decompositionKind", "facetKey"],
           "properties": {
             "schoolLevel": { "const": "middle" },
             "courseIds": {
@@ -178,6 +178,8 @@
             "description": { "type": "string", "minLength": 1 },
             "evidence": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
             "assessmentPrompts": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+            "decompositionKind": { "enum": ["standard-core", "subject-facet"] },
+            "facetKey": { "type": "string", "minLength": 1, "pattern": "^[a-z0-9-]+$" },
             "standardAlignments": {
               "type": "array",
               "minItems": 1,
@@ -192,7 +194,17 @@
                 "additionalProperties": false
               }
             }
-          }
+          },
+          "allOf": [
+            {
+              "if": { "properties": { "decompositionKind": { "const": "standard-core" } } },
+              "then": { "properties": { "facetKey": { "const": "core" } } }
+            },
+            {
+              "if": { "properties": { "decompositionKind": { "const": "subject-facet" } } },
+              "then": { "properties": { "facetKey": { "not": { "const": "core" } } } }
+            }
+          ]
         }
       ],
       "unevaluatedProperties": false
