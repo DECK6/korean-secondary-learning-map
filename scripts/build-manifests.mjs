@@ -1,5 +1,5 @@
 import { createHash } from 'node:crypto';
-import { readFile, rename, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, rename, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { dirname, join, relative, resolve } from 'node:path';
 
@@ -116,6 +116,7 @@ export async function renderManifests(root = projectRoot) {
 }
 
 async function writeAtomic(path, content) {
+  await mkdir(dirname(path), { recursive: true });
   const temporary = `${path}.${process.pid}.tmp`;
   await writeFile(temporary, content, 'utf8');
   await rename(temporary, path);
