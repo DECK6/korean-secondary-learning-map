@@ -1,0 +1,2 @@
+PREFIX slm: <https://dexa.art/learnmap/secondary/ontology#>
+SELECT ?standard ?code ?page ?attachment ?sha256 ?section ?source WHERE { ?standard a slm:AchievementStandard ; slm:hasLocator ?locator . ?locator slm:officialCode ?code ; slm:sourcePage ?page ; slm:attachmentNumber ?attachment ; slm:fileSha256 ?sha256 ; slm:sourceSection ?section ; slm:hasSource ?source . }

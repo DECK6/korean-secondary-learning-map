@@ -1,0 +1,327 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dexa.art/learnmap/schema/secondary/middle-profile.schema.json",
+  "title": "Korean Secondary Learning Map — middle-school profile",
+  "$ref": "#/$defs/release",
+  "$defs": {
+    "release": {
+      "type": "object",
+      "required": [
+        "$schema",
+        "releaseId",
+        "profile",
+        "schoolLevel",
+        "curriculumVersion",
+        "status",
+        "createdDate",
+        "sourceManifest",
+        "rightsStatus",
+        "textPolicy",
+        "collections",
+        "counts"
+      ],
+      "properties": {
+        "$schema": { "type": "string", "format": "uri-reference" },
+        "releaseId": {
+          "type": "string",
+          "pattern": "^kr-2022-middle-v[0-9]+\\.[0-9]+(?:\\.[0-9]+)?(?:-[a-z0-9.-]+)?$"
+        },
+        "profile": { "const": "middle" },
+        "schoolLevel": { "const": "middle" },
+        "curriculumVersion": { "const": "2022-revised" },
+        "status": { "enum": ["design-skeleton", "inventory", "candidate", "formal-release"] },
+        "createdDate": { "type": "string", "format": "date" },
+        "sourceManifest": { "type": "string", "pattern": "^\\.\\./shared/[^/]+\\.json$" },
+        "rightsStatus": { "$ref": "core.schema.json#/$defs/rightsStatus" },
+        "textPolicy": { "$ref": "core.schema.json#/$defs/textPolicy" },
+        "collections": {
+          "type": "object",
+          "required": [
+            "subjectGroups",
+            "courses",
+            "domains",
+            "standards",
+            "topics",
+            "clusters",
+            "learningRelations",
+            "reviewRecords",
+            "coverageGaps"
+          ],
+          "properties": {
+            "subjectGroups": { "const": "subject-groups.json" },
+            "courses": { "const": "courses.json" },
+            "domains": { "const": "domains.json" },
+            "standards": { "const": "standards.json" },
+            "topics": { "const": "topics.json" },
+            "clusters": { "const": "clusters.json" },
+            "learningRelations": { "const": "learning-relations.json" },
+            "reviewRecords": { "const": "review-records.json" },
+            "coverageGaps": { "const": "coverage-gaps.json" }
+          },
+          "additionalProperties": false
+        },
+        "counts": {
+          "type": "object",
+          "required": [
+            "subjectGroups",
+            "courses",
+            "domains",
+            "standards",
+            "topics",
+            "clusters",
+            "learningRelations",
+            "reviewRecords",
+            "coverageGaps"
+          ],
+          "properties": {
+            "subjectGroups": { "type": "integer", "minimum": 0 },
+            "courses": { "type": "integer", "minimum": 0 },
+            "domains": { "type": "integer", "minimum": 0 },
+            "standards": { "type": "integer", "minimum": 0 },
+            "topics": { "type": "integer", "minimum": 0 },
+            "clusters": { "type": "integer", "minimum": 0 },
+            "learningRelations": { "type": "integer", "minimum": 0 },
+            "reviewRecords": { "type": "integer", "minimum": 0 },
+            "coverageGaps": { "type": "integer", "minimum": 0 }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "subjectGroup": {
+      "allOf": [
+        { "$ref": "core.schema.json#/$defs/baseRecord" },
+        {
+          "type": "object",
+          "required": ["schoolLevel"],
+          "properties": { "schoolLevel": { "const": "middle" } }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "course": {
+      "allOf": [
+        { "$ref": "core.schema.json#/$defs/baseRecord" },
+        {
+          "type": "object",
+          "required": ["schoolLevel", "subjectGroupId", "courseCategory", "gradeScope"],
+          "properties": {
+            "schoolLevel": { "const": "middle" },
+            "subjectGroupId": { "$ref": "core.schema.json#/$defs/stableId" },
+            "courseCategory": { "enum": ["common", "middle-elective"] },
+            "gradeScope": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": { "enum": ["7", "8", "9", "7-9"] }
+            }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "domain": {
+      "allOf": [
+        { "$ref": "core.schema.json#/$defs/baseRecord" },
+        {
+          "type": "object",
+          "required": ["schoolLevel", "courseId"],
+          "properties": {
+            "schoolLevel": { "const": "middle" },
+            "courseId": { "$ref": "core.schema.json#/$defs/stableId" }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "standard": {
+      "allOf": [
+        { "$ref": "core.schema.json#/$defs/baseRecord" },
+        {
+          "type": "object",
+          "required": ["courseId", "code", "domainId", "summary", "summaryKind", "sourceLocator", "officialTextIncluded"],
+          "properties": {
+            "courseId": { "$ref": "core.schema.json#/$defs/stableId" },
+            "code": { "type": "string", "minLength": 3 },
+            "domainId": { "$ref": "core.schema.json#/$defs/stableId" },
+            "summary": { "type": "string", "minLength": 1 },
+            "summaryKind": { "const": "mechanical-derivative" },
+            "sourceLocator": { "$ref": "core.schema.json#/$defs/sourceLocator" },
+            "officialTextIncluded": { "const": false }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "topic": {
+      "allOf": [
+        { "$ref": "core.schema.json#/$defs/baseRecord" },
+        {
+          "type": "object",
+          "required": ["schoolLevel", "courseIds", "domainId", "types", "description", "evidence", "assessmentPrompts", "standardAlignments"],
+          "properties": {
+            "schoolLevel": { "const": "middle" },
+            "courseIds": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": { "$ref": "core.schema.json#/$defs/stableId" }
+            },
+            "domainId": { "$ref": "core.schema.json#/$defs/stableId" },
+            "types": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": { "enum": ["conceptual", "language", "meta", "procedural", "representational"] }
+            },
+            "description": { "type": "string", "minLength": 1 },
+            "evidence": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+            "assessmentPrompts": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+            "standardAlignments": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "required": ["standardId", "alignmentKind", "basis"],
+                "properties": {
+                  "standardId": { "$ref": "core.schema.json#/$defs/stableId" },
+                  "alignmentKind": { "enum": ["introduces", "supports", "extends", "assesses"] },
+                  "basis": { "type": "string", "minLength": 1 }
+                },
+                "additionalProperties": false
+              }
+            }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "cluster": {
+      "allOf": [
+        { "$ref": "core.schema.json#/$defs/baseRecord" },
+        {
+          "type": "object",
+          "required": ["courseId", "domainId", "topicIds", "summary"],
+          "properties": {
+            "courseId": { "$ref": "core.schema.json#/$defs/stableId" },
+            "domainId": { "$ref": "core.schema.json#/$defs/stableId" },
+            "topicIds": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": { "$ref": "core.schema.json#/$defs/stableId" }
+            },
+            "summary": { "type": "string", "minLength": 1 }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "learningRelation": {
+      "type": "object",
+      "required": [
+        "id",
+        "dependentTopicId",
+        "prerequisiteTopicId",
+        "relationKind",
+        "scope",
+        "strength",
+        "reason",
+        "basisKind",
+        "basis",
+        "sourceRefs",
+        "reviewStatus"
+      ],
+      "properties": {
+        "id": { "$ref": "core.schema.json#/$defs/stableId" },
+        "dependentTopicId": { "$ref": "core.schema.json#/$defs/stableId" },
+        "prerequisiteTopicId": { "$ref": "core.schema.json#/$defs/stableId" },
+        "relationKind": { "enum": ["required-prerequisite", "recommended-before"] },
+        "scope": { "enum": ["same-course", "same-subject-group", "cross-subject", "cross-school-level"] },
+        "strength": { "enum": ["required", "recommended"] },
+        "reason": { "type": "string", "minLength": 1 },
+        "basisKind": { "enum": ["official-source", "expert-review", "repository-authored", "model-candidate"] },
+        "basis": { "type": "string", "minLength": 1 },
+        "sourceRefs": { "type": "array", "uniqueItems": true, "items": { "$ref": "core.schema.json#/$defs/sourceRef" } },
+        "reviewStatus": { "$ref": "core.schema.json#/$defs/reviewStatus" }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "relationKind": { "const": "required-prerequisite" } } },
+          "then": {
+            "properties": {
+              "basisKind": { "const": "official-source" },
+              "strength": { "const": "required" }
+            }
+          }
+        }
+      ],
+      "additionalProperties": false
+    },
+    "subjectGroupCollection": { "$ref": "#/$defs/subjectGroupCollectionShape" },
+    "subjectGroupCollectionShape": {
+      "allOf": [
+        { "$ref": "core.schema.json#/$defs/collectionEnvelopeBase" },
+        { "properties": { "profile": { "const": "middle" }, "recordType": { "const": "subjectGroups" }, "records": { "items": { "$ref": "#/$defs/subjectGroup" } } } }
+      ],
+      "unevaluatedProperties": false
+    },
+    "courseCollection": {
+      "allOf": [
+        { "$ref": "core.schema.json#/$defs/collectionEnvelopeBase" },
+        { "properties": { "profile": { "const": "middle" }, "recordType": { "const": "courses" }, "records": { "items": { "$ref": "#/$defs/course" } } } }
+      ],
+      "unevaluatedProperties": false
+    },
+    "domainCollection": {
+      "allOf": [
+        { "$ref": "core.schema.json#/$defs/collectionEnvelopeBase" },
+        { "properties": { "profile": { "const": "middle" }, "recordType": { "const": "domains" }, "records": { "items": { "$ref": "#/$defs/domain" } } } }
+      ],
+      "unevaluatedProperties": false
+    },
+    "standardCollection": {
+      "allOf": [
+        { "$ref": "core.schema.json#/$defs/collectionEnvelopeBase" },
+        { "properties": { "profile": { "const": "middle" }, "recordType": { "const": "standards" }, "records": { "items": { "$ref": "#/$defs/standard" } } } }
+      ],
+      "unevaluatedProperties": false
+    },
+    "topicCollection": {
+      "allOf": [
+        { "$ref": "core.schema.json#/$defs/collectionEnvelopeBase" },
+        { "properties": { "profile": { "const": "middle" }, "recordType": { "const": "topics" }, "records": { "items": { "$ref": "#/$defs/topic" } } } }
+      ],
+      "unevaluatedProperties": false
+    },
+    "clusterCollection": {
+      "allOf": [
+        { "$ref": "core.schema.json#/$defs/collectionEnvelopeBase" },
+        { "properties": { "profile": { "const": "middle" }, "recordType": { "const": "clusters" }, "records": { "items": { "$ref": "#/$defs/cluster" } } } }
+      ],
+      "unevaluatedProperties": false
+    },
+    "learningRelationCollection": {
+      "allOf": [
+        { "$ref": "core.schema.json#/$defs/collectionEnvelopeBase" },
+        { "properties": { "profile": { "const": "middle" }, "recordType": { "const": "learningRelations" }, "records": { "items": { "$ref": "#/$defs/learningRelation" } } } }
+      ],
+      "unevaluatedProperties": false
+    },
+    "reviewRecordCollection": {
+      "allOf": [
+        { "$ref": "core.schema.json#/$defs/collectionEnvelopeBase" },
+        { "properties": { "profile": { "const": "middle" }, "recordType": { "const": "reviewRecords" }, "records": { "items": { "$ref": "core.schema.json#/$defs/reviewRecord" } } } }
+      ],
+      "unevaluatedProperties": false
+    },
+    "coverageGapCollection": {
+      "allOf": [
+        { "$ref": "core.schema.json#/$defs/collectionEnvelopeBase" },
+        { "properties": { "profile": { "const": "middle" }, "recordType": { "const": "coverageGaps" }, "records": { "items": { "$ref": "core.schema.json#/$defs/coverageGap" } } } }
+      ],
+      "unevaluatedProperties": false
+    }
+  }
+}

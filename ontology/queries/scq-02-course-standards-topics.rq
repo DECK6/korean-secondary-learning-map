@@ -1,0 +1,2 @@
+PREFIX slm: <https://dexa.art/learnmap/secondary/ontology#>
+SELECT ?course ?domain ?standard ?topic WHERE { ?standard a slm:AchievementStandard ; slm:inCourse ?course ; slm:inDomain ?domain . ?topic slm:alignsToStandard ?standard ; slm:inDomain ?domain . }

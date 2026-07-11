@@ -1,0 +1,9 @@
+node_modules/
+.DS_Store
+*.tmp
+coverage/
+.venv-ontology/
+sources/official/files/
+sources/official/text/
+dist/
+ui/data/

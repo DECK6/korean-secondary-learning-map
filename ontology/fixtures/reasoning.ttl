@@ -1,0 +1,6 @@
+@prefix ex: <https://dexa.art/learnmap/secondary/fixture/reasoning/> .
+@prefix slm: <https://dexa.art/learnmap/secondary/ontology#> .
+
+ex:standard slm:inCourse ex:course .
+ex:course slm:inSubjectGroup ex:group .
+ex:course-relation a slm:CourseRelation ; slm:courseRelationTo ex:course .

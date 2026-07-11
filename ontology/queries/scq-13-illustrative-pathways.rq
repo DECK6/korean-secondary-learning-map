@@ -1,0 +1,2 @@
+PREFIX slm: <https://dexa.art/learnmap/secondary/ontology#>
+SELECT ?path ?label ?boundary ?step ?order ?kind ?reason ?course ?choiceSet WHERE { ?path a slm:IllustrativePathway ; <http://www.w3.org/2000/01/rdf-schema#label> ?label ; slm:notOfficialRequirement ?boundary ; slm:hasStep ?step . ?step slm:stepOrder ?order ; slm:stepKind ?kind ; slm:reason ?reason . OPTIONAL { ?step slm:stepCourse ?course } OPTIONAL { ?step slm:stepChoiceSet ?choiceSet } }

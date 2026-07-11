@@ -1,0 +1,22 @@
+{
+  "$schema": "../../../schema/bridge-profile.schema.json",
+  "collections": {
+    "coverageGaps": "coverage-gaps.json",
+    "reviewRecords": "review-records.json",
+    "transitionAlignments": "transition-alignments.json"
+  },
+  "counts": {
+    "coverageGaps": 1,
+    "reviewRecords": 0,
+    "transitionAlignments": 398
+  },
+  "createdDate": "2026-07-11",
+  "curriculumVersion": "2022-revised",
+  "highReleaseId": "kr-2022-high-v0.2.0-candidate",
+  "middleReleaseId": "kr-2022-middle-v0.2.0-candidate",
+  "profile": "bridges",
+  "releaseId": "kr-2022-middle-high-bridge-v0.2.0-candidate",
+  "rightsStatus": "hold",
+  "sourceManifest": "../shared/source-manifest.json",
+  "status": "candidate"
+}

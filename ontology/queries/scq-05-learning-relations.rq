@@ -1,0 +1,2 @@
+PREFIX slm: <https://dexa.art/learnmap/secondary/ontology#>
+SELECT ?relation ?before ?after ?kind WHERE { ?relation a slm:LearningRelation ; slm:prerequisiteTopic ?before ; slm:dependentTopic ?after ; slm:relationKind ?kind . }

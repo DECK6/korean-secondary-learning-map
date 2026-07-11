@@ -1,0 +1,2 @@
+PREFIX slm: <https://dexa.art/learnmap/secondary/ontology#>
+SELECT ?resource ?verification ?review ?rights WHERE { ?resource slm:verificationStatus ?verification . OPTIONAL { ?resource slm:reviewStatus ?review } OPTIONAL { ?resource slm:rightsStatus ?rights } }

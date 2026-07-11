@@ -1,0 +1,20 @@
+@prefix ex: <https://dexa.art/learnmap/secondary/fixture/> .
+@prefix slm: <https://dexa.art/learnmap/secondary/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:source a slm:SourceDocument ;
+  rdfs:label "공식 자료"@ko ;
+  slm:sourceUrl "https://example.org/source.pdf"^^xsd:anyURI ;
+  slm:attachmentNumber "1" ;
+  slm:fileSha256 "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" ;
+  slm:verificationStatus "official-source-checked" ;
+  slm:rightsStatus "needs-document-level-review" .
+ex:group a slm:SubjectGroup ; rdfs:label "과학"@ko ; slm:schoolLevel "middle" ; slm:hasSource ex:source .
+ex:course a slm:Course ; rdfs:label "과학"@ko ; slm:schoolLevel "middle" ; slm:courseCategory "common" ; slm:inSubjectGroup ex:group ; slm:hasSource ex:source ; slm:reviewStatus "candidate" .
+ex:domain a slm:Domain ; rdfs:label "과학과 인류의 지속가능한 삶"@ko ; slm:domainOfCourse ex:course ; slm:hasSource ex:source ; slm:reviewStatus "candidate" .
+ex:locator a slm:SourceLocator ; slm:officialCode "[9과01-01]" ; slm:sourcePage 1 ; slm:attachmentNumber "1" ; slm:fileSha256 "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" ; slm:sourceSection "과학 > 영역" ; slm:hasSource ex:source .
+ex:standard a slm:AchievementStandard ; slm:officialCode "[9과01-01]" ; slm:summaryKind "mechanical-derivative" ; slm:inCourse ex:course ; slm:inDomain ex:domain ; slm:hasLocator ex:locator ; slm:hasSource ex:source .
+ex:topic a slm:LearningTopic ; slm:topicInCourse ex:course ; slm:inDomain ex:domain ; slm:alignsToStandard ex:standard ; slm:evidence "설명한다"@ko ; slm:assessmentPrompt "근거를 말한다"@ko ; slm:hasSource ex:source .
+ex:step a slm:PathwayStep ; slm:stepOrder 1 ; slm:stepKind "foundation" ; slm:reason "기초를 확인한다."@ko ; slm:stepCourse ex:course .
+ex:path a slm:IllustrativePathway ; slm:hasStep ex:step ; slm:notOfficialRequirement true ; slm:reviewStatus "candidate" .

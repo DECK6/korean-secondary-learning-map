@@ -1,0 +1,51 @@
+{
+  "$schema": "../../../schema/high-profile.schema.json#/$defs/creditRuleCollection",
+  "profile": "high",
+  "recordCount": 3,
+  "records": [
+    {
+      "effectiveFrom": "2026-03-01",
+      "effectiveTo": null,
+      "id": "kr.credit-rule.2026.high.graduation-total",
+      "labelKorean": "고등학교 총 이수 학점",
+      "rightsStatus": "hold",
+      "ruleKind": "graduation-total",
+      "sourceRefs": [
+        "kr-nec-2026-1-annex4"
+      ],
+      "unit": "credits",
+      "value": 192,
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "effectiveFrom": "2026-03-01",
+      "effectiveTo": null,
+      "id": "kr.credit-rule.2026.high.curriculum-total",
+      "labelKorean": "고등학교 교과(군) 이수 학점",
+      "rightsStatus": "hold",
+      "ruleKind": "curriculum-total",
+      "sourceRefs": [
+        "kr-nec-2026-1-annex4"
+      ],
+      "unit": "credits",
+      "value": 174,
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "effectiveFrom": "2026-03-01",
+      "effectiveTo": null,
+      "id": "kr.credit-rule.2026.high.creative-activities-total",
+      "labelKorean": "고등학교 창의적 체험활동 이수 학점",
+      "rightsStatus": "hold",
+      "ruleKind": "creative-activities-total",
+      "sourceRefs": [
+        "kr-nec-2026-1-annex4"
+      ],
+      "unit": "credits",
+      "value": 18,
+      "verificationStatus": "official-source-checked"
+    }
+  ],
+  "recordType": "creditRules",
+  "releaseId": "kr-2022-high-v0.2.0-candidate"
+}

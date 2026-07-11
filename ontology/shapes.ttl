@@ -1,0 +1,140 @@
+@prefix slm: <https://dexa.art/learnmap/secondary/ontology#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+slm:ReleaseShape a sh:NodeShape ;
+  sh:targetClass slm:CurriculumRelease ;
+  sh:property [ sh:path slm:curriculumVersion ; sh:minCount 1 ; sh:maxCount 1 ] ;
+  sh:property [ sh:path slm:status ; sh:minCount 1 ; sh:maxCount 1 ] ;
+  sh:property [ sh:path slm:rightsStatus ; sh:minCount 1 ; sh:maxCount 1 ; sh:hasValue "hold" ] .
+
+slm:SubjectGroupShape a sh:NodeShape ;
+  sh:targetClass slm:SubjectGroup ;
+  sh:property [ sh:path slm:schoolLevel ; sh:minCount 1 ; sh:maxCount 1 ; sh:in ("middle" "high") ] ;
+  sh:property [ sh:path slm:hasSource ; sh:minCount 1 ; sh:class slm:SourceDocument ] .
+
+slm:CourseShape a sh:NodeShape ;
+  sh:targetClass slm:Course ;
+  sh:property [ sh:path slm:inSubjectGroup ; sh:minCount 1 ; sh:maxCount 1 ; sh:class slm:SubjectGroup ] ;
+  sh:property [ sh:path slm:courseCategory ; sh:minCount 1 ; sh:maxCount 1 ; sh:in ("common" "middle-elective" "general-elective" "career-elective" "convergence-elective" "specialized-common" "major-general" "major-practical") ] ;
+  sh:property [ sh:path slm:schoolLevel ; sh:minCount 1 ; sh:maxCount 1 ; sh:in ("middle" "high") ] ;
+  sh:property [ sh:path slm:hasSource ; sh:minCount 1 ; sh:class slm:SourceDocument ] ;
+  sh:property [ sh:path slm:reviewStatus ; sh:minCount 1 ; sh:maxCount 1 ; sh:hasValue "candidate" ] .
+
+slm:DomainShape a sh:NodeShape ;
+  sh:targetClass slm:Domain ;
+  sh:property [ sh:path slm:domainOfCourse ; sh:minCount 1 ; sh:maxCount 1 ; sh:class slm:Course ] ;
+  sh:property [ sh:path slm:hasSource ; sh:minCount 1 ; sh:class slm:SourceDocument ] ;
+  sh:property [ sh:path slm:reviewStatus ; sh:minCount 1 ; sh:maxCount 1 ] .
+
+slm:StandardShape a sh:NodeShape ;
+  sh:targetClass slm:AchievementStandard ;
+  sh:property [ sh:path slm:inCourse ; sh:minCount 1 ; sh:maxCount 1 ; sh:class slm:Course ] ;
+  sh:property [ sh:path slm:inDomain ; sh:minCount 1 ; sh:maxCount 1 ; sh:class slm:Domain ] ;
+  sh:property [ sh:path slm:officialCode ; sh:minCount 1 ; sh:maxCount 1 ] ;
+  sh:property [ sh:path slm:summaryKind ; sh:minCount 1 ; sh:maxCount 1 ; sh:hasValue "mechanical-derivative" ] ;
+  sh:property [ sh:path slm:hasLocator ; sh:minCount 1 ; sh:maxCount 1 ; sh:class slm:SourceLocator ] ;
+  sh:property [ sh:path slm:hasSource ; sh:minCount 1 ; sh:class slm:SourceDocument ] .
+
+slm:SourceLocatorShape a sh:NodeShape ;
+  sh:targetClass slm:SourceLocator ;
+  sh:property [ sh:path slm:hasSource ; sh:minCount 1 ; sh:maxCount 1 ; sh:class slm:SourceDocument ] ;
+  sh:property [ sh:path slm:officialCode ; sh:minCount 1 ; sh:maxCount 1 ] ;
+  sh:property [ sh:path slm:sourcePage ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:integer ; sh:minInclusive 1 ] ;
+  sh:property [ sh:path slm:attachmentNumber ; sh:minCount 1 ; sh:maxCount 1 ] ;
+  sh:property [ sh:path slm:fileSha256 ; sh:minCount 1 ; sh:maxCount 1 ; sh:pattern "^[a-f0-9]{64}$" ] ;
+  sh:property [ sh:path slm:sourceSection ; sh:minCount 1 ; sh:maxCount 1 ] .
+
+slm:TopicShape a sh:NodeShape ;
+  sh:targetClass slm:LearningTopic ;
+  sh:property [ sh:path slm:topicInCourse ; sh:minCount 1 ; sh:class slm:Course ] ;
+  sh:property [ sh:path slm:inDomain ; sh:minCount 1 ; sh:maxCount 1 ; sh:class slm:Domain ] ;
+  sh:property [ sh:path slm:alignsToStandard ; sh:minCount 1 ; sh:class slm:AchievementStandard ] ;
+  sh:property [ sh:path slm:evidence ; sh:minCount 1 ] ;
+  sh:property [ sh:path slm:assessmentPrompt ; sh:minCount 1 ] ;
+  sh:property [ sh:path slm:hasSource ; sh:minCount 1 ; sh:class slm:SourceDocument ] .
+
+slm:ClusterShape a sh:NodeShape ;
+  sh:targetClass slm:LearningCluster ;
+  sh:property [ sh:path slm:clusterInCourse ; sh:minCount 1 ; sh:maxCount 1 ; sh:class slm:Course ] ;
+  sh:property [ sh:path slm:inDomain ; sh:minCount 1 ; sh:maxCount 1 ; sh:class slm:Domain ] ;
+  sh:property [ sh:path slm:hasTopic ; sh:minCount 1 ; sh:class slm:LearningTopic ] .
+
+slm:LearningRelationShape a sh:NodeShape ;
+  sh:targetClass slm:LearningRelation ;
+  sh:property [ sh:path slm:prerequisiteTopic ; sh:minCount 1 ; sh:maxCount 1 ; sh:class slm:LearningTopic ] ;
+  sh:property [ sh:path slm:dependentTopic ; sh:minCount 1 ; sh:maxCount 1 ; sh:class slm:LearningTopic ] ;
+  sh:property [ sh:path slm:reason ; sh:minCount 1 ; sh:maxCount 1 ] ;
+  sh:property [ sh:path slm:basisKind ; sh:minCount 1 ; sh:maxCount 1 ] ;
+  sh:property [ sh:path slm:basis ; sh:minCount 1 ; sh:maxCount 1 ] ;
+  sh:property [ sh:path slm:reviewStatus ; sh:minCount 1 ; sh:maxCount 1 ] ;
+  sh:sparql [
+    sh:message "선수 관계의 양 끝점은 같을 수 없다."@ko ;
+    sh:select "PREFIX slm: <https://dexa.art/learnmap/secondary/ontology#> SELECT $this WHERE { $this slm:prerequisiteTopic ?x ; slm:dependentTopic ?x . }"
+  ] .
+
+slm:TransitionShape a sh:NodeShape ;
+  sh:targetClass slm:TransitionAlignment ;
+  sh:property [ sh:path slm:transitionFromCourse ; sh:minCount 1 ; sh:class slm:Course ] ;
+  sh:property [ sh:path slm:transitionToCourse ; sh:minCount 1 ; sh:class slm:Course ] ;
+  sh:property [ sh:path slm:relationKind ; sh:minCount 1 ; sh:maxCount 1 ; sh:in ("continues" "deepens" "prepares-for") ] ;
+  sh:property [ sh:path slm:reason ; sh:minCount 1 ; sh:maxCount 1 ] ;
+  sh:property [ sh:path slm:basisKind ; sh:minCount 1 ; sh:maxCount 1 ] ;
+  sh:property [ sh:path slm:basis ; sh:minCount 1 ; sh:maxCount 1 ] ;
+  sh:property [ sh:path slm:reviewStatus ; sh:minCount 1 ; sh:maxCount 1 ; sh:hasValue "candidate" ] .
+
+slm:CourseRelationShape a sh:NodeShape ;
+  sh:targetClass slm:CourseRelation ;
+  sh:property [ sh:path slm:courseRelationFrom ; sh:minCount 1 ; sh:maxCount 1 ; sh:class slm:Course ] ;
+  sh:property [ sh:path slm:courseRelationTo ; sh:minCount 1 ; sh:maxCount 1 ; sh:class slm:Course ] ;
+  sh:property [ sh:path slm:claimStatus ; sh:minCount 1 ; sh:maxCount 1 ; sh:hasValue "candidate" ] ;
+  sh:property [ sh:path slm:reason ; sh:minCount 1 ; sh:maxCount 1 ] ;
+  sh:property [ sh:path slm:basisKind ; sh:minCount 1 ; sh:maxCount 1 ] ;
+  sh:property [ sh:path slm:basis ; sh:minCount 1 ; sh:maxCount 1 ] ;
+  sh:property [ sh:path slm:reviewStatus ; sh:minCount 1 ; sh:maxCount 1 ; sh:hasValue "candidate" ] ;
+  sh:sparql [
+    sh:message "과목 관계의 양 끝점은 같을 수 없다."@ko ;
+    sh:select "PREFIX slm: <https://dexa.art/learnmap/secondary/ontology#> SELECT $this WHERE { $this slm:courseRelationFrom ?x ; slm:courseRelationTo ?x . }"
+  ] .
+
+slm:ChoiceSetShape a sh:NodeShape ;
+  sh:targetClass slm:ChoiceSet ;
+  sh:property [ sh:path slm:hasCourse ; sh:minCount 1 ; sh:class slm:Course ] ;
+  sh:property [ sh:path slm:choiceKind ; sh:minCount 1 ; sh:maxCount 1 ] ;
+  sh:property [ sh:path slm:minimumSelections ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:integer ; sh:minInclusive 0 ] ;
+  sh:property [ sh:path slm:ruleBasis ; sh:minCount 1 ; sh:maxCount 1 ] .
+
+slm:CreditRuleShape a sh:NodeShape ;
+  sh:targetClass slm:CreditRule ;
+  sh:property [ sh:path slm:effectiveFrom ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:date ] ;
+  sh:property [ sh:path slm:ruleKind ; sh:minCount 1 ; sh:maxCount 1 ] ;
+  sh:property [ sh:path slm:value ; sh:minCount 1 ; sh:maxCount 1 ] ;
+  sh:property [ sh:path slm:unit ; sh:minCount 1 ; sh:maxCount 1 ] ;
+  sh:property [ sh:path slm:hasSource ; sh:minCount 1 ; sh:class slm:SourceDocument ] .
+
+slm:IllustrativePathwayShape a sh:NodeShape ;
+  sh:targetClass slm:IllustrativePathway ;
+  sh:property [ sh:path slm:hasStep ; sh:minCount 1 ; sh:class slm:PathwayStep ] ;
+  sh:property [ sh:path slm:notOfficialRequirement ; sh:minCount 1 ; sh:maxCount 1 ; sh:hasValue true ] .
+
+slm:PathwayStepShape a sh:NodeShape ;
+  sh:targetClass slm:PathwayStep ;
+  sh:property [ sh:path slm:stepOrder ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:integer ; sh:minInclusive 1 ] ;
+  sh:property [ sh:path slm:stepKind ; sh:minCount 1 ; sh:maxCount 1 ] ;
+  sh:property [ sh:path slm:reason ; sh:minCount 1 ; sh:maxCount 1 ] ;
+  sh:or (
+    [ sh:property [ sh:path slm:stepCourse ; sh:minCount 1 ; sh:class slm:Course ] ]
+    [ sh:property [ sh:path slm:stepChoiceSet ; sh:minCount 1 ; sh:maxCount 1 ; sh:class slm:ChoiceSet ] ]
+  ) .
+
+slm:SourceDocumentShape a sh:NodeShape ;
+  sh:targetClass slm:SourceDocument ;
+  sh:property [ sh:path slm:sourceUrl ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:anyURI ] ;
+  sh:property [ sh:path slm:attachmentNumber ; sh:minCount 1 ; sh:maxCount 1 ] ;
+  sh:property [ sh:path slm:fileSha256 ; sh:minCount 1 ; sh:maxCount 1 ; sh:pattern "^[a-f0-9]{64}$" ] ;
+  sh:property [ sh:path slm:rightsStatus ; sh:minCount 1 ; sh:maxCount 1 ] .
+
+slm:CoverageGapShape a sh:NodeShape ;
+  sh:targetClass slm:CoverageGap ;
+  sh:property [ sh:path slm:severity ; sh:minCount 1 ; sh:maxCount 1 ; sh:in ("low" "medium" "high" "critical") ] ;
+  sh:property [ sh:path slm:status ; sh:minCount 1 ; sh:maxCount 1 ; sh:in ("open" "in-progress" "closed" "accepted") ] .

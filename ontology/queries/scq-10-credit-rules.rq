@@ -1,0 +1,2 @@
+PREFIX slm: <https://dexa.art/learnmap/secondary/ontology#>
+SELECT ?rule ?kind ?value ?unit ?effectiveFrom ?effectiveTo ?status WHERE { ?rule a slm:CreditRule ; slm:ruleKind ?kind ; slm:value ?value ; slm:unit ?unit ; slm:effectiveFrom ?effectiveFrom ; slm:verificationStatus ?status . OPTIONAL { ?rule slm:effectiveTo ?effectiveTo } }

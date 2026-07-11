@@ -1,0 +1,433 @@
+{
+  "$schema": "../../../schema/high-profile.schema.json#/$defs/subjectGroupCollection",
+  "profile": "high",
+  "recordCount": 34,
+  "records": [
+    {
+      "id": "kr.subject-group.2022.high.dae189bfba1b",
+      "labelEnglish": null,
+      "labelKorean": "건축·토목",
+      "reviewStatus": "candidate",
+      "schoolLevel": "high",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex29"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "id": "kr.subject-group.2022.high.f4ccd3ad0d06",
+      "labelEnglish": null,
+      "labelKorean": "경영·금융",
+      "reviewStatus": "candidate",
+      "schoolLevel": "high",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex23"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "id": "kr.subject-group.2022.high.b494fc31b290",
+      "labelEnglish": null,
+      "labelKorean": "과학",
+      "reviewStatus": "candidate",
+      "schoolLevel": "high",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "id": "kr.subject-group.2022.high.3ba580ed9d9f",
+      "labelEnglish": null,
+      "labelKorean": "과학 계열",
+      "reviewStatus": "candidate",
+      "schoolLevel": "high",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex20"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "id": "kr.subject-group.2022.high.13e6e4216fb9",
+      "labelEnglish": null,
+      "labelKorean": "관광·레저",
+      "reviewStatus": "candidate",
+      "schoolLevel": "high",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex27"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "id": "kr.subject-group.2022.high.ee97380efe5d",
+      "labelEnglish": null,
+      "labelKorean": "교양",
+      "reviewStatus": "candidate",
+      "schoolLevel": "high",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex19"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "id": "kr.subject-group.2022.high.9db1bbd2b80a",
+      "labelEnglish": null,
+      "labelKorean": "국어",
+      "reviewStatus": "candidate",
+      "schoolLevel": "high",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "id": "kr.subject-group.2022.high.5eb260fa2e31",
+      "labelEnglish": null,
+      "labelKorean": "기계",
+      "reviewStatus": "candidate",
+      "schoolLevel": "high",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex30"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "id": "kr.subject-group.2022.high.9f1e2c59c8f5",
+      "labelEnglish": null,
+      "labelKorean": "기술·가정/정보",
+      "reviewStatus": "candidate",
+      "schoolLevel": "high",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex10"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "id": "kr.subject-group.2022.high.23de79b30476",
+      "labelEnglish": null,
+      "labelKorean": "농림·축산",
+      "reviewStatus": "candidate",
+      "schoolLevel": "high",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex37"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "id": "kr.subject-group.2022.high.6c837d3b7998",
+      "labelEnglish": null,
+      "labelKorean": "도덕",
+      "reviewStatus": "candidate",
+      "schoolLevel": "high",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex6"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "id": "kr.subject-group.2022.high.847d6625a171",
+      "labelEnglish": null,
+      "labelKorean": "문화·예술·디자인·방송",
+      "reviewStatus": "candidate",
+      "schoolLevel": "high",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex25"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "id": "kr.subject-group.2022.high.e5f3334a3919",
+      "labelEnglish": null,
+      "labelKorean": "미술",
+      "reviewStatus": "candidate",
+      "schoolLevel": "high",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex13"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "id": "kr.subject-group.2022.high.dd7d094046ca",
+      "labelEnglish": null,
+      "labelKorean": "미용",
+      "reviewStatus": "candidate",
+      "schoolLevel": "high",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex26"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "id": "kr.subject-group.2022.high.849501889b35",
+      "labelEnglish": null,
+      "labelKorean": "보건·복지",
+      "reviewStatus": "candidate",
+      "schoolLevel": "high",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex24"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "id": "kr.subject-group.2022.high.e5da83050ede",
+      "labelEnglish": null,
+      "labelKorean": "사회(역사 포함)",
+      "reviewStatus": "candidate",
+      "schoolLevel": "high",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "id": "kr.subject-group.2022.high.b0ad10f27371",
+      "labelEnglish": null,
+      "labelKorean": "섬유·의류",
+      "reviewStatus": "candidate",
+      "schoolLevel": "high",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex33"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "id": "kr.subject-group.2022.high.c69b38cdff81",
+      "labelEnglish": null,
+      "labelKorean": "수산·해운",
+      "reviewStatus": "candidate",
+      "schoolLevel": "high",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex38"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "id": "kr.subject-group.2022.high.5c67e8578836",
+      "labelEnglish": null,
+      "labelKorean": "수학",
+      "reviewStatus": "candidate",
+      "schoolLevel": "high",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex8"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "id": "kr.subject-group.2022.high.cfe79a386306",
+      "labelEnglish": null,
+      "labelKorean": "식품·조리",
+      "reviewStatus": "candidate",
+      "schoolLevel": "high",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex28"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "id": "kr.subject-group.2022.high.9a37f8fdb58c",
+      "labelEnglish": null,
+      "labelKorean": "영어",
+      "reviewStatus": "candidate",
+      "schoolLevel": "high",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex14"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "id": "kr.subject-group.2022.high.9561de82cb3a",
+      "labelEnglish": null,
+      "labelKorean": "예술 계열",
+      "reviewStatus": "candidate",
+      "schoolLevel": "high",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex22"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "id": "kr.subject-group.2022.high.3ea8788c5196",
+      "labelEnglish": null,
+      "labelKorean": "융복합·지식재산",
+      "reviewStatus": "candidate",
+      "schoolLevel": "high",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex39"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "id": "kr.subject-group.2022.high.88caa317d968",
+      "labelEnglish": null,
+      "labelKorean": "음악",
+      "reviewStatus": "candidate",
+      "schoolLevel": "high",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex12"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "id": "kr.subject-group.2022.high.cff206505c96",
+      "labelEnglish": null,
+      "labelKorean": "재료",
+      "reviewStatus": "candidate",
+      "schoolLevel": "high",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex31"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "id": "kr.subject-group.2022.high.ffc531276f34",
+      "labelEnglish": null,
+      "labelKorean": "전기·전자",
+      "reviewStatus": "candidate",
+      "schoolLevel": "high",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex34"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "id": "kr.subject-group.2022.high.154090442994",
+      "labelEnglish": null,
+      "labelKorean": "전문 공통",
+      "reviewStatus": "candidate",
+      "schoolLevel": "high",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex23",
+        "kr-nec-2024-3-annex24",
+        "kr-nec-2024-3-annex25",
+        "kr-nec-2024-3-annex26",
+        "kr-nec-2024-3-annex27",
+        "kr-nec-2024-3-annex28",
+        "kr-nec-2024-3-annex29",
+        "kr-nec-2024-3-annex30",
+        "kr-nec-2024-3-annex31",
+        "kr-nec-2024-3-annex32",
+        "kr-nec-2024-3-annex33",
+        "kr-nec-2024-3-annex34",
+        "kr-nec-2024-3-annex35",
+        "kr-nec-2024-3-annex36",
+        "kr-nec-2024-3-annex37",
+        "kr-nec-2024-3-annex38",
+        "kr-nec-2024-3-annex39"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "id": "kr.subject-group.2022.high.26ed4f99d358",
+      "labelEnglish": null,
+      "labelKorean": "정보·통신",
+      "reviewStatus": "candidate",
+      "schoolLevel": "high",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex35"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "id": "kr.subject-group.2022.high.42f8425e7cb0",
+      "labelEnglish": null,
+      "labelKorean": "제2외국어",
+      "reviewStatus": "candidate",
+      "schoolLevel": "high",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "id": "kr.subject-group.2022.high.04ad2ed3e42c",
+      "labelEnglish": null,
+      "labelKorean": "체육",
+      "reviewStatus": "candidate",
+      "schoolLevel": "high",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "id": "kr.subject-group.2022.high.790e466d4ed8",
+      "labelEnglish": null,
+      "labelKorean": "체육 계열",
+      "reviewStatus": "candidate",
+      "schoolLevel": "high",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex21"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "id": "kr.subject-group.2022.high.5b1b6ca062fb",
+      "labelEnglish": null,
+      "labelKorean": "한문",
+      "reviewStatus": "candidate",
+      "schoolLevel": "high",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex17"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "id": "kr.subject-group.2022.high.86063735592b",
+      "labelEnglish": null,
+      "labelKorean": "화학공업",
+      "reviewStatus": "candidate",
+      "schoolLevel": "high",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex32"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "id": "kr.subject-group.2022.high.078658d9dc8a",
+      "labelEnglish": null,
+      "labelKorean": "환경·안전·소방",
+      "reviewStatus": "candidate",
+      "schoolLevel": "high",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex36"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "official-source-checked"
+    }
+  ],
+  "recordType": "subjectGroups",
+  "releaseId": "kr-2022-high-v0.2.0-candidate"
+}

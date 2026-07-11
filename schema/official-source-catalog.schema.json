@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dexa.art/learnmap/schema/secondary/official-source-catalog.schema.json",
+  "title": "Korean Secondary Learning Map — curated official source catalog",
+  "type": "object",
+  "required": ["$schema", "catalogVersion", "sourceCount", "downloadEndpoint", "sessionPage", "sources"],
+  "properties": {
+    "$schema": { "type": "string", "format": "uri-reference" },
+    "catalogVersion": { "type": "string", "format": "date" },
+    "sourceCount": { "type": "integer", "minimum": 1 },
+    "downloadEndpoint": { "type": "string", "format": "uri" },
+    "sessionPage": { "type": "string", "format": "uri" },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "annex", "profileScopes", "filePath", "storedName", "originalName", "attachmentNo", "governingNotice", "selectionReason"],
+        "properties": {
+          "id": { "$ref": "core.schema.json#/$defs/stableId" },
+          "annex": { "type": "integer", "minimum": 1, "maximum": 41 },
+          "profileScopes": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "enum": ["middle", "high"] } },
+          "filePath": { "type": "string", "pattern": "^/data/uploads/" },
+          "storedName": { "type": "string", "pattern": "^[A-Za-z0-9-]+\\.pdf$" },
+          "originalName": { "type": "string", "minLength": 5 },
+          "attachmentNo": { "type": "string", "pattern": "^[0-9]+$" },
+          "governingNotice": { "type": "string", "minLength": 5 },
+          "selectionReason": { "type": "string", "minLength": 5 }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

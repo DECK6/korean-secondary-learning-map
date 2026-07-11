@@ -1,0 +1,2 @@
+PREFIX slm: <https://dexa.art/learnmap/secondary/ontology#>
+SELECT ?set ?kind ?minimum ?maximum ?course ?basis WHERE { ?set a slm:ChoiceSet ; slm:choiceKind ?kind ; slm:minimumSelections ?minimum ; slm:hasCourse ?course ; slm:ruleBasis ?basis . OPTIONAL { ?set slm:maximumSelections ?maximum } }

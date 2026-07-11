@@ -1,0 +1,8 @@
+{
+  "$schema": "../../../schema/middle-profile.schema.json#/$defs/reviewRecordCollection",
+  "profile": "middle",
+  "recordCount": 0,
+  "records": [],
+  "recordType": "reviewRecords",
+  "releaseId": "kr-2022-middle-v0.2.0-candidate"
+}

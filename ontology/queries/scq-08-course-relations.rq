@@ -1,0 +1,2 @@
+PREFIX slm: <https://dexa.art/learnmap/secondary/ontology#>
+SELECT ?relation ?from ?to ?kind ?reason ?basis WHERE { ?relation a slm:CourseRelation ; slm:courseRelationFrom ?from ; slm:courseRelationTo ?to ; slm:relationKind ?kind ; slm:reason ?reason ; slm:basis ?basis . }

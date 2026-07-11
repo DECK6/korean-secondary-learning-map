@@ -1,0 +1,2 @@
+PREFIX slm: <https://dexa.art/learnmap/secondary/ontology#>
+SELECT ?course ?offering WHERE { ?course a slm:Course . OPTIONAL { ?offering a slm:CourseOffering ; slm:offeringOf ?course . } }

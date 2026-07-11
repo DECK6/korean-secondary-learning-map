@@ -1,0 +1,2 @@
+PREFIX slm: <https://dexa.art/learnmap/secondary/ontology#>
+SELECT ?claim ?kind WHERE { ?claim slm:reviewStatus "candidate" ; slm:relationKind ?kind . }

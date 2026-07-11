@@ -1,0 +1,9 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://dexa.art/learnmap/secondary/ontology> a owl:Ontology ;
+  dct:title "대한민국 2022 개정 중등교육 학습지도 온톨로지"@ko ;
+  dct:created "2026-07-11"^^xsd:date ;
+  dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  dct:rights "온톨로지 구조와 코드의 라이선스이며, 공식 교육과정 PDF 원문 권리를 포함하지 않는다."@ko .

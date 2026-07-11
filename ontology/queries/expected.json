@@ -1,0 +1,38 @@
+{
+  "version": "0.2.0-candidate",
+  "queryCount": 20,
+  "results": {
+    "scq-01-courses": 783,
+    "scq-02-course-standards-topics": 51463,
+    "scq-03-standard-alignments": 51463,
+    "scq-04-evidence-prompts": 51463,
+    "scq-05-learning-relations": 0,
+    "scq-06-relation-review": 871,
+    "scq-07-middle-high-transition": 398,
+    "scq-08-course-relations": 473,
+    "scq-09-choice-sets": 719,
+    "scq-10-credit-rules": 3,
+    "scq-11-course-offerings": 783,
+    "scq-12-unspecified-grade": 759,
+    "scq-13-illustrative-pathways": 70,
+    "scq-14-alternatives": 719,
+    "scq-15-source-locators": 51463,
+    "scq-16-independent-status": 114433,
+    "scq-17-coverage-gaps": 5,
+    "scq-18-candidate-review-queue": 871,
+    "scq-19-elementary-bridge": 0,
+    "scq-20-no-learner-data": true
+  },
+  "invariants": {
+    "scq-01": "course count equals middle+high release course counts",
+    "scq-02": "every standard has a materialized domain and a topic alignment",
+    "scq-05": "unreviewed code-order prerequisite claims are not generated",
+    "scq-07": "transition count equals the course-level bridge release count",
+    "scq-09": "choice rows include kind, minimum, optional maximum, course, and basis",
+    "scq-10": "three effective high-school credit rules include kind, value, unit, and dates",
+    "scq-13": "illustrative pathways return step order, kind, reason, and course or choice set",
+    "scq-15": "every official standard locator returns page, attachment, SHA-256, section, and source",
+    "scq-19": "elementary bridge remains outside this release and therefore returns zero",
+    "scq-20": true
+  }
+}

@@ -1,0 +1,417 @@
+{
+  "$schema": "../../../schema/middle-profile.schema.json#/$defs/courseCollection",
+  "profile": "middle",
+  "recordCount": 24,
+  "records": [
+    {
+      "courseCategory": "common",
+      "gradeScope": [
+        "7-9"
+      ],
+      "id": "kr.course.2022.middle.aaaae5ae7d8548a8",
+      "labelEnglish": null,
+      "labelKorean": "과학",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "sourceTextIncluded": false,
+      "subjectGroupId": "kr.subject-group.2022.middle.b494fc31b290",
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "courseCategory": "common",
+      "gradeScope": [
+        "7-9"
+      ],
+      "id": "kr.course.2022.middle.a0f8efae1e2bd119",
+      "labelEnglish": null,
+      "labelKorean": "국어",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "sourceTextIncluded": false,
+      "subjectGroupId": "kr.subject-group.2022.middle.9db1bbd2b80a",
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "courseCategory": "common",
+      "gradeScope": [
+        "7-9"
+      ],
+      "id": "kr.course.2022.middle.92c889afa560b9d8",
+      "labelEnglish": null,
+      "labelKorean": "기술·가정",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex10"
+      ],
+      "sourceTextIncluded": false,
+      "subjectGroupId": "kr.subject-group.2022.middle.9f1e2c59c8f5",
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "courseCategory": "common",
+      "gradeScope": [
+        "7-9"
+      ],
+      "id": "kr.course.2022.middle.07f3bfc5942e5a74",
+      "labelEnglish": null,
+      "labelKorean": "도덕",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex6"
+      ],
+      "sourceTextIncluded": false,
+      "subjectGroupId": "kr.subject-group.2022.middle.6c837d3b7998",
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "courseCategory": "common",
+      "gradeScope": [
+        "7-9"
+      ],
+      "id": "kr.course.2022.middle.570335cd5c8192d8",
+      "labelEnglish": null,
+      "labelKorean": "미술",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex13"
+      ],
+      "sourceTextIncluded": false,
+      "subjectGroupId": "kr.subject-group.2022.middle.e5f3334a3919",
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "courseCategory": "middle-elective",
+      "gradeScope": [
+        "7-9"
+      ],
+      "id": "kr.course.2022.middle.9cd4d075bde4ad85",
+      "labelEnglish": null,
+      "labelKorean": "보건",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex18"
+      ],
+      "sourceTextIncluded": false,
+      "subjectGroupId": "kr.subject-group.2022.middle.7d17d0cf8f4c",
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "courseCategory": "common",
+      "gradeScope": [
+        "7-9"
+      ],
+      "id": "kr.course.2022.middle.dccd29079b173ca0",
+      "labelEnglish": null,
+      "labelKorean": "사회",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "subjectGroupId": "kr.subject-group.2022.middle.e5da83050ede",
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "courseCategory": "middle-elective",
+      "gradeScope": [
+        "7-9"
+      ],
+      "id": "kr.course.2022.middle.66de94cebc86b61e",
+      "labelEnglish": null,
+      "labelKorean": "생활 독일어",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "subjectGroupId": "kr.subject-group.2022.middle.42f8425e7cb0",
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "courseCategory": "middle-elective",
+      "gradeScope": [
+        "7-9"
+      ],
+      "id": "kr.course.2022.middle.2178b9d0de944d75",
+      "labelEnglish": null,
+      "labelKorean": "생활 러시아어",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "subjectGroupId": "kr.subject-group.2022.middle.42f8425e7cb0",
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "courseCategory": "middle-elective",
+      "gradeScope": [
+        "7-9"
+      ],
+      "id": "kr.course.2022.middle.71b0ac4b7d3259ff",
+      "labelEnglish": null,
+      "labelKorean": "생활 베트남어",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "subjectGroupId": "kr.subject-group.2022.middle.42f8425e7cb0",
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "courseCategory": "middle-elective",
+      "gradeScope": [
+        "7-9"
+      ],
+      "id": "kr.course.2022.middle.7b40e7aeddb08bc4",
+      "labelEnglish": null,
+      "labelKorean": "생활 스페인어",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "subjectGroupId": "kr.subject-group.2022.middle.42f8425e7cb0",
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "courseCategory": "middle-elective",
+      "gradeScope": [
+        "7-9"
+      ],
+      "id": "kr.course.2022.middle.8783223c83ba74b3",
+      "labelEnglish": null,
+      "labelKorean": "생활 아랍어",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "subjectGroupId": "kr.subject-group.2022.middle.42f8425e7cb0",
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "courseCategory": "middle-elective",
+      "gradeScope": [
+        "7-9"
+      ],
+      "id": "kr.course.2022.middle.91407698abb03db8",
+      "labelEnglish": null,
+      "labelKorean": "생활 일본어",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "subjectGroupId": "kr.subject-group.2022.middle.42f8425e7cb0",
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "courseCategory": "middle-elective",
+      "gradeScope": [
+        "7-9"
+      ],
+      "id": "kr.course.2022.middle.19401e7f882c4108",
+      "labelEnglish": null,
+      "labelKorean": "생활 중국어",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "subjectGroupId": "kr.subject-group.2022.middle.42f8425e7cb0",
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "courseCategory": "middle-elective",
+      "gradeScope": [
+        "7-9"
+      ],
+      "id": "kr.course.2022.middle.333940c638f6d1b2",
+      "labelEnglish": null,
+      "labelKorean": "생활 프랑스어",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "subjectGroupId": "kr.subject-group.2022.middle.42f8425e7cb0",
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "courseCategory": "common",
+      "gradeScope": [
+        "7-9"
+      ],
+      "id": "kr.course.2022.middle.373e9959b3cc1af3",
+      "labelEnglish": null,
+      "labelKorean": "수학",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex8"
+      ],
+      "sourceTextIncluded": false,
+      "subjectGroupId": "kr.subject-group.2022.middle.5c67e8578836",
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "courseCategory": "common",
+      "gradeScope": [
+        "7-9"
+      ],
+      "id": "kr.course.2022.middle.718b305249a94a92",
+      "labelEnglish": null,
+      "labelKorean": "역사",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "subjectGroupId": "kr.subject-group.2022.middle.e5da83050ede",
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "courseCategory": "common",
+      "gradeScope": [
+        "7-9"
+      ],
+      "id": "kr.course.2022.middle.fb948cdadbdc5da1",
+      "labelEnglish": null,
+      "labelKorean": "영어",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex14"
+      ],
+      "sourceTextIncluded": false,
+      "subjectGroupId": "kr.subject-group.2022.middle.9a37f8fdb58c",
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "courseCategory": "common",
+      "gradeScope": [
+        "7-9"
+      ],
+      "id": "kr.course.2022.middle.b39f1ce9e94d344f",
+      "labelEnglish": null,
+      "labelKorean": "음악",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex12"
+      ],
+      "sourceTextIncluded": false,
+      "subjectGroupId": "kr.subject-group.2022.middle.88caa317d968",
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "courseCategory": "common",
+      "gradeScope": [
+        "7-9"
+      ],
+      "id": "kr.course.2022.middle.c197990b3a23fdd2",
+      "labelEnglish": null,
+      "labelKorean": "정보",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex10"
+      ],
+      "sourceTextIncluded": false,
+      "subjectGroupId": "kr.subject-group.2022.middle.9f1e2c59c8f5",
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "courseCategory": "middle-elective",
+      "gradeScope": [
+        "7-9"
+      ],
+      "id": "kr.course.2022.middle.4edb870c5459d216",
+      "labelEnglish": null,
+      "labelKorean": "진로와 직업",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex18"
+      ],
+      "sourceTextIncluded": false,
+      "subjectGroupId": "kr.subject-group.2022.middle.7d17d0cf8f4c",
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "courseCategory": "common",
+      "gradeScope": [
+        "7-9"
+      ],
+      "id": "kr.course.2022.middle.fa59961d660b0ad4",
+      "labelEnglish": null,
+      "labelKorean": "체육",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "sourceTextIncluded": false,
+      "subjectGroupId": "kr.subject-group.2022.middle.04ad2ed3e42c",
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "courseCategory": "middle-elective",
+      "gradeScope": [
+        "7-9"
+      ],
+      "id": "kr.course.2022.middle.43316f44a956438c",
+      "labelEnglish": null,
+      "labelKorean": "한문",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex17"
+      ],
+      "sourceTextIncluded": false,
+      "subjectGroupId": "kr.subject-group.2022.middle.5b1b6ca062fb",
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "courseCategory": "middle-elective",
+      "gradeScope": [
+        "7-9"
+      ],
+      "id": "kr.course.2022.middle.ec48c1127e519a2e",
+      "labelEnglish": null,
+      "labelKorean": "환경",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex18"
+      ],
+      "sourceTextIncluded": false,
+      "subjectGroupId": "kr.subject-group.2022.middle.7d17d0cf8f4c",
+      "verificationStatus": "official-source-checked"
+    }
+  ],
+  "recordType": "courses",
+  "releaseId": "kr-2022-middle-v0.2.0-candidate"
+}

@@ -1,0 +1,165 @@
+{
+  "$schema": "../../../schema/middle-profile.schema.json#/$defs/subjectGroupCollection",
+  "profile": "middle",
+  "recordCount": 13,
+  "records": [
+    {
+      "id": "kr.subject-group.2022.middle.b494fc31b290",
+      "labelEnglish": null,
+      "labelKorean": "과학",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "id": "kr.subject-group.2022.middle.9db1bbd2b80a",
+      "labelEnglish": null,
+      "labelKorean": "국어",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "id": "kr.subject-group.2022.middle.9f1e2c59c8f5",
+      "labelEnglish": null,
+      "labelKorean": "기술·가정/정보",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex10"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "id": "kr.subject-group.2022.middle.6c837d3b7998",
+      "labelEnglish": null,
+      "labelKorean": "도덕",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex6"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "id": "kr.subject-group.2022.middle.e5f3334a3919",
+      "labelEnglish": null,
+      "labelKorean": "미술",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex13"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "id": "kr.subject-group.2022.middle.e5da83050ede",
+      "labelEnglish": null,
+      "labelKorean": "사회(역사 포함)",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "id": "kr.subject-group.2022.middle.5c67e8578836",
+      "labelEnglish": null,
+      "labelKorean": "수학",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex8"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "id": "kr.subject-group.2022.middle.9a37f8fdb58c",
+      "labelEnglish": null,
+      "labelKorean": "영어",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex14"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "id": "kr.subject-group.2022.middle.88caa317d968",
+      "labelEnglish": null,
+      "labelKorean": "음악",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex12"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "id": "kr.subject-group.2022.middle.42f8425e7cb0",
+      "labelEnglish": null,
+      "labelKorean": "제2외국어",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "id": "kr.subject-group.2022.middle.7d17d0cf8f4c",
+      "labelEnglish": null,
+      "labelKorean": "중학교 선택",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex18"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "id": "kr.subject-group.2022.middle.04ad2ed3e42c",
+      "labelEnglish": null,
+      "labelKorean": "체육",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "official-source-checked"
+    },
+    {
+      "id": "kr.subject-group.2022.middle.5b1b6ca062fb",
+      "labelEnglish": null,
+      "labelKorean": "한문",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex17"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "official-source-checked"
+    }
+  ],
+  "recordType": "subjectGroups",
+  "releaseId": "kr-2022-middle-v0.2.0-candidate"
+}

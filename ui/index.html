@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="대한민국 2022 개정 중학교·고등학교 교육과정 학습지도">
+  <title>중등교육 학습지도</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+  <header class="hero">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <nav class="topbar" aria-label="서비스 정보">
+      <a class="brand" href="#">DEXA · LEARNING MAP</a>
+      <span class="status"><i aria-hidden="true"></i> 2022 개정 · 후보 릴리스</span>
+    </nav>
+    <div class="hero__copy">
+      <p class="eyebrow">MIDDLE × HIGH SCHOOL</p>
+      <h1>중등교육의 길을<br><em>한눈에 잇다.</em></h1>
+      <p class="lede">중학교의 기반에서 고등학교의 공통·선택·전문 과목까지. 공식 성취기준과 검토 가능한 전이 관계를 단계별로 탐색합니다.</p>
+    </div>
+    <div id="stats" class="stats" aria-label="데이터 요약"></div>
+  </header>
+
+  <main id="main">
+    <section class="notice" aria-label="중요 안내">
+      <strong>읽기 전에</strong>
+      <p>이 지도는 교육과정 탐색 도구입니다. 학교별 개설 과목이나 공식 이수 요건을 대신하지 않으며, 관계와 경로는 전문가 검토 전 후보입니다.</p>
+    </section>
+
+    <div class="tabs" role="tablist" aria-label="학습지도 보기">
+      <button role="tab" aria-selected="true" aria-controls="explorer" id="tab-explorer" data-tab="explorer">과목 탐색</button>
+      <button role="tab" aria-selected="false" aria-controls="transitions" id="tab-transitions" data-tab="transitions">중→고 전이</button>
+      <button role="tab" aria-selected="false" aria-controls="compare" id="tab-compare" data-tab="compare">과목 비교</button>
+      <button role="tab" aria-selected="false" aria-controls="pathways" id="tab-pathways" data-tab="pathways">경로 안내</button>
+      <button role="tab" aria-selected="false" aria-controls="provenance" id="tab-provenance" data-tab="provenance">근거·한계</button>
+    </div>
+
+    <section id="explorer" class="panel tab-panel" role="tabpanel" aria-labelledby="tab-explorer">
+      <div class="section-heading"><div><p class="eyebrow">L0 → L5 PROGRESSIVE DISCLOSURE</p><h2>과목에서 근거까지 내려가기</h2></div><p>학교급과 교과군을 고른 뒤 과목을 열면 성취기준, 주제, 학습 증거, 출처 위치가 이어집니다.</p></div>
+      <div class="filters" aria-label="과목 필터">
+        <label>학교급<select id="level-filter"><option value="all">중·고 전체</option><option value="middle">중학교</option><option value="high">고등학교</option></select></label>
+        <label>교과군<select id="group-filter"><option value="all">전체 교과군</option></select></label>
+        <label>과목 범주<select id="category-filter"><option value="all">전체 범주</option></select></label>
+        <label class="search-label">과목 검색<input id="course-search" type="search" placeholder="예: 공통수학, 생명과학, 조리" autocomplete="off"></label>
+      </div>
+      <div class="explorer-grid">
+        <div class="course-list-wrap"><div class="list-meta"><strong id="course-result-count">0개 과목</strong><span>Enter로 상세 열기</span></div><div id="course-list" class="course-list" aria-live="polite"></div></div>
+        <article id="course-detail" class="detail empty"><p class="eyebrow">COURSE DETAIL</p><h3>과목을 선택하세요</h3><p>왼쪽 목록에서 과목을 열면 교육과정 계층과 근거가 표시됩니다.</p></article>
+      </div>
+    </section>
+
+    <section id="transitions" class="panel tab-panel" role="tabpanel" aria-labelledby="tab-transitions" hidden>
+      <div class="section-heading"><div><p class="eyebrow">BRIDGE RELEASE</p><h2>중학교에서 고등학교로</h2></div><p>같은 교과군 안에서 어떤 중학교 주제가 고등학교 과목을 준비하는지 보여 주는 검토 후보입니다.</p></div>
+      <div class="filters compact"><label>교과군<select id="transition-group"><option value="all">전체 교과군</option></select></label><label class="search-label">전이 검색<input id="transition-search" type="search" placeholder="주제나 고등학교 과목"></label></div>
+      <div id="transition-list" class="transition-list"></div>
+    </section>
+
+    <section id="compare" class="panel tab-panel" role="tabpanel" aria-labelledby="tab-compare" hidden>
+      <div class="section-heading"><div><p class="eyebrow">SIDE BY SIDE</p><h2>두 과목 구조 비교</h2></div><p>학교급·범주·성취기준 수를 비교합니다. 수량이 난이도나 중요도를 뜻하지는 않습니다.</p></div>
+      <div class="compare-pickers"><label>첫 번째 과목<select id="compare-a"></select></label><span aria-hidden="true">↔</span><label>두 번째 과목<select id="compare-b"></select></label></div>
+      <div id="compare-grid" class="compare-grid"></div>
+    </section>
+
+    <section id="pathways" class="panel tab-panel" role="tabpanel" aria-labelledby="tab-pathways" hidden>
+      <div class="section-heading"><div><p class="eyebrow">ILLUSTRATIVE · NOT OFFICIAL</p><h2>선택 과목을 살펴보는 예시 경로</h2></div><p>진로 관심사별 공식 요건이 아니라, 관련 선택지를 나란히 검토하기 위한 출발점입니다.</p></div>
+      <div class="candidate-banner"><strong>공식 필수 요건 아님</strong><span>모든 경로는 candidate 상태이며 학교 교육과정 편성과 상담을 함께 확인해야 합니다.</span></div>
+      <div id="pathway-list" class="pathway-list"></div>
+    </section>
+
+    <section id="provenance" class="panel tab-panel" role="tabpanel" aria-labelledby="tab-provenance" hidden>
+      <div class="section-heading"><div><p class="eyebrow">PROVENANCE & RIGHTS</p><h2>무엇을 확인했고, 무엇은 아직인가</h2></div></div>
+      <div id="boundary-list" class="boundary-grid"></div>
+      <div class="provenance-card"><h3>검증 상태는 세 축으로 나뉩니다</h3><dl><div><dt>공식 코드 확인</dt><dd>NCIC 공식 PDF의 첨부 번호·SHA-256·페이지와 연결</dd></div><div><dt>교육적 해석</dt><dd>세부 주제·관계·경로는 자동 생성 후보, 전문가 검토 대기</dd></div><div><dt>권리 상태</dt><dd>원문 비포함. 문서별 재사용 검토 전까지 HOLD</dd></div></dl></div>
+    </section>
+  </main>
+
+  <footer><span>대한민국 2022 개정 중등교육 학습지도</span><span id="footer-version"></span></footer>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

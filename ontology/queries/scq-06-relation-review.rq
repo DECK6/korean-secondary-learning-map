@@ -1,0 +1,2 @@
+PREFIX slm: <https://dexa.art/learnmap/secondary/ontology#>
+SELECT ?relation ?status ?reason ?basis WHERE { VALUES ?type { slm:LearningRelation slm:CourseRelation slm:TransitionAlignment } ?relation a ?type ; slm:reviewStatus ?status ; slm:reason ?reason ; slm:basis ?basis . }

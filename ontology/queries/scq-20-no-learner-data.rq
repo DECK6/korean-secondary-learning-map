@@ -1,0 +1,2 @@
+PREFIX slm: <https://dexa.art/learnmap/secondary/ontology#>
+ASK { FILTER NOT EXISTS { ?person a slm:Learner . } }

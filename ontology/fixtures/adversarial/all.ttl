@@ -1,0 +1,15 @@
+@prefix bad: <https://dexa.art/learnmap/secondary/fixture/bad/> .
+@prefix old: <https://dexa.art/learnmap/#/> .
+@prefix slm: <https://dexa.art/learnmap/secondary/ontology#> .
+
+bad:grade-forced a slm:Course ; slm:schoolLevel "high" ; slm:grade "10" ; slm:courseCategory "common" ; slm:inSubjectGroup bad:group .
+bad:offering-conflation a slm:Course, slm:CourseOffering ; slm:courseCategory "common" ; slm:inSubjectGroup bad:group .
+bad:officialized-candidate a slm:LearningRelation ; slm:relationKind "official-prerequisite" ; slm:reviewStatus "candidate" ; slm:prerequisiteTopic bad:t1 ; slm:dependentTopic bad:t2 .
+bad:category-missing a slm:Course ; slm:schoolLevel "high" ; slm:inSubjectGroup bad:group .
+bad:locator-missing a slm:AchievementStandard ; slm:officialCode "[12가01-01]" ; slm:verificationStatus "official-source-checked" ; slm:inCourse bad:category-missing .
+bad:duplicate-a a slm:LearningRelation ; slm:prerequisiteTopic bad:t1 ; slm:dependentTopic bad:t2 ; slm:relationKind "recommended-before" ; slm:reviewStatus "candidate" .
+bad:duplicate-b a slm:LearningRelation ; slm:prerequisiteTopic bad:t1 ; slm:dependentTopic bad:t2 ; slm:relationKind "recommended-before" ; slm:reviewStatus "candidate" .
+bad:path-boundary-missing a slm:IllustrativePathway ; slm:reviewStatus "candidate" .
+bad:reminted-elementary a slm:LearningTopic ; slm:replaces <https://dexa.art/learnmap/#/topic/elementary-p3-id> .
+bad:rights-auto-release a slm:CurriculumRelease ; slm:rightsStatus "released" ; slm:verificationStatus "formal-validation-passed" .
+bad:self-cycle a slm:LearningRelation ; slm:prerequisiteTopic bad:t1 ; slm:dependentTopic bad:t1 ; slm:relationKind "required-before" ; slm:reviewStatus "candidate" .

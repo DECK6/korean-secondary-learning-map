@@ -1,0 +1,8 @@
+{
+  "$schema": "../../../schema/high-profile.schema.json#/$defs/learningRelationCollection",
+  "profile": "high",
+  "recordCount": 0,
+  "records": [],
+  "recordType": "learningRelations",
+  "releaseId": "kr-2022-high-v0.2.0-candidate"
+}

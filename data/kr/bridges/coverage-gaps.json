@@ -1,0 +1,16 @@
+{
+  "$schema": "../../../schema/bridge-profile.schema.json#/$defs/coverageGapCollection",
+  "profile": "bridges",
+  "recordCount": 1,
+  "records": [
+    {
+      "description": "중학교→고등학교 전이 관계는 동일 교과군의 과정 수준 후보이며 주제 수준 의미를 주장하지 않는다. 교과 전문가 검토가 필요하다.",
+      "id": "gap.bridges.transition-review-pending",
+      "severity": "high",
+      "sourceRefs": [],
+      "status": "open"
+    }
+  ],
+  "recordType": "coverageGaps",
+  "releaseId": "kr-2022-middle-high-bridge-v0.2.0-candidate"
+}

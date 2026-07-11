@@ -1,0 +1,1946 @@
+{
+  "$schema": "../../../schema/middle-profile.schema.json#/$defs/domainCollection",
+  "profile": "middle",
+  "recordCount": 149,
+  "records": [
+    {
+      "courseId": "kr.course.2022.middle.b39f1ce9e94d344f",
+      "id": "kr.domain.2022.middle.5816eed92dd980c7",
+      "labelEnglish": null,
+      "labelKorean": "감상",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex12"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.570335cd5c8192d8",
+      "id": "kr.domain.2022.middle.8b2e4b6c62a2f9d4",
+      "labelEnglish": null,
+      "labelKorean": "감상",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex13"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.9cd4d075bde4ad85",
+      "id": "kr.domain.2022.middle.54cbbcf232e80f24",
+      "labelEnglish": null,
+      "labelKorean": "건강안전과 응급처치",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex18"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.9cd4d075bde4ad85",
+      "id": "kr.domain.2022.middle.f7edda64be5f740c",
+      "labelEnglish": null,
+      "labelKorean": "건강자원과 건강문화",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex18"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.9cd4d075bde4ad85",
+      "id": "kr.domain.2022.middle.a6d6f3c3b3ee5921",
+      "labelEnglish": null,
+      "labelKorean": "건강증진과 질병예방",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex18"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.dccd29079b173ca0",
+      "id": "kr.domain.2022.middle.9846820c445c94f0",
+      "labelEnglish": null,
+      "labelKorean": "경제생활과 선택",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.718b305249a94a92",
+      "id": "kr.domain.2022.middle.460be69c6e8905f2",
+      "labelEnglish": null,
+      "labelKorean": "고려의 성립과 변천",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.aaaae5ae7d8548a8",
+      "id": "kr.domain.2022.middle.717de055ac672068",
+      "labelEnglish": null,
+      "labelKorean": "과학과 나의 미래",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.aaaae5ae7d8548a8",
+      "id": "kr.domain.2022.middle.2caf7ecb60b0f173",
+      "labelEnglish": null,
+      "labelKorean": "과학과 인류의 지속가능한 삶",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.718b305249a94a92",
+      "id": "kr.domain.2022.middle.b5ccc8db849098d7",
+      "labelEnglish": null,
+      "labelKorean": "국가의 형성과 발전",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.dccd29079b173ca0",
+      "id": "kr.domain.2022.middle.65f98d0a939fb5ac",
+      "labelEnglish": null,
+      "labelKorean": "국제 사회와 한반도",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.718b305249a94a92",
+      "id": "kr.domain.2022.middle.e2965f18326f471e",
+      "labelEnglish": null,
+      "labelKorean": "근⋅현대 사회로의 전환",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.92c889afa560b9d8",
+      "id": "kr.domain.2022.middle.353a9d154b68e42f",
+      "labelEnglish": null,
+      "labelKorean": "기술적 문제해결과 혁신",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex10"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.aaaae5ae7d8548a8",
+      "id": "kr.domain.2022.middle.da9fec5ee1f68517",
+      "labelEnglish": null,
+      "labelKorean": "기체의 성질",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.ec48c1127e519a2e",
+      "id": "kr.domain.2022.middle.c8f320a3dafaaa52",
+      "labelEnglish": null,
+      "labelKorean": "기후위기와 기후행동",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex18"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.aaaae5ae7d8548a8",
+      "id": "kr.domain.2022.middle.33baf8179ac33a3c",
+      "labelEnglish": null,
+      "labelKorean": "날씨와 기후변화",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.dccd29079b173ca0",
+      "id": "kr.domain.2022.middle.c6acd3a45920cbec",
+      "labelEnglish": null,
+      "labelKorean": "남부 지역",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.dccd29079b173ca0",
+      "id": "kr.domain.2022.middle.8e10678789645afe",
+      "labelEnglish": null,
+      "labelKorean": "다양한 문화의 이해",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.dccd29079b173ca0",
+      "id": "kr.domain.2022.middle.f96d3e58ca4cdc55",
+      "labelEnglish": null,
+      "labelKorean": "대한민국, 우리가 살아가는 곳",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.c197990b3a23fdd2",
+      "id": "kr.domain.2022.middle.82c94445c928c794",
+      "labelEnglish": null,
+      "labelKorean": "데이터",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex10"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.373e9959b3cc1af3",
+      "id": "kr.domain.2022.middle.0f40556702bddad5",
+      "labelEnglish": null,
+      "labelKorean": "도형과 측정",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex8"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.aaaae5ae7d8548a8",
+      "id": "kr.domain.2022.middle.1bf3baa5a890cec2",
+      "labelEnglish": null,
+      "labelKorean": "동물과 에너지",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.66de94cebc86b61e",
+      "id": "kr.domain.2022.middle.aff77e66e95fd762",
+      "labelEnglish": null,
+      "labelKorean": "듣기",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.2178b9d0de944d75",
+      "id": "kr.domain.2022.middle.f85faddd8fc53a4c",
+      "labelEnglish": null,
+      "labelKorean": "듣기",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.71b0ac4b7d3259ff",
+      "id": "kr.domain.2022.middle.4730da59d31697b5",
+      "labelEnglish": null,
+      "labelKorean": "듣기",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.7b40e7aeddb08bc4",
+      "id": "kr.domain.2022.middle.3777e18858ae8e81",
+      "labelEnglish": null,
+      "labelKorean": "듣기",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.8783223c83ba74b3",
+      "id": "kr.domain.2022.middle.7d0e8c1fda2680a5",
+      "labelEnglish": null,
+      "labelKorean": "듣기",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.91407698abb03db8",
+      "id": "kr.domain.2022.middle.8a2edf187f26653a",
+      "labelEnglish": null,
+      "labelKorean": "듣기",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.19401e7f882c4108",
+      "id": "kr.domain.2022.middle.dd5362018526cf3f",
+      "labelEnglish": null,
+      "labelKorean": "듣기",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.333940c638f6d1b2",
+      "id": "kr.domain.2022.middle.3aca3873761ff358",
+      "labelEnglish": null,
+      "labelKorean": "듣기",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.a0f8efae1e2bd119",
+      "id": "kr.domain.2022.middle.facd78165353a4dc",
+      "labelEnglish": null,
+      "labelKorean": "듣기⋅말하기",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.c197990b3a23fdd2",
+      "id": "kr.domain.2022.middle.bf43579874543965",
+      "labelEnglish": null,
+      "labelKorean": "디지털 문화",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex10"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.66de94cebc86b61e",
+      "id": "kr.domain.2022.middle.7ee30359867fe767",
+      "labelEnglish": null,
+      "labelKorean": "말하기",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.2178b9d0de944d75",
+      "id": "kr.domain.2022.middle.4843f3486e172c3a",
+      "labelEnglish": null,
+      "labelKorean": "말하기",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.71b0ac4b7d3259ff",
+      "id": "kr.domain.2022.middle.0448e466f5a7ea24",
+      "labelEnglish": null,
+      "labelKorean": "말하기",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.7b40e7aeddb08bc4",
+      "id": "kr.domain.2022.middle.cab49ae494622962",
+      "labelEnglish": null,
+      "labelKorean": "말하기",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.8783223c83ba74b3",
+      "id": "kr.domain.2022.middle.2c16230739890c45",
+      "labelEnglish": null,
+      "labelKorean": "말하기",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.91407698abb03db8",
+      "id": "kr.domain.2022.middle.508caa33ce4c9afe",
+      "labelEnglish": null,
+      "labelKorean": "말하기",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.19401e7f882c4108",
+      "id": "kr.domain.2022.middle.380ff846243c06cc",
+      "labelEnglish": null,
+      "labelKorean": "말하기",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.333940c638f6d1b2",
+      "id": "kr.domain.2022.middle.5fa4bf91ce582945",
+      "labelEnglish": null,
+      "labelKorean": "말하기",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.a0f8efae1e2bd119",
+      "id": "kr.domain.2022.middle.3c8e19fed33070e3",
+      "labelEnglish": null,
+      "labelKorean": "매체",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.718b305249a94a92",
+      "id": "kr.domain.2022.middle.f361bf8036f1c152",
+      "labelEnglish": null,
+      "labelKorean": "문명의 발생과 고대 세계의 형성",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.a0f8efae1e2bd119",
+      "id": "kr.domain.2022.middle.bc5bf1e2d06616b2",
+      "labelEnglish": null,
+      "labelKorean": "문법",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.43316f44a956438c",
+      "id": "kr.domain.2022.middle.b0f4643b3338c54e",
+      "labelEnglish": null,
+      "labelKorean": "문장",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex17"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.a0f8efae1e2bd119",
+      "id": "kr.domain.2022.middle.9daef5a833853cad",
+      "labelEnglish": null,
+      "labelKorean": "문학",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.66de94cebc86b61e",
+      "id": "kr.domain.2022.middle.192bd528ac1911ba",
+      "labelEnglish": null,
+      "labelKorean": "문화",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.2178b9d0de944d75",
+      "id": "kr.domain.2022.middle.ff3f58fc27959c43",
+      "labelEnglish": null,
+      "labelKorean": "문화",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.71b0ac4b7d3259ff",
+      "id": "kr.domain.2022.middle.0e24d0c8c165e526",
+      "labelEnglish": null,
+      "labelKorean": "문화",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.7b40e7aeddb08bc4",
+      "id": "kr.domain.2022.middle.2773bd7ef61e1f53",
+      "labelEnglish": null,
+      "labelKorean": "문화",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.8783223c83ba74b3",
+      "id": "kr.domain.2022.middle.cbde014d7c99f392",
+      "labelEnglish": null,
+      "labelKorean": "문화",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.91407698abb03db8",
+      "id": "kr.domain.2022.middle.67c3963d47a0f4d6",
+      "labelEnglish": null,
+      "labelKorean": "문화",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.19401e7f882c4108",
+      "id": "kr.domain.2022.middle.0a81979fc90073a7",
+      "labelEnglish": null,
+      "labelKorean": "문화",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.333940c638f6d1b2",
+      "id": "kr.domain.2022.middle.a8775bdbfc781d1f",
+      "labelEnglish": null,
+      "labelKorean": "문화",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.aaaae5ae7d8548a8",
+      "id": "kr.domain.2022.middle.0437d949413cc7ae",
+      "labelEnglish": null,
+      "labelKorean": "물질의 구성",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.aaaae5ae7d8548a8",
+      "id": "kr.domain.2022.middle.4f309215ea8cde53",
+      "labelEnglish": null,
+      "labelKorean": "물질의 상태 변화",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.aaaae5ae7d8548a8",
+      "id": "kr.domain.2022.middle.8f3ba451c6302579",
+      "labelEnglish": null,
+      "labelKorean": "물질의 특성",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.570335cd5c8192d8",
+      "id": "kr.domain.2022.middle.e44212d80c2ae637",
+      "labelEnglish": null,
+      "labelKorean": "미적 체험",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex13"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.dccd29079b173ca0",
+      "id": "kr.domain.2022.middle.b37de172540c54a2",
+      "labelEnglish": null,
+      "labelKorean": "민주주의와 시민",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.373e9959b3cc1af3",
+      "id": "kr.domain.2022.middle.9d6ed19ecbd6de58",
+      "labelEnglish": null,
+      "labelKorean": "변화와 관계",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex8"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.aaaae5ae7d8548a8",
+      "id": "kr.domain.2022.middle.01c50adb02393449",
+      "labelEnglish": null,
+      "labelKorean": "별과 우주",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.dccd29079b173ca0",
+      "id": "kr.domain.2022.middle.a8028baaa07b1f79",
+      "labelEnglish": null,
+      "labelKorean": "북부 지역",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.aaaae5ae7d8548a8",
+      "id": "kr.domain.2022.middle.e1d7ff4fc40898eb",
+      "labelEnglish": null,
+      "labelKorean": "빛과 파동",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.dccd29079b173ca0",
+      "id": "kr.domain.2022.middle.f6eae00d987f8a3f",
+      "labelEnglish": null,
+      "labelKorean": "사회 변동과 사회문제",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.07f3bfc5942e5a74",
+      "id": "kr.domain.2022.middle.841d8c461276e0d6",
+      "labelEnglish": null,
+      "labelKorean": "사회⋅공동체와의 관계",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex6"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.aaaae5ae7d8548a8",
+      "id": "kr.domain.2022.middle.477b9b5dfc3dc519",
+      "labelEnglish": null,
+      "labelKorean": "생물의 구성과 다양성",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.aaaae5ae7d8548a8",
+      "id": "kr.domain.2022.middle.76d1d089965d2d74",
+      "labelEnglish": null,
+      "labelKorean": "생식과 유전",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.92c889afa560b9d8",
+      "id": "kr.domain.2022.middle.574150c8e6573bd2",
+      "labelEnglish": null,
+      "labelKorean": "생활환경과 지속가능한 선택",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex10"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.9cd4d075bde4ad85",
+      "id": "kr.domain.2022.middle.a43138369a94fb90",
+      "labelEnglish": null,
+      "labelKorean": "성과 건강",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex18"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.718b305249a94a92",
+      "id": "kr.domain.2022.middle.2a73c92d8fc0e2b9",
+      "labelEnglish": null,
+      "labelKorean": "세계 대전과 사회 변동",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.718b305249a94a92",
+      "id": "kr.domain.2022.middle.a276b861aa67c969",
+      "labelEnglish": null,
+      "labelKorean": "세계 종교의 확산과 지역 문화의 발전",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.dccd29079b173ca0",
+      "id": "kr.domain.2022.middle.4fc9258d23809e79",
+      "labelEnglish": null,
+      "labelKorean": "세계화 시대, 지리의 힘",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.aaaae5ae7d8548a8",
+      "id": "kr.domain.2022.middle.bade50763f43bba9",
+      "labelEnglish": null,
+      "labelKorean": "수권과 해수의 순환",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.373e9959b3cc1af3",
+      "id": "kr.domain.2022.middle.af9ff51ee5a7e42a",
+      "labelEnglish": null,
+      "labelKorean": "수와 연산",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex8"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.fa59961d660b0ad4",
+      "id": "kr.domain.2022.middle.3e1e6d66d4ba65a0",
+      "labelEnglish": null,
+      "labelKorean": "스포츠",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.dccd29079b173ca0",
+      "id": "kr.domain.2022.middle.09e45391c48ef47f",
+      "labelEnglish": null,
+      "labelKorean": "시장과 가격",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.aaaae5ae7d8548a8",
+      "id": "kr.domain.2022.middle.638ef66273407a2b",
+      "labelEnglish": null,
+      "labelKorean": "식물과 에너지",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.a0f8efae1e2bd119",
+      "id": "kr.domain.2022.middle.29fd4bdc49d40342",
+      "labelEnglish": null,
+      "labelKorean": "쓰기",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.66de94cebc86b61e",
+      "id": "kr.domain.2022.middle.471202a8eaf6417b",
+      "labelEnglish": null,
+      "labelKorean": "쓰기",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.2178b9d0de944d75",
+      "id": "kr.domain.2022.middle.617378fdcc46f897",
+      "labelEnglish": null,
+      "labelKorean": "쓰기",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.71b0ac4b7d3259ff",
+      "id": "kr.domain.2022.middle.25d42fc46a991fc4",
+      "labelEnglish": null,
+      "labelKorean": "쓰기",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.7b40e7aeddb08bc4",
+      "id": "kr.domain.2022.middle.e54cbda380990d4e",
+      "labelEnglish": null,
+      "labelKorean": "쓰기",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.8783223c83ba74b3",
+      "id": "kr.domain.2022.middle.9473a4923ecc8f70",
+      "labelEnglish": null,
+      "labelKorean": "쓰기",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.91407698abb03db8",
+      "id": "kr.domain.2022.middle.8e1fb3421c04ab19",
+      "labelEnglish": null,
+      "labelKorean": "쓰기",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.19401e7f882c4108",
+      "id": "kr.domain.2022.middle.e5c47b4daa814046",
+      "labelEnglish": null,
+      "labelKorean": "쓰기",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.333940c638f6d1b2",
+      "id": "kr.domain.2022.middle.179d1149f544570f",
+      "labelEnglish": null,
+      "labelKorean": "쓰기",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.dccd29079b173ca0",
+      "id": "kr.domain.2022.middle.4e135518095ef83c",
+      "labelEnglish": null,
+      "labelKorean": "아메리카",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.dccd29079b173ca0",
+      "id": "kr.domain.2022.middle.1a5fa4590df692da",
+      "labelEnglish": null,
+      "labelKorean": "아시아",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.dccd29079b173ca0",
+      "id": "kr.domain.2022.middle.494be9d9d4ff0a19",
+      "labelEnglish": null,
+      "labelKorean": "아프리카",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.c197990b3a23fdd2",
+      "id": "kr.domain.2022.middle.edbc14eceee84005",
+      "labelEnglish": null,
+      "labelKorean": "알고리즘과 프로그래밍",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex10"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.718b305249a94a92",
+      "id": "kr.domain.2022.middle.6b91e86ce38630c2",
+      "labelEnglish": null,
+      "labelKorean": "역사 학습의 기초",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.b39f1ce9e94d344f",
+      "id": "kr.domain.2022.middle.e576ff64c23edf96",
+      "labelEnglish": null,
+      "labelKorean": "연주",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex12"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.aaaae5ae7d8548a8",
+      "id": "kr.domain.2022.middle.1f1df959c7255f29",
+      "labelEnglish": null,
+      "labelKorean": "열",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.dccd29079b173ca0",
+      "id": "kr.domain.2022.middle.f79baba96145eddc",
+      "labelEnglish": null,
+      "labelKorean": "오세아니아와 극지방",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.dccd29079b173ca0",
+      "id": "kr.domain.2022.middle.a233dc6a9f6dbd40",
+      "labelEnglish": null,
+      "labelKorean": "우리나라 경제와 세계화",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.dccd29079b173ca0",
+      "id": "kr.domain.2022.middle.36127a8727fcbe9c",
+      "labelEnglish": null,
+      "labelKorean": "우리나라의 자연환경과 인간 생활",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.fa59961d660b0ad4",
+      "id": "kr.domain.2022.middle.08f6d12bc0545f91",
+      "labelEnglish": null,
+      "labelKorean": "운동",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.aaaae5ae7d8548a8",
+      "id": "kr.domain.2022.middle.603d0386b50e87ca",
+      "labelEnglish": null,
+      "labelKorean": "운동과 에너지",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.dccd29079b173ca0",
+      "id": "kr.domain.2022.middle.5737aaac39d20a62",
+      "labelEnglish": null,
+      "labelKorean": "유럽",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.fb948cdadbdc5da1",
+      "id": "kr.domain.2022.middle.2244f649f05ed832",
+      "labelEnglish": null,
+      "labelKorean": "이해",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex14"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.92c889afa560b9d8",
+      "id": "kr.domain.2022.middle.2b91a337bc531b94",
+      "labelEnglish": null,
+      "labelKorean": "인간 발달과 주도적 삶",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex10"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.dccd29079b173ca0",
+      "id": "kr.domain.2022.middle.3ecd85a6bd9e6637",
+      "labelEnglish": null,
+      "labelKorean": "인간과 사회생활",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.c197990b3a23fdd2",
+      "id": "kr.domain.2022.middle.77b5feaafcfcef09",
+      "labelEnglish": null,
+      "labelKorean": "인공지능",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex10"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.dccd29079b173ca0",
+      "id": "kr.domain.2022.middle.ea606d1635811018",
+      "labelEnglish": null,
+      "labelKorean": "인권과 기본권",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.dccd29079b173ca0",
+      "id": "kr.domain.2022.middle.2e9768a750b03c0d",
+      "labelEnglish": null,
+      "labelKorean": "일상생활과 법",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.a0f8efae1e2bd119",
+      "id": "kr.domain.2022.middle.bb997d3e052111a0",
+      "labelEnglish": null,
+      "labelKorean": "읽기",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.66de94cebc86b61e",
+      "id": "kr.domain.2022.middle.6b06853d3d7aa437",
+      "labelEnglish": null,
+      "labelKorean": "읽기",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.2178b9d0de944d75",
+      "id": "kr.domain.2022.middle.0da118fae3b26f55",
+      "labelEnglish": null,
+      "labelKorean": "읽기",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.71b0ac4b7d3259ff",
+      "id": "kr.domain.2022.middle.cd8617994abc3249",
+      "labelEnglish": null,
+      "labelKorean": "읽기",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.7b40e7aeddb08bc4",
+      "id": "kr.domain.2022.middle.c099b590e7cacaa8",
+      "labelEnglish": null,
+      "labelKorean": "읽기",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.8783223c83ba74b3",
+      "id": "kr.domain.2022.middle.c1bceea8d16cea01",
+      "labelEnglish": null,
+      "labelKorean": "읽기",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.91407698abb03db8",
+      "id": "kr.domain.2022.middle.892a40d913d9a408",
+      "labelEnglish": null,
+      "labelKorean": "읽기",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.19401e7f882c4108",
+      "id": "kr.domain.2022.middle.33a73de8806a1e3a",
+      "labelEnglish": null,
+      "labelKorean": "읽기",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.333940c638f6d1b2",
+      "id": "kr.domain.2022.middle.3268542c5ce2deb7",
+      "labelEnglish": null,
+      "labelKorean": "읽기",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.aaaae5ae7d8548a8",
+      "id": "kr.domain.2022.middle.d73ed56ee868e117",
+      "labelEnglish": null,
+      "labelKorean": "자극과 반응",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.373e9959b3cc1af3",
+      "id": "kr.domain.2022.middle.fef3461680817f48",
+      "labelEnglish": null,
+      "labelKorean": "자료와 가능성",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex8"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.07f3bfc5942e5a74",
+      "id": "kr.domain.2022.middle.a1e9dafb6dd60070",
+      "labelEnglish": null,
+      "labelKorean": "자신과의 관계",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex6"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.07f3bfc5942e5a74",
+      "id": "kr.domain.2022.middle.5fd3806f33f6edb5",
+      "labelEnglish": null,
+      "labelKorean": "자연과의 관계",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex6"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.aaaae5ae7d8548a8",
+      "id": "kr.domain.2022.middle.af846515f6dc0c9b",
+      "labelEnglish": null,
+      "labelKorean": "재해⋅재난과 안전",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.aaaae5ae7d8548a8",
+      "id": "kr.domain.2022.middle.158be1285df6e902",
+      "labelEnglish": null,
+      "labelKorean": "전기와 자기",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.9cd4d075bde4ad85",
+      "id": "kr.domain.2022.middle.b58169c6d9d19f55",
+      "labelEnglish": null,
+      "labelKorean": "정서와 정신건강",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex18"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.dccd29079b173ca0",
+      "id": "kr.domain.2022.middle.11a4ecc88f952102",
+      "labelEnglish": null,
+      "labelKorean": "정치과정과 시민 참여",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.718b305249a94a92",
+      "id": "kr.domain.2022.middle.4688aa7557903d58",
+      "labelEnglish": null,
+      "labelKorean": "제국주의와 국민 국가 건설 운동",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.718b305249a94a92",
+      "id": "kr.domain.2022.middle.a2416f9de767a87f",
+      "labelEnglish": null,
+      "labelKorean": "조선 사회의 변동",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.718b305249a94a92",
+      "id": "kr.domain.2022.middle.d58fa088acdd5010",
+      "labelEnglish": null,
+      "labelKorean": "조선의 성립과 발전",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.dccd29079b173ca0",
+      "id": "kr.domain.2022.middle.f231e4fd6706f388",
+      "labelEnglish": null,
+      "labelKorean": "중부 지역",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.aaaae5ae7d8548a8",
+      "id": "kr.domain.2022.middle.30de79aa1f6c2a0f",
+      "labelEnglish": null,
+      "labelKorean": "지권의 변화",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.ec48c1127e519a2e",
+      "id": "kr.domain.2022.middle.f8bab7087e96834d",
+      "labelEnglish": null,
+      "labelKorean": "지속가능성과 시민 참여",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex18"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.92c889afa560b9d8",
+      "id": "kr.domain.2022.middle.8d5af906a75f1e52",
+      "labelEnglish": null,
+      "labelKorean": "지속가능한 기술과 융합",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex10"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.dccd29079b173ca0",
+      "id": "kr.domain.2022.middle.412b651c48132dd9",
+      "labelEnglish": null,
+      "labelKorean": "지속가능한 세계와 글로컬 시민",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.718b305249a94a92",
+      "id": "kr.domain.2022.middle.610226ca5877f0a3",
+      "labelEnglish": null,
+      "labelKorean": "지역 세계의 교류와 변화",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.4edb870c5459d216",
+      "id": "kr.domain.2022.middle.e7e5f1202d4e6097",
+      "labelEnglish": null,
+      "labelKorean": "직업 세계와 진로 탐색",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex18"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.4edb870c5459d216",
+      "id": "kr.domain.2022.middle.cba1fef00c7223ed",
+      "labelEnglish": null,
+      "labelKorean": "진로 설계와 실천",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex18"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.4edb870c5459d216",
+      "id": "kr.domain.2022.middle.c9c6dc5977366a64",
+      "labelEnglish": null,
+      "labelKorean": "진로와 나의 이해",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex18"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.b39f1ce9e94d344f",
+      "id": "kr.domain.2022.middle.b67421d63462b042",
+      "labelEnglish": null,
+      "labelKorean": "창작",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex12"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.c197990b3a23fdd2",
+      "id": "kr.domain.2022.middle.c52c271fc60ea272",
+      "labelEnglish": null,
+      "labelKorean": "컴퓨팅 시스템",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex10"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.07f3bfc5942e5a74",
+      "id": "kr.domain.2022.middle.b45594c30175b05d",
+      "labelEnglish": null,
+      "labelKorean": "타인과의 관계",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex6"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.aaaae5ae7d8548a8",
+      "id": "kr.domain.2022.middle.a36b67507b248202",
+      "labelEnglish": null,
+      "labelKorean": "태양계",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.718b305249a94a92",
+      "id": "kr.domain.2022.middle.24a1188990571ba1",
+      "labelEnglish": null,
+      "labelKorean": "통일신라와 발해",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.fa59961d660b0ad4",
+      "id": "kr.domain.2022.middle.cd96bfbcbaf2c637",
+      "labelEnglish": null,
+      "labelKorean": "표현",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.570335cd5c8192d8",
+      "id": "kr.domain.2022.middle.eba8d06058e90fb0",
+      "labelEnglish": null,
+      "labelKorean": "표현",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex13"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.fb948cdadbdc5da1",
+      "id": "kr.domain.2022.middle.0da9849fdf867a99",
+      "labelEnglish": null,
+      "labelKorean": "표현",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex14"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.43316f44a956438c",
+      "id": "kr.domain.2022.middle.40b08ce7120915b0",
+      "labelEnglish": null,
+      "labelKorean": "한자와 어휘",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex17"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.dccd29079b173ca0",
+      "id": "kr.domain.2022.middle.ac4e88df14634259",
+      "labelEnglish": null,
+      "labelKorean": "헌법과 국가기관",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.718b305249a94a92",
+      "id": "kr.domain.2022.middle.610fc97f603aa075",
+      "labelEnglish": null,
+      "labelKorean": "현대 세계의 전개와 과제",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.aaaae5ae7d8548a8",
+      "id": "kr.domain.2022.middle.5242e477bf858f01",
+      "labelEnglish": null,
+      "labelKorean": "화학 반응의 규칙성",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.ec48c1127e519a2e",
+      "id": "kr.domain.2022.middle.f91830e47ee13379",
+      "labelEnglish": null,
+      "labelKorean": "환경 문제와 쟁점",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex18"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.ec48c1127e519a2e",
+      "id": "kr.domain.2022.middle.6aab5ab009557966",
+      "labelEnglish": null,
+      "labelKorean": "환경 체계",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex18"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.ec48c1127e519a2e",
+      "id": "kr.domain.2022.middle.5605bef261d1ad44",
+      "labelEnglish": null,
+      "labelKorean": "환경과 인간",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex18"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.aaaae5ae7d8548a8",
+      "id": "kr.domain.2022.middle.537cd08e3bda7f95",
+      "labelEnglish": null,
+      "labelKorean": "힘의 작용",
+      "reviewStatus": "candidate",
+      "schoolLevel": "middle",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "sourceTextIncluded": false,
+      "verificationStatus": "public-doc-derived"
+    }
+  ],
+  "recordType": "domains",
+  "releaseId": "kr-2022-middle-v0.2.0-candidate"
+}

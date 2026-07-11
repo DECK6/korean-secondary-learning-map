@@ -1,0 +1,2 @@
+PREFIX slm: <https://dexa.art/learnmap/secondary/ontology#>
+SELECT ?alignment ?elementary ?middle WHERE { ?alignment a slm:TransitionAlignment ; slm:fromTopic ?elementary ; slm:toTopic ?middle . FILTER(CONTAINS(STR(?elementary), "learnmap/#/topic/")) }

@@ -1,0 +1,60 @@
+{
+  "$schema": "../../../schema/high-profile.schema.json#/$defs/coverageGapCollection",
+  "profile": "high",
+  "recordCount": 2,
+  "records": [
+    {
+      "description": "고등학교 관련 공식 PDF의 문서별 재사용 조건 검토가 완료되지 않았다.",
+      "id": "gap.high.document-rights-review-pending",
+      "severity": "high",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex10",
+        "kr-moe-2022-33-annex11",
+        "kr-moe-2022-33-annex13",
+        "kr-moe-2022-33-annex16",
+        "kr-moe-2022-33-annex17",
+        "kr-moe-2022-33-annex20",
+        "kr-moe-2022-33-annex21",
+        "kr-moe-2022-33-annex40",
+        "kr-moe-2022-33-annex5",
+        "kr-moe-2022-33-annex6",
+        "kr-moe-2022-33-annex8",
+        "kr-nec-2024-3-annex12",
+        "kr-nec-2024-3-annex14",
+        "kr-nec-2024-3-annex19",
+        "kr-nec-2024-3-annex22",
+        "kr-nec-2024-3-annex23",
+        "kr-nec-2024-3-annex24",
+        "kr-nec-2024-3-annex25",
+        "kr-nec-2024-3-annex26",
+        "kr-nec-2024-3-annex27",
+        "kr-nec-2024-3-annex28",
+        "kr-nec-2024-3-annex29",
+        "kr-nec-2024-3-annex30",
+        "kr-nec-2024-3-annex31",
+        "kr-nec-2024-3-annex32",
+        "kr-nec-2024-3-annex33",
+        "kr-nec-2024-3-annex34",
+        "kr-nec-2024-3-annex35",
+        "kr-nec-2024-3-annex36",
+        "kr-nec-2024-3-annex37",
+        "kr-nec-2024-3-annex38",
+        "kr-nec-2024-3-annex39",
+        "kr-nec-2024-3-annex7",
+        "kr-nec-2024-3-annex9",
+        "kr-nec-2026-1-annex1",
+        "kr-nec-2026-1-annex4"
+      ],
+      "status": "open"
+    },
+    {
+      "description": "세부 주제, 과목 관계, 선택 묶음과 예시 경로는 자동 생성 후보이며 교과·직업계 전문가 검토가 필요하다.",
+      "id": "gap.high.subject-expert-review-pending",
+      "severity": "high",
+      "sourceRefs": [],
+      "status": "open"
+    }
+  ],
+  "recordType": "coverageGaps",
+  "releaseId": "kr-2022-high-v0.2.0-candidate"
+}

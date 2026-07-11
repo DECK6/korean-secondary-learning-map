@@ -1,0 +1,2 @@
+PREFIX slm: <https://dexa.art/learnmap/secondary/ontology#>
+SELECT ?standard ?topic ?kind ?basis WHERE { ?topic a slm:LearningTopic ; slm:alignsToStandard ?standard ; slm:alignmentKind ?kind ; slm:basis ?basis . }

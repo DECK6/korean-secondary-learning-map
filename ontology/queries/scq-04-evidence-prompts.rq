@@ -1,0 +1,2 @@
+PREFIX slm: <https://dexa.art/learnmap/secondary/ontology#>
+SELECT ?topic ?evidence ?prompt WHERE { ?topic slm:evidence ?evidence ; slm:assessmentPrompt ?prompt . }

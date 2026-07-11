@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dexa.art/learnmap/schema/secondary/source-manifest.schema.json",
+  "title": "Korean Secondary Learning Map — source manifest",
+  "type": "object",
+  "required": ["$schema", "version", "accessDate", "sourceCount", "sources"],
+  "properties": {
+    "$schema": { "type": "string", "format": "uri-reference" },
+    "version": { "type": "string", "minLength": 1 },
+    "accessDate": { "type": "string", "format": "date" },
+    "sourceCount": { "type": "integer", "minimum": 0 },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "publisher",
+          "url",
+          "sourceType",
+          "usage",
+          "verificationStatus",
+          "rightsStatus"
+        ],
+        "properties": {
+          "id": { "$ref": "core.schema.json#/$defs/stableId" },
+          "name": { "type": "string", "minLength": 1 },
+          "publisher": { "type": "string", "minLength": 1 },
+          "url": { "type": "string", "format": "uri" },
+          "sourceType": { "enum": ["official-web", "official-pdf", "official-inventory", "repository-document"] },
+          "usage": { "type": "string", "minLength": 1 },
+          "verificationStatus": { "$ref": "core.schema.json#/$defs/verificationStatus" },
+          "rightsStatus": { "$ref": "core.schema.json#/$defs/rightsStatus" },
+          "attachmentNo": { "type": ["string", "null"] },
+          "sha256": { "type": ["string", "null"], "pattern": "^[a-f0-9]{64}$" },
+          "fileSizeBytes": { "type": ["integer", "null"], "minimum": 1 },
+          "notes": { "type": ["string", "null"] }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

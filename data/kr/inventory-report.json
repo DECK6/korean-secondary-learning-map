@@ -1,0 +1,39 @@
+{
+  "bridges": {
+    "coverageGaps": 1,
+    "reviewRecords": 0,
+    "transitionAlignments": 398
+  },
+  "diagnosticCount": 0,
+  "diagnostics": [],
+  "extractedOccurrenceCount": 52478,
+  "high": {
+    "choiceSets": 33,
+    "clusters": 5169,
+    "courseRelations": 473,
+    "courses": 759,
+    "coverageGaps": 2,
+    "creditRules": 3,
+    "domains": 5169,
+    "learningRelations": 0,
+    "pathways": 33,
+    "reviewRecords": 0,
+    "standards": 50749,
+    "subjectGroups": 34,
+    "topics": 50749
+  },
+  "middle": {
+    "clusters": 149,
+    "courses": 24,
+    "coverageGaps": 2,
+    "domains": 149,
+    "learningRelations": 0,
+    "reviewRecords": 0,
+    "standards": 714,
+    "subjectGroups": 13,
+    "topics": 714
+  },
+  "repeatedProfessionalCommonOccurrenceCount": 912,
+  "uniqueStandardCount": 51463,
+  "version": "0.2.0-candidate"
+}

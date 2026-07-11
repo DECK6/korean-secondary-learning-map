@@ -1,0 +1,2 @@
+PREFIX slm: <https://dexa.art/learnmap/secondary/ontology#>
+SELECT ?course ?label ?level ?category WHERE { ?course a slm:Course ; <http://www.w3.org/2000/01/rdf-schema#label> ?label ; slm:schoolLevel ?level ; slm:courseCategory ?category . }

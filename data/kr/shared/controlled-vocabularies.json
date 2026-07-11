@@ -1,0 +1,50 @@
+{
+  "$schema": "../../../schema/controlled-vocabularies.schema.json",
+  "version": "0.2.0-candidate",
+  "schoolLevels": [
+    { "id": "middle", "labelKorean": "중학교", "description": "중학교 1~3학년 교육과정 프로필", "status": "active" },
+    { "id": "high", "labelKorean": "고등학교", "description": "고등학교 교육과정 프로필", "status": "active" }
+  ],
+  "courseCategories": [
+    { "id": "common", "labelKorean": "공통", "description": "공통 교과 또는 공통 과목", "status": "draft" },
+    { "id": "middle-elective", "labelKorean": "중학교 선택 교과", "description": "중학교 선택 교과 범주", "status": "draft" },
+    { "id": "general-elective", "labelKorean": "일반 선택", "description": "고등학교 일반 선택 과목", "status": "active" },
+    { "id": "career-elective", "labelKorean": "진로 선택", "description": "고등학교 진로 선택 과목", "status": "active" },
+    { "id": "convergence-elective", "labelKorean": "융합 선택", "description": "고등학교 융합 선택 과목", "status": "active" },
+    { "id": "specialized-common", "labelKorean": "전문 공통", "description": "전문 교과 공통 과목", "status": "active" },
+    { "id": "major-general", "labelKorean": "전공 일반", "description": "전문 교과 전공 일반 과목", "status": "active" },
+    { "id": "major-practical", "labelKorean": "전공 실무", "description": "전문 교과 전공 실무 과목", "status": "active" }
+  ],
+  "topicTypes": [
+    { "id": "conceptual", "labelKorean": "개념", "description": "개념적 이해", "status": "active" },
+    { "id": "language", "labelKorean": "언어", "description": "언어 이해와 사용", "status": "active" },
+    { "id": "meta", "labelKorean": "메타", "description": "성찰과 학습 전략", "status": "active" },
+    { "id": "procedural", "labelKorean": "절차", "description": "수행 절차와 기능", "status": "active" },
+    { "id": "representational", "labelKorean": "표상", "description": "기호·모델·표현 사용", "status": "active" }
+  ],
+  "learningRelationKinds": [
+    { "id": "required-prerequisite", "labelKorean": "필수 선수", "description": "공식 근거가 있는 필수 선수 관계", "status": "active" },
+    { "id": "recommended-before", "labelKorean": "권장 선행", "description": "모델 상대적인 권장 순서", "status": "active" }
+  ],
+  "courseRelationKinds": [
+    { "id": "official-prerequisite", "labelKorean": "공식 선수 과목", "description": "공식 근거가 있는 선수 조건", "status": "active" },
+    { "id": "recommended-before", "labelKorean": "권장 선행 과목", "description": "먼저 이수하기를 권장", "status": "active" },
+    { "id": "co-recommended", "labelKorean": "병행 권장", "description": "함께 또는 인접 시기에 권장", "status": "active" },
+    { "id": "extends", "labelKorean": "확장", "description": "다른 과목의 내용을 심화·확장", "status": "active" },
+    { "id": "alternative-to", "labelKorean": "대안", "description": "같은 선택 맥락의 대안", "status": "active" },
+    { "id": "prepares-for", "labelKorean": "준비", "description": "후속 과목이나 분야의 배경을 형성", "status": "active" }
+  ],
+  "transitionKinds": [
+    { "id": "continues", "labelKorean": "계속", "description": "같은 개념 계열이 다음 학교급에서 이어짐", "status": "active" },
+    { "id": "deepens", "labelKorean": "심화", "description": "이전 개념을 더 형식적·복합적으로 다룸", "status": "active" },
+    { "id": "prepares-for", "labelKorean": "준비", "description": "이후 과목의 배경을 형성", "status": "active" }
+  ],
+  "reviewStatuses": [
+    { "id": "candidate", "labelKorean": "후보", "description": "검토 전 후보", "status": "active" },
+    { "id": "internal-reviewed", "labelKorean": "내부 검토", "description": "저장소 내부 검토 완료", "status": "active" },
+    { "id": "subject-expert-reviewed", "labelKorean": "교과 전문가 검토", "description": "교과 전문가 검토 완료", "status": "active" },
+    { "id": "field-reviewed", "labelKorean": "현장 검토", "description": "학교 현장 검토 완료", "status": "active" },
+    { "id": "rejected", "labelKorean": "기각", "description": "검토에서 기각", "status": "active" },
+    { "id": "deprecated", "labelKorean": "폐기 예정", "description": "대체 또는 폐기 상태", "status": "active" }
+  ]
+}

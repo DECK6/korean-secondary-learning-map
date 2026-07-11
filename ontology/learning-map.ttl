@@ -1,0 +1,116 @@
+@prefix slm: <https://dexa.art/learnmap/secondary/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://dexa.art/learnmap/secondary/ontology> a owl:Ontology ;
+  owl:versionIRI <https://dexa.art/learnmap/secondary/ontology/0.2.0-candidate> ;
+  rdfs:label "대한민국 중등교육 학습지도 온톨로지"@ko .
+
+slm:CurriculumRelease a owl:Class .
+slm:SchoolLevel a owl:Class .
+slm:SubjectGroup a owl:Class .
+slm:Course a owl:Class .
+slm:CourseOffering a owl:Class ; rdfs:comment "특정 학교의 실제 개설 과목. 국가 교육과정 Course와 구분한다."@ko .
+slm:Domain a owl:Class .
+slm:AchievementStandard a owl:Class .
+slm:LearningTopic a owl:Class .
+slm:LearningCluster a owl:Class .
+slm:LearningRelation a owl:Class .
+slm:TransitionAlignment a owl:Class .
+slm:CourseRelation a owl:Class .
+slm:ChoiceSet a owl:Class .
+slm:IllustrativePathway a owl:Class .
+slm:PathwayStep a owl:Class .
+slm:CreditRule a owl:Class .
+slm:SourceDocument a owl:Class .
+slm:SourceLocator a owl:Class .
+slm:CoverageGap a owl:Class .
+
+slm:inSubjectGroup a owl:ObjectProperty ; rdfs:domain slm:Course ; rdfs:range slm:SubjectGroup .
+slm:domainOfCourse a owl:ObjectProperty ; rdfs:domain slm:Domain ; rdfs:range slm:Course .
+slm:inCourse a owl:ObjectProperty ; rdfs:domain slm:AchievementStandard ; rdfs:range slm:Course .
+slm:topicInCourse a owl:ObjectProperty ; rdfs:domain slm:LearningTopic ; rdfs:range slm:Course .
+slm:clusterInCourse a owl:ObjectProperty ; rdfs:domain slm:LearningCluster ; rdfs:range slm:Course .
+slm:inDomain a owl:ObjectProperty ; rdfs:range slm:Domain .
+slm:hasTopic a owl:ObjectProperty ; rdfs:domain slm:LearningCluster ; rdfs:range slm:LearningTopic .
+slm:alignsToStandard a owl:ObjectProperty ; rdfs:domain slm:LearningTopic ; rdfs:range slm:AchievementStandard .
+slm:prerequisiteTopic a owl:ObjectProperty ; rdfs:domain slm:LearningRelation ; rdfs:range slm:LearningTopic .
+slm:dependentTopic a owl:ObjectProperty ; rdfs:domain slm:LearningRelation ; rdfs:range slm:LearningTopic .
+slm:transitionFromCourse a owl:ObjectProperty ; rdfs:domain slm:TransitionAlignment ; rdfs:range slm:Course .
+slm:transitionToCourse a owl:ObjectProperty ; rdfs:domain slm:TransitionAlignment ; rdfs:range slm:Course .
+slm:fromTopic a owl:ObjectProperty ; rdfs:domain slm:TransitionAlignment ; rdfs:range slm:LearningTopic .
+slm:toTopic a owl:ObjectProperty ; rdfs:domain slm:TransitionAlignment ; rdfs:range slm:LearningTopic .
+slm:courseRelationFrom a owl:ObjectProperty ; rdfs:domain slm:CourseRelation ; rdfs:range slm:Course .
+slm:courseRelationTo a owl:ObjectProperty ; rdfs:domain slm:CourseRelation ; rdfs:range slm:Course .
+slm:hasCourse a owl:ObjectProperty ; rdfs:range slm:Course .
+slm:hasStep a owl:ObjectProperty ; rdfs:domain slm:IllustrativePathway ; rdfs:range slm:PathwayStep .
+slm:stepCourse a owl:ObjectProperty ; rdfs:domain slm:PathwayStep ; rdfs:range slm:Course .
+slm:stepChoiceSet a owl:ObjectProperty ; rdfs:domain slm:PathwayStep ; rdfs:range slm:ChoiceSet .
+slm:hasSource a owl:ObjectProperty ; rdfs:range slm:SourceDocument .
+slm:hasLocator a owl:ObjectProperty ; rdfs:range slm:SourceLocator .
+slm:creditRule a owl:ObjectProperty ; rdfs:domain slm:Course ; rdfs:range slm:CreditRule .
+slm:offeringOf a owl:ObjectProperty ; rdfs:domain slm:CourseOffering ; rdfs:range slm:Course .
+
+slm:schoolLevel a owl:DatatypeProperty ; rdfs:range xsd:string .
+slm:curriculumVersion a owl:DatatypeProperty ; rdfs:range xsd:string .
+slm:courseCategory a owl:DatatypeProperty ; rdfs:range xsd:string .
+slm:programScope a owl:DatatypeProperty ; rdfs:range xsd:string .
+slm:gradeScope a owl:DatatypeProperty ; rdfs:range xsd:string .
+slm:officialCode a owl:DatatypeProperty ; rdfs:range xsd:string .
+slm:summary a owl:DatatypeProperty ; rdfs:range rdf:langString .
+slm:summaryKind a owl:DatatypeProperty ; rdfs:range xsd:string .
+slm:description a owl:DatatypeProperty ; rdfs:range rdf:langString .
+slm:evidence a owl:DatatypeProperty ; rdfs:range rdf:langString .
+slm:assessmentPrompt a owl:DatatypeProperty ; rdfs:range rdf:langString .
+slm:topicType a owl:DatatypeProperty ; rdfs:range xsd:string .
+slm:alignmentKind a owl:DatatypeProperty ; rdfs:range xsd:string .
+slm:relationKind a owl:DatatypeProperty ; rdfs:range xsd:string .
+slm:claimStatus a owl:DatatypeProperty ; rdfs:range xsd:string .
+slm:reason a owl:DatatypeProperty ; rdfs:range rdf:langString .
+slm:basisKind a owl:DatatypeProperty ; rdfs:range xsd:string .
+slm:basis a owl:DatatypeProperty ; rdfs:range xsd:string .
+slm:scope a owl:DatatypeProperty ; rdfs:range xsd:string .
+slm:strength a owl:DatatypeProperty ; rdfs:range xsd:string .
+slm:reviewStatus a owl:DatatypeProperty ; rdfs:range xsd:string .
+slm:verificationStatus a owl:DatatypeProperty ; rdfs:range xsd:string .
+slm:rightsStatus a owl:DatatypeProperty ; rdfs:range xsd:string .
+slm:notOfficialRequirement a owl:DatatypeProperty ; rdfs:range xsd:boolean .
+slm:sourcePage a owl:DatatypeProperty ; rdfs:range xsd:integer .
+slm:printedPage a owl:DatatypeProperty ; rdfs:range xsd:integer .
+slm:attachmentNumber a owl:DatatypeProperty ; rdfs:range xsd:string .
+slm:fileSha256 a owl:DatatypeProperty ; rdfs:range xsd:string .
+slm:sourceSection a owl:DatatypeProperty ; rdfs:range xsd:string .
+slm:sourceUrl a owl:DatatypeProperty ; rdfs:range xsd:anyURI .
+slm:publisher a owl:DatatypeProperty ; rdfs:range xsd:string .
+slm:value a owl:DatatypeProperty .
+slm:unit a owl:DatatypeProperty ; rdfs:range xsd:string .
+slm:ruleKind a owl:DatatypeProperty ; rdfs:range xsd:string .
+slm:effectiveFrom a owl:DatatypeProperty ; rdfs:range xsd:date .
+slm:effectiveTo a owl:DatatypeProperty ; rdfs:range xsd:date .
+slm:choiceKind a owl:DatatypeProperty ; rdfs:range xsd:string .
+slm:minimumSelections a owl:DatatypeProperty ; rdfs:range xsd:integer .
+slm:maximumSelections a owl:DatatypeProperty ; rdfs:range xsd:integer .
+slm:ruleBasis a owl:DatatypeProperty ; rdfs:range xsd:string .
+slm:pathwayKind a owl:DatatypeProperty ; rdfs:range xsd:string .
+slm:audience a owl:DatatypeProperty ; rdfs:range xsd:string .
+slm:stepOrder a owl:DatatypeProperty ; rdfs:range xsd:integer .
+slm:stepKind a owl:DatatypeProperty ; rdfs:range xsd:string .
+slm:severity a owl:DatatypeProperty ; rdfs:range xsd:string .
+slm:status a owl:DatatypeProperty ; rdfs:range xsd:string .
+
+slm:Course owl:disjointWith slm:CourseOffering .
+slm:AchievementStandard rdfs:subClassOf [
+  a owl:Restriction ; owl:onProperty slm:inCourse ; owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ; owl:onClass slm:Course
+] .
+slm:Domain rdfs:subClassOf [
+  a owl:Restriction ; owl:onProperty slm:domainOfCourse ; owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ; owl:onClass slm:Course
+] .
+slm:LearningRelation rdfs:subClassOf
+  [ a owl:Restriction ; owl:onProperty slm:prerequisiteTopic ; owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ; owl:onClass slm:LearningTopic ],
+  [ a owl:Restriction ; owl:onProperty slm:dependentTopic ; owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ; owl:onClass slm:LearningTopic ] .
+
+slm:MiddleSchool a slm:SchoolLevel, skos:Concept ; skos:prefLabel "중학교"@ko .
+slm:HighSchool a slm:SchoolLevel, skos:Concept ; skos:prefLabel "고등학교"@ko .

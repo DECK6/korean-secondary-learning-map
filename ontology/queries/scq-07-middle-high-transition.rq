@@ -1,0 +1,2 @@
+PREFIX slm: <https://dexa.art/learnmap/secondary/ontology#>
+SELECT ?alignment ?middleCourse ?highCourse ?kind ?reason ?basis WHERE { ?alignment a slm:TransitionAlignment ; slm:transitionFromCourse ?middleCourse ; slm:transitionToCourse ?highCourse ; slm:relationKind ?kind ; slm:reason ?reason ; slm:basis ?basis . }

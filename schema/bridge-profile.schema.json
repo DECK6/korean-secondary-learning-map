@@ -1,0 +1,159 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dexa.art/learnmap/schema/secondary/bridge-profile.schema.json",
+  "title": "Korean Secondary Learning Map — middle-to-high transition bridge profile",
+  "$ref": "#/$defs/release",
+  "$defs": {
+    "release": {
+      "type": "object",
+      "required": [
+        "$schema",
+        "releaseId",
+        "profile",
+        "curriculumVersion",
+        "status",
+        "createdDate",
+        "middleReleaseId",
+        "highReleaseId",
+        "sourceManifest",
+        "rightsStatus",
+        "collections",
+        "counts"
+      ],
+      "properties": {
+        "$schema": { "type": "string", "format": "uri-reference" },
+        "releaseId": {
+          "type": "string",
+          "pattern": "^kr-2022-middle-high-bridge-v[0-9]+\\.[0-9]+(?:\\.[0-9]+)?(?:-[a-z0-9.-]+)?$"
+        },
+        "profile": { "const": "bridges" },
+        "curriculumVersion": { "const": "2022-revised" },
+        "status": { "enum": ["design-skeleton", "candidate", "formal-release", "stale"] },
+        "createdDate": { "type": "string", "format": "date" },
+        "middleReleaseId": { "type": "string", "pattern": "^kr-2022-middle-v" },
+        "highReleaseId": { "type": "string", "pattern": "^kr-2022-high-v" },
+        "sourceManifest": { "type": "string", "pattern": "^\\.\\./shared/[^/]+\\.json$" },
+        "rightsStatus": { "$ref": "core.schema.json#/$defs/rightsStatus" },
+        "collections": {
+          "type": "object",
+          "required": ["transitionAlignments", "reviewRecords", "coverageGaps"],
+          "properties": {
+            "transitionAlignments": { "const": "transition-alignments.json" },
+            "reviewRecords": { "const": "review-records.json" },
+            "coverageGaps": { "const": "coverage-gaps.json" }
+          },
+          "additionalProperties": false
+        },
+        "counts": {
+          "type": "object",
+          "required": ["transitionAlignments", "reviewRecords", "coverageGaps"],
+          "properties": {
+            "transitionAlignments": { "type": "integer", "minimum": 0 },
+            "reviewRecords": { "type": "integer", "minimum": 0 },
+            "coverageGaps": { "type": "integer", "minimum": 0 }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "transitionAlignment": {
+      "type": "object",
+      "required": [
+        "id",
+        "fromSchoolLevel",
+        "toSchoolLevel",
+        "fromCourseIds",
+        "fromTopicIds",
+        "toCourseIds",
+        "toTopicIds",
+        "transitionKind",
+        "reason",
+        "basisKind",
+        "basis",
+        "sourceRefs",
+        "reviewStatus"
+      ],
+      "properties": {
+        "id": { "$ref": "core.schema.json#/$defs/stableId" },
+        "fromSchoolLevel": { "const": "middle" },
+        "toSchoolLevel": { "const": "high" },
+        "fromCourseIds": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "core.schema.json#/$defs/stableId" }
+        },
+        "fromTopicIds": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "$ref": "core.schema.json#/$defs/stableId" }
+        },
+        "toCourseIds": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "$ref": "core.schema.json#/$defs/stableId" }
+        },
+        "toTopicIds": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "$ref": "core.schema.json#/$defs/stableId" }
+        },
+        "transitionKind": { "enum": ["continues", "deepens", "prepares-for"] },
+        "reason": { "type": "string", "minLength": 1 },
+        "basisKind": { "enum": ["expert-review", "repository-authored", "model-candidate"] },
+        "basis": { "type": "string", "minLength": 1 },
+        "sourceRefs": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "$ref": "core.schema.json#/$defs/sourceRef" }
+        },
+        "reviewStatus": { "$ref": "core.schema.json#/$defs/reviewStatus" }
+      },
+      "anyOf": [
+        { "properties": { "toCourseIds": { "minItems": 1 } } },
+        { "properties": { "toTopicIds": { "minItems": 1 } } }
+      ],
+      "additionalProperties": false
+    },
+    "transitionAlignmentCollection": {
+      "allOf": [
+        { "$ref": "core.schema.json#/$defs/collectionEnvelopeBase" },
+        {
+          "properties": {
+            "profile": { "const": "bridges" },
+            "recordType": { "const": "transitionAlignments" },
+            "records": { "items": { "$ref": "#/$defs/transitionAlignment" } }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "reviewRecordCollection": {
+      "allOf": [
+        { "$ref": "core.schema.json#/$defs/collectionEnvelopeBase" },
+        {
+          "properties": {
+            "profile": { "const": "bridges" },
+            "recordType": { "const": "reviewRecords" },
+            "records": { "items": { "$ref": "core.schema.json#/$defs/reviewRecord" } }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "coverageGapCollection": {
+      "allOf": [
+        { "$ref": "core.schema.json#/$defs/collectionEnvelopeBase" },
+        {
+          "properties": {
+            "profile": { "const": "bridges" },
+            "recordType": { "const": "coverageGaps" },
+            "records": { "items": { "$ref": "core.schema.json#/$defs/coverageGap" } }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    }
+  }
+}

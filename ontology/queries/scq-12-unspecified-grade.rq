@@ -1,0 +1,2 @@
+PREFIX slm: <https://dexa.art/learnmap/secondary/ontology#>
+SELECT ?course WHERE { ?course a slm:Course ; slm:schoolLevel "high" . FILTER NOT EXISTS { ?course slm:gradeScope ?grade } }

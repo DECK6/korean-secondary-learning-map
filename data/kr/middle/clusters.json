@@ -1,0 +1,3107 @@
+{
+  "$schema": "../../../schema/middle-profile.schema.json#/$defs/clusterCollection",
+  "profile": "middle",
+  "recordCount": 149,
+  "records": [
+    {
+      "courseId": "kr.course.2022.middle.aaaae5ae7d8548a8",
+      "domainId": "kr.domain.2022.middle.01c50adb02393449",
+      "id": "kr.cluster.2022.middle.01c50adb02393449b4",
+      "labelEnglish": null,
+      "labelKorean": "과학 — 별과 우주",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "과학의 별과 우주 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.3bc7fc35de6c657fe8cd",
+        "kr.topic.2022.middle.5f93866d1ac208987eb6",
+        "kr.topic.2022.middle.a912fa8e0df9d6a8385c",
+        "kr.topic.2022.middle.bee8490418f955d64f9a"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.aaaae5ae7d8548a8",
+      "domainId": "kr.domain.2022.middle.0437d949413cc7ae",
+      "id": "kr.cluster.2022.middle.0437d949413cc7ae50",
+      "labelEnglish": null,
+      "labelKorean": "과학 — 물질의 구성",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "과학의 물질의 구성 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.100a7f494c0128d8681f",
+        "kr.topic.2022.middle.316a4528695ec6051df2",
+        "kr.topic.2022.middle.958120e8eaefdbdc4115",
+        "kr.topic.2022.middle.d9e9113df04fba77bbd6"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.71b0ac4b7d3259ff",
+      "domainId": "kr.domain.2022.middle.0448e466f5a7ea24",
+      "id": "kr.cluster.2022.middle.0448e466f5a7ea247f",
+      "labelEnglish": null,
+      "labelKorean": "생활 베트남어 — 말하기",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "생활 베트남어의 말하기 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.02b00083e94e033ea8e3",
+        "kr.topic.2022.middle.278d7e421e17758490e0",
+        "kr.topic.2022.middle.97999791e6fabc957068"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.fa59961d660b0ad4",
+      "domainId": "kr.domain.2022.middle.08f6d12bc0545f91",
+      "id": "kr.cluster.2022.middle.08f6d12bc0545f91ae",
+      "labelEnglish": null,
+      "labelKorean": "체육 — 운동",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "체육의 운동 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.1335f84b33d0665133fa",
+        "kr.topic.2022.middle.39b9d01cf6d417e267c9",
+        "kr.topic.2022.middle.44c4840b72f94b84b89f",
+        "kr.topic.2022.middle.4bc88662a0b43e60f045",
+        "kr.topic.2022.middle.4d9a2ceffb734705b825",
+        "kr.topic.2022.middle.56488bbc7390f9654ea1",
+        "kr.topic.2022.middle.64245d85c8c7fbf3e06b",
+        "kr.topic.2022.middle.880e3565e63086e6b1af",
+        "kr.topic.2022.middle.aa17e056409e703ecc39",
+        "kr.topic.2022.middle.b90b918ffa136f0ab7d8",
+        "kr.topic.2022.middle.ca518dff5461a05aec36",
+        "kr.topic.2022.middle.ed047a069e3ace515f59",
+        "kr.topic.2022.middle.f5a2059e370a86ae1775",
+        "kr.topic.2022.middle.f7639752f0074217a608"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.dccd29079b173ca0",
+      "domainId": "kr.domain.2022.middle.09e45391c48ef47f",
+      "id": "kr.cluster.2022.middle.09e45391c48ef47f49",
+      "labelEnglish": null,
+      "labelKorean": "사회 — 시장과 가격",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "사회의 시장과 가격 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.4c81cd0ffe410d5e96bd",
+        "kr.topic.2022.middle.a1a15690905b43709d95",
+        "kr.topic.2022.middle.ed8f5670124a6baf7e6e"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.19401e7f882c4108",
+      "domainId": "kr.domain.2022.middle.0a81979fc90073a7",
+      "id": "kr.cluster.2022.middle.0a81979fc90073a766",
+      "labelEnglish": null,
+      "labelKorean": "생활 중국어 — 문화",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "생활 중국어의 문화 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.1cc649451cc6a8d12779",
+        "kr.topic.2022.middle.664cb798a6f6aecbe0f7",
+        "kr.topic.2022.middle.9409ed55621c8d10d175",
+        "kr.topic.2022.middle.f61e5b7b0be404caa6fe"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.2178b9d0de944d75",
+      "domainId": "kr.domain.2022.middle.0da118fae3b26f55",
+      "id": "kr.cluster.2022.middle.0da118fae3b26f5533",
+      "labelEnglish": null,
+      "labelKorean": "생활 러시아어 — 읽기",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "생활 러시아어의 읽기 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.1ecf69627e09266bb411",
+        "kr.topic.2022.middle.733ce35f5177438ba5b3",
+        "kr.topic.2022.middle.b6aa4ca634a117693940"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.fb948cdadbdc5da1",
+      "domainId": "kr.domain.2022.middle.0da9849fdf867a99",
+      "id": "kr.cluster.2022.middle.0da9849fdf867a99cb",
+      "labelEnglish": null,
+      "labelKorean": "영어 — 표현",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex14"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "영어의 표현 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.0bb5aab11d29bdc76aca",
+        "kr.topic.2022.middle.1a6e0d4c2d1ed4105f1f",
+        "kr.topic.2022.middle.1e3cf8ddcd387d15d42a",
+        "kr.topic.2022.middle.4e93134fff83033b6c59",
+        "kr.topic.2022.middle.72ab2213bf66b7d27deb",
+        "kr.topic.2022.middle.89f172913a485a639c01",
+        "kr.topic.2022.middle.a6de132740005cee6c3c",
+        "kr.topic.2022.middle.af41341846875245586f",
+        "kr.topic.2022.middle.ca52787b16eca35aaeee",
+        "kr.topic.2022.middle.d12e3c13d11ed6c72efe",
+        "kr.topic.2022.middle.da333a14a54042b54935"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.71b0ac4b7d3259ff",
+      "domainId": "kr.domain.2022.middle.0e24d0c8c165e526",
+      "id": "kr.cluster.2022.middle.0e24d0c8c165e52688",
+      "labelEnglish": null,
+      "labelKorean": "생활 베트남어 — 문화",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "생활 베트남어의 문화 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.7bf28958d5f3a200c7a5",
+        "kr.topic.2022.middle.aebdbc196ff1610bddc8",
+        "kr.topic.2022.middle.ce84635babd152fcf7f9",
+        "kr.topic.2022.middle.e3809e89328ddabff46b",
+        "kr.topic.2022.middle.f0f2bc8888b6a3b3c4e6"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.373e9959b3cc1af3",
+      "domainId": "kr.domain.2022.middle.0f40556702bddad5",
+      "id": "kr.cluster.2022.middle.0f40556702bddad563",
+      "labelEnglish": null,
+      "labelKorean": "수학 — 도형과 측정",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex8"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "수학의 도형과 측정 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.0f035c7cf9224a4aaf60",
+        "kr.topic.2022.middle.12c2d1c8b3a83a6653b6",
+        "kr.topic.2022.middle.2bf853ec0225c7ff890b",
+        "kr.topic.2022.middle.3d798ebd44e165f2b030",
+        "kr.topic.2022.middle.4d27996714120516d7af",
+        "kr.topic.2022.middle.56b6f534561443254229",
+        "kr.topic.2022.middle.7d49418e24781c520fe3",
+        "kr.topic.2022.middle.83610686fb9c0ce73336",
+        "kr.topic.2022.middle.910779f80ad80ba9cba7",
+        "kr.topic.2022.middle.ac56c016bf8c8be57398",
+        "kr.topic.2022.middle.bcd089e70c8ece3c59b5",
+        "kr.topic.2022.middle.c1f5455544fda4b7b2be",
+        "kr.topic.2022.middle.c3e79330718e70da9ec4",
+        "kr.topic.2022.middle.c450ca225db852a40ba8",
+        "kr.topic.2022.middle.c4d31abb02e38f69bf73",
+        "kr.topic.2022.middle.cc854d1534a2636a2428",
+        "kr.topic.2022.middle.e76f717903cab3065da9",
+        "kr.topic.2022.middle.f28b5507b0e84df02e9a",
+        "kr.topic.2022.middle.f7bf80b9ecdce0eface7"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.dccd29079b173ca0",
+      "domainId": "kr.domain.2022.middle.11a4ecc88f952102",
+      "id": "kr.cluster.2022.middle.11a4ecc88f952102e9",
+      "labelEnglish": null,
+      "labelKorean": "사회 — 정치과정과 시민 참여",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "사회의 정치과정과 시민 참여 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.3f980b89a842052eceb1",
+        "kr.topic.2022.middle.e3627466258bbc4227b3",
+        "kr.topic.2022.middle.fd8d44c96123f342c564"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.aaaae5ae7d8548a8",
+      "domainId": "kr.domain.2022.middle.158be1285df6e902",
+      "id": "kr.cluster.2022.middle.158be1285df6e90289",
+      "labelEnglish": null,
+      "labelKorean": "과학 — 전기와 자기",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "과학의 전기와 자기 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.32ff6938729648d19bc7",
+        "kr.topic.2022.middle.53324d2381e49682afcc",
+        "kr.topic.2022.middle.871b96f0959995fe6761",
+        "kr.topic.2022.middle.c2ec28cfa2a5ea6babc4"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.333940c638f6d1b2",
+      "domainId": "kr.domain.2022.middle.179d1149f544570f",
+      "id": "kr.cluster.2022.middle.179d1149f544570f62",
+      "labelEnglish": null,
+      "labelKorean": "생활 프랑스어 — 쓰기",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "생활 프랑스어의 쓰기 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.7314be21277384290a2f",
+        "kr.topic.2022.middle.ad78aeb1f7b44155e2b4",
+        "kr.topic.2022.middle.ea7a273a2c977b58bdeb"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.66de94cebc86b61e",
+      "domainId": "kr.domain.2022.middle.192bd528ac1911ba",
+      "id": "kr.cluster.2022.middle.192bd528ac1911ba35",
+      "labelEnglish": null,
+      "labelKorean": "생활 독일어 — 문화",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "생활 독일어의 문화 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.046490a03583b128b07a",
+        "kr.topic.2022.middle.58a35418604bf3499d01",
+        "kr.topic.2022.middle.58c7e885f859375c006b",
+        "kr.topic.2022.middle.c167b86fa1f12eaf2fab"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.dccd29079b173ca0",
+      "domainId": "kr.domain.2022.middle.1a5fa4590df692da",
+      "id": "kr.cluster.2022.middle.1a5fa4590df692da41",
+      "labelEnglish": null,
+      "labelKorean": "사회 — 아시아",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "사회의 아시아 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.47e42eec75443fd9cf94",
+        "kr.topic.2022.middle.5acf43160124651a2ca1",
+        "kr.topic.2022.middle.c2b752bdc873f82768b8",
+        "kr.topic.2022.middle.f386ab33d9db6879c2a6"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.aaaae5ae7d8548a8",
+      "domainId": "kr.domain.2022.middle.1bf3baa5a890cec2",
+      "id": "kr.cluster.2022.middle.1bf3baa5a890cec284",
+      "labelEnglish": null,
+      "labelKorean": "과학 — 동물과 에너지",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "과학의 동물과 에너지 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.672efb37b19e2cb3bad0",
+        "kr.topic.2022.middle.6dcbbfd5c668d55fc3ac",
+        "kr.topic.2022.middle.b0c5e04fe30a282348f1",
+        "kr.topic.2022.middle.cef3a11bad13be969325",
+        "kr.topic.2022.middle.e70bba22488dbb2223ee"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.aaaae5ae7d8548a8",
+      "domainId": "kr.domain.2022.middle.1f1df959c7255f29",
+      "id": "kr.cluster.2022.middle.1f1df959c7255f2999",
+      "labelEnglish": null,
+      "labelKorean": "과학 — 열",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "과학의 열 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.7a005f09d6fe0150eaea",
+        "kr.topic.2022.middle.7df2fad8460911cbc847",
+        "kr.topic.2022.middle.d3bb1990116f911d36c5"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.fb948cdadbdc5da1",
+      "domainId": "kr.domain.2022.middle.2244f649f05ed832",
+      "id": "kr.cluster.2022.middle.2244f649f05ed83232",
+      "labelEnglish": null,
+      "labelKorean": "영어 — 이해",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex14"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "영어의 이해 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.010bed8da663fee57108",
+        "kr.topic.2022.middle.2368362a5a5b9e7252ac",
+        "kr.topic.2022.middle.3ca5153baabafe3ba23c",
+        "kr.topic.2022.middle.622b6c6514b292998c9a",
+        "kr.topic.2022.middle.753804aabeb6edd2e4b7",
+        "kr.topic.2022.middle.96fe547086f78d03a50e",
+        "kr.topic.2022.middle.baf73fde785a56e89c61",
+        "kr.topic.2022.middle.c096ae92f2ba585dac2c",
+        "kr.topic.2022.middle.db816a53795d235cacaa",
+        "kr.topic.2022.middle.fe19c85eabcd172d782c"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.718b305249a94a92",
+      "domainId": "kr.domain.2022.middle.24a1188990571ba1",
+      "id": "kr.cluster.2022.middle.24a1188990571ba138",
+      "labelEnglish": null,
+      "labelKorean": "역사 — 통일신라와 발해",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "역사의 통일신라와 발해 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.3bb5a5ecb55e72817af8",
+        "kr.topic.2022.middle.4a4a2700a93ff9bb628c",
+        "kr.topic.2022.middle.7223d79fa34a6a66eed5"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.71b0ac4b7d3259ff",
+      "domainId": "kr.domain.2022.middle.25d42fc46a991fc4",
+      "id": "kr.cluster.2022.middle.25d42fc46a991fc479",
+      "labelEnglish": null,
+      "labelKorean": "생활 베트남어 — 쓰기",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "생활 베트남어의 쓰기 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.1cdb5d8b8446480b347f",
+        "kr.topic.2022.middle.67780bf4cd03f26a25e2",
+        "kr.topic.2022.middle.93f64d153263fa45c73d"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.7b40e7aeddb08bc4",
+      "domainId": "kr.domain.2022.middle.2773bd7ef61e1f53",
+      "id": "kr.cluster.2022.middle.2773bd7ef61e1f539e",
+      "labelEnglish": null,
+      "labelKorean": "생활 스페인어 — 문화",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "생활 스페인어의 문화 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.332bab7b138acf4fda8c",
+        "kr.topic.2022.middle.7f9d18061d16eb412928",
+        "kr.topic.2022.middle.8010c579f8cd9516d76e",
+        "kr.topic.2022.middle.8a06d28b0ee077c91b93"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.a0f8efae1e2bd119",
+      "domainId": "kr.domain.2022.middle.29fd4bdc49d40342",
+      "id": "kr.cluster.2022.middle.29fd4bdc49d40342c0",
+      "labelEnglish": null,
+      "labelKorean": "국어 — 쓰기",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "국어의 쓰기 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.07bfa6bbac52667d29f1",
+        "kr.topic.2022.middle.680d61059ecc11d3467b",
+        "kr.topic.2022.middle.685b0ead732eaa609a1a",
+        "kr.topic.2022.middle.6f4b596e052ba7792b22",
+        "kr.topic.2022.middle.77cee67dff0fa62ab4b7",
+        "kr.topic.2022.middle.79022a281da0379a7a11",
+        "kr.topic.2022.middle.7f4d2dc45943e281a03a",
+        "kr.topic.2022.middle.e120b342bc730f98f28a",
+        "kr.topic.2022.middle.f9fca7469542f580164f"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.718b305249a94a92",
+      "domainId": "kr.domain.2022.middle.2a73c92d8fc0e2b9",
+      "id": "kr.cluster.2022.middle.2a73c92d8fc0e2b96a",
+      "labelEnglish": null,
+      "labelKorean": "역사 — 세계 대전과 사회 변동",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "역사의 세계 대전과 사회 변동 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.104fbae64df497ae88ce",
+        "kr.topic.2022.middle.2fc8b4179bf31b143383",
+        "kr.topic.2022.middle.8af59df7e61c048f6914"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.92c889afa560b9d8",
+      "domainId": "kr.domain.2022.middle.2b91a337bc531b94",
+      "id": "kr.cluster.2022.middle.2b91a337bc531b9456",
+      "labelEnglish": null,
+      "labelKorean": "기술·가정 — 인간 발달과 주도적 삶",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex10"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "기술·가정의 인간 발달과 주도적 삶 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.0869358175428827d5be",
+        "kr.topic.2022.middle.314b8241717bd1630b97",
+        "kr.topic.2022.middle.3caa28859f445a2969e4",
+        "kr.topic.2022.middle.535b4294a247d846a200",
+        "kr.topic.2022.middle.5c0226b4c9c6fbbf1ffd",
+        "kr.topic.2022.middle.8c1f673e2b55d4183ca1",
+        "kr.topic.2022.middle.8c96f7d82df4e8b6cca0",
+        "kr.topic.2022.middle.95e7de645f93e71de5c7",
+        "kr.topic.2022.middle.c46837f76aa61af5b0b1",
+        "kr.topic.2022.middle.c750b9ce4aad43a159cc",
+        "kr.topic.2022.middle.d57a08088ef7e2b68301",
+        "kr.topic.2022.middle.f6131188d3d0affcb482"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.8783223c83ba74b3",
+      "domainId": "kr.domain.2022.middle.2c16230739890c45",
+      "id": "kr.cluster.2022.middle.2c16230739890c45a1",
+      "labelEnglish": null,
+      "labelKorean": "생활 아랍어 — 말하기",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "생활 아랍어의 말하기 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.3f393e9b7f747d8ba59d",
+        "kr.topic.2022.middle.b0aad1fc9e271ea43230",
+        "kr.topic.2022.middle.c67c0d48a5d75d0644be"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.aaaae5ae7d8548a8",
+      "domainId": "kr.domain.2022.middle.2caf7ecb60b0f173",
+      "id": "kr.cluster.2022.middle.2caf7ecb60b0f173f3",
+      "labelEnglish": null,
+      "labelKorean": "과학 — 과학과 인류의 지속가능한 삶",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "과학의 과학과 인류의 지속가능한 삶 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.42888938c22b1cc8d4dc",
+        "kr.topic.2022.middle.9c54610f1e75034249af",
+        "kr.topic.2022.middle.b1326182289dd9ab4590"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.dccd29079b173ca0",
+      "domainId": "kr.domain.2022.middle.2e9768a750b03c0d",
+      "id": "kr.cluster.2022.middle.2e9768a750b03c0d12",
+      "labelEnglish": null,
+      "labelKorean": "사회 — 일상생활과 법",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "사회의 일상생활과 법 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.1cc5ebd401c2bb2bef0a",
+        "kr.topic.2022.middle.26e357bd49e28013c05b",
+        "kr.topic.2022.middle.50e8440b8bdf8b7fee7d"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.aaaae5ae7d8548a8",
+      "domainId": "kr.domain.2022.middle.30de79aa1f6c2a0f",
+      "id": "kr.cluster.2022.middle.30de79aa1f6c2a0f73",
+      "labelEnglish": null,
+      "labelKorean": "과학 — 지권의 변화",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "과학의 지권의 변화 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.665af62e84f7cfffc7fc",
+        "kr.topic.2022.middle.6aee7e0e06128d9ee812",
+        "kr.topic.2022.middle.7bed9b3c5fa2ea5c6465",
+        "kr.topic.2022.middle.c3a9660fe861f9b108e7",
+        "kr.topic.2022.middle.d15dbd1e597ef77e9619"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.333940c638f6d1b2",
+      "domainId": "kr.domain.2022.middle.3268542c5ce2deb7",
+      "id": "kr.cluster.2022.middle.3268542c5ce2deb752",
+      "labelEnglish": null,
+      "labelKorean": "생활 프랑스어 — 읽기",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "생활 프랑스어의 읽기 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.700923bad71f8339a1a6",
+        "kr.topic.2022.middle.89bb2c31a0210c97a55a",
+        "kr.topic.2022.middle.ea52c4b7b223b4925793"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.19401e7f882c4108",
+      "domainId": "kr.domain.2022.middle.33a73de8806a1e3a",
+      "id": "kr.cluster.2022.middle.33a73de8806a1e3ace",
+      "labelEnglish": null,
+      "labelKorean": "생활 중국어 — 읽기",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "생활 중국어의 읽기 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.612776cb96105e5f772a",
+        "kr.topic.2022.middle.775bb4085783fcc35868",
+        "kr.topic.2022.middle.a0e25cd844d8e2392e51"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.aaaae5ae7d8548a8",
+      "domainId": "kr.domain.2022.middle.33baf8179ac33a3c",
+      "id": "kr.cluster.2022.middle.33baf8179ac33a3cf8",
+      "labelEnglish": null,
+      "labelKorean": "과학 — 날씨와 기후변화",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "과학의 날씨와 기후변화 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.6e5f31e01beb591d2901",
+        "kr.topic.2022.middle.9d9af6e55141e4f1ecc5",
+        "kr.topic.2022.middle.c360ad2626c4f65ffe13",
+        "kr.topic.2022.middle.d79709b498406cc0669b"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.92c889afa560b9d8",
+      "domainId": "kr.domain.2022.middle.353a9d154b68e42f",
+      "id": "kr.cluster.2022.middle.353a9d154b68e42fba",
+      "labelEnglish": null,
+      "labelKorean": "기술·가정 — 기술적 문제해결과 혁신",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex10"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "기술·가정의 기술적 문제해결과 혁신 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.0933abec72ef3cf50444",
+        "kr.topic.2022.middle.11e4f0e8736d09d3ff10",
+        "kr.topic.2022.middle.29b2644af141c0a2484e",
+        "kr.topic.2022.middle.3196078ea79f77d8b58d",
+        "kr.topic.2022.middle.58198acd55abb3ee654e",
+        "kr.topic.2022.middle.68356d68023fd0ccd76c",
+        "kr.topic.2022.middle.7543c960eafd807e48b3",
+        "kr.topic.2022.middle.8f64e381fb21857618a1",
+        "kr.topic.2022.middle.911c7c13665808f238e7",
+        "kr.topic.2022.middle.98aabd127a5e92ba9565",
+        "kr.topic.2022.middle.df770e4329dec7412a90",
+        "kr.topic.2022.middle.f0fc327f003850a31a01",
+        "kr.topic.2022.middle.f97f4511b2a8dec47b47"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.dccd29079b173ca0",
+      "domainId": "kr.domain.2022.middle.36127a8727fcbe9c",
+      "id": "kr.cluster.2022.middle.36127a8727fcbe9c3a",
+      "labelEnglish": null,
+      "labelKorean": "사회 — 우리나라의 자연환경과 인간 생활",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "사회의 우리나라의 자연환경과 인간 생활 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.0541fafaa736d78e9bdb",
+        "kr.topic.2022.middle.6f84a48dc1ea3f5bb00e",
+        "kr.topic.2022.middle.8979cbd91445d1d4eb6d"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.7b40e7aeddb08bc4",
+      "domainId": "kr.domain.2022.middle.3777e18858ae8e81",
+      "id": "kr.cluster.2022.middle.3777e18858ae8e81fb",
+      "labelEnglish": null,
+      "labelKorean": "생활 스페인어 — 듣기",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "생활 스페인어의 듣기 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.0e9273345208af7ebc1c",
+        "kr.topic.2022.middle.3ed1def4223e6a83ef2a",
+        "kr.topic.2022.middle.d5d1ff133b0db619057b",
+        "kr.topic.2022.middle.e38b849a92bcab6a640d"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.19401e7f882c4108",
+      "domainId": "kr.domain.2022.middle.380ff846243c06cc",
+      "id": "kr.cluster.2022.middle.380ff846243c06cc70",
+      "labelEnglish": null,
+      "labelKorean": "생활 중국어 — 말하기",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "생활 중국어의 말하기 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.42830d7eb151c6aa2e77",
+        "kr.topic.2022.middle.6a76172d490f43cfd71d",
+        "kr.topic.2022.middle.83b3c964b74a2870c917"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.333940c638f6d1b2",
+      "domainId": "kr.domain.2022.middle.3aca3873761ff358",
+      "id": "kr.cluster.2022.middle.3aca3873761ff358e3",
+      "labelEnglish": null,
+      "labelKorean": "생활 프랑스어 — 듣기",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "생활 프랑스어의 듣기 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.063d1603abe16121cca4",
+        "kr.topic.2022.middle.0c941189b4f389bdb2f5",
+        "kr.topic.2022.middle.29d3167463ad2dd2764d"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.a0f8efae1e2bd119",
+      "domainId": "kr.domain.2022.middle.3c8e19fed33070e3",
+      "id": "kr.cluster.2022.middle.3c8e19fed33070e382",
+      "labelEnglish": null,
+      "labelKorean": "국어 — 매체",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "국어의 매체 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.1d5fc7f3dee87678997b",
+        "kr.topic.2022.middle.5197c397b4c9482d1d9e",
+        "kr.topic.2022.middle.81704e073c0f17b4241d",
+        "kr.topic.2022.middle.c3a5acd3303f595b88ee",
+        "kr.topic.2022.middle.e17ce7aee4168e4f1ba9",
+        "kr.topic.2022.middle.fdc0bd098c74b588ebdd"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.fa59961d660b0ad4",
+      "domainId": "kr.domain.2022.middle.3e1e6d66d4ba65a0",
+      "id": "kr.cluster.2022.middle.3e1e6d66d4ba65a0e5",
+      "labelEnglish": null,
+      "labelKorean": "체육 — 스포츠",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "체육의 스포츠 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.11f998a65a2dea3bceb0",
+        "kr.topic.2022.middle.16c2aa4ed311872bcf27",
+        "kr.topic.2022.middle.21757a013828a62a5e2a",
+        "kr.topic.2022.middle.223e1aa2521b86716798",
+        "kr.topic.2022.middle.2fb4d62474df6614c08d",
+        "kr.topic.2022.middle.30e44e7d369d6595620e",
+        "kr.topic.2022.middle.32723d96b57fc25a9f09",
+        "kr.topic.2022.middle.477f60512153937d6fee",
+        "kr.topic.2022.middle.621da8f189cd281ea4e4",
+        "kr.topic.2022.middle.6bf0c43559ff80f9d7c0",
+        "kr.topic.2022.middle.749ca8a9b7bcd8ff4266",
+        "kr.topic.2022.middle.74e5f17a9ba80fdbe975",
+        "kr.topic.2022.middle.76ba2cf07cbec437a726",
+        "kr.topic.2022.middle.82d523b685830ba06a30",
+        "kr.topic.2022.middle.92fc1037672b3199f315",
+        "kr.topic.2022.middle.a626a35b86c4b8c336b9",
+        "kr.topic.2022.middle.b013c5dddb52a5722c06",
+        "kr.topic.2022.middle.c5aa30efa59d6abf63fc",
+        "kr.topic.2022.middle.cbd9d2e3f6ac4b9cb78c",
+        "kr.topic.2022.middle.ccc9deff48a67afbd929",
+        "kr.topic.2022.middle.db7da0744c328a0d9830",
+        "kr.topic.2022.middle.dd2cce8d64222ea1382f",
+        "kr.topic.2022.middle.ebc2988df3285133708c",
+        "kr.topic.2022.middle.ee9f926dc1eb509ea755",
+        "kr.topic.2022.middle.f49c31665c3c23261f61",
+        "kr.topic.2022.middle.fd7bf453b1e3bbe62845",
+        "kr.topic.2022.middle.ff1678ba44ac6ce347e5"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.dccd29079b173ca0",
+      "domainId": "kr.domain.2022.middle.3ecd85a6bd9e6637",
+      "id": "kr.cluster.2022.middle.3ecd85a6bd9e6637f7",
+      "labelEnglish": null,
+      "labelKorean": "사회 — 인간과 사회생활",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "사회의 인간과 사회생활 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.2b2a0fada726ca832988",
+        "kr.topic.2022.middle.a61766157cbea86ca1fb",
+        "kr.topic.2022.middle.d2fcd0f6be6ee37f6d38"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.43316f44a956438c",
+      "domainId": "kr.domain.2022.middle.40b08ce7120915b0",
+      "id": "kr.cluster.2022.middle.40b08ce7120915b019",
+      "labelEnglish": null,
+      "labelKorean": "한문 — 한자와 어휘",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex17"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "한문의 한자와 어휘 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.0907dfdf21233a7ac6ee",
+        "kr.topic.2022.middle.0b9f6ecd8b8e0847b118",
+        "kr.topic.2022.middle.3b4b087d31694caccc7d",
+        "kr.topic.2022.middle.913d09353cbc29156b14",
+        "kr.topic.2022.middle.b7c3bbb5abc68574b3f6",
+        "kr.topic.2022.middle.d2cf276bf8055615c460"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.dccd29079b173ca0",
+      "domainId": "kr.domain.2022.middle.412b651c48132dd9",
+      "id": "kr.cluster.2022.middle.412b651c48132dd9ee",
+      "labelEnglish": null,
+      "labelKorean": "사회 — 지속가능한 세계와 글로컬 시민",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "사회의 지속가능한 세계와 글로컬 시민 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.a43e44eb2f9d77e1cdbd",
+        "kr.topic.2022.middle.c9df86ccdb401df5e54f",
+        "kr.topic.2022.middle.e95b9bcb0fd4262f3eb9"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.718b305249a94a92",
+      "domainId": "kr.domain.2022.middle.460be69c6e8905f2",
+      "id": "kr.cluster.2022.middle.460be69c6e8905f272",
+      "labelEnglish": null,
+      "labelKorean": "역사 — 고려의 성립과 변천",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "역사의 고려의 성립과 변천 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.0bea238946d4e36919ed",
+        "kr.topic.2022.middle.2a0c74655855bbd994b7",
+        "kr.topic.2022.middle.4b184ca449c0946b5786",
+        "kr.topic.2022.middle.892961f10d910a61c906"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.718b305249a94a92",
+      "domainId": "kr.domain.2022.middle.4688aa7557903d58",
+      "id": "kr.cluster.2022.middle.4688aa7557903d58e3",
+      "labelEnglish": null,
+      "labelKorean": "역사 — 제국주의와 국민 국가 건설 운동",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "역사의 제국주의와 국민 국가 건설 운동 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.4de0220d40885230f623",
+        "kr.topic.2022.middle.e5ca5c29fca3458dfeb5",
+        "kr.topic.2022.middle.f6c0d1045206b7ad2233"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.66de94cebc86b61e",
+      "domainId": "kr.domain.2022.middle.471202a8eaf6417b",
+      "id": "kr.cluster.2022.middle.471202a8eaf6417bd9",
+      "labelEnglish": null,
+      "labelKorean": "생활 독일어 — 쓰기",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "생활 독일어의 쓰기 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.14cc722b0b071aabf94d",
+        "kr.topic.2022.middle.42498da235084400e6bb",
+        "kr.topic.2022.middle.cb62bec3a1303a496ac5"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.71b0ac4b7d3259ff",
+      "domainId": "kr.domain.2022.middle.4730da59d31697b5",
+      "id": "kr.cluster.2022.middle.4730da59d31697b5e1",
+      "labelEnglish": null,
+      "labelKorean": "생활 베트남어 — 듣기",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "생활 베트남어의 듣기 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.3698cfa990016833b80d",
+        "kr.topic.2022.middle.3bda643e3cccda33eec8",
+        "kr.topic.2022.middle.55d45a9023a52410bafb",
+        "kr.topic.2022.middle.e788fcb98df03311670d"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.aaaae5ae7d8548a8",
+      "domainId": "kr.domain.2022.middle.477b9b5dfc3dc519",
+      "id": "kr.cluster.2022.middle.477b9b5dfc3dc5196b",
+      "labelEnglish": null,
+      "labelKorean": "과학 — 생물의 구성과 다양성",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "과학의 생물의 구성과 다양성 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.12f95b8de86ecaa0b4b1",
+        "kr.topic.2022.middle.34ba4b66c01e99c96a22",
+        "kr.topic.2022.middle.5330651a2783aaef876b",
+        "kr.topic.2022.middle.9f609ca14414e876d6bb",
+        "kr.topic.2022.middle.a56d6909735b5d327d31"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.2178b9d0de944d75",
+      "domainId": "kr.domain.2022.middle.4843f3486e172c3a",
+      "id": "kr.cluster.2022.middle.4843f3486e172c3a33",
+      "labelEnglish": null,
+      "labelKorean": "생활 러시아어 — 말하기",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "생활 러시아어의 말하기 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.7983a8a1f6aa9682fc17",
+        "kr.topic.2022.middle.987fdcc2b9c10dadabb6",
+        "kr.topic.2022.middle.bbafd58b4dc448954898"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.dccd29079b173ca0",
+      "domainId": "kr.domain.2022.middle.494be9d9d4ff0a19",
+      "id": "kr.cluster.2022.middle.494be9d9d4ff0a195b",
+      "labelEnglish": null,
+      "labelKorean": "사회 — 아프리카",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "사회의 아프리카 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.018ecc99ff5297348537",
+        "kr.topic.2022.middle.5949f44a0f354a412637",
+        "kr.topic.2022.middle.8dc9ddb492679b883cd3"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.dccd29079b173ca0",
+      "domainId": "kr.domain.2022.middle.4e135518095ef83c",
+      "id": "kr.cluster.2022.middle.4e135518095ef83c90",
+      "labelEnglish": null,
+      "labelKorean": "사회 — 아메리카",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "사회의 아메리카 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.c28208a276318cb1dbb8",
+        "kr.topic.2022.middle.de6077ef6404a02c255b",
+        "kr.topic.2022.middle.fd350ad07e6d306bc445"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.aaaae5ae7d8548a8",
+      "domainId": "kr.domain.2022.middle.4f309215ea8cde53",
+      "id": "kr.cluster.2022.middle.4f309215ea8cde5337",
+      "labelEnglish": null,
+      "labelKorean": "과학 — 물질의 상태 변화",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "과학의 물질의 상태 변화 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.1bedd5f3459f74e4b163",
+        "kr.topic.2022.middle.5c086b015445290faad4",
+        "kr.topic.2022.middle.5d21e3bfe5e63c9c8eeb",
+        "kr.topic.2022.middle.fc11f3b37ac3a19c98ee"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.dccd29079b173ca0",
+      "domainId": "kr.domain.2022.middle.4fc9258d23809e79",
+      "id": "kr.cluster.2022.middle.4fc9258d23809e79d2",
+      "labelEnglish": null,
+      "labelKorean": "사회 — 세계화 시대, 지리의 힘",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "사회의 세계화 시대, 지리의 힘 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.22cf589a05896e0be6cb",
+        "kr.topic.2022.middle.3f42c58d9bc38d0e411a",
+        "kr.topic.2022.middle.f212c617449ce1f64eac"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.91407698abb03db8",
+      "domainId": "kr.domain.2022.middle.508caa33ce4c9afe",
+      "id": "kr.cluster.2022.middle.508caa33ce4c9afec2",
+      "labelEnglish": null,
+      "labelKorean": "생활 일본어 — 말하기",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "생활 일본어의 말하기 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.2f45b15d85c8f7a84a70",
+        "kr.topic.2022.middle.8f344810192e0d1cceea",
+        "kr.topic.2022.middle.a01192e438d504d7d7d2",
+        "kr.topic.2022.middle.f1775e117bf4c27540b6"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.aaaae5ae7d8548a8",
+      "domainId": "kr.domain.2022.middle.5242e477bf858f01",
+      "id": "kr.cluster.2022.middle.5242e477bf858f01df",
+      "labelEnglish": null,
+      "labelKorean": "과학 — 화학 반응의 규칙성",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "과학의 화학 반응의 규칙성 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.44dcc515ce00930d2527",
+        "kr.topic.2022.middle.853952530938892d34cc",
+        "kr.topic.2022.middle.90fb07ed639969d6b043",
+        "kr.topic.2022.middle.9dd98191e663b34fbf7c",
+        "kr.topic.2022.middle.a13e2176fd0202a5e067",
+        "kr.topic.2022.middle.b076c1e3a988c54b30b4"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.aaaae5ae7d8548a8",
+      "domainId": "kr.domain.2022.middle.537cd08e3bda7f95",
+      "id": "kr.cluster.2022.middle.537cd08e3bda7f95df",
+      "labelEnglish": null,
+      "labelKorean": "과학 — 힘의 작용",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "과학의 힘의 작용 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.30ae904f9fb37ffa2bc9",
+        "kr.topic.2022.middle.ba4a1f7fc5bbca54eb2c",
+        "kr.topic.2022.middle.c5370c2102b96392f556",
+        "kr.topic.2022.middle.c7e6c63f34469d9a9080"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.9cd4d075bde4ad85",
+      "domainId": "kr.domain.2022.middle.54cbbcf232e80f24",
+      "id": "kr.cluster.2022.middle.54cbbcf232e80f2408",
+      "labelEnglish": null,
+      "labelKorean": "보건 — 건강안전과 응급처치",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex18"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "보건의 건강안전과 응급처치 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.197f483a6e7e7fe009c8",
+        "kr.topic.2022.middle.72fbdcfc73ebf86ae27a",
+        "kr.topic.2022.middle.7d76d5b06c58f9d9120e",
+        "kr.topic.2022.middle.89ad997d2549be07885e",
+        "kr.topic.2022.middle.a50ae1d50eeb55f0e219"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.ec48c1127e519a2e",
+      "domainId": "kr.domain.2022.middle.5605bef261d1ad44",
+      "id": "kr.cluster.2022.middle.5605bef261d1ad4436",
+      "labelEnglish": null,
+      "labelKorean": "환경 — 환경과 인간",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex18"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "환경의 환경과 인간 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.77924e6ee5246621a191",
+        "kr.topic.2022.middle.d4bdd283010c1be61235",
+        "kr.topic.2022.middle.ff6fbe9b0af5117429a6",
+        "kr.topic.2022.middle.ff7b1d54ab14618e5b6c"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.dccd29079b173ca0",
+      "domainId": "kr.domain.2022.middle.5737aaac39d20a62",
+      "id": "kr.cluster.2022.middle.5737aaac39d20a6256",
+      "labelEnglish": null,
+      "labelKorean": "사회 — 유럽",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "사회의 유럽 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.3ee0de77420deb6274c2",
+        "kr.topic.2022.middle.465e2dcd3ae9d95906bc",
+        "kr.topic.2022.middle.e4505e126ff615058414"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.92c889afa560b9d8",
+      "domainId": "kr.domain.2022.middle.574150c8e6573bd2",
+      "id": "kr.cluster.2022.middle.574150c8e6573bd243",
+      "labelEnglish": null,
+      "labelKorean": "기술·가정 — 생활환경과 지속가능한 선택",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex10"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "기술·가정의 생활환경과 지속가능한 선택 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.0220d43c98b7ab061641",
+        "kr.topic.2022.middle.0a5e184113a20fa706a6",
+        "kr.topic.2022.middle.14578a90385e0521ba1e",
+        "kr.topic.2022.middle.29843b18917c52b3f666",
+        "kr.topic.2022.middle.37bfce5a77e326e36010",
+        "kr.topic.2022.middle.5c28f7c7c71003d7f91f",
+        "kr.topic.2022.middle.705da3283512fe9c8bf3",
+        "kr.topic.2022.middle.794358552e36ed3e3d03",
+        "kr.topic.2022.middle.9c238c0425bf264c7c52",
+        "kr.topic.2022.middle.a089b01bccf7d7b3b8b5",
+        "kr.topic.2022.middle.eea040d90f5af5e589f2",
+        "kr.topic.2022.middle.f0d19d48fb02befae2e8",
+        "kr.topic.2022.middle.f1b9763f56d4f9e51c90",
+        "kr.topic.2022.middle.f9d19dbb7fed626b9f7e"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.b39f1ce9e94d344f",
+      "domainId": "kr.domain.2022.middle.5816eed92dd980c7",
+      "id": "kr.cluster.2022.middle.5816eed92dd980c78b",
+      "labelEnglish": null,
+      "labelKorean": "음악 — 감상",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex12"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "음악의 감상 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.0a3b5522d204fb0e8c81",
+        "kr.topic.2022.middle.58566ebf8b22934de5b5",
+        "kr.topic.2022.middle.5ba3e99da5952f03ce5d",
+        "kr.topic.2022.middle.60d3eec23d348df883ea",
+        "kr.topic.2022.middle.a812718af2ffa8dc5777"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.333940c638f6d1b2",
+      "domainId": "kr.domain.2022.middle.5fa4bf91ce582945",
+      "id": "kr.cluster.2022.middle.5fa4bf91ce582945f5",
+      "labelEnglish": null,
+      "labelKorean": "생활 프랑스어 — 말하기",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "생활 프랑스어의 말하기 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.d2e182acc27f2b6aa6e9",
+        "kr.topic.2022.middle.de3843aa242248c14577",
+        "kr.topic.2022.middle.f11335f35df23eb6659b"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.07f3bfc5942e5a74",
+      "domainId": "kr.domain.2022.middle.5fd3806f33f6edb5",
+      "id": "kr.cluster.2022.middle.5fd3806f33f6edb55c",
+      "labelEnglish": null,
+      "labelKorean": "도덕 — 자연과의 관계",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex6"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "도덕의 자연과의 관계 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.b8798df96e693be979f7",
+        "kr.topic.2022.middle.f01eefd08a99dac4a409"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.aaaae5ae7d8548a8",
+      "domainId": "kr.domain.2022.middle.603d0386b50e87ca",
+      "id": "kr.cluster.2022.middle.603d0386b50e87ca98",
+      "labelEnglish": null,
+      "labelKorean": "과학 — 운동과 에너지",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "과학의 운동과 에너지 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.02e108dcf694e63c35b9",
+        "kr.topic.2022.middle.02faef11aecb9b585fa5",
+        "kr.topic.2022.middle.2fd2800c966d738fa70f",
+        "kr.topic.2022.middle.cbcc46a6bcbb4b21ae2f"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.718b305249a94a92",
+      "domainId": "kr.domain.2022.middle.610226ca5877f0a3",
+      "id": "kr.cluster.2022.middle.610226ca5877f0a374",
+      "labelEnglish": null,
+      "labelKorean": "역사 — 지역 세계의 교류와 변화",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "역사의 지역 세계의 교류와 변화 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.239c685a1ea3ccf31753",
+        "kr.topic.2022.middle.d3e79aa21b9379fba2b8",
+        "kr.topic.2022.middle.e365cda8b9319235504f"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.718b305249a94a92",
+      "domainId": "kr.domain.2022.middle.610fc97f603aa075",
+      "id": "kr.cluster.2022.middle.610fc97f603aa0754b",
+      "labelEnglish": null,
+      "labelKorean": "역사 — 현대 세계의 전개와 과제",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "역사의 현대 세계의 전개와 과제 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.1793bb209e1a1225b48e",
+        "kr.topic.2022.middle.185fd9f2b5449ae48cae",
+        "kr.topic.2022.middle.d4baaa2bf2b2fde9182d"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.2178b9d0de944d75",
+      "domainId": "kr.domain.2022.middle.617378fdcc46f897",
+      "id": "kr.cluster.2022.middle.617378fdcc46f8970c",
+      "labelEnglish": null,
+      "labelKorean": "생활 러시아어 — 쓰기",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "생활 러시아어의 쓰기 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.488fcb247580ece7d1cd",
+        "kr.topic.2022.middle.50c6527cf87bd17afaaf",
+        "kr.topic.2022.middle.61cb0c53136a114c70c1"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.aaaae5ae7d8548a8",
+      "domainId": "kr.domain.2022.middle.638ef66273407a2b",
+      "id": "kr.cluster.2022.middle.638ef66273407a2b8d",
+      "labelEnglish": null,
+      "labelKorean": "과학 — 식물과 에너지",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "과학의 식물과 에너지 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.1b60d88f8be5986bfbb4",
+        "kr.topic.2022.middle.6c448cd11a34c2160231",
+        "kr.topic.2022.middle.86c0acd7a0fa90db3b45"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.dccd29079b173ca0",
+      "domainId": "kr.domain.2022.middle.65f98d0a939fb5ac",
+      "id": "kr.cluster.2022.middle.65f98d0a939fb5acd4",
+      "labelEnglish": null,
+      "labelKorean": "사회 — 국제 사회와 한반도",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "사회의 국제 사회와 한반도 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.98148312d2f2eea63cff",
+        "kr.topic.2022.middle.b7cfcc5e166f2a77071b",
+        "kr.topic.2022.middle.be5c938e7085f4e4fa9a"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.91407698abb03db8",
+      "domainId": "kr.domain.2022.middle.67c3963d47a0f4d6",
+      "id": "kr.cluster.2022.middle.67c3963d47a0f4d6fb",
+      "labelEnglish": null,
+      "labelKorean": "생활 일본어 — 문화",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "생활 일본어의 문화 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.131d7b0fc92fe33fabac",
+        "kr.topic.2022.middle.5939fd40eb8d19cf510e",
+        "kr.topic.2022.middle.8390b2eb9cde1de4c802",
+        "kr.topic.2022.middle.c4991962e8e9dfa0334e",
+        "kr.topic.2022.middle.d58dc0dcdb0875907e7e"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.ec48c1127e519a2e",
+      "domainId": "kr.domain.2022.middle.6aab5ab009557966",
+      "id": "kr.cluster.2022.middle.6aab5ab00955796685",
+      "labelEnglish": null,
+      "labelKorean": "환경 — 환경 체계",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex18"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "환경의 환경 체계 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.35e20312f3779f76d3b6",
+        "kr.topic.2022.middle.7e2ef37e1767a643bd71",
+        "kr.topic.2022.middle.a3b51addc1f765d7588e"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.66de94cebc86b61e",
+      "domainId": "kr.domain.2022.middle.6b06853d3d7aa437",
+      "id": "kr.cluster.2022.middle.6b06853d3d7aa437e1",
+      "labelEnglish": null,
+      "labelKorean": "생활 독일어 — 읽기",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "생활 독일어의 읽기 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.02467ec2bf95cf1443a7",
+        "kr.topic.2022.middle.448f2f7188a164361c49",
+        "kr.topic.2022.middle.682cf664808f96fc56c5"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.718b305249a94a92",
+      "domainId": "kr.domain.2022.middle.6b91e86ce38630c2",
+      "id": "kr.cluster.2022.middle.6b91e86ce38630c2dc",
+      "labelEnglish": null,
+      "labelKorean": "역사 — 역사 학습의 기초",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "역사의 역사 학습의 기초 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.43dbf35a5409fd68314d",
+        "kr.topic.2022.middle.a9cbc45425e7bdf0ca55"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.aaaae5ae7d8548a8",
+      "domainId": "kr.domain.2022.middle.717de055ac672068",
+      "id": "kr.cluster.2022.middle.717de055ac672068d8",
+      "labelEnglish": null,
+      "labelKorean": "과학 — 과학과 나의 미래",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "과학의 과학과 나의 미래 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.4e2b28ace1cfcb8bbcbf",
+        "kr.topic.2022.middle.54456d724e7246ea530c"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.aaaae5ae7d8548a8",
+      "domainId": "kr.domain.2022.middle.76d1d089965d2d74",
+      "id": "kr.cluster.2022.middle.76d1d089965d2d746b",
+      "labelEnglish": null,
+      "labelKorean": "과학 — 생식과 유전",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "과학의 생식과 유전 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.0ba61b10ac5243a57f41",
+        "kr.topic.2022.middle.5292503577707c6a5eba",
+        "kr.topic.2022.middle.5b20f5f9e915177e4565",
+        "kr.topic.2022.middle.680f4c68bc9f8afdbc0a",
+        "kr.topic.2022.middle.a6a35a22eed302ad5116"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.c197990b3a23fdd2",
+      "domainId": "kr.domain.2022.middle.77b5feaafcfcef09",
+      "id": "kr.cluster.2022.middle.77b5feaafcfcef090e",
+      "labelEnglish": null,
+      "labelKorean": "정보 — 인공지능",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex10"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "정보의 인공지능 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.3bdf1ec95c641810d557",
+        "kr.topic.2022.middle.77ed27e1ebef9496fde9",
+        "kr.topic.2022.middle.99b510fc2cd8ea612772",
+        "kr.topic.2022.middle.ae1e32fb1f0d22ca7966",
+        "kr.topic.2022.middle.f4908a652600589c2936"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.8783223c83ba74b3",
+      "domainId": "kr.domain.2022.middle.7d0e8c1fda2680a5",
+      "id": "kr.cluster.2022.middle.7d0e8c1fda2680a522",
+      "labelEnglish": null,
+      "labelKorean": "생활 아랍어 — 듣기",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "생활 아랍어의 듣기 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.0a4884d6489730f37584",
+        "kr.topic.2022.middle.293635f7486813dcd390",
+        "kr.topic.2022.middle.6d45a6a2aa04beeb4d26"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.66de94cebc86b61e",
+      "domainId": "kr.domain.2022.middle.7ee30359867fe767",
+      "id": "kr.cluster.2022.middle.7ee30359867fe76780",
+      "labelEnglish": null,
+      "labelKorean": "생활 독일어 — 말하기",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "생활 독일어의 말하기 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.03f45df81d1c8fdce9dd",
+        "kr.topic.2022.middle.7249ea6ca796f261c16f",
+        "kr.topic.2022.middle.aa502d60cc1b1bb53954"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.c197990b3a23fdd2",
+      "domainId": "kr.domain.2022.middle.82c94445c928c794",
+      "id": "kr.cluster.2022.middle.82c94445c928c794a7",
+      "labelEnglish": null,
+      "labelKorean": "정보 — 데이터",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex10"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "정보의 데이터 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.052eb07879f31a092499",
+        "kr.topic.2022.middle.3534c41a6c4f3bea0cc5",
+        "kr.topic.2022.middle.5f53e32203cb72b63cf6",
+        "kr.topic.2022.middle.b2d2743389017b583761",
+        "kr.topic.2022.middle.d30a0a38ac229c0ce121"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.07f3bfc5942e5a74",
+      "domainId": "kr.domain.2022.middle.841d8c461276e0d6",
+      "id": "kr.cluster.2022.middle.841d8c461276e0d6bb",
+      "labelEnglish": null,
+      "labelKorean": "도덕 — 사회⋅공동체와의 관계",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex6"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "도덕의 사회⋅공동체와의 관계 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.314bc6b2b0c5b2b3dbf9",
+        "kr.topic.2022.middle.4d0b1c0a0e0ed36d26ee",
+        "kr.topic.2022.middle.5deaaf536a6ff3a0cd7b",
+        "kr.topic.2022.middle.9577b15f4d4e6ac00a6d",
+        "kr.topic.2022.middle.976bf18fc92dd91a381a",
+        "kr.topic.2022.middle.c762fad5d9b475387723",
+        "kr.topic.2022.middle.d7192249d6b1fe8baefa"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.91407698abb03db8",
+      "domainId": "kr.domain.2022.middle.892a40d913d9a408",
+      "id": "kr.cluster.2022.middle.892a40d913d9a408e0",
+      "labelEnglish": null,
+      "labelKorean": "생활 일본어 — 읽기",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "생활 일본어의 읽기 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.160714182166b5a9e527",
+        "kr.topic.2022.middle.3f93af492500f347c17a",
+        "kr.topic.2022.middle.eded15fe2c69279efae9"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.91407698abb03db8",
+      "domainId": "kr.domain.2022.middle.8a2edf187f26653a",
+      "id": "kr.cluster.2022.middle.8a2edf187f26653a0d",
+      "labelEnglish": null,
+      "labelKorean": "생활 일본어 — 듣기",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "생활 일본어의 듣기 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.5f87aa22efcfcef8f107",
+        "kr.topic.2022.middle.807940a60c9a044e9e47",
+        "kr.topic.2022.middle.9b335cd41850e10f7831"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.570335cd5c8192d8",
+      "domainId": "kr.domain.2022.middle.8b2e4b6c62a2f9d4",
+      "id": "kr.cluster.2022.middle.8b2e4b6c62a2f9d40b",
+      "labelEnglish": null,
+      "labelKorean": "미술 — 감상",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex13"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "미술의 감상 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.2f5b36994dadcb26e1ba",
+        "kr.topic.2022.middle.791e4e87643a0fdf5bab",
+        "kr.topic.2022.middle.92b6871ce813351008cf",
+        "kr.topic.2022.middle.f3ff7b199667e5a03f6e"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.92c889afa560b9d8",
+      "domainId": "kr.domain.2022.middle.8d5af906a75f1e52",
+      "id": "kr.cluster.2022.middle.8d5af906a75f1e528a",
+      "labelEnglish": null,
+      "labelKorean": "기술·가정 — 지속가능한 기술과 융합",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex10"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "기술·가정의 지속가능한 기술과 융합 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.079005e81b6efbd2fb09",
+        "kr.topic.2022.middle.2040c755be7281630b33",
+        "kr.topic.2022.middle.27266d3a726a1358c51f",
+        "kr.topic.2022.middle.37bb29e550c865ca1a71",
+        "kr.topic.2022.middle.4d0735ae1f636341103c",
+        "kr.topic.2022.middle.583aefe3a9e74fbca8ad",
+        "kr.topic.2022.middle.5c73222789c2ce2eb186",
+        "kr.topic.2022.middle.64492101ae658081946f",
+        "kr.topic.2022.middle.6bff7bda7c9b505f4900",
+        "kr.topic.2022.middle.7171adc085116551ccb4",
+        "kr.topic.2022.middle.97e583513c65a492144d",
+        "kr.topic.2022.middle.9a332bcdf86add1a2997",
+        "kr.topic.2022.middle.d4a3f5e2337ad8cab5a2"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.dccd29079b173ca0",
+      "domainId": "kr.domain.2022.middle.8e10678789645afe",
+      "id": "kr.cluster.2022.middle.8e10678789645afe81",
+      "labelEnglish": null,
+      "labelKorean": "사회 — 다양한 문화의 이해",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "사회의 다양한 문화의 이해 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.049b7d9de09758e0e320",
+        "kr.topic.2022.middle.a6acd05d4a64249986bf",
+        "kr.topic.2022.middle.d051ca9d3106a5f18004"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.91407698abb03db8",
+      "domainId": "kr.domain.2022.middle.8e1fb3421c04ab19",
+      "id": "kr.cluster.2022.middle.8e1fb3421c04ab19a0",
+      "labelEnglish": null,
+      "labelKorean": "생활 일본어 — 쓰기",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "생활 일본어의 쓰기 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.329afca8d7fb22634f07",
+        "kr.topic.2022.middle.9ea350c3dcdba72df9e3",
+        "kr.topic.2022.middle.e0dcffbbff325daf76e5"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.aaaae5ae7d8548a8",
+      "domainId": "kr.domain.2022.middle.8f3ba451c6302579",
+      "id": "kr.cluster.2022.middle.8f3ba451c63025799e",
+      "labelEnglish": null,
+      "labelKorean": "과학 — 물질의 특성",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "과학의 물질의 특성 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.45ad6c4a03700e6e963d",
+        "kr.topic.2022.middle.b7aa43cf0403b59f678e",
+        "kr.topic.2022.middle.b7b76d4e9f27634659de"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.8783223c83ba74b3",
+      "domainId": "kr.domain.2022.middle.9473a4923ecc8f70",
+      "id": "kr.cluster.2022.middle.9473a4923ecc8f702d",
+      "labelEnglish": null,
+      "labelKorean": "생활 아랍어 — 쓰기",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "생활 아랍어의 쓰기 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.5f6c5d23677a9422e945",
+        "kr.topic.2022.middle.88d3c12296f4448be8b2",
+        "kr.topic.2022.middle.fe717a401be8c894aba9"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.dccd29079b173ca0",
+      "domainId": "kr.domain.2022.middle.9846820c445c94f0",
+      "id": "kr.cluster.2022.middle.9846820c445c94f06f",
+      "labelEnglish": null,
+      "labelKorean": "사회 — 경제생활과 선택",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "사회의 경제생활과 선택 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.9cbdd651687cc1b12270",
+        "kr.topic.2022.middle.ac5c58902d005dec1631",
+        "kr.topic.2022.middle.dfab2e34e7d61ee5ea5a"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.373e9959b3cc1af3",
+      "domainId": "kr.domain.2022.middle.9d6ed19ecbd6de58",
+      "id": "kr.cluster.2022.middle.9d6ed19ecbd6de58ef",
+      "labelEnglish": null,
+      "labelKorean": "수학 — 변화와 관계",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex8"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "수학의 변화와 관계 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.0180f61b656c5de360d0",
+        "kr.topic.2022.middle.026345ae9e09e7a714a7",
+        "kr.topic.2022.middle.081e2a577f7efca58ba2",
+        "kr.topic.2022.middle.190a815b941929ff60b0",
+        "kr.topic.2022.middle.2deca4ef0195e5e509ed",
+        "kr.topic.2022.middle.35335e023e66be0c036f",
+        "kr.topic.2022.middle.4184c26783af1969666e",
+        "kr.topic.2022.middle.560573dafa16e540eae5",
+        "kr.topic.2022.middle.61f418bf4128414c5f93",
+        "kr.topic.2022.middle.62a9ab909959d74ea3d4",
+        "kr.topic.2022.middle.6321a0bee182a2e77805",
+        "kr.topic.2022.middle.6a2978973dfeefdd53a2",
+        "kr.topic.2022.middle.841527cca63b9acf6959",
+        "kr.topic.2022.middle.98edd9b379dd00c20da8",
+        "kr.topic.2022.middle.b4988a216ab8454db471",
+        "kr.topic.2022.middle.bb7af1f3f4ed5c434bdc",
+        "kr.topic.2022.middle.bfbbc93af425559f1f69",
+        "kr.topic.2022.middle.d680da58498491e43b08",
+        "kr.topic.2022.middle.de77549b98c539a40cc4",
+        "kr.topic.2022.middle.e22aec4f7338d96514d3",
+        "kr.topic.2022.middle.e7ba8df29ffd7f7ea14c",
+        "kr.topic.2022.middle.fa639f062b593b08b3e6"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.a0f8efae1e2bd119",
+      "domainId": "kr.domain.2022.middle.9daef5a833853cad",
+      "id": "kr.cluster.2022.middle.9daef5a833853cad89",
+      "labelEnglish": null,
+      "labelKorean": "국어 — 문학",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "국어의 문학 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.0ee3e733877a482002a8",
+        "kr.topic.2022.middle.14fb7ede5ad77b7097e6",
+        "kr.topic.2022.middle.2989279aa0c5c9216861",
+        "kr.topic.2022.middle.2b638dae63d8d48f3da3",
+        "kr.topic.2022.middle.a1592acff1a296086d8c",
+        "kr.topic.2022.middle.a4c051964973766790d9",
+        "kr.topic.2022.middle.a8dd7cb0446a3d6c8351",
+        "kr.topic.2022.middle.acb699d6076772e5307a",
+        "kr.topic.2022.middle.bc8ef014e0eb9fda60a4"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.07f3bfc5942e5a74",
+      "domainId": "kr.domain.2022.middle.a1e9dafb6dd60070",
+      "id": "kr.cluster.2022.middle.a1e9dafb6dd6007014",
+      "labelEnglish": null,
+      "labelKorean": "도덕 — 자신과의 관계",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex6"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "도덕의 자신과의 관계 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.14cb40046cc41b3c5aba",
+        "kr.topic.2022.middle.3df4e5b1097b8a956db5",
+        "kr.topic.2022.middle.47926f5b1964962e3b3d",
+        "kr.topic.2022.middle.8e4ff16c71931a8576ba",
+        "kr.topic.2022.middle.b57c1141e821a00ed264",
+        "kr.topic.2022.middle.d7b926416090b7db6c4f",
+        "kr.topic.2022.middle.df12b6429901194a1a8d"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.dccd29079b173ca0",
+      "domainId": "kr.domain.2022.middle.a233dc6a9f6dbd40",
+      "id": "kr.cluster.2022.middle.a233dc6a9f6dbd4094",
+      "labelEnglish": null,
+      "labelKorean": "사회 — 우리나라 경제와 세계화",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "사회의 우리나라 경제와 세계화 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.5000f2c9cf0efd8477c0",
+        "kr.topic.2022.middle.77dc9da8a231e005a529",
+        "kr.topic.2022.middle.990b530d53c5eb7fe26f"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.718b305249a94a92",
+      "domainId": "kr.domain.2022.middle.a2416f9de767a87f",
+      "id": "kr.cluster.2022.middle.a2416f9de767a87f4d",
+      "labelEnglish": null,
+      "labelKorean": "역사 — 조선 사회의 변동",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "역사의 조선 사회의 변동 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.1d8756a712aa8d24db48",
+        "kr.topic.2022.middle.2c74d4bc35a0ab84fce5",
+        "kr.topic.2022.middle.e72cf79cd0ccf485dfa2"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.718b305249a94a92",
+      "domainId": "kr.domain.2022.middle.a276b861aa67c969",
+      "id": "kr.cluster.2022.middle.a276b861aa67c969b8",
+      "labelEnglish": null,
+      "labelKorean": "역사 — 세계 종교의 확산과 지역 문화의 발전",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "역사의 세계 종교의 확산과 지역 문화의 발전 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.44d784c333afaeb435e3",
+        "kr.topic.2022.middle.4fc2bf0b72f7f34fca4d",
+        "kr.topic.2022.middle.6580d68295fd512300f4"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.aaaae5ae7d8548a8",
+      "domainId": "kr.domain.2022.middle.a36b67507b248202",
+      "id": "kr.cluster.2022.middle.a36b67507b248202b6",
+      "labelEnglish": null,
+      "labelKorean": "과학 — 태양계",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "과학의 태양계 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.092240994825ea6be258",
+        "kr.topic.2022.middle.6b79fbc5e106d71314dd",
+        "kr.topic.2022.middle.7284169a89e463bcca2c",
+        "kr.topic.2022.middle.afa809e240091d208092"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.9cd4d075bde4ad85",
+      "domainId": "kr.domain.2022.middle.a43138369a94fb90",
+      "id": "kr.cluster.2022.middle.a43138369a94fb90bf",
+      "labelEnglish": null,
+      "labelKorean": "보건 — 성과 건강",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex18"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "보건의 성과 건강 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.3bbe6465f13359f3a945",
+        "kr.topic.2022.middle.6462bc43186bb351e1e6",
+        "kr.topic.2022.middle.94aa32f36f21112bc42c",
+        "kr.topic.2022.middle.d9c89c3fbe410b186bf7",
+        "kr.topic.2022.middle.f2400667077d203006ef",
+        "kr.topic.2022.middle.f55777adb091283ff42d"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.9cd4d075bde4ad85",
+      "domainId": "kr.domain.2022.middle.a6d6f3c3b3ee5921",
+      "id": "kr.cluster.2022.middle.a6d6f3c3b3ee5921ba",
+      "labelEnglish": null,
+      "labelKorean": "보건 — 건강증진과 질병예방",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex18"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "보건의 건강증진과 질병예방 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.07a6a9fb1a6491d27f66",
+        "kr.topic.2022.middle.422499e74df94c9508f7",
+        "kr.topic.2022.middle.a1de6426530966100656",
+        "kr.topic.2022.middle.c46c88b8ba00edd529ad",
+        "kr.topic.2022.middle.ec4f5db345108e8c381c"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.dccd29079b173ca0",
+      "domainId": "kr.domain.2022.middle.a8028baaa07b1f79",
+      "id": "kr.cluster.2022.middle.a8028baaa07b1f7955",
+      "labelEnglish": null,
+      "labelKorean": "사회 — 북부 지역",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "사회의 북부 지역 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.7514eb474678142a542b",
+        "kr.topic.2022.middle.971f1b6e5b4379d0223f",
+        "kr.topic.2022.middle.f59f64f87f6871adf979"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.333940c638f6d1b2",
+      "domainId": "kr.domain.2022.middle.a8775bdbfc781d1f",
+      "id": "kr.cluster.2022.middle.a8775bdbfc781d1fd5",
+      "labelEnglish": null,
+      "labelKorean": "생활 프랑스어 — 문화",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "생활 프랑스어의 문화 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.0675a816381f13ce7531",
+        "kr.topic.2022.middle.10876dc558ccd5162652",
+        "kr.topic.2022.middle.1da1c8b4e68443326625",
+        "kr.topic.2022.middle.ded5b1571c79fc466cd9"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.dccd29079b173ca0",
+      "domainId": "kr.domain.2022.middle.ac4e88df14634259",
+      "id": "kr.cluster.2022.middle.ac4e88df1463425958",
+      "labelEnglish": null,
+      "labelKorean": "사회 — 헌법과 국가기관",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "사회의 헌법과 국가기관 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.1b092d0311abe761eaa9",
+        "kr.topic.2022.middle.20bd32f0d7adb727e3cb",
+        "kr.topic.2022.middle.99d5438a2aa48cf1ea8e"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.aaaae5ae7d8548a8",
+      "domainId": "kr.domain.2022.middle.af846515f6dc0c9b",
+      "id": "kr.cluster.2022.middle.af846515f6dc0c9bcd",
+      "labelEnglish": null,
+      "labelKorean": "과학 — 재해⋅재난과 안전",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "과학의 재해⋅재난과 안전 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.1ff9370788d0613d828c",
+        "kr.topic.2022.middle.7a2d3c9e00cca23addda"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.373e9959b3cc1af3",
+      "domainId": "kr.domain.2022.middle.af9ff51ee5a7e42a",
+      "id": "kr.cluster.2022.middle.af9ff51ee5a7e42a98",
+      "labelEnglish": null,
+      "labelKorean": "수학 — 수와 연산",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex8"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "수학의 수와 연산 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.02a117db6d36bc814f92",
+        "kr.topic.2022.middle.1d5f34a8b2214e6badcb",
+        "kr.topic.2022.middle.35d4871e9ab769f85c99",
+        "kr.topic.2022.middle.3916be190e281cc82511",
+        "kr.topic.2022.middle.4b715a6b0aa065502511",
+        "kr.topic.2022.middle.6c93bea262ceaf1c6f39",
+        "kr.topic.2022.middle.6f50e760da57fc7865f7",
+        "kr.topic.2022.middle.884840c3d4b644ebbd2a",
+        "kr.topic.2022.middle.9d0aa38802820584d068",
+        "kr.topic.2022.middle.e6249de9a4e967dcd2ca"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.66de94cebc86b61e",
+      "domainId": "kr.domain.2022.middle.aff77e66e95fd762",
+      "id": "kr.cluster.2022.middle.aff77e66e95fd762ca",
+      "labelEnglish": null,
+      "labelKorean": "생활 독일어 — 듣기",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "생활 독일어의 듣기 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.1ade5cac4f2d4395ac1b",
+        "kr.topic.2022.middle.1cf75595369efbb0a099",
+        "kr.topic.2022.middle.4fabdb560ad4353ad150"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.43316f44a956438c",
+      "domainId": "kr.domain.2022.middle.b0f4643b3338c54e",
+      "id": "kr.cluster.2022.middle.b0f4643b3338c54e21",
+      "labelEnglish": null,
+      "labelKorean": "한문 — 문장",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex17"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "한문의 문장 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.0b047eaae051c5dd34e7",
+        "kr.topic.2022.middle.1d2d29669f25ad28f284",
+        "kr.topic.2022.middle.3fe191047899022e465e",
+        "kr.topic.2022.middle.aafd0915bbe9991ae198",
+        "kr.topic.2022.middle.b8dff291b1825a7dc7a4",
+        "kr.topic.2022.middle.c6556ea693b962581471"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.dccd29079b173ca0",
+      "domainId": "kr.domain.2022.middle.b37de172540c54a2",
+      "id": "kr.cluster.2022.middle.b37de172540c54a2d4",
+      "labelEnglish": null,
+      "labelKorean": "사회 — 민주주의와 시민",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "사회의 민주주의와 시민 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.4d083a384ef17af168f4",
+        "kr.topic.2022.middle.af3a9d3bd95a93c5d088",
+        "kr.topic.2022.middle.bbabed85cadf2b798eb8"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.07f3bfc5942e5a74",
+      "domainId": "kr.domain.2022.middle.b45594c30175b05d",
+      "id": "kr.cluster.2022.middle.b45594c30175b05de4",
+      "labelEnglish": null,
+      "labelKorean": "도덕 — 타인과의 관계",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex6"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "도덕의 타인과의 관계 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.0689f82d7917636761ff",
+        "kr.topic.2022.middle.14607423dbe04e1a9ad1",
+        "kr.topic.2022.middle.33ef34c2effa4a9ad83a",
+        "kr.topic.2022.middle.3687091e46430c37919d",
+        "kr.topic.2022.middle.b1476f3258f8919376a3",
+        "kr.topic.2022.middle.f9c4bb2eb9a865f7aeaf"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.9cd4d075bde4ad85",
+      "domainId": "kr.domain.2022.middle.b58169c6d9d19f55",
+      "id": "kr.cluster.2022.middle.b58169c6d9d19f5588",
+      "labelEnglish": null,
+      "labelKorean": "보건 — 정서와 정신건강",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex18"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "보건의 정서와 정신건강 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.454d3ded59656748970d",
+        "kr.topic.2022.middle.7eda3c198af3d4eca8a1",
+        "kr.topic.2022.middle.c168b5a09266dbb44903",
+        "kr.topic.2022.middle.ef67a2907e0b271d488e",
+        "kr.topic.2022.middle.fd8576a941cb55996c94"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.718b305249a94a92",
+      "domainId": "kr.domain.2022.middle.b5ccc8db849098d7",
+      "id": "kr.cluster.2022.middle.b5ccc8db849098d7dd",
+      "labelEnglish": null,
+      "labelKorean": "역사 — 국가의 형성과 발전",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "역사의 국가의 형성과 발전 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.425eb5f49e66d814f1e1",
+        "kr.topic.2022.middle.7385d118d2fa88491874",
+        "kr.topic.2022.middle.97dc73bba662b71e0e2a"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.b39f1ce9e94d344f",
+      "domainId": "kr.domain.2022.middle.b67421d63462b042",
+      "id": "kr.cluster.2022.middle.b67421d63462b042b5",
+      "labelEnglish": null,
+      "labelKorean": "음악 — 창작",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex12"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "음악의 창작 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.66d07ac733719fe23a4d",
+        "kr.topic.2022.middle.7bf64f4d7cc0fb8090f4",
+        "kr.topic.2022.middle.af813c3cf0835d083aad",
+        "kr.topic.2022.middle.f6aa1c372a9bed262837"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.aaaae5ae7d8548a8",
+      "domainId": "kr.domain.2022.middle.bade50763f43bba9",
+      "id": "kr.cluster.2022.middle.bade50763f43bba9c4",
+      "labelEnglish": null,
+      "labelKorean": "과학 — 수권과 해수의 순환",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "과학의 수권과 해수의 순환 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.21cc2405ea777d550d2b",
+        "kr.topic.2022.middle.53ab5292a9c8e86f9396",
+        "kr.topic.2022.middle.a20743504f712e042cc6"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.a0f8efae1e2bd119",
+      "domainId": "kr.domain.2022.middle.bb997d3e052111a0",
+      "id": "kr.cluster.2022.middle.bb997d3e052111a030",
+      "labelEnglish": null,
+      "labelKorean": "국어 — 읽기",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "국어의 읽기 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.058e42cb0adea5a12d6c",
+        "kr.topic.2022.middle.091baf992e5b05927182",
+        "kr.topic.2022.middle.0b7efe817a213f39b21a",
+        "kr.topic.2022.middle.134a42ecfd16ec91fe90",
+        "kr.topic.2022.middle.209d871e2b42eeaeb011",
+        "kr.topic.2022.middle.2e85237462d6292c3327",
+        "kr.topic.2022.middle.43fa4122b69f8390e5d6",
+        "kr.topic.2022.middle.9f74d6807caebc45c9c6"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.a0f8efae1e2bd119",
+      "domainId": "kr.domain.2022.middle.bc5bf1e2d06616b2",
+      "id": "kr.cluster.2022.middle.bc5bf1e2d06616b206",
+      "labelEnglish": null,
+      "labelKorean": "국어 — 문법",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "국어의 문법 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.0d4b928408acdd34b9b4",
+        "kr.topic.2022.middle.22b4d3cd31b6bd1510d9",
+        "kr.topic.2022.middle.35887ea0aadf10497f8e",
+        "kr.topic.2022.middle.741b2a4f5891effd4107",
+        "kr.topic.2022.middle.7fd23152d72ac3af2e09",
+        "kr.topic.2022.middle.a042d75db9664d328493",
+        "kr.topic.2022.middle.ad48c03052775190f759",
+        "kr.topic.2022.middle.eecdde4d7545cbb82c24"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.c197990b3a23fdd2",
+      "domainId": "kr.domain.2022.middle.bf43579874543965",
+      "id": "kr.cluster.2022.middle.bf43579874543965aa",
+      "labelEnglish": null,
+      "labelKorean": "정보 — 디지털 문화",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex10"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "정보의 디지털 문화 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.2d5cd655beea7d77a335",
+        "kr.topic.2022.middle.7b6e93de5b83232a259d",
+        "kr.topic.2022.middle.d85366c6ce214f11fb46"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.7b40e7aeddb08bc4",
+      "domainId": "kr.domain.2022.middle.c099b590e7cacaa8",
+      "id": "kr.cluster.2022.middle.c099b590e7cacaa883",
+      "labelEnglish": null,
+      "labelKorean": "생활 스페인어 — 읽기",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "생활 스페인어의 읽기 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.071f5aff53177fb30948",
+        "kr.topic.2022.middle.4231ab5533e9232497e6",
+        "kr.topic.2022.middle.bc925f6f2dfb8f80d530"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.8783223c83ba74b3",
+      "domainId": "kr.domain.2022.middle.c1bceea8d16cea01",
+      "id": "kr.cluster.2022.middle.c1bceea8d16cea0160",
+      "labelEnglish": null,
+      "labelKorean": "생활 아랍어 — 읽기",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "생활 아랍어의 읽기 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.058f1c4469da4b339e9f",
+        "kr.topic.2022.middle.493a6bc069ec4bc08ce3",
+        "kr.topic.2022.middle.afde55eb9dcaaabd743f"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.c197990b3a23fdd2",
+      "domainId": "kr.domain.2022.middle.c52c271fc60ea272",
+      "id": "kr.cluster.2022.middle.c52c271fc60ea272fb",
+      "labelEnglish": null,
+      "labelKorean": "정보 — 컴퓨팅 시스템",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex10"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "정보의 컴퓨팅 시스템 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.3375b458c8f7df993104",
+        "kr.topic.2022.middle.486fd26ac5f9abcba182",
+        "kr.topic.2022.middle.6602663bf06a0d9fdfd5"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.dccd29079b173ca0",
+      "domainId": "kr.domain.2022.middle.c6acd3a45920cbec",
+      "id": "kr.cluster.2022.middle.c6acd3a45920cbec47",
+      "labelEnglish": null,
+      "labelKorean": "사회 — 남부 지역",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "사회의 남부 지역 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.26ae8d79f6a9614c7e4b",
+        "kr.topic.2022.middle.3696bf3fed3c5a23c149",
+        "kr.topic.2022.middle.9c2987d04878185701cc"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.ec48c1127e519a2e",
+      "domainId": "kr.domain.2022.middle.c8f320a3dafaaa52",
+      "id": "kr.cluster.2022.middle.c8f320a3dafaaa52b5",
+      "labelEnglish": null,
+      "labelKorean": "환경 — 기후위기와 기후행동",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex18"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "환경의 기후위기와 기후행동 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.047332a33f77ea3a90cb",
+        "kr.topic.2022.middle.3cec477e050f44ce2e1f",
+        "kr.topic.2022.middle.56791aae3a4a6fbd4656",
+        "kr.topic.2022.middle.67d7dc02913884e8d9f2",
+        "kr.topic.2022.middle.68d08365c793dccfe7b3"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.4edb870c5459d216",
+      "domainId": "kr.domain.2022.middle.c9c6dc5977366a64",
+      "id": "kr.cluster.2022.middle.c9c6dc5977366a64c3",
+      "labelEnglish": null,
+      "labelKorean": "진로와 직업 — 진로와 나의 이해",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex18"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "진로와 직업의 진로와 나의 이해 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.2be364ff651aa5fd625f",
+        "kr.topic.2022.middle.71751084a17945ebbb39",
+        "kr.topic.2022.middle.d53e51d4f5f52ce13eeb",
+        "kr.topic.2022.middle.e12061352e1539d22ac5"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.7b40e7aeddb08bc4",
+      "domainId": "kr.domain.2022.middle.cab49ae494622962",
+      "id": "kr.cluster.2022.middle.cab49ae494622962ff",
+      "labelEnglish": null,
+      "labelKorean": "생활 스페인어 — 말하기",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "생활 스페인어의 말하기 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.3cc1eac7bbf14bbbebad",
+        "kr.topic.2022.middle.5e176024bb2172d907d7",
+        "kr.topic.2022.middle.85cba0789a86466345c5",
+        "kr.topic.2022.middle.c31e783939443cb7399c"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.4edb870c5459d216",
+      "domainId": "kr.domain.2022.middle.cba1fef00c7223ed",
+      "id": "kr.cluster.2022.middle.cba1fef00c7223edf6",
+      "labelEnglish": null,
+      "labelKorean": "진로와 직업 — 진로 설계와 실천",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex18"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "진로와 직업의 진로 설계와 실천 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.1f95e8c6698622887254",
+        "kr.topic.2022.middle.278ce73797bec4b0f153",
+        "kr.topic.2022.middle.92be7cb31433f02593ae",
+        "kr.topic.2022.middle.f4118e605715b737814e"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.8783223c83ba74b3",
+      "domainId": "kr.domain.2022.middle.cbde014d7c99f392",
+      "id": "kr.cluster.2022.middle.cbde014d7c99f392bf",
+      "labelEnglish": null,
+      "labelKorean": "생활 아랍어 — 문화",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "생활 아랍어의 문화 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.301bfbc1d81861d3c520",
+        "kr.topic.2022.middle.4f779d24792c128f8612",
+        "kr.topic.2022.middle.88cd7bd845eb3d52c3c6",
+        "kr.topic.2022.middle.b251f8af6738ba1e724b"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.71b0ac4b7d3259ff",
+      "domainId": "kr.domain.2022.middle.cd8617994abc3249",
+      "id": "kr.cluster.2022.middle.cd8617994abc324989",
+      "labelEnglish": null,
+      "labelKorean": "생활 베트남어 — 읽기",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "생활 베트남어의 읽기 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.8c846f659d7f47f08be7",
+        "kr.topic.2022.middle.a14ca103ac42ec8181f2",
+        "kr.topic.2022.middle.d00652b86dc5e963969e"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.fa59961d660b0ad4",
+      "domainId": "kr.domain.2022.middle.cd96bfbcbaf2c637",
+      "id": "kr.cluster.2022.middle.cd96bfbcbaf2c63718",
+      "labelEnglish": null,
+      "labelKorean": "체육 — 표현",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "체육의 표현 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.0bda17ceac5a8eae6d40",
+        "kr.topic.2022.middle.2047cda1be39684e841f",
+        "kr.topic.2022.middle.465f41d477ecf41e7d8c",
+        "kr.topic.2022.middle.5eb318cf0f69ba73d0d6",
+        "kr.topic.2022.middle.7aee6ffc7e1c37e00992",
+        "kr.topic.2022.middle.874c0608e4f18759f95f",
+        "kr.topic.2022.middle.97265fa82c35665eb15a",
+        "kr.topic.2022.middle.bc95cebeecad7189cbe8",
+        "kr.topic.2022.middle.ea04913d78ae1a1fa2e4",
+        "kr.topic.2022.middle.f18ef683439dade9337d"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.718b305249a94a92",
+      "domainId": "kr.domain.2022.middle.d58fa088acdd5010",
+      "id": "kr.cluster.2022.middle.d58fa088acdd501009",
+      "labelEnglish": null,
+      "labelKorean": "역사 — 조선의 성립과 발전",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "역사의 조선의 성립과 발전 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.353a249e2452182ffe82",
+        "kr.topic.2022.middle.d00506c6e5702bec8cb4",
+        "kr.topic.2022.middle.f6f90c996fcb3c3aa953"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.aaaae5ae7d8548a8",
+      "domainId": "kr.domain.2022.middle.d73ed56ee868e117",
+      "id": "kr.cluster.2022.middle.d73ed56ee868e1177d",
+      "labelEnglish": null,
+      "labelKorean": "과학 — 자극과 반응",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "과학의 자극과 반응 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.a1bca3f6c42f3792ef3c",
+        "kr.topic.2022.middle.cd11ae43cd8fa2e10ad2",
+        "kr.topic.2022.middle.da0dcf44ba2fe45273f7"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.aaaae5ae7d8548a8",
+      "domainId": "kr.domain.2022.middle.da9fec5ee1f68517",
+      "id": "kr.cluster.2022.middle.da9fec5ee1f6851770",
+      "labelEnglish": null,
+      "labelKorean": "과학 — 기체의 성질",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "과학의 기체의 성질 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.1290cb28aa108bcf31f5",
+        "kr.topic.2022.middle.463b379e28b73aefce05",
+        "kr.topic.2022.middle.740b9953b1a55672cd02"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.19401e7f882c4108",
+      "domainId": "kr.domain.2022.middle.dd5362018526cf3f",
+      "id": "kr.cluster.2022.middle.dd5362018526cf3f49",
+      "labelEnglish": null,
+      "labelKorean": "생활 중국어 — 듣기",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "생활 중국어의 듣기 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.0669f324d6c65613ce25",
+        "kr.topic.2022.middle.7abd1028a4463ee94084",
+        "kr.topic.2022.middle.a1b7291a63e884c901ef",
+        "kr.topic.2022.middle.b0b3192986c2b6c994a2"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.aaaae5ae7d8548a8",
+      "domainId": "kr.domain.2022.middle.e1d7ff4fc40898eb",
+      "id": "kr.cluster.2022.middle.e1d7ff4fc40898ebfa",
+      "labelEnglish": null,
+      "labelKorean": "과학 — 빛과 파동",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "과학의 빛과 파동 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.1f00993929484abb4ce5",
+        "kr.topic.2022.middle.6bc49e7fdcf894ff0e71",
+        "kr.topic.2022.middle.7291177d2c2f30b292f5",
+        "kr.topic.2022.middle.b48bd8e0e90156ec4f6c"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.718b305249a94a92",
+      "domainId": "kr.domain.2022.middle.e2965f18326f471e",
+      "id": "kr.cluster.2022.middle.e2965f18326f471eb0",
+      "labelEnglish": null,
+      "labelKorean": "역사 — 근⋅현대 사회로의 전환",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "역사의 근⋅현대 사회로의 전환 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.263add623f64a9b8daf1",
+        "kr.topic.2022.middle.551fd86ed6a29228e1bf",
+        "kr.topic.2022.middle.74b7b7b6e46e3a6013c7",
+        "kr.topic.2022.middle.ea25dd19820c9a73005d"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.570335cd5c8192d8",
+      "domainId": "kr.domain.2022.middle.e44212d80c2ae637",
+      "id": "kr.cluster.2022.middle.e44212d80c2ae6376e",
+      "labelEnglish": null,
+      "labelKorean": "미술 — 미적 체험",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex13"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "미술의 미적 체험 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.4780f85447fea9de6d15",
+        "kr.topic.2022.middle.89873bdb2e93ffb6257c",
+        "kr.topic.2022.middle.9e1eb9c655ca9133e555",
+        "kr.topic.2022.middle.fc84d26cc6a03b7d301c"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.7b40e7aeddb08bc4",
+      "domainId": "kr.domain.2022.middle.e54cbda380990d4e",
+      "id": "kr.cluster.2022.middle.e54cbda380990d4e86",
+      "labelEnglish": null,
+      "labelKorean": "생활 스페인어 — 쓰기",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "생활 스페인어의 쓰기 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.0afb33f9af0ac9455527",
+        "kr.topic.2022.middle.2571ba15da1b41e45c37",
+        "kr.topic.2022.middle.f69bfa38a443dc6f6d9a"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.b39f1ce9e94d344f",
+      "domainId": "kr.domain.2022.middle.e576ff64c23edf96",
+      "id": "kr.cluster.2022.middle.e576ff64c23edf96d1",
+      "labelEnglish": null,
+      "labelKorean": "음악 — 연주",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex12"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "음악의 연주 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.0491b5cc89c93c9da206",
+        "kr.topic.2022.middle.20f8ddc59838e74c1284",
+        "kr.topic.2022.middle.633836a4f218a0f0214f",
+        "kr.topic.2022.middle.e7e0b8f9ce39ed6ff8fc"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.19401e7f882c4108",
+      "domainId": "kr.domain.2022.middle.e5c47b4daa814046",
+      "id": "kr.cluster.2022.middle.e5c47b4daa814046e9",
+      "labelEnglish": null,
+      "labelKorean": "생활 중국어 — 쓰기",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "생활 중국어의 쓰기 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.2a83ec5e3da8bcd06c6c",
+        "kr.topic.2022.middle.505cade9e464a210b2f8",
+        "kr.topic.2022.middle.bc7661f9888451085b97"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.4edb870c5459d216",
+      "domainId": "kr.domain.2022.middle.e7e5f1202d4e6097",
+      "id": "kr.cluster.2022.middle.e7e5f1202d4e609711",
+      "labelEnglish": null,
+      "labelKorean": "진로와 직업 — 직업 세계와 진로 탐색",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex18"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "진로와 직업의 직업 세계와 진로 탐색 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.3aa0baa8e91c7b34d004",
+        "kr.topic.2022.middle.c8b1669006749892db9b",
+        "kr.topic.2022.middle.db9791598ee41e1cf894",
+        "kr.topic.2022.middle.e1ac7d99e7ff6890f605",
+        "kr.topic.2022.middle.f5ca00e1b12eadc25d42",
+        "kr.topic.2022.middle.f99f22c728bf900846bd"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.dccd29079b173ca0",
+      "domainId": "kr.domain.2022.middle.ea606d1635811018",
+      "id": "kr.cluster.2022.middle.ea606d163581101862",
+      "labelEnglish": null,
+      "labelKorean": "사회 — 인권과 기본권",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "사회의 인권과 기본권 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.428d7fe9e2681cd57c31",
+        "kr.topic.2022.middle.a9ae567079c6b6e5ba1f",
+        "kr.topic.2022.middle.dbcabd4795de96529229"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.570335cd5c8192d8",
+      "domainId": "kr.domain.2022.middle.eba8d06058e90fb0",
+      "id": "kr.cluster.2022.middle.eba8d06058e90fb0d0",
+      "labelEnglish": null,
+      "labelKorean": "미술 — 표현",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex13"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "미술의 표현 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.05b259dc37fa75926b30",
+        "kr.topic.2022.middle.53c0a5690c914dcefcfd",
+        "kr.topic.2022.middle.64d013651f146a0cf5d5",
+        "kr.topic.2022.middle.9ba0f217c40cce60f018",
+        "kr.topic.2022.middle.b13a0af6759f26942667"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.c197990b3a23fdd2",
+      "domainId": "kr.domain.2022.middle.edbc14eceee84005",
+      "id": "kr.cluster.2022.middle.edbc14eceee8400511",
+      "labelEnglish": null,
+      "labelKorean": "정보 — 알고리즘과 프로그래밍",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex10"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "정보의 알고리즘과 프로그래밍 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.1368d82c0c3fb0434195",
+        "kr.topic.2022.middle.216d6c00781215ad8e7b",
+        "kr.topic.2022.middle.32d023e666b1a143f32e",
+        "kr.topic.2022.middle.3da193546519fe72651e",
+        "kr.topic.2022.middle.a978823f70738246ae93",
+        "kr.topic.2022.middle.bfee1df0faaf8ddd932a",
+        "kr.topic.2022.middle.e7c81543dc1114d363c4",
+        "kr.topic.2022.middle.f141b1d57b47445ebf50",
+        "kr.topic.2022.middle.f825e950d8c84e547d7c"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.dccd29079b173ca0",
+      "domainId": "kr.domain.2022.middle.f231e4fd6706f388",
+      "id": "kr.cluster.2022.middle.f231e4fd6706f38807",
+      "labelEnglish": null,
+      "labelKorean": "사회 — 중부 지역",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "사회의 중부 지역 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.01f3c9bdbdfa49ef42d2",
+        "kr.topic.2022.middle.62c051161a1c562dc086",
+        "kr.topic.2022.middle.e050ef12c35b8504d411",
+        "kr.topic.2022.middle.ea3713df0d2c90cf2568"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.718b305249a94a92",
+      "domainId": "kr.domain.2022.middle.f361bf8036f1c152",
+      "id": "kr.cluster.2022.middle.f361bf8036f1c15225",
+      "labelEnglish": null,
+      "labelKorean": "역사 — 문명의 발생과 고대 세계의 형성",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "역사의 문명의 발생과 고대 세계의 형성 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.1fe6faf9d7ac714a9bf7",
+        "kr.topic.2022.middle.2330e8ba581cdcc309b6",
+        "kr.topic.2022.middle.5b993c47a2864f47d2a6"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.dccd29079b173ca0",
+      "domainId": "kr.domain.2022.middle.f6eae00d987f8a3f",
+      "id": "kr.cluster.2022.middle.f6eae00d987f8a3fa8",
+      "labelEnglish": null,
+      "labelKorean": "사회 — 사회 변동과 사회문제",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "사회의 사회 변동과 사회문제 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.7d29ebae3c4a5398d995",
+        "kr.topic.2022.middle.b2182daaafaacc9e7234",
+        "kr.topic.2022.middle.d35d25fa5981c3f74867"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.dccd29079b173ca0",
+      "domainId": "kr.domain.2022.middle.f79baba96145eddc",
+      "id": "kr.cluster.2022.middle.f79baba96145eddc6a",
+      "labelEnglish": null,
+      "labelKorean": "사회 — 오세아니아와 극지방",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "사회의 오세아니아와 극지방 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.44e9d8ed462ca9e6c72d",
+        "kr.topic.2022.middle.4d51db32f75bc85d7800",
+        "kr.topic.2022.middle.ec719c3919f212bb3b2d"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.9cd4d075bde4ad85",
+      "domainId": "kr.domain.2022.middle.f7edda64be5f740c",
+      "id": "kr.cluster.2022.middle.f7edda64be5f740ccc",
+      "labelEnglish": null,
+      "labelKorean": "보건 — 건강자원과 건강문화",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex18"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "보건의 건강자원과 건강문화 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.0c7f72114b8d5c9df576",
+        "kr.topic.2022.middle.315f8761968b6b4a55d1",
+        "kr.topic.2022.middle.97f60b27d5750d7211d2",
+        "kr.topic.2022.middle.b1a60fd9fa733a7d222e",
+        "kr.topic.2022.middle.f7c853140d28eb599cb2"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.2178b9d0de944d75",
+      "domainId": "kr.domain.2022.middle.f85faddd8fc53a4c",
+      "id": "kr.cluster.2022.middle.f85faddd8fc53a4c47",
+      "labelEnglish": null,
+      "labelKorean": "생활 러시아어 — 듣기",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "생활 러시아어의 듣기 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.1349b2e03bb8c87cf96a",
+        "kr.topic.2022.middle.2b8a820e4d51a6084cd3",
+        "kr.topic.2022.middle.e8a69ba18fc3ce3b649b"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.ec48c1127e519a2e",
+      "domainId": "kr.domain.2022.middle.f8bab7087e96834d",
+      "id": "kr.cluster.2022.middle.f8bab7087e96834db9",
+      "labelEnglish": null,
+      "labelKorean": "환경 — 지속가능성과 시민 참여",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex18"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "환경의 지속가능성과 시민 참여 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.38b1db396552431d6420",
+        "kr.topic.2022.middle.3be610597e331231c452",
+        "kr.topic.2022.middle.df31e0e853fbe80c16dd"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.ec48c1127e519a2e",
+      "domainId": "kr.domain.2022.middle.f91830e47ee13379",
+      "id": "kr.cluster.2022.middle.f91830e47ee1337910",
+      "labelEnglish": null,
+      "labelKorean": "환경 — 환경 문제와 쟁점",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex18"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "환경의 환경 문제와 쟁점 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.3757ef0a24cc4b3338cb",
+        "kr.topic.2022.middle.6424adb96a6f67c7052d",
+        "kr.topic.2022.middle.889c1a6ee792b111fd1c",
+        "kr.topic.2022.middle.8a99475a2603a7abe868"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.dccd29079b173ca0",
+      "domainId": "kr.domain.2022.middle.f96d3e58ca4cdc55",
+      "id": "kr.cluster.2022.middle.f96d3e58ca4cdc553f",
+      "labelEnglish": null,
+      "labelKorean": "사회 — 대한민국, 우리가 살아가는 곳",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "사회의 대한민국, 우리가 살아가는 곳 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.451e15cde3f5f8aa065d",
+        "kr.topic.2022.middle.6087e3f03e34603fbac2",
+        "kr.topic.2022.middle.6b7a08e6b32171481061"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.a0f8efae1e2bd119",
+      "domainId": "kr.domain.2022.middle.facd78165353a4dc",
+      "id": "kr.cluster.2022.middle.facd78165353a4dcb7",
+      "labelEnglish": null,
+      "labelKorean": "국어 — 듣기⋅말하기",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "국어의 듣기⋅말하기 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.027828fef4b11fbd7f10",
+        "kr.topic.2022.middle.0528f8b0f4f119aa3eae",
+        "kr.topic.2022.middle.197de2edcb4fe194b37d",
+        "kr.topic.2022.middle.68ef6965c50a5c051232",
+        "kr.topic.2022.middle.901303c33f5dbc3d8a3c",
+        "kr.topic.2022.middle.962374ba12aa027eb280",
+        "kr.topic.2022.middle.9fd5e9ac66ba0e63c803",
+        "kr.topic.2022.middle.a90e25cf2127fd60701f",
+        "kr.topic.2022.middle.c6f20a7f35eea90c97e8",
+        "kr.topic.2022.middle.cfba584095b45a3224ae",
+        "kr.topic.2022.middle.f3186c984004251e2212"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.373e9959b3cc1af3",
+      "domainId": "kr.domain.2022.middle.fef3461680817f48",
+      "id": "kr.cluster.2022.middle.fef3461680817f48bd",
+      "labelEnglish": null,
+      "labelKorean": "수학 — 자료와 가능성",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex8"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "수학의 자료와 가능성 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.15d7bc6a340e3e7d7702",
+        "kr.topic.2022.middle.3ac6a1eb3c5951a58808",
+        "kr.topic.2022.middle.41fcc93171e027f2dcf9",
+        "kr.topic.2022.middle.7bdce7d2626fa60ef65c",
+        "kr.topic.2022.middle.8ad9cc20c7eb92f948c1",
+        "kr.topic.2022.middle.ab16790d334c0ef1dda3",
+        "kr.topic.2022.middle.c7299fb834689ea98155",
+        "kr.topic.2022.middle.d44fe9e4546c6e93ff07",
+        "kr.topic.2022.middle.f571176f4816eed42496"
+      ],
+      "verificationStatus": "public-doc-derived"
+    },
+    {
+      "courseId": "kr.course.2022.middle.2178b9d0de944d75",
+      "domainId": "kr.domain.2022.middle.ff3f58fc27959c43",
+      "id": "kr.cluster.2022.middle.ff3f58fc27959c43f8",
+      "labelEnglish": null,
+      "labelKorean": "생활 러시아어 — 문화",
+      "reviewStatus": "candidate",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex16"
+      ],
+      "sourceTextIncluded": false,
+      "summary": "생활 러시아어의 문화 성취기준과 세부 주제를 묶은 학습 클러스터다.",
+      "topicIds": [
+        "kr.topic.2022.middle.199acb500dd941c40f5d",
+        "kr.topic.2022.middle.91948c132996a07b2f0b",
+        "kr.topic.2022.middle.f16723d9cd6142ed9967"
+      ],
+      "verificationStatus": "public-doc-derived"
+    }
+  ],
+  "recordType": "clusters",
+  "releaseId": "kr-2022-middle-v0.2.0-candidate"
+}

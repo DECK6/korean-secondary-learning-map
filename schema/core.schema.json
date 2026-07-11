@@ -1,0 +1,135 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dexa.art/learnmap/schema/secondary/core.schema.json",
+  "title": "Korean Secondary Learning Map — shared core definitions",
+  "$defs": {
+    "stableId": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 240,
+      "pattern": "^[a-z0-9][a-z0-9._:-]*$"
+    },
+    "releaseId": {
+      "type": "string",
+      "pattern": "^kr-2022-(middle|high|middle-high-bridge)-v[0-9]+\\.[0-9]+(?:\\.[0-9]+)?(?:-[a-z0-9.-]+)?$"
+    },
+    "sourceRef": {
+      "$ref": "#/$defs/stableId"
+    },
+    "verificationStatus": {
+      "enum": [
+        "needs-official-code-check",
+        "official-web-checked",
+        "official-source-checked",
+        "public-doc-derived"
+      ]
+    },
+    "reviewStatus": {
+      "enum": [
+        "candidate",
+        "internal-reviewed",
+        "subject-expert-reviewed",
+        "field-reviewed",
+        "rejected",
+        "deprecated"
+      ]
+    },
+    "rightsStatus": {
+      "enum": ["hold", "needs-document-level-review", "cleared", "not-applicable"]
+    },
+    "baseRecord": {
+      "type": "object",
+      "required": [
+        "id",
+        "labelKorean",
+        "sourceRefs",
+        "verificationStatus",
+        "reviewStatus",
+        "sourceTextIncluded"
+      ],
+      "properties": {
+        "id": { "$ref": "#/$defs/stableId" },
+        "labelKorean": { "type": "string", "minLength": 1 },
+        "labelEnglish": { "type": ["string", "null"] },
+        "sourceRefs": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/sourceRef" }
+        },
+        "verificationStatus": { "$ref": "#/$defs/verificationStatus" },
+        "reviewStatus": { "$ref": "#/$defs/reviewStatus" },
+        "sourceTextIncluded": { "const": false }
+      }
+    },
+    "sourceLocator": {
+      "type": "object",
+      "required": ["sourceId", "section"],
+      "properties": {
+        "sourceId": { "$ref": "#/$defs/sourceRef" },
+        "attachmentNo": { "type": ["string", "null"] },
+        "sha256": { "type": ["string", "null"], "pattern": "^[a-f0-9]{64}$" },
+        "pdfPage": { "type": ["integer", "null"], "minimum": 1 },
+        "printedPage": { "type": ["integer", "null"], "minimum": 1 },
+        "section": { "type": "string", "minLength": 1 },
+        "code": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
+    },
+    "textPolicy": {
+      "type": "object",
+      "required": ["officialTextIncluded", "summaryPolicy"],
+      "properties": {
+        "officialTextIncluded": { "const": false },
+        "summaryPolicy": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false
+    },
+    "collectionEnvelopeBase": {
+      "type": "object",
+      "required": ["$schema", "profile", "releaseId", "recordType", "recordCount", "records"],
+      "properties": {
+        "$schema": { "type": "string", "format": "uri-reference" },
+        "profile": { "enum": ["middle", "high", "bridges"] },
+        "releaseId": { "$ref": "#/$defs/releaseId" },
+        "recordType": { "type": "string", "minLength": 1 },
+        "recordCount": { "type": "integer", "minimum": 0 },
+        "records": { "type": "array" }
+      }
+    },
+    "coverageGap": {
+      "type": "object",
+      "required": ["id", "description", "severity", "status", "sourceRefs"],
+      "properties": {
+        "id": { "$ref": "#/$defs/stableId" },
+        "description": { "type": "string", "minLength": 1 },
+        "severity": { "enum": ["intentional", "low", "medium", "high", "unspecified"] },
+        "status": { "enum": ["open", "in-review", "resolved", "accepted"] },
+        "sourceRefs": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/sourceRef" }
+        }
+      },
+      "additionalProperties": false
+    },
+    "reviewRecord": {
+      "type": "object",
+      "required": ["id", "targetIds", "reviewStatus", "reviewKind", "note"],
+      "properties": {
+        "id": { "$ref": "#/$defs/stableId" },
+        "targetIds": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/stableId" }
+        },
+        "reviewStatus": { "$ref": "#/$defs/reviewStatus" },
+        "reviewKind": { "enum": ["internal", "subject-expert", "field", "rights", "source"] },
+        "note": { "type": "string", "minLength": 1 },
+        "reviewerRole": { "type": ["string", "null"] },
+        "reviewDate": { "type": ["string", "null"], "format": "date" }
+      },
+      "additionalProperties": false
+    }
+  }
+}

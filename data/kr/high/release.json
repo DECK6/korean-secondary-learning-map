@@ -1,0 +1,45 @@
+{
+  "$schema": "../../../schema/high-profile.schema.json",
+  "collections": {
+    "choiceSets": "choice-sets.json",
+    "clusters": "clusters.json",
+    "courseRelations": "course-relations.json",
+    "courses": "courses.json",
+    "coverageGaps": "coverage-gaps.json",
+    "creditRules": "credit-rules.json",
+    "domains": "domains.json",
+    "learningRelations": "learning-relations.json",
+    "pathways": "pathways.json",
+    "reviewRecords": "review-records.json",
+    "standards": "standards.json",
+    "subjectGroups": "subject-groups.json",
+    "topics": "topics.json"
+  },
+  "counts": {
+    "choiceSets": 33,
+    "clusters": 5169,
+    "courseRelations": 473,
+    "courses": 759,
+    "coverageGaps": 2,
+    "creditRules": 3,
+    "domains": 5169,
+    "learningRelations": 0,
+    "pathways": 33,
+    "reviewRecords": 0,
+    "standards": 50749,
+    "subjectGroups": 34,
+    "topics": 50749
+  },
+  "createdDate": "2026-07-11",
+  "curriculumVersion": "2022-revised",
+  "profile": "high",
+  "releaseId": "kr-2022-high-v0.2.0-candidate",
+  "rightsStatus": "hold",
+  "schoolLevel": "high",
+  "sourceManifest": "../shared/source-manifest.json",
+  "status": "candidate",
+  "textPolicy": {
+    "officialTextIncluded": false,
+    "summaryPolicy": "공식 성취기준 문장은 수록하지 않고 코드·locator와 기계적 초안 요약을 사용하며 전문가 검토 상태를 분리한다."
+  }
+}
