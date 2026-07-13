@@ -13,7 +13,7 @@ describe('repository schema contract', () => {
     expect(result.loaded.high.release.counts.standards).toBe(50749);
     expect(result.loaded.middle.release.counts.domains).toBe(149);
     expect(result.loaded.high.release.counts.domains).toBe(5169);
-    expect(result.loaded.middle.release.counts.learningRelations).toBe(0);
+    expect(result.loaded.middle.release.counts.learningRelations).toBe(181);
     expect(result.loaded.high.release.counts.learningRelations).toBe(0);
     expect(result.loaded.bridges.release.counts.transitionAlignments).toBe(398);
     expect(result.inventoryReport.diagnosticCount).toBe(0);

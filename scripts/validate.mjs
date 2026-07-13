@@ -54,6 +54,7 @@ const profileConfig = {
     schemaId: 'https://dexa.art/learnmap/schema/secondary/bridge-profile.schema.json',
     collectionDefs: {
       transitionAlignments: 'transitionAlignmentCollection',
+      elementaryTransitions: 'elementaryTransitionCollection',
       reviewRecords: 'reviewRecordCollection',
       coverageGaps: 'coverageGapCollection',
     },
@@ -333,6 +334,21 @@ export async function validateRepository(root = projectRoot) {
     requireRefs(alignment.fromTopicIds, loaded.middle.indexes.topics, `bridges/transitionAlignments/${alignment.id}`, errors);
     requireRefs(alignment.toCourseIds, loaded.high.indexes.courses, `bridges/transitionAlignments/${alignment.id}`, errors);
     requireRefs(alignment.toTopicIds, loaded.high.indexes.topics, `bridges/transitionAlignments/${alignment.id}`, errors);
+  }
+  if (bridge.collections.elementaryTransitions) {
+    const inventory = await readJson(join(root, 'data/kr/bridges/elementary-topic-inventory.json'));
+    const elementaryTopicIds = new Set(inventory.topicIds ?? []);
+    if (inventory.topicCount !== elementaryTopicIds.size) {
+      errors.push('bridges/elementary-topic-inventory.json: topicCount mismatch');
+    }
+    const collection = bridge.collections.elementaryTransitions;
+    if (collection.elementaryReleaseVersion !== inventory.elementaryReleaseVersion) {
+      errors.push('bridges/elementary-transitions.json: elementaryReleaseVersion does not pin the inventory version');
+    }
+    for (const record of collection.records) {
+      requireRefs([record.prerequisiteTopicId], elementaryTopicIds, `bridges/elementaryTransitions/${record.id}`, errors);
+      requireRefs([record.dependentTopicId], loaded.middle.indexes.topics, `bridges/elementaryTransitions/${record.id}`, errors);
+    }
   }
   if (bridge.release.rightsStatus !== 'hold') errors.push('bridges/release.json: rights must remain on hold');
   if (inventoryReport.diagnosticCount !== 0) errors.push(`data/kr/inventory-report.json: ${inventoryReport.diagnosticCount} unresolved diagnostics`);

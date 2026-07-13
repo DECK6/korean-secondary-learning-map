@@ -1,8 +1,38 @@
 {
-  "$schema": "../../../schema/bridge-profile.schema.json#/$defs/reviewRecordCollection",
-  "profile": "bridges",
-  "recordCount": 0,
-  "records": [],
-  "recordType": "reviewRecords",
-  "releaseId": "kr-2022-middle-high-bridge-v0.3.0-candidate"
+ "$schema": "../../../schema/bridge-profile.schema.json#/$defs/reviewRecordCollection",
+ "profile": "bridges",
+ "recordCount": 1,
+ "records": [
+  {
+   "id": "kr.review.2026.math-learning-relations.bridges",
+   "targetIds": [
+    "kr.learning-relation.2022.bridge.elementary.00d8aa43cefa24422323",
+    "kr.learning-relation.2022.bridge.elementary.0b048c9d2d9e597547f9",
+    "kr.learning-relation.2022.bridge.elementary.f01033aa7207f98f25b4",
+    "kr.learning-relation.2022.bridge.elementary.4464e615b891ba3014ee",
+    "kr.learning-relation.2022.bridge.elementary.c6ce6b886a9787d5f4ed",
+    "kr.learning-relation.2022.bridge.elementary.ca506fe4b7102ced64df",
+    "kr.learning-relation.2022.bridge.elementary.23d4cb00dc802a9ea7e5",
+    "kr.learning-relation.2022.bridge.elementary.4137c30ddb725476fe76",
+    "kr.learning-relation.2022.bridge.elementary.a11a729ba9183a7dbcad",
+    "kr.learning-relation.2022.bridge.elementary.2759b0a25e0fdbd71865",
+    "kr.learning-relation.2022.bridge.elementary.d2f461b62a78ed0e1f68",
+    "kr.learning-relation.2022.bridge.elementary.bdd031bc10d3ce36227f",
+    "kr.learning-relation.2022.bridge.elementary.8a4fa9fd3aeca4f0c4e2",
+    "kr.learning-relation.2022.bridge.elementary.ab1d589fa0daaaa5b7ac",
+    "kr.learning-relation.2022.bridge.elementary.a876d9e3c2163c46642c",
+    "kr.learning-relation.2022.bridge.elementary.90401767dffbbb306842",
+    "kr.learning-relation.2022.bridge.elementary.08e2b0fa88acb967167b",
+    "kr.learning-relation.2022.bridge.elementary.7ad242a12fe3bbed760a",
+    "kr.learning-relation.2022.bridge.elementary.a212c2bdaebbae13e62d"
+   ],
+   "reviewStatus": "internal-reviewed",
+   "reviewKind": "internal",
+   "note": "2026-07-13 저장소 소유자(DECK) 승인 하의 내부 검토. 방법: 교육부 고시 제2022-33호 [별책8] 수학과 교육과정의 구조 파싱(성취기준 435건 전량)과 내용 체계표(p.13-16) 대조, 해설 인용 검증. 자동 검증: 참조 무결성·순환·학년군 역행 0건, 온톨로지 빌드·적대적 검출 통과. 검토 문서: docs/reviews/2026-07-13-math-learning-relations-review.md",
+   "reviewerRole": "repository-owner-approved-agent-review",
+   "reviewDate": "2026-07-13"
+  }
+ ],
+ "recordType": "reviewRecords",
+ "releaseId": "kr-2022-middle-high-bridge-v0.3.0-candidate"
 }

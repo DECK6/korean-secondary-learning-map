@@ -1,8 +1,9 @@
 {
   "bridges": {
     "coverageGaps": 1,
-    "reviewRecords": 0,
-    "transitionAlignments": 398
+    "reviewRecords": 1,
+    "transitionAlignments": 398,
+    "elementaryTransitions": 19
   },
   "comparisonBaselines": {
     "elementary": {
@@ -52,8 +53,8 @@
     "courses": 24,
     "coverageGaps": 2,
     "domains": 149,
-    "learningRelations": 0,
-    "reviewRecords": 0,
+    "learningRelations": 181,
+    "reviewRecords": 1,
     "standards": 714,
     "subjectGroups": 13,
     "topics": 2160

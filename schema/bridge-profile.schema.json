@@ -21,36 +21,94 @@
         "counts"
       ],
       "properties": {
-        "$schema": { "type": "string", "format": "uri-reference" },
+        "$schema": {
+          "type": "string",
+          "format": "uri-reference"
+        },
         "releaseId": {
           "type": "string",
           "pattern": "^kr-2022-middle-high-bridge-v[0-9]+\\.[0-9]+(?:\\.[0-9]+)?(?:-[a-z0-9.-]+)?$"
         },
-        "profile": { "const": "bridges" },
-        "curriculumVersion": { "const": "2022-revised" },
-        "status": { "enum": ["design-skeleton", "candidate", "formal-release", "stale"] },
-        "createdDate": { "type": "string", "format": "date" },
-        "middleReleaseId": { "type": "string", "pattern": "^kr-2022-middle-v" },
-        "highReleaseId": { "type": "string", "pattern": "^kr-2022-high-v" },
-        "sourceManifest": { "type": "string", "pattern": "^\\.\\./shared/[^/]+\\.json$" },
-        "rightsStatus": { "$ref": "core.schema.json#/$defs/rightsStatus" },
+        "profile": {
+          "const": "bridges"
+        },
+        "curriculumVersion": {
+          "const": "2022-revised"
+        },
+        "status": {
+          "enum": [
+            "design-skeleton",
+            "candidate",
+            "formal-release",
+            "stale"
+          ]
+        },
+        "createdDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "middleReleaseId": {
+          "type": "string",
+          "pattern": "^kr-2022-middle-v"
+        },
+        "highReleaseId": {
+          "type": "string",
+          "pattern": "^kr-2022-high-v"
+        },
+        "sourceManifest": {
+          "type": "string",
+          "pattern": "^\\.\\./shared/[^/]+\\.json$"
+        },
+        "rightsStatus": {
+          "$ref": "core.schema.json#/$defs/rightsStatus"
+        },
         "collections": {
           "type": "object",
-          "required": ["transitionAlignments", "reviewRecords", "coverageGaps"],
+          "required": [
+            "transitionAlignments",
+            "reviewRecords",
+            "coverageGaps"
+          ],
           "properties": {
-            "transitionAlignments": { "const": "transition-alignments.json" },
-            "reviewRecords": { "const": "review-records.json" },
-            "coverageGaps": { "const": "coverage-gaps.json" }
+            "transitionAlignments": {
+              "const": "transition-alignments.json"
+            },
+            "reviewRecords": {
+              "const": "review-records.json"
+            },
+            "coverageGaps": {
+              "const": "coverage-gaps.json"
+            },
+            "elementaryTransitions": {
+              "const": "elementary-transitions.json"
+            }
           },
           "additionalProperties": false
         },
         "counts": {
           "type": "object",
-          "required": ["transitionAlignments", "reviewRecords", "coverageGaps"],
+          "required": [
+            "transitionAlignments",
+            "reviewRecords",
+            "coverageGaps"
+          ],
           "properties": {
-            "transitionAlignments": { "type": "integer", "minimum": 0 },
-            "reviewRecords": { "type": "integer", "minimum": 0 },
-            "coverageGaps": { "type": "integer", "minimum": 0 }
+            "transitionAlignments": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "reviewRecords": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "coverageGaps": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "elementaryTransitions": {
+              "type": "integer",
+              "minimum": 0
+            }
           },
           "additionalProperties": false
         }
@@ -75,55 +133,113 @@
         "reviewStatus"
       ],
       "properties": {
-        "id": { "$ref": "core.schema.json#/$defs/stableId" },
-        "fromSchoolLevel": { "const": "middle" },
-        "toSchoolLevel": { "const": "high" },
+        "id": {
+          "$ref": "core.schema.json#/$defs/stableId"
+        },
+        "fromSchoolLevel": {
+          "const": "middle"
+        },
+        "toSchoolLevel": {
+          "const": "high"
+        },
         "fromCourseIds": {
           "type": "array",
           "minItems": 1,
           "uniqueItems": true,
-          "items": { "$ref": "core.schema.json#/$defs/stableId" }
+          "items": {
+            "$ref": "core.schema.json#/$defs/stableId"
+          }
         },
         "fromTopicIds": {
           "type": "array",
           "uniqueItems": true,
-          "items": { "$ref": "core.schema.json#/$defs/stableId" }
+          "items": {
+            "$ref": "core.schema.json#/$defs/stableId"
+          }
         },
         "toCourseIds": {
           "type": "array",
           "uniqueItems": true,
-          "items": { "$ref": "core.schema.json#/$defs/stableId" }
+          "items": {
+            "$ref": "core.schema.json#/$defs/stableId"
+          }
         },
         "toTopicIds": {
           "type": "array",
           "uniqueItems": true,
-          "items": { "$ref": "core.schema.json#/$defs/stableId" }
+          "items": {
+            "$ref": "core.schema.json#/$defs/stableId"
+          }
         },
-        "transitionKind": { "enum": ["continues", "deepens", "prepares-for"] },
-        "reason": { "type": "string", "minLength": 1 },
-        "basisKind": { "enum": ["expert-review", "repository-authored", "model-candidate"] },
-        "basis": { "type": "string", "minLength": 1 },
+        "transitionKind": {
+          "enum": [
+            "continues",
+            "deepens",
+            "prepares-for"
+          ]
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        },
+        "basisKind": {
+          "enum": [
+            "expert-review",
+            "repository-authored",
+            "model-candidate"
+          ]
+        },
+        "basis": {
+          "type": "string",
+          "minLength": 1
+        },
         "sourceRefs": {
           "type": "array",
           "uniqueItems": true,
-          "items": { "$ref": "core.schema.json#/$defs/sourceRef" }
+          "items": {
+            "$ref": "core.schema.json#/$defs/sourceRef"
+          }
         },
-        "reviewStatus": { "$ref": "core.schema.json#/$defs/reviewStatus" }
+        "reviewStatus": {
+          "$ref": "core.schema.json#/$defs/reviewStatus"
+        }
       },
       "anyOf": [
-        { "properties": { "toCourseIds": { "minItems": 1 } } },
-        { "properties": { "toTopicIds": { "minItems": 1 } } }
+        {
+          "properties": {
+            "toCourseIds": {
+              "minItems": 1
+            }
+          }
+        },
+        {
+          "properties": {
+            "toTopicIds": {
+              "minItems": 1
+            }
+          }
+        }
       ],
       "additionalProperties": false
     },
     "transitionAlignmentCollection": {
       "allOf": [
-        { "$ref": "core.schema.json#/$defs/collectionEnvelopeBase" },
+        {
+          "$ref": "core.schema.json#/$defs/collectionEnvelopeBase"
+        },
         {
           "properties": {
-            "profile": { "const": "bridges" },
-            "recordType": { "const": "transitionAlignments" },
-            "records": { "items": { "$ref": "#/$defs/transitionAlignment" } }
+            "profile": {
+              "const": "bridges"
+            },
+            "recordType": {
+              "const": "transitionAlignments"
+            },
+            "records": {
+              "items": {
+                "$ref": "#/$defs/transitionAlignment"
+              }
+            }
           }
         }
       ],
@@ -131,12 +247,22 @@
     },
     "reviewRecordCollection": {
       "allOf": [
-        { "$ref": "core.schema.json#/$defs/collectionEnvelopeBase" },
+        {
+          "$ref": "core.schema.json#/$defs/collectionEnvelopeBase"
+        },
         {
           "properties": {
-            "profile": { "const": "bridges" },
-            "recordType": { "const": "reviewRecords" },
-            "records": { "items": { "$ref": "core.schema.json#/$defs/reviewRecord" } }
+            "profile": {
+              "const": "bridges"
+            },
+            "recordType": {
+              "const": "reviewRecords"
+            },
+            "records": {
+              "items": {
+                "$ref": "core.schema.json#/$defs/reviewRecord"
+              }
+            }
           }
         }
       ],
@@ -144,13 +270,144 @@
     },
     "coverageGapCollection": {
       "allOf": [
-        { "$ref": "core.schema.json#/$defs/collectionEnvelopeBase" },
+        {
+          "$ref": "core.schema.json#/$defs/collectionEnvelopeBase"
+        },
         {
           "properties": {
-            "profile": { "const": "bridges" },
-            "recordType": { "const": "coverageGaps" },
-            "records": { "items": { "$ref": "core.schema.json#/$defs/coverageGap" } }
+            "profile": {
+              "const": "bridges"
+            },
+            "recordType": {
+              "const": "coverageGaps"
+            },
+            "records": {
+              "items": {
+                "$ref": "core.schema.json#/$defs/coverageGap"
+              }
+            }
           }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "elementaryTransition": {
+      "type": "object",
+      "required": [
+        "id",
+        "dependentTopicId",
+        "prerequisiteTopicId",
+        "relationKind",
+        "scope",
+        "strength",
+        "reason",
+        "basisKind",
+        "basis",
+        "sourceRefs",
+        "reviewStatus"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "core.schema.json#/$defs/stableId"
+        },
+        "dependentTopicId": {
+          "$ref": "core.schema.json#/$defs/stableId"
+        },
+        "prerequisiteTopicId": {
+          "$ref": "core.schema.json#/$defs/stableId"
+        },
+        "relationKind": {
+          "enum": [
+            "required-prerequisite",
+            "recommended-before"
+          ]
+        },
+        "scope": {
+          "const": "cross-school-level"
+        },
+        "strength": {
+          "enum": [
+            "required",
+            "recommended"
+          ]
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        },
+        "basisKind": {
+          "enum": [
+            "official-source",
+            "expert-review",
+            "repository-authored",
+            "model-candidate"
+          ]
+        },
+        "basis": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sourceRefs": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "core.schema.json#/$defs/sourceRef"
+          }
+        },
+        "reviewStatus": {
+          "$ref": "core.schema.json#/$defs/reviewStatus"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "relationKind": {
+                "const": "required-prerequisite"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "basisKind": {
+                "const": "official-source"
+              },
+              "strength": {
+                "const": "required"
+              }
+            }
+          }
+        }
+      ],
+      "additionalProperties": false,
+      "description": "초등(korean-elementary-learning-map) 토픽을 선수로 갖는 중학교 토픽의 학교급 간 학습 관계. prerequisiteTopicId는 elementary-topic-inventory.json에 핀된 초등 토픽 ID다."
+    },
+    "elementaryTransitionCollection": {
+      "allOf": [
+        {
+          "$ref": "core.schema.json#/$defs/collectionEnvelopeBase"
+        },
+        {
+          "properties": {
+            "profile": {
+              "const": "bridges"
+            },
+            "recordType": {
+              "const": "elementaryTransitions"
+            },
+            "elementaryReleaseVersion": {
+              "type": "string",
+              "minLength": 1
+            },
+            "records": {
+              "items": {
+                "$ref": "#/$defs/elementaryTransition"
+              }
+            }
+          },
+          "required": [
+            "elementaryReleaseVersion"
+          ]
         }
       ],
       "unevaluatedProperties": false

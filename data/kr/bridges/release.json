@@ -3,12 +3,14 @@
   "collections": {
     "coverageGaps": "coverage-gaps.json",
     "reviewRecords": "review-records.json",
-    "transitionAlignments": "transition-alignments.json"
+    "transitionAlignments": "transition-alignments.json",
+    "elementaryTransitions": "elementary-transitions.json"
   },
   "counts": {
     "coverageGaps": 1,
-    "reviewRecords": 0,
-    "transitionAlignments": 398
+    "reviewRecords": 1,
+    "transitionAlignments": 398,
+    "elementaryTransitions": 19
   },
   "createdDate": "2026-07-11",
   "curriculumVersion": "2022-revised",
