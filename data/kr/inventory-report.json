@@ -1,9 +1,9 @@
 {
   "bridges": {
     "coverageGaps": 1,
+    "elementaryTransitions": 19,
     "reviewRecords": 1,
-    "transitionAlignments": 398,
-    "elementaryTransitions": 19
+    "transitionAlignments": 50
   },
   "comparisonBaselines": {
     "elementary": {
@@ -22,14 +22,14 @@
   "high": {
     "choiceSets": 33,
     "clusters": 5169,
-    "courseRelations": 473,
+    "courseRelations": 39,
     "courses": 759,
     "coverageGaps": 2,
     "creditRules": 3,
     "domains": 5169,
-    "learningRelations": 0,
+    "learningRelations": 50029,
     "pathways": 33,
-    "reviewRecords": 0,
+    "reviewRecords": 1,
     "standards": 50749,
     "subjectGroups": 34,
     "topics": 50749
@@ -53,7 +53,7 @@
     "courses": 24,
     "coverageGaps": 2,
     "domains": 149,
-    "learningRelations": 181,
+    "learningRelations": 2155,
     "reviewRecords": 1,
     "standards": 714,
     "subjectGroups": 13,
@@ -77,5 +77,5 @@
   },
   "repeatedProfessionalCommonOccurrenceCount": 912,
   "uniqueStandardCount": 51463,
-  "version": "0.3.0-candidate"
+  "version": "0.4.0-candidate"
 }

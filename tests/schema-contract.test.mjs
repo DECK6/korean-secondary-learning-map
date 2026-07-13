@@ -13,13 +13,15 @@ describe('repository schema contract', () => {
     expect(result.loaded.high.release.counts.standards).toBe(50749);
     expect(result.loaded.middle.release.counts.domains).toBe(149);
     expect(result.loaded.high.release.counts.domains).toBe(5169);
-    expect(result.loaded.middle.release.counts.learningRelations).toBe(181);
-    expect(result.loaded.high.release.counts.learningRelations).toBe(0);
-    expect(result.loaded.bridges.release.counts.transitionAlignments).toBe(398);
+    expect(result.loaded.middle.release.counts.learningRelations).toBe(2155);
+    expect(result.loaded.high.release.counts.learningRelations).toBe(50029);
+    expect(result.loaded.high.release.counts.courseRelations).toBe(39);
+    expect(result.loaded.bridges.release.counts.transitionAlignments).toBe(50);
+    expect(result.loaded.bridges.release.counts.elementaryTransitions).toBe(19);
     expect(result.inventoryReport.diagnosticCount).toBe(0);
     expect(result.inventoryReport.middleTopicDecomposition.topicsPerStandard.distribution).toEqual({ '2': 77, '3': 564, '4': 51, '5': 22 });
     expect(result.inventoryReport.comparisonBaselines.elementary.dataRelease).toBe('kr-full-depth-v0.4');
-  });
+  }, 30000);
 
   test('requires high-school course category and program scope', async () => {
     const ajv = await createAjv();

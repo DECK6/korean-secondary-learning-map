@@ -444,14 +444,14 @@ const records = [...byProfileAndCode.values()].sort((a, b) =>
 );
 
 const releases = {
-  middle: 'kr-2022-middle-v0.3.0-candidate',
-  high: 'kr-2022-high-v0.3.0-candidate',
-  bridges: 'kr-2022-middle-high-bridge-v0.3.0-candidate',
+  middle: 'kr-2022-middle-v0.4.0-candidate',
+  high: 'kr-2022-high-v0.4.0-candidate',
+  bridges: 'kr-2022-middle-high-bridge-v0.4.0-candidate',
 };
 
 const sourceManifest = {
   $schema: '../../../schema/source-manifest.schema.json',
-  version: '0.3.0-candidate',
+  version: '0.4.0-candidate',
   accessDate: catalog.catalogVersion,
   sourceCount: catalog.sources.length,
   sources: catalog.sources.map((source) => {
@@ -940,7 +940,7 @@ function highScopeSummary(scope) {
 }
 
 await atomicJson(join(root, 'data/kr/inventory-report.json'), {
-  version: '0.3.0-candidate',
+  version: '0.4.0-candidate',
   extractedOccurrenceCount: extracted.length,
   repeatedProfessionalCommonOccurrenceCount,
   uniqueStandardCount: records.length,

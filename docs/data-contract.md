@@ -55,7 +55,7 @@ data/kr/
 ```json
 {
   "id": "stable-id",
-  "releaseId": "kr-2022-secondary-v0.3.0-candidate",
+  "releaseId": "kr-2022-secondary-v0.4.0-candidate",
   "labelKorean": "표시 이름",
   "sourceRefs": ["source-id"],
   "verificationStatus": "official-source-checked",
@@ -70,9 +70,9 @@ data/kr/
 
 ```json
 {
-  "id": "kr-2022-middle-high-bridge-v0.3.0-candidate",
-  "middleReleaseId": "kr-2022-middle-v0.3.0-candidate",
-  "highReleaseId": "kr-2022-high-v0.3.0-candidate",
+  "id": "kr-2022-middle-high-bridge-v0.4.0-candidate",
+  "middleReleaseId": "kr-2022-middle-v0.4.0-candidate",
+  "highReleaseId": "kr-2022-high-v0.4.0-candidate",
   "transitionCount": 0
 }
 ```
@@ -188,7 +188,7 @@ data/kr/
 
 간선의 결정적 식별자는 양 끝점만이 아니라 관계 종류·적용 범위·근거·출처를 포함한 정규 튜플로 만든다.
 
-코드 배열 순서만으로 선수 관계를 만들지 않는다. 현재 자동 생성 주제 관계는 0건이며, 공식 출처 또는 식별 가능한 전문가 검토가 있는 관계만 이 계약으로 추가한다.
+코드 배열 순서만으로 필수 선수 관계를 만들지 않는다. v0.4의 공식 문서 배열 관계는 검토 레코드를 가진 `recommended-before` 탐색 순서이고, 이유와 `repository-authored` basis로 비강제 성격을 명시한다. 필수 관계는 공식 출처·페이지와 `official-source` basis가 있는 경우에만 이 계약으로 추가한다.
 
 ## 7. 과목 관계와 선택 묶음
 

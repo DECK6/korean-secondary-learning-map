@@ -13,6 +13,8 @@ for (const profile of ['middle', 'high']) {
   const topics = (await readJson(join(root, 'data/kr', profile, 'topics.json'))).records;
   const clusters = (await readJson(join(root, 'data/kr', profile, 'clusters.json'))).records;
   const learningRelations = (await readJson(join(root, 'data/kr', profile, 'learning-relations.json'))).records;
+  const reviewRecords = (await readJson(join(root, 'data/kr', profile, 'review-records.json'))).records;
+  const reviewedTargetIds = new Set(reviewRecords.flatMap((review) => review.targetIds));
   const courseIds = new Set(courses.map((course) => course.id));
   const domainIds = new Set(domains.map((domain) => domain.id));
   const courseIdentityKeys = new Set();
@@ -53,17 +55,33 @@ for (const profile of ['middle', 'high']) {
   }
   for (const relation of learningRelations) {
     if (relation.basis === 'official-code-order-candidate-v1' || relation.reviewStatus === 'candidate') errors.push(`${relation.id}: unreviewed automatic prerequisite relation is prohibited`);
+    if (!reviewedTargetIds.has(relation.id)) errors.push(`${relation.id}: reviewed learning relation has no review record`);
+    if (relation.relationKind === 'required-prerequisite' && (relation.basisKind !== 'official-source' || relation.strength !== 'required')) errors.push(`${relation.id}: required relation lacks official-source provenance`);
+    if (relation.relationKind === 'recommended-before' && relation.strength !== 'recommended') errors.push(`${relation.id}: recommendation strength mismatch`);
   }
 }
 
 const pathways = (await readJson(join(root, 'data/kr/high/pathways.json'))).records;
 for (const pathway of pathways) if (pathway.notOfficialRequirement !== true || pathway.pathwayKind !== 'illustrative') errors.push(`${pathway.id}: official-requirement boundary missing`);
 const courseRelations = (await readJson(join(root, 'data/kr/high/course-relations.json'))).records;
-for (const relation of courseRelations) if (relation.claimStatus !== 'candidate' || relation.reviewStatus !== 'candidate' || relation.basisKind !== 'repository-authored' || !relation.basis) errors.push(`${relation.id}: course relation provenance boundary missing`);
+const highReviewTargets = new Set((await readJson(join(root, 'data/kr/high/review-records.json'))).records.flatMap((review) => review.targetIds));
+for (const relation of courseRelations) {
+  if (relation.claimStatus !== 'reviewed-recommendation' || relation.reviewStatus !== 'internal-reviewed' || relation.basisKind !== 'official-source' || !relation.basis || !relation.sourceRefs.length) errors.push(`${relation.id}: reviewed course relation provenance boundary missing`);
+  if (!highReviewTargets.has(relation.id)) errors.push(`${relation.id}: reviewed course relation has no review record`);
+}
 const transitions = (await readJson(join(root, 'data/kr/bridges/transition-alignments.json'))).records;
+const elementaryTransitions = (await readJson(join(root, 'data/kr/bridges/elementary-transitions.json'))).records;
+const bridgeReviewTargets = new Set((await readJson(join(root, 'data/kr/bridges/review-records.json'))).records.flatMap((review) => review.targetIds));
 for (const transition of transitions) {
-  if (transition.reviewStatus !== 'candidate' || transition.basisKind !== 'repository-authored') errors.push(`${transition.id}: transition claim status is unsafe`);
-  if (!transition.fromCourseIds?.length || transition.fromTopicIds?.length || transition.toTopicIds?.length) errors.push(`${transition.id}: candidate transition must remain course-level until topic review`);
+  const topicLevel = transition.fromTopicIds?.length || transition.toTopicIds?.length;
+  if (transition.reviewStatus !== 'internal-reviewed' || !bridgeReviewTargets.has(transition.id)) errors.push(`${transition.id}: transition review record is missing`);
+  if (!transition.fromCourseIds?.length || !transition.toCourseIds?.length) errors.push(`${transition.id}: transition course anchors are missing`);
+  if (topicLevel && (transition.fromTopicIds.length !== 1 || transition.toTopicIds.length !== 1 || transition.basisKind !== 'official-source' || !transition.sourceRefs.length)) errors.push(`${transition.id}: topic-level transition lacks official-source provenance`);
+  if (!topicLevel && transition.basisKind !== 'repository-authored') errors.push(`${transition.id}: course-level transition provenance boundary missing`);
+}
+for (const transition of elementaryTransitions) {
+  if (transition.reviewStatus !== 'internal-reviewed' || transition.relationKind !== 'required-prerequisite' || transition.basisKind !== 'official-source' || !transition.sourceRefs.length) errors.push(`${transition.id}: elementary transition provenance boundary missing`);
+  if (!bridgeReviewTargets.has(transition.id)) errors.push(`${transition.id}: elementary transition has no review record`);
 }
 const sources = (await readJson(join(root, 'data/kr/shared/source-manifest.json'))).sources;
 for (const source of sources) if (source.rightsStatus !== 'needs-document-level-review') errors.push(`${source.id}: official document rights review was bypassed`);
@@ -98,4 +116,4 @@ for (const path of await sourceFiles(root)) {
 }
 
 if (errors.length) { console.error(errors.slice(0, 100).join('\n')); process.exit(1); }
-console.log(`content/governance check passed: ${sources.length} sources, ${pathways.length} illustrative pathways, ${transitions.length} candidate transitions`);
+console.log(`content/governance check passed: ${sources.length} sources, ${pathways.length} illustrative pathways, ${transitions.length} reviewed transitions`);

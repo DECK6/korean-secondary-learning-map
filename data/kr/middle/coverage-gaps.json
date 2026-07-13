@@ -28,13 +28,13 @@
       "status": "open"
     },
     {
-      "description": "세부 주제는 자동 생성 후보이며 선수 관계는 근거 없는 자동 생성을 중단했다. 교과 전문가와 학교 현장 검토가 필요하다.",
-      "id": "gap.middle.subject-expert-review-pending",
-      "severity": "high",
+      "description": "전 과목 탐색 그래프와 수학의 공식 선수 관계는 내부 검토되었다. 비강제 탐색 순서를 추가적인 교과 전문가 검토로 더 정밀화하는 작업은 남아 있다.",
+      "id": "gap.middle.subject-expert-refinement-pending",
+      "severity": "medium",
       "sourceRefs": [],
       "status": "open"
     }
   ],
   "recordType": "coverageGaps",
-  "releaseId": "kr-2022-middle-v0.3.0-candidate"
+  "releaseId": "kr-2022-middle-v0.4.0-candidate"
 }

@@ -1,6 +1,6 @@
 {
   "name": "korean-secondary-learning-map",
-  "version": "0.3.0-candidate",
+  "version": "0.4.0-candidate",
   "private": true,
   "type": "module",
   "description": "대한민국 2022 개정 중학교·고등학교 교육과정 학습지도",
@@ -9,11 +9,13 @@
   },
   "scripts": {
     "build:data": "bun scripts/build-curriculum-data.mjs",
+    "build:relations": "bun scripts/build-learning-relations.mjs",
     "build:ontology": "bun scripts/build-ontology.mjs",
     "build:ui": "bun scripts/build-ui-data.mjs",
-    "build": "bun run build:ontology && bun run build:ui && bun scripts/build-manifests.mjs",
+    "build": "bun run build:relations && bun run build:ontology && bun run build:ui && bun scripts/build-manifests.mjs",
     "rebuild:all": "bun run sources:download && bun run build:data && bun run build",
-    "check": "bun scripts/build-manifests.mjs --check && bun scripts/build-ontology.mjs --check && bun scripts/check-ui-artifacts.mjs",
+    "check": "bun run check:relations && bun scripts/build-manifests.mjs --check && bun scripts/build-ontology.mjs --check && bun scripts/check-ui-artifacts.mjs",
+    "check:relations": "bun scripts/build-learning-relations.mjs --check",
     "check:content": "bun scripts/check-content-governance.mjs",
     "sources:download": "bun scripts/collect-official-sources.mjs",
     "sources:check": "bun scripts/collect-official-sources.mjs --check",

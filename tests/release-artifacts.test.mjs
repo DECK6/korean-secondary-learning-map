@@ -29,5 +29,22 @@ test('keeps educational interpretations visibly non-official', async () => {
   const pathways = await readJson('../data/kr/high/pathways.json');
   const transitions = await readJson('../data/kr/bridges/transition-alignments.json');
   expect(pathways.records.every((item) => item.pathwayKind === 'illustrative' && item.notOfficialRequirement === true && item.reviewStatus === 'candidate')).toBe(true);
-  expect(transitions.records.every((item) => item.reviewStatus === 'candidate' && item.basisKind === 'repository-authored')).toBe(true);
+  expect(transitions.records.every((item) => item.reviewStatus === 'internal-reviewed')).toBe(true);
+  expect(transitions.records.filter((item) => !item.fromTopicIds.length && !item.toTopicIds.length).every((item) => item.basisKind === 'repository-authored')).toBe(true);
+  expect(transitions.records.filter((item) => item.fromTopicIds.length || item.toTopicIds.length).every((item) => item.basisKind === 'official-source')).toBe(true);
+});
+
+test('publishes complete acyclic relation coverage', async () => {
+  const report = await readJson('../data/kr/relation-coverage-report.json');
+  expect(report.middle.coverage.coveredCourses).toBe(report.middle.coverage.totalCourses);
+  expect(report.high.coverage.coveredCourses).toBe(report.high.coverage.totalCourses);
+  expect(report.middle.coverage.uncoveredCourseLabels).toEqual([]);
+  expect(report.high.coverage.uncoveredCourseLabels).toEqual([]);
+  expect(report.validation).toEqual({
+    danglingReferences: 0,
+    duplicateIds: 0,
+    highCourseDag: true,
+    highDag: true,
+    middleDag: true,
+  });
 });

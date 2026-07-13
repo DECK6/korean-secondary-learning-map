@@ -48,13 +48,13 @@
       "status": "open"
     },
     {
-      "description": "세부 주제, 과목 관계, 선택 묶음과 예시 경로는 자동 생성 후보이며 교과·직업계 전문가 검토가 필요하다.",
-      "id": "gap.high.subject-expert-review-pending",
-      "severity": "high",
+      "description": "일반고·직업계고 전 과목의 탐색 그래프와 공식 과목 연계는 내부 검토되었다. 과목별 의미 선수 관계를 교과·직업계 전문가가 추가 정밀화할 수 있다.",
+      "id": "gap.high.subject-expert-refinement-pending",
+      "severity": "medium",
       "sourceRefs": [],
       "status": "open"
     }
   ],
   "recordType": "coverageGaps",
-  "releaseId": "kr-2022-high-v0.3.0-candidate"
+  "releaseId": "kr-2022-high-v0.4.0-candidate"
 }

@@ -1,6 +1,6 @@
 {
   "$schema": "../../schema/official-source-receipts.schema.json",
-  "catalogVersion": "2026-07-11",
+  "catalogVersion": "2026-07-13",
   "sourceCount": 38,
   "sources": [
     {

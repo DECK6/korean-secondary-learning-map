@@ -1,0 +1,88 @@
+{
+  "bridges": {
+    "courseLevelTransitions": 37,
+    "elementaryTransitions": 19,
+    "mappedMiddleCourses": 24,
+    "topicLevelTransitions": 13,
+    "totalMiddleCourses": 24,
+    "transitionAlignments": 50
+  },
+  "generatedDate": "2026-07-13",
+  "high": {
+    "courseRelations": {
+      "byBasisKind": {
+        "official-source": 39
+      },
+      "byRelationKind": {
+        "recommended-before": 39
+      },
+      "byReviewStatus": {
+        "internal-reviewed": 39
+      },
+      "total": 39
+    },
+    "coverage": {
+      "coveredCourses": 759,
+      "graphNodes": 50749,
+      "participatingTopics": 50749,
+      "rootTopics": 720,
+      "totalCourses": 759,
+      "uncoveredCourseLabels": []
+    },
+    "relations": {
+      "byBasisKind": {
+        "official-source": 39,
+        "repository-authored": 49990
+      },
+      "byRelationKind": {
+        "recommended-before": 50029
+      },
+      "byReviewStatus": {
+        "internal-reviewed": 50029
+      },
+      "total": 50029
+    }
+  },
+  "middle": {
+    "coverage": {
+      "coveredCourses": 24,
+      "graphNodes": 2160,
+      "participatingTopics": 2160,
+      "rootTopics": 24,
+      "totalCourses": 24,
+      "uncoveredCourseLabels": []
+    },
+    "relations": {
+      "byBasisKind": {
+        "official-source": 30,
+        "repository-authored": 2125
+      },
+      "byRelationKind": {
+        "recommended-before": 2125,
+        "required-prerequisite": 30
+      },
+      "byReviewStatus": {
+        "internal-reviewed": 2155
+      },
+      "total": 2155
+    }
+  },
+  "policy": {
+    "courseProgression": "교과 총론이 직접 설명한 연계·심화만 reviewed-recommendation으로 기록한다.",
+    "officialRequired": "공식 내용 체계·해설이 직접 뒷받침하는 관계만 required-prerequisite로 기록한다.",
+    "reviewedNavigation": "공식 문서의 과목·영역·성취기준 배열은 internal-reviewed recommended-before 탐색 순서이며 공식 이수 조건이 아니다."
+  },
+  "releaseIds": {
+    "bridges": "kr-2022-middle-high-bridge-v0.4.0-candidate",
+    "high": "kr-2022-high-v0.4.0-candidate",
+    "middle": "kr-2022-middle-v0.4.0-candidate"
+  },
+  "validation": {
+    "danglingReferences": 0,
+    "duplicateIds": 0,
+    "highCourseDag": true,
+    "highDag": true,
+    "middleDag": true
+  },
+  "version": "0.4.0-candidate"
+}

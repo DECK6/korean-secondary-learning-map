@@ -1,295 +1,295 @@
 {
- "$schema": "../../../schema/bridge-profile.schema.json#/$defs/elementaryTransitionCollection",
- "profile": "bridges",
- "recordType": "elementaryTransitions",
- "releaseId": "kr-2022-middle-high-bridge-v0.3.0-candidate",
- "elementaryReleaseVersion": "kr-full-depth-v0.4",
- "recordCount": 19,
- "records": [
-  {
-   "id": "kr.learning-relation.2022.bridge.elementary.00d8aa43cefa24422323",
-   "dependentTopicId": "kr.topic.2022.middle.6f50e760da57fc7865f7",
-   "prerequisiteTopicId": "kr.mt.math.number-operations.g5-6.s6-01-05.application",
-   "relationKind": "required-prerequisite",
-   "scope": "cross-school-level",
-   "strength": "required",
-   "reason": "내용 체계표 '수와 연산' 영역에서 '약수와 배수'(초5-6)이 '소인수분해'(중1-3)보다 앞선 학년(군)에 배정되어 있고, 후자의 학습이 전자의 개념·기능을 전제한다. 대표 연결: [6수01-05] → [9수01-01].",
-   "basisKind": "official-source",
-   "basis": "교육부 고시 제2022-33호 [별책8] 수학과 교육과정 내용 체계표 '수와 연산' (p.13)",
-   "sourceRefs": [
-    "kr-moe-2022-33-annex8"
-   ],
-   "reviewStatus": "internal-reviewed"
-  },
-  {
-   "id": "kr.learning-relation.2022.bridge.elementary.0b048c9d2d9e597547f9",
-   "dependentTopicId": "kr.topic.2022.middle.35d4871e9ab769f85c99",
-   "prerequisiteTopicId": "kr.mt.math.number-operations.g5-6.s6-01-11.application",
-   "relationKind": "required-prerequisite",
-   "scope": "cross-school-level",
-   "strength": "required",
-   "reason": "내용 체계표 '수와 연산' 영역에서 '분수의 곱셈과 나눗셈'(초5-6)이 '정수와 유리수'(중1-3)보다 앞선 학년(군)에 배정되어 있고, 후자의 학습이 전자의 개념·기능을 전제한다. 대표 연결: [6수01-11] → [9수01-03].",
-   "basisKind": "official-source",
-   "basis": "교육부 고시 제2022-33호 [별책8] 수학과 교육과정 내용 체계표 '수와 연산' (p.13)",
-   "sourceRefs": [
-    "kr-moe-2022-33-annex8"
-   ],
-   "reviewStatus": "internal-reviewed"
-  },
-  {
-   "id": "kr.learning-relation.2022.bridge.elementary.f01033aa7207f98f25b4",
-   "dependentTopicId": "kr.topic.2022.middle.b4988a216ab8454db471",
-   "prerequisiteTopicId": "kr.mt.math.change-relationships.g5-6.s6-02-01.application",
-   "relationKind": "required-prerequisite",
-   "scope": "cross-school-level",
-   "strength": "required",
-   "reason": "내용 체계표 '변화와 관계' 영역에서 '대응 관계'(초5-6)이 '문자의 사용과 식'(중1-3)보다 앞선 학년(군)에 배정되어 있고, 후자의 학습이 전자의 개념·기능을 전제한다. 대표 연결: [6수02-01] → [9수02-01].",
-   "basisKind": "official-source",
-   "basis": "교육부 고시 제2022-33호 [별책8] 수학과 교육과정 내용 체계표 '변화와 관계' (p.14)",
-   "sourceRefs": [
-    "kr-moe-2022-33-annex8"
-   ],
-   "reviewStatus": "internal-reviewed"
-  },
-  {
-   "id": "kr.learning-relation.2022.bridge.elementary.4464e615b891ba3014ee",
-   "dependentTopicId": "kr.topic.2022.middle.b4988a216ab8454db471",
-   "prerequisiteTopicId": "kr.mt.math.change-relationships.g5-6.s6-02-05.application",
-   "relationKind": "required-prerequisite",
-   "scope": "cross-school-level",
-   "strength": "required",
-   "reason": "내용 체계표 '변화와 관계' 영역에서 '비례식과 비례배분'(초5-6)이 '문자의 사용과 식'(중1-3)보다 앞선 학년(군)에 배정되어 있고, 후자의 학습이 전자의 개념·기능을 전제한다. 대표 연결: [6수02-05] → [9수02-01].",
-   "basisKind": "official-source",
-   "basis": "교육부 고시 제2022-33호 [별책8] 수학과 교육과정 내용 체계표 '변화와 관계' (p.14)",
-   "sourceRefs": [
-    "kr-moe-2022-33-annex8"
-   ],
-   "reviewStatus": "internal-reviewed"
-  },
-  {
-   "id": "kr.learning-relation.2022.bridge.elementary.c6ce6b886a9787d5f4ed",
-   "dependentTopicId": "kr.topic.2022.middle.190a815b941929ff60b0",
-   "prerequisiteTopicId": "kr.mt.math.change-relationships.g3-4.s4-02-03.application",
-   "relationKind": "required-prerequisite",
-   "scope": "cross-school-level",
-   "strength": "required",
-   "reason": "내용 체계표 '변화와 관계' 영역에서 '동치 관계'(초3-4)이 '일차방정식'(중1-3)보다 앞선 학년(군)에 배정되어 있고, 후자의 학습이 전자의 개념·기능을 전제한다. 대표 연결: [4수02-03] → [9수02-03].",
-   "basisKind": "official-source",
-   "basis": "교육부 고시 제2022-33호 [별책8] 수학과 교육과정 내용 체계표 '변화와 관계' (p.14)",
-   "sourceRefs": [
-    "kr-moe-2022-33-annex8"
-   ],
-   "reviewStatus": "internal-reviewed"
-  },
-  {
-   "id": "kr.learning-relation.2022.bridge.elementary.ca506fe4b7102ced64df",
-   "dependentTopicId": "kr.topic.2022.middle.2deca4ef0195e5e509ed",
-   "prerequisiteTopicId": "kr.mt.math.change-relationships.g5-6.s6-02-01.application",
-   "relationKind": "required-prerequisite",
-   "scope": "cross-school-level",
-   "strength": "required",
-   "reason": "내용 체계표 '변화와 관계' 영역에서 '대응 관계'(초5-6)이 '좌표평면과 그래프'(중1-3)보다 앞선 학년(군)에 배정되어 있고, 후자의 학습이 전자의 개념·기능을 전제한다. 대표 연결: [6수02-01] → [9수02-05].",
-   "basisKind": "official-source",
-   "basis": "교육부 고시 제2022-33호 [별책8] 수학과 교육과정 내용 체계표 '변화와 관계' (p.14)",
-   "sourceRefs": [
-    "kr-moe-2022-33-annex8"
-   ],
-   "reviewStatus": "internal-reviewed"
-  },
-  {
-   "id": "kr.learning-relation.2022.bridge.elementary.23d4cb00dc802a9ea7e5",
-   "dependentTopicId": "kr.topic.2022.middle.56b6f534561443254229",
-   "prerequisiteTopicId": "kr.mt.math.geometry-measurement.g3-4.s4-03-03.application",
-   "relationKind": "required-prerequisite",
-   "scope": "cross-school-level",
-   "strength": "required",
-   "reason": "내용 체계표 '도형과 측정' 영역에서 '도형의 기초'(초3-4)이 '기본 도형'(중1-3)보다 앞선 학년(군)에 배정되어 있고, 후자의 학습이 전자의 개념·기능을 전제한다. 대표 연결: [4수03-03] → [9수03-01].",
-   "basisKind": "official-source",
-   "basis": "교육부 고시 제2022-33호 [별책8] 수학과 교육과정 내용 체계표 '도형과 측정' (p.15)",
-   "sourceRefs": [
-    "kr-moe-2022-33-annex8"
-   ],
-   "reviewStatus": "internal-reviewed"
-  },
-  {
-   "id": "kr.learning-relation.2022.bridge.elementary.4137c30ddb725476fe76",
-   "dependentTopicId": "kr.topic.2022.middle.c3e79330718e70da9ec4",
-   "prerequisiteTopicId": "kr.mt.math.geometry-measurement.g5-6.s6-03-02.application",
-   "relationKind": "required-prerequisite",
-   "scope": "cross-school-level",
-   "strength": "required",
-   "reason": "내용 체계표 '도형과 측정' 영역에서 '합동과 대칭'(초5-6)이 '작도와 합동'(중1-3)보다 앞선 학년(군)에 배정되어 있고, 후자의 학습이 전자의 개념·기능을 전제한다. 대표 연결: [6수03-02] → [9수03-03].",
-   "basisKind": "official-source",
-   "basis": "교육부 고시 제2022-33호 [별책8] 수학과 교육과정 내용 체계표 '도형과 측정' (p.15)",
-   "sourceRefs": [
-    "kr-moe-2022-33-annex8"
-   ],
-   "reviewStatus": "internal-reviewed"
-  },
-  {
-   "id": "kr.learning-relation.2022.bridge.elementary.a11a729ba9183a7dbcad",
-   "dependentTopicId": "kr.topic.2022.middle.3d798ebd44e165f2b030",
-   "prerequisiteTopicId": "kr.mt.math.geometry-measurement.g3-4.s4-03-12.application",
-   "relationKind": "required-prerequisite",
-   "scope": "cross-school-level",
-   "strength": "required",
-   "reason": "내용 체계표 '도형과 측정' 영역에서 '다각형'(초3-4)이 '평면도형의 성질'(중1-3)보다 앞선 학년(군)에 배정되어 있고, 후자의 학습이 전자의 개념·기능을 전제한다. 대표 연결: [4수03-12] → [9수03-05].",
-   "basisKind": "official-source",
-   "basis": "교육부 고시 제2022-33호 [별책8] 수학과 교육과정 내용 체계표 '도형과 측정' (p.15)",
-   "sourceRefs": [
-    "kr-moe-2022-33-annex8"
-   ],
-   "reviewStatus": "internal-reviewed"
-  },
-  {
-   "id": "kr.learning-relation.2022.bridge.elementary.2759b0a25e0fdbd71865",
-   "dependentTopicId": "kr.topic.2022.middle.3d798ebd44e165f2b030",
-   "prerequisiteTopicId": "kr.mt.math.geometry-measurement.g5-6.s6-03-16.application",
-   "relationKind": "required-prerequisite",
-   "scope": "cross-school-level",
-   "strength": "required",
-   "reason": "내용 체계표 '도형과 측정' 영역에서 '원주율과 원의 넓이'(초5-6)이 '평면도형의 성질'(중1-3)보다 앞선 학년(군)에 배정되어 있고, 후자의 학습이 전자의 개념·기능을 전제한다. 대표 연결: [6수03-16] → [9수03-05].",
-   "basisKind": "official-source",
-   "basis": "교육부 고시 제2022-33호 [별책8] 수학과 교육과정 내용 체계표 '도형과 측정' (p.15)",
-   "sourceRefs": [
-    "kr-moe-2022-33-annex8"
-   ],
-   "reviewStatus": "internal-reviewed"
-  },
-  {
-   "id": "kr.learning-relation.2022.bridge.elementary.d2f461b62a78ed0e1f68",
-   "dependentTopicId": "kr.topic.2022.middle.cc854d1534a2636a2428",
-   "prerequisiteTopicId": "kr.mt.math.geometry-measurement.g5-6.s6-03-06.application",
-   "relationKind": "required-prerequisite",
-   "scope": "cross-school-level",
-   "strength": "required",
-   "reason": "내용 체계표 '도형과 측정' 영역에서 '각기둥과 각뿔'(초5-6)이 '입체도형의 성질'(중1-3)보다 앞선 학년(군)에 배정되어 있고, 후자의 학습이 전자의 개념·기능을 전제한다. 대표 연결: [6수03-06] → [9수03-07].",
-   "basisKind": "official-source",
-   "basis": "교육부 고시 제2022-33호 [별책8] 수학과 교육과정 내용 체계표 '도형과 측정' (p.15)",
-   "sourceRefs": [
-    "kr-moe-2022-33-annex8"
-   ],
-   "reviewStatus": "internal-reviewed"
-  },
-  {
-   "id": "kr.learning-relation.2022.bridge.elementary.bdd031bc10d3ce36227f",
-   "dependentTopicId": "kr.topic.2022.middle.cc854d1534a2636a2428",
-   "prerequisiteTopicId": "kr.mt.math.geometry-measurement.g5-6.s6-03-08.application",
-   "relationKind": "required-prerequisite",
-   "scope": "cross-school-level",
-   "strength": "required",
-   "reason": "내용 체계표 '도형과 측정' 영역에서 '원기둥, 원뿔, 구'(초5-6)이 '입체도형의 성질'(중1-3)보다 앞선 학년(군)에 배정되어 있고, 후자의 학습이 전자의 개념·기능을 전제한다. 대표 연결: [6수03-08] → [9수03-07].",
-   "basisKind": "official-source",
-   "basis": "교육부 고시 제2022-33호 [별책8] 수학과 교육과정 내용 체계표 '도형과 측정' (p.15)",
-   "sourceRefs": [
-    "kr-moe-2022-33-annex8"
-   ],
-   "reviewStatus": "internal-reviewed"
-  },
-  {
-   "id": "kr.learning-relation.2022.bridge.elementary.8a4fa9fd3aeca4f0c4e2",
-   "dependentTopicId": "kr.topic.2022.middle.cc854d1534a2636a2428",
-   "prerequisiteTopicId": "kr.mt.math.geometry-measurement.g5-6.s6-03-19.application",
-   "relationKind": "required-prerequisite",
-   "scope": "cross-school-level",
-   "strength": "required",
-   "reason": "내용 체계표 '도형과 측정' 영역에서 '직육면체와 정육면체의 겉넓이와 부피'(초5-6)이 '입체도형의 성질'(중1-3)보다 앞선 학년(군)에 배정되어 있고, 후자의 학습이 전자의 개념·기능을 전제한다. 대표 연결: [6수03-19] → [9수03-07].",
-   "basisKind": "official-source",
-   "basis": "교육부 고시 제2022-33호 [별책8] 수학과 교육과정 내용 체계표 '도형과 측정' (p.15)",
-   "sourceRefs": [
-    "kr-moe-2022-33-annex8"
-   ],
-   "reviewStatus": "internal-reviewed"
-  },
-  {
-   "id": "kr.learning-relation.2022.bridge.elementary.ab1d589fa0daaaa5b7ac",
-   "dependentTopicId": "kr.topic.2022.middle.f571176f4816eed42496",
-   "prerequisiteTopicId": "kr.mt.math.data-probability.g5-6.s6-04-03.application",
-   "relationKind": "required-prerequisite",
-   "scope": "cross-school-level",
-   "strength": "required",
-   "reason": "내용 체계표 '자료와 가능성' 영역에서 '평균'(초5-6)이 '대푯값'(중1-3)보다 앞선 학년(군)에 배정되어 있고, 후자의 학습이 전자의 개념·기능을 전제한다. 대표 연결: [6수04-03] → [9수04-01].",
-   "basisKind": "official-source",
-   "basis": "교육부 고시 제2022-33호 [별책8] 수학과 교육과정 내용 체계표 '자료와 가능성' (p.16)",
-   "sourceRefs": [
-    "kr-moe-2022-33-annex8"
-   ],
-   "reviewStatus": "internal-reviewed"
-  },
-  {
-   "id": "kr.learning-relation.2022.bridge.elementary.a876d9e3c2163c46642c",
-   "dependentTopicId": "kr.topic.2022.middle.3ac6a1eb3c5951a58808",
-   "prerequisiteTopicId": "kr.mt.math.data-probability.g3-4.s4-04-03.application",
-   "relationKind": "required-prerequisite",
-   "scope": "cross-school-level",
-   "strength": "required",
-   "reason": "내용 체계표 '자료와 가능성' 영역에서 '꺾은선그래프'(초3-4)이 '도수분포표와 상대도수'(중1-3)보다 앞선 학년(군)에 배정되어 있고, 후자의 학습이 전자의 개념·기능을 전제한다. 대표 연결: [4수04-03] → [9수04-02].",
-   "basisKind": "official-source",
-   "basis": "교육부 고시 제2022-33호 [별책8] 수학과 교육과정 내용 체계표 '자료와 가능성' (p.16)",
-   "sourceRefs": [
-    "kr-moe-2022-33-annex8"
-   ],
-   "reviewStatus": "internal-reviewed"
-  },
-  {
-   "id": "kr.learning-relation.2022.bridge.elementary.90401767dffbbb306842",
-   "dependentTopicId": "kr.topic.2022.middle.3ac6a1eb3c5951a58808",
-   "prerequisiteTopicId": "kr.mt.math.data-probability.g5-6.s6-04-03.application",
-   "relationKind": "required-prerequisite",
-   "scope": "cross-school-level",
-   "strength": "required",
-   "reason": "내용 체계표 '자료와 가능성' 영역에서 '띠그래프, 원그래프'(초5-6)이 '도수분포표와 상대도수'(중1-3)보다 앞선 학년(군)에 배정되어 있고, 후자의 학습이 전자의 개념·기능을 전제한다. 대표 연결: [6수04-03] → [9수04-02].",
-   "basisKind": "official-source",
-   "basis": "교육부 고시 제2022-33호 [별책8] 수학과 교육과정 내용 체계표 '자료와 가능성' (p.16)",
-   "sourceRefs": [
-    "kr-moe-2022-33-annex8"
-   ],
-   "reviewStatus": "internal-reviewed"
-  },
-  {
-   "id": "kr.learning-relation.2022.bridge.elementary.08e2b0fa88acb967167b",
-   "dependentTopicId": "kr.topic.2022.middle.ab16790d334c0ef1dda3",
-   "prerequisiteTopicId": "kr.mt.math.data-probability.g5-6.s6-04-06.application",
-   "relationKind": "required-prerequisite",
-   "scope": "cross-school-level",
-   "strength": "required",
-   "reason": "내용 체계표 '자료와 가능성' 영역에서 '가능성'(초5-6)이 '경우의 수와 확률'(중1-3)보다 앞선 학년(군)에 배정되어 있고, 후자의 학습이 전자의 개념·기능을 전제한다. 대표 연결: [6수04-06] → [9수04-05].",
-   "basisKind": "official-source",
-   "basis": "교육부 고시 제2022-33호 [별책8] 수학과 교육과정 내용 체계표 '자료와 가능성' (p.16)",
-   "sourceRefs": [
-    "kr-moe-2022-33-annex8"
-   ],
-   "reviewStatus": "internal-reviewed"
-  },
-  {
-   "id": "kr.learning-relation.2022.bridge.elementary.7ad242a12fe3bbed760a",
-   "dependentTopicId": "kr.topic.2022.middle.1d5f34a8b2214e6badcb",
-   "prerequisiteTopicId": "kr.mt.math.number-operations.g5-6.s6-01-04.application",
-   "relationKind": "required-prerequisite",
-   "scope": "cross-school-level",
-   "strength": "required",
-   "reason": "성취기준 해설: “초등학교에서 학습한 최대공약수와 최소공배수의 개념을 바탕으로 소인수분해를 이용하여 최대공약수와 최소공배수를 구하게 한다.” — [9수01-02]는 [6수01-04]의 학습을 명시적으로 전제한다.",
-   "basisKind": "official-source",
-   "basis": "교육부 고시 제2022-33호 [별책8] 수학과 교육과정 성취기준 해설 (p.39)",
-   "sourceRefs": [
-    "kr-moe-2022-33-annex8"
-   ],
-   "reviewStatus": "internal-reviewed"
-  },
-  {
-   "id": "kr.learning-relation.2022.bridge.elementary.a212c2bdaebbae13e62d",
-   "dependentTopicId": "kr.topic.2022.middle.1d5f34a8b2214e6badcb",
-   "prerequisiteTopicId": "kr.mt.math.number-operations.g5-6.s6-01-05.application",
-   "relationKind": "required-prerequisite",
-   "scope": "cross-school-level",
-   "strength": "required",
-   "reason": "성취기준 해설: “초등학교에서 학습한 최대공약수와 최소공배수의 개념을 바탕으로 소인수분해를 이용하여 최대공약수와 최소공배수를 구하게 한다.” — [9수01-02]는 [6수01-05]의 학습을 명시적으로 전제한다.",
-   "basisKind": "official-source",
-   "basis": "교육부 고시 제2022-33호 [별책8] 수학과 교육과정 성취기준 해설 (p.39)",
-   "sourceRefs": [
-    "kr-moe-2022-33-annex8"
-   ],
-   "reviewStatus": "internal-reviewed"
-  }
- ]
+  "$schema": "../../../schema/bridge-profile.schema.json#/$defs/elementaryTransitionCollection",
+  "elementaryReleaseVersion": "kr-full-depth-v0.4",
+  "profile": "bridges",
+  "recordCount": 19,
+  "records": [
+    {
+      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 변화와 관계 내용 체계표 p.14",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.190a815b941929ff60b0",
+      "id": "kr.learning-relation.2022.bridge.elementary.09a1d1ccd2a4a66e87d9",
+      "prerequisiteTopicId": "kr.mt.math.change-relationships.g3-4.s4-02-03.application",
+      "reason": "수학과 내용 체계표 변화와 관계 영역에서 초등 동치 관계 학습을 [9수02-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex8"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 수와 연산 내용 체계표 p.13",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.6f50e760da57fc7865f7",
+      "id": "kr.learning-relation.2022.bridge.elementary.09bffeefb7bb4d2a6062",
+      "prerequisiteTopicId": "kr.mt.math.number-operations.g5-6.s6-01-05.application",
+      "reason": "수학과 내용 체계표 수와 연산 영역에서 초등 약수와 배수 학습을 [9수01-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex8"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 변화와 관계 내용 체계표 p.14",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.b4988a216ab8454db471",
+      "id": "kr.learning-relation.2022.bridge.elementary.119e61faa1c6f975a461",
+      "prerequisiteTopicId": "kr.mt.math.change-relationships.g5-6.s6-02-05.application",
+      "reason": "수학과 내용 체계표 변화와 관계 영역에서 초등 비례식과 비례배분 학습을 [9수02-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex8"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 자료와 가능성 내용 체계표 p.16",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.3ac6a1eb3c5951a58808",
+      "id": "kr.learning-relation.2022.bridge.elementary.485ce22b5091a27fc655",
+      "prerequisiteTopicId": "kr.mt.math.data-probability.g3-4.s4-04-03.application",
+      "reason": "수학과 내용 체계표 자료와 가능성 영역에서 초등 꺾은선그래프 학습을 [9수04-02]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex8"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 도형과 측정 내용 체계표 p.15",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.3d798ebd44e165f2b030",
+      "id": "kr.learning-relation.2022.bridge.elementary.4a762f5d67b1eca5d8a9",
+      "prerequisiteTopicId": "kr.mt.math.geometry-measurement.g3-4.s4-03-12.application",
+      "reason": "수학과 내용 체계표 도형과 측정 영역에서 초등 다각형 학습을 [9수03-05]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex8"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 수와 연산 내용 체계표 p.13",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.35d4871e9ab769f85c99",
+      "id": "kr.learning-relation.2022.bridge.elementary.5ce33ae5f3528600b356",
+      "prerequisiteTopicId": "kr.mt.math.number-operations.g5-6.s6-01-11.application",
+      "reason": "수학과 내용 체계표 수와 연산 영역에서 초등 분수의 곱셈과 나눗셈 학습을 [9수01-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex8"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 도형과 측정 내용 체계표 p.15",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.3d798ebd44e165f2b030",
+      "id": "kr.learning-relation.2022.bridge.elementary.61681bb34dc853b722fa",
+      "prerequisiteTopicId": "kr.mt.math.geometry-measurement.g5-6.s6-03-16.application",
+      "reason": "수학과 내용 체계표 도형과 측정 영역에서 초등 원주율과 원의 넓이 학습을 [9수03-05]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex8"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 자료와 가능성 내용 체계표 p.16",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.3ac6a1eb3c5951a58808",
+      "id": "kr.learning-relation.2022.bridge.elementary.6821538aa17729973217",
+      "prerequisiteTopicId": "kr.mt.math.data-probability.g5-6.s6-04-03.application",
+      "reason": "수학과 내용 체계표 자료와 가능성 영역에서 초등 띠그래프, 원그래프 학습을 [9수04-02]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex8"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 도형과 측정 내용 체계표 p.15",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.56b6f534561443254229",
+      "id": "kr.learning-relation.2022.bridge.elementary.77116b075139abe72065",
+      "prerequisiteTopicId": "kr.mt.math.geometry-measurement.g3-4.s4-03-03.application",
+      "reason": "수학과 내용 체계표 도형과 측정 영역에서 초등 도형의 기초 학습을 [9수03-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex8"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 도형과 측정 내용 체계표 p.15",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.cc854d1534a2636a2428",
+      "id": "kr.learning-relation.2022.bridge.elementary.8c4cc38b2ed5b3b667d8",
+      "prerequisiteTopicId": "kr.mt.math.geometry-measurement.g5-6.s6-03-06.application",
+      "reason": "수학과 내용 체계표 도형과 측정 영역에서 초등 각기둥과 각뿔 학습을 [9수03-07]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex8"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 자료와 가능성 내용 체계표 p.16",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.f571176f4816eed42496",
+      "id": "kr.learning-relation.2022.bridge.elementary.8d858289c03bcfe8535b",
+      "prerequisiteTopicId": "kr.mt.math.data-probability.g5-6.s6-04-03.application",
+      "reason": "수학과 내용 체계표 자료와 가능성 영역에서 초등 평균 학습을 [9수04-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex8"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 도형과 측정 내용 체계표 p.15",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.cc854d1534a2636a2428",
+      "id": "kr.learning-relation.2022.bridge.elementary.9130bff324347f9753cc",
+      "prerequisiteTopicId": "kr.mt.math.geometry-measurement.g5-6.s6-03-08.application",
+      "reason": "수학과 내용 체계표 도형과 측정 영역에서 초등 원기둥, 원뿔, 구 학습을 [9수03-07]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex8"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 변화와 관계 내용 체계표 p.14",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.b4988a216ab8454db471",
+      "id": "kr.learning-relation.2022.bridge.elementary.c16ae285a87d003622fd",
+      "prerequisiteTopicId": "kr.mt.math.change-relationships.g5-6.s6-02-01.application",
+      "reason": "수학과 내용 체계표 변화와 관계 영역에서 초등 대응 관계 학습을 [9수02-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex8"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 성취기준 해설 p.39",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.1d5f34a8b2214e6badcb",
+      "id": "kr.learning-relation.2022.bridge.elementary.c5af5e80b01f08d84486",
+      "prerequisiteTopicId": "kr.mt.math.number-operations.g5-6.s6-01-05.application",
+      "reason": "수학과 성취기준 해설이 초등 약수와 배수을 [9수01-02] 학습에 직접 연계한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex8"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 도형과 측정 내용 체계표 p.15",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.cc854d1534a2636a2428",
+      "id": "kr.learning-relation.2022.bridge.elementary.c881349f6c72530c110e",
+      "prerequisiteTopicId": "kr.mt.math.geometry-measurement.g5-6.s6-03-19.application",
+      "reason": "수학과 내용 체계표 도형과 측정 영역에서 초등 직육면체와 정육면체의 겉넓이와 부피 학습을 [9수03-07]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex8"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 자료와 가능성 내용 체계표 p.16",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.ab16790d334c0ef1dda3",
+      "id": "kr.learning-relation.2022.bridge.elementary.d19d0b64d6a414d19e84",
+      "prerequisiteTopicId": "kr.mt.math.data-probability.g5-6.s6-04-06.application",
+      "reason": "수학과 내용 체계표 자료와 가능성 영역에서 초등 가능성 학습을 [9수04-05]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex8"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 변화와 관계 내용 체계표 p.14",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.2deca4ef0195e5e509ed",
+      "id": "kr.learning-relation.2022.bridge.elementary.d57bc757a45f1219d6d0",
+      "prerequisiteTopicId": "kr.mt.math.change-relationships.g5-6.s6-02-01.application",
+      "reason": "수학과 내용 체계표 변화와 관계 영역에서 초등 대응 관계 학습을 [9수02-05]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex8"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 도형과 측정 내용 체계표 p.15",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.c3e79330718e70da9ec4",
+      "id": "kr.learning-relation.2022.bridge.elementary.eae158a2082b2741f774",
+      "prerequisiteTopicId": "kr.mt.math.geometry-measurement.g5-6.s6-03-02.application",
+      "reason": "수학과 내용 체계표 도형과 측정 영역에서 초등 합동과 대칭 학습을 [9수03-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex8"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 성취기준 해설 p.39",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.1d5f34a8b2214e6badcb",
+      "id": "kr.learning-relation.2022.bridge.elementary.eeb27b824710f69c4aca",
+      "prerequisiteTopicId": "kr.mt.math.number-operations.g5-6.s6-01-04.application",
+      "reason": "수학과 성취기준 해설이 초등 최대공약수와 최소공배수을 [9수01-02] 학습에 직접 연계한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex8"
+      ],
+      "strength": "required"
+    }
+  ],
+  "recordType": "elementaryTransitions",
+  "releaseId": "kr-2022-middle-high-bridge-v0.4.0-candidate"
 }

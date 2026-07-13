@@ -2,22 +2,22 @@
   "$schema": "../../../schema/bridge-profile.schema.json",
   "collections": {
     "coverageGaps": "coverage-gaps.json",
+    "elementaryTransitions": "elementary-transitions.json",
     "reviewRecords": "review-records.json",
-    "transitionAlignments": "transition-alignments.json",
-    "elementaryTransitions": "elementary-transitions.json"
+    "transitionAlignments": "transition-alignments.json"
   },
   "counts": {
     "coverageGaps": 1,
+    "elementaryTransitions": 19,
     "reviewRecords": 1,
-    "transitionAlignments": 398,
-    "elementaryTransitions": 19
+    "transitionAlignments": 50
   },
-  "createdDate": "2026-07-11",
+  "createdDate": "2026-07-13",
   "curriculumVersion": "2022-revised",
-  "highReleaseId": "kr-2022-high-v0.3.0-candidate",
-  "middleReleaseId": "kr-2022-middle-v0.3.0-candidate",
+  "highReleaseId": "kr-2022-high-v0.4.0-candidate",
+  "middleReleaseId": "kr-2022-middle-v0.4.0-candidate",
   "profile": "bridges",
-  "releaseId": "kr-2022-middle-high-bridge-v0.3.0-candidate",
+  "releaseId": "kr-2022-middle-high-bridge-v0.4.0-candidate",
   "rightsStatus": "hold",
   "sourceManifest": "../shared/source-manifest.json",
   "status": "candidate"

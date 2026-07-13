@@ -7,12 +7,15 @@ const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const outDir = join(root, 'dist/ontology');
 const checkOnly = process.argv.includes('--check');
 const base = 'https://dexa.art/learnmap/secondary/resource/';
+const elementaryTopicBase = 'https://dexa.art/learnmap/#/topic/';
 const slm = 'https://dexa.art/learnmap/secondary/ontology#';
 
 const readJson = async (path) => JSON.parse(await readFile(path, 'utf8'));
 const sha256 = (value) => createHash('sha256').update(value).digest('hex');
 const iri = (id) => `<${base}${encodeURIComponent(id)}>`;
 const jsonIri = (id) => `${base}${encodeURIComponent(id)}`;
+const elementaryIri = (id) => `<${elementaryTopicBase}${encodeURIComponent(id)}>`;
+const elementaryJsonIri = (id) => `${elementaryTopicBase}${encodeURIComponent(id)}`;
 const literal = (value) => JSON.stringify(String(value));
 const ko = (value) => `${literal(value)}@ko`;
 
@@ -25,7 +28,7 @@ async function atomicWrite(path, contents) {
 const collectionNames = {
   middle: ['subject-groups', 'courses', 'domains', 'standards', 'topics', 'clusters', 'learning-relations', 'coverage-gaps'],
   high: ['subject-groups', 'courses', 'domains', 'standards', 'topics', 'clusters', 'learning-relations', 'course-relations', 'credit-rules', 'choice-sets', 'pathways', 'coverage-gaps'],
-  bridges: ['transition-alignments', 'coverage-gaps'],
+  bridges: ['transition-alignments', 'elementary-transitions', 'coverage-gaps'],
 };
 
 async function loadCollections() {
@@ -117,6 +120,11 @@ async function build() {
     json: { '@id': jsonIri(record.id), '@type': 'slm:TransitionAlignment', transitionFromCourse: refs(record.fromCourseIds), transitionToCourse: refs(record.toCourseIds), fromTopic: refs(record.fromTopicIds), toTopic: refs(record.toTopicIds), relationKind: record.transitionKind, reason: record.reason, basisKind: record.basisKind, basis: record.basis, hasSource: refs(record.sourceRefs), reviewStatus: record.reviewStatus },
     triples: [`a slm:TransitionAlignment`, ...record.fromCourseIds.map((id) => `slm:transitionFromCourse ${iri(id)}`), ...record.toCourseIds.map((id) => `slm:transitionToCourse ${iri(id)}`), ...record.fromTopicIds.map((id) => `slm:fromTopic ${iri(id)}`), ...record.toTopicIds.map((id) => `slm:toTopic ${iri(id)}`), `slm:relationKind ${literal(record.transitionKind)}`, `slm:reason ${ko(record.reason)}`, `slm:basisKind ${literal(record.basisKind)}`, `slm:basis ${literal(record.basis)}`, ...record.sourceRefs.map((id) => `slm:hasSource ${iri(id)}`), `slm:reviewStatus ${literal(record.reviewStatus)}`],
   });
+  for (const record of data.bridges['elementary-transitions']) pushNode(graph, ttl, {
+    id: record.id,
+    json: { '@id': jsonIri(record.id), '@type': 'slm:TransitionAlignment', fromTopic: { '@id': elementaryJsonIri(record.prerequisiteTopicId) }, toTopic: { '@id': jsonIri(record.dependentTopicId) }, relationKind: record.relationKind, reason: record.reason, basisKind: record.basisKind, basis: record.basis, hasSource: refs(record.sourceRefs), reviewStatus: record.reviewStatus },
+    triples: [`a slm:TransitionAlignment`, `slm:fromTopic ${elementaryIri(record.prerequisiteTopicId)}`, `slm:toTopic ${iri(record.dependentTopicId)}`, `slm:relationKind ${literal(record.relationKind)}`, `slm:reason ${ko(record.reason)}`, `slm:basisKind ${literal(record.basisKind)}`, `slm:basis ${literal(record.basis)}`, ...record.sourceRefs.map((id) => `slm:hasSource ${iri(id)}`), `slm:reviewStatus ${literal(record.reviewStatus)}`],
+  });
   for (const record of data.high['course-relations']) pushNode(graph, ttl, {
     id: record.id,
     json: { '@id': jsonIri(record.id), '@type': 'slm:CourseRelation', courseRelationFrom: { '@id': jsonIri(record.fromCourseId) }, courseRelationTo: { '@id': jsonIri(record.toCourseId) }, relationKind: record.relationKind, claimStatus: record.claimStatus, reason: record.reason, basisKind: record.basisKind, basis: record.basis, hasSource: refs(record.sourceRefs), reviewStatus: record.reviewStatus },
@@ -192,6 +200,6 @@ if (checkOnly) {
     const contents = await readFile(join(root, path));
     artifacts.push({ path, mediaType, bytes: contents.byteLength, sha256: sha256(contents) });
   }
-  await atomicWrite(join(outDir, 'manifest.json'), `${JSON.stringify({ version: '0.3.0-candidate', graphNodeCount: built.graphCount, artifacts }, null, 2)}\n`);
+  await atomicWrite(join(outDir, 'manifest.json'), `${JSON.stringify({ version: '0.4.0-candidate', graphNodeCount: built.graphCount, artifacts }, null, 2)}\n`);
   console.log(`ontology build passed: ${built.graphCount} graph nodes`);
 }

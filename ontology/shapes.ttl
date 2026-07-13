@@ -84,23 +84,27 @@ slm:LearningRelationShape a sh:NodeShape ;
 
 slm:TransitionShape a sh:NodeShape ;
   sh:targetClass slm:TransitionAlignment ;
-  sh:property [ sh:path slm:transitionFromCourse ; sh:minCount 1 ; sh:class slm:Course ] ;
-  sh:property [ sh:path slm:transitionToCourse ; sh:minCount 1 ; sh:class slm:Course ] ;
-  sh:property [ sh:path slm:relationKind ; sh:minCount 1 ; sh:maxCount 1 ; sh:in ("continues" "deepens" "prepares-for") ] ;
+  sh:or (
+    [ sh:property [ sh:path slm:transitionFromCourse ; sh:minCount 1 ; sh:class slm:Course ] ;
+      sh:property [ sh:path slm:transitionToCourse ; sh:minCount 1 ; sh:class slm:Course ] ]
+    [ sh:property [ sh:path slm:fromTopic ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ] ;
+      sh:property [ sh:path slm:toTopic ; sh:minCount 1 ; sh:maxCount 1 ; sh:class slm:LearningTopic ] ]
+  ) ;
+  sh:property [ sh:path slm:relationKind ; sh:minCount 1 ; sh:maxCount 1 ; sh:in ("continues" "deepens" "prepares-for" "required-prerequisite" "recommended-before") ] ;
   sh:property [ sh:path slm:reason ; sh:minCount 1 ; sh:maxCount 1 ] ;
   sh:property [ sh:path slm:basisKind ; sh:minCount 1 ; sh:maxCount 1 ] ;
   sh:property [ sh:path slm:basis ; sh:minCount 1 ; sh:maxCount 1 ] ;
-  sh:property [ sh:path slm:reviewStatus ; sh:minCount 1 ; sh:maxCount 1 ; sh:hasValue "candidate" ] .
+  sh:property [ sh:path slm:reviewStatus ; sh:minCount 1 ; sh:maxCount 1 ; sh:in ("candidate" "internal-reviewed" "subject-expert-reviewed" "field-reviewed") ] .
 
 slm:CourseRelationShape a sh:NodeShape ;
   sh:targetClass slm:CourseRelation ;
   sh:property [ sh:path slm:courseRelationFrom ; sh:minCount 1 ; sh:maxCount 1 ; sh:class slm:Course ] ;
   sh:property [ sh:path slm:courseRelationTo ; sh:minCount 1 ; sh:maxCount 1 ; sh:class slm:Course ] ;
-  sh:property [ sh:path slm:claimStatus ; sh:minCount 1 ; sh:maxCount 1 ; sh:hasValue "candidate" ] ;
+  sh:property [ sh:path slm:claimStatus ; sh:minCount 1 ; sh:maxCount 1 ; sh:in ("candidate" "reviewed-recommendation" "official-constraint") ] ;
   sh:property [ sh:path slm:reason ; sh:minCount 1 ; sh:maxCount 1 ] ;
   sh:property [ sh:path slm:basisKind ; sh:minCount 1 ; sh:maxCount 1 ] ;
   sh:property [ sh:path slm:basis ; sh:minCount 1 ; sh:maxCount 1 ] ;
-  sh:property [ sh:path slm:reviewStatus ; sh:minCount 1 ; sh:maxCount 1 ; sh:hasValue "candidate" ] ;
+  sh:property [ sh:path slm:reviewStatus ; sh:minCount 1 ; sh:maxCount 1 ; sh:in ("candidate" "internal-reviewed" "subject-expert-reviewed" "field-reviewed") ] ;
   sh:sparql [
     sh:message "과목 관계의 양 끝점은 같을 수 없다."@ko ;
     sh:select "PREFIX slm: <https://dexa.art/learnmap/secondary/ontology#> SELECT $this WHERE { $this slm:courseRelationFrom ?x ; slm:courseRelationTo ?x . }"

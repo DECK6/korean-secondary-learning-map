@@ -1,6 +1,6 @@
 {
   "$schema": "../../../schema/source-manifest.schema.json",
-  "accessDate": "2026-07-11",
+  "accessDate": "2026-07-13",
   "sourceCount": 38,
   "sources": [
     {
@@ -536,5 +536,5 @@
       "verificationStatus": "official-source-checked"
     }
   ],
-  "version": "0.3.0-candidate"
+  "version": "0.4.0-candidate"
 }

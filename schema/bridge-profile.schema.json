@@ -184,6 +184,7 @@
         },
         "basisKind": {
           "enum": [
+            "official-source",
             "expert-review",
             "repository-authored",
             "model-candidate"
