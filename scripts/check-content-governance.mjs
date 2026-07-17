@@ -83,7 +83,7 @@ for (const transition of elementaryTransitions) {
   if (!bridgeReviewTargets.has(transition.id)) errors.push(`${transition.id}: elementary transition has no review record`);
 }
 const sources = (await readJson(join(root, 'data/kr/shared/source-manifest.json'))).sources;
-for (const source of sources) if (source.rightsStatus !== 'needs-document-level-review') errors.push(`${source.id}: official document rights review was bypassed`);
+for (const source of sources) if (source.rightsStatus !== 'cleared') errors.push(`${source.id}: official document rights status must be cleared (public official documents)`);
 
 const uiIndex = await readJson(join(root, 'ui/data/map-index.json'));
 const middleRelease = await readJson(join(root, 'data/kr/middle/release.json'));
@@ -93,7 +93,7 @@ if (uiIndex.statistics.middleStandards !== middleRelease.counts.standards || uiI
 if (uiIndex.statistics.middleTopics !== middleRelease.counts.topics) errors.push('UI middle topic statistics are stale');
 if (uiIndex.statistics.highAcademicStandards + uiIndex.statistics.highVocationalStandards !== highRelease.counts.standards) errors.push('UI high-school scope split is stale');
 if (uiIndex.statistics.highAcademicCourses + uiIndex.statistics.highVocationalCourses !== highRelease.counts.courses) errors.push('UI high-school course scope split is stale');
-if (uiIndex.sourceSummary.rightsStatus !== 'hold' || uiIndex.sourceSummary.officialTextIncluded !== false) errors.push('UI rights boundary is stale');
+if (uiIndex.sourceSummary.rightsStatus !== 'cleared' || uiIndex.sourceSummary.officialTextIncluded !== false) errors.push('UI rights boundary is stale');
 const html = await readFile(join(root, 'ui/index.html'), 'utf8');
 const css = await readFile(join(root, 'ui/styles.css'), 'utf8');
 if (/https?:\/\//.test(html) || /@import\s+url\(['"]?https?:\/\//.test(css)) errors.push('UI has an external runtime dependency');

@@ -183,7 +183,7 @@ const index = {
   transitions: transitionIndex,
   creditRules: highExtras['credit-rules'],
   pathways: highExtras.pathways.map((pathway) => ({ ...pathway, steps: pathway.steps.map((step) => ({ ...step, courseLabels: step.courseIds.map((id) => courseById.get(id)?.labelKorean).filter(Boolean) })) })),
-  sourceSummary: { count: sourceManifest.sourceCount, rightsStatus: 'hold', officialTextIncluded: false, publishers: [...new Set(sourceManifest.sources.map((source) => source.publisher))] },
+  sourceSummary: { count: sourceManifest.sourceCount, rightsStatus: 'cleared', officialTextIncluded: false, publishers: [...new Set(sourceManifest.sources.map((source) => source.publisher))] },
   boundaries: [
     '과목은 국가 교육과정 정의이며 특정 학교의 실제 개설을 뜻하지 않습니다.',
     '전이·선수 관계는 공식 문서 근거가 있는 항목만 제공하며, 추천 과목 연계는 공식 이수 제약을 뜻하지 않습니다.',

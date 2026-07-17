@@ -6,7 +6,7 @@ slm:ReleaseShape a sh:NodeShape ;
   sh:targetClass slm:CurriculumRelease ;
   sh:property [ sh:path slm:curriculumVersion ; sh:minCount 1 ; sh:maxCount 1 ] ;
   sh:property [ sh:path slm:status ; sh:minCount 1 ; sh:maxCount 1 ] ;
-  sh:property [ sh:path slm:rightsStatus ; sh:minCount 1 ; sh:maxCount 1 ; sh:hasValue "hold" ] .
+  sh:property [ sh:path slm:rightsStatus ; sh:minCount 1 ; sh:maxCount 1 ; sh:hasValue "cleared" ] .
 
 slm:SubjectGroupShape a sh:NodeShape ;
   sh:targetClass slm:SubjectGroup ;

@@ -339,7 +339,7 @@ export async function validateRepository(root = projectRoot) {
     if (profile !== 'bridges') {
       validateProfileReferences(profile, collections, indexes, errors);
       validateLearningGraph(profile, collections, errors);
-      if (release.rightsStatus !== 'hold') errors.push(`${profile}/release.json: rights must remain on hold`);
+      if (release.rightsStatus !== 'cleared') errors.push(`${profile}/release.json: rights status must be cleared (public official documents)`);
     }
   }
 
@@ -371,7 +371,7 @@ export async function validateRepository(root = projectRoot) {
       requireRefs([record.dependentTopicId], loaded.middle.indexes.topics, `bridges/elementaryTransitions/${record.id}`, errors);
     }
   }
-  if (bridge.release.rightsStatus !== 'hold') errors.push('bridges/release.json: rights must remain on hold');
+  if (bridge.release.rightsStatus !== 'cleared') errors.push('bridges/release.json: rights status must be cleared (public official documents)');
   if (inventoryReport.diagnosticCount !== 0) errors.push(`data/kr/inventory-report.json: ${inventoryReport.diagnosticCount} unresolved diagnostics`);
   for (const profile of ['middle', 'high', 'bridges']) {
     for (const [name, count] of Object.entries(inventoryReport[profile])) {

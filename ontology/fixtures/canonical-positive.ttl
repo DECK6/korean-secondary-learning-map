@@ -9,7 +9,7 @@ ex:source a slm:SourceDocument ;
   slm:attachmentNumber "1" ;
   slm:fileSha256 "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" ;
   slm:verificationStatus "official-source-checked" ;
-  slm:rightsStatus "needs-document-level-review" .
+  slm:rightsStatus "cleared" .
 ex:group a slm:SubjectGroup ; rdfs:label "과학"@ko ; slm:schoolLevel "middle" ; slm:hasSource ex:source .
 ex:course a slm:Course ; rdfs:label "과학"@ko ; slm:schoolLevel "middle" ; slm:courseCategory "common" ; slm:inSubjectGroup ex:group ; slm:hasSource ex:source ; slm:reviewStatus "candidate" .
 ex:domain a slm:Domain ; rdfs:label "과학과 인류의 지속가능한 삶"@ko ; slm:domainOfCourse ex:course ; slm:hasSource ex:source ; slm:reviewStatus "candidate" .

@@ -20,7 +20,7 @@ async function init() {
   setupCompare();
   renderPathways();
   renderProvenance();
-  $('#footer-version').textContent = `${map.version} · 공식 원문 비포함 · RIGHTS HOLD`;
+  $('#footer-version').textContent = `${map.version} · 공식 원문 비포함 · 공개 공식 자료 기반`;
 }
 
 function renderStats() {

@@ -464,7 +464,7 @@ const sourceManifest = {
       sourceType: 'official-pdf',
       usage: `${source.profileScopes.join('+')} 교육과정 별책 ${source.annex} 코드·과목·구조 확인`,
       verificationStatus: 'official-source-checked',
-      rightsStatus: 'needs-document-level-review',
+      rightsStatus: 'cleared',
       attachmentNo: source.attachmentNo,
       sha256: receipt.sha256,
       fileSizeBytes: receipt.bytes,
@@ -665,7 +665,7 @@ const creditRules = [
     unit: 'credits',
     sourceRefs: ['kr-nec-2026-1-annex4'],
     verificationStatus: 'official-source-checked',
-    rightsStatus: 'hold',
+    rightsStatus: 'cleared',
   },
   {
     id: 'kr.credit-rule.2026.high.curriculum-total',
@@ -677,7 +677,7 @@ const creditRules = [
     unit: 'credits',
     sourceRefs: ['kr-nec-2026-1-annex4'],
     verificationStatus: 'official-source-checked',
-    rightsStatus: 'hold',
+    rightsStatus: 'cleared',
   },
   {
     id: 'kr.credit-rule.2026.high.creative-activities-total',
@@ -689,7 +689,7 @@ const creditRules = [
     unit: 'credits',
     sourceRefs: ['kr-nec-2026-1-annex4'],
     verificationStatus: 'official-source-checked',
-    rightsStatus: 'hold',
+    rightsStatus: 'cleared',
   },
 ];
 
@@ -838,7 +838,7 @@ async function writeProfile(profile, collections) {
         middleReleaseId: releases.middle,
         highReleaseId: releases.high,
         sourceManifest: '../shared/source-manifest.json',
-        rightsStatus: 'hold',
+        rightsStatus: 'cleared',
         collections: collectionFiles,
         counts,
       }
@@ -851,7 +851,7 @@ async function writeProfile(profile, collections) {
         status: 'candidate',
         createdDate: catalog.catalogVersion,
         sourceManifest: '../shared/source-manifest.json',
-        rightsStatus: 'hold',
+        rightsStatus: 'cleared',
         textPolicy: {
           officialTextIncluded: false,
           summaryPolicy: '공식 성취기준 문장은 수록하지 않고 코드·locator와 기계적 초안 요약을 사용하며 전문가 검토 상태를 분리한다.',

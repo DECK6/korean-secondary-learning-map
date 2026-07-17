@@ -5,9 +5,9 @@ Copyright (c) 2026 DECK (github.com/DECK6)
 This repository — including its build scripts, validators, schemas, tests,
 UI code, dataset, ontology artifacts, and documentation — is an original
 work by the copyright holder, compiled from publicly available information
-about the national curriculum of the Republic of Korea. No rights to the
-official curriculum source documents themselves are granted or implied —
-see NOTICE.md.
+about the national curriculum of the Republic of Korea. The official
+curriculum documents themselves are public materials available from their
+original sources and are governed by those sources' terms — see NOTICE.md.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
