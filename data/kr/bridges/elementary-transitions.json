@@ -2,8 +2,158 @@
   "$schema": "../../../schema/bridge-profile.schema.json#/$defs/elementaryTransitionCollection",
   "elementaryReleaseVersion": "kr-full-depth-v0.4",
   "profile": "bridges",
-  "recordCount": 19,
+  "recordCount": 290,
   "records": [
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책9 과학과 교육과정 지구와 우주 내용 체계표 p.11",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.3bc7fc35de6c657fe8cd",
+      "id": "kr.learning-relation.2022.bridge.elementary.020145e9f139ed1bb6cb",
+      "prerequisiteTopicId": "kr.mt.science.earth-space.night-sky.g4-13-03.concept",
+      "reason": "과학과 내용 체계표 지구와 우주 영역에서 초등 별 학습을 [9과15-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책9 과학과 교육과정 운동과 에너지 내용 체계표 p.6",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.c7e6c63f34469d9a9080",
+      "id": "kr.learning-relation.2022.bridge.elementary.037e1f940aee7c7ec642",
+      "prerequisiteTopicId": "kr.mt.science.motion-energy.force-life.g4-01-01.concept",
+      "reason": "과학과 내용 체계표 운동과 에너지 영역에서 초등 밀기와 당기기 학습을 [9과05-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 스포츠 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.db7da0744c328a0d9830",
+      "id": "kr.learning-relation.2022.bridge.elementary.058fe7d175694fac0f32",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0205.perform",
+      "reason": "체육과 내용 체계표 스포츠 영역에서 초등 전략형 스포츠의 기본 기능 학습을 [9체02-17]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 한국사 내용 체계표 p.18",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.425eb5f49e66d814f1e1",
+      "id": "kr.learning-relation.2022.bridge.elementary.078576685bc878a1948f",
+      "prerequisiteTopicId": "kr.mt.social.5-6.6sa0401.concept",
+      "reason": "사회·역사과 내용 체계표 한국사 영역에서 초등 고조선 사람들의 생활 학습을 [9역08-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책5 국어과 교육과정 매체 내용 체계표 p.12",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.c3a5acd3303f595b88ee",
+      "id": "kr.learning-relation.2022.bridge.elementary.079784d44fcd8064f12d",
+      "prerequisiteTopicId": "kr.mt.korean.media.5-6.6guk0602.01",
+      "reason": "국어과 내용 체계표 매체 영역에서 초등 매체 자료의 신뢰성 평가 학습을 [9국06-06]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 표현 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.5eb318cf0f69ba73d0d6",
+      "id": "kr.learning-relation.2022.bridge.elementary.07b248efbf33df56b0d7",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0306.perform",
+      "reason": "체육과 내용 체계표 표현 영역에서 초등 현대 표현의 응용 동작 학습을 [9체03-08]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 지리 인식 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.4d51db32f75bc85d7800",
+      "id": "kr.learning-relation.2022.bridge.elementary.0873f455804152071ead",
+      "prerequisiteTopicId": "kr.mt.social.5-6.6sa0902.concept",
+      "reason": "사회·역사과 내용 체계표 지리 인식 영역에서 초등 세계 여러 국가의 위치 학습을 [9사(지리)06-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책13 미술과 교육과정 표현 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.9ba0f217c40cce60f018",
+      "id": "kr.learning-relation.2022.bridge.elementary.088b45421f28d30c2b42",
+      "prerequisiteTopicId": "kr.mt.art.5-6.6mi0203.make",
+      "reason": "미술과 내용 체계표 표현 영역에서 초등 조형 요소와 원리 학습을 [9미02-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex13"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책5 국어과 교육과정 듣기⋅말하기 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.f3186c984004251e2212",
+      "id": "kr.learning-relation.2022.bridge.elementary.097d857aefaf0e37868a",
+      "prerequisiteTopicId": "kr.mt.korean.listening-speaking.5-6.6guk0101.01",
+      "reason": "국어과 내용 체계표 듣기⋅말하기 영역에서 초등 생략된 내용 추론 학습을 [9국01-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책10 기술·가정·정보과 교육과정 지속가능한 기술과 융합 내용 체계표 p.10",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.d4a3f5e2337ad8cab5a2",
+      "id": "kr.learning-relation.2022.bridge.elementary.098562fdd31eb9d8167d",
+      "prerequisiteTopicId": "kr.mt.practical.sustainable-technology-convergence.5-6.0407.practice",
+      "reason": "기술·가정·정보과 내용 체계표 지속가능한 기술과 융합 영역에서 초등 동식물 자원과 생명기술 학습을 [9기가04-11]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex10"
+      ],
+      "strength": "required"
+    },
     {
       "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 변화와 관계 내용 체계표 p.14",
       "basisKind": "official-source",
@@ -35,6 +185,96 @@
       "strength": "required"
     },
     {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 한국사 내용 체계표 p.18",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.7385d118d2fa88491874",
+      "id": "kr.learning-relation.2022.bridge.elementary.0af644a1e42fa7553245",
+      "prerequisiteTopicId": "kr.mt.social.5-6.6sa0402.concept",
+      "reason": "사회·역사과 내용 체계표 한국사 영역에서 초등 고대 사람들의 생각과 생활 학습을 [9역08-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 스포츠 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.b013c5dddb52a5722c06",
+      "id": "kr.learning-relation.2022.bridge.elementary.0bb97ed5cf84cedc8b3a",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0205.perform",
+      "reason": "체육과 내용 체계표 스포츠 영역에서 초등 전략형 스포츠의 기본 기능 학습을 [9체02-14]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 경제 내용 체계표 p.14",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.990b530d53c5eb7fe26f",
+      "id": "kr.learning-relation.2022.bridge.elementary.0d8e56cae13a4d30e175",
+      "prerequisiteTopicId": "kr.mt.social.5-6.6sa1103.concept",
+      "reason": "사회·역사과 내용 체계표 경제 영역에서 초등 무역의 의미와 이유 학습을 [9사(일사)10-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책10 기술·가정·정보과 교육과정 기술적 문제해결과 혁신 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.8f64e381fb21857618a1",
+      "id": "kr.learning-relation.2022.bridge.elementary.0eb9de92e2b107c41dbb",
+      "prerequisiteTopicId": "kr.mt.practical.technological-problem-solving-innovation.5-6.0303.practice",
+      "reason": "기술·가정·정보과 내용 체계표 기술적 문제해결과 혁신 영역에서 초등 발명과 특허 및 지식재산권 학습을 [9기가03-06]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex10"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책9 과학과 교육과정 물질 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.740b9953b1a55672cd02",
+      "id": "kr.learning-relation.2022.bridge.elementary.0f3dfcc25ecc1471f4c3",
+      "prerequisiteTopicId": "kr.mt.science.matter.gases.g4-15-02.concept",
+      "reason": "과학과 내용 체계표 물질 영역에서 초등 압력에 따른 기체 부피 학습을 [9과06-02]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 한국사 내용 체계표 p.18",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.2c74d4bc35a0ab84fce5",
+      "id": "kr.learning-relation.2022.bridge.elementary.0f40f823dea38e1591e1",
+      "prerequisiteTopicId": "kr.mt.social.5-6.6sa0502.concept",
+      "reason": "사회·역사과 내용 체계표 한국사 영역에서 초등 조선 후기 사회와 문화의 변화 학습을 [9역12-02]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
       "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 변화와 관계 내용 체계표 p.14",
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.b4988a216ab8454db471",
@@ -46,6 +286,816 @@
       "scope": "cross-school-level",
       "sourceRefs": [
         "kr-moe-2022-33-annex8"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책6 도덕과 교육과정 사회⋅공동체와의 관계 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.9577b15f4d4e6ac00a6d",
+      "id": "kr.learning-relation.2022.bridge.elementary.139f8ca304c023828611",
+      "prerequisiteTopicId": "kr.mt.moral.community.g3-4.4do-03-03.concept",
+      "reason": "도덕과 내용 체계표 사회⋅공동체와의 관계 영역에서 초등 통일의 필요성 학습을 [9도03-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex6"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책10 기술·가정·정보과 교육과정 지속가능한 기술과 융합 내용 체계표 p.10",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.27266d3a726a1358c51f",
+      "id": "kr.learning-relation.2022.bridge.elementary.15037c28617deb1a298f",
+      "prerequisiteTopicId": "kr.mt.practical.sustainable-technology-convergence.5-6.0405.practice",
+      "reason": "기술·가정·정보과 내용 체계표 지속가능한 기술과 융합 영역에서 초등 로봇의 종류와 작동 원리 학습을 [9기가04-09]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex10"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책10 기술·가정·정보과 교육과정 생활환경과 지속가능한 선택 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.eea040d90f5af5e589f2",
+      "id": "kr.learning-relation.2022.bridge.elementary.1592793e682f84430a1b",
+      "prerequisiteTopicId": "kr.mt.practical.life-environment-sustainable-choice.5-6.0201.practice",
+      "reason": "기술·가정·정보과 내용 체계표 생활환경과 지속가능한 선택 영역에서 초등 생활자원의 특징 학습을 [9기가02-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex10"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 운동 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.64245d85c8c7fbf3e06b",
+      "id": "kr.learning-relation.2022.bridge.elementary.160260e2aff0f5c48765",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0103.perform",
+      "reason": "체육과 내용 체계표 운동 영역에서 초등 운동과 성장 발달 학습을 [9체01-11]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책6 도덕과 교육과정 자신과의 관계 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.8e4ff16c71931a8576ba",
+      "id": "kr.learning-relation.2022.bridge.elementary.1646786c0815cbe7bcf2",
+      "prerequisiteTopicId": "kr.mt.moral.self-agency.g5-6.6do-01-02.concept",
+      "reason": "도덕과 내용 체계표 자신과의 관계 영역에서 초등 생활 반성과 성찰 학습을 [9도01-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex6"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책5 국어과 교육과정 쓰기 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.e120b342bc730f98f28a",
+      "id": "kr.learning-relation.2022.bridge.elementary.16a6d5bba66166e05d77",
+      "prerequisiteTopicId": "kr.mt.korean.writing.5-6.6guk0304.01",
+      "reason": "국어과 내용 체계표 쓰기 영역에서 초등 독자와 매체를 고려한 글 학습을 [9국03-07]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책6 도덕과 교육과정 자신과의 관계 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.8e4ff16c71931a8576ba",
+      "id": "kr.learning-relation.2022.bridge.elementary.199faa7a670e2a3e697c",
+      "prerequisiteTopicId": "kr.mt.moral.self-agency.g3-4.4do-01-04.concept",
+      "reason": "도덕과 내용 체계표 자신과의 관계 영역에서 초등 도덕적 행동의 필요성 학습을 [9도01-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex6"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 자연환경과 인간생활 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.0541fafaa736d78e9bdb",
+      "id": "kr.learning-relation.2022.bridge.elementary.1a46b33aa9f35af507e7",
+      "prerequisiteTopicId": "kr.mt.social.5-6.6sa0101.concept",
+      "reason": "사회·역사과 내용 체계표 자연환경과 인간생활 영역에서 초등 우리나라의 주요 지형 학습을 [9사(지리)08-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 지속가능한 세계 내용 체계표 p.11",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.f59f64f87f6871adf979",
+      "id": "kr.learning-relation.2022.bridge.elementary.1ed7a779270020494c54",
+      "prerequisiteTopicId": "kr.mt.social.5-6.6sa0701.concept",
+      "reason": "사회·역사과 내용 체계표 지속가능한 세계 영역에서 초등 평화 통일을 위한 노력 학습을 [9사(지리)11-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책6 도덕과 교육과정 자신과의 관계 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.8e4ff16c71931a8576ba",
+      "id": "kr.learning-relation.2022.bridge.elementary.205d74bc09a7431c47f5",
+      "prerequisiteTopicId": "kr.mt.moral.self-agency.g3-4.4do-01-01.concept",
+      "reason": "도덕과 내용 체계표 자신과의 관계 영역에서 초등 자기 존중과 자아 탐구 학습을 [9도01-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex6"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책5 국어과 교육과정 듣기⋅말하기 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.027828fef4b11fbd7f10",
+      "id": "kr.learning-relation.2022.bridge.elementary.207097a8956877a7f8d6",
+      "prerequisiteTopicId": "kr.mt.korean.listening-speaking.3-4.4guk0104.01",
+      "reason": "국어과 내용 체계표 듣기⋅말하기 영역에서 초등 상대의 입장을 고려한 대화 학습을 [9국01-04]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책13 미술과 교육과정 감상 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.f3ff7b199667e5a03f6e",
+      "id": "kr.learning-relation.2022.bridge.elementary.2424277f98bfb3492e36",
+      "prerequisiteTopicId": "kr.mt.art.5-6.6mi0301.make",
+      "reason": "미술과 내용 체계표 감상 영역에서 초등 작품과 시대·지역 배경의 연결 학습을 [9미03-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex13"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 자연환경과 인간생활 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.6f84a48dc1ea3f5bb00e",
+      "id": "kr.learning-relation.2022.bridge.elementary.255ae213c0eb94efb339",
+      "prerequisiteTopicId": "kr.mt.social.5-6.6sa0201.concept",
+      "reason": "사회·역사과 내용 체계표 자연환경과 인간생활 영역에서 초등 기후변화로 인한 자연재해 학습을 [9사(지리)08-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책5 국어과 교육과정 듣기⋅말하기 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.cfba584095b45a3224ae",
+      "id": "kr.learning-relation.2022.bridge.elementary.2621a43cba598acc4372",
+      "prerequisiteTopicId": "kr.mt.korean.listening-speaking.5-6.6guk0107.01",
+      "reason": "국어과 내용 체계표 듣기⋅말하기 영역에서 초등 이유와 근거를 갖춘 토론 학습을 [9국01-08]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 스포츠 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.cbd9d2e3f6ac4b9cb78c",
+      "id": "kr.learning-relation.2022.bridge.elementary.26c7bbbc0d6719ef257e",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0206.perform",
+      "reason": "체육과 내용 체계표 스포츠 영역에서 초등 전략형 스포츠의 방법과 전략 학습을 [9체02-18]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책6 도덕과 교육과정 사회⋅공동체와의 관계 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.4d0b1c0a0e0ed36d26ee",
+      "id": "kr.learning-relation.2022.bridge.elementary.27b24009a37c2b92faa2",
+      "prerequisiteTopicId": "kr.mt.moral.community.g5-6.6do-03-02.concept",
+      "reason": "도덕과 내용 체계표 사회⋅공동체와의 관계 영역에서 초등 정의로운 공동체 학습을 [9도03-04]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex6"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책5 국어과 교육과정 듣기⋅말하기 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.197de2edcb4fe194b37d",
+      "id": "kr.learning-relation.2022.bridge.elementary.28a71d14bd3b95c13605",
+      "prerequisiteTopicId": "kr.mt.korean.listening-speaking.5-6.6guk0102.01",
+      "reason": "국어과 내용 체계표 듣기⋅말하기 영역에서 초등 주장과 근거의 타당성 평가 학습을 [9국01-02]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 스포츠 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.21757a013828a62a5e2a",
+      "id": "kr.learning-relation.2022.bridge.elementary.28f939dd8450a71f7ee0",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0203.perform",
+      "reason": "체육과 내용 체계표 스포츠 영역에서 초등 기술형 스포츠의 방법과 전략 학습을 [9체02-09]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책9 과학과 교육과정 물질 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.463b379e28b73aefce05",
+      "id": "kr.learning-relation.2022.bridge.elementary.2adb85df4d374b9b0bf2",
+      "prerequisiteTopicId": "kr.mt.science.matter.gases.g4-15-02.concept",
+      "reason": "과학과 내용 체계표 물질 영역에서 초등 온도에 따른 기체 부피 학습을 [9과06-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책5 국어과 교육과정 읽기 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.43fa4122b69f8390e5d6",
+      "id": "kr.learning-relation.2022.bridge.elementary.2c4c00d45342ecac33fa",
+      "prerequisiteTopicId": "kr.mt.korean.reading.5-6.6guk0203.01",
+      "reason": "국어과 내용 체계표 읽기 영역에서 초등 내용 타당성과 표현 적절성 평가 학습을 [9국02-04]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책13 미술과 교육과정 감상 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.791e4e87643a0fdf5bab",
+      "id": "kr.learning-relation.2022.bridge.elementary.2eb960fae006c0e79ce7",
+      "prerequisiteTopicId": "kr.mt.art.5-6.6mi0304.make",
+      "reason": "미술과 내용 체계표 감상 영역에서 초등 다양한 감상 방법과 관점 학습을 [9미03-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex13"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책9 과학과 교육과정 물질 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.b7aa43cf0403b59f678e",
+      "id": "kr.learning-relation.2022.bridge.elementary.3171fac0266f7220d279",
+      "prerequisiteTopicId": "kr.mt.science.matter.dissolving-solution.g6-03-01.concept",
+      "reason": "과학과 내용 체계표 물질 영역에서 초등 용해 학습을 [9과08-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책9 과학과 교육과정 지구와 우주 내용 체계표 p.10",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.c3a9660fe861f9b108e7",
+      "id": "kr.learning-relation.2022.bridge.elementary.3179addf8bef81154736",
+      "prerequisiteTopicId": "kr.mt.science.earth-space.strata-fossils.g6-01-02.concept",
+      "reason": "과학과 내용 체계표 지구와 우주 영역에서 초등 퇴적암 학습을 [9과09-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 자연환경과 인간생활 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.3f42c58d9bc38d0e411a",
+      "id": "kr.learning-relation.2022.bridge.elementary.328174c8dfadb30b64d6",
+      "prerequisiteTopicId": "kr.mt.social.5-6.6sa1001.concept",
+      "reason": "사회·역사과 내용 체계표 자연환경과 인간생활 영역에서 초등 세계 여러 지역의 지형과 생활 학습을 [9사(지리)01-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책5 국어과 교육과정 문학 내용 체계표 p.11",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.a8dd7cb0446a3d6c8351",
+      "id": "kr.learning-relation.2022.bridge.elementary.3398bb3eb8cb676a242c",
+      "prerequisiteTopicId": "kr.mt.korean.literature.5-6.6guk0505.01",
+      "reason": "국어과 내용 체계표 문학 영역에서 초등 갈래에 따른 경험 표현 학습을 [9국05-06]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 지리 인식 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.de6077ef6404a02c255b",
+      "id": "kr.learning-relation.2022.bridge.elementary.33b803508c084d76222b",
+      "prerequisiteTopicId": "kr.mt.social.5-6.6sa0902.concept",
+      "reason": "사회·역사과 내용 체계표 지리 인식 영역에서 초등 세계 여러 국가의 위치 학습을 [9사(지리)05-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 지리 인식 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.6087e3f03e34603fbac2",
+      "id": "kr.learning-relation.2022.bridge.elementary.3488afc5524101d09ce0",
+      "prerequisiteTopicId": "kr.mt.social.5-6.6sa0102.concept",
+      "reason": "사회·역사과 내용 체계표 지리 인식 영역에서 초등 우리나라의 위치와 영토 학습을 [9사(지리)07-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책5 국어과 교육과정 매체 내용 체계표 p.12",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.fdc0bd098c74b588ebdd",
+      "id": "kr.learning-relation.2022.bridge.elementary.36f3c6f40af964e8f266",
+      "prerequisiteTopicId": "kr.mt.korean.media.5-6.6guk0604.01",
+      "reason": "국어과 내용 체계표 매체 영역에서 초등 매체 이용 양상 성찰 학습을 [9국06-02]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 표현 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.f18ef683439dade9337d",
+      "id": "kr.learning-relation.2022.bridge.elementary.382afdf0da8522c7a3f5",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0305.perform",
+      "reason": "체육과 내용 체계표 표현 영역에서 초등 전통 표현의 구성과 감상 학습을 [9체03-06]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 역사 일반 내용 체계표 p.16",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.43dbf35a5409fd68314d",
+      "id": "kr.learning-relation.2022.bridge.elementary.388694b7bd6975286e42",
+      "prerequisiteTopicId": "kr.mt.social.3-4.4sa0203.concept",
+      "reason": "사회·역사과 내용 체계표 역사 일반 영역에서 초등 역사 자료로 파악하는 변화와 지속 학습을 [9역01-02]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책6 도덕과 교육과정 사회⋅공동체와의 관계 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.976bf18fc92dd91a381a",
+      "id": "kr.learning-relation.2022.bridge.elementary.38dd9ef7ba64357d7778",
+      "prerequisiteTopicId": "kr.mt.moral.community.g5-6.6do-03-01.concept",
+      "reason": "도덕과 내용 체계표 사회⋅공동체와의 관계 영역에서 초등 인권 존중 학습을 [9도03-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex6"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책12 음악과 교육과정 연주 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.e7e0b8f9ce39ed6ff8fc",
+      "id": "kr.learning-relation.2022.bridge.elementary.3b6db1d96a257b5ec3f1",
+      "prerequisiteTopicId": "kr.mt.music.5-6.6eum0104.perform",
+      "reason": "음악과 내용 체계표 연주 영역에서 초등 연주 준비와 생활 속 참여 학습을 [9음01-04]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex12"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책9 과학과 교육과정 과학과 사회 내용 체계표 p.11",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.42888938c22b1cc8d4dc",
+      "id": "kr.learning-relation.2022.bridge.elementary.3c77beea803536273802",
+      "prerequisiteTopicId": "kr.mt.science.science-society.resources-energy.g6-08-03.concept",
+      "reason": "과학과 내용 체계표 과학과 사회 영역에서 초등 자원과 에너지의 효율적 이용 학습을 [9과01-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책14 영어과 교육과정 표현 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.da333a14a54042b54935",
+      "id": "kr.learning-relation.2022.bridge.elementary.3d597c92ad00c2d43261",
+      "prerequisiteTopicId": "kr.mt.english-efl.5-6.expression.6영02-08.01.초대-감사-카드-쓰기",
+      "reason": "영어과 내용 체계표 표현 영역에서 초등 목적에 맞는 글쓰기 학습을 [9영02-08]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex14"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책13 미술과 교육과정 미적 체험 내용 체계표 p.6",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.89873bdb2e93ffb6257c",
+      "id": "kr.learning-relation.2022.bridge.elementary.3ddbcabecce6b9a9a22e",
+      "prerequisiteTopicId": "kr.mt.art.3-4.4mi0104.make",
+      "reason": "미술과 내용 체계표 미적 체험 영역에서 초등 생활 속 미술의 특징과 역할 학습을 [9미01-04]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex13"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책6 도덕과 교육과정 사회⋅공동체와의 관계 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.314bc6b2b0c5b2b3dbf9",
+      "id": "kr.learning-relation.2022.bridge.elementary.3e8134ec4cb1dc5e8cd2",
+      "prerequisiteTopicId": "kr.mt.moral.community.g5-6.6do-03-04.concept",
+      "reason": "도덕과 내용 체계표 사회⋅공동체와의 관계 영역에서 초등 인류애 학습을 [9도03-06]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex6"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 한국사 내용 체계표 p.18",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.263add623f64a9b8daf1",
+      "id": "kr.learning-relation.2022.bridge.elementary.3f25b3ffce7ff354c44f",
+      "prerequisiteTopicId": "kr.mt.social.5-6.6sa0701.concept",
+      "reason": "사회·역사과 내용 체계표 한국사 영역에서 초등 평화 통일을 위한 노력 학습을 [9역13-04]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책14 영어과 교육과정 이해 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.622b6c6514b292998c9a",
+      "id": "kr.learning-relation.2022.bridge.elementary.400a2089e6e5d3dff57b",
+      "prerequisiteTopicId": "kr.mt.english-efl.5-6.understanding.6영01-04.01.시간-장소-세부-정보-찾기",
+      "reason": "영어과 내용 체계표 이해 영역에서 초등 세부 정보 파악 학습을 [9영01-02]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex14"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책13 미술과 교육과정 감상 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.2f5b36994dadcb26e1ba",
+      "id": "kr.learning-relation.2022.bridge.elementary.4026c680463d5fa4d6db",
+      "prerequisiteTopicId": "kr.mt.art.5-6.6mi0303.make",
+      "reason": "미술과 내용 체계표 감상 영역에서 초등 공동체 미술 문화 참여와 공유 학습을 [9미03-04]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex13"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 인문환경과 인간생활 내용 체계표 p.10",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.e4505e126ff615058414",
+      "id": "kr.learning-relation.2022.bridge.elementary.406775fad3e2f34e0fb5",
+      "prerequisiteTopicId": "kr.mt.social.3-4.4sa1002.concept",
+      "reason": "사회·역사과 내용 체계표 인문환경과 인간생활 영역에서 초등 도시의 특징과 도시 생활 학습을 [9사(지리)03-02]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 사회⋅문화 내용 체계표 p.15",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.d051ca9d3106a5f18004",
+      "id": "kr.learning-relation.2022.bridge.elementary.406c285cc75da7236add",
+      "prerequisiteTopicId": "kr.mt.social.3-4.4sa0302.concept",
+      "reason": "사회·역사과 내용 체계표 사회⋅문화 영역에서 초등 문화 다양성과 문화 이해 태도 학습을 [9사(일사)02-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책10 기술·가정·정보과 교육과정 인간 발달과 주도적 삶 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.f6131188d3d0affcb482",
+      "id": "kr.learning-relation.2022.bridge.elementary.424752e013442ea55062",
+      "prerequisiteTopicId": "kr.mt.practical.human-development-self-directed-life.5-6.0105.practice",
+      "reason": "기술·가정·정보과 내용 체계표 인간 발달과 주도적 삶 영역에서 초등 옷의 기능과 옷차림 학습을 [9기가01-04]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex10"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 운동 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.44c4840b72f94b84b89f",
+      "id": "kr.learning-relation.2022.bridge.elementary.42e337591abd37c0c60c",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0103.perform",
+      "reason": "체육과 내용 체계표 운동 영역에서 초등 운동과 성장 발달 학습을 [9체01-07]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책14 영어과 교육과정 표현 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.72ab2213bf66b7d27deb",
+      "id": "kr.learning-relation.2022.bridge.elementary.430c9e415286f2b74836",
+      "prerequisiteTopicId": "kr.mt.english-efl.5-6.expression.6영02-05.01.위치-표현으로-길-안내",
+      "reason": "영어과 내용 체계표 표현 영역에서 초등 행동 순서나 방법 설명 학습을 [9영02-05]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex14"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책10 기술·가정·정보과 교육과정 생활환경과 지속가능한 선택 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.794358552e36ed3e3d03",
+      "id": "kr.learning-relation.2022.bridge.elementary.433891dbbd1b6cddf219",
+      "prerequisiteTopicId": "kr.mt.practical.life-environment-sustainable-choice.5-6.0210.practice",
+      "reason": "기술·가정·정보과 내용 체계표 생활환경과 지속가능한 선택 영역에서 초등 생활공간과 정리정돈 학습을 [9기가02-08]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex10"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책6 도덕과 교육과정 자신과의 관계 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.47926f5b1964962e3b3d",
+      "id": "kr.learning-relation.2022.bridge.elementary.441fa778bd4d7031e7e5",
+      "prerequisiteTopicId": "kr.mt.moral.self-agency.g3-4.4do-01-02.concept",
+      "reason": "도덕과 내용 체계표 자신과의 관계 영역에서 초등 정직한 사람의 의미 학습을 [9도01-02]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex6"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책10 기술·가정·정보과 교육과정 성취기준 해설 p.154",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.f141b1d57b47445ebf50",
+      "id": "kr.learning-relation.2022.bridge.elementary.44275a08a12906c8b1cb",
+      "prerequisiteTopicId": "kr.mt.practical.digital-society-ai.5-6.0502.practice",
+      "reason": "기술·가정·정보과 성취기준 해설이 초등 초등 기초 프로그래밍을 논리 연산과 중첩 제어 구조 활용으로 확장한다.을 [9정03-06] 학습에 직접 연계한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex10"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 스포츠 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.621da8f189cd281ea4e4",
+      "id": "kr.learning-relation.2022.bridge.elementary.4449bc017b7f34bcbd87",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0206.perform",
+      "reason": "체육과 내용 체계표 스포츠 영역에서 초등 전략형 스포츠의 방법과 전략 학습을 [9체02-15]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책13 미술과 교육과정 표현 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.05b259dc37fa75926b30",
+      "id": "kr.learning-relation.2022.bridge.elementary.4490e46ac5e9d120aea1",
+      "prerequisiteTopicId": "kr.mt.art.3-4.4mi0204.make",
+      "reason": "미술과 내용 체계표 표현 영역에서 초등 자기 작품을 존중하는 태도 학습을 [9미02-04]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex13"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 표현 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.bc95cebeecad7189cbe8",
+      "id": "kr.learning-relation.2022.bridge.elementary.45ff0e8e8cdd6290a086",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0308.perform",
+      "reason": "체육과 내용 체계표 표현 영역에서 초등 표현 활동 수용과 심미성 학습을 [9체03-10]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책13 미술과 교육과정 미적 체험 내용 체계표 p.6",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.4780f85447fea9de6d15",
+      "id": "kr.learning-relation.2022.bridge.elementary.4608ada664357f275376",
+      "prerequisiteTopicId": "kr.mt.art.5-6.6mi0101.make",
+      "reason": "미술과 내용 체계표 미적 체험 영역에서 초등 감각과 매체를 활용한 탐색 학습을 [9미01-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex13"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책5 국어과 교육과정 문학 내용 체계표 p.11",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.a4c051964973766790d9",
+      "id": "kr.learning-relation.2022.bridge.elementary.465ea4fe7da3156145a8",
+      "prerequisiteTopicId": "kr.mt.korean.literature.5-6.6guk0506.01",
+      "reason": "국어과 내용 체계표 문학 영역에서 초등 문학을 통한 자기 성찰 학습을 [9국05-09]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 표현 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.0bda17ceac5a8eae6d40",
+      "id": "kr.learning-relation.2022.bridge.elementary.47780c3493af22e6e36b",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0301.perform",
+      "reason": "체육과 내용 체계표 표현 영역에서 초등 표현 활동의 의미와 유형 학습을 [9체03-07]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 운동 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.56488bbc7390f9654ea1",
+      "id": "kr.learning-relation.2022.bridge.elementary.47f5b9b436276ee61df0",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0106.perform",
+      "reason": "체육과 내용 체계표 운동 영역에서 초등 성장 발달의 차이와 안전 학습을 [9체01-14]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
       ],
       "strength": "required"
     },
@@ -65,6 +1115,51 @@
       "strength": "required"
     },
     {
+      "basis": "국가교육위원회 고시 제2024-3호 별책9 과학과 교육과정 성취기준 해설 p.41",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.9f609ca14414e876d6bb",
+      "id": "kr.learning-relation.2022.bridge.elementary.49691035abd28bd835ce",
+      "prerequisiteTopicId": "kr.mt.science.life.organisms-environment.g4-14-03.concept",
+      "reason": "과학과 성취기준 해설이 초등 생물과 환경 학습을 생물다양성 보전 실천과 연계한다.을 [9과02-05] 학습에 직접 연계한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 표현 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.97265fa82c35665eb15a",
+      "id": "kr.learning-relation.2022.bridge.elementary.49987ebe00f41ceea117",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0301.perform",
+      "reason": "체육과 내용 체계표 표현 영역에서 초등 표현 활동의 의미와 유형 학습을 [9체03-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 법 내용 체계표 p.13",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.dbcabd4795de96529229",
+      "id": "kr.learning-relation.2022.bridge.elementary.4a5078c078756cb423e8",
+      "prerequisiteTopicId": "kr.mt.social.5-6.6sa0302.concept",
+      "reason": "사회·역사과 내용 체계표 법 영역에서 초등 인권 침해 문제의 해결 학습을 [9사(일사)06-02]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
       "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 도형과 측정 내용 체계표 p.15",
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.3d798ebd44e165f2b030",
@@ -76,6 +1171,441 @@
       "scope": "cross-school-level",
       "sourceRefs": [
         "kr-moe-2022-33-annex8"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책12 음악과 교육과정 감상 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.58566ebf8b22934de5b5",
+      "id": "kr.learning-relation.2022.bridge.elementary.4b67c8ff5cac02ed8175",
+      "prerequisiteTopicId": "kr.mt.music.5-6.6eum0203.perform",
+      "reason": "음악과 내용 체계표 감상 영역에서 초등 음악의 배경과 활용 학습을 [9음02-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex12"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 스포츠 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.a626a35b86c4b8c336b9",
+      "id": "kr.learning-relation.2022.bridge.elementary.4b8212509ff9e54fec62",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0204.perform",
+      "reason": "체육과 내용 체계표 스포츠 영역에서 초등 전략형 스포츠의 의미와 유형 학습을 [9체02-10]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책14 영어과 교육과정 이해 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.010bed8da663fee57108",
+      "id": "kr.learning-relation.2022.bridge.elementary.4bf1c2c69ca712e9df12",
+      "prerequisiteTopicId": "kr.mt.english-efl.5-6.understanding.6영01-05.01.짧은-대화-요지-파악",
+      "reason": "영어과 내용 체계표 이해 영역에서 초등 중심 내용 파악 학습을 [9영01-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex14"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책6 도덕과 교육과정 자연과의 관계 내용 체계표 p.10",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.f01eefd08a99dac4a409",
+      "id": "kr.learning-relation.2022.bridge.elementary.4c17584e1752b7f9d61a",
+      "prerequisiteTopicId": "kr.mt.moral.nature-coexistence.g5-6.6do-04-01.concept",
+      "reason": "도덕과 내용 체계표 자연과의 관계 영역에서 초등 환경 위기 극복 학습을 [9도04-02]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex6"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 스포츠 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.32723d96b57fc25a9f09",
+      "id": "kr.learning-relation.2022.bridge.elementary.4ca0993a129d4b283be5",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0203.perform",
+      "reason": "체육과 내용 체계표 스포츠 영역에서 초등 기술형 스포츠의 방법과 전략 학습을 [9체02-06]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 표현 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.465f41d477ecf41e7d8c",
+      "id": "kr.learning-relation.2022.bridge.elementary.4cd134cbcdacbf067c4a",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0303.perform",
+      "reason": "체육과 내용 체계표 표현 영역에서 초등 스포츠 표현의 구성과 감상 학습을 [9체03-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 표현 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.874c0608e4f18759f95f",
+      "id": "kr.learning-relation.2022.bridge.elementary.4d78bf7ea33636e3a814",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0302.perform",
+      "reason": "체육과 내용 체계표 표현 영역에서 초등 스포츠 표현의 응용 동작 학습을 [9체03-02]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 정치 내용 체계표 p.12",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.bbabed85cadf2b798eb8",
+      "id": "kr.learning-relation.2022.bridge.elementary.4d87446b7bb39821049d",
+      "prerequisiteTopicId": "kr.mt.social.3-4.4sa0801.concept",
+      "reason": "사회·역사과 내용 체계표 정치 영역에서 초등 민주주의의 의미와 학교 자치 학습을 [9사(일사)03-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 스포츠 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.74e5f17a9ba80fdbe975",
+      "id": "kr.learning-relation.2022.bridge.elementary.4e1046c0bbd6c2104ecd",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0201.perform",
+      "reason": "체육과 내용 체계표 스포츠 영역에서 초등 기술형 스포츠의 의미와 유형 학습을 [9체02-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책9 과학과 교육과정 지구와 우주 내용 체계표 p.10",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.9d9af6e55141e4f1ecc5",
+      "id": "kr.learning-relation.2022.bridge.elementary.4fdab042aba7eb28d943",
+      "prerequisiteTopicId": "kr.mt.science.earth-space.weather-life.g6-06-03.concept",
+      "reason": "과학과 내용 체계표 지구와 우주 영역에서 초등 고기압·저기압과 날씨 학습을 [9과17-04]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책12 음악과 교육과정 감상 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.60d3eec23d348df883ea",
+      "id": "kr.learning-relation.2022.bridge.elementary.5105cb60a12f0c802f79",
+      "prerequisiteTopicId": "kr.mt.music.5-6.6eum0205.perform",
+      "reason": "음악과 내용 체계표 감상 영역에서 초등 우리나라 음악 국가유산의 가치 학습을 [9음02-05]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex12"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책10 기술·가정·정보과 교육과정 생활환경과 지속가능한 선택 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.f0d19d48fb02befae2e8",
+      "id": "kr.learning-relation.2022.bridge.elementary.51632c261fdf959adb48",
+      "prerequisiteTopicId": "kr.mt.practical.life-environment-sustainable-choice.5-6.0207.practice",
+      "reason": "기술·가정·정보과 내용 체계표 생활환경과 지속가능한 선택 영역에서 초등 옷이나 생활용품의 구성 학습을 [9기가02-05]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex10"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책6 도덕과 교육과정 사회⋅공동체와의 관계 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.4d0b1c0a0e0ed36d26ee",
+      "id": "kr.learning-relation.2022.bridge.elementary.51ff5da886497b149295",
+      "prerequisiteTopicId": "kr.mt.moral.community.g3-4.4do-03-01.concept",
+      "reason": "도덕과 내용 체계표 사회⋅공동체와의 관계 영역에서 초등 공정한 사회 학습을 [9도03-04]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex6"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책5 국어과 교육과정 쓰기 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.79022a281da0379a7a11",
+      "id": "kr.learning-relation.2022.bridge.elementary.542d19e6682375283b98",
+      "prerequisiteTopicId": "kr.mt.korean.writing.5-6.6guk0305.01",
+      "reason": "국어과 내용 체계표 쓰기 영역에서 초등 쓰기 과정 점검과 고쳐쓰기 학습을 [9국03-08]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책5 국어과 교육과정 성취기준 해설 p.53",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.22b4d3cd31b6bd1510d9",
+      "id": "kr.learning-relation.2022.bridge.elementary.54d0805c5b486b581e5c",
+      "prerequisiteTopicId": "kr.mt.korean.grammar.5-6.6guk0405.01",
+      "reason": "국어과 성취기준 해설이 초등 초등의 시간 표현을 중등 피동과 인용 표현 학습에 연계한다.을 [9국04-05] 학습에 직접 연계한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책5 국어과 교육과정 읽기 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.058e42cb0adea5a12d6c",
+      "id": "kr.learning-relation.2022.bridge.elementary.5552c0c0f9ed180dc41e",
+      "prerequisiteTopicId": "kr.mt.korean.reading.5-6.6guk0202.01",
+      "reason": "국어과 내용 체계표 읽기 영역에서 초등 생략된 내용과 함축 의미 추론 학습을 [9국02-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 스포츠 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.82d523b685830ba06a30",
+      "id": "kr.learning-relation.2022.bridge.elementary.56452a32857d3f165972",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0212.perform",
+      "reason": "체육과 내용 체계표 스포츠 영역에서 초등 스포츠 환경 보호 학습을 [9체02-27]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책14 영어과 교육과정 이해 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.db816a53795d235cacaa",
+      "id": "kr.learning-relation.2022.bridge.elementary.5658386e9a2b91446c08",
+      "prerequisiteTopicId": "kr.mt.english-efl.5-6.understanding.6영01-06.01.사건-순서-듣기",
+      "reason": "영어과 내용 체계표 이해 영역에서 초등 일이나 사건의 순서 파악 학습을 [9영01-04]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex14"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 지속가능한 세계 내용 체계표 p.11",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.971f1b6e5b4379d0223f",
+      "id": "kr.learning-relation.2022.bridge.elementary.56b90d2290e1cbb0440f",
+      "prerequisiteTopicId": "kr.mt.social.5-6.6sa0701.concept",
+      "reason": "사회·역사과 내용 체계표 지속가능한 세계 영역에서 초등 분단과 평화의 장소 학습을 [9사(지리)11-02]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 스포츠 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.ff1678ba44ac6ce347e5",
+      "id": "kr.learning-relation.2022.bridge.elementary.56e6febd23b01c20778e",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0209.perform",
+      "reason": "체육과 내용 체계표 스포츠 영역에서 초등 생태형 스포츠의 방법과 전략 학습을 [9체02-21]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책5 국어과 교육과정 문법 내용 체계표 p.10",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.741b2a4f5891effd4107",
+      "id": "kr.learning-relation.2022.bridge.elementary.56ecee35e84a02dab683",
+      "prerequisiteTopicId": "kr.mt.korean.grammar.5-6.6guk0401.01",
+      "reason": "국어과 내용 체계표 문법 영역에서 초등 음성 언어와 문자 언어의 특성 학습을 [9국04-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책10 기술·가정·정보과 교육과정 성취기준 해설 p.154",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.bfee1df0faaf8ddd932a",
+      "id": "kr.learning-relation.2022.bridge.elementary.57a7e49fac00ffb27525",
+      "prerequisiteTopicId": "kr.mt.practical.digital-society-ai.5-6.0502.practice",
+      "reason": "기술·가정·정보과 성취기준 해설이 초등 초등 기초 프로그래밍을 순차 데이터 저장 구조 활용으로 확장한다.을 [9정03-05] 학습에 직접 연계한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex10"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 정치 내용 체계표 p.12",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.e3627466258bbc4227b3",
+      "id": "kr.learning-relation.2022.bridge.elementary.57af5e7cf4e88c2bc48b",
+      "prerequisiteTopicId": "kr.mt.social.5-6.6sa0801.concept",
+      "reason": "사회·역사과 내용 체계표 정치 영역에서 초등 선거의 의미와 역할 학습을 [9사(일사)04-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 운동 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.4d9a2ceffb734705b825",
+      "id": "kr.learning-relation.2022.bridge.elementary.57edec05bb9a5a50ae3a",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0103.perform",
+      "reason": "체육과 내용 체계표 운동 영역에서 초등 운동과 성장 발달 학습을 [9체01-09]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책10 기술·가정·정보과 교육과정 기술적 문제해결과 혁신 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.df770e4329dec7412a90",
+      "id": "kr.learning-relation.2022.bridge.elementary.589e5d52991b88b9a3cb",
+      "prerequisiteTopicId": "kr.mt.practical.technological-problem-solving-innovation.5-6.0305.practice",
+      "reason": "기술·가정·정보과 내용 체계표 기술적 문제해결과 혁신 영역에서 초등 수송 수단의 구성 요소 학습을 [9기가03-13]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex10"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책5 국어과 교육과정 쓰기 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.77cee67dff0fa62ab4b7",
+      "id": "kr.learning-relation.2022.bridge.elementary.5a8f044c159f74cd29e2",
+      "prerequisiteTopicId": "kr.mt.korean.writing.3-4.4guk0302.01",
+      "reason": "국어과 내용 체계표 쓰기 영역에서 초등 절차와 결과를 담은 보고문 학습을 [9국03-02]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책5 국어과 교육과정 성취기준 해설 p.53",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.7fd23152d72ac3af2e09",
+      "id": "kr.learning-relation.2022.bridge.elementary.5af2b1264a6f4ad4abc9",
+      "prerequisiteTopicId": "kr.mt.korean.grammar.3-4.4guk0402.01",
+      "reason": "국어과 성취기준 해설이 초등 초등의 단어 분류 지식을 중등 품사 분석으로 심화한다.을 [9국04-03] 학습에 직접 연계한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 한국사 내용 체계표 p.18",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.551fd86ed6a29228e1bf",
+      "id": "kr.learning-relation.2022.bridge.elementary.5c164971c29043b81343",
+      "prerequisiteTopicId": "kr.mt.social.5-6.6sa0702.concept",
+      "reason": "사회·역사과 내용 체계표 한국사 영역에서 초등 민주화로 달라진 생활 학습을 [9역13-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책5 국어과 교육과정 문학 내용 체계표 p.11",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.14fb7ede5ad77b7097e6",
+      "id": "kr.learning-relation.2022.bridge.elementary.5c8dc993372d6c261bf0",
+      "prerequisiteTopicId": "kr.mt.korean.literature.5-6.6guk0502.01",
+      "reason": "국어과 내용 체계표 문학 영역에서 초등 비유적 표현의 효과 학습을 [9국05-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
       ],
       "strength": "required"
     },
@@ -95,6 +1625,81 @@
       "strength": "required"
     },
     {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 한국사 내용 체계표 p.18",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.ea25dd19820c9a73005d",
+      "id": "kr.learning-relation.2022.bridge.elementary.5e2706ae4d5e07a5e74f",
+      "prerequisiteTopicId": "kr.mt.social.5-6.6sa0502.concept",
+      "reason": "사회·역사과 내용 체계표 한국사 영역에서 초등 개항기 근대 문물 수용 학습을 [9역13-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 스포츠 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.749ca8a9b7bcd8ff4266",
+      "id": "kr.learning-relation.2022.bridge.elementary.5e469973f8be339db9ee",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0202.perform",
+      "reason": "체육과 내용 체계표 스포츠 영역에서 초등 기술형 스포츠의 기본 기능 학습을 [9체02-08]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책10 기술·가정·정보과 교육과정 지속가능한 기술과 융합 내용 체계표 p.10",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.4d0735ae1f636341103c",
+      "id": "kr.learning-relation.2022.bridge.elementary.5ebb07eceaeab90e8a56",
+      "prerequisiteTopicId": "kr.mt.practical.sustainable-technology-convergence.5-6.0402.practice",
+      "reason": "기술·가정·정보과 내용 체계표 지속가능한 기술과 융합 영역에서 초등 디지털 기술과 디지털 콘텐츠 학습을 [9기가04-05]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex10"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책14 영어과 교육과정 표현 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.1a6e0d4c2d1ed4105f1f",
+      "id": "kr.learning-relation.2022.bridge.elementary.603f698bd9aabf376b12",
+      "prerequisiteTopicId": "kr.mt.english-efl.5-6.expression.6영02-04.01.친구-소개-문장-말하기",
+      "reason": "영어과 내용 체계표 표현 영역에서 초등 사람이나 사물 묘사 학습을 [9영02-02]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex14"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 지리 인식 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.451e15cde3f5f8aa065d",
+      "id": "kr.learning-relation.2022.bridge.elementary.6165efc99955b4e6dd69",
+      "prerequisiteTopicId": "kr.mt.social.3-4.4sa0502.concept",
+      "reason": "사회·역사과 내용 체계표 지리 인식 영역에서 초등 우리 지역의 위치와 지리 정보 학습을 [9사(지리)07-02]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
       "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 도형과 측정 내용 체계표 p.15",
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.3d798ebd44e165f2b030",
@@ -106,6 +1711,141 @@
       "scope": "cross-school-level",
       "sourceRefs": [
         "kr-moe-2022-33-annex8"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책9 과학과 교육과정 지구와 우주 내용 체계표 p.11",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.092240994825ea6be258",
+      "id": "kr.learning-relation.2022.bridge.elementary.616ed82a7b71fe0edda3",
+      "prerequisiteTopicId": "kr.mt.science.earth-space.earth-motion.g6-12-03.concept",
+      "reason": "과학과 내용 체계표 지구와 우주 영역에서 초등 지구의 공전과 별자리 학습을 [9과07-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 한국사 내용 체계표 p.18",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.2a0c74655855bbd994b7",
+      "id": "kr.learning-relation.2022.bridge.elementary.61880795862d050f6fa2",
+      "prerequisiteTopicId": "kr.mt.social.5-6.6sa0403.concept",
+      "reason": "사회·역사과 내용 체계표 한국사 영역에서 초등 고려 시대 사회 모습과 생활 학습을 [9역10-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책10 기술·가정·정보과 교육과정 생활환경과 지속가능한 선택 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.5c28f7c7c71003d7f91f",
+      "id": "kr.learning-relation.2022.bridge.elementary.618f0b2e0024b30e19b6",
+      "prerequisiteTopicId": "kr.mt.practical.life-environment-sustainable-choice.5-6.0205.practice",
+      "reason": "기술·가정·정보과 내용 체계표 생활환경과 지속가능한 선택 영역에서 초등 음식의 마련과 섭취 학습을 [9기가02-04]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex10"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 한국사 내용 체계표 p.18",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.74b7b7b6e46e3a6013c7",
+      "id": "kr.learning-relation.2022.bridge.elementary.619a54d858e40f78d964",
+      "prerequisiteTopicId": "kr.mt.social.5-6.6sa0601.concept",
+      "reason": "사회·역사과 내용 체계표 한국사 영역에서 초등 일제 식민 통치에 대한 저항 학습을 [9역13-02]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책10 기술·가정·정보과 교육과정 지속가능한 기술과 융합 내용 체계표 p.10",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.37bb29e550c865ca1a71",
+      "id": "kr.learning-relation.2022.bridge.elementary.62079e262f0ec998f392",
+      "prerequisiteTopicId": "kr.mt.practical.sustainable-technology-convergence.5-6.0401.practice",
+      "reason": "기술·가정·정보과 내용 체계표 지속가능한 기술과 융합 영역에서 초등 건설기술과 친환경 구조물 학습을 [9기가04-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex10"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 스포츠 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.92fc1037672b3199f315",
+      "id": "kr.learning-relation.2022.bridge.elementary.6442a49829b49a5860a2",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0210.perform",
+      "reason": "체육과 내용 체계표 스포츠 영역에서 초등 목표 달성 의지와 상대 인정 학습을 [9체02-25]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책9 과학과 교육과정 운동과 에너지 내용 체계표 p.6",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.cbcc46a6bcbb4b21ae2f",
+      "id": "kr.learning-relation.2022.bridge.elementary.645b101d78a5f012df2d",
+      "prerequisiteTopicId": "kr.mt.science.motion-energy.object-motion.g6-10-01.concept",
+      "reason": "과학과 내용 체계표 운동과 에너지 영역에서 초등 위치의 변화 학습을 [9과19-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책5 국어과 교육과정 문학 내용 체계표 p.11",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.0ee3e733877a482002a8",
+      "id": "kr.learning-relation.2022.bridge.elementary.646072cd6555705afcf4",
+      "prerequisiteTopicId": "kr.mt.korean.literature.5-6.6guk0501.01",
+      "reason": "국어과 내용 체계표 문학 영역에서 초등 작가의 의도를 고려한 감상 학습을 [9국05-05]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 지속가능한 세계 내용 체계표 p.11",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.a43e44eb2f9d77e1cdbd",
+      "id": "kr.learning-relation.2022.bridge.elementary.65823279d96093157500",
+      "prerequisiteTopicId": "kr.mt.social.3-4.4sa0102.concept",
+      "reason": "사회·역사과 내용 체계표 지속가능한 세계 영역에서 초등 살기 좋은 환경 만들기 학습을 [9사(지리)12-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
       ],
       "strength": "required"
     },
@@ -125,6 +1865,141 @@
       "strength": "required"
     },
     {
+      "basis": "교육부 고시 제2022-33호 별책5 국어과 교육과정 읽기 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.0b7efe817a213f39b21a",
+      "id": "kr.learning-relation.2022.bridge.elementary.69f5aba77dbe906fa6d4",
+      "prerequisiteTopicId": "kr.mt.korean.reading.5-6.6guk0204.01",
+      "reason": "국어과 내용 체계표 읽기 영역에서 초등 다양한 관점의 글을 활용한 문제 해결 학습을 [9국02-06]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 인문환경과 인간생활 내용 체계표 p.10",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.01f3c9bdbdfa49ef42d2",
+      "id": "kr.learning-relation.2022.bridge.elementary.6a464ab60c72548bd65a",
+      "prerequisiteTopicId": "kr.mt.social.3-4.4sa0402.concept",
+      "reason": "사회·역사과 내용 체계표 인문환경과 인간생활 영역에서 초등 교통 발달과 생활 변화 학습을 [9사(지리)09-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책6 도덕과 교육과정 사회⋅공동체와의 관계 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.d7192249d6b1fe8baefa",
+      "id": "kr.learning-relation.2022.bridge.elementary.6c07a68a7fa0265b064d",
+      "prerequisiteTopicId": "kr.mt.moral.community.g3-4.4do-03-02.concept",
+      "reason": "도덕과 내용 체계표 사회⋅공동체와의 관계 영역에서 초등 디지털 사회의 도덕 문제 학습을 [9도03-07]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex6"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 법 내용 체계표 p.13",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.20bd32f0d7adb727e3cb",
+      "id": "kr.learning-relation.2022.bridge.elementary.6c23f9ef54bebbb9d0f4",
+      "prerequisiteTopicId": "kr.mt.social.5-6.6sa0802.concept",
+      "reason": "사회·역사과 내용 체계표 법 영역에서 초등 법원의 역할 학습을 [9사(일사)07-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책9 과학과 교육과정 물질 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.1bedd5f3459f74e4b163",
+      "id": "kr.learning-relation.2022.bridge.elementary.6c2747a2af5c963c6f03",
+      "prerequisiteTopicId": "kr.mt.science.matter.water-state-change.g4-10-02.concept",
+      "reason": "과학과 내용 체계표 물질 영역에서 초등 물의 상태 변화 학습을 [9과04-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책9 과학과 교육과정 지구와 우주 내용 체계표 p.10",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.c3a9660fe861f9b108e7",
+      "id": "kr.learning-relation.2022.bridge.elementary.7061c751409bea1993cd",
+      "prerequisiteTopicId": "kr.mt.science.earth-space.land-change.g4-11-03.concept",
+      "reason": "과학과 내용 체계표 지구와 우주 영역에서 초등 화성암 학습을 [9과09-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책10 기술·가정·정보과 교육과정 지속가능한 기술과 융합 내용 체계표 p.10",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.27266d3a726a1358c51f",
+      "id": "kr.learning-relation.2022.bridge.elementary.72ad426292f02769a1f9",
+      "prerequisiteTopicId": "kr.mt.practical.sustainable-technology-convergence.5-6.0406.practice",
+      "reason": "기술·가정·정보과 내용 체계표 지속가능한 기술과 융합 영역에서 초등 로봇 융합기술과 제어 학습을 [9기가04-09]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex10"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책10 기술·가정·정보과 교육과정 인간 발달과 주도적 삶 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.8c1f673e2b55d4183ca1",
+      "id": "kr.learning-relation.2022.bridge.elementary.73ad8a279ed1bb2ab7a1",
+      "prerequisiteTopicId": "kr.mt.practical.human-development-self-directed-life.5-6.0107.practice",
+      "reason": "기술·가정·정보과 내용 체계표 인간 발달과 주도적 삶 영역에서 초등 진로 발달과 직업 학습을 [9기가01-07]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex10"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책10 기술·가정·정보과 교육과정 생활환경과 지속가능한 선택 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.9c238c0425bf264c7c52",
+      "id": "kr.learning-relation.2022.bridge.elementary.76a262380bebd2b8a5f8",
+      "prerequisiteTopicId": "kr.mt.practical.life-environment-sustainable-choice.5-6.0204.practice",
+      "reason": "기술·가정·정보과 내용 체계표 생활환경과 지속가능한 선택 영역에서 초등 식재료의 생산과 선택 학습을 [9기가02-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex10"
+      ],
+      "strength": "required"
+    },
+    {
       "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 도형과 측정 내용 체계표 p.15",
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.56b6f534561443254229",
@@ -140,6 +2015,321 @@
       "strength": "required"
     },
     {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 표현 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.ea04913d78ae1a1fa2e4",
+      "id": "kr.learning-relation.2022.bridge.elementary.7712aa8469990d47d897",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0307.perform",
+      "reason": "체육과 내용 체계표 표현 영역에서 초등 현대 표현의 구성과 감상 학습을 [9체03-09]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 자연환경과 인간생활 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.8979cbd91445d1d4eb6d",
+      "id": "kr.learning-relation.2022.bridge.elementary.77336453916eb189564e",
+      "prerequisiteTopicId": "kr.mt.social.5-6.6sa0201.concept",
+      "reason": "사회·역사과 내용 체계표 자연환경과 인간생활 영역에서 초등 우리나라의 계절별 기후와 기후변화 학습을 [9사(지리)08-02]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책5 국어과 교육과정 듣기⋅말하기 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.0528f8b0f4f119aa3eae",
+      "id": "kr.learning-relation.2022.bridge.elementary.784c77f82ceb18398c98",
+      "prerequisiteTopicId": "kr.mt.korean.listening-speaking.5-6.6guk0104.01",
+      "reason": "국어과 내용 체계표 듣기⋅말하기 영역에서 초등 상대와 매체를 고려한 면담 학습을 [9국01-05]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책14 영어과 교육과정 표현 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.a6de132740005cee6c3c",
+      "id": "kr.learning-relation.2022.bridge.elementary.787a4eb30f5134e03a15",
+      "prerequisiteTopicId": "kr.mt.english-efl.5-6.expression.6영02-06.01.감정과-이유-말하기",
+      "reason": "영어과 내용 체계표 표현 영역에서 초등 경험이나 계획 표현 학습을 [9영02-04]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex14"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 스포츠 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.223e1aa2521b86716798",
+      "id": "kr.learning-relation.2022.bridge.elementary.791ea94dd2d20f3786ef",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0208.perform",
+      "reason": "체육과 내용 체계표 스포츠 영역에서 초등 생태형 스포츠의 기본 기능 학습을 [9체02-20]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책9 과학과 교육과정 운동과 에너지 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.d3bb1990116f911d36c5",
+      "id": "kr.learning-relation.2022.bridge.elementary.7988a59882391a48ac2c",
+      "prerequisiteTopicId": "kr.mt.science.motion-energy.heat-life.g6-07-03.concept",
+      "reason": "과학과 내용 체계표 운동과 에너지 영역에서 초등 열의 이동 학습을 [9과03-02]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 스포츠 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.16c2aa4ed311872bcf27",
+      "id": "kr.learning-relation.2022.bridge.elementary.7c541263b6e59c09d1e0",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0205.perform",
+      "reason": "체육과 내용 체계표 스포츠 영역에서 초등 전략형 스포츠의 기본 기능 학습을 [9체02-11]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 사회⋅문화 내용 체계표 p.15",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.d35d25fa5981c3f74867",
+      "id": "kr.learning-relation.2022.bridge.elementary.7d02c3e63e1d020d56aa",
+      "prerequisiteTopicId": "kr.mt.social.5-6.6sa1202.concept",
+      "reason": "사회·역사과 내용 체계표 사회⋅문화 영역에서 초등 지구촌이 겪는 문제 학습을 [9사(일사)12-02]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책12 음악과 교육과정 창작 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.f6aa1c372a9bed262837",
+      "id": "kr.learning-relation.2022.bridge.elementary.7dd267f8b2ca4f9fb5aa",
+      "prerequisiteTopicId": "kr.mt.music.5-6.6eum0304.perform",
+      "reason": "음악과 내용 체계표 창작 영역에서 초등 생활 주변 상황을 활용한 음악 만들기 학습을 [9음03-04]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex12"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책9 과학과 교육과정 운동과 에너지 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.7291177d2c2f30b292f5",
+      "id": "kr.learning-relation.2022.bridge.elementary.81d4968235dfb1e52167",
+      "prerequisiteTopicId": "kr.mt.science.motion-energy.light-properties.g6-02-02.concept",
+      "reason": "과학과 내용 체계표 운동과 에너지 영역에서 초등 빛의 반사와 굴절 학습을 [9과10-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 한국사 내용 체계표 p.18",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.d00506c6e5702bec8cb4",
+      "id": "kr.learning-relation.2022.bridge.elementary.81def3083f13b3928c5a",
+      "prerequisiteTopicId": "kr.mt.social.5-6.6sa0501.concept",
+      "reason": "사회·역사과 내용 체계표 한국사 영역에서 초등 조선 사회에 미친 유교 문화 학습을 [9역11-02]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책9 과학과 교육과정 지구와 우주 내용 체계표 p.11",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.6b79fbc5e106d71314dd",
+      "id": "kr.learning-relation.2022.bridge.elementary.8215f55a6542e6985e98",
+      "prerequisiteTopicId": "kr.mt.science.earth-space.night-sky.g4-13-01.concept",
+      "reason": "과학과 내용 체계표 지구와 우주 영역에서 초등 달의 위상변화 학습을 [9과07-04]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책13 미술과 교육과정 미적 체험 내용 체계표 p.6",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.9e1eb9c655ca9133e555",
+      "id": "kr.learning-relation.2022.bridge.elementary.838644c17765155451b8",
+      "prerequisiteTopicId": "kr.mt.art.5-6.6mi0104.make",
+      "reason": "미술과 내용 체계표 미적 체험 영역에서 초등 이미지의 의미 해석과 활용 학습을 [9미01-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex13"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 스포츠 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.ebc2988df3285133708c",
+      "id": "kr.learning-relation.2022.bridge.elementary.8425145dddaf2c35777a",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0207.perform",
+      "reason": "체육과 내용 체계표 스포츠 영역에서 초등 생태형 스포츠의 의미와 유형 학습을 [9체02-19]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 표현 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.2047cda1be39684e841f",
+      "id": "kr.learning-relation.2022.bridge.elementary.844a3be3eb818fba3f2d",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0301.perform",
+      "reason": "체육과 내용 체계표 표현 영역에서 초등 표현 활동의 의미와 유형 학습을 [9체03-04]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책13 미술과 교육과정 표현 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.b13a0af6759f26942667",
+      "id": "kr.learning-relation.2022.bridge.elementary.854ab7ca4f9e8dfd1a21",
+      "prerequisiteTopicId": "kr.mt.art.5-6.6mi0202.make",
+      "reason": "미술과 내용 체계표 표현 영역에서 초등 다양한 표현 재료와 디지털 매체 학습을 [9미02-02]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex13"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책5 국어과 교육과정 쓰기 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.685b0ead732eaa609a1a",
+      "id": "kr.learning-relation.2022.bridge.elementary.87023132df640200a87f",
+      "prerequisiteTopicId": "kr.mt.korean.writing.5-6.6guk0303.01",
+      "reason": "국어과 내용 체계표 쓰기 영역에서 초등 체험에 대한 감상 글 학습을 [9국03-05]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책12 음악과 교육과정 감상 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.a812718af2ffa8dc5777",
+      "id": "kr.learning-relation.2022.bridge.elementary.87eec043004eeb92f627",
+      "prerequisiteTopicId": "kr.mt.music.5-6.6eum0202.perform",
+      "reason": "음악과 내용 체계표 감상 영역에서 초등 문화권별 음악의 특징과 구성 학습을 [9음02-02]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex12"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 경제 내용 체계표 p.14",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.ac5c58902d005dec1631",
+      "id": "kr.learning-relation.2022.bridge.elementary.88598dd5c48390c5dce5",
+      "prerequisiteTopicId": "kr.mt.social.3-4.4sa0701.concept",
+      "reason": "사회·역사과 내용 체계표 경제 영역에서 초등 자원의 희소성과 합리적 선택 학습을 [9사(일사)08-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 스포츠 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.76ba2cf07cbec437a726",
+      "id": "kr.learning-relation.2022.bridge.elementary.892002f26b6643633be8",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0206.perform",
+      "reason": "체육과 내용 체계표 스포츠 영역에서 초등 전략형 스포츠의 방법과 전략 학습을 [9체02-12]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책9 과학과 교육과정 지구와 우주 내용 체계표 p.11",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.afa809e240091d208092",
+      "id": "kr.learning-relation.2022.bridge.elementary.8c4419bfc506d6a3fccc",
+      "prerequisiteTopicId": "kr.mt.science.earth-space.night-sky.g4-13-02.concept",
+      "reason": "과학과 내용 체계표 지구와 우주 영역에서 초등 태양계 구성원 학습을 [9과07-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "strength": "required"
+    },
+    {
       "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 도형과 측정 내용 체계표 p.15",
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.cc854d1534a2636a2428",
@@ -151,6 +2341,36 @@
       "scope": "cross-school-level",
       "sourceRefs": [
         "kr-moe-2022-33-annex8"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책6 도덕과 교육과정 자신과의 관계 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.b57c1141e821a00ed264",
+      "id": "kr.learning-relation.2022.bridge.elementary.8d1526f8f6184ccfa39b",
+      "prerequisiteTopicId": "kr.mt.moral.self-agency.g5-6.6do-01-03.concept",
+      "reason": "도덕과 내용 체계표 자신과의 관계 영역에서 초등 진로 선택과 계획 학습을 [9도01-07]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex6"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책9 과학과 교육과정 지구와 우주 내용 체계표 p.10",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.d79709b498406cc0669b",
+      "id": "kr.learning-relation.2022.bridge.elementary.8d47327acbcf222d9118",
+      "prerequisiteTopicId": "kr.mt.science.earth-space.weather-life.g6-06-02.concept",
+      "reason": "과학과 내용 체계표 지구와 우주 영역에서 초등 이슬·안개·구름 학습을 [9과17-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
       ],
       "strength": "required"
     },
@@ -185,6 +2405,711 @@
       "strength": "required"
     },
     {
+      "basis": "국가교육위원회 고시 제2024-3호 별책12 음악과 교육과정 연주 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.633836a4f218a0f0214f",
+      "id": "kr.learning-relation.2022.bridge.elementary.928bc26766c4c1fc6fa9",
+      "prerequisiteTopicId": "kr.mt.music.5-6.6eum0101.perform",
+      "reason": "음악과 내용 체계표 연주 영역에서 초등 주법과 표현 기법 학습을 [9음01-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex12"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책6 도덕과 교육과정 타인과의 관계 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.b1476f3258f8919376a3",
+      "id": "kr.learning-relation.2022.bridge.elementary.92c59073915edd67ac62",
+      "prerequisiteTopicId": "kr.mt.moral.relationships.g3-4.4do-02-02.concept",
+      "reason": "도덕과 내용 체계표 타인과의 관계 영역에서 초등 친구 사이의 배려 학습을 [9도02-02]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex6"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책14 영어과 교육과정 이해 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.3ca5153baabafe3ba23c",
+      "id": "kr.learning-relation.2022.bridge.elementary.94b8a6a14a43c3ac1522",
+      "prerequisiteTopicId": "kr.mt.english-efl.5-6.understanding.6영01-08.01.영상-앱-자료-핵심-이해",
+      "reason": "영어과 내용 체계표 이해 영역에서 초등 다양한 매체 자료 이해 학습을 [9영01-08]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex14"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 성취기준 해설 p.41",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.3f42c58d9bc38d0e411a",
+      "id": "kr.learning-relation.2022.bridge.elementary.9821fde2c1e6ef247486",
+      "prerequisiteTopicId": "kr.mt.social.5-6.6sa0902.concept",
+      "reason": "사회·역사과 성취기준 해설이 초등 초등에서 익힌 세계 지역의 위치와 환경 이해를 중등 지역 추론의 출발점으로 삼는다.을 [9사(지리)01-01] 학습에 직접 연계한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책12 음악과 교육과정 감상 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.0a3b5522d204fb0e8c81",
+      "id": "kr.learning-relation.2022.bridge.elementary.98c3a639d0de435b59e3",
+      "prerequisiteTopicId": "kr.mt.music.5-6.6eum0204.perform",
+      "reason": "음악과 내용 체계표 감상 영역에서 초등 생활 속 음악의 아름다움과 공감 학습을 [9음02-04]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex12"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 법 내용 체계표 p.13",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.1b092d0311abe761eaa9",
+      "id": "kr.learning-relation.2022.bridge.elementary.9945aa10bbf221cb860b",
+      "prerequisiteTopicId": "kr.mt.social.5-6.6sa0802.concept",
+      "reason": "사회·역사과 내용 체계표 법 영역에서 초등 행정부의 역할 학습을 [9사(일사)07-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 지리 인식 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.018ecc99ff5297348537",
+      "id": "kr.learning-relation.2022.bridge.elementary.99df55fd92c43313b057",
+      "prerequisiteTopicId": "kr.mt.social.5-6.6sa0902.concept",
+      "reason": "사회·역사과 내용 체계표 지리 인식 영역에서 초등 세계 여러 국가의 위치 학습을 [9사(지리)04-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책13 미술과 교육과정 표현 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.53c0a5690c914dcefcfd",
+      "id": "kr.learning-relation.2022.bridge.elementary.9a2f35eaebd5897b6713",
+      "prerequisiteTopicId": "kr.mt.art.5-6.6mi0201.make",
+      "reason": "미술과 내용 체계표 표현 영역에서 초등 표현 주제와 발상 학습을 [9미02-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex13"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책9 과학과 교육과정 물질 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.45ad6c4a03700e6e963d",
+      "id": "kr.learning-relation.2022.bridge.elementary.9d4e1c42058aa8bddce5",
+      "prerequisiteTopicId": "kr.mt.science.matter.mixture-separation.g6-05-02.concept",
+      "reason": "과학과 내용 체계표 물질 영역에서 초등 혼합물의 분리 학습을 [9과08-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 역사 일반 내용 체계표 p.16",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.43dbf35a5409fd68314d",
+      "id": "kr.learning-relation.2022.bridge.elementary.9e592d4082c2cd9ce06b",
+      "prerequisiteTopicId": "kr.mt.social.3-4.4sa0202.concept",
+      "reason": "사회·역사과 내용 체계표 역사 일반 영역에서 초등 과거를 보여 주는 역사 자료 학습을 [9역01-02]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책10 기술·가정·정보과 교육과정 기술적 문제해결과 혁신 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.f97f4511b2a8dec47b47",
+      "id": "kr.learning-relation.2022.bridge.elementary.9f7920a704ef41f45067",
+      "prerequisiteTopicId": "kr.mt.practical.technological-problem-solving-innovation.5-6.0304.practice",
+      "reason": "기술·가정·정보과 내용 체계표 기술적 문제해결과 혁신 영역에서 초등 수송의 의미와 수송 수단의 발달 학습을 [9기가03-12]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex10"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 경제 내용 체계표 p.14",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.77dc9da8a231e005a529",
+      "id": "kr.learning-relation.2022.bridge.elementary.9f9133de43063ae15bff",
+      "prerequisiteTopicId": "kr.mt.social.5-6.6sa1102.concept",
+      "reason": "사회·역사과 내용 체계표 경제 영역에서 초등 경제 성장의 효과와 문제 학습을 [9사(일사)10-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책5 국어과 교육과정 매체 내용 체계표 p.12",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.1d5fc7f3dee87678997b",
+      "id": "kr.learning-relation.2022.bridge.elementary.a0f0f055028a429d19bc",
+      "prerequisiteTopicId": "kr.mt.korean.media.5-6.6guk0604.01",
+      "reason": "국어과 내용 체계표 매체 영역에서 초등 매체 이용 양상 성찰 학습을 [9국06-04]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책13 미술과 교육과정 미적 체험 내용 체계표 p.6",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.fc84d26cc6a03b7d301c",
+      "id": "kr.learning-relation.2022.bridge.elementary.a206b5469da78fd4950c",
+      "prerequisiteTopicId": "kr.mt.art.5-6.6mi0104.make",
+      "reason": "미술과 내용 체계표 미적 체험 영역에서 초등 이미지의 의미 해석과 활용 학습을 [9미01-02]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex13"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책13 미술과 교육과정 미적 체험 내용 체계표 p.6",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.4780f85447fea9de6d15",
+      "id": "kr.learning-relation.2022.bridge.elementary.a24c0a6a1be03aafa996",
+      "prerequisiteTopicId": "kr.mt.art.5-6.6mi0103.make",
+      "reason": "미술과 내용 체계표 미적 체험 영역에서 초등 주변 환경과의 상호 작용 학습을 [9미01-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex13"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책9 과학과 교육과정 운동과 에너지 내용 체계표 p.6",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.ba4a1f7fc5bbca54eb2c",
+      "id": "kr.learning-relation.2022.bridge.elementary.a322e23507f681fb8f93",
+      "prerequisiteTopicId": "kr.mt.science.motion-energy.force-life.g4-01-02.concept",
+      "reason": "과학과 내용 체계표 운동과 에너지 영역에서 초등 물체의 무게 학습을 [9과05-02]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책14 영어과 교육과정 이해 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.c096ae92f2ba585dac2c",
+      "id": "kr.learning-relation.2022.bridge.elementary.a3f0005d767dd0394d93",
+      "prerequisiteTopicId": "kr.mt.english-efl.5-6.understanding.6영01-08.01.영상-앱-자료-핵심-이해",
+      "reason": "영어과 내용 체계표 이해 영역에서 초등 흥미와 자신감을 지닌 이해 태도 학습을 [9영01-10]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex14"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책6 도덕과 교육과정 자연과의 관계 내용 체계표 p.10",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.f01eefd08a99dac4a409",
+      "id": "kr.learning-relation.2022.bridge.elementary.a3f86894e5bd0e1f54ce",
+      "prerequisiteTopicId": "kr.mt.moral.nature-coexistence.g5-6.6do-04-02.concept",
+      "reason": "도덕과 내용 체계표 자연과의 관계 영역에서 초등 지속가능한 삶 학습을 [9도04-02]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex6"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 자연환경과 인간생활 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.3f42c58d9bc38d0e411a",
+      "id": "kr.learning-relation.2022.bridge.elementary.a494ae7ceb431af20ee5",
+      "prerequisiteTopicId": "kr.mt.social.5-6.6sa1002.concept",
+      "reason": "사회·역사과 내용 체계표 자연환경과 인간생활 영역에서 초등 세계 여러 지역의 기후와 생활 학습을 [9사(지리)01-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 운동 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.f7639752f0074217a608",
+      "id": "kr.learning-relation.2022.bridge.elementary.a4e1ce15802cfdddf969",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0104.perform",
+      "reason": "체육과 내용 체계표 운동 영역에서 초등 안전한 생활 습관 학습을 [9체01-08]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책9 과학과 교육과정 생명 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.a6a35a22eed302ad5116",
+      "id": "kr.learning-relation.2022.bridge.elementary.a4fdd38b47641badf4e5",
+      "prerequisiteTopicId": "kr.mt.science.life.life-cycle.g4-04-01.concept",
+      "reason": "과학과 내용 체계표 생명 영역에서 초등 동물의 한살이 학습을 [9과21-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 법 내용 체계표 p.13",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.1cc5ebd401c2bb2bef0a",
+      "id": "kr.learning-relation.2022.bridge.elementary.a70ecd95bf3cbc94307f",
+      "prerequisiteTopicId": "kr.mt.social.5-6.6sa0301.concept",
+      "reason": "사회·역사과 내용 체계표 법 영역에서 초등 법의 의미와 역할 학습을 [9사(일사)05-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책5 국어과 교육과정 문법 내용 체계표 p.10",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.0d4b928408acdd34b9b4",
+      "id": "kr.learning-relation.2022.bridge.elementary.a9c821206b651d48f7f1",
+      "prerequisiteTopicId": "kr.mt.korean.grammar.5-6.6guk0404.01",
+      "reason": "국어과 내용 체계표 문법 영역에서 초등 문장 성분과 호응 학습을 [9국04-04]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책5 국어과 교육과정 문법 내용 체계표 p.10",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.a042d75db9664d328493",
+      "id": "kr.learning-relation.2022.bridge.elementary.aa8fdafaaca3b8ecd82b",
+      "prerequisiteTopicId": "kr.mt.korean.grammar.5-6.6guk0406.01",
+      "reason": "국어과 내용 체계표 문법 영역에서 초등 단어와 문장 및 띄어쓰기 점검 학습을 [9국04-06]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책13 미술과 교육과정 표현 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.9ba0f217c40cce60f018",
+      "id": "kr.learning-relation.2022.bridge.elementary.ac07840c0ab3a0c9416a",
+      "prerequisiteTopicId": "kr.mt.art.5-6.6mi0202.make",
+      "reason": "미술과 내용 체계표 표현 영역에서 초등 다양한 표현 재료와 디지털 매체 학습을 [9미02-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex13"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책14 영어과 교육과정 이해 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.2368362a5a5b9e7252ac",
+      "id": "kr.learning-relation.2022.bridge.elementary.ad041cc6e75141d7564e",
+      "prerequisiteTopicId": "kr.mt.english-efl.5-6.understanding.6영01-10.01.문화-비교-표현-이해",
+      "reason": "영어과 내용 체계표 이해 영역에서 초등 문화와 관점 존중 학습을 [9영01-09]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex14"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 인문환경과 인간생활 내용 체계표 p.10",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.f386ab33d9db6879c2a6",
+      "id": "kr.learning-relation.2022.bridge.elementary.ad8ffc85ee98af523aa4",
+      "prerequisiteTopicId": "kr.mt.social.3-4.4sa0302.concept",
+      "reason": "사회·역사과 내용 체계표 인문환경과 인간생활 영역에서 초등 문화 다양성 학습을 [9사(지리)02-02]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책5 국어과 교육과정 문학 내용 체계표 p.11",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.a1592acff1a296086d8c",
+      "id": "kr.learning-relation.2022.bridge.elementary.b11d72cd0af229002238",
+      "prerequisiteTopicId": "kr.mt.korean.literature.5-6.6guk0503.01",
+      "reason": "국어과 내용 체계표 문학 영역에서 초등 인물과 사건 및 배경 파악 학습을 [9국05-08]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책9 과학과 교육과정 성취기준 해설 p.60",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.7a2d3c9e00cca23addda",
+      "id": "kr.learning-relation.2022.bridge.elementary.b1e8f36e196c4d0c5d41",
+      "prerequisiteTopicId": "kr.mt.science.science-society.climate-life.g4-16-03.concept",
+      "reason": "과학과 성취기준 해설이 초등 기후변화 대응 학습을 재해·재난의 대비와 대처에 연계한다.을 [9과22-02] 학습에 직접 연계한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책5 국어과 교육과정 매체 내용 체계표 p.12",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.5197c397b4c9482d1d9e",
+      "id": "kr.learning-relation.2022.bridge.elementary.b2f977272535a91ad805",
+      "prerequisiteTopicId": "kr.mt.korean.media.5-6.6guk0603.01",
+      "reason": "국어과 내용 체계표 매체 영역에서 초등 복합양식 매체 자료 제작 학습을 [9국06-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책14 영어과 교육과정 이해 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.baf73fde785a56e89c61",
+      "id": "kr.learning-relation.2022.bridge.elementary.b3c72edf6585a7943d3e",
+      "prerequisiteTopicId": "kr.mt.english-efl.5-6.understanding.6영01-01.01.강세-변화-듣기",
+      "reason": "영어과 내용 체계표 이해 영역에서 초등 강세·리듬·억양 식별 학습을 [9영01-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex14"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 지리 인식 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.3ee0de77420deb6274c2",
+      "id": "kr.learning-relation.2022.bridge.elementary.b4ff9149319244c0e94a",
+      "prerequisiteTopicId": "kr.mt.social.5-6.6sa0902.concept",
+      "reason": "사회·역사과 내용 체계표 지리 인식 영역에서 초등 세계 여러 국가의 위치 학습을 [9사(지리)03-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책6 도덕과 교육과정 타인과의 관계 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.3687091e46430c37919d",
+      "id": "kr.learning-relation.2022.bridge.elementary.b6487fd325de568a2bcb",
+      "prerequisiteTopicId": "kr.mt.moral.relationships.g3-4.4do-02-03.concept",
+      "reason": "도덕과 내용 체계표 타인과의 관계 영역에서 초등 타인에 대한 공감 학습을 [9도02-04]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex6"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 스포츠 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.c5aa30efa59d6abf63fc",
+      "id": "kr.learning-relation.2022.bridge.elementary.b6503b26a4f9903e5bb6",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0202.perform",
+      "reason": "체육과 내용 체계표 스포츠 영역에서 초등 기술형 스포츠의 기본 기능 학습을 [9체02-05]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책9 과학과 교육과정 운동과 에너지 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.b48bd8e0e90156ec4f6c",
+      "id": "kr.learning-relation.2022.bridge.elementary.b6b73e917bafdd95de32",
+      "prerequisiteTopicId": "kr.mt.science.motion-energy.sound-properties.g4-07-01.concept",
+      "reason": "과학과 내용 체계표 운동과 에너지 영역에서 초등 소리와 떨림 학습을 [9과10-04]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책14 영어과 교육과정 표현 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.ca52787b16eca35aaeee",
+      "id": "kr.learning-relation.2022.bridge.elementary.b9641369d984c8b2117c",
+      "prerequisiteTopicId": "kr.mt.english-efl.5-6.expression.6영02-06.01.감정과-이유-말하기",
+      "reason": "영어과 내용 체계표 표현 영역에서 초등 자신의 의견 표현 학습을 [9영02-06]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex14"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 인문환경과 인간생활 내용 체계표 p.10",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.62c051161a1c562dc086",
+      "id": "kr.learning-relation.2022.bridge.elementary.b9af77f61c44d346159e",
+      "prerequisiteTopicId": "kr.mt.social.5-6.6sa0202.concept",
+      "reason": "사회·역사과 내용 체계표 인문환경과 인간생활 영역에서 초등 우리나라의 인구 분포와 문제 학습을 [9사(지리)09-02]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책5 국어과 교육과정 매체 내용 체계표 p.12",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.81704e073c0f17b4241d",
+      "id": "kr.learning-relation.2022.bridge.elementary.b9e90cf248e4a1a3f7e5",
+      "prerequisiteTopicId": "kr.mt.korean.media.5-6.6guk0602.01",
+      "reason": "국어과 내용 체계표 매체 영역에서 초등 뉴스와 정보 매체 자료 학습을 [9국06-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책6 도덕과 교육과정 자연과의 관계 내용 체계표 p.10",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.b8798df96e693be979f7",
+      "id": "kr.learning-relation.2022.bridge.elementary.ba30d30c415f3805f0ba",
+      "prerequisiteTopicId": "kr.mt.moral.nature-coexistence.g3-4.4do-04-01.concept",
+      "reason": "도덕과 내용 체계표 자연과의 관계 영역에서 초등 생명의 소중함 학습을 [9도04-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex6"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 운동 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.f5a2059e370a86ae1775",
+      "id": "kr.learning-relation.2022.bridge.elementary.bb7d6b3de67bb9516f39",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0104.perform",
+      "reason": "체육과 내용 체계표 운동 영역에서 초등 안전한 생활 습관 학습을 [9체01-10]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 운동 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.ed047a069e3ace515f59",
+      "id": "kr.learning-relation.2022.bridge.elementary.bbbeed0c0d2649e136f6",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0102.perform",
+      "reason": "체육과 내용 체계표 운동 영역에서 초등 체력 측정과 수준별 운동 학습을 [9체01-06]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 법 내용 체계표 p.13",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.428d7fe9e2681cd57c31",
+      "id": "kr.learning-relation.2022.bridge.elementary.bd837e0621bc8947ecbb",
+      "prerequisiteTopicId": "kr.mt.social.5-6.6sa1101.concept",
+      "reason": "사회·역사과 내용 체계표 법 영역에서 초등 근로자의 권리 학습을 [9사(일사)06-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책14 영어과 교육과정 표현 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.89f172913a485a639c01",
+      "id": "kr.learning-relation.2022.bridge.elementary.be45c369f7d382ac289c",
+      "prerequisiteTopicId": "kr.mt.english-efl.5-6.expression.6영02-09.01.사진-자료로-말하기",
+      "reason": "영어과 내용 체계표 표현 영역에서 초등 다양한 매체를 활용한 표현 학습을 [9영02-09]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex14"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책6 도덕과 교육과정 사회⋅공동체와의 관계 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.9577b15f4d4e6ac00a6d",
+      "id": "kr.learning-relation.2022.bridge.elementary.bf6889190e86bcb97d68",
+      "prerequisiteTopicId": "kr.mt.moral.community.g5-6.6do-03-03.concept",
+      "reason": "도덕과 내용 체계표 사회⋅공동체와의 관계 영역에서 초등 통일과정과 통일 이후 사회 학습을 [9도03-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex6"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 역사 일반 내용 체계표 p.16",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.a9cbc45425e7bdf0ca55",
+      "id": "kr.learning-relation.2022.bridge.elementary.c033b2d38dcf06fb9837",
+      "prerequisiteTopicId": "kr.mt.social.3-4.4sa0201.concept",
+      "reason": "사회·역사과 내용 체계표 역사 일반 영역에서 초등 역사의 시간 개념 학습을 [9역01-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 스포츠 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.dd2cce8d64222ea1382f",
+      "id": "kr.learning-relation.2022.bridge.elementary.c084855f27bbb4eed21f",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0204.perform",
+      "reason": "체육과 내용 체계표 스포츠 영역에서 초등 전략형 스포츠의 의미와 유형 학습을 [9체02-16]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책12 음악과 교육과정 연주 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.0491b5cc89c93c9da206",
+      "id": "kr.learning-relation.2022.bridge.elementary.c088c9fc8178e911e541",
+      "prerequisiteTopicId": "kr.mt.music.5-6.6eum0103.perform",
+      "reason": "음악과 내용 체계표 연주 영역에서 초등 소리의 어울림과 함께 표현 학습을 [9음01-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex12"
+      ],
+      "strength": "required"
+    },
+    {
       "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 변화와 관계 내용 체계표 p.14",
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.b4988a216ab8454db471",
@@ -196,6 +3121,96 @@
       "scope": "cross-school-level",
       "sourceRefs": [
         "kr-moe-2022-33-annex8"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책14 영어과 교육과정 표현 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.1a6e0d4c2d1ed4105f1f",
+      "id": "kr.learning-relation.2022.bridge.elementary.c16c5930253ff9446bb8",
+      "prerequisiteTopicId": "kr.mt.english-efl.5-6.expression.6영02-06.01.감정과-이유-말하기",
+      "reason": "영어과 내용 체계표 표현 영역에서 초등 기분이나 감정 표현 학습을 [9영02-02]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex14"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책10 기술·가정·정보과 교육과정 생활환경과 지속가능한 선택 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.0a5e184113a20fa706a6",
+      "id": "kr.learning-relation.2022.bridge.elementary.c236ff954bc7daca55f9",
+      "prerequisiteTopicId": "kr.mt.practical.life-environment-sustainable-choice.5-6.0211.practice",
+      "reason": "기술·가정·정보과 내용 체계표 생활환경과 지속가능한 선택 영역에서 초등 지속가능한 의식주생활 학습을 [9기가02-10]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex10"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 사회⋅문화 내용 체계표 p.15",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.b2182daaafaacc9e7234",
+      "id": "kr.learning-relation.2022.bridge.elementary.c28b1e86436a44af32a0",
+      "prerequisiteTopicId": "kr.mt.social.3-4.4sa0301.concept",
+      "reason": "사회·역사과 내용 체계표 사회⋅문화 영역에서 초등 사회 변화와 생활 모습의 변화 학습을 [9사(일사)12-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 운동 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.aa17e056409e703ecc39",
+      "id": "kr.learning-relation.2022.bridge.elementary.c36d475eed0d03ac9732",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0102.perform",
+      "reason": "체육과 내용 체계표 운동 영역에서 초등 체력 측정과 수준별 운동 학습을 [9체01-04]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 스포츠 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.f49c31665c3c23261f61",
+      "id": "kr.learning-relation.2022.bridge.elementary.c380d210660924d5b5ea",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0201.perform",
+      "reason": "체육과 내용 체계표 스포츠 영역에서 초등 기술형 스포츠의 의미와 유형 학습을 [9체02-04]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책14 영어과 교육과정 표현 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.0bb5aab11d29bdc76aca",
+      "id": "kr.learning-relation.2022.bridge.elementary.c405e430f7b3e1a5cd79",
+      "prerequisiteTopicId": "kr.mt.english-efl.5-6.expression.6영02-09.01.사진-자료로-말하기",
+      "reason": "영어과 내용 체계표 표현 영역에서 초등 말하기·쓰기 전략 활용 학습을 [9영02-10]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex14"
       ],
       "strength": "required"
     },
@@ -215,6 +3230,51 @@
       "strength": "required"
     },
     {
+      "basis": "국가교육위원회 고시 제2024-3호 별책9 과학과 교육과정 운동과 에너지 내용 체계표 p.6",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.c2ec28cfa2a5ea6babc4",
+      "id": "kr.learning-relation.2022.bridge.elementary.c5cb0c073ca1b30b7874",
+      "prerequisiteTopicId": "kr.mt.science.motion-energy.electricity-use.g6-15-01.concept",
+      "reason": "과학과 내용 체계표 운동과 에너지 영역에서 초등 전기 회로 학습을 [9과14-02]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책6 도덕과 교육과정 자연과의 관계 내용 체계표 p.10",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.f01eefd08a99dac4a409",
+      "id": "kr.learning-relation.2022.bridge.elementary.c67e0fb85eb626307595",
+      "prerequisiteTopicId": "kr.mt.moral.nature-coexistence.g3-4.4do-04-02.concept",
+      "reason": "도덕과 내용 체계표 자연과의 관계 영역에서 초등 자연과의 공생 학습을 [9도04-02]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex6"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 정치 내용 체계표 p.12",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.fd8d44c96123f342c564",
+      "id": "kr.learning-relation.2022.bridge.elementary.c6a4f28005c2a728046f",
+      "prerequisiteTopicId": "kr.mt.social.3-4.4sa0802.concept",
+      "reason": "사회·역사과 내용 체계표 정치 영역에서 초등 주민 자치와 주민 참여 학습을 [9사(일사)04-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
       "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 도형과 측정 내용 체계표 p.15",
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.cc854d1534a2636a2428",
@@ -226,6 +3286,171 @@
       "scope": "cross-school-level",
       "sourceRefs": [
         "kr-moe-2022-33-annex8"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 스포츠 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.477f60512153937d6fee",
+      "id": "kr.learning-relation.2022.bridge.elementary.c9112e857ff08dd8cc6a",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0209.perform",
+      "reason": "체육과 내용 체계표 스포츠 영역에서 초등 생태형 스포츠의 방법과 전략 학습을 [9체02-24]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 한국사 내용 체계표 p.18",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.5b993c47a2864f47d2a6",
+      "id": "kr.learning-relation.2022.bridge.elementary.c948682e91e567c69382",
+      "prerequisiteTopicId": "kr.mt.social.5-6.6sa0401.concept",
+      "reason": "사회·역사과 내용 체계표 한국사 영역에서 초등 선사 시대 사람들의 생활 학습을 [9역02-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책14 영어과 교육과정 표현 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.d12e3c13d11ed6c72efe",
+      "id": "kr.learning-relation.2022.bridge.elementary.c9dd760ab2f09a12a39e",
+      "prerequisiteTopicId": "kr.mt.english-efl.5-6.expression.6영02-10.01.모둠-대화-역할-수행",
+      "reason": "영어과 내용 체계표 표현 영역에서 초등 협력과 배려의 의사소통 태도 학습을 [9영02-11]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex14"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책13 미술과 교육과정 감상 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.92b6871ce813351008cf",
+      "id": "kr.learning-relation.2022.bridge.elementary.ca5cdc947ea609ed2b1a",
+      "prerequisiteTopicId": "kr.mt.art.5-6.6mi0302.make",
+      "reason": "미술과 내용 체계표 감상 영역에서 초등 작품 내용과 형식의 분석 학습을 [9미03-02]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex13"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책10 기술·가정·정보과 교육과정 인간 발달과 주도적 삶 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.c46837f76aa61af5b0b1",
+      "id": "kr.learning-relation.2022.bridge.elementary.caa644e907cd549dce0f",
+      "prerequisiteTopicId": "kr.mt.practical.human-development-self-directed-life.5-6.0104.practice",
+      "reason": "기술·가정·정보과 내용 체계표 인간 발달과 주도적 삶 영역에서 초등 균형 잡힌 식사 학습을 [9기가01-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex10"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 지속가능한 세계 내용 체계표 p.11",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.e050ef12c35b8504d411",
+      "id": "kr.learning-relation.2022.bridge.elementary.cbc1b86a770a0cddfef0",
+      "prerequisiteTopicId": "kr.mt.social.5-6.6sa0202.concept",
+      "reason": "사회·역사과 내용 체계표 지속가능한 세계 영역에서 초등 균형적인 국토 발전 학습을 [9사(지리)09-04]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책5 국어과 교육과정 읽기 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.2e85237462d6292c3327",
+      "id": "kr.learning-relation.2022.bridge.elementary.cc94e1ebd50c9cde24b7",
+      "prerequisiteTopicId": "kr.mt.korean.reading.5-6.6guk0201.01",
+      "reason": "국어과 내용 체계표 읽기 영역에서 초등 글의 구조를 고려한 요약 학습을 [9국02-02]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책13 미술과 교육과정 표현 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.64d013651f146a0cf5d5",
+      "id": "kr.learning-relation.2022.bridge.elementary.ccf71b5fb3a737a4611c",
+      "prerequisiteTopicId": "kr.mt.art.5-6.6mi0204.make",
+      "reason": "미술과 내용 체계표 표현 영역에서 초등 표현 과정을 돌아보는 성찰 학습을 [9미02-05]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex13"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책10 기술·가정·정보과 교육과정 인간 발달과 주도적 삶 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.0869358175428827d5be",
+      "id": "kr.learning-relation.2022.bridge.elementary.cebfb9d58992d9f2d759",
+      "prerequisiteTopicId": "kr.mt.practical.human-development-self-directed-life.5-6.0101.practice",
+      "reason": "기술·가정·정보과 내용 체계표 인간 발달과 주도적 삶 영역에서 초등 아동기 발달과 자기이해 학습을 [9기가01-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex10"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 법 내용 체계표 p.13",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.a9ae567079c6b6e5ba1f",
+      "id": "kr.learning-relation.2022.bridge.elementary.d0113eb9848d2934776e",
+      "prerequisiteTopicId": "kr.mt.social.5-6.6sa0301.concept",
+      "reason": "사회·역사과 내용 체계표 법 영역에서 초등 헌법에 규정된 인권 학습을 [9사(일사)06-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책10 기술·가정·정보과 교육과정 기술적 문제해결과 혁신 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.0933abec72ef3cf50444",
+      "id": "kr.learning-relation.2022.bridge.elementary.d06b6ba3016f4c6ffcc7",
+      "prerequisiteTopicId": "kr.mt.practical.technological-problem-solving-innovation.5-6.0302.practice",
+      "reason": "기술·가정·정보과 내용 체계표 기술적 문제해결과 혁신 영역에서 초등 기술적 문제 해결과 발명사고기법 학습을 [9기가03-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex10"
       ],
       "strength": "required"
     },
@@ -245,6 +3470,66 @@
       "strength": "required"
     },
     {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 스포츠 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.2fb4d62474df6614c08d",
+      "id": "kr.learning-relation.2022.bridge.elementary.d2f5e49e440eccc65e10",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0204.perform",
+      "reason": "체육과 내용 체계표 스포츠 영역에서 초등 전략형 스포츠의 의미와 유형 학습을 [9체02-13]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책14 영어과 교육과정 표현 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.4e93134fff83033b6c59",
+      "id": "kr.learning-relation.2022.bridge.elementary.d37b7b379ec162808457",
+      "prerequisiteTopicId": "kr.mt.english-efl.5-6.expression.6영02-05.01.위치-표현으로-길-안내",
+      "reason": "영어과 내용 체계표 표현 영역에서 초등 장소·위치·방법 설명 학습을 [9영02-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex14"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책13 미술과 교육과정 감상 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.2f5b36994dadcb26e1ba",
+      "id": "kr.learning-relation.2022.bridge.elementary.d3e092942f9efc83bb53",
+      "prerequisiteTopicId": "kr.mt.art.5-6.6mi0304.make",
+      "reason": "미술과 내용 체계표 감상 영역에서 초등 서로 다른 감상 관점의 존중 학습을 [9미03-04]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex13"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책5 국어과 교육과정 듣기⋅말하기 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.a90e25cf2127fd60701f",
+      "id": "kr.learning-relation.2022.bridge.elementary.d516ef6cc0106eb186a8",
+      "prerequisiteTopicId": "kr.mt.korean.listening-speaking.5-6.6guk0106.01",
+      "reason": "국어과 내용 체계표 듣기⋅말하기 영역에서 초등 의견을 조정하는 토의 학습을 [9국01-07]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "strength": "required"
+    },
+    {
       "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 변화와 관계 내용 체계표 p.14",
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.2deca4ef0195e5e509ed",
@@ -256,6 +3541,351 @@
       "scope": "cross-school-level",
       "sourceRefs": [
         "kr-moe-2022-33-annex8"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책12 음악과 교육과정 창작 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.66d07ac733719fe23a4d",
+      "id": "kr.learning-relation.2022.bridge.elementary.d5829c63cd1d54ab0fed",
+      "prerequisiteTopicId": "kr.mt.music.5-6.6eum0302.perform",
+      "reason": "음악과 내용 체계표 창작 영역에서 초등 기초 기보와 조건에 따른 바꾸기 학습을 [9음03-02]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex12"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 인문환경과 인간생활 내용 체계표 p.10",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.47e42eec75443fd9cf94",
+      "id": "kr.learning-relation.2022.bridge.elementary.d88850334e929fa1c82f",
+      "prerequisiteTopicId": "kr.mt.social.5-6.6sa1201.concept",
+      "reason": "사회·역사과 내용 체계표 인문환경과 인간생활 영역에서 초등 세계의 인구 분포와 국가별 특징 학습을 [9사(지리)02-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책9 과학과 교육과정 운동과 에너지 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.7df2fad8460911cbc847",
+      "id": "kr.learning-relation.2022.bridge.elementary.db375f41e9b44b5e9bc1",
+      "prerequisiteTopicId": "kr.mt.science.motion-energy.heat-life.g6-07-02.concept",
+      "reason": "과학과 내용 체계표 운동과 에너지 영역에서 초등 두 물체의 온도 변화 학습을 [9과03-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 스포츠 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.30e44e7d369d6595620e",
+      "id": "kr.learning-relation.2022.bridge.elementary.db3a55b043afdd52fcd8",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0207.perform",
+      "reason": "체육과 내용 체계표 스포츠 영역에서 초등 생태형 스포츠의 의미와 유형 학습을 [9체02-22]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 운동 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.39b9d01cf6d417e267c9",
+      "id": "kr.learning-relation.2022.bridge.elementary.db706974f34db618ea76",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0101.perform",
+      "reason": "체육과 내용 체계표 운동 영역에서 초등 건강 체력과 운동 체력 학습을 [9체01-05]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 표현 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.7aee6ffc7e1c37e00992",
+      "id": "kr.learning-relation.2022.bridge.elementary.dded21bf6f8a574d89e8",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0304.perform",
+      "reason": "체육과 내용 체계표 표현 영역에서 초등 전통 표현의 응용 동작 학습을 [9체03-05]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 정치 내용 체계표 p.12",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.b7cfcc5e166f2a77071b",
+      "id": "kr.learning-relation.2022.bridge.elementary.df0734894f238f3f08c4",
+      "prerequisiteTopicId": "kr.mt.social.5-6.6sa0701.concept",
+      "reason": "사회·역사과 내용 체계표 정치 영역에서 초등 지구촌의 평화 학습을 [9사(일사)11-02]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책5 국어과 교육과정 매체 내용 체계표 p.12",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.1d5fc7f3dee87678997b",
+      "id": "kr.learning-relation.2022.bridge.elementary.dfa8cd50d641b9729ba4",
+      "prerequisiteTopicId": "kr.mt.korean.media.3-4.4guk0603.01",
+      "reason": "국어과 내용 체계표 매체 영역에서 초등 매체 소통 윤리 학습을 [9국06-04]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 스포츠 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.ccc9deff48a67afbd929",
+      "id": "kr.learning-relation.2022.bridge.elementary.e0950649e2c7367354e2",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0211.perform",
+      "reason": "체육과 내용 체계표 스포츠 영역에서 초등 협력과 배려 학습을 [9체02-26]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책9 과학과 교육과정 과학과 사회 내용 체계표 p.11",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.42888938c22b1cc8d4dc",
+      "id": "kr.learning-relation.2022.bridge.elementary.e3171fb2d31076b1fa25",
+      "prerequisiteTopicId": "kr.mt.science.science-society.climate-life.g4-16-03.concept",
+      "reason": "과학과 내용 체계표 과학과 사회 영역에서 초등 기후위기 대응 학습을 [9과01-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책14 영어과 교육과정 표현 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.1e3cf8ddcd387d15d42a",
+      "id": "kr.learning-relation.2022.bridge.elementary.e332a83d2b788e4145b6",
+      "prerequisiteTopicId": "kr.mt.english-efl.5-6.expression.6영02-01.01.강세-살려-문장-말하기",
+      "reason": "영어과 내용 체계표 표현 영역에서 초등 강세·리듬·억양을 살린 말하기 학습을 [9영02-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex14"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책9 과학과 교육과정 운동과 에너지 내용 체계표 p.6",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.32ff6938729648d19bc7",
+      "id": "kr.learning-relation.2022.bridge.elementary.e36ce1e00c20c8d08abc",
+      "prerequisiteTopicId": "kr.mt.science.motion-energy.electricity-use.g6-15-03.concept",
+      "reason": "과학과 내용 체계표 운동과 에너지 영역에서 초등 전자석 학습을 [9과14-04]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책10 기술·가정·정보과 교육과정 성취기준 해설 p.151",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.3375b458c8f7df993104",
+      "id": "kr.learning-relation.2022.bridge.elementary.e371bb3d9a8e4cdd6409",
+      "prerequisiteTopicId": "kr.mt.practical.digital-society-ai.5-6.0502.practice",
+      "reason": "기술·가정·정보과 성취기준 해설이 초등 초등 수준의 프로그래밍을 피지컬 컴퓨팅 구현 활동에 활용한다.을 [9정01-02] 학습에 직접 연계한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex10"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책9 과학과 교육과정 물질 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.5c086b015445290faad4",
+      "id": "kr.learning-relation.2022.bridge.elementary.e385c51106b48f413050",
+      "prerequisiteTopicId": "kr.mt.science.matter.objects-materials.g4-05-02.concept",
+      "reason": "과학과 내용 체계표 물질 영역에서 초등 물질의 세 가지 상태 학습을 [9과04-02]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책9 과학과 교육과정 지구와 우주 내용 체계표 p.10",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.d15dbd1e597ef77e9619",
+      "id": "kr.learning-relation.2022.bridge.elementary.e4a3d831f28a07663d14",
+      "prerequisiteTopicId": "kr.mt.science.earth-space.land-change.g4-11-04.concept",
+      "reason": "과학과 내용 체계표 지구와 우주 영역에서 초등 화산과 지진 학습을 [9과09-05]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책9 과학과 교육과정 운동과 에너지 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.1f00993929484abb4ce5",
+      "id": "kr.learning-relation.2022.bridge.elementary.e4e33321043a7b89cf68",
+      "prerequisiteTopicId": "kr.mt.science.motion-energy.light-properties.g6-02-03.concept",
+      "reason": "과학과 내용 체계표 운동과 에너지 영역에서 초등 거울과 렌즈 학습을 [9과10-02]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책9 과학과 교육과정 물질 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.a13e2176fd0202a5e067",
+      "id": "kr.learning-relation.2022.bridge.elementary.e53ad970f43aa65f452d",
+      "prerequisiteTopicId": "kr.mt.science.matter.combustion.g6-14-01.concept",
+      "reason": "과학과 내용 체계표 물질 영역에서 초등 물질의 성질 변화 학습을 [9과16-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 운동 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.ca518dff5461a05aec36",
+      "id": "kr.learning-relation.2022.bridge.elementary.e6ab8a645aa021bd89a5",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0102.perform",
+      "reason": "체육과 내용 체계표 운동 영역에서 초등 체력 측정과 수준별 운동 학습을 [9체01-02]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책12 음악과 교육과정 감상 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.5ba3e99da5952f03ce5d",
+      "id": "kr.learning-relation.2022.bridge.elementary.e6afbe5c01ac3bbef0dc",
+      "prerequisiteTopicId": "kr.mt.music.5-6.6eum0201.perform",
+      "reason": "음악과 내용 체계표 감상 영역에서 초등 음악 요소의 감지와 구별 학습을 [9음02-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex12"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책14 영어과 교육과정 이해 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.3ca5153baabafe3ba23c",
+      "id": "kr.learning-relation.2022.bridge.elementary.e90840ec6c5076c99b47",
+      "prerequisiteTopicId": "kr.mt.english-efl.5-6.understanding.6영01-07.01.듣기-전-예측하기",
+      "reason": "영어과 내용 체계표 이해 영역에서 초등 듣기·읽기 전략 활용 학습을 [9영01-08]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex14"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 사회⋅문화 내용 체계표 p.15",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.7d29ebae3c4a5398d995",
+      "id": "kr.learning-relation.2022.bridge.elementary.e943c23dee5def92aa6e",
+      "prerequisiteTopicId": "kr.mt.social.5-6.6sa1202.concept",
+      "reason": "사회·역사과 내용 체계표 사회⋅문화 영역에서 초등 지속가능한 미래를 위한 대응 학습을 [9사(일사)12-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책9 과학과 교육과정 지구와 우주 내용 체계표 p.11",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.092240994825ea6be258",
+      "id": "kr.learning-relation.2022.bridge.elementary.e974a4b796adcba1c171",
+      "prerequisiteTopicId": "kr.mt.science.earth-space.earth-motion.g6-12-02.concept",
+      "reason": "과학과 내용 체계표 지구와 우주 영역에서 초등 지구의 자전 학습을 [9과07-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책10 기술·가정·정보과 교육과정 기술적 문제해결과 혁신 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.911c7c13665808f238e7",
+      "id": "kr.learning-relation.2022.bridge.elementary.ea0e90bb5febd2101491",
+      "prerequisiteTopicId": "kr.mt.practical.technological-problem-solving-innovation.5-6.0301.practice",
+      "reason": "기술·가정·정보과 내용 체계표 기술적 문제해결과 혁신 영역에서 초등 발명의 의미와 발명품 학습을 [9기가03-05]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex10"
       ],
       "strength": "required"
     },
@@ -275,6 +3905,66 @@
       "strength": "required"
     },
     {
+      "basis": "국가교육위원회 고시 제2024-3호 별책9 과학과 교육과정 과학과 사회 내용 체계표 p.11",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.4e2b28ace1cfcb8bbcbf",
+      "id": "kr.learning-relation.2022.bridge.elementary.eb7ee2af99ee603a7c33",
+      "prerequisiteTopicId": "kr.mt.science.science-society.science-career.g6-16-02.concept",
+      "reason": "과학과 내용 체계표 과학과 사회 영역에서 초등 진로와 과학의 관련성 학습을 [9과23-02]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 스포츠 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.6bf0c43559ff80f9d7c0",
+      "id": "kr.learning-relation.2022.bridge.elementary.ec21c0f678244f2b68db",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0203.perform",
+      "reason": "체육과 내용 체계표 스포츠 영역에서 초등 기술형 스포츠의 방법과 전략 학습을 [9체02-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 지리 인식 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.451e15cde3f5f8aa065d",
+      "id": "kr.learning-relation.2022.bridge.elementary.ecae1f7a3ed8b2268fd0",
+      "prerequisiteTopicId": "kr.mt.social.3-4.4sa0101.concept",
+      "reason": "사회·역사과 내용 체계표 지리 인식 영역에서 초등 장소 경험과 장소감 학습을 [9사(지리)07-02]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책5 국어과 교육과정 듣기⋅말하기 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.9fd5e9ac66ba0e63c803",
+      "id": "kr.learning-relation.2022.bridge.elementary.eceaa359f6f9a29d009f",
+      "prerequisiteTopicId": "kr.mt.korean.listening-speaking.5-6.6guk0105.01",
+      "reason": "국어과 내용 체계표 듣기⋅말하기 영역에서 초등 자료 선별과 발표 학습을 [9국01-06]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "strength": "required"
+    },
+    {
       "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 성취기준 해설 p.39",
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.1d5f34a8b2214e6badcb",
@@ -288,8 +3978,383 @@
         "kr-moe-2022-33-annex8"
       ],
       "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책14 영어과 교육과정 표현 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.4e93134fff83033b6c59",
+      "id": "kr.learning-relation.2022.bridge.elementary.eee9cb12acc37fb0e4d3",
+      "prerequisiteTopicId": "kr.mt.english-efl.5-6.expression.6영02-02.01.그림-정보-문장화",
+      "reason": "영어과 내용 체계표 표현 영역에서 초등 그림 등 시각 정보 설명 학습을 [9영02-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex14"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 운동 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.880e3565e63086e6b1af",
+      "id": "kr.learning-relation.2022.bridge.elementary.efa0c8b2abccc6262bba",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0105.perform",
+      "reason": "체육과 내용 체계표 운동 영역에서 초등 체력 운동의 끈기 학습을 [9체01-13]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 법 내용 체계표 p.13",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.99d5438a2aa48cf1ea8e",
+      "id": "kr.learning-relation.2022.bridge.elementary.f03d317ad0cceb68fea5",
+      "prerequisiteTopicId": "kr.mt.social.5-6.6sa0802.concept",
+      "reason": "사회·역사과 내용 체계표 법 영역에서 초등 국회의 역할 학습을 [9사(일사)07-02]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책6 도덕과 교육과정 타인과의 관계 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.33ef34c2effa4a9ad83a",
+      "id": "kr.learning-relation.2022.bridge.elementary.f0ceda3198977c75e696",
+      "prerequisiteTopicId": "kr.mt.moral.relationships.g3-4.4do-02-01.concept",
+      "reason": "도덕과 내용 체계표 타인과의 관계 영역에서 초등 가족의 행복 학습을 [9도02-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex6"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책5 국어과 교육과정 문법 내용 체계표 p.10",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.eecdde4d7545cbb82c24",
+      "id": "kr.learning-relation.2022.bridge.elementary.f12c1e48e552ba571b03",
+      "prerequisiteTopicId": "kr.mt.korean.grammar.5-6.6guk0402.01",
+      "reason": "국어과 내용 체계표 문법 영역에서 초등 지역 언어와 표준어 학습을 [9국04-07]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책5 국어과 교육과정 쓰기 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.f9fca7469542f580164f",
+      "id": "kr.learning-relation.2022.bridge.elementary.f14404f55c96ae851908",
+      "prerequisiteTopicId": "kr.mt.korean.writing.5-6.6guk0302.01",
+      "reason": "국어과 내용 체계표 쓰기 영역에서 초등 근거를 갖춘 주장 글 학습을 [9국03-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책5 국어과 교육과정 읽기 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.43fa4122b69f8390e5d6",
+      "id": "kr.learning-relation.2022.bridge.elementary.f270da98aed89a82bbdc",
+      "prerequisiteTopicId": "kr.mt.korean.reading.3-4.4guk0205.01",
+      "reason": "국어과 내용 체계표 읽기 영역에서 초등 출처의 신뢰성 평가 학습을 [9국02-04]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 스포츠 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.11f998a65a2dea3bceb0",
+      "id": "kr.learning-relation.2022.bridge.elementary.f3f52440a684e36ad65d",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0208.perform",
+      "reason": "체육과 내용 체계표 스포츠 영역에서 초등 생태형 스포츠의 기본 기능 학습을 [9체02-23]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책12 음악과 교육과정 창작 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.7bf64f4d7cc0fb8090f4",
+      "id": "kr.learning-relation.2022.bridge.elementary.f437bd45d22778e53f42",
+      "prerequisiteTopicId": "kr.mt.music.5-6.6eum0301.perform",
+      "reason": "음악과 내용 체계표 창작 영역에서 초등 느낌과 아이디어의 표현 학습을 [9음03-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex12"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책12 음악과 교육과정 연주 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.20f8ddc59838e74c1284",
+      "id": "kr.learning-relation.2022.bridge.elementary.f461d40f6142e1a75473",
+      "prerequisiteTopicId": "kr.mt.music.5-6.6eum0102.perform",
+      "reason": "음악과 내용 체계표 연주 영역에서 초등 음악 요소와 발표 학습을 [9음01-02]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex12"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 스포츠 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.fd7bf453b1e3bbe62845",
+      "id": "kr.learning-relation.2022.bridge.elementary.f5a2448dfd2fc0e2cb64",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0202.perform",
+      "reason": "체육과 내용 체계표 스포츠 영역에서 초등 기술형 스포츠의 기본 기능 학습을 [9체02-02]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책5 국어과 교육과정 쓰기 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.07bfa6bbac52667d29f1",
+      "id": "kr.learning-relation.2022.bridge.elementary.f5f21e5bd1016ae41089",
+      "prerequisiteTopicId": "kr.mt.korean.writing.5-6.6guk0301.01",
+      "reason": "국어과 내용 체계표 쓰기 영역에서 초등 대상의 특성을 설명하는 글 학습을 [9국03-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책5 국어과 교육과정 듣기⋅말하기 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.0528f8b0f4f119aa3eae",
+      "id": "kr.learning-relation.2022.bridge.elementary.f61bc00ebc6f0a45c76a",
+      "prerequisiteTopicId": "kr.mt.korean.listening-speaking.5-6.6guk0103.01",
+      "reason": "국어과 내용 체계표 듣기⋅말하기 영역에서 초등 주제와 관련된 질문 학습을 [9국01-05]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책12 음악과 교육과정 창작 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.af813c3cf0835d083aad",
+      "id": "kr.learning-relation.2022.bridge.elementary.f65fbdd1cd32aef7a4c8",
+      "prerequisiteTopicId": "kr.mt.music.5-6.6eum0303.perform",
+      "reason": "음악과 내용 체계표 창작 영역에서 초등 음악 요소를 활용한 간단한 음악 학습을 [9음03-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex12"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 운동 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.1335f84b33d0665133fa",
+      "id": "kr.learning-relation.2022.bridge.elementary.f6ca5d432a6ac45f4327",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0101.perform",
+      "reason": "체육과 내용 체계표 운동 영역에서 초등 건강 체력과 운동 체력 학습을 [9체01-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 운동 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.b90b918ffa136f0ab7d8",
+      "id": "kr.learning-relation.2022.bridge.elementary.f7976f6403f46f567fef",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0104.perform",
+      "reason": "체육과 내용 체계표 운동 영역에서 초등 안전한 생활 습관 학습을 [9체01-12]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 지리 인식 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.5acf43160124651a2ca1",
+      "id": "kr.learning-relation.2022.bridge.elementary.f8f79f4009717b46d067",
+      "prerequisiteTopicId": "kr.mt.social.5-6.6sa0902.concept",
+      "reason": "사회·역사과 내용 체계표 지리 인식 영역에서 초등 세계 여러 국가의 위치 학습을 [9사(지리)02-01]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 지속가능한 세계 내용 체계표 p.11",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.e95b9bcb0fd4262f3eb9",
+      "id": "kr.learning-relation.2022.bridge.elementary.f9f644d8324772a28828",
+      "prerequisiteTopicId": "kr.mt.social.5-6.6sa1202.concept",
+      "reason": "사회·역사과 내용 체계표 지속가능한 세계 영역에서 초등 지구촌 문제와 지속가능한 미래 학습을 [9사(지리)12-02]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책5 국어과 교육과정 성취기준 해설 p.53",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.22b4d3cd31b6bd1510d9",
+      "id": "kr.learning-relation.2022.bridge.elementary.fa6b9f7d3f149ce6b6d2",
+      "prerequisiteTopicId": "kr.mt.korean.grammar.3-4.4guk0404.01",
+      "reason": "국어과 성취기준 해설이 초등 초등의 높임 및 지시와 접속 표현을 중등 피동과 인용 표현에 연계한다.을 [9국04-05] 학습에 직접 연계한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 경제 내용 체계표 p.14",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.9cbdd651687cc1b12270",
+      "id": "kr.learning-relation.2022.bridge.elementary.fb694c8e03f2fa0b5cde",
+      "prerequisiteTopicId": "kr.mt.social.5-6.6sa1101.concept",
+      "reason": "사회·역사과 내용 체계표 경제 영역에서 초등 기업의 역할과 사회적 책임 학습을 [9사(일사)08-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 스포츠 내용 체계표 p.8",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.ee9f926dc1eb509ea755",
+      "id": "kr.learning-relation.2022.bridge.elementary.fbb62a25b5fea8415595",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0201.perform",
+      "reason": "체육과 내용 체계표 스포츠 영역에서 초등 기술형 스포츠의 의미와 유형 학습을 [9체02-07]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책5 국어과 교육과정 문학 내용 체계표 p.11",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.a1592acff1a296086d8c",
+      "id": "kr.learning-relation.2022.bridge.elementary.fc2fa0a1e7544fe878c0",
+      "prerequisiteTopicId": "kr.mt.korean.literature.5-6.6guk0504.01",
+      "reason": "국어과 내용 체계표 문학 영역에서 초등 작품에 대한 의견 나누기 학습을 [9국05-08]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책9 과학과 교육과정 성취기준 해설 p.47",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.b7b76d4e9f27634659de",
+      "id": "kr.learning-relation.2022.bridge.elementary.fdc1b680545e67640737",
+      "prerequisiteTopicId": "kr.mt.science.matter.objects-materials.g4-05-01.concept",
+      "reason": "과학과 성취기준 해설이 초등 물체와 물질의 분류 경험을 순물질과 혼합물 분류에 연계한다.을 [9과08-02] 학습에 직접 연계한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 운동 내용 체계표 p.7",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.4bc88662a0b43e60f045",
+      "id": "kr.learning-relation.2022.bridge.elementary.ff2a748be6a1a06b31db",
+      "prerequisiteTopicId": "kr.mt.physical-education.5-6.6che0101.perform",
+      "reason": "체육과 내용 체계표 운동 영역에서 초등 건강 체력과 운동 체력 학습을 [9체01-03]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "strength": "required"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책9 과학과 교육과정 생명 내용 체계표 p.9",
+      "basisKind": "official-source",
+      "dependentTopicId": "kr.topic.2022.middle.a56d6909735b5d327d31",
+      "id": "kr.learning-relation.2022.bridge.elementary.ffa9b877a1998453e5af",
+      "prerequisiteTopicId": "kr.mt.science.life.animal-life.g4-02-01.concept",
+      "reason": "과학과 내용 체계표 생명 영역에서 초등 동물의 특징과 분류 학습을 [9과02-04]의 선수 지식으로 연결한다.",
+      "relationKind": "required-prerequisite",
+      "reviewStatus": "internal-reviewed",
+      "scope": "cross-school-level",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "strength": "required"
     }
   ],
   "recordType": "elementaryTransitions",
-  "releaseId": "kr-2022-middle-high-bridge-v0.4.0-candidate"
+  "releaseId": "kr-2022-middle-high-bridge-v0.5.0-candidate"
 }

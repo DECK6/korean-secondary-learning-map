@@ -4,7 +4,7 @@
   "recordCount": 1,
   "records": [
     {
-      "description": "중학교 전 과목의 과정 수준 고등학교 연결과 수학 주제 수준 연결은 내부 검토되었다. 수학 이외 교과의 주제 수준 전이는 후속 전문가 검토로 세분화할 수 있다.",
+      "description": "수학의 공식 주제 수준 학교급 전이는 내부 검토되었다. 수학 이외 교과의 주제 수준 전이를 공식 근거와 함께 발굴하는 작업은 남아 있다.",
       "id": "gap.bridges.subject-expert-refinement-pending",
       "severity": "medium",
       "sourceRefs": [],
@@ -12,5 +12,5 @@
     }
   ],
   "recordType": "coverageGaps",
-  "releaseId": "kr-2022-middle-high-bridge-v0.4.0-candidate"
+  "releaseId": "kr-2022-middle-high-bridge-v0.5.0-candidate"
 }

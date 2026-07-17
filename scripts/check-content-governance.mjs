@@ -56,6 +56,7 @@ for (const profile of ['middle', 'high']) {
   for (const relation of learningRelations) {
     if (relation.basis === 'official-code-order-candidate-v1' || relation.reviewStatus === 'candidate') errors.push(`${relation.id}: unreviewed automatic prerequisite relation is prohibited`);
     if (!reviewedTargetIds.has(relation.id)) errors.push(`${relation.id}: reviewed learning relation has no review record`);
+    if (relation.basisKind !== 'official-source' || !relation.sourceRefs.length) errors.push(`${relation.id}: learning relation lacks official-source provenance`);
     if (relation.relationKind === 'required-prerequisite' && (relation.basisKind !== 'official-source' || relation.strength !== 'required')) errors.push(`${relation.id}: required relation lacks official-source provenance`);
     if (relation.relationKind === 'recommended-before' && relation.strength !== 'recommended') errors.push(`${relation.id}: recommendation strength mismatch`);
   }
@@ -73,11 +74,9 @@ const transitions = (await readJson(join(root, 'data/kr/bridges/transition-align
 const elementaryTransitions = (await readJson(join(root, 'data/kr/bridges/elementary-transitions.json'))).records;
 const bridgeReviewTargets = new Set((await readJson(join(root, 'data/kr/bridges/review-records.json'))).records.flatMap((review) => review.targetIds));
 for (const transition of transitions) {
-  const topicLevel = transition.fromTopicIds?.length || transition.toTopicIds?.length;
   if (transition.reviewStatus !== 'internal-reviewed' || !bridgeReviewTargets.has(transition.id)) errors.push(`${transition.id}: transition review record is missing`);
   if (!transition.fromCourseIds?.length || !transition.toCourseIds?.length) errors.push(`${transition.id}: transition course anchors are missing`);
-  if (topicLevel && (transition.fromTopicIds.length !== 1 || transition.toTopicIds.length !== 1 || transition.basisKind !== 'official-source' || !transition.sourceRefs.length)) errors.push(`${transition.id}: topic-level transition lacks official-source provenance`);
-  if (!topicLevel && transition.basisKind !== 'repository-authored') errors.push(`${transition.id}: course-level transition provenance boundary missing`);
+  if (transition.fromTopicIds.length !== 1 || transition.toTopicIds.length !== 1 || transition.basisKind !== 'official-source' || !transition.sourceRefs.length) errors.push(`${transition.id}: transition lacks topic-level official-source provenance`);
 }
 for (const transition of elementaryTransitions) {
   if (transition.reviewStatus !== 'internal-reviewed' || transition.relationKind !== 'required-prerequisite' || transition.basisKind !== 'official-source' || !transition.sourceRefs.length) errors.push(`${transition.id}: elementary transition provenance boundary missing`);

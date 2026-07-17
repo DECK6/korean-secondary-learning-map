@@ -1,14 +1,4575 @@
 {
   "bridges": {
-    "courseLevelTransitions": 37,
-    "elementaryTransitions": 19,
-    "mappedMiddleCourses": 24,
-    "topicLevelTransitions": 13,
+    "courseLevelTransitions": 0,
+    "elementaryTransitions": 290,
+    "mappedMiddleCourses": 10,
+    "topicLevelTransitions": 175,
     "totalMiddleCourses": 24,
-    "transitionAlignments": 50
+    "transitionAlignments": 175
   },
-  "generatedDate": "2026-07-13",
+  "generatedDate": "2026-07-17",
   "high": {
+    "courseCoverage": {
+      "byCourse": [
+        {
+          "courseId": "kr.course.2022.high.cb34278ab3df4254",
+          "courseLabel": "3D 프린터 개발",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.d8fccc75135f0da3",
+          "courseLabel": "3D 프린터용 제품 제작",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.5566f558d408a85f",
+          "courseLabel": "가금 사육",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.0a855feec05f8148",
+          "courseLabel": "가스 안전 관리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.eb1af94649d482be",
+          "courseLabel": "가스 텅스텐 아크 용접",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.3239cec1eda00974",
+          "courseLabel": "가전 기기 시스템 소프트웨어 개발",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.d4c9fff5d922e116",
+          "courseLabel": "가전 기기 하드웨어 개발",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.c677a19cf2e31f80",
+          "courseLabel": "가전 기기·기구 개발",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.7cbef136917f6fce",
+          "courseLabel": "간호의 기초",
+          "hasOfficialRelations": true,
+          "relationCount": 3
+        },
+        {
+          "courseId": "kr.course.2022.high.eac6b34362426095",
+          "courseLabel": "건강 기능 식품 가공",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.12d4abaaa8b78ccb",
+          "courseLabel": "건물 정보 관리 기초",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.d58b16debc2f542a",
+          "courseLabel": "건설 광산 기계 설치·정비",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.256445735f645845",
+          "courseLabel": "건설 안전 관리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.b22e32398d0a9931",
+          "courseLabel": "건설 재료",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.b7745b174b27a43f",
+          "courseLabel": "건축 기초 실습",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.c4befebd32e7d093",
+          "courseLabel": "건축 도면 해석과 제도",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.0a6480f28f21d722",
+          "courseLabel": "건축 도장 시공",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.79707ca89b0fda02",
+          "courseLabel": "건축 마감 시공",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.d603c9be8c0ed97f",
+          "courseLabel": "건축 목공 시공",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.42c4325333aaa9f8",
+          "courseLabel": "건축 설계",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.ee2c4264708b9bed",
+          "courseLabel": "건축 일반",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.b4af7cd55bebc93c",
+          "courseLabel": "게임 기획",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.f8c4623f6cb83b39",
+          "courseLabel": "게임 디자인",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.f80da093d7787322",
+          "courseLabel": "게임 프로그래밍",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.73b8f67500b2f635",
+          "courseLabel": "경제",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.ea6554729c3abd96",
+          "courseLabel": "경제 수학",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.ea72c3ac5f0b6449",
+          "courseLabel": "고객 관리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.5aacb02a6fbc60f1",
+          "courseLabel": "고급 기하",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.9395eaed9e189893",
+          "courseLabel": "고급 대수",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.fe078b9bf3360f43",
+          "courseLabel": "고급 물리학",
+          "hasOfficialRelations": true,
+          "relationCount": 3
+        },
+        {
+          "courseId": "kr.course.2022.high.5c896c9748b34519",
+          "courseLabel": "고급 미적분",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.d20d1c5249072f2f",
+          "courseLabel": "고급 생명과학",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.bbf6258b8c74458e",
+          "courseLabel": "고급 지구과학",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.292f890cfcc63417",
+          "courseLabel": "고급 체육 전공 실기",
+          "hasOfficialRelations": true,
+          "relationCount": 5
+        },
+        {
+          "courseId": "kr.course.2022.high.706bf7c1454169b3",
+          "courseLabel": "고급 화학",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.high.ff532ce54cc6aea3",
+          "courseLabel": "고분자 제품 제조",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.ee8f3fb244db27fd",
+          "courseLabel": "곤충 사육",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.d6f6034234e427ff",
+          "courseLabel": "곤충 산업 일반",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.9ddd1e67173f96c6",
+          "courseLabel": "공간 정보 구축",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.043ad03576891792",
+          "courseLabel": "공간 정보 융합 서비스",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.3783872c283c10fb",
+          "courseLabel": "공급망 관리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.ca5166a27d069090",
+          "courseLabel": "공업 일반",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.f3b079348e4b827c",
+          "courseLabel": "공업 화학",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.b5f2ce8244cd4f22",
+          "courseLabel": "공예 일반",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.c037c828912fca14",
+          "courseLabel": "공예 재료와 도구",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.62f3935dd1f9509e",
+          "courseLabel": "공작 기계 설치·정비",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.d72ef830cf5be588",
+          "courseLabel": "공정 관리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.05ea5d3165fed402",
+          "courseLabel": "공중 보건",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.4166f628015541ac",
+          "courseLabel": "공통국어1",
+          "hasOfficialRelations": true,
+          "relationCount": 3
+        },
+        {
+          "courseId": "kr.course.2022.high.08a52bc2723f8254",
+          "courseLabel": "공통국어2",
+          "hasOfficialRelations": true,
+          "relationCount": 11
+        },
+        {
+          "courseId": "kr.course.2022.high.c5134bb916edf899",
+          "courseLabel": "공통수학1",
+          "hasOfficialRelations": true,
+          "relationCount": 4
+        },
+        {
+          "courseId": "kr.course.2022.high.f699e06d5f857844",
+          "courseLabel": "공통수학2",
+          "hasOfficialRelations": true,
+          "relationCount": 10
+        },
+        {
+          "courseId": "kr.course.2022.high.1aa7a52049208785",
+          "courseLabel": "공통영어1",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.high.b500bfc2d692a67a",
+          "courseLabel": "공통영어2",
+          "hasOfficialRelations": true,
+          "relationCount": 8
+        },
+        {
+          "courseId": "kr.course.2022.high.69a2557a68909b72",
+          "courseLabel": "과수 재배",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.807092d6486c740f",
+          "courseLabel": "과학과제 연구",
+          "hasOfficialRelations": true,
+          "relationCount": 4
+        },
+        {
+          "courseId": "kr.course.2022.high.c57a4fefb53c582d",
+          "courseLabel": "과학의 역사와 문화",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.405980f16b59bcfe",
+          "courseLabel": "과학탐구실험1",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.high.650024939bd22742",
+          "courseLabel": "과학탐구실험2",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.high.6134c42b048dbc5f",
+          "courseLabel": "관광 농업",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.72b3d80ec5b8cb72",
+          "courseLabel": "관광 문화와 자원",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.e3054b4df4968254",
+          "courseLabel": "관광 서비스",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.c720831d3f3eaf65",
+          "courseLabel": "관광 영어",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.bee2f040541f5197",
+          "courseLabel": "관광 일반",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.7d8398502139c53a",
+          "courseLabel": "관광 일본어",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.42d01be98fec37c8",
+          "courseLabel": "관광 중국어",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.0600d3a5ea7bf4de",
+          "courseLabel": "관광 콘텐츠 개발",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.4e1d38e467f5e658",
+          "courseLabel": "관상 생물 기초",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.13c6852d36b6fa4a",
+          "courseLabel": "광고 콘텐츠 제작",
+          "hasOfficialRelations": true,
+          "relationCount": 3
+        },
+        {
+          "courseId": "kr.course.2022.high.995fb9fd041626a2",
+          "courseLabel": "교육의 이해",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.e52c2e6ed0116281",
+          "courseLabel": "교통 계획･설계",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.3e4ad444e9fa389f",
+          "courseLabel": "구매 조달",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.0daab45a0240c552",
+          "courseLabel": "국내 여행 서비스 실무",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.b5777ec888fe240a",
+          "courseLabel": "국외 여행 서비스 실무",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.b99da18bd4261282",
+          "courseLabel": "국제 관계의 이해",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.d2b81224e6700f5f",
+          "courseLabel": "국토 도시 계획",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.c10608cd75732d16",
+          "courseLabel": "극 창작",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.9b07390c67832a17",
+          "courseLabel": "근해 어업",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.0a3d1c227369bbed",
+          "courseLabel": "금속 공예",
+          "hasOfficialRelations": true,
+          "relationCount": 7
+        },
+        {
+          "courseId": "kr.course.2022.high.3a984b86961abe73",
+          "courseLabel": "금속 열처리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.ac9c6151dd963d1a",
+          "courseLabel": "금속 재료 가공",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.3ffb1e51469aaa18",
+          "courseLabel": "금속 재료 신뢰성 시험",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.074fb6252886aa3d",
+          "courseLabel": "금융 일반",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.9c68b4a5acf7bc54",
+          "courseLabel": "금융과 경제생활",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.846ae013669ddd74",
+          "courseLabel": "기계 기초 공작",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.d07f078c0232b710",
+          "courseLabel": "기계 기초 역학",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.353d74c241ef1c3d",
+          "courseLabel": "기계 소프트웨어 개발",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.66944b2fed957b18",
+          "courseLabel": "기계 수동 조립",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.c5fd5e0df1435d31",
+          "courseLabel": "기계 안전 관리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.805d2f19ee458128",
+          "courseLabel": "기계 일반",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.92cde0adecaec1b4",
+          "courseLabel": "기계 제도",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.8f9b808afb6a9c9c",
+          "courseLabel": "기계 제어 설계",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.8d4ff9c1b46be5be",
+          "courseLabel": "기계요소 설계",
+          "hasOfficialRelations": true,
+          "relationCount": 13
+        },
+        {
+          "courseId": "kr.course.2022.high.a1d69176807339c6",
+          "courseLabel": "기관 실무 기초",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.c9c3bad6df5c89ee",
+          "courseLabel": "기관 직무 일반",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.8d511bed110595ad",
+          "courseLabel": "기관사 직무",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.14a88ececf2808dc",
+          "courseLabel": "기능성 정밀 화학 제품 제조",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.f0d7204a23c5c159",
+          "courseLabel": "기본수학1",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.high.8fda79d3e68f95aa",
+          "courseLabel": "기본수학2",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.high.1a2a0f41692de8e3",
+          "courseLabel": "기본영어1",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.high.04c2bef80f49173a",
+          "courseLabel": "기본영어2",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.high.555fee91e0f5a8df",
+          "courseLabel": "기술⋅가정",
+          "hasOfficialRelations": true,
+          "relationCount": 12
+        },
+        {
+          "courseId": "kr.course.2022.high.57f2d4ebbac2b0d2",
+          "courseLabel": "기업 자원 통합 관리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.d6760172b9bf2b8f",
+          "courseLabel": "기업과 경영",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.2c6968d3b8f09df9",
+          "courseLabel": "기초 간호 임상 실무",
+          "hasOfficialRelations": true,
+          "relationCount": 19
+        },
+        {
+          "courseId": "kr.course.2022.high.6be50257c44e8957",
+          "courseLabel": "기초 제도",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.ef364d5a9b0e7001",
+          "courseLabel": "기초 조리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.b1fea654f7356128",
+          "courseLabel": "기초 체육 전공 실기",
+          "hasOfficialRelations": true,
+          "relationCount": 5
+        },
+        {
+          "courseId": "kr.course.2022.high.618d9440455dea57",
+          "courseLabel": "기하",
+          "hasOfficialRelations": true,
+          "relationCount": 3
+        },
+        {
+          "courseId": "kr.course.2022.high.d44038d624b2c0e8",
+          "courseLabel": "기후변화와 지속가능한 세계",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.high.35811985f46abf91",
+          "courseLabel": "기후변화와 환경생태",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.37eef94472eaa8fe",
+          "courseLabel": "김치･반찬 가공",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.9afbd594ef3b8693",
+          "courseLabel": "내선 공사",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.86098a2c5fefc065",
+          "courseLabel": "내수면 양식",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.04a5b217b1195d1b",
+          "courseLabel": "냉동 공조 설계",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.c582f4948da885db",
+          "courseLabel": "냉동 공조 유지 보수 관리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.84fbdc721369b477",
+          "courseLabel": "냉동 공조 일반",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.79e2b06c493c62ed",
+          "courseLabel": "냉동 공조 장치 설치",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.8534e16f7c1e45a0",
+          "courseLabel": "네일 미용",
+          "hasOfficialRelations": true,
+          "relationCount": 3
+        },
+        {
+          "courseId": "kr.course.2022.high.bc848f8faede74af",
+          "courseLabel": "네트워크 구축",
+          "hasOfficialRelations": true,
+          "relationCount": 4
+        },
+        {
+          "courseId": "kr.course.2022.high.3117cddf4e68db05",
+          "courseLabel": "네트워크 프로그래밍",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.aff0c2f3c61993ae",
+          "courseLabel": "노동 인권과 산업 안전 보건",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.5c3a980c43692a40",
+          "courseLabel": "노무 관리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.01ee08bbb919b4f4",
+          "courseLabel": "논리와 사고",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.a6cccc2ee7ccc247",
+          "courseLabel": "논술",
+          "hasOfficialRelations": true,
+          "relationCount": 3
+        },
+        {
+          "courseId": "kr.course.2022.high.6d40c0ab6b4778de",
+          "courseLabel": "농산물 거래",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.9b590bef4489f2b6",
+          "courseLabel": "농산물 유통",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.e0ff3ece4a95d908",
+          "courseLabel": "농업 경영",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.5bd61b03c02098d4",
+          "courseLabel": "농업 기계",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.83b1ec01aff2212c",
+          "courseLabel": "농업 기계 공작",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.1b46285b5519457b",
+          "courseLabel": "농업 기계 운전 작업",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.191c18c5a4215031",
+          "courseLabel": "농업 기초 기술",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.8484e485df07a062",
+          "courseLabel": "농업 생산 환경 일반",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.d30558ade3c5b245",
+          "courseLabel": "농업 생산 환경 조성",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.f2d5b995c1703c73",
+          "courseLabel": "농업 이해",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.dab210c3c55f49a8",
+          "courseLabel": "농업 정보 관리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.0f493c8ae8f5727c",
+          "courseLabel": "농업 창업 일반",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.820885c6d30c9283",
+          "courseLabel": "농업 토목 시공ㆍ측량",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.4a0b0de184024862",
+          "courseLabel": "농업 토목 제도ㆍ설계",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.81527ad1c7cc0183",
+          "courseLabel": "농업용 기계 설치ㆍ정비",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.7666862249360350",
+          "courseLabel": "농업용 전기ㆍ전자",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.072f1536dcc67675",
+          "courseLabel": "농촌 체험 상품 개발",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.c1841e16d643cb66",
+          "courseLabel": "농촌 체험 시설 운영",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.a98551a6b6d446fc",
+          "courseLabel": "니트 의류 생산",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.3817bf18113a7c2d",
+          "courseLabel": "대기 관리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.c792f480cf5de7d8",
+          "courseLabel": "대수",
+          "hasOfficialRelations": true,
+          "relationCount": 3
+        },
+        {
+          "courseId": "kr.course.2022.high.0ed39856d2026b91",
+          "courseLabel": "대인 복지 서비스",
+          "hasOfficialRelations": true,
+          "relationCount": 3
+        },
+        {
+          "courseId": "kr.course.2022.high.edf7d80da6f9abc7",
+          "courseLabel": "데이터 과학",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.9492fd901f45b039",
+          "courseLabel": "데이터베이스 프로그래밍",
+          "hasOfficialRelations": true,
+          "relationCount": 5
+        },
+        {
+          "courseId": "kr.course.2022.high.403b92545b15de0e",
+          "courseLabel": "도금",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.939b117c5645223c",
+          "courseLabel": "도시의 미래 탐구",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.e3a4f61458c6b959",
+          "courseLabel": "도자기",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.c895ac1c0c7715a5",
+          "courseLabel": "도자기 공예",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.ad5028dbc3343f34",
+          "courseLabel": "독서 토론과 글쓰기",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.high.e25a4f5a23afbd53",
+          "courseLabel": "독서와 작문",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.high.24379bf8c674afe5",
+          "courseLabel": "독일어",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.high.b575b524e4e20bb5",
+          "courseLabel": "독일어 회화",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.1c417ce887645eb9",
+          "courseLabel": "독일어권 문화",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.f88b3643ffdbb294",
+          "courseLabel": "동물 자원",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.dafb350c0a175866",
+          "courseLabel": "동아시아 역사 기행",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.35c8a83e8167b6a7",
+          "courseLabel": "돼지 사육",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.f916f7d9ccc2a6b8",
+          "courseLabel": "드로잉",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.febcc3596f0a047a",
+          "courseLabel": "드론 기초",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.8ec9a7446e69c6dc",
+          "courseLabel": "디스플레이 생산",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.15af0d21ea626a0c",
+          "courseLabel": "디자인 일반",
+          "hasOfficialRelations": true,
+          "relationCount": 4
+        },
+        {
+          "courseId": "kr.course.2022.high.c05b0f6b3affddec",
+          "courseLabel": "디자인 제도",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.a8980aad5f427cb1",
+          "courseLabel": "디저트 조리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.c227e7c65d192dd0",
+          "courseLabel": "디지털 논리 회로",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.3f1022bc86533e2d",
+          "courseLabel": "디지털 디자인",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.3c985c5387068cd0",
+          "courseLabel": "디지털과 직업 생활",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.9b4a87a2fe6a3599",
+          "courseLabel": "떡 제조",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.562fe30524d2e5d4",
+          "courseLabel": "러시아 문화",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.d07982c3b4598582",
+          "courseLabel": "러시아어",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.d1488c35377c23d3",
+          "courseLabel": "러시아어 회화",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.12e8654557ca7040",
+          "courseLabel": "레저 서비스 일반",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.cfacc15c9f66bbbc",
+          "courseLabel": "로봇 기구 개발",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.87d9eb5c44249787",
+          "courseLabel": "로봇 소프트웨어 개발",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.687b80b1cf2570f1",
+          "courseLabel": "로봇 용접",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.05e7aa5974286856",
+          "courseLabel": "로봇 유지 보수",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.d62df1914a1bb2fe",
+          "courseLabel": "로봇 지능 개발",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.7a751b8041ae3411",
+          "courseLabel": "로봇 하드웨어 설계",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.3f8e42a8e51cf11d",
+          "courseLabel": "로봇과 공학세계",
+          "hasOfficialRelations": true,
+          "relationCount": 4
+        },
+        {
+          "courseId": "kr.course.2022.high.e8b558b6f8a41e3a",
+          "courseLabel": "마케팅과 광고",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.a00679aa32779466",
+          "courseLabel": "만화 콘텐츠 제작",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.f92558b945259a99",
+          "courseLabel": "말 사육",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.10f67dba3aea133a",
+          "courseLabel": "매장 판매",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.b06396bb85a4ce88",
+          "courseLabel": "매체 의사소통",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.821904ea648842af",
+          "courseLabel": "메이크업",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.18855af2637933b5",
+          "courseLabel": "목공예",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.ee41df59ce7e153c",
+          "courseLabel": "목재 가공",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.f2938bc832866164",
+          "courseLabel": "무대미술과 기술",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.f14293358c417b6e",
+          "courseLabel": "무선 통신 구축·운용",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.c9610721e31d17e8",
+          "courseLabel": "무역 금융 업무",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.1ab060c351f9be4c",
+          "courseLabel": "무역 영어",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.high.436c5e672d1e0b31",
+          "courseLabel": "무역 일반",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.6a2318c299940152",
+          "courseLabel": "무용 감상과 비평",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.803a13272c403893",
+          "courseLabel": "무용 기초 실기",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.1c7ac7f420ed071b",
+          "courseLabel": "무용 전공 실기",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.2a58000c9f011139",
+          "courseLabel": "무용 제작 실습",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.431ec6ab789af437",
+          "courseLabel": "무용과 매체",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.69c14b5ce38f4fd3",
+          "courseLabel": "무용과 몸",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.bfa0037a3abdebad",
+          "courseLabel": "무용의 이해",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.f19ca43977fa2e0c",
+          "courseLabel": "문예 창작의 이해",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.db513cec2e459809",
+          "courseLabel": "문장론",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.3d6576f4f53fd651",
+          "courseLabel": "문학",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.high.ee57fe51c50463ee",
+          "courseLabel": "문학 감상과 비평",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.6198a0b96b7cda38",
+          "courseLabel": "문학과 매체",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.52bd240fd81d7779",
+          "courseLabel": "문학과 영상",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.e9df4a67ecea9ed4",
+          "courseLabel": "문화 콘텐츠 산업 일반",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.2922e703f9edba42",
+          "courseLabel": "물류 관리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.a3e0712414844bb3",
+          "courseLabel": "물리학",
+          "hasOfficialRelations": true,
+          "relationCount": 9
+        },
+        {
+          "courseId": "kr.course.2022.high.3e0c36e1e3ce0728",
+          "courseLabel": "물리학 실험",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.ccdce9a9cbfbe8be",
+          "courseLabel": "물질과 에너지",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.high.13e453c37845e746",
+          "courseLabel": "미디어 영어",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.43fb3b8646037803",
+          "courseLabel": "미디어 콘텐츠 일반",
+          "hasOfficialRelations": true,
+          "relationCount": 3
+        },
+        {
+          "courseId": "kr.course.2022.high.820636c315f9a521",
+          "courseLabel": "미술",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.bd6954f123f77b19",
+          "courseLabel": "미술 감상과 비평",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.high.44d7fe59965cd66d",
+          "courseLabel": "미술 매체 탐구",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.cb94aff57ea34e2c",
+          "courseLabel": "미술 이론",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.06d98befd6e4d245",
+          "courseLabel": "미술 전공 실기",
+          "hasOfficialRelations": true,
+          "relationCount": 10
+        },
+        {
+          "courseId": "kr.course.2022.high.684550635ae22e69",
+          "courseLabel": "미술 창작",
+          "hasOfficialRelations": true,
+          "relationCount": 6
+        },
+        {
+          "courseId": "kr.course.2022.high.f813f71ccff347a5",
+          "courseLabel": "미술과 매체",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.47e5a3cf986bac11",
+          "courseLabel": "미술과 사회",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.dfbfa0a4e48ef273",
+          "courseLabel": "미술사",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.b15582d402b9b518",
+          "courseLabel": "미용 안전·보건",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.high.45db8eec8e4141f7",
+          "courseLabel": "미용의 기초",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.40c49396f0b4120a",
+          "courseLabel": "미적분Ⅰ",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.high.f2f37c909b8de62e",
+          "courseLabel": "미적분Ⅱ",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.d6f71d386af51d5b",
+          "courseLabel": "밀링 가공",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.7358216ea7b48b33",
+          "courseLabel": "바리스타",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.6e141e229f9ada3e",
+          "courseLabel": "바이오 기초 화학",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.f75cb1928b4c3867",
+          "courseLabel": "바이오 의약품 제조",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.906f49c862f46fc4",
+          "courseLabel": "바이오 화학 제품 제조",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.2b49a5bc4962735d",
+          "courseLabel": "바텐더",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.c342dca3c6544177",
+          "courseLabel": "반도체 개발",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.877a1f76370f0555",
+          "courseLabel": "반도체 장비",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.8d553f7fe813eaa9",
+          "courseLabel": "반도체 재료",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.d2318ba7a188f1f2",
+          "courseLabel": "반도체 제조",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.52d80f8ef1f60bdc",
+          "courseLabel": "반려동물 관리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.b659fabfdd9fd0ed",
+          "courseLabel": "발명･특허 기초",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.31d30f9013a5c416",
+          "courseLabel": "발명과 기업가 정신",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.a17c30592e74a3b8",
+          "courseLabel": "발명과 디자인",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.eb05240e5cf7c09a",
+          "courseLabel": "발명과 메이커",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.ab86b766ff60b7f5",
+          "courseLabel": "발전 설비 운영",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.45b4e05f06f4e59a",
+          "courseLabel": "방송 일반",
+          "hasOfficialRelations": true,
+          "relationCount": 3
+        },
+        {
+          "courseId": "kr.course.2022.high.0402496bc48ac14c",
+          "courseLabel": "방송 제작 시스템 운용",
+          "hasOfficialRelations": true,
+          "relationCount": 3
+        },
+        {
+          "courseId": "kr.course.2022.high.6a5f19a864145432",
+          "courseLabel": "방송 콘텐츠 제작",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.42385a69ead4c662",
+          "courseLabel": "방적·방사",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.4c0cdb5ac964dc16",
+          "courseLabel": "배관 시공",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.4500c6778b1a0a47",
+          "courseLabel": "버섯 재배",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.6d1ef8fa11ebf6cc",
+          "courseLabel": "법과 사회",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.a33e1e8e7f73b6d1",
+          "courseLabel": "베트남 문화",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.high.3eb905a789303d57",
+          "courseLabel": "베트남어",
+          "hasOfficialRelations": true,
+          "relationCount": 3
+        },
+        {
+          "courseId": "kr.course.2022.high.7764f2f6f62223a5",
+          "courseLabel": "베트남어 회화",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.14102770a0bbd5a9",
+          "courseLabel": "보건",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.8b0307744c912830",
+          "courseLabel": "보건 간호",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.25eb2c34b415938d",
+          "courseLabel": "보건 의료 법규",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.177304e70a115767",
+          "courseLabel": "보육 과정",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.4175a5fc94c0ad97",
+          "courseLabel": "보육 실습",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.68c8242f14382c41",
+          "courseLabel": "보육 원리와 보육 교사",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.high.953ec01778f30d94",
+          "courseLabel": "보일러 설치·정비",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.075fe684b038a030",
+          "courseLabel": "보일러 장치 설치",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.377a9e7498225b58",
+          "courseLabel": "보험 일반",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.f3ccfea888c1c1ce",
+          "courseLabel": "복지 서비스의 기초",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.ac94126be4c34646",
+          "courseLabel": "비서",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.ac6b4ee931b390fb",
+          "courseLabel": "비주얼 머천다이징",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.fa7e27bee1d22b36",
+          "courseLabel": "비즈니스 커뮤니케이션",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.2f50153a0e811413",
+          "courseLabel": "빅 데이터 분석",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.6d6c2b9b16cccfaf",
+          "courseLabel": "사무 관리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.6bc95af10d95e9dc",
+          "courseLabel": "사무 행정",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.2716b91f861a1bf9",
+          "courseLabel": "사물 인터넷 서비스 기획",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.8f1f0540d9f2d6be",
+          "courseLabel": "사물 인터넷과 센서 제어",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.ef07bfea6b4d6456",
+          "courseLabel": "사진 감상과 비평",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.19c478454e6368bf",
+          "courseLabel": "사진 촬영",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.a797f76ec42a23ac",
+          "courseLabel": "사진 표현 기법",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.363f791733fdf870",
+          "courseLabel": "사진과 삶",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.13860b6d47df9168",
+          "courseLabel": "사진의 이해",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.917ec05a491534f0",
+          "courseLabel": "사출 금형 설계",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.e0441fa6d691fd7c",
+          "courseLabel": "사출 금형 제작",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.44d426adf78aa96a",
+          "courseLabel": "사출 금형 조립",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.cbbe46fc0d1da747",
+          "courseLabel": "사출 금형 품질 관리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.fd2934a5cb98bae6",
+          "courseLabel": "사회 복지 시설 실무",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.09b4315c3a27a5a9",
+          "courseLabel": "사회 복지 시설의 이해",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.0a5ca60cb2cc7cb3",
+          "courseLabel": "사회문제 탐구",
+          "hasOfficialRelations": true,
+          "relationCount": 9
+        },
+        {
+          "courseId": "kr.course.2022.high.e1095c22fa239a45",
+          "courseLabel": "사회와 문화",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.cf7385f2dbe1e449",
+          "courseLabel": "산림 보호",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.9cfc1981f7407938",
+          "courseLabel": "산림 자원",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.82524a9cf0ccf876",
+          "courseLabel": "산림 조성",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.f6e5c2ac8593f42c",
+          "courseLabel": "산림 휴양",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.660c38c7a6a3a3ae",
+          "courseLabel": "산업 설비",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.65a43a7205070492",
+          "courseLabel": "산업 안전 보건 기초",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.fd3488b574568eb6",
+          "courseLabel": "산업 잠수",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.2ddb08bd2940ea38",
+          "courseLabel": "산업용 전자 기기 소프트웨어 개발",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.a3b3f1df4aca08da",
+          "courseLabel": "산업용 전자 기기 하드웨어 개발",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.c81cfef0ddac996c",
+          "courseLabel": "산업용 전자 기기·기구 개발",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.c82df4b549740b1b",
+          "courseLabel": "삶과 종교",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.f79ff1db18262dfe",
+          "courseLabel": "상업 경제",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.f37b8bce68c05c7e",
+          "courseLabel": "색채 디자인",
+          "hasOfficialRelations": true,
+          "relationCount": 77
+        },
+        {
+          "courseId": "kr.course.2022.high.6cc640ea08087738",
+          "courseLabel": "색채 일반",
+          "hasOfficialRelations": true,
+          "relationCount": 62
+        },
+        {
+          "courseId": "kr.course.2022.high.1f0c71a42f9fdef0",
+          "courseLabel": "생명 공학 기술",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.high.e4000a151f61fc2d",
+          "courseLabel": "생명과학",
+          "hasOfficialRelations": true,
+          "relationCount": 6
+        },
+        {
+          "courseId": "kr.course.2022.high.702213fc0dd545f9",
+          "courseLabel": "생명과학 실험",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.92ec69a3474b6737",
+          "courseLabel": "생물의 유전",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.high.f089a356a4c64c4b",
+          "courseLabel": "생산 자재",
+          "hasOfficialRelations": true,
+          "relationCount": 3
+        },
+        {
+          "courseId": "kr.course.2022.high.646724eed0ea6def",
+          "courseLabel": "생애 설계와 자립",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.high.1a3cceb94fcda565",
+          "courseLabel": "생태와 환경",
+          "hasOfficialRelations": true,
+          "relationCount": 5
+        },
+        {
+          "courseId": "kr.course.2022.high.22a6f2171c509cba",
+          "courseLabel": "생활 서비스 산업의 이해",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.64bc8da5e0581507",
+          "courseLabel": "생활과학 탐구",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.high.fd552c9b1f090621",
+          "courseLabel": "서양 의복 구성과 생산",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.7c4954d9367fc2a8",
+          "courseLabel": "선박 갑판 관리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.fe3f2ea40d0a58d3",
+          "courseLabel": "선박 건조",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.5d6112df84b15921",
+          "courseLabel": "선박 구조",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.bc42e3ca4e023e02",
+          "courseLabel": "선박 기관 정비",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.bda0990c732de86b",
+          "courseLabel": "선박 기기 운용",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.fa028cfa1cca6dac",
+          "courseLabel": "선박 보조 기계",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.dcf066edcffdd8b9",
+          "courseLabel": "선박 보조 기계 정비",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.7276ae5f7f609616",
+          "courseLabel": "선박 안전 관리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.9727d77c764a78c9",
+          "courseLabel": "선박 운용",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.70508f1bdf41e836",
+          "courseLabel": "선박 운항 관리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.9d87966b6c426225",
+          "courseLabel": "선박 이론",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.988fd35702c5f8a4",
+          "courseLabel": "선박 전기·전자",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.01f74f8a35532d5c",
+          "courseLabel": "선박 통신",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.8128d7872b3ba955",
+          "courseLabel": "선반 가공",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.88253496c07c66cc",
+          "courseLabel": "선체 도면 독도와 제도",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.71afa574b7330db1",
+          "courseLabel": "선체 생산 설계",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.ef0b15b09b62fe14",
+          "courseLabel": "선체 조립",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.a8d9903e41daca2a",
+          "courseLabel": "선화 운송",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.01fc87cb44a80e9c",
+          "courseLabel": "섬유 공정",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.39598fa8dc1bd4fc",
+          "courseLabel": "섬유 재료",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.b9c1f77ca20796a3",
+          "courseLabel": "성공적인 직업 생활",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.1ff7f41de9b9eb15",
+          "courseLabel": "성형 가공",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.306b8ae8b21876da",
+          "courseLabel": "세계 문화와 영어",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.40a37cbb066524dc",
+          "courseLabel": "세계사",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.8d92b38799a93bd4",
+          "courseLabel": "세계시민과 지리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.447a8416fff470dd",
+          "courseLabel": "세라믹 원리·공정",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.2054f61db93cb33e",
+          "courseLabel": "세라믹 재료",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.46ca304d89b491fe",
+          "courseLabel": "세무 실무",
+          "hasOfficialRelations": true,
+          "relationCount": 3
+        },
+        {
+          "courseId": "kr.course.2022.high.705f168a1c97bc4c",
+          "courseLabel": "세무 일반",
+          "hasOfficialRelations": true,
+          "relationCount": 3
+        },
+        {
+          "courseId": "kr.course.2022.high.9259e0722898177b",
+          "courseLabel": "세포와 물질대사",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.high.5c7afd6207b24e26",
+          "courseLabel": "소방 건축",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.d75a01067f7f614e",
+          "courseLabel": "소방 기계",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.18e22ff2f8a18c58",
+          "courseLabel": "소방 기초",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.e66599442d0eb61b",
+          "courseLabel": "소방 법규",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.78dad1868edcde93",
+          "courseLabel": "소방 시설 공사",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.32971b08bb647c15",
+          "courseLabel": "소방 시설 설계",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.a50eeb98a847b67b",
+          "courseLabel": "소방 안전 관리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.ee4b92f5016546dc",
+          "courseLabel": "소방 전기",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.6159ad4851e8486a",
+          "courseLabel": "소설 창작",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.543bddd346f42cb7",
+          "courseLabel": "소음 진동 관리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.85930938b272eea5",
+          "courseLabel": "소프트웨어와 생활",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.high.3baa615abc7464a7",
+          "courseLabel": "소형 무인기 운용 ․ 조종",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.8d116610617c5b41",
+          "courseLabel": "소형 무인기 정비",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.ddc2734acb93698e",
+          "courseLabel": "송·변전 배전 설비 운영",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.6435b0111aa4e559",
+          "courseLabel": "수도작 재배",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.3557671931de0631",
+          "courseLabel": "수산 경영",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.0fb226177a64fa88",
+          "courseLabel": "수산 생물",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.7c696a869f16921a",
+          "courseLabel": "수산 식품 가공",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.fa78630254416d87",
+          "courseLabel": "수산 양식 일반",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.bf3d19b1a3d3c317",
+          "courseLabel": "수산 일반",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.88eeba69c9464e83",
+          "courseLabel": "수산 종묘 생산",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.33752a16a9accdb5",
+          "courseLabel": "수산 질병 관리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.5e93bbb7e1468f42",
+          "courseLabel": "수산 해양 창업",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.f6cbf0cd32c5fa53",
+          "courseLabel": "수산･해운 산업 기초",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.b7584e8335cc2458",
+          "courseLabel": "수산물 유통",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.178998915a1d3e60",
+          "courseLabel": "수상 레저 기구 조종",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.0e9793325ebd2eed",
+          "courseLabel": "수상 스포츠",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.ade2c2125c1944f1",
+          "courseLabel": "수의 보조",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.728290533116555e",
+          "courseLabel": "수질 관리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.de196ab13636c431",
+          "courseLabel": "수출입 관리",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.high.d81ba5ecef1483f1",
+          "courseLabel": "수학과 문화",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.bf0306b33da218c2",
+          "courseLabel": "수학과제 탐구",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.57596ac08591b8f5",
+          "courseLabel": "스마트 공장 설계와 구축",
+          "hasOfficialRelations": true,
+          "relationCount": 8
+        },
+        {
+          "courseId": "kr.course.2022.high.1eb0bb7d02e3f5c8",
+          "courseLabel": "스마트 공장 운용",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.8b09e09090d33343",
+          "courseLabel": "스마트 공장 일반",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.21bb4ac23154f0e2",
+          "courseLabel": "스마트 공정 제어",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.08946a6816bf8607",
+          "courseLabel": "스마트 문화 앱 콘텐츠 제작",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.4c9f9e2f91e0bad9",
+          "courseLabel": "스마트 설비 실무",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.0d4b11a513df8200",
+          "courseLabel": "스마트 시티 기초",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.fc175ff0d2dbc29d",
+          "courseLabel": "스마트 팜 운영",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.a2f022fa12c0d889",
+          "courseLabel": "스페인어",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.33db7f47c6543bd9",
+          "courseLabel": "스페인어 회화",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.a0ed3617828b3299",
+          "courseLabel": "스페인어권 문화",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.f454872043d8924b",
+          "courseLabel": "스포츠 개론",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.ec65403336903281",
+          "courseLabel": "스포츠 경기 기술",
+          "hasOfficialRelations": true,
+          "relationCount": 4
+        },
+        {
+          "courseId": "kr.course.2022.high.4fd718da965f139b",
+          "courseLabel": "스포츠 경기 분석",
+          "hasOfficialRelations": true,
+          "relationCount": 3
+        },
+        {
+          "courseId": "kr.course.2022.high.7c94e7bc8e6c1e94",
+          "courseLabel": "스포츠 경기 체력",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.f787bc1b3673c037",
+          "courseLabel": "스포츠 과학",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.high.67fa381458469390",
+          "courseLabel": "스포츠 교육",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.7de8fa364f4ee2f0",
+          "courseLabel": "스포츠 문화",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.dfa9fe34af45d7fe",
+          "courseLabel": "스포츠 생리의학",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.e651381ef9d478ba",
+          "courseLabel": "스포츠 생활1",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.high.0bd4c56b6d8a1d04",
+          "courseLabel": "스포츠 생활2",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.high.79bd9cfacbebfc47",
+          "courseLabel": "스포츠 행정 및 경영",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.a335b6ede1be8f9c",
+          "courseLabel": "승강기 설치·정비",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.daffc87de6f60cd1",
+          "courseLabel": "시 창작",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.a391e32040ad1324",
+          "courseLabel": "시각 디자인",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.a130f6f71a84769b",
+          "courseLabel": "시스템 관리 및 지원",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.f1fe2944d2eacd59",
+          "courseLabel": "시스템 프로그래밍",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.e5bfe10adbf0f80b",
+          "courseLabel": "시창 · 청음",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.ef7858b38d7d7614",
+          "courseLabel": "식공간 연출",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.130d4d496caa69e3",
+          "courseLabel": "식음료 기초",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.283d3a0abd4b643e",
+          "courseLabel": "식품 가공 기술",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.5b057eaa71fa1763",
+          "courseLabel": "식품 과학",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.ad0f0437bc5d6987",
+          "courseLabel": "식품 분석",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.55f146839dddf431",
+          "courseLabel": "식품 위생",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.12ca76332d8b7b88",
+          "courseLabel": "식품 품질 관리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.8dc0ab1ef22dd147",
+          "courseLabel": "식품과 영양",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.806d95e9263c3776",
+          "courseLabel": "신재생 에너지 실무",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.699b4b7b6e9180a1",
+          "courseLabel": "실내 디자인",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.ac8aa2b7149e9d5d",
+          "courseLabel": "실생활 영어 회화",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.10206858fed637ba",
+          "courseLabel": "실용 통계",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.a98a0804a4181a8f",
+          "courseLabel": "심화 독일어",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.high.e37ee79cbe59c0f6",
+          "courseLabel": "심화 러시아어",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.c7dc9c7786a8dd5f",
+          "courseLabel": "심화 베트남어",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.high.ad744b150fe23529",
+          "courseLabel": "심화 스페인어",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.2cb09eec65b781e4",
+          "courseLabel": "심화 아랍어",
+          "hasOfficialRelations": true,
+          "relationCount": 3
+        },
+        {
+          "courseId": "kr.course.2022.high.101e5211e2e07253",
+          "courseLabel": "심화 영어",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.b1d0acec220f3051",
+          "courseLabel": "심화 영어 독해와 작문",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.d9daf47757b435b0",
+          "courseLabel": "심화 일본어",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.f88260ffc472155f",
+          "courseLabel": "심화 중국어",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.89cbeea5b619f291",
+          "courseLabel": "심화 체육 전공 실기",
+          "hasOfficialRelations": true,
+          "relationCount": 8
+        },
+        {
+          "courseId": "kr.course.2022.high.7c8d02894293899d",
+          "courseLabel": "심화 프랑스어",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.3d635e382b99b91a",
+          "courseLabel": "아동 복지",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.6c3f6a5c13ff53ec",
+          "courseLabel": "아동 생활 지도",
+          "hasOfficialRelations": true,
+          "relationCount": 4
+        },
+        {
+          "courseId": "kr.course.2022.high.ec9979c5e9dcdbba",
+          "courseLabel": "아동발달과 부모",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.high.4a17d7c173e709c4",
+          "courseLabel": "아랍 문화",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.high.e174321efa04422d",
+          "courseLabel": "아랍어",
+          "hasOfficialRelations": true,
+          "relationCount": 3
+        },
+        {
+          "courseId": "kr.course.2022.high.0e0fde1c88540336",
+          "courseLabel": "아랍어 회화",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.6c1ec3797d54a8ce",
+          "courseLabel": "안무",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.e7b9a15036767886",
+          "courseLabel": "알고리즘 설계",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.6a6d779bcb40c3fa",
+          "courseLabel": "압연",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.db5b1a97c00e1474",
+          "courseLabel": "애니메이션 기초",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.2ade93983ddff4f3",
+          "courseLabel": "애니메이션 콘텐츠 제작",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.5a1c95423b06885a",
+          "courseLabel": "애완동물 미용",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.7e9371ff26b37449",
+          "courseLabel": "양식 생물 질병",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.e56c97624a0de413",
+          "courseLabel": "양식 조리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.0e9d503e952ce303",
+          "courseLabel": "어선 전문",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.590c1b7881f161ac",
+          "courseLabel": "어촌 체험 상품 개발",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.1866f31643437159",
+          "courseLabel": "어촌 체험 시설 운영",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.ceb9dd2544d800f8",
+          "courseLabel": "언어생활 탐구",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.high.921a5aa050a7e8ed",
+          "courseLabel": "언어생활과 한자",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.2314cc918f12a2ee",
+          "courseLabel": "에너지 공업 기초",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.03a946fc87a91733",
+          "courseLabel": "에너지 설비 유틸리티",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.95c84c4a1dc3c247",
+          "courseLabel": "에너지 화공 소재 생산",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.b21f5ae348e51acf",
+          "courseLabel": "여행지리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.027b13711abccc78",
+          "courseLabel": "역사로 탐구하는 현대 세계",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.865a5a2d62e7bac6",
+          "courseLabel": "역학 기초",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.4c5c974f5e3449db",
+          "courseLabel": "역학과 에너지",
+          "hasOfficialRelations": true,
+          "relationCount": 4
+        },
+        {
+          "courseId": "kr.course.2022.high.4fe4c9a1f2969e05",
+          "courseLabel": "연극",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.58202516d750232c",
+          "courseLabel": "연극 감상과 비평",
+          "hasOfficialRelations": true,
+          "relationCount": 10
+        },
+        {
+          "courseId": "kr.course.2022.high.672b18be789004e4",
+          "courseLabel": "연극 제작 실습",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.0474b7d133a7462b",
+          "courseLabel": "연극과 말",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.91c0dc0a99e842fc",
+          "courseLabel": "연극과 몸",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.7c8b0de4c3e7a026",
+          "courseLabel": "연극과 삶",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.adc41c9a88db5ca3",
+          "courseLabel": "연기",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.04268a804506b2a6",
+          "courseLabel": "연삭 가공",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.dd6b16259b0bb57e",
+          "courseLabel": "열기관",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.4e1a1de6b65f52ee",
+          "courseLabel": "염색･가공",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.14aa220d608ff2ae",
+          "courseLabel": "염색·가공 기초",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.bec9f759cd83885f",
+          "courseLabel": "영미 문학 읽기",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.b2dad9e30a3bd130",
+          "courseLabel": "영상 제작 기초",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.e6ab0340bd26b474",
+          "courseLabel": "영상 제작의 이해",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.fc40e63c46a838a9",
+          "courseLabel": "영어 독해와 작문",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.high.58c5c33e945d5350",
+          "courseLabel": "영어 발표와 토론",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.5303ffa8a293a42a",
+          "courseLabel": "영어 I",
+          "hasOfficialRelations": true,
+          "relationCount": 4
+        },
+        {
+          "courseId": "kr.course.2022.high.586e769f7ff7d976",
+          "courseLabel": "영어 Ⅱ",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.high.ab1f6cd825a40c22",
+          "courseLabel": "영유아 건강·안전·영양 지도",
+          "hasOfficialRelations": true,
+          "relationCount": 5
+        },
+        {
+          "courseId": "kr.course.2022.high.8529da85eab3162e",
+          "courseLabel": "영유아 교수 방법",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.10dd9c9292ba3e76",
+          "courseLabel": "영유아 놀이 지도",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.2b0c89676b78fc66",
+          "courseLabel": "영화 감상과 비평",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.4688035445209a00",
+          "courseLabel": "영화 제작 실습",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.284449186eda5d34",
+          "courseLabel": "영화 콘텐츠 제작",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.7fcbeea9762a6602",
+          "courseLabel": "영화와 삶",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.5b16f6819ed99927",
+          "courseLabel": "영화의 이해",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.521d3df1f991a3ce",
+          "courseLabel": "예산･자금",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.aef09d1cbaeb4bb5",
+          "courseLabel": "오토바이 정비",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.feb3d2c517c7cc44",
+          "courseLabel": "외선 공사",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.f94919cf6b3fa7f2",
+          "courseLabel": "요양 지원",
+          "hasOfficialRelations": true,
+          "relationCount": 26
+        },
+        {
+          "courseId": "kr.course.2022.high.2b727577ff39eec9",
+          "courseLabel": "요트 조종",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.892b4fc74c4a026a",
+          "courseLabel": "용융 세라믹 제조",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.039c51ec34c5e262",
+          "courseLabel": "운동과 건강",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.fcd9e8c249810f13",
+          "courseLabel": "운반 하역 기계 설치·정비",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.20df1de8d4891fe5",
+          "courseLabel": "원산지 관리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.04276ea34b1e2bc0",
+          "courseLabel": "원양 어업",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.f57b1e7d1f3ac5d0",
+          "courseLabel": "원예",
+          "hasOfficialRelations": true,
+          "relationCount": 8
+        },
+        {
+          "courseId": "kr.course.2022.high.ea1f9dac52af1291",
+          "courseLabel": "유선 통신 구축·운용",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.3aba3c8b6ed20324",
+          "courseLabel": "유제품 가공",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.dba0944fde2fe018",
+          "courseLabel": "유체 기계",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.10bfaab607c5da5e",
+          "courseLabel": "유통 관리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.5c7f5c3e170eb9b5",
+          "courseLabel": "유통 일반",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.7ad2cad46294c941",
+          "courseLabel": "육상",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.6ad2e588b9741bfd",
+          "courseLabel": "육종",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.f86f4fdd4d8bd850",
+          "courseLabel": "윤리문제 탐구",
+          "hasOfficialRelations": true,
+          "relationCount": 4
+        },
+        {
+          "courseId": "kr.course.2022.high.a1b18270d3952c04",
+          "courseLabel": "윤리와 사상",
+          "hasOfficialRelations": true,
+          "relationCount": 4
+        },
+        {
+          "courseId": "kr.course.2022.high.adc674b93d6653ed",
+          "courseLabel": "융합과학 탐구",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.1f763b336c154800",
+          "courseLabel": "음료･주류 가공",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.fdd5dc79d2d5fcf8",
+          "courseLabel": "음악",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.f0f8b02bec6bd23c",
+          "courseLabel": "음악 감상과 비평",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.6be6af59a250a897",
+          "courseLabel": "음악 공연 실습",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.b6553c21d8f53096",
+          "courseLabel": "음악 연주와 창작",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.0b54107247a15a25",
+          "courseLabel": "음악 이론",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.7928d3d6cf673fb2",
+          "courseLabel": "음악 전공 실기",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.51452d5d403548ea",
+          "courseLabel": "음악 콘텐츠 제작",
+          "hasOfficialRelations": true,
+          "relationCount": 59
+        },
+        {
+          "courseId": "kr.course.2022.high.b9b6f965b7d2237d",
+          "courseLabel": "음악 콘텐츠 제작 기초",
+          "hasOfficialRelations": true,
+          "relationCount": 55
+        },
+        {
+          "courseId": "kr.course.2022.high.43b3ab41469282b2",
+          "courseLabel": "음악과 문화",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.e91386df42bd5410",
+          "courseLabel": "음악과 미디어",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.f38c74f99a9659eb",
+          "courseLabel": "음악사",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.1b8b37a095e91471",
+          "courseLabel": "응용 프로그래밍 개발",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.97cb0053ede49827",
+          "courseLabel": "응용 프로그래밍 화면 구현",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.1178d26e54a5d5d4",
+          "courseLabel": "의료 기기 생산",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.39aa617681a8cecf",
+          "courseLabel": "의료 기기 연구 개발",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.c61f9a1491bff439",
+          "courseLabel": "의료 기기 인허가",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.7c54f2d822be01a7",
+          "courseLabel": "의복 구성의 기초",
+          "hasOfficialRelations": true,
+          "relationCount": 5
+        },
+        {
+          "courseId": "kr.course.2022.high.eb1d2dde90320a58",
+          "courseLabel": "이산 수학",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.high.fb6dcfa763280d9c",
+          "courseLabel": "이산화탄소·가스 메탈 아크 용접",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.5d6e036ffcfcb35b",
+          "courseLabel": "인간 발달",
+          "hasOfficialRelations": true,
+          "relationCount": 7
+        },
+        {
+          "courseId": "kr.course.2022.high.728909b9846a3af3",
+          "courseLabel": "인간과 경제활동",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.e28a552fb364db7f",
+          "courseLabel": "인간과 심리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.d7b38b403d0daa71",
+          "courseLabel": "인간과 철학",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.e02e817a6c93ba4a",
+          "courseLabel": "인간과 환경",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.145152075acdd93e",
+          "courseLabel": "인공지능 기초",
+          "hasOfficialRelations": true,
+          "relationCount": 4
+        },
+        {
+          "courseId": "kr.course.2022.high.f4a7b6c4ccad731a",
+          "courseLabel": "인공지능 모델링",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.626208622123727d",
+          "courseLabel": "인공지능 수학",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.d72f0f4bd0feec6b",
+          "courseLabel": "인공지능 일반",
+          "hasOfficialRelations": true,
+          "relationCount": 4
+        },
+        {
+          "courseId": "kr.course.2022.high.1f3546a829ffdecb",
+          "courseLabel": "인문학과 윤리",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.77f7e27751c5d8f1",
+          "courseLabel": "인사",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.5af760184300ffa7",
+          "courseLabel": "인체 구조와 기능",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.ae4e056f0427508b",
+          "courseLabel": "일반 잠수",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.3ad829d8ba3c925b",
+          "courseLabel": "일본 문화",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.high.4e9088d831f0e0cd",
+          "courseLabel": "일본어",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.72db3c865bea9cad",
+          "courseLabel": "일본어 회화",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.a3b0cb8901cd04bb",
+          "courseLabel": "일식 조리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.2aa9b048ed9d2048",
+          "courseLabel": "임산 가공",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.c3e85bfe0e2c0543",
+          "courseLabel": "임산물 생산",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.c89a2abded015f00",
+          "courseLabel": "임업 종묘",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.1b3db81af532c06a",
+          "courseLabel": "자동 제어 기기 제작",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.b3c8efd35d3cb182",
+          "courseLabel": "자동 제어 시스템 운영",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.5a43d3b4c0f9a43a",
+          "courseLabel": "자동 제어 시스템 유지 정비",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.dc2120fc02ffd738",
+          "courseLabel": "자동차 기관",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.ebdcd16007d5bb7b",
+          "courseLabel": "자동차 도장",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.a3aa4aa318856f4b",
+          "courseLabel": "자동차 섀시",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.5bd2e5a11d722e50",
+          "courseLabel": "자동차 섀시 정비",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.1f7d9974e35c7b2e",
+          "courseLabel": "자동차 엔진 정비",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.f5e5861379c08307",
+          "courseLabel": "자동차 일반",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.41805a29baf14fcc",
+          "courseLabel": "자동차 전기·전자 장치 정비",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.b2f936ef542fada9",
+          "courseLabel": "자동차 전기·전자 제어",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.87469684f0253cdb",
+          "courseLabel": "자동차 정비 검사",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.d0b0325d22548262",
+          "courseLabel": "자동차 차체 정비",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.30f7afa9c6d33924",
+          "courseLabel": "자동차 튜닝",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.0cb264dae6167eca",
+          "courseLabel": "자동화 설비",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.bd2bda18f954a72a",
+          "courseLabel": "자료 구조",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.6178c86d427e28a0",
+          "courseLabel": "자재 관리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.4d7663cdf7c1e655",
+          "courseLabel": "자전거 정비",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.987341c5aab17525",
+          "courseLabel": "잠수 기술",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.b29748817147b18f",
+          "courseLabel": "재료 시험",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.8a3cb04b838e7e4f",
+          "courseLabel": "재료 일반",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.ecb3f55f4bace76d",
+          "courseLabel": "재배",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.cc9a333c8b93d431",
+          "courseLabel": "전기 기기",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.1d43f67bf52a5da7",
+          "courseLabel": "전기 기기 설계",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.350bc0f6d3847559",
+          "courseLabel": "전기 기기 유지 보수",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.a870274cd171e927",
+          "courseLabel": "전기 기기 제작",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.4b3e3645ba435d81",
+          "courseLabel": "전기 설비",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.858f766c3502f5b3",
+          "courseLabel": "전기 설비 운영",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.c1247f6c7f218194",
+          "courseLabel": "전기 안전 관리",
+          "hasOfficialRelations": true,
+          "relationCount": 14
+        },
+        {
+          "courseId": "kr.course.2022.high.e4d75039934ae607",
+          "courseLabel": "전기 철도 시공",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.2833db30afca9158",
+          "courseLabel": "전기 철도 시설물 유지 보수",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.0af1b54820ee721c",
+          "courseLabel": "전기 회로",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.8e212fc334fa3915",
+          "courseLabel": "전기･전자 측정",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.df9378e9510793bd",
+          "courseLabel": "전기·전자 일반",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.9a1d8ebd919e690f",
+          "courseLabel": "전문 수학",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.ac166da6fd323d08",
+          "courseLabel": "전시･컨벤션･이벤트 실무",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.af3f2c45de9d76b0",
+          "courseLabel": "전시･컨벤션･이벤트 일반",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.9a745429ada34240",
+          "courseLabel": "전자 기계 이론",
+          "hasOfficialRelations": true,
+          "relationCount": 6
+        },
+        {
+          "courseId": "kr.course.2022.high.7758afaf42a47b21",
+          "courseLabel": "전자 부품 기구 개발",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.7c218f6abbfc71fb",
+          "courseLabel": "전자 부품 생산",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.64c33828a8e0c423",
+          "courseLabel": "전자 상거래 실무",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.593218532b3fa8ac",
+          "courseLabel": "전자 상거래 일반",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.8c4235995e36fd69",
+          "courseLabel": "전자 응용 기기 기구 개발",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.a1f44a584aae0a72",
+          "courseLabel": "전자 응용 기기 소프트웨어 개발",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.1bf28248b3da231d",
+          "courseLabel": "전자 응용 기기 하드웨어 개발",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.06ac37110404924b",
+          "courseLabel": "전자 제어",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.4d0f4e1ea30827f8",
+          "courseLabel": "전자 제품 생산",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.2169b136d5f12b71",
+          "courseLabel": "전자 제품 설치 정비",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.26791498aff2a24e",
+          "courseLabel": "전자 통신 운용",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.b7f7171071071243",
+          "courseLabel": "전자 회로",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.47cd1defd30f5bd7",
+          "courseLabel": "전자기와 양자",
+          "hasOfficialRelations": true,
+          "relationCount": 3
+        },
+        {
+          "courseId": "kr.course.2022.high.a30c021a634b739f",
+          "courseLabel": "전장 생산",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.f197568749cf07b9",
+          "courseLabel": "전특작 재배",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.d37b249570ba229d",
+          "courseLabel": "정보",
+          "hasOfficialRelations": true,
+          "relationCount": 3
+        },
+        {
+          "courseId": "kr.course.2022.high.550004f6ad708eea",
+          "courseLabel": "정보 보호 관리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.719923d1ede4ba52",
+          "courseLabel": "정보 처리와 관리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.e10eadc76f809f9f",
+          "courseLabel": "정보 통신",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.386206e7827ccc5f",
+          "courseLabel": "정보 통신 기기 소프트웨어 개발",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.eb1a48714c7b269b",
+          "courseLabel": "정보 통신 기기 하드웨어 개발",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.f2c9b5eb6dc8dab3",
+          "courseLabel": "정보과학",
+          "hasOfficialRelations": true,
+          "relationCount": 5
+        },
+        {
+          "courseId": "kr.course.2022.high.f077a73079be6827",
+          "courseLabel": "정치",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.2e693f97a97ba53c",
+          "courseLabel": "젖소 사육",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.c7f737a18b9ce6fa",
+          "courseLabel": "제강",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.360b27d6387989d1",
+          "courseLabel": "제과",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.a3d0d24522ebf5f6",
+          "courseLabel": "제빵",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.993e31d4eedb3bec",
+          "courseLabel": "제선",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.c5ec724553d3a661",
+          "courseLabel": "제조 화학",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.6093e8b2b48f5617",
+          "courseLabel": "제포",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.0c16b64c15ed95fd",
+          "courseLabel": "제품 디자인",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.92e2b1b7cc8d1d34",
+          "courseLabel": "조경",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.2b4318c279c19207",
+          "courseLabel": "조경 관리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.4873f83c310eee9e",
+          "courseLabel": "조경 설계",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.2d00aa89e7e41d3b",
+          "courseLabel": "조경 시공",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.7afb80c765936864",
+          "courseLabel": "조경 식물 관리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.ab0a2f397d062a75",
+          "courseLabel": "조림",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.fcb27dece5625b2a",
+          "courseLabel": "조형",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.09b9d3ec2c694b5f",
+          "courseLabel": "조형 탐구",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.ab50c65cff6e1152",
+          "courseLabel": "종자 생산",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.a301316244963c51",
+          "courseLabel": "종축",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.33c72b97715e7c75",
+          "courseLabel": "주거 서비스",
+          "hasOfficialRelations": true,
+          "relationCount": 5
+        },
+        {
+          "courseId": "kr.course.2022.high.eadd896d14e0e595",
+          "courseLabel": "주제 탐구 독서",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.high.8529255fd9756ef8",
+          "courseLabel": "주조",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.c23016268b3a9190",
+          "courseLabel": "중국 문화",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.570080530b122765",
+          "courseLabel": "중국어",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.2bd78d4bae80b68c",
+          "courseLabel": "중국어 회화",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.d02fcb17ddcfe0f4",
+          "courseLabel": "중식 조리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.9587081f2a5eebb2",
+          "courseLabel": "지구과학",
+          "hasOfficialRelations": true,
+          "relationCount": 6
+        },
+        {
+          "courseId": "kr.course.2022.high.08e05bce52c7c12f",
+          "courseLabel": "지구과학 실험",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.8a1581742b2c86f6",
+          "courseLabel": "지구시스템과학",
+          "hasOfficialRelations": true,
+          "relationCount": 4
+        },
+        {
+          "courseId": "kr.course.2022.high.53dbdbe0f1a64e8d",
+          "courseLabel": "지식 재산 관리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.231db579e1a3b213",
+          "courseLabel": "지식 재산 일반",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.high.84c88ba49694a269",
+          "courseLabel": "지적",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.3c5f96a75054f7d6",
+          "courseLabel": "직무 수학",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.ac8d5ed8f99fc56c",
+          "courseLabel": "직무 영어",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.high.2d7e009bac947d08",
+          "courseLabel": "직무 의사소통",
+          "hasOfficialRelations": true,
+          "relationCount": 3
+        },
+        {
+          "courseId": "kr.course.2022.high.bbd850cda9d2eacf",
+          "courseLabel": "진로와 직업",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.high.18f30d2b1b6512b3",
+          "courseLabel": "창구 사무",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.c491cfdda8a07571",
+          "courseLabel": "창업 일반",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.74610e8ebab5b4a1",
+          "courseLabel": "창의 공학 설계",
+          "hasOfficialRelations": true,
+          "relationCount": 7
+        },
+        {
+          "courseId": "kr.course.2022.high.895ce4021b21cb27",
+          "courseLabel": "채소 재배",
+          "hasOfficialRelations": true,
+          "relationCount": 11
+        },
+        {
+          "courseId": "kr.course.2022.high.fb69f2881889a7c3",
+          "courseLabel": "철근 콘크리트 시공",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.fe18edacdb85e3bb",
+          "courseLabel": "철도 신호 제어 시공",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.5ad7a1f55e918f4d",
+          "courseLabel": "체육1",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.402672abea801ba4",
+          "courseLabel": "체육2",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.a1421e3d62cd7dfe",
+          "courseLabel": "체조",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.0a9de20da2919e8b",
+          "courseLabel": "초고속망 서비스 관리 운용",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.d24f3d98d44135ae",
+          "courseLabel": "총무",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.a3f9d8c2fb04e255",
+          "courseLabel": "촬영·조명",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.5acef13c65d3e53f",
+          "courseLabel": "축산 식품 가공",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.fba889ede031ef21",
+          "courseLabel": "측량",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.bce60cb407c4fc09",
+          "courseLabel": "측량 기초",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.d8afef586621ec5e",
+          "courseLabel": "측정",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.a549a6ac2d9daf79",
+          "courseLabel": "치과 간호 임상 실무",
+          "hasOfficialRelations": true,
+          "relationCount": 4
+        },
+        {
+          "courseId": "kr.course.2022.high.a3d15fbd6e9c5689",
+          "courseLabel": "친환경 농업",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.301695b5982e974d",
+          "courseLabel": "카지노 서비스 실무",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.121a83875215dab8",
+          "courseLabel": "캐릭터 제작",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.f83d142bc88d2d3c",
+          "courseLabel": "컴퓨터 구조",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.eab96276d25ef903",
+          "courseLabel": "컴퓨터 그래픽",
+          "hasOfficialRelations": true,
+          "relationCount": 11
+        },
+        {
+          "courseId": "kr.course.2022.high.ec6fe406d90fde7a",
+          "courseLabel": "컴퓨터 네트워크",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.78d5b9482217ce1c",
+          "courseLabel": "컴퓨터 보안",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.abc258fd812aec63",
+          "courseLabel": "컴퓨터 시스템 일반",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.cc4f3c9ebdf94fbe",
+          "courseLabel": "컴퓨터 활용 생산",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.1bfabdf47af69ed1",
+          "courseLabel": "탄소 재료",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.205d511b8f821bdd",
+          "courseLabel": "텍스타일 디자인",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.f3cd83d80c3c5dfe",
+          "courseLabel": "토목 도면 해석과 제도",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.0a8d20221f8343f2",
+          "courseLabel": "토목 설계",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.460f95eba074037e",
+          "courseLabel": "토목 시공",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.2a89700692313ced",
+          "courseLabel": "토목 일반",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.498d0fc3afe37dd6",
+          "courseLabel": "토양‧지하수 관리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.3a10713b740b8c3f",
+          "courseLabel": "토질·수리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.8e8d021db945a151",
+          "courseLabel": "통신 시스템",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.63c0b375dfee5183",
+          "courseLabel": "통신 일반",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.997f40d6e251b180",
+          "courseLabel": "통합과학1",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.high.3e1de9b39f3e77e3",
+          "courseLabel": "통합과학2",
+          "hasOfficialRelations": true,
+          "relationCount": 10
+        },
+        {
+          "courseId": "kr.course.2022.high.39d5366ad464cca2",
+          "courseLabel": "통합사회1",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.80056ae9aae18563",
+          "courseLabel": "통합사회2",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.3b4d94595b6bef9f",
+          "courseLabel": "특수 가공",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.2a16fa2039973372",
+          "courseLabel": "특허 정보 조사･분석",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.ec2c2a0ee9eadb73",
+          "courseLabel": "특허 출원의 실제",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.ed56ca7523052a14",
+          "courseLabel": "판금·제관",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.68ed1fee7b9e69c0",
+          "courseLabel": "패션 디자인의 기초",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.95c96cd7604903e4",
+          "courseLabel": "패션 디자인의 실제",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.4f719905ce446d87",
+          "courseLabel": "패션 마케팅",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.4addb5f8b3b90f8a",
+          "courseLabel": "패션 상품 유통 관리",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.60458d09cdab8a6c",
+          "courseLabel": "패션 소재",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.f939be78732e644f",
+          "courseLabel": "패션 소품 디자인과 생산",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.aad894db6e4f70c8",
+          "courseLabel": "패턴 메이킹",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.88c184140f84cc74",
+          "courseLabel": "펄프ㆍ종이 제조",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.a9e7a946529b09e9",
+          "courseLabel": "편물",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.b8496f9963298ab3",
+          "courseLabel": "편집 디자인",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.9ad3660db2e523d9",
+          "courseLabel": "편집·사운드",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.eec2177a5a0d16e1",
+          "courseLabel": "폐기물 관리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.e195c23808ce3e12",
+          "courseLabel": "품질 관리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.1701cc64d761d30c",
+          "courseLabel": "프랑스어",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.26da649d802c8bc7",
+          "courseLabel": "프랑스어 회화",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.7343980bdac232d6",
+          "courseLabel": "프랑스어권 문화",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.47a95d6809a07dc4",
+          "courseLabel": "프레스 금형 설계",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.994bb7596db9b9d0",
+          "courseLabel": "프레스 금형 제작",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.bafb1ccbca72a399",
+          "courseLabel": "프레스 금형 조립",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.1e8b3617d18cdd76",
+          "courseLabel": "프레스 금형 품질 관리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.a517a19e7816eb72",
+          "courseLabel": "프로그래밍",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.51d7e378ba2f3d9b",
+          "courseLabel": "피복 아크 용접",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.95f5525a6317dd1b",
+          "courseLabel": "피부 미용",
+          "hasOfficialRelations": true,
+          "relationCount": 4
+        },
+        {
+          "courseId": "kr.course.2022.high.3125709b9df507ec",
+          "courseLabel": "한국 의복 구성과 생산",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.8d43b2271a6b33db",
+          "courseLabel": "한국사1",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.310c440f00072a3a",
+          "courseLabel": "한국사2",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.b70eb35a8c813c87",
+          "courseLabel": "한국지리 탐구",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.8a9d2db677d4856f",
+          "courseLabel": "한문",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.high.9d8575499e88bf5d",
+          "courseLabel": "한문 고전 읽기",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.high.ad492f7fd632b9f5",
+          "courseLabel": "한식 조리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.3404bd63079775a3",
+          "courseLabel": "한우 사육",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.8db959b294a67e0b",
+          "courseLabel": "합창 · 합주",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.c69570dd7478de10",
+          "courseLabel": "항공기 가스 터빈 엔진 정비",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.c86a8c3cc5c11bd5",
+          "courseLabel": "항공기 계통 정비",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.e54fcf021861bd60",
+          "courseLabel": "항공기 기체 정비",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.a5206eb996b07c34",
+          "courseLabel": "항공기 기체 제작",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.dbd6967167e07909",
+          "courseLabel": "항공기 실무 기초",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.3c6b1b8ec76b9d14",
+          "courseLabel": "항공기 왕복 엔진 정비",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.624e7fc1cabde913",
+          "courseLabel": "항공기 일반",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.dba9341f7ca642d8",
+          "courseLabel": "항공기 전기·전자 장비 정비",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.99e32aa01eebc8ab",
+          "courseLabel": "항공기 전기·전자 장비 제작",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.15886cc35ba4bcc6",
+          "courseLabel": "항공기 정비 관리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.9f1f86980055dafd",
+          "courseLabel": "항만 물류 일반",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.33a5a51f1839b670",
+          "courseLabel": "항해 기초",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.6febbf6901f1b2bc",
+          "courseLabel": "항해사 직무",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.2900f37a9e304c90",
+          "courseLabel": "해면 양식",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.f4fdcf6d2286dfc8",
+          "courseLabel": "해사 법규",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.f1f28f98cd9704ab",
+          "courseLabel": "해사 영어",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.0c98b8328af859ee",
+          "courseLabel": "해사 일반",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.582b7833d632c939",
+          "courseLabel": "해양 레저 관광",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.a5a0c675abc6fb6d",
+          "courseLabel": "해양 생산 일반",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.b2f2559e04d52c98",
+          "courseLabel": "해양 오염･방제",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.7277879b1798cf7e",
+          "courseLabel": "해양의 이해",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.e56e90f718cb34b9",
+          "courseLabel": "행성우주과학",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.high.8f1f1767bf3e4081",
+          "courseLabel": "헤어 미용",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.high.c89123c129b62d34",
+          "courseLabel": "현대사회와 윤리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.483e0ad36fe5a98e",
+          "courseLabel": "호텔 객실 서비스 실무",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.ec77b005e4f4daf5",
+          "courseLabel": "호텔 식음료 서비스 실무",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.a8ab5a315df4eafa",
+          "courseLabel": "화공 안전 관리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.c7d1e5439d99d99d",
+          "courseLabel": "화공 플랜트 기계",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.613eb84fedbd5fe9",
+          "courseLabel": "화공 플랜트 전기",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.0c5b1f3120b2156f",
+          "courseLabel": "화법과 언어",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.high.154068eb2aaf3715",
+          "courseLabel": "화장품 제조",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.a9a3a9a36115d467",
+          "courseLabel": "화학",
+          "hasOfficialRelations": true,
+          "relationCount": 7
+        },
+        {
+          "courseId": "kr.course.2022.high.c5c0bc921a7084d8",
+          "courseLabel": "화학 공정 유지 운영",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.8ee63c4c2ca3dfe5",
+          "courseLabel": "화학 물질 관리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.bbb3fc715f09a9f1",
+          "courseLabel": "화학 반응의 세계",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.high.526bbc98b7b4728f",
+          "courseLabel": "화학 분석",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.55501d4acb948b2a",
+          "courseLabel": "화학 실험",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.9218b8a74a9ab374",
+          "courseLabel": "화훼 장식",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.a5bb370a21946a4d",
+          "courseLabel": "화훼 장식 기초",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.1ed67b42cdc69d6b",
+          "courseLabel": "화훼 재배",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.4614f96eca3261d1",
+          "courseLabel": "확률과 통계",
+          "hasOfficialRelations": true,
+          "relationCount": 4
+        },
+        {
+          "courseId": "kr.course.2022.high.734bc29d3c0e2b92",
+          "courseLabel": "환경 기술",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.9ac8c7209352f349",
+          "courseLabel": "환경 생태 복원 관리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.457dfb412722b0c8",
+          "courseLabel": "환경 유해 관리",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.ba0d8880d017eb58",
+          "courseLabel": "환경 화학 기초",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.d80ac67c2beeec57",
+          "courseLabel": "환경과 생태",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.ae67318db3f13edd",
+          "courseLabel": "활어 취급 일반",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.a1d57d3e9072022a",
+          "courseLabel": "회계 실무",
+          "hasOfficialRelations": true,
+          "relationCount": 4
+        },
+        {
+          "courseId": "kr.course.2022.high.bbd4a5f43de88b5e",
+          "courseLabel": "회계 원리",
+          "hasOfficialRelations": true,
+          "relationCount": 4
+        },
+        {
+          "courseId": "kr.course.2022.high.0693f8be98df784d",
+          "courseLabel": "회계 정보 처리 시스템",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.4b33a0aa09c94031",
+          "courseLabel": "LED 기술 개발",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.high.724cd3639b2b5f46",
+          "courseLabel": "VR·AR 콘텐츠 제작",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        }
+      ],
+      "coursesWithOfficialRelations": 179,
+      "coursesWithoutOfficialRelations": 580,
+      "totalCourses": 759
+    },
     "courseRelations": {
       "byBasisKind": {
         "official-source": 39
@@ -22,60 +4583,800 @@
       "total": 39
     },
     "coverage": {
-      "coveredCourses": 759,
+      "coveredCourses": 179,
       "graphNodes": 50749,
-      "participatingTopics": 50749,
-      "rootTopics": 720,
+      "participatingTopics": 657,
+      "rootTopics": 50382,
       "totalCourses": 759,
-      "uncoveredCourseLabels": []
+      "uncoveredCourseLabels": [
+        "3D 프린터 개발",
+        "3D 프린터용 제품 제작",
+        "가금 사육",
+        "가스 안전 관리",
+        "가스 텅스텐 아크 용접",
+        "가전 기기 시스템 소프트웨어 개발",
+        "가전 기기 하드웨어 개발",
+        "가전 기기·기구 개발",
+        "건강 기능 식품 가공",
+        "건물 정보 관리 기초",
+        "건설 광산 기계 설치·정비",
+        "건설 안전 관리",
+        "건설 재료",
+        "건축 기초 실습",
+        "건축 도면 해석과 제도",
+        "건축 도장 시공",
+        "건축 마감 시공",
+        "건축 목공 시공",
+        "건축 설계",
+        "건축 일반",
+        "게임 기획",
+        "게임 디자인",
+        "게임 프로그래밍",
+        "경제",
+        "경제 수학",
+        "고객 관리",
+        "고급 기하",
+        "고급 대수",
+        "고급 미적분",
+        "고급 생명과학",
+        "고급 지구과학",
+        "고분자 제품 제조",
+        "곤충 사육",
+        "곤충 산업 일반",
+        "공간 정보 구축",
+        "공간 정보 융합 서비스",
+        "공급망 관리",
+        "공업 일반",
+        "공업 화학",
+        "공예 일반",
+        "공예 재료와 도구",
+        "공작 기계 설치·정비",
+        "공정 관리",
+        "공중 보건",
+        "과수 재배",
+        "과학의 역사와 문화",
+        "관광 농업",
+        "관광 문화와 자원",
+        "관광 서비스",
+        "관광 영어",
+        "관광 일반",
+        "관광 일본어",
+        "관광 중국어",
+        "관광 콘텐츠 개발",
+        "관상 생물 기초",
+        "교육의 이해",
+        "교통 계획･설계",
+        "구매 조달",
+        "국내 여행 서비스 실무",
+        "국외 여행 서비스 실무",
+        "국제 관계의 이해",
+        "국토 도시 계획",
+        "극 창작",
+        "근해 어업",
+        "금속 열처리",
+        "금속 재료 가공",
+        "금속 재료 신뢰성 시험",
+        "금융 일반",
+        "금융과 경제생활",
+        "기계 기초 역학",
+        "기계 소프트웨어 개발",
+        "기계 수동 조립",
+        "기계 안전 관리",
+        "기계 일반",
+        "기계 제도",
+        "기계 제어 설계",
+        "기관 실무 기초",
+        "기관 직무 일반",
+        "기관사 직무",
+        "기능성 정밀 화학 제품 제조",
+        "기업 자원 통합 관리",
+        "기업과 경영",
+        "기초 제도",
+        "기초 조리",
+        "기후변화와 환경생태",
+        "김치･반찬 가공",
+        "내선 공사",
+        "내수면 양식",
+        "냉동 공조 유지 보수 관리",
+        "냉동 공조 일반",
+        "냉동 공조 장치 설치",
+        "네트워크 프로그래밍",
+        "노동 인권과 산업 안전 보건",
+        "노무 관리",
+        "농산물 거래",
+        "농산물 유통",
+        "농업 경영",
+        "농업 기계",
+        "농업 기계 공작",
+        "농업 기계 운전 작업",
+        "농업 기초 기술",
+        "농업 생산 환경 일반",
+        "농업 생산 환경 조성",
+        "농업 이해",
+        "농업 정보 관리",
+        "농업 토목 시공ㆍ측량",
+        "농업 토목 제도ㆍ설계",
+        "농업용 기계 설치ㆍ정비",
+        "농업용 전기ㆍ전자",
+        "농촌 체험 상품 개발",
+        "농촌 체험 시설 운영",
+        "니트 의류 생산",
+        "대기 관리",
+        "데이터 과학",
+        "도금",
+        "도시의 미래 탐구",
+        "도자기",
+        "도자기 공예",
+        "독일어 회화",
+        "동물 자원",
+        "동아시아 역사 기행",
+        "돼지 사육",
+        "드로잉",
+        "드론 기초",
+        "디스플레이 생산",
+        "디저트 조리",
+        "디지털 논리 회로",
+        "디지털 디자인",
+        "디지털과 직업 생활",
+        "떡 제조",
+        "러시아 문화",
+        "러시아어 회화",
+        "레저 서비스 일반",
+        "로봇 기구 개발",
+        "로봇 소프트웨어 개발",
+        "로봇 용접",
+        "로봇 유지 보수",
+        "로봇 지능 개발",
+        "로봇 하드웨어 설계",
+        "마케팅과 광고",
+        "만화 콘텐츠 제작",
+        "말 사육",
+        "매장 판매",
+        "매체 의사소통",
+        "목공예",
+        "목재 가공",
+        "무대미술과 기술",
+        "무선 통신 구축·운용",
+        "무역 금융 업무",
+        "무역 일반",
+        "무용 감상과 비평",
+        "무용 기초 실기",
+        "무용 전공 실기",
+        "무용과 매체",
+        "무용과 몸",
+        "무용의 이해",
+        "문예 창작의 이해",
+        "문장론",
+        "문학 감상과 비평",
+        "문학과 매체",
+        "문학과 영상",
+        "문화 콘텐츠 산업 일반",
+        "물류 관리",
+        "물리학 실험",
+        "미디어 영어",
+        "미술",
+        "미술 매체 탐구",
+        "미술 이론",
+        "미술과 사회",
+        "미술사",
+        "미용의 기초",
+        "밀링 가공",
+        "바리스타",
+        "바이오 기초 화학",
+        "바이오 의약품 제조",
+        "바이오 화학 제품 제조",
+        "바텐더",
+        "반도체 개발",
+        "반도체 장비",
+        "반도체 재료",
+        "반도체 제조",
+        "반려동물 관리",
+        "발명과 기업가 정신",
+        "발명과 디자인",
+        "발명과 메이커",
+        "발전 설비 운영",
+        "방송 콘텐츠 제작",
+        "방적·방사",
+        "배관 시공",
+        "버섯 재배",
+        "법과 사회",
+        "베트남어 회화",
+        "보건 간호",
+        "보건 의료 법규",
+        "보육 과정",
+        "보육 실습",
+        "보일러 설치·정비",
+        "보일러 장치 설치",
+        "보험 일반",
+        "복지 서비스의 기초",
+        "비서",
+        "비즈니스 커뮤니케이션",
+        "빅 데이터 분석",
+        "사무 관리",
+        "사무 행정",
+        "사물 인터넷과 센서 제어",
+        "사진 촬영",
+        "사진 표현 기법",
+        "사진과 삶",
+        "사진의 이해",
+        "사출 금형 설계",
+        "사출 금형 제작",
+        "사출 금형 조립",
+        "사출 금형 품질 관리",
+        "사회 복지 시설 실무",
+        "사회 복지 시설의 이해",
+        "사회와 문화",
+        "산림 보호",
+        "산림 자원",
+        "산림 조성",
+        "산림 휴양",
+        "산업 설비",
+        "산업 안전 보건 기초",
+        "산업 잠수",
+        "산업용 전자 기기 소프트웨어 개발",
+        "산업용 전자 기기 하드웨어 개발",
+        "산업용 전자 기기·기구 개발",
+        "삶과 종교",
+        "상업 경제",
+        "생명과학 실험",
+        "생활 서비스 산업의 이해",
+        "서양 의복 구성과 생산",
+        "선박 갑판 관리",
+        "선박 건조",
+        "선박 구조",
+        "선박 기관 정비",
+        "선박 기기 운용",
+        "선박 보조 기계",
+        "선박 보조 기계 정비",
+        "선박 안전 관리",
+        "선박 운용",
+        "선박 운항 관리",
+        "선박 이론",
+        "선박 통신",
+        "선반 가공",
+        "선체 도면 독도와 제도",
+        "선체 생산 설계",
+        "선체 조립",
+        "선화 운송",
+        "섬유 공정",
+        "섬유 재료",
+        "성공적인 직업 생활",
+        "성형 가공",
+        "세계 문화와 영어",
+        "세계사",
+        "세계시민과 지리",
+        "세라믹 원리·공정",
+        "소방 건축",
+        "소방 기계",
+        "소방 기초",
+        "소방 법규",
+        "소방 시설 공사",
+        "소방 시설 설계",
+        "소방 안전 관리",
+        "소방 전기",
+        "소설 창작",
+        "소음 진동 관리",
+        "소형 무인기 운용 ․ 조종",
+        "소형 무인기 정비",
+        "송·변전 배전 설비 운영",
+        "수도작 재배",
+        "수산 경영",
+        "수산 생물",
+        "수산 식품 가공",
+        "수산 양식 일반",
+        "수산 일반",
+        "수산 종묘 생산",
+        "수산 질병 관리",
+        "수산 해양 창업",
+        "수산･해운 산업 기초",
+        "수산물 유통",
+        "수상 레저 기구 조종",
+        "수의 보조",
+        "수질 관리",
+        "수학과 문화",
+        "수학과제 탐구",
+        "스마트 공장 운용",
+        "스마트 공장 일반",
+        "스마트 공정 제어",
+        "스마트 문화 앱 콘텐츠 제작",
+        "스마트 설비 실무",
+        "스마트 시티 기초",
+        "스마트 팜 운영",
+        "스페인어 회화",
+        "스포츠 개론",
+        "스포츠 교육",
+        "스포츠 문화",
+        "스포츠 생리의학",
+        "스포츠 행정 및 경영",
+        "승강기 설치·정비",
+        "시 창작",
+        "시각 디자인",
+        "시스템 관리 및 지원",
+        "시스템 프로그래밍",
+        "시창 · 청음",
+        "식공간 연출",
+        "식음료 기초",
+        "식품 가공 기술",
+        "식품 과학",
+        "식품 분석",
+        "식품 위생",
+        "식품 품질 관리",
+        "식품과 영양",
+        "신재생 에너지 실무",
+        "실내 디자인",
+        "실생활 영어 회화",
+        "실용 통계",
+        "심화 영어",
+        "심화 영어 독해와 작문",
+        "아동 복지",
+        "안무",
+        "알고리즘 설계",
+        "압연",
+        "애니메이션 기초",
+        "애니메이션 콘텐츠 제작",
+        "애완동물 미용",
+        "양식 생물 질병",
+        "양식 조리",
+        "어선 전문",
+        "어촌 체험 상품 개발",
+        "어촌 체험 시설 운영",
+        "언어생활과 한자",
+        "에너지 공업 기초",
+        "에너지 설비 유틸리티",
+        "에너지 화공 소재 생산",
+        "여행지리",
+        "역사로 탐구하는 현대 세계",
+        "역학 기초",
+        "연극",
+        "연극과 몸",
+        "연극과 삶",
+        "연기",
+        "연삭 가공",
+        "열기관",
+        "염색･가공",
+        "염색·가공 기초",
+        "영미 문학 읽기",
+        "영상 제작 기초",
+        "영어 발표와 토론",
+        "영유아 교수 방법",
+        "영화 감상과 비평",
+        "영화 제작 실습",
+        "영화 콘텐츠 제작",
+        "영화와 삶",
+        "영화의 이해",
+        "예산･자금",
+        "오토바이 정비",
+        "외선 공사",
+        "요트 조종",
+        "용융 세라믹 제조",
+        "운동과 건강",
+        "운반 하역 기계 설치·정비",
+        "원산지 관리",
+        "원양 어업",
+        "유선 통신 구축·운용",
+        "유제품 가공",
+        "유체 기계",
+        "유통 관리",
+        "유통 일반",
+        "육종",
+        "융합과학 탐구",
+        "음료･주류 가공",
+        "음악",
+        "음악 감상과 비평",
+        "음악 공연 실습",
+        "음악 연주와 창작",
+        "음악 이론",
+        "음악 전공 실기",
+        "음악과 문화",
+        "음악과 미디어",
+        "음악사",
+        "응용 프로그래밍 개발",
+        "응용 프로그래밍 화면 구현",
+        "의료 기기 생산",
+        "의료 기기 연구 개발",
+        "의료 기기 인허가",
+        "이산화탄소·가스 메탈 아크 용접",
+        "인간과 경제활동",
+        "인간과 심리",
+        "인간과 철학",
+        "인간과 환경",
+        "인사",
+        "인체 구조와 기능",
+        "일반 잠수",
+        "일본어 회화",
+        "일식 조리",
+        "임산 가공",
+        "임산물 생산",
+        "임업 종묘",
+        "자동 제어 기기 제작",
+        "자동 제어 시스템 운영",
+        "자동 제어 시스템 유지 정비",
+        "자동차 기관",
+        "자동차 도장",
+        "자동차 섀시",
+        "자동차 섀시 정비",
+        "자동차 엔진 정비",
+        "자동차 일반",
+        "자동차 전기·전자 장치 정비",
+        "자동차 전기·전자 제어",
+        "자동차 정비 검사",
+        "자동차 차체 정비",
+        "자동차 튜닝",
+        "자동화 설비",
+        "자료 구조",
+        "자재 관리",
+        "자전거 정비",
+        "재료 시험",
+        "재료 일반",
+        "재배",
+        "전기 기기",
+        "전기 기기 설계",
+        "전기 기기 유지 보수",
+        "전기 기기 제작",
+        "전기 설비",
+        "전기 설비 운영",
+        "전기 철도 시공",
+        "전기 철도 시설물 유지 보수",
+        "전기 회로",
+        "전기･전자 측정",
+        "전기·전자 일반",
+        "전문 수학",
+        "전시･컨벤션･이벤트 실무",
+        "전시･컨벤션･이벤트 일반",
+        "전자 부품 기구 개발",
+        "전자 부품 생산",
+        "전자 상거래 실무",
+        "전자 상거래 일반",
+        "전자 응용 기기 기구 개발",
+        "전자 응용 기기 소프트웨어 개발",
+        "전자 응용 기기 하드웨어 개발",
+        "전자 제어",
+        "전자 제품 생산",
+        "전자 제품 설치 정비",
+        "전자 통신 운용",
+        "전자 회로",
+        "전장 생산",
+        "전특작 재배",
+        "정보 보호 관리",
+        "정보 처리와 관리",
+        "정보 통신",
+        "정보 통신 기기 소프트웨어 개발",
+        "정보 통신 기기 하드웨어 개발",
+        "정치",
+        "젖소 사육",
+        "제강",
+        "제과",
+        "제빵",
+        "제선",
+        "제조 화학",
+        "제품 디자인",
+        "조경",
+        "조경 관리",
+        "조경 설계",
+        "조경 시공",
+        "조경 식물 관리",
+        "조림",
+        "조형",
+        "조형 탐구",
+        "종자 생산",
+        "종축",
+        "주조",
+        "중국어 회화",
+        "중식 조리",
+        "지구과학 실험",
+        "지식 재산 관리",
+        "지적",
+        "직무 수학",
+        "창구 사무",
+        "창업 일반",
+        "철근 콘크리트 시공",
+        "철도 신호 제어 시공",
+        "체육1",
+        "초고속망 서비스 관리 운용",
+        "총무",
+        "축산 식품 가공",
+        "측량",
+        "측량 기초",
+        "측정",
+        "친환경 농업",
+        "카지노 서비스 실무",
+        "컴퓨터 구조",
+        "컴퓨터 네트워크",
+        "컴퓨터 보안",
+        "컴퓨터 시스템 일반",
+        "컴퓨터 활용 생산",
+        "텍스타일 디자인",
+        "토목 도면 해석과 제도",
+        "토목 설계",
+        "토목 시공",
+        "토목 일반",
+        "토양‧지하수 관리",
+        "토질·수리",
+        "통신 시스템",
+        "통합사회1",
+        "통합사회2",
+        "특수 가공",
+        "특허 정보 조사･분석",
+        "특허 출원의 실제",
+        "판금·제관",
+        "패션 디자인의 기초",
+        "패션 디자인의 실제",
+        "패션 마케팅",
+        "패션 소재",
+        "패션 소품 디자인과 생산",
+        "패턴 메이킹",
+        "펄프ㆍ종이 제조",
+        "편물",
+        "편집 디자인",
+        "편집·사운드",
+        "폐기물 관리",
+        "품질 관리",
+        "프랑스어 회화",
+        "프레스 금형 설계",
+        "프레스 금형 제작",
+        "프레스 금형 조립",
+        "프레스 금형 품질 관리",
+        "프로그래밍",
+        "피복 아크 용접",
+        "한국 의복 구성과 생산",
+        "한국사1",
+        "한국사2",
+        "한국지리 탐구",
+        "한식 조리",
+        "한우 사육",
+        "합창 · 합주",
+        "항공기 가스 터빈 엔진 정비",
+        "항공기 계통 정비",
+        "항공기 기체 정비",
+        "항공기 기체 제작",
+        "항공기 실무 기초",
+        "항공기 왕복 엔진 정비",
+        "항공기 일반",
+        "항공기 전기·전자 장비 정비",
+        "항공기 전기·전자 장비 제작",
+        "항공기 정비 관리",
+        "항만 물류 일반",
+        "항해 기초",
+        "항해사 직무",
+        "해면 양식",
+        "해사 법규",
+        "해사 영어",
+        "해사 일반",
+        "해양 레저 관광",
+        "해양 생산 일반",
+        "해양 오염･방제",
+        "해양의 이해",
+        "현대사회와 윤리",
+        "호텔 객실 서비스 실무",
+        "호텔 식음료 서비스 실무",
+        "화공 안전 관리",
+        "화공 플랜트 기계",
+        "화공 플랜트 전기",
+        "화장품 제조",
+        "화학 공정 유지 운영",
+        "화학 물질 관리",
+        "화학 분석",
+        "화학 실험",
+        "화훼 장식",
+        "화훼 장식 기초",
+        "화훼 재배",
+        "환경 기술",
+        "환경 생태 복원 관리",
+        "환경 유해 관리",
+        "환경 화학 기초",
+        "환경과 생태",
+        "활어 취급 일반",
+        "회계 정보 처리 시스템",
+        "LED 기술 개발",
+        "VR·AR 콘텐츠 제작"
+      ]
     },
     "relations": {
       "byBasisKind": {
-        "official-source": 39,
-        "repository-authored": 49990
+        "official-source": 508
       },
       "byRelationKind": {
-        "recommended-before": 50029
+        "recommended-before": 39,
+        "required-prerequisite": 469
       },
       "byReviewStatus": {
-        "internal-reviewed": 50029
+        "internal-reviewed": 508
       },
-      "total": 50029
+      "total": 508
     }
   },
   "middle": {
+    "courseCoverage": {
+      "byCourse": [
+        {
+          "courseId": "kr.course.2022.middle.aaaae5ae7d8548a8",
+          "courseLabel": "과학",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.middle.a0f8efae1e2bd119",
+          "courseLabel": "국어",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.middle.92c889afa560b9d8",
+          "courseLabel": "기술·가정",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.middle.07f3bfc5942e5a74",
+          "courseLabel": "도덕",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.middle.570335cd5c8192d8",
+          "courseLabel": "미술",
+          "hasOfficialRelations": true,
+          "relationCount": 4
+        },
+        {
+          "courseId": "kr.course.2022.middle.9cd4d075bde4ad85",
+          "courseLabel": "보건",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.middle.dccd29079b173ca0",
+          "courseLabel": "사회",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.middle.66de94cebc86b61e",
+          "courseLabel": "생활 독일어",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.middle.2178b9d0de944d75",
+          "courseLabel": "생활 러시아어",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.middle.71b0ac4b7d3259ff",
+          "courseLabel": "생활 베트남어",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.middle.7b40e7aeddb08bc4",
+          "courseLabel": "생활 스페인어",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.middle.8783223c83ba74b3",
+          "courseLabel": "생활 아랍어",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.middle.91407698abb03db8",
+          "courseLabel": "생활 일본어",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        },
+        {
+          "courseId": "kr.course.2022.middle.19401e7f882c4108",
+          "courseLabel": "생활 중국어",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.middle.333940c638f6d1b2",
+          "courseLabel": "생활 프랑스어",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.middle.373e9959b3cc1af3",
+          "courseLabel": "수학",
+          "hasOfficialRelations": true,
+          "relationCount": 30
+        },
+        {
+          "courseId": "kr.course.2022.middle.718b305249a94a92",
+          "courseLabel": "역사",
+          "hasOfficialRelations": true,
+          "relationCount": 1
+        },
+        {
+          "courseId": "kr.course.2022.middle.fb948cdadbdc5da1",
+          "courseLabel": "영어",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.middle.b39f1ce9e94d344f",
+          "courseLabel": "음악",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.middle.c197990b3a23fdd2",
+          "courseLabel": "정보",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.middle.4edb870c5459d216",
+          "courseLabel": "진로와 직업",
+          "hasOfficialRelations": true,
+          "relationCount": 3
+        },
+        {
+          "courseId": "kr.course.2022.middle.fa59961d660b0ad4",
+          "courseLabel": "체육",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.middle.43316f44a956438c",
+          "courseLabel": "한문",
+          "hasOfficialRelations": false,
+          "relationCount": 0
+        },
+        {
+          "courseId": "kr.course.2022.middle.ec48c1127e519a2e",
+          "courseLabel": "환경",
+          "hasOfficialRelations": true,
+          "relationCount": 2
+        }
+      ],
+      "coursesWithOfficialRelations": 15,
+      "coursesWithoutOfficialRelations": 9,
+      "totalCourses": 24
+    },
     "coverage": {
-      "coveredCourses": 24,
+      "coveredCourses": 15,
       "graphNodes": 2160,
-      "participatingTopics": 2160,
-      "rootTopics": 24,
+      "participatingTopics": 83,
+      "rootTopics": 2119,
       "totalCourses": 24,
-      "uncoveredCourseLabels": []
+      "uncoveredCourseLabels": [
+        "과학",
+        "기술·가정",
+        "생활 중국어",
+        "생활 프랑스어",
+        "영어",
+        "음악",
+        "정보",
+        "체육",
+        "한문"
+      ]
     },
     "relations": {
       "byBasisKind": {
-        "official-source": 30,
-        "repository-authored": 2125
+        "official-source": 56
       },
       "byRelationKind": {
-        "recommended-before": 2125,
-        "required-prerequisite": 30
+        "required-prerequisite": 56
       },
       "byReviewStatus": {
-        "internal-reviewed": 2155
+        "internal-reviewed": 56
       },
-      "total": 2155
+      "total": 56
     }
   },
   "policy": {
     "courseProgression": "교과 총론이 직접 설명한 연계·심화만 reviewed-recommendation으로 기록한다.",
-    "officialRequired": "공식 내용 체계·해설이 직접 뒷받침하는 관계만 required-prerequisite로 기록한다.",
-    "reviewedNavigation": "공식 문서의 과목·영역·성취기준 배열은 internal-reviewed recommended-before 탐색 순서이며 공식 이수 조건이 아니다."
+    "officialOnly": "학습 관계와 학교급 전이는 공식 문서가 직접 뒷받침하는 official-source 레코드만 공개한다.",
+    "officialRequired": "공식 내용 체계·해설이 직접 뒷받침하는 관계만 required-prerequisite로 기록한다."
   },
   "releaseIds": {
-    "bridges": "kr-2022-middle-high-bridge-v0.4.0-candidate",
-    "high": "kr-2022-high-v0.4.0-candidate",
-    "middle": "kr-2022-middle-v0.4.0-candidate"
+    "bridges": "kr-2022-middle-high-bridge-v0.5.0-candidate",
+    "high": "kr-2022-high-v0.5.0-candidate",
+    "middle": "kr-2022-middle-v0.5.0-candidate"
   },
   "validation": {
     "danglingReferences": 0,
@@ -84,5 +5385,5 @@
     "highDag": true,
     "middleDag": true
   },
-  "version": "0.4.0-candidate"
+  "version": "0.5.0-candidate"
 }

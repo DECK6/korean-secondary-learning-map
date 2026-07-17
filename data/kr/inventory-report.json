@@ -1,9 +1,9 @@
 {
   "bridges": {
     "coverageGaps": 1,
-    "elementaryTransitions": 19,
+    "elementaryTransitions": 290,
     "reviewRecords": 1,
-    "transitionAlignments": 50
+    "transitionAlignments": 175
   },
   "comparisonBaselines": {
     "elementary": {
@@ -27,7 +27,7 @@
     "coverageGaps": 2,
     "creditRules": 3,
     "domains": 5169,
-    "learningRelations": 50029,
+    "learningRelations": 508,
     "pathways": 33,
     "reviewRecords": 1,
     "standards": 50749,
@@ -53,7 +53,7 @@
     "courses": 24,
     "coverageGaps": 2,
     "domains": 149,
-    "learningRelations": 2155,
+    "learningRelations": 56,
     "reviewRecords": 1,
     "standards": 714,
     "subjectGroups": 13,
@@ -77,5 +77,5 @@
   },
   "repeatedProfessionalCommonOccurrenceCount": 912,
   "uniqueStandardCount": 51463,
-  "version": "0.4.0-candidate"
+  "version": "0.5.0-candidate"
 }

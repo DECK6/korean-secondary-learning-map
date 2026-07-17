@@ -30,12 +30,22 @@ const collectionNames = {
   high: ['subject-groups', 'courses', 'domains', 'standards', 'topics', 'clusters', 'learning-relations', 'course-relations', 'credit-rules', 'choice-sets', 'pathways', 'coverage-gaps'],
   bridges: ['transition-alignments', 'elementary-transitions', 'coverage-gaps'],
 };
+const officialRelationCollections = new Set(['learning-relations', 'course-relations', 'transition-alignments', 'elementary-transitions']);
+
+function officialRecords(records, label) {
+  const unsupported = records.find((record) => record.basisKind !== 'official-source');
+  if (unsupported) throw new Error(`${label} contains non-official relation ${unsupported.id}`);
+  return records;
+}
 
 async function loadCollections() {
   const loaded = {};
   for (const [profile, names] of Object.entries(collectionNames)) {
     loaded[profile] = {};
-    for (const name of names) loaded[profile][name] = (await readJson(join(root, 'data/kr', profile, `${name}.json`))).records;
+    for (const name of names) {
+      const records = (await readJson(join(root, 'data/kr', profile, `${name}.json`))).records;
+      loaded[profile][name] = officialRelationCollections.has(name) ? officialRecords(records, `${profile}/${name}`) : records;
+    }
   }
   return loaded;
 }
@@ -200,6 +210,6 @@ if (checkOnly) {
     const contents = await readFile(join(root, path));
     artifacts.push({ path, mediaType, bytes: contents.byteLength, sha256: sha256(contents) });
   }
-  await atomicWrite(join(outDir, 'manifest.json'), `${JSON.stringify({ version: '0.4.0-candidate', graphNodeCount: built.graphCount, artifacts }, null, 2)}\n`);
+  await atomicWrite(join(outDir, 'manifest.json'), `${JSON.stringify({ version: '0.5.0-candidate', graphNodeCount: built.graphCount, artifacts }, null, 2)}\n`);
   console.log(`ontology build passed: ${built.graphCount} graph nodes`);
 }

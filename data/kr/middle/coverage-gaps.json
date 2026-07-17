@@ -28,7 +28,7 @@
       "status": "open"
     },
     {
-      "description": "전 과목 탐색 그래프와 수학의 공식 선수 관계는 내부 검토되었다. 비강제 탐색 순서를 추가적인 교과 전문가 검토로 더 정밀화하는 작업은 남아 있다.",
+      "description": "수학의 공식 선수 관계는 내부 검토되었다. 공식 문서 근거가 있는 다른 과목의 선수 관계를 추가 발굴하는 작업은 남아 있다.",
       "id": "gap.middle.subject-expert-refinement-pending",
       "severity": "medium",
       "sourceRefs": [],
@@ -36,5 +36,5 @@
     }
   ],
   "recordType": "coverageGaps",
-  "releaseId": "kr-2022-middle-v0.4.0-candidate"
+  "releaseId": "kr-2022-middle-v0.5.0-candidate"
 }

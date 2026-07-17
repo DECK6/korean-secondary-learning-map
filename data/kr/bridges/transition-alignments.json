@@ -1,39 +1,70 @@
 {
   "$schema": "../../../schema/bridge-profile.schema.json#/$defs/transitionAlignmentCollection",
   "profile": "bridges",
-  "recordCount": 50,
+  "recordCount": 175,
   "records": [
     {
-      "basis": "reviewed-middle-to-high-course-foundation-map-v1",
-      "basisKind": "repository-authored",
+      "basis": "교육부 고시 제2022-33호 별책13 미술과 교육과정 p.29 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
       "fromCourseIds": [
-        "kr.course.2022.middle.7b40e7aeddb08bc4"
+        "kr.course.2022.middle.570335cd5c8192d8"
       ],
       "fromSchoolLevel": "middle",
-      "fromTopicIds": [],
-      "id": "kr.transition.08c0055e3fe7fb1313d4a0a7",
-      "reason": "중학교 생활 스페인어에서 고등학교 스페인어의 기초로 이어지는 검토된 과정 수준 탐색 연결이다. 입학·이수 요건을 뜻하지 않는다.",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.2f5b36994dadcb26e1ba"
+      ],
+      "id": "kr.transition.038f26e7267f9041f6f4abbf",
+      "reason": "미술 다원성 존중을 다원적 가치의 이해와 존중으로 심화한다.",
       "reviewStatus": "internal-reviewed",
       "sourceRefs": [
-        "kr-moe-2022-33-annex16"
+        "kr-moe-2022-33-annex13"
       ],
       "toCourseIds": [
-        "kr.course.2022.high.a2f022fa12c0d889"
+        "kr.course.2022.high.820636c315f9a521"
       ],
       "toSchoolLevel": "high",
-      "toTopicIds": [],
-      "transitionKind": "continues"
+      "toTopicIds": [
+        "kr.topic.2022.high.cdf8d9d1516c539c9378"
+      ],
+      "transitionKind": "deepens"
     },
     {
-      "basis": "reviewed-middle-to-high-course-foundation-map-v1",
-      "basisKind": "repository-authored",
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.53 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
       "fromCourseIds": [
         "kr.course.2022.middle.fa59961d660b0ad4"
       ],
       "fromSchoolLevel": "middle",
-      "fromTopicIds": [],
-      "id": "kr.transition.0b4931f8fa66ad16cb5045b2",
-      "reason": "중학교 체육에서 고등학교 체육2의 기초로 이어지는 검토된 과정 수준 탐색 연결이다. 입학·이수 요건을 뜻하지 않는다.",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.4d9a2ceffb734705b825"
+      ],
+      "id": "kr.transition.0509a5bb7d505adfc956eb99",
+      "reason": "중학교 정신 건강 활동 유형을 고교 신체활동의 건강 효과 탐구로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.5ad7a1f55e918f4d"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.b64c949fcb36426f7c49"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.62 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.ca518dff5461a05aec36"
+      ],
+      "id": "kr.transition.055d085bb390de5cd5df9182",
+      "reason": "중학교 체력 증진 운동 방법을 고교의 과학적 원리 적용으로 심화한다.",
       "reviewStatus": "internal-reviewed",
       "sourceRefs": [
         "kr-moe-2022-33-annex11"
@@ -42,50 +73,535 @@
         "kr.course.2022.high.402672abea801ba4"
       ],
       "toSchoolLevel": "high",
-      "toTopicIds": [],
-      "transitionKind": "continues"
+      "toTopicIds": [
+        "kr.topic.2022.high.2a4a143df668f9c3ea2d"
+      ],
+      "transitionKind": "deepens"
     },
     {
-      "basis": "reviewed-middle-to-high-course-foundation-map-v1",
-      "basisKind": "repository-authored",
+      "basis": "교육부 고시 제2022-33호 별책13 미술과 교육과정 p.29 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
       "fromCourseIds": [
-        "kr.course.2022.middle.a0f8efae1e2bd119"
+        "kr.course.2022.middle.570335cd5c8192d8"
       ],
       "fromSchoolLevel": "middle",
-      "fromTopicIds": [],
-      "id": "kr.transition.18ffb278214643ff8d7ddda0",
-      "reason": "중학교 국어에서 고등학교 공통국어1의 기초로 이어지는 검토된 과정 수준 탐색 연결이다. 입학·이수 요건을 뜻하지 않는다.",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.f3ff7b199667e5a03f6e"
+      ],
+      "id": "kr.transition.064991935e8b9dabbc09cb2c",
+      "reason": "미술의 맥락 이해를 사회·문화적 변천 감상으로 심화한다.",
       "reviewStatus": "internal-reviewed",
       "sourceRefs": [
-        "kr-moe-2022-33-annex5"
+        "kr-moe-2022-33-annex13"
       ],
       "toCourseIds": [
-        "kr.course.2022.high.4166f628015541ac"
+        "kr.course.2022.high.820636c315f9a521"
       ],
       "toSchoolLevel": "high",
-      "toTopicIds": [],
-      "transitionKind": "continues"
+      "toTopicIds": [
+        "kr.topic.2022.high.c0f216ef12bfad25e8b7"
+      ],
+      "transitionKind": "deepens"
     },
     {
-      "basis": "reviewed-middle-to-high-course-foundation-map-v1",
-      "basisKind": "repository-authored",
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.53 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.76ba2cf07cbec437a726"
+      ],
+      "id": "kr.transition.080b908fc45a1177ab6d0417",
+      "reason": "중학교 영역형 경기 방법과 전략을 고교 전략형 경기 응용으로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.5ad7a1f55e918f4d"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.52f32b85e2282d3225b1"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책9 과학과 교육과정 p.81 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
       "fromCourseIds": [
         "kr.course.2022.middle.aaaae5ae7d8548a8"
       ],
       "fromSchoolLevel": "middle",
-      "fromTopicIds": [],
-      "id": "kr.transition.225851bf80342ec3e511da1d",
-      "reason": "중학교 과학에서 고등학교 통합과학2의 기초로 이어지는 검토된 과정 수준 탐색 연결이다. 입학·이수 요건을 뜻하지 않는다.",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.5330651a2783aaef876b"
+      ],
+      "id": "kr.transition.095aad2cbb99e81940383cae",
+      "reason": "세포의 구조와 기능 학습을 생명 시스템의 화학 반응 탐구로 잇는다.",
       "reviewStatus": "internal-reviewed",
       "sourceRefs": [
         "kr-nec-2024-3-annex9"
       ],
       "toCourseIds": [
-        "kr.course.2022.high.3e1de9b39f3e77e3"
+        "kr.course.2022.high.997f40d6e251b180"
       ],
       "toSchoolLevel": "high",
-      "toTopicIds": [],
-      "transitionKind": "continues"
+      "toTopicIds": [
+        "kr.topic.2022.high.516be6f86e48c5c0072b"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책17 한문과 교육과정 p.17 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.43316f44a956438c"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.0b9f6ecd8b8e0847b118"
+      ],
+      "id": "kr.transition.09815a0ee572a5e2b8ce561c",
+      "reason": "중학교의 한자 형태·소리·뜻 구별 학습을 고교에서 같은 내용으로 이어 간다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex17"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.8a9d2db677d4856f"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.28fae22676bbe4f82ae9"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.89 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.c5aa30efa59d6abf63fc"
+      ],
+      "id": "kr.transition.0b197514f571c843283f1f41",
+      "reason": "중학교 기록형 경기 기능을 고교 자연과학 원리 적용의 수행 기반으로 삼는다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.f787bc1b3673c037"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.0a9da035951c9540f56e"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.73 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.4d9a2ceffb734705b825"
+      ],
+      "id": "kr.transition.0b5c1b400faa358ffcbd493c",
+      "reason": "중학교 정신 건강 활동 지식을 고교의 건강 운동 효과 탐구로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.039c51ec34c5e262"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.76385172e60173cf1ad4"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.53 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.223e1aa2521b86716798"
+      ],
+      "id": "kr.transition.0b7da2a8fe76af78df47f50c",
+      "reason": "중학교 생활환경형 경기 기능을 고교 생태형 경기 기능 분석으로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.5ad7a1f55e918f4d"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.293660c19d2398692ef6"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.99 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.477f60512153937d6fee"
+      ],
+      "id": "kr.transition.0b99379301451d62a0308336",
+      "reason": "중학교 자연환경형 활동 전략을 고교의 창의적 전략 발전으로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.e651381ef9d478ba"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.d3f674295fe746d04f77"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.62 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.1335f84b33d0665133fa"
+      ],
+      "id": "kr.transition.0c0e81347091c250a8941389",
+      "reason": "중학교 체력 증진 원리를 고교의 과학적 체력 증진 원리로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.402672abea801ba4"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.2a4a143df668f9c3ea2d"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.89 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.621da8f189cd281ea4e4"
+      ],
+      "id": "kr.transition.0cb8f712c7c8a6d19dc1548a",
+      "reason": "중학교 필드형 경기 방법과 전략을 고교 사회과학 원리 적용의 기반으로 삼는다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.f787bc1b3673c037"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.e1d0886367291098a40b"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책13 미술과 교육과정 p.29 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.570335cd5c8192d8"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.53c0a5690c914dcefcfd"
+      ],
+      "id": "kr.transition.0d23cb9201c7a9279900d5ca",
+      "reason": "주제 탐구와 표현 계획을 주제 심화와 작품 계획으로 발전시킨다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex13"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.820636c315f9a521"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.aa72d682bc84101b7703"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.62 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.ea04913d78ae1a1fa2e4"
+      ],
+      "id": "kr.transition.162e0ec33a30875a4eec651c",
+      "reason": "중학교 현대 표현 창작과 감상을 고교 작품 창작과 비평으로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.402672abea801ba4"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.040ad16f25772bf827f2"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책17 한문과 교육과정 p.17 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.43316f44a956438c"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.0b047eaae051c5dd34e7"
+      ],
+      "id": "kr.transition.1947c4e27573d74a58e297f6",
+      "reason": "중학교의 전통문화 가치 인식을 고교의 계승·발전 태도로 확장한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex17"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.8a9d2db677d4856f"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.674ef57054d67c4db1d9"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책13 미술과 교육과정 p.29 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.570335cd5c8192d8"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.4780f85447fea9de6d15"
+      ],
+      "id": "kr.transition.1add445fa8ba2888213c66d4",
+      "reason": "감각에 따른 미적 인식을 미적 가치 분석으로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex13"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.820636c315f9a521"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.96b8e866f042803fdfbc"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책17 한문과 교육과정 p.17 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.43316f44a956438c"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.3b4b087d31694caccc7d"
+      ],
+      "id": "kr.transition.1db447091743acb1c6b7d52d",
+      "reason": "중학교의 단어·성어 독해 학습을 고교의 읽기와 풀이로 이어 간다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex17"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.8a9d2db677d4856f"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.3dee9b5b9befb02e032c"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.53 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.82d523b685830ba06a30"
+      ],
+      "id": "kr.transition.1f17a53d787d9978b45e1d4c",
+      "reason": "중학교 스포츠 환경 공동체 의식을 고교 생태 감수성으로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.5ad7a1f55e918f4d"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.b85f00e343a956d5543d"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.73 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.39b9d01cf6d417e267c9"
+      ],
+      "id": "kr.transition.20c30026db858a7999a34f9a",
+      "reason": "중학교 운동 처방 원리를 고교 트레이닝 프로그램 계획으로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.039c51ec34c5e262"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.c6048c29bf72742d10bc"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책10 기술·가정·정보과 교육과정 p.171 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.c197990b3a23fdd2"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.6602663bf06a0d9fdfd5"
+      ],
+      "id": "kr.transition.2136ca7b79722cb507a45800",
+      "reason": "중학교 피지컬 컴퓨팅 학습을 사물인터넷 시스템 설계에 활용한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex10"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.d37b249570ba229d"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.4055182e691ff4ba185d"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.73 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.1335f84b33d0665133fa"
+      ],
+      "id": "kr.transition.22caf144fd2f268e38dbb891",
+      "reason": "중학교 체력 증진 원리를 고교 트레이닝 프로그램 계획으로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.039c51ec34c5e262"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.c6048c29bf72742d10bc"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.53 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.b013c5dddb52a5722c06"
+      ],
+      "id": "kr.transition.23aa45be7e8d9e1a9fa15e51",
+      "reason": "중학교 필드형 경기 기능을 고교 전략형 경기 기능 분석으로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.5ad7a1f55e918f4d"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.1f35ba511c1c938f3553"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.89 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.fd7bf453b1e3bbe62845"
+      ],
+      "id": "kr.transition.24d2ff10cae1c690f1d02855",
+      "reason": "중학교 동작형 경기 기능을 고교 사회과학 원리 적용의 수행 기반으로 삼는다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.f787bc1b3673c037"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.e1d0886367291098a40b"
+      ],
+      "transitionKind": "deepens"
     },
     {
       "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 p.68 성취기준 적용 시 고려 사항",
@@ -113,68 +629,229 @@
       "transitionKind": "deepens"
     },
     {
-      "basis": "reviewed-middle-to-high-course-foundation-map-v1",
-      "basisKind": "repository-authored",
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.62 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
       "fromCourseIds": [
-        "kr.course.2022.middle.71b0ac4b7d3259ff"
+        "kr.course.2022.middle.fa59961d660b0ad4"
       ],
       "fromSchoolLevel": "middle",
-      "fromTopicIds": [],
-      "id": "kr.transition.2f651fe13e37433d0ff43004",
-      "reason": "중학교 생활 베트남어에서 고등학교 베트남어의 기초로 이어지는 검토된 과정 수준 탐색 연결이다. 입학·이수 요건을 뜻하지 않는다.",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.4bc88662a0b43e60f045"
+      ],
+      "id": "kr.transition.2698f7f4709088890b679117",
+      "reason": "중학교 체력 관리 원리를 고교의 종합적 체력 관리로 심화한다.",
       "reviewStatus": "internal-reviewed",
       "sourceRefs": [
-        "kr-moe-2022-33-annex16"
+        "kr-moe-2022-33-annex11"
       ],
       "toCourseIds": [
-        "kr.course.2022.high.3eb905a789303d57"
+        "kr.course.2022.high.402672abea801ba4"
       ],
       "toSchoolLevel": "high",
-      "toTopicIds": [],
-      "transitionKind": "continues"
+      "toTopicIds": [
+        "kr.topic.2022.high.142f93df3d37834ea0a5"
+      ],
+      "transitionKind": "deepens"
     },
     {
-      "basis": "reviewed-middle-to-high-course-foundation-map-v1",
-      "basisKind": "repository-authored",
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.62 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
       "fromCourseIds": [
-        "kr.course.2022.middle.373e9959b3cc1af3"
+        "kr.course.2022.middle.fa59961d660b0ad4"
       ],
       "fromSchoolLevel": "middle",
-      "fromTopicIds": [],
-      "id": "kr.transition.311eb7b6b86ab99873b28501",
-      "reason": "중학교 수학에서 고등학교 공통수학1의 기초로 이어지는 검토된 과정 수준 탐색 연결이다. 입학·이수 요건을 뜻하지 않는다.",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.32723d96b57fc25a9f09"
+      ],
+      "id": "kr.transition.272d679d50bb35a18bba3af7",
+      "reason": "중학교 기록형 경기 방법과 전략을 고교 기술형 경기 응용으로 심화한다.",
       "reviewStatus": "internal-reviewed",
       "sourceRefs": [
-        "kr-moe-2022-33-annex8"
+        "kr-moe-2022-33-annex11"
       ],
       "toCourseIds": [
-        "kr.course.2022.high.c5134bb916edf899"
+        "kr.course.2022.high.402672abea801ba4"
       ],
       "toSchoolLevel": "high",
-      "toTopicIds": [],
-      "transitionKind": "continues"
+      "toTopicIds": [
+        "kr.topic.2022.high.882b4bd6184eed16ebfa"
+      ],
+      "transitionKind": "deepens"
     },
     {
-      "basis": "reviewed-middle-to-high-course-foundation-map-v1",
-      "basisKind": "repository-authored",
+      "basis": "국가교육위원회 고시 제2024-3호 별책9 과학과 교육과정 p.80 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
       "fromCourseIds": [
-        "kr.course.2022.middle.9cd4d075bde4ad85"
+        "kr.course.2022.middle.aaaae5ae7d8548a8"
       ],
       "fromSchoolLevel": "middle",
-      "fromTopicIds": [],
-      "id": "kr.transition.336697c9db8afd5eb37a8544",
-      "reason": "중학교 보건에서 고등학교 보건의 기초로 이어지는 검토된 과정 수준 탐색 연결이다. 입학·이수 요건을 뜻하지 않는다.",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.6aee7e0e06128d9ee812"
+      ],
+      "id": "kr.transition.27c8c6479529d92456f6a50a",
+      "reason": "암석과 광물 학습을 규산염 광물의 구성 규칙 탐구로 연계한다.",
       "reviewStatus": "internal-reviewed",
       "sourceRefs": [
-        "kr-nec-2024-3-annex18",
-        "kr-nec-2024-3-annex19"
+        "kr-nec-2024-3-annex9"
       ],
       "toCourseIds": [
-        "kr.course.2022.high.14102770a0bbd5a9"
+        "kr.course.2022.high.997f40d6e251b180"
       ],
       "toSchoolLevel": "high",
-      "toTopicIds": [],
-      "transitionKind": "continues"
+      "toTopicIds": [
+        "kr.topic.2022.high.ac750a8a0b1f4fdcea13"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.62 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.f49c31665c3c23261f61"
+      ],
+      "id": "kr.transition.28b3193949d280efc54a0a37",
+      "reason": "중학교 기록형 스포츠의 역사와 특성을 고교 기술형 스포츠 문화로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.402672abea801ba4"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.b952ca55106a619ec0a5"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.89 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.32723d96b57fc25a9f09"
+      ],
+      "id": "kr.transition.2ad0aa7201a461bcb914ce59",
+      "reason": "중학교 기록형 경기 방법과 전략을 고교 자연과학 원리 적용의 기반으로 삼는다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.f787bc1b3673c037"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.0a9da035951c9540f56e"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책12 음악과 교육과정 p.40 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.b39f1ce9e94d344f"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.58566ebf8b22934de5b5"
+      ],
+      "id": "kr.transition.2d9f9f693e3ce6682bf821ed",
+      "reason": "중학교의 배경과 역할 비교를 고교의 맥락과 기여 비평으로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex12"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.fdd5dc79d2d5fcf8"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.a519017b9562afc049ca"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.89 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.621da8f189cd281ea4e4"
+      ],
+      "id": "kr.transition.2f14169a1f0283daf4a164fb",
+      "reason": "중학교 필드형 경기 방법과 전략을 고교 자연과학 원리 적용의 기반으로 삼는다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.f787bc1b3673c037"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.0a9da035951c9540f56e"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책12 음악과 교육과정 p.38 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.b39f1ce9e94d344f"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.20f8ddc59838e74c1284"
+      ],
+      "id": "kr.transition.30bedea40d92ceff7fce0290",
+      "reason": "중학교의 음악 요소와 특징 표현을 고교에서 변화와 비평으로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex12"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.fdd5dc79d2d5fcf8"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.d22d2afa83bea299f532"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.107 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.2fb4d62474df6614c08d"
+      ],
+      "id": "kr.transition.33ceef2275c433f240ce91cb",
+      "reason": "중학교 필드형 스포츠의 역사와 특성을 고교 필드형 스포츠 문화로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.0bd4c56b6d8a1d04"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.03f7c52074bf3673b4d4"
+      ],
+      "transitionKind": "deepens"
     },
     {
       "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 p.92 성취기준 적용 시 고려 사항",
@@ -202,15 +879,217 @@
       "transitionKind": "deepens"
     },
     {
-      "basis": "reviewed-middle-to-high-course-foundation-map-v1",
-      "basisKind": "repository-authored",
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.62 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.2047cda1be39684e841f"
+      ],
+      "id": "kr.transition.37ac7744676b7d66652aaf21",
+      "reason": "중학교 전통 표현의 역사와 특성을 고교 표현 활동 문화로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.402672abea801ba4"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.4c818c31c55176a4426c"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 p.142 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.718b305249a94a92"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.5b993c47a2864f47d2a6"
+      ],
+      "id": "kr.transition.3a8c9768d4c480a77e1ccc8a",
+      "reason": "중학교 역사 학습을 기반으로 문명 형성 주제를 심층적으로 탐구한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.40a37cbb066524dc"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.abc73f19fad1a44d4771"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.89 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.b013c5dddb52a5722c06"
+      ],
+      "id": "kr.transition.3aa847c5ebf20bdb5ab52134",
+      "reason": "중학교 필드형 경기 기능을 고교 사회과학 원리 적용의 수행 기반으로 삼는다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.f787bc1b3673c037"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.e1d0886367291098a40b"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.99 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.16c2aa4ed311872bcf27"
+      ],
+      "id": "kr.transition.3b7a9bb1ed3f09ecf11e66e7",
+      "reason": "중학교 영역형 경기 기능을 고교의 과학적 기능 분석과 전이로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.e651381ef9d478ba"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.ff36e49674f067510aac"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.81 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.ee9f926dc1eb509ea755"
+      ],
+      "id": "kr.transition.3d2e2a5dfb90174e07e7044a",
+      "reason": "중학교 투기형 스포츠의 역사 탐색을 고교 스포츠 역사·철학 탐구로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.a0ed3617828b3299"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.7e15fc7f646585b5f4e1"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.53 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.64245d85c8c7fbf3e06b"
+      ],
+      "id": "kr.transition.3e48876f657b96a6d693d7c8",
+      "reason": "중학교 사회적 건강 활동 유형을 고교 신체활동의 건강 효과 탐구로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.5ad7a1f55e918f4d"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.b64c949fcb36426f7c49"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.62 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.ee9f926dc1eb509ea755"
+      ],
+      "id": "kr.transition.404efa0571752a18feedf16b",
+      "reason": "중학교 투기형 스포츠의 역사와 특성을 고교 기술형 스포츠 문화로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.402672abea801ba4"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.b952ca55106a619ec0a5"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.89 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.477f60512153937d6fee"
+      ],
+      "id": "kr.transition.414f524eec60a94f014fe50c",
+      "reason": "중학교 자연환경형 방법과 전략을 고교 자연과학 원리 적용의 기반으로 삼는다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.f787bc1b3673c037"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.0a9da035951c9540f56e"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책9 과학과 교육과정 p.81 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
       "fromCourseIds": [
         "kr.course.2022.middle.aaaae5ae7d8548a8"
       ],
       "fromSchoolLevel": "middle",
-      "fromTopicIds": [],
-      "id": "kr.transition.39942e0521071b85cd236af9",
-      "reason": "중학교 과학에서 고등학교 통합과학1의 기초로 이어지는 검토된 과정 수준 탐색 연결이다. 입학·이수 요건을 뜻하지 않는다.",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.02faef11aecb9b585fa5"
+      ],
+      "id": "kr.transition.42205fc5fa937c0632292645",
+      "reason": "자유 낙하의 속력 변화를 중력에 의한 가속 운동 설명으로 확장한다.",
       "reviewStatus": "internal-reviewed",
       "sourceRefs": [
         "kr-nec-2024-3-annex9"
@@ -219,92 +1098,260 @@
         "kr.course.2022.high.997f40d6e251b180"
       ],
       "toSchoolLevel": "high",
-      "toTopicIds": [],
-      "transitionKind": "continues"
+      "toTopicIds": [
+        "kr.topic.2022.high.c02a8a4ffd3895a1a7c3"
+      ],
+      "transitionKind": "deepens"
     },
     {
-      "basis": "reviewed-middle-to-high-course-foundation-map-v1",
-      "basisKind": "repository-authored",
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.53 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
       "fromCourseIds": [
-        "kr.course.2022.middle.19401e7f882c4108"
+        "kr.course.2022.middle.fa59961d660b0ad4"
       ],
       "fromSchoolLevel": "middle",
-      "fromTopicIds": [],
-      "id": "kr.transition.4054563bece88a23ed4ea9fe",
-      "reason": "중학교 생활 중국어에서 고등학교 중국어의 기초로 이어지는 검토된 과정 수준 탐색 연결이다. 입학·이수 요건을 뜻하지 않는다.",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.b90b918ffa136f0ab7d8"
+      ],
+      "id": "kr.transition.446d3496caab2630d7720aad",
+      "reason": "중학교 사회적 건강과 안전 활동을 고교 건강 안전 대처로 심화한다.",
       "reviewStatus": "internal-reviewed",
       "sourceRefs": [
-        "kr-moe-2022-33-annex16"
+        "kr-moe-2022-33-annex11"
       ],
       "toCourseIds": [
-        "kr.course.2022.high.570080530b122765"
+        "kr.course.2022.high.5ad7a1f55e918f4d"
       ],
       "toSchoolLevel": "high",
-      "toTopicIds": [],
-      "transitionKind": "continues"
+      "toTopicIds": [
+        "kr.topic.2022.high.d456fd050fbdb2216fdf"
+      ],
+      "transitionKind": "deepens"
     },
     {
-      "basis": "reviewed-middle-to-high-course-foundation-map-v1",
-      "basisKind": "repository-authored",
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.73 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
       "fromCourseIds": [
-        "kr.course.2022.middle.dccd29079b173ca0"
+        "kr.course.2022.middle.fa59961d660b0ad4"
       ],
       "fromSchoolLevel": "middle",
-      "fromTopicIds": [],
-      "id": "kr.transition.42029201757edf045a243a2a",
-      "reason": "중학교 사회에서 고등학교 통합사회1의 기초로 이어지는 검토된 과정 수준 탐색 연결이다. 입학·이수 요건을 뜻하지 않는다.",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.4bc88662a0b43e60f045"
+      ],
+      "id": "kr.transition.459c71be8ffbb75310d6151e",
+      "reason": "중학교 체력 관리 원리를 고교 트레이닝 프로그램 계획으로 심화한다.",
       "reviewStatus": "internal-reviewed",
       "sourceRefs": [
-        "kr-nec-2024-3-annex7"
+        "kr-moe-2022-33-annex11"
       ],
       "toCourseIds": [
-        "kr.course.2022.high.39d5366ad464cca2"
+        "kr.course.2022.high.039c51ec34c5e262"
       ],
       "toSchoolLevel": "high",
-      "toTopicIds": [],
-      "transitionKind": "continues"
+      "toTopicIds": [
+        "kr.topic.2022.high.c6048c29bf72742d10bc"
+      ],
+      "transitionKind": "deepens"
     },
     {
-      "basis": "reviewed-middle-to-high-course-foundation-map-v1",
-      "basisKind": "repository-authored",
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.62 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
       "fromCourseIds": [
-        "kr.course.2022.middle.718b305249a94a92"
+        "kr.course.2022.middle.fa59961d660b0ad4"
       ],
       "fromSchoolLevel": "middle",
-      "fromTopicIds": [],
-      "id": "kr.transition.469f3055f87bc5657b50a8c3",
-      "reason": "중학교 역사에서 고등학교 한국사2의 기초로 이어지는 검토된 과정 수준 탐색 연결이다. 입학·이수 요건을 뜻하지 않는다.",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.6bf0c43559ff80f9d7c0"
+      ],
+      "id": "kr.transition.46ccb3354e64beba7b1192f2",
+      "reason": "중학교 동작형 경기 방법과 전략을 고교 기술형 경기 응용으로 심화한다.",
       "reviewStatus": "internal-reviewed",
       "sourceRefs": [
-        "kr-nec-2024-3-annex7"
+        "kr-moe-2022-33-annex11"
       ],
       "toCourseIds": [
-        "kr.course.2022.high.310c440f00072a3a"
+        "kr.course.2022.high.402672abea801ba4"
       ],
       "toSchoolLevel": "high",
-      "toTopicIds": [],
-      "transitionKind": "prepares-for"
+      "toTopicIds": [
+        "kr.topic.2022.high.882b4bd6184eed16ebfa"
+      ],
+      "transitionKind": "deepens"
     },
     {
-      "basis": "reviewed-middle-to-high-course-foundation-map-v1",
-      "basisKind": "repository-authored",
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.62 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
       "fromCourseIds": [
-        "kr.course.2022.middle.718b305249a94a92"
+        "kr.course.2022.middle.fa59961d660b0ad4"
       ],
       "fromSchoolLevel": "middle",
-      "fromTopicIds": [],
-      "id": "kr.transition.4fbc7fcd478d4f699a5f3cb9",
-      "reason": "중학교 역사에서 고등학교 한국사1의 기초로 이어지는 검토된 과정 수준 탐색 연결이다. 입학·이수 요건을 뜻하지 않는다.",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.ed047a069e3ace515f59"
+      ],
+      "id": "kr.transition.477f662f6802d52df164e682",
+      "reason": "중학교 맞춤형 운동 처방 실천을 고교의 종합적 체력 관리로 심화한다.",
       "reviewStatus": "internal-reviewed",
       "sourceRefs": [
-        "kr-nec-2024-3-annex7"
+        "kr-moe-2022-33-annex11"
       ],
       "toCourseIds": [
-        "kr.course.2022.high.8d43b2271a6b33db"
+        "kr.course.2022.high.402672abea801ba4"
       ],
       "toSchoolLevel": "high",
-      "toTopicIds": [],
-      "transitionKind": "prepares-for"
+      "toTopicIds": [
+        "kr.topic.2022.high.142f93df3d37834ea0a5"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.62 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.7aee6ffc7e1c37e00992"
+      ],
+      "id": "kr.transition.4807b0694e83ae535d19cadb",
+      "reason": "중학교 전통 표현 원리 적용을 고교 표현 동작 분석으로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.402672abea801ba4"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.0191ed66f13de930bf7f"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.62 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.aa17e056409e703ecc39"
+      ],
+      "id": "kr.transition.4b2cb749d957f37872048c1a",
+      "reason": "중학교 체력 진단과 관리 방법을 고교의 종합적 체력 관리로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.402672abea801ba4"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.142f93df3d37834ea0a5"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책17 한문과 교육과정 p.17 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.43316f44a956438c"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.913d09353cbc29156b14"
+      ],
+      "id": "kr.transition.4d1ba931f2756552e7da4252",
+      "reason": "중학교의 한자 구성 원리 구별 학습을 고교 한문에서 계속 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex17"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.8a9d2db677d4856f"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.e870d3541d404a11af0a"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책9 과학과 교육과정 p.83 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.aaaae5ae7d8548a8"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.12f95b8de86ecaa0b4b1"
+      ],
+      "id": "kr.transition.4d1dc201d9903d83e8c45f83",
+      "reason": "변이와 생물다양성 학습을 자연선택과 진화에 따른 다양성 형성으로 확장한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.3e1de9b39f3e77e3"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.42fd63b05b656ef99150"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.62 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.bc95cebeecad7189cbe8"
+      ],
+      "id": "kr.transition.4e6a41c59ec7e144e67c6d8e",
+      "reason": "중학교 표현 창작·감상 태도를 고교 작품 감상·비평으로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.402672abea801ba4"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.040ad16f25772bf827f2"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.53 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.dd2cce8d64222ea1382f"
+      ],
+      "id": "kr.transition.501e98a7d770294c88b90f51",
+      "reason": "중학교 네트형 스포츠의 역사와 특성을 고교 전략형 스포츠 문화로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.5ad7a1f55e918f4d"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.1eaa9d1736e2164fa30b"
+      ],
+      "transitionKind": "deepens"
     },
     {
       "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 p.67 성취기준 적용 시 고려 사항",
@@ -332,25 +1379,154 @@
       "transitionKind": "deepens"
     },
     {
-      "basis": "reviewed-middle-to-high-course-foundation-map-v1",
-      "basisKind": "repository-authored",
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.89 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
       "fromCourseIds": [
-        "kr.course.2022.middle.373e9959b3cc1af3"
+        "kr.course.2022.middle.fa59961d660b0ad4"
       ],
       "fromSchoolLevel": "middle",
-      "fromTopicIds": [],
-      "id": "kr.transition.5b2677e5104fd7973f5a4daf",
-      "reason": "중학교 수학에서 고등학교 공통수학2의 기초로 이어지는 검토된 과정 수준 탐색 연결이다. 입학·이수 요건을 뜻하지 않는다.",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.76ba2cf07cbec437a726"
+      ],
+      "id": "kr.transition.526113fa493b938298e71884",
+      "reason": "중학교 영역형 경기 방법과 전략을 고교 자연과학 원리 적용의 기반으로 삼는다.",
       "reviewStatus": "internal-reviewed",
       "sourceRefs": [
-        "kr-moe-2022-33-annex8"
+        "kr-moe-2022-33-annex11"
       ],
       "toCourseIds": [
-        "kr.course.2022.high.f699e06d5f857844"
+        "kr.course.2022.high.f787bc1b3673c037"
       ],
       "toSchoolLevel": "high",
-      "toTopicIds": [],
-      "transitionKind": "continues"
+      "toTopicIds": [
+        "kr.topic.2022.high.0a9da035951c9540f56e"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책9 과학과 교육과정 p.85 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.aaaae5ae7d8548a8"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.02e108dcf694e63c35b9"
+      ],
+      "id": "kr.transition.5280fc1a505eca873b98a6a3",
+      "reason": "역학적 에너지 전환과 보존을 에너지 효율과 지속가능한 활용으로 확장한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.3e1de9b39f3e77e3"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.109c01965b840c569058"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책12 음악과 교육과정 p.40 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.b39f1ce9e94d344f"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.5ba3e99da5952f03ce5d"
+      ],
+      "id": "kr.transition.53e6f529bdd9aeb2de3c8133",
+      "reason": "중학교의 음악 요소 분석을 고교의 요소와 원리 분석으로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex12"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.fdd5dc79d2d5fcf8"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.4762587a793550f6a94d"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책13 미술과 교육과정 p.29 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.570335cd5c8192d8"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.b13a0af6759f26942667"
+      ],
+      "id": "kr.transition.543a50966f69db3565772574",
+      "reason": "표현 실험 경험을 매체와 방법의 실험·융합으로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex13"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.820636c315f9a521"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.dab3ee9803f1f65e279d"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책17 한문과 교육과정 p.17 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.43316f44a956438c"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.aafd0915bbe9991ae198"
+      ],
+      "id": "kr.transition.598126e565c6ef663ad7f307",
+      "reason": "중학교의 문장 풀이 학습을 고교의 풀이·설명 성취로 확장한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex17"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.8a9d2db677d4856f"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.2095d2eef862f26b83fb"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.53 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.cbd9d2e3f6ac4b9cb78c"
+      ],
+      "id": "kr.transition.5a43f881bec93ad07a50284d",
+      "reason": "중학교 네트형 경기 방법과 전략을 고교 전략형 경기 응용으로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.5ad7a1f55e918f4d"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.52f32b85e2282d3225b1"
+      ],
+      "transitionKind": "deepens"
     },
     {
       "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 p.86 성취기준 적용 시 고려 사항",
@@ -378,89 +1554,229 @@
       "transitionKind": "deepens"
     },
     {
-      "basis": "reviewed-middle-to-high-course-foundation-map-v1",
-      "basisKind": "repository-authored",
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.89 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
       "fromCourseIds": [
-        "kr.course.2022.middle.8783223c83ba74b3"
+        "kr.course.2022.middle.fa59961d660b0ad4"
       ],
       "fromSchoolLevel": "middle",
-      "fromTopicIds": [],
-      "id": "kr.transition.5f1e08a6233623d713367c29",
-      "reason": "중학교 생활 아랍어에서 고등학교 아랍어의 기초로 이어지는 검토된 과정 수준 탐색 연결이다. 입학·이수 요건을 뜻하지 않는다.",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.21757a013828a62a5e2a"
+      ],
+      "id": "kr.transition.6084cc391693df7912189d50",
+      "reason": "중학교 투기형 경기 방법과 전략을 고교 자연과학 원리 적용의 기반으로 삼는다.",
       "reviewStatus": "internal-reviewed",
       "sourceRefs": [
-        "kr-moe-2022-33-annex16"
+        "kr-moe-2022-33-annex11"
       ],
       "toCourseIds": [
-        "kr.course.2022.high.e174321efa04422d"
+        "kr.course.2022.high.f787bc1b3673c037"
       ],
       "toSchoolLevel": "high",
-      "toTopicIds": [],
-      "transitionKind": "continues"
+      "toTopicIds": [
+        "kr.topic.2022.high.0a9da035951c9540f56e"
+      ],
+      "transitionKind": "deepens"
     },
     {
-      "basis": "reviewed-middle-to-high-course-foundation-map-v1",
-      "basisKind": "repository-authored",
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.89 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
       "fromCourseIds": [
-        "kr.course.2022.middle.ec48c1127e519a2e"
+        "kr.course.2022.middle.fa59961d660b0ad4"
       ],
       "fromSchoolLevel": "middle",
-      "fromTopicIds": [],
-      "id": "kr.transition.632c610546e8ec06ed2d8c4d",
-      "reason": "중학교 환경에서 고등학교 생태와 환경의 기초로 이어지는 검토된 과정 수준 탐색 연결이다. 입학·이수 요건을 뜻하지 않는다.",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.11f998a65a2dea3bceb0"
+      ],
+      "id": "kr.transition.61f0d7dfdd0cc678022fef4f",
+      "reason": "중학교 자연환경형 경기 기능을 고교 자연과학 원리 적용의 수행 기반으로 삼는다.",
       "reviewStatus": "internal-reviewed",
       "sourceRefs": [
-        "kr-nec-2024-3-annex18",
-        "kr-nec-2024-3-annex19"
+        "kr-moe-2022-33-annex11"
       ],
       "toCourseIds": [
-        "kr.course.2022.high.1a3cceb94fcda565"
+        "kr.course.2022.high.f787bc1b3673c037"
       ],
       "toSchoolLevel": "high",
-      "toTopicIds": [],
-      "transitionKind": "continues"
+      "toTopicIds": [
+        "kr.topic.2022.high.0a9da035951c9540f56e"
+      ],
+      "transitionKind": "deepens"
     },
     {
-      "basis": "reviewed-middle-to-high-course-foundation-map-v1",
-      "basisKind": "repository-authored",
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.89 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
       "fromCourseIds": [
-        "kr.course.2022.middle.c197990b3a23fdd2"
+        "kr.course.2022.middle.fa59961d660b0ad4"
       ],
       "fromSchoolLevel": "middle",
-      "fromTopicIds": [],
-      "id": "kr.transition.6b822077ac5f45be5c081440",
-      "reason": "중학교 정보에서 고등학교 정보의 기초로 이어지는 검토된 과정 수준 탐색 연결이다. 입학·이수 요건을 뜻하지 않는다.",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.749ca8a9b7bcd8ff4266"
+      ],
+      "id": "kr.transition.63f41bd33a1c7082fe441ed9",
+      "reason": "중학교 투기형 경기 기능을 고교 자연과학 원리 적용의 수행 기반으로 삼는다.",
       "reviewStatus": "internal-reviewed",
       "sourceRefs": [
-        "kr-moe-2022-33-annex10"
+        "kr-moe-2022-33-annex11"
       ],
       "toCourseIds": [
-        "kr.course.2022.high.d37b249570ba229d"
+        "kr.course.2022.high.f787bc1b3673c037"
       ],
       "toSchoolLevel": "high",
-      "toTopicIds": [],
-      "transitionKind": "continues"
+      "toTopicIds": [
+        "kr.topic.2022.high.0a9da035951c9540f56e"
+      ],
+      "transitionKind": "deepens"
     },
     {
-      "basis": "reviewed-middle-to-high-course-foundation-map-v1",
-      "basisKind": "repository-authored",
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.99 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
       "fromCourseIds": [
-        "kr.course.2022.middle.fb948cdadbdc5da1"
+        "kr.course.2022.middle.fa59961d660b0ad4"
       ],
       "fromSchoolLevel": "middle",
-      "fromTopicIds": [],
-      "id": "kr.transition.6ffe4f71661b6138676204e2",
-      "reason": "중학교 영어에서 고등학교 기본영어2의 기초로 이어지는 검토된 과정 수준 탐색 연결이다. 입학·이수 요건을 뜻하지 않는다.",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.a626a35b86c4b8c336b9"
+      ],
+      "id": "kr.transition.6402ef2d5b028dd2d00b4727",
+      "reason": "중학교 영역형 스포츠의 역사와 특성을 고교 영역형 스포츠 문화로 심화한다.",
       "reviewStatus": "internal-reviewed",
       "sourceRefs": [
-        "kr-nec-2024-3-annex14"
+        "kr-moe-2022-33-annex11"
       ],
       "toCourseIds": [
-        "kr.course.2022.high.04c2bef80f49173a"
+        "kr.course.2022.high.e651381ef9d478ba"
       ],
       "toSchoolLevel": "high",
-      "toTopicIds": [],
-      "transitionKind": "continues"
+      "toTopicIds": [
+        "kr.topic.2022.high.08b058b45576beeae1d9"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.73 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.64245d85c8c7fbf3e06b"
+      ],
+      "id": "kr.transition.65698df43a077abb4367dfe2",
+      "reason": "중학교 사회적 건강 활동 지식을 고교의 건강 운동 효과 탐구로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.039c51ec34c5e262"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.76385172e60173cf1ad4"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.62 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.5eb318cf0f69ba73d0d6"
+      ],
+      "id": "kr.transition.66dc7d424b73dfe7043a334b",
+      "reason": "중학교 현대 표현 원리 적용을 고교 표현 동작 분석으로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.402672abea801ba4"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.0191ed66f13de930bf7f"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.53 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.30e44e7d369d6595620e"
+      ],
+      "id": "kr.transition.6750c65c6c5d582939869399",
+      "reason": "중학교 자연환경형 스포츠의 역사와 특성을 고교 생태형 스포츠 문화로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.5ad7a1f55e918f4d"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.b85f00e343a956d5543d"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.73 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.ca518dff5461a05aec36"
+      ],
+      "id": "kr.transition.6f89040f76326d305b590fa1",
+      "reason": "중학교 체력 증진 운동을 고교 트레이닝 프로그램 적용으로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.039c51ec34c5e262"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.c6048c29bf72742d10bc"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.99 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.ebc2988df3285133708c"
+      ],
+      "id": "kr.transition.72bf2856df2b5b89977b2589",
+      "reason": "중학교 생활환경형 스포츠 특성을 고교 생활·자연환경형 문화로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.e651381ef9d478ba"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.d606ff781f349c304e93"
+      ],
+      "transitionKind": "deepens"
     },
     {
       "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 p.87 성취기준 적용 시 고려 사항",
@@ -484,6 +1800,31 @@
       "toSchoolLevel": "high",
       "toTopicIds": [
         "kr.topic.2022.high.3bd942df003bff1e3767"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.81 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.a626a35b86c4b8c336b9"
+      ],
+      "id": "kr.transition.7789f2312f98da2a7a924a8a",
+      "reason": "중학교 영역형 스포츠의 역사 탐색을 고교 스포츠 역사·철학 탐구로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.a0ed3617828b3299"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.7e15fc7f646585b5f4e1"
       ],
       "transitionKind": "deepens"
     },
@@ -513,67 +1854,29 @@
       "transitionKind": "deepens"
     },
     {
-      "basis": "reviewed-middle-to-high-course-foundation-map-v1",
-      "basisKind": "repository-authored",
-      "fromCourseIds": [
-        "kr.course.2022.middle.fb948cdadbdc5da1"
-      ],
-      "fromSchoolLevel": "middle",
-      "fromTopicIds": [],
-      "id": "kr.transition.79c5ca67ea928b9e364957c8",
-      "reason": "중학교 영어에서 고등학교 공통영어2의 기초로 이어지는 검토된 과정 수준 탐색 연결이다. 입학·이수 요건을 뜻하지 않는다.",
-      "reviewStatus": "internal-reviewed",
-      "sourceRefs": [
-        "kr-nec-2024-3-annex14"
-      ],
-      "toCourseIds": [
-        "kr.course.2022.high.b500bfc2d692a67a"
-      ],
-      "toSchoolLevel": "high",
-      "toTopicIds": [],
-      "transitionKind": "continues"
-    },
-    {
-      "basis": "reviewed-middle-to-high-course-foundation-map-v1",
-      "basisKind": "repository-authored",
-      "fromCourseIds": [
-        "kr.course.2022.middle.a0f8efae1e2bd119"
-      ],
-      "fromSchoolLevel": "middle",
-      "fromTopicIds": [],
-      "id": "kr.transition.7ad905b426a6ae19db5d2033",
-      "reason": "중학교 국어에서 고등학교 공통국어2의 기초로 이어지는 검토된 과정 수준 탐색 연결이다. 입학·이수 요건을 뜻하지 않는다.",
-      "reviewStatus": "internal-reviewed",
-      "sourceRefs": [
-        "kr-moe-2022-33-annex5"
-      ],
-      "toCourseIds": [
-        "kr.course.2022.high.08a52bc2723f8254"
-      ],
-      "toSchoolLevel": "high",
-      "toTopicIds": [],
-      "transitionKind": "continues"
-    },
-    {
-      "basis": "reviewed-middle-to-high-course-foundation-map-v1",
-      "basisKind": "repository-authored",
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.62 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
       "fromCourseIds": [
         "kr.course.2022.middle.fa59961d660b0ad4"
       ],
       "fromSchoolLevel": "middle",
-      "fromTopicIds": [],
-      "id": "kr.transition.7bfd8de21ca1de549a379a75",
-      "reason": "중학교 체육에서 고등학교 체육1의 기초로 이어지는 검토된 과정 수준 탐색 연결이다. 입학·이수 요건을 뜻하지 않는다.",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.874c0608e4f18759f95f"
+      ],
+      "id": "kr.transition.7974b5f1f88aef481cd683ce",
+      "reason": "중학교 스포츠 표현 원리 적용을 고교 표현 동작 분석으로 심화한다.",
       "reviewStatus": "internal-reviewed",
       "sourceRefs": [
         "kr-moe-2022-33-annex11"
       ],
       "toCourseIds": [
-        "kr.course.2022.high.5ad7a1f55e918f4d"
+        "kr.course.2022.high.402672abea801ba4"
       ],
       "toSchoolLevel": "high",
-      "toTopicIds": [],
-      "transitionKind": "continues"
+      "toTopicIds": [
+        "kr.topic.2022.high.0191ed66f13de930bf7f"
+      ],
+      "transitionKind": "deepens"
     },
     {
       "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 p.68 성취기준 적용 시 고려 사항",
@@ -601,88 +1904,379 @@
       "transitionKind": "deepens"
     },
     {
-      "basis": "reviewed-middle-to-high-course-foundation-map-v1",
-      "basisKind": "repository-authored",
+      "basis": "국가교육위원회 고시 제2024-3호 별책9 과학과 교육과정 p.81 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
       "fromCourseIds": [
-        "kr.course.2022.middle.fb948cdadbdc5da1"
+        "kr.course.2022.middle.aaaae5ae7d8548a8"
       ],
       "fromSchoolLevel": "middle",
-      "fromTopicIds": [],
-      "id": "kr.transition.872f9ca97df39e47508c06c6",
-      "reason": "중학교 영어에서 고등학교 공통영어1의 기초로 이어지는 검토된 과정 수준 탐색 연결이다. 입학·이수 요건을 뜻하지 않는다.",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.30ae904f9fb37ffa2bc9"
+      ],
+      "id": "kr.transition.7e706618d77a4c3f36842d90",
+      "reason": "알짜힘과 운동 상태 변화 학습을 상호작용과 가속도 관계로 확장한다.",
       "reviewStatus": "internal-reviewed",
       "sourceRefs": [
-        "kr-nec-2024-3-annex14"
+        "kr-nec-2024-3-annex9"
       ],
       "toCourseIds": [
-        "kr.course.2022.high.1aa7a52049208785"
+        "kr.course.2022.high.997f40d6e251b180"
       ],
       "toSchoolLevel": "high",
-      "toTopicIds": [],
-      "transitionKind": "continues"
+      "toTopicIds": [
+        "kr.topic.2022.high.62644bc0b933bd90d0a9"
+      ],
+      "transitionKind": "deepens"
     },
     {
-      "basis": "reviewed-middle-to-high-course-foundation-map-v1",
-      "basisKind": "repository-authored",
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.62 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
       "fromCourseIds": [
-        "kr.course.2022.middle.333940c638f6d1b2"
+        "kr.course.2022.middle.fa59961d660b0ad4"
       ],
       "fromSchoolLevel": "middle",
-      "fromTopicIds": [],
-      "id": "kr.transition.8b5dd94d1f8ce334522ca2a2",
-      "reason": "중학교 생활 프랑스어에서 고등학교 프랑스어의 기초로 이어지는 검토된 과정 수준 탐색 연결이다. 입학·이수 요건을 뜻하지 않는다.",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.39b9d01cf6d417e267c9"
+      ],
+      "id": "kr.transition.7ea194f4fe186c7fa2fba4aa",
+      "reason": "중학교 운동 처방 원리를 고교의 종합적 체력 관리로 심화한다.",
       "reviewStatus": "internal-reviewed",
       "sourceRefs": [
-        "kr-moe-2022-33-annex16"
+        "kr-moe-2022-33-annex11"
       ],
       "toCourseIds": [
-        "kr.course.2022.high.1701cc64d761d30c"
+        "kr.course.2022.high.402672abea801ba4"
       ],
       "toSchoolLevel": "high",
-      "toTopicIds": [],
-      "transitionKind": "continues"
+      "toTopicIds": [
+        "kr.topic.2022.high.142f93df3d37834ea0a5"
+      ],
+      "transitionKind": "deepens"
     },
     {
-      "basis": "reviewed-middle-to-high-course-foundation-map-v1",
-      "basisKind": "repository-authored",
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.89 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
       "fromCourseIds": [
-        "kr.course.2022.middle.b39f1ce9e94d344f"
+        "kr.course.2022.middle.fa59961d660b0ad4"
       ],
       "fromSchoolLevel": "middle",
-      "fromTopicIds": [],
-      "id": "kr.transition.8f7626ea33b07b14afa69422",
-      "reason": "중학교 음악에서 고등학교 음악의 기초로 이어지는 검토된 과정 수준 탐색 연결이다. 입학·이수 요건을 뜻하지 않는다.",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.32723d96b57fc25a9f09"
+      ],
+      "id": "kr.transition.7f98b18e8f974f81fb28de5d",
+      "reason": "중학교 기록형 경기 방법과 전략을 고교 사회과학 원리 적용의 기반으로 삼는다.",
       "reviewStatus": "internal-reviewed",
       "sourceRefs": [
-        "kr-nec-2024-3-annex12"
+        "kr-moe-2022-33-annex11"
       ],
       "toCourseIds": [
-        "kr.course.2022.high.fdd5dc79d2d5fcf8"
+        "kr.course.2022.high.f787bc1b3673c037"
       ],
       "toSchoolLevel": "high",
-      "toTopicIds": [],
-      "transitionKind": "continues"
+      "toTopicIds": [
+        "kr.topic.2022.high.e1d0886367291098a40b"
+      ],
+      "transitionKind": "deepens"
     },
     {
-      "basis": "reviewed-middle-to-high-course-foundation-map-v1",
-      "basisKind": "repository-authored",
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.53 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
       "fromCourseIds": [
-        "kr.course.2022.middle.dccd29079b173ca0"
+        "kr.course.2022.middle.fa59961d660b0ad4"
       ],
       "fromSchoolLevel": "middle",
-      "fromTopicIds": [],
-      "id": "kr.transition.91b8ba5687e236c085aee3de",
-      "reason": "중학교 사회에서 고등학교 통합사회2의 기초로 이어지는 검토된 과정 수준 탐색 연결이다. 입학·이수 요건을 뜻하지 않는다.",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.ff1678ba44ac6ce347e5"
+      ],
+      "id": "kr.transition.7fbd70538de563591006ff48",
+      "reason": "중학교 생활환경형 활동 방법과 전략을 고교 생태형 경기 응용으로 심화한다.",
       "reviewStatus": "internal-reviewed",
       "sourceRefs": [
-        "kr-nec-2024-3-annex7"
+        "kr-moe-2022-33-annex11"
       ],
       "toCourseIds": [
-        "kr.course.2022.high.80056ae9aae18563"
+        "kr.course.2022.high.5ad7a1f55e918f4d"
       ],
       "toSchoolLevel": "high",
-      "toTopicIds": [],
-      "transitionKind": "continues"
+      "toTopicIds": [
+        "kr.topic.2022.high.e9107bb1ccdd705cf226"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.53 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.11f998a65a2dea3bceb0"
+      ],
+      "id": "kr.transition.817d13611f4b91a1ca7db279",
+      "reason": "중학교 자연환경형 경기 기능을 고교 생태형 경기 기능 분석으로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.5ad7a1f55e918f4d"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.293660c19d2398692ef6"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.89 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.223e1aa2521b86716798"
+      ],
+      "id": "kr.transition.81d228c53eb99a0cacfb3fcc",
+      "reason": "중학교 생활환경형 경기 기능을 고교 사회과학 원리 적용의 수행 기반으로 삼는다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.f787bc1b3673c037"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.e1d0886367291098a40b"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.53 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.44c4840b72f94b84b89f"
+      ],
+      "id": "kr.transition.83f420de06230b85052f6f77",
+      "reason": "중학교 신체 건강 활동 유형을 고교 신체활동의 건강 효과 탐구로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.5ad7a1f55e918f4d"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.b64c949fcb36426f7c49"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.81 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.dd2cce8d64222ea1382f"
+      ],
+      "id": "kr.transition.853516bdde12cec31a7d1772",
+      "reason": "중학교 네트형 스포츠의 역사 탐색을 고교 스포츠 역사·철학 탐구로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.a0ed3617828b3299"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.7e15fc7f646585b5f4e1"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.89 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.ff1678ba44ac6ce347e5"
+      ],
+      "id": "kr.transition.89347e2cc7221d3db443a2d3",
+      "reason": "중학교 생활환경형 방법과 전략을 고교 사회과학 원리 적용의 기반으로 삼는다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.f787bc1b3673c037"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.e1d0886367291098a40b"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책13 미술과 교육과정 p.29 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.570335cd5c8192d8"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.fc84d26cc6a03b7d301c"
+      ],
+      "id": "kr.transition.8ba60479e1bd4afcce3212aa",
+      "reason": "시각 문화의 비판적 해석을 비판적 수용과 향유로 확장한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex13"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.820636c315f9a521"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.fd2fa69073261183ef48"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책17 한문과 교육과정 p.17 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.43316f44a956438c"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.c6556ea693b962581471"
+      ],
+      "id": "kr.transition.8d4d7bba5171cd72a147d44c",
+      "reason": "중학교의 의미에 맞는 읽기 학습을 고교에서도 이어 간다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex17"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.8a9d2db677d4856f"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.01413d5ac759012fbff3"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.99 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.ff1678ba44ac6ce347e5"
+      ],
+      "id": "kr.transition.8e72fa1157abdd30e68a9a6e",
+      "reason": "중학교 생활환경형 활동 전략을 고교의 창의적 전략 발전으로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.e651381ef9d478ba"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.d3f674295fe746d04f77"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책10 기술·가정·정보과 교육과정 p.107 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.92c889afa560b9d8"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.911c7c13665808f238e7"
+      ],
+      "id": "kr.transition.90c724a28db2396cf7189245",
+      "reason": "중학교 발명 개념을 고등학교의 발명 역사와 가치 탐구로 확장한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex10"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.231db579e1a3b213"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.345696c1475cf72dbcd1"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.99 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.223e1aa2521b86716798"
+      ],
+      "id": "kr.transition.91afdd4f1ad340fc88fd4090",
+      "reason": "중학교 생활환경형 경기 기능을 고교의 과학적 기능 분석과 전이로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.e651381ef9d478ba"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.5f1afeeb1ebb1ba4240a"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.62 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.74e5f17a9ba80fdbe975"
+      ],
+      "id": "kr.transition.94b9db0b074f4f5f85151be3",
+      "reason": "중학교 동작형 스포츠의 역사와 특성을 고교 기술형 스포츠 문화로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.402672abea801ba4"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.b952ca55106a619ec0a5"
+      ],
+      "transitionKind": "deepens"
     },
     {
       "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 p.107 성취기준 적용 시 고려 사항",
@@ -710,25 +2304,29 @@
       "transitionKind": "deepens"
     },
     {
-      "basis": "reviewed-middle-to-high-course-foundation-map-v1",
-      "basisKind": "repository-authored",
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.89 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
       "fromCourseIds": [
-        "kr.course.2022.middle.92c889afa560b9d8"
+        "kr.course.2022.middle.fa59961d660b0ad4"
       ],
       "fromSchoolLevel": "middle",
-      "fromTopicIds": [],
-      "id": "kr.transition.97358dc3427a2f5b54128d73",
-      "reason": "중학교 기술·가정에서 고등학교 기술⋅가정의 기초로 이어지는 검토된 과정 수준 탐색 연결이다. 입학·이수 요건을 뜻하지 않는다.",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.c5aa30efa59d6abf63fc"
+      ],
+      "id": "kr.transition.99c19f2ca9bcd7b769d41e3a",
+      "reason": "중학교 기록형 경기 기능을 고교 사회과학 원리 적용의 수행 기반으로 삼는다.",
       "reviewStatus": "internal-reviewed",
       "sourceRefs": [
-        "kr-moe-2022-33-annex10"
+        "kr-moe-2022-33-annex11"
       ],
       "toCourseIds": [
-        "kr.course.2022.high.555fee91e0f5a8df"
+        "kr.course.2022.high.f787bc1b3673c037"
       ],
       "toSchoolLevel": "high",
-      "toTopicIds": [],
-      "transitionKind": "continues"
+      "toTopicIds": [
+        "kr.topic.2022.high.e1d0886367291098a40b"
+      ],
+      "transitionKind": "deepens"
     },
     {
       "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 p.66 성취기준 적용 시 고려 사항",
@@ -756,99 +2354,467 @@
       "transitionKind": "deepens"
     },
     {
-      "basis": "reviewed-middle-to-high-course-foundation-map-v1",
-      "basisKind": "repository-authored",
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.81 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
       "fromCourseIds": [
-        "kr.course.2022.middle.66de94cebc86b61e"
+        "kr.course.2022.middle.fa59961d660b0ad4"
       ],
       "fromSchoolLevel": "middle",
-      "fromTopicIds": [],
-      "id": "kr.transition.b3397f26218e41da771f8ed1",
-      "reason": "중학교 생활 독일어에서 고등학교 독일어의 기초로 이어지는 검토된 과정 수준 탐색 연결이다. 입학·이수 요건을 뜻하지 않는다.",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.ebc2988df3285133708c"
+      ],
+      "id": "kr.transition.9b71378d9dc7102812346746",
+      "reason": "중학교 생활환경형 스포츠의 역사 탐색을 고교 스포츠 역사·철학 탐구로 심화한다.",
       "reviewStatus": "internal-reviewed",
       "sourceRefs": [
-        "kr-moe-2022-33-annex16"
+        "kr-moe-2022-33-annex11"
       ],
       "toCourseIds": [
-        "kr.course.2022.high.24379bf8c674afe5"
+        "kr.course.2022.high.a0ed3617828b3299"
       ],
       "toSchoolLevel": "high",
-      "toTopicIds": [],
-      "transitionKind": "continues"
+      "toTopicIds": [
+        "kr.topic.2022.high.7e15fc7f646585b5f4e1"
+      ],
+      "transitionKind": "deepens"
     },
     {
-      "basis": "reviewed-middle-to-high-course-foundation-map-v1",
-      "basisKind": "repository-authored",
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.62 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.fd7bf453b1e3bbe62845"
+      ],
+      "id": "kr.transition.9ef9903bd82810638b96f572",
+      "reason": "중학교 동작형 경기 기능을 고교 기술형 경기 기능 분석으로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.402672abea801ba4"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.cc12b53677b1c07d61ca"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.62 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.c5aa30efa59d6abf63fc"
+      ],
+      "id": "kr.transition.9efa05010cf96eadb5f88c6a",
+      "reason": "중학교 기록형 경기 기능을 고교 기술형 경기 기능 분석으로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.402672abea801ba4"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.cc12b53677b1c07d61ca"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책13 미술과 교육과정 p.29 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.570335cd5c8192d8"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.791e4e87643a0fdf5bab"
+      ],
+      "id": "kr.transition.a09d3e8608b99c63b7013f10",
+      "reason": "감상 방법과 관점을 비평 방법에 따른 가치 판단으로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex13"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.820636c315f9a521"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.655036a432a5527d6cf7"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.89 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.11f998a65a2dea3bceb0"
+      ],
+      "id": "kr.transition.a15f4004263d7f6fd25cdf27",
+      "reason": "중학교 자연환경형 경기 기능을 고교 사회과학 원리 적용의 수행 기반으로 삼는다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.f787bc1b3673c037"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.e1d0886367291098a40b"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책13 미술과 교육과정 p.29 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.570335cd5c8192d8"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.64d013651f146a0cf5d5"
+      ],
+      "id": "kr.transition.a2764d9f886a3409806421ee",
+      "reason": "표현 과정의 성찰을 다음 작품에 반영하는 단계로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex13"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.820636c315f9a521"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.ccc73fe738088120d7c9"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.107 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.db7da0744c328a0d9830"
+      ],
+      "id": "kr.transition.a34d2059cb3928c7ecc8a633",
+      "reason": "중학교 네트형 경기 기능을 고교의 과학적 기능 분석과 전이로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.0bd4c56b6d8a1d04"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.2628a3b9ce38de0ac283"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책9 과학과 교육과정 p.85 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
       "fromCourseIds": [
         "kr.course.2022.middle.aaaae5ae7d8548a8"
       ],
       "fromSchoolLevel": "middle",
-      "fromTopicIds": [],
-      "id": "kr.transition.b6ecccac3338973133d4fe77",
-      "reason": "중학교 과학에서 고등학교 과학탐구실험2의 기초로 이어지는 검토된 과정 수준 탐색 연결이다. 입학·이수 요건을 뜻하지 않는다.",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.53ab5292a9c8e86f9396"
+      ],
+      "id": "kr.transition.a708155dc1a926421b087383",
+      "reason": "대기·해양 순환과 기후의 관계를 지구온난화 영향 분석에 연결한다.",
       "reviewStatus": "internal-reviewed",
       "sourceRefs": [
         "kr-nec-2024-3-annex9"
       ],
       "toCourseIds": [
-        "kr.course.2022.high.650024939bd22742"
+        "kr.course.2022.high.3e1de9b39f3e77e3"
       ],
       "toSchoolLevel": "high",
-      "toTopicIds": [],
-      "transitionKind": "continues"
+      "toTopicIds": [
+        "kr.topic.2022.high.3fe5b29a51d2eca0ef38"
+      ],
+      "transitionKind": "deepens"
     },
     {
-      "basis": "reviewed-middle-to-high-course-foundation-map-v1",
-      "basisKind": "repository-authored",
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.73 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
       "fromCourseIds": [
-        "kr.course.2022.middle.2178b9d0de944d75"
+        "kr.course.2022.middle.fa59961d660b0ad4"
       ],
       "fromSchoolLevel": "middle",
-      "fromTopicIds": [],
-      "id": "kr.transition.b7057b2ecbd553aa362077f1",
-      "reason": "중학교 생활 러시아어에서 고등학교 러시아어의 기초로 이어지는 검토된 과정 수준 탐색 연결이다. 입학·이수 요건을 뜻하지 않는다.",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.f5a2059e370a86ae1775"
+      ],
+      "id": "kr.transition.a7419f0c57bda308efee64d8",
+      "reason": "중학교 정신 건강 활동 실천을 고교 건강 운동 프로그램 관리로 심화한다.",
       "reviewStatus": "internal-reviewed",
       "sourceRefs": [
-        "kr-moe-2022-33-annex16"
+        "kr-moe-2022-33-annex11"
       ],
       "toCourseIds": [
-        "kr.course.2022.high.d07982c3b4598582"
+        "kr.course.2022.high.039c51ec34c5e262"
       ],
       "toSchoolLevel": "high",
-      "toTopicIds": [],
-      "transitionKind": "continues"
+      "toTopicIds": [
+        "kr.topic.2022.high.29a37b5c85afd9a40d6d"
+      ],
+      "transitionKind": "deepens"
     },
     {
-      "basis": "reviewed-middle-to-high-course-foundation-map-v1",
-      "basisKind": "repository-authored",
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.89 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
       "fromCourseIds": [
-        "kr.course.2022.middle.373e9959b3cc1af3"
+        "kr.course.2022.middle.fa59961d660b0ad4"
       ],
       "fromSchoolLevel": "middle",
-      "fromTopicIds": [],
-      "id": "kr.transition.b852e5ad114bef9f2b0b07a8",
-      "reason": "중학교 수학에서 고등학교 기본수학1의 기초로 이어지는 검토된 과정 수준 탐색 연결이다. 입학·이수 요건을 뜻하지 않는다.",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.749ca8a9b7bcd8ff4266"
+      ],
+      "id": "kr.transition.a82616b7e44284eeeff685cf",
+      "reason": "중학교 투기형 경기 기능을 고교 사회과학 원리 적용의 수행 기반으로 삼는다.",
       "reviewStatus": "internal-reviewed",
       "sourceRefs": [
-        "kr-moe-2022-33-annex8"
+        "kr-moe-2022-33-annex11"
       ],
       "toCourseIds": [
-        "kr.course.2022.high.f0d7204a23c5c159"
+        "kr.course.2022.high.f787bc1b3673c037"
       ],
       "toSchoolLevel": "high",
-      "toTopicIds": [],
-      "transitionKind": "continues"
+      "toTopicIds": [
+        "kr.topic.2022.high.e1d0886367291098a40b"
+      ],
+      "transitionKind": "deepens"
     },
     {
-      "basis": "reviewed-middle-to-high-course-foundation-map-v1",
-      "basisKind": "repository-authored",
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.62 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.f18ef683439dade9337d"
+      ],
+      "id": "kr.transition.a87328687d2e27bf2f9373f1",
+      "reason": "중학교 전통 표현 창작과 감상을 고교 작품 창작과 비평으로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.402672abea801ba4"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.040ad16f25772bf827f2"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책9 과학과 교육과정 p.83 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.aaaae5ae7d8548a8"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.44dcc515ce00930d2527"
+      ],
+      "id": "kr.transition.a92d17f386e5df200eae6bf9",
+      "reason": "화학 반응의 열 출입을 생활 속 에너지 흡수·방출 현상 탐구로 잇는다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.3e1de9b39f3e77e3"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.52cb92248296d62a5635"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.53 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.a626a35b86c4b8c336b9"
+      ],
+      "id": "kr.transition.abcaddda44706fe099649385",
+      "reason": "중학교 영역형 스포츠의 역사와 특성을 고교 전략형 스포츠 문화로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.5ad7a1f55e918f4d"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.1eaa9d1736e2164fa30b"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책9 과학과 교육과정 p.81 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.aaaae5ae7d8548a8"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.5292503577707c6a5eba"
+      ],
+      "id": "kr.transition.acffe72bf75a9acca546a370",
+      "reason": "염색체와 유전자 관계를 유전자에서 단백질로 이어지는 정보 흐름으로 확장한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.997f40d6e251b180"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.10d31d69bb7ba672c750"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.53 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.2fb4d62474df6614c08d"
+      ],
+      "id": "kr.transition.af992f3008344a1ba15c32df",
+      "reason": "중학교 필드형 스포츠의 역사와 특성을 고교 전략형 스포츠 문화로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.5ad7a1f55e918f4d"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.1eaa9d1736e2164fa30b"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책5 국어과 교육과정 p.94 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.a0f8efae1e2bd119"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.a042d75db9664d328493"
+      ],
+      "id": "kr.transition.b0b8d61f01436f7f23520869",
+      "reason": "중학교 맞춤법 기본 원리를 토대로 고교에서 표기 문제 해결로 확장한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.08a52bc2723f8254"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.d3b55e2735e03c40bae0"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.53 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.16c2aa4ed311872bcf27"
+      ],
+      "id": "kr.transition.b12b23a560bd8f53b75c94d9",
+      "reason": "중학교 영역형 경기 기능을 고교 전략형 경기 기능 분석으로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.5ad7a1f55e918f4d"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.1f35ba511c1c938f3553"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책13 미술과 교육과정 p.29 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.570335cd5c8192d8"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.89873bdb2e93ffb6257c"
+      ],
+      "id": "kr.transition.b55d8332a50405054e7abfe9",
+      "reason": "삶과 미술의 연결을 공동체와 생태환경으로 확장한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex13"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.820636c315f9a521"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.dd001c78db9b1595795c"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책17 한문과 교육과정 p.17 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
       "fromCourseIds": [
         "kr.course.2022.middle.43316f44a956438c"
       ],
       "fromSchoolLevel": "middle",
-      "fromTopicIds": [],
-      "id": "kr.transition.b8b1b2855de2cf85b7d41037",
-      "reason": "중학교 한문에서 고등학교 한문의 기초로 이어지는 검토된 과정 수준 탐색 연결이다. 입학·이수 요건을 뜻하지 않는다.",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.3fe191047899022e465e"
+      ],
+      "id": "kr.transition.b7a98cf468ba435bfb48bead",
+      "reason": "중학교의 문장 구조 구별을 고교의 구조·유형 구별로 확장한다.",
       "reviewStatus": "internal-reviewed",
       "sourceRefs": [
         "kr-moe-2022-33-annex17"
@@ -857,29 +2823,35 @@
         "kr.course.2022.high.8a9d2db677d4856f"
       ],
       "toSchoolLevel": "high",
-      "toTopicIds": [],
-      "transitionKind": "continues"
+      "toTopicIds": [
+        "kr.topic.2022.high.a714c40c129d0316ba17"
+      ],
+      "transitionKind": "deepens"
     },
     {
-      "basis": "reviewed-middle-to-high-course-foundation-map-v1",
-      "basisKind": "repository-authored",
+      "basis": "국가교육위원회 고시 제2024-3호 별책12 음악과 교육과정 p.40 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
       "fromCourseIds": [
-        "kr.course.2022.middle.07f3bfc5942e5a74"
+        "kr.course.2022.middle.b39f1ce9e94d344f"
       ],
       "fromSchoolLevel": "middle",
-      "fromTopicIds": [],
-      "id": "kr.transition.b9b313be82457b51c5ebd97d",
-      "reason": "중학교 도덕에서 고등학교 현대사회와 윤리의 기초로 이어지는 검토된 과정 수준 탐색 연결이다. 입학·이수 요건을 뜻하지 않는다.",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.a812718af2ffa8dc5777"
+      ],
+      "id": "kr.transition.b8edf4747524eca24b789558",
+      "reason": "중학교의 시대별 특징과 구성 파악을 고교의 변화 해석으로 심화한다.",
       "reviewStatus": "internal-reviewed",
       "sourceRefs": [
-        "kr-moe-2022-33-annex6"
+        "kr-nec-2024-3-annex12"
       ],
       "toCourseIds": [
-        "kr.course.2022.high.c89123c129b62d34"
+        "kr.course.2022.high.fdd5dc79d2d5fcf8"
       ],
       "toSchoolLevel": "high",
-      "toTopicIds": [],
-      "transitionKind": "prepares-for"
+      "toTopicIds": [
+        "kr.topic.2022.high.5c150b038b7c57209a89"
+      ],
+      "transitionKind": "deepens"
     },
     {
       "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 p.87 성취기준 적용 시 고려 사항",
@@ -903,6 +2875,56 @@
       "toSchoolLevel": "high",
       "toTopicIds": [
         "kr.topic.2022.high.3aee88f36d59f9d5f5d9"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책17 한문과 교육과정 p.17 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.43316f44a956438c"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.1d2d29669f25ad28f284"
+      ],
+      "id": "kr.transition.bae59d006ce27806ea6d1316",
+      "reason": "중학교의 내용 이해와 주제 파악을 고교의 풀이·설명 성취로 통합한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex17"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.8a9d2db677d4856f"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.2095d2eef862f26b83fb"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.99 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.76ba2cf07cbec437a726"
+      ],
+      "id": "kr.transition.bb0a11049a1b46c13c87c83b",
+      "reason": "중학교 영역형 경기 전략을 고교의 창의적 전략 발전으로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.e651381ef9d478ba"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.1d68979e3b9aa3d110bf"
       ],
       "transitionKind": "deepens"
     },
@@ -932,6 +2954,306 @@
       "transitionKind": "deepens"
     },
     {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.53 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.621da8f189cd281ea4e4"
+      ],
+      "id": "kr.transition.c08baf44dd50a5833c3aefe5",
+      "reason": "중학교 필드형 경기 방법과 전략을 고교 전략형 경기 응용으로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.5ad7a1f55e918f4d"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.52f32b85e2282d3225b1"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.89 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.b013c5dddb52a5722c06"
+      ],
+      "id": "kr.transition.c11126385c85819364936442",
+      "reason": "중학교 필드형 경기 기능을 고교 자연과학 원리 적용의 수행 기반으로 삼는다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.f787bc1b3673c037"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.0a9da035951c9540f56e"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책9 과학과 교육과정 p.85 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.aaaae5ae7d8548a8"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.6e5f31e01beb591d2901"
+      ],
+      "id": "kr.transition.c15c1c0219ebe5ddee1a3822",
+      "reason": "온실효과와 지구온난화 학습을 기후 현상의 영향과 대응 분석으로 확장한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.3e1de9b39f3e77e3"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.3fe5b29a51d2eca0ef38"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.89 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.76ba2cf07cbec437a726"
+      ],
+      "id": "kr.transition.c3c3be90dbb0a488b9641500",
+      "reason": "중학교 영역형 경기 방법과 전략을 고교 사회과학 원리 적용의 기반으로 삼는다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.f787bc1b3673c037"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.e1d0886367291098a40b"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.107 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.b013c5dddb52a5722c06"
+      ],
+      "id": "kr.transition.c511afca6e9fb097023bd6ce",
+      "reason": "중학교 필드형 경기 기능을 고교의 과학적 기능 분석과 전이로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.0bd4c56b6d8a1d04"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.36450118b23d7100fda3"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.81 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.2fb4d62474df6614c08d"
+      ],
+      "id": "kr.transition.c5b06fe93db8cbe169bdff5c",
+      "reason": "중학교 필드형 스포츠의 역사 탐색을 고교 스포츠 역사·철학 탐구로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.a0ed3617828b3299"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.7e15fc7f646585b5f4e1"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.89 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.db7da0744c328a0d9830"
+      ],
+      "id": "kr.transition.c6d29d14df7d84ebf58622a1",
+      "reason": "중학교 네트형 경기 기능을 고교 자연과학 원리 적용의 수행 기반으로 삼는다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.f787bc1b3673c037"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.0a9da035951c9540f56e"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책17 한문과 교육과정 p.17 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.43316f44a956438c"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.d2cf276bf8055615c460"
+      ],
+      "id": "kr.transition.c7ee71bde51dfd3410c01b2f",
+      "reason": "중학교의 한자문화권 이해와 교류 태도를 고교에서 이어 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex17"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.8a9d2db677d4856f"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.2510218872d73fa484d9"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.89 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.cbd9d2e3f6ac4b9cb78c"
+      ],
+      "id": "kr.transition.c8d55410fdcc5232b92a2e5c",
+      "reason": "중학교 네트형 경기 방법과 전략을 고교 사회과학 원리 적용의 기반으로 삼는다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.f787bc1b3673c037"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.e1d0886367291098a40b"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.99 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.11f998a65a2dea3bceb0"
+      ],
+      "id": "kr.transition.c953efe85184859916d9c4e6",
+      "reason": "중학교 자연환경형 경기 기능을 고교의 과학적 기능 분석과 전이로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.e651381ef9d478ba"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.5f1afeeb1ebb1ba4240a"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.89 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.fd7bf453b1e3bbe62845"
+      ],
+      "id": "kr.transition.cacf97da4055dec1aea52cc2",
+      "reason": "중학교 동작형 경기 기능을 고교 자연과학 원리 적용의 수행 기반으로 삼는다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.f787bc1b3673c037"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.0a9da035951c9540f56e"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.73 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.f7639752f0074217a608"
+      ],
+      "id": "kr.transition.cd543959b135bb2c96f5a8b0",
+      "reason": "중학교 신체 건강 활동 실천을 고교 건강 운동 프로그램 관리로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.039c51ec34c5e262"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.29a37b5c85afd9a40d6d"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
       "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 p.66 성취기준 적용 시 고려 사항",
       "basisKind": "official-source",
       "fromCourseIds": [
@@ -957,58 +3279,267 @@
       "transitionKind": "deepens"
     },
     {
-      "basis": "reviewed-middle-to-high-course-foundation-map-v1",
-      "basisKind": "repository-authored",
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.73 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
       "fromCourseIds": [
-        "kr.course.2022.middle.4edb870c5459d216"
+        "kr.course.2022.middle.fa59961d660b0ad4"
       ],
       "fromSchoolLevel": "middle",
-      "fromTopicIds": [],
-      "id": "kr.transition.d3dc2c79453b6da4b8948fb7",
-      "reason": "중학교 진로와 직업에서 고등학교 진로와 직업의 기초로 이어지는 검토된 과정 수준 탐색 연결이다. 입학·이수 요건을 뜻하지 않는다.",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.44c4840b72f94b84b89f"
+      ],
+      "id": "kr.transition.cf6dbc0ded3eacb9d95d8bc3",
+      "reason": "중학교 신체 건강 활동 지식을 고교의 건강 운동 효과 탐구로 심화한다.",
       "reviewStatus": "internal-reviewed",
       "sourceRefs": [
-        "kr-nec-2024-3-annex18",
-        "kr-nec-2024-3-annex19"
+        "kr-moe-2022-33-annex11"
       ],
       "toCourseIds": [
-        "kr.course.2022.high.bbd850cda9d2eacf"
+        "kr.course.2022.high.039c51ec34c5e262"
       ],
       "toSchoolLevel": "high",
-      "toTopicIds": [],
-      "transitionKind": "continues"
+      "toTopicIds": [
+        "kr.topic.2022.high.76385172e60173cf1ad4"
+      ],
+      "transitionKind": "deepens"
     },
     {
-      "basis": "reviewed-middle-to-high-course-foundation-map-v1",
-      "basisKind": "repository-authored",
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.89 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
       "fromCourseIds": [
-        "kr.course.2022.middle.373e9959b3cc1af3"
+        "kr.course.2022.middle.fa59961d660b0ad4"
       ],
       "fromSchoolLevel": "middle",
-      "fromTopicIds": [],
-      "id": "kr.transition.d5588ee3de4b3df66f27f285",
-      "reason": "중학교 수학에서 고등학교 기본수학2의 기초로 이어지는 검토된 과정 수준 탐색 연결이다. 입학·이수 요건을 뜻하지 않는다.",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.477f60512153937d6fee"
+      ],
+      "id": "kr.transition.cf9aaf713fafb1977996b522",
+      "reason": "중학교 자연환경형 방법과 전략을 고교 사회과학 원리 적용의 기반으로 삼는다.",
       "reviewStatus": "internal-reviewed",
       "sourceRefs": [
-        "kr-moe-2022-33-annex8"
+        "kr-moe-2022-33-annex11"
       ],
       "toCourseIds": [
-        "kr.course.2022.high.8fda79d3e68f95aa"
+        "kr.course.2022.high.f787bc1b3673c037"
       ],
       "toSchoolLevel": "high",
-      "toTopicIds": [],
-      "transitionKind": "continues"
+      "toTopicIds": [
+        "kr.topic.2022.high.e1d0886367291098a40b"
+      ],
+      "transitionKind": "deepens"
     },
     {
-      "basis": "reviewed-middle-to-high-course-foundation-map-v1",
-      "basisKind": "repository-authored",
+      "basis": "국가교육위원회 고시 제2024-3호 별책9 과학과 교육과정 p.80 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.aaaae5ae7d8548a8"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.100a7f494c0128d8681f"
+      ],
+      "id": "kr.transition.d040be1afe8de310bff71725",
+      "reason": "중학교 주기율표 학습을 원소의 주기성과 결합 해석으로 확장한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.997f40d6e251b180"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.cd2b98a61f450fdf622a"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책17 한문과 교육과정 p.17 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.43316f44a956438c"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.b7c3bbb5abc68574b3f6"
+      ],
+      "id": "kr.transition.d220a3fd8d0067c72545c317",
+      "reason": "중학교의 단어·성어 문맥 활용을 고교 의사소통 학습의 토대로 삼는다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex17"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.8a9d2db677d4856f"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.6853c8adcf474088c3ee"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.81 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.30e44e7d369d6595620e"
+      ],
+      "id": "kr.transition.d292a0577291948e54002f73",
+      "reason": "중학교 자연환경형 스포츠의 역사 탐색을 고교 스포츠 역사·철학 탐구로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.a0ed3617828b3299"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.7e15fc7f646585b5f4e1"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.89 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.cbd9d2e3f6ac4b9cb78c"
+      ],
+      "id": "kr.transition.d3b5611cf7434175b36ccc14",
+      "reason": "중학교 네트형 경기 방법과 전략을 고교 자연과학 원리 적용의 기반으로 삼는다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.f787bc1b3673c037"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.0a9da035951c9540f56e"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.89 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.ff1678ba44ac6ce347e5"
+      ],
+      "id": "kr.transition.d4bb1b93718512b61826fc11",
+      "reason": "중학교 생활환경형 방법과 전략을 고교 자연과학 원리 적용의 기반으로 삼는다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.f787bc1b3673c037"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.0a9da035951c9540f56e"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.81 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.74e5f17a9ba80fdbe975"
+      ],
+      "id": "kr.transition.d4e6cfa83e7103269797927c",
+      "reason": "중학교 동작형 스포츠의 역사 탐색을 고교 스포츠 역사·철학 탐구로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.a0ed3617828b3299"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.7e15fc7f646585b5f4e1"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.62 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.749ca8a9b7bcd8ff4266"
+      ],
+      "id": "kr.transition.d5374229ae9b646ec2ef4784",
+      "reason": "중학교 투기형 경기 기능을 고교 기술형 경기 기능 분석으로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.402672abea801ba4"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.cc12b53677b1c07d61ca"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.53 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.ebc2988df3285133708c"
+      ],
+      "id": "kr.transition.d5ff6a336a1aa47db18f428a",
+      "reason": "중학교 생활환경형 스포츠의 역사와 특성을 고교 생태형 스포츠 문화로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.5ad7a1f55e918f4d"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.b85f00e343a956d5543d"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책13 미술과 교육과정 p.29 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
       "fromCourseIds": [
         "kr.course.2022.middle.570335cd5c8192d8"
       ],
       "fromSchoolLevel": "middle",
-      "fromTopicIds": [],
-      "id": "kr.transition.da87a90a9a3f19fca352fb62",
-      "reason": "중학교 미술에서 고등학교 미술의 기초로 이어지는 검토된 과정 수준 탐색 연결이다. 입학·이수 요건을 뜻하지 않는다.",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.791e4e87643a0fdf5bab"
+      ],
+      "id": "kr.transition.d64740a789d1886da0b4493e",
+      "reason": "감상 관점의 활용을 비평 관점을 통한 소통으로 확장한다.",
       "reviewStatus": "internal-reviewed",
       "sourceRefs": [
         "kr-moe-2022-33-annex13"
@@ -1017,8 +3548,260 @@
         "kr.course.2022.high.820636c315f9a521"
       ],
       "toSchoolLevel": "high",
-      "toTopicIds": [],
-      "transitionKind": "continues"
+      "toTopicIds": [
+        "kr.topic.2022.high.cdf8d9d1516c539c9378"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.62 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.92fc1037672b3199f315"
+      ],
+      "id": "kr.transition.d7210b18cb2c13e83e0fc45d",
+      "reason": "중학교 도전적 경기 태도를 고교의 지속적 기술형 스포츠 참여로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.402672abea801ba4"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.b952ca55106a619ec0a5"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.89 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.6bf0c43559ff80f9d7c0"
+      ],
+      "id": "kr.transition.da7f2f9a12318724703a54b0",
+      "reason": "중학교 동작형 경기 방법과 전략을 고교 사회과학 원리 적용의 기반으로 삼는다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.f787bc1b3673c037"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.e1d0886367291098a40b"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책13 미술과 교육과정 p.29 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.570335cd5c8192d8"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.9e1eb9c655ca9133e555"
+      ],
+      "id": "kr.transition.dafbf5b88801911092e967e6",
+      "reason": "이미지를 활용한 소통을 소통 방식 탐구로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex13"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.820636c315f9a521"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.8e233cefba39f46411e4"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.53 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.f5a2059e370a86ae1775"
+      ],
+      "id": "kr.transition.db63417d1727373c9dcd5234",
+      "reason": "중학교 정신 건강 활동 방법을 생애주기별 건강 관리로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.5ad7a1f55e918f4d"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.cc5c715cf41404830113"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.62 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.97265fa82c35665eb15a"
+      ],
+      "id": "kr.transition.dc00033ffc150ae7c8c1edad",
+      "reason": "중학교 스포츠 표현의 역사와 특성을 고교 표현 활동 문화로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.402672abea801ba4"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.4c818c31c55176a4426c"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.53 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.477f60512153937d6fee"
+      ],
+      "id": "kr.transition.dceb9bb7cc0450df0caaec78",
+      "reason": "중학교 자연환경형 활동 방법과 전략을 고교 생태형 경기 응용으로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.5ad7a1f55e918f4d"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.e9107bb1ccdd705cf226"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책10 기술·가정·정보과 교육과정 p.107 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.92c889afa560b9d8"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.8f64e381fb21857618a1"
+      ],
+      "id": "kr.transition.de51430f5fb75e426bcdde60",
+      "reason": "중학교 지식재산권 개념을 고등학교의 유형과 특성 비교로 확장한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex10"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.231db579e1a3b213"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.d9c64e7e41a0b77f8793"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.89 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.21757a013828a62a5e2a"
+      ],
+      "id": "kr.transition.df9ee559f2a58c9dfac791fc",
+      "reason": "중학교 투기형 경기 방법과 전략을 고교 사회과학 원리 적용의 기반으로 삼는다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.f787bc1b3673c037"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.e1d0886367291098a40b"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책9 과학과 교육과정 p.81 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.aaaae5ae7d8548a8"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.ba4a1f7fc5bbca54eb2c"
+      ],
+      "id": "kr.transition.dfd9b5926542e5d4521dd4a5",
+      "reason": "중력의 특징을 중력장 안에서 나타나는 여러 운동의 설명에 연결한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex9"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.997f40d6e251b180"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.c02a8a4ffd3895a1a7c3"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.99 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.30e44e7d369d6595620e"
+      ],
+      "id": "kr.transition.e0779ce69f930d9b14e1a0b8",
+      "reason": "중학교 자연환경형 스포츠 특성을 고교 생활·자연환경형 문화로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.e651381ef9d478ba"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.d606ff781f349c304e93"
+      ],
+      "transitionKind": "deepens"
     },
     {
       "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 p.73 성취기준 적용 시 고려 사항",
@@ -1046,69 +3829,556 @@
       "transitionKind": "deepens"
     },
     {
-      "basis": "reviewed-middle-to-high-course-foundation-map-v1",
-      "basisKind": "repository-authored",
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.62 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
       "fromCourseIds": [
-        "kr.course.2022.middle.aaaae5ae7d8548a8"
+        "kr.course.2022.middle.fa59961d660b0ad4"
       ],
       "fromSchoolLevel": "middle",
-      "fromTopicIds": [],
-      "id": "kr.transition.e30f96c0f8b9fe1ba34a2b19",
-      "reason": "중학교 과학에서 고등학교 과학탐구실험1의 기초로 이어지는 검토된 과정 수준 탐색 연결이다. 입학·이수 요건을 뜻하지 않는다.",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.21757a013828a62a5e2a"
+      ],
+      "id": "kr.transition.e189fd76f0726db5744a2ce9",
+      "reason": "중학교 투기형 경기 방법과 전략을 고교 기술형 경기 응용으로 심화한다.",
       "reviewStatus": "internal-reviewed",
       "sourceRefs": [
-        "kr-nec-2024-3-annex9"
+        "kr-moe-2022-33-annex11"
       ],
       "toCourseIds": [
-        "kr.course.2022.high.405980f16b59bcfe"
+        "kr.course.2022.high.402672abea801ba4"
       ],
       "toSchoolLevel": "high",
-      "toTopicIds": [],
-      "transitionKind": "continues"
+      "toTopicIds": [
+        "kr.topic.2022.high.882b4bd6184eed16ebfa"
+      ],
+      "transitionKind": "deepens"
     },
     {
-      "basis": "reviewed-middle-to-high-course-foundation-map-v1",
-      "basisKind": "repository-authored",
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.107 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
       "fromCourseIds": [
-        "kr.course.2022.middle.91407698abb03db8"
+        "kr.course.2022.middle.fa59961d660b0ad4"
       ],
       "fromSchoolLevel": "middle",
-      "fromTopicIds": [],
-      "id": "kr.transition.e59b56492983696b9238cb60",
-      "reason": "중학교 생활 일본어에서 고등학교 일본어의 기초로 이어지는 검토된 과정 수준 탐색 연결이다. 입학·이수 요건을 뜻하지 않는다.",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.621da8f189cd281ea4e4"
+      ],
+      "id": "kr.transition.e18b55b1abadd71dcf77e6c2",
+      "reason": "중학교 필드형 경기 전략을 고교의 창의적 전략 발전으로 심화한다.",
       "reviewStatus": "internal-reviewed",
       "sourceRefs": [
-        "kr-moe-2022-33-annex16"
+        "kr-moe-2022-33-annex11"
       ],
       "toCourseIds": [
-        "kr.course.2022.high.4e9088d831f0e0cd"
+        "kr.course.2022.high.0bd4c56b6d8a1d04"
       ],
       "toSchoolLevel": "high",
-      "toTopicIds": [],
-      "transitionKind": "continues"
+      "toTopicIds": [
+        "kr.topic.2022.high.ba2472c725d501ac0213"
+      ],
+      "transitionKind": "deepens"
     },
     {
-      "basis": "reviewed-middle-to-high-course-foundation-map-v1",
-      "basisKind": "repository-authored",
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.107 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
       "fromCourseIds": [
-        "kr.course.2022.middle.fb948cdadbdc5da1"
+        "kr.course.2022.middle.fa59961d660b0ad4"
       ],
       "fromSchoolLevel": "middle",
-      "fromTopicIds": [],
-      "id": "kr.transition.f65dc1078933f97d48afffee",
-      "reason": "중학교 영어에서 고등학교 기본영어1의 기초로 이어지는 검토된 과정 수준 탐색 연결이다. 입학·이수 요건을 뜻하지 않는다.",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.dd2cce8d64222ea1382f"
+      ],
+      "id": "kr.transition.e2c5bf0e1cbcd9a501691222",
+      "reason": "중학교 네트형 스포츠의 역사와 특성을 고교 네트형 스포츠 문화로 심화한다.",
       "reviewStatus": "internal-reviewed",
       "sourceRefs": [
-        "kr-nec-2024-3-annex14"
+        "kr-moe-2022-33-annex11"
       ],
       "toCourseIds": [
-        "kr.course.2022.high.1a2a0f41692de8e3"
+        "kr.course.2022.high.0bd4c56b6d8a1d04"
       ],
       "toSchoolLevel": "high",
-      "toTopicIds": [],
-      "transitionKind": "continues"
+      "toTopicIds": [
+        "kr.topic.2022.high.6f8203e0916bcb3d342b"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.73 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.ed047a069e3ace515f59"
+      ],
+      "id": "kr.transition.e5d439c3b355af1c2cfb6a51",
+      "reason": "중학교 운동 처방 실천을 고교 트레이닝 프로그램 적용으로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.039c51ec34c5e262"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.c6048c29bf72742d10bc"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.89 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.16c2aa4ed311872bcf27"
+      ],
+      "id": "kr.transition.e5f9ddf387faadbb0ebca94e",
+      "reason": "중학교 영역형 경기 기능을 고교 자연과학 원리 적용의 수행 기반으로 삼는다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.f787bc1b3673c037"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.0a9da035951c9540f56e"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.62 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.0bda17ceac5a8eae6d40"
+      ],
+      "id": "kr.transition.e7012ca4778099f7fa93e060",
+      "reason": "중학교 현대 표현의 역사와 특성을 고교 표현 활동 문화로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.402672abea801ba4"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.4c818c31c55176a4426c"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.107 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.cbd9d2e3f6ac4b9cb78c"
+      ],
+      "id": "kr.transition.e7157d1539b40975c600bd40",
+      "reason": "중학교 네트형 경기 전략을 고교의 창의적 전략 발전으로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.0bd4c56b6d8a1d04"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.f768d6b6ac319b0327ce"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책13 미술과 교육과정 p.29 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.570335cd5c8192d8"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.9ba0f217c40cce60f018"
+      ],
+      "id": "kr.transition.e720a3a89552e5dcc1477ace",
+      "reason": "다양한 매체 활용을 매체와 방법의 실험·융합으로 확장한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex13"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.820636c315f9a521"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.dab3ee9803f1f65e279d"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.89 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.16c2aa4ed311872bcf27"
+      ],
+      "id": "kr.transition.ece84ae78c28c4b75833e0d3",
+      "reason": "중학교 영역형 경기 기능을 고교 사회과학 원리 적용의 수행 기반으로 삼는다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.f787bc1b3673c037"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.e1d0886367291098a40b"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.53 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.db7da0744c328a0d9830"
+      ],
+      "id": "kr.transition.ed83a6850a96b3fb15db0fff",
+      "reason": "중학교 네트형 경기 기능을 고교 전략형 경기 기능 분석으로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.5ad7a1f55e918f4d"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.1f35ba511c1c938f3553"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.89 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.db7da0744c328a0d9830"
+      ],
+      "id": "kr.transition.f36ae85712823334d38908a2",
+      "reason": "중학교 네트형 경기 기능을 고교 사회과학 원리 적용의 수행 기반으로 삼는다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.f787bc1b3673c037"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.e1d0886367291098a40b"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.81 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.f49c31665c3c23261f61"
+      ],
+      "id": "kr.transition.f3d60da02ec70695047c53cf",
+      "reason": "중학교 기록형 스포츠의 역사 탐색을 고교 스포츠 역사·철학 탐구로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.a0ed3617828b3299"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.7e15fc7f646585b5f4e1"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.89 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.6bf0c43559ff80f9d7c0"
+      ],
+      "id": "kr.transition.f67405a5c3499102b8ee1972",
+      "reason": "중학교 동작형 경기 방법과 전략을 고교 자연과학 원리 적용의 기반으로 삼는다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.f787bc1b3673c037"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.0a9da035951c9540f56e"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "국가교육위원회 고시 제2024-3호 별책7 사회·역사과 교육과정 p.93 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.718b305249a94a92"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.ea25dd19820c9a73005d"
+      ],
+      "id": "kr.transition.f6a4615ce99c4d392636775d",
+      "reason": "중학교 한국사 학습에 이어 근대 국가 수립 주제를 근현대사 중심으로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex7"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.8d43b2271a6b33db"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.bbefec8ac657d191c8a9"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.89 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.223e1aa2521b86716798"
+      ],
+      "id": "kr.transition.f7c936ff795a417aa7e89555",
+      "reason": "중학교 생활환경형 경기 기능을 고교 자연과학 원리 적용의 수행 기반으로 삼는다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.f787bc1b3673c037"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.0a9da035951c9540f56e"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책17 한문과 교육과정 p.17 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.43316f44a956438c"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.b8dff291b1825a7dc7a4"
+      ],
+      "id": "kr.transition.fa0bb9cef900fd2641089b3e",
+      "reason": "중학교의 선인 지혜·인성 학습을 고교에서 계속 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex17"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.8a9d2db677d4856f"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.76ae4421c85bef1e9b7a"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책17 한문과 교육과정 p.17 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.43316f44a956438c"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.0907dfdf21233a7ac6ee"
+      ],
+      "id": "kr.transition.fb54524de5ea0480c9f6190c",
+      "reason": "중학교의 어휘 구성 관계 학습을 고교의 단어 짜임 구별로 이어 간다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex17"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.8a9d2db677d4856f"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.876683b635b50b5aeeb8"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책5 국어과 교육과정 p.84 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.a0f8efae1e2bd119"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.22b4d3cd31b6bd1510d9"
+      ],
+      "id": "kr.transition.fc0ddb203a36ec0ea754bdd5",
+      "reason": "중학교 피동과 인용 표현을 고교의 문법 요소 표현 효과 학습으로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex5"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.4166f628015541ac"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.bbfcc3eab9e303691c8b"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.73 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.b90b918ffa136f0ab7d8"
+      ],
+      "id": "kr.transition.fc299401b8b2c98b6e256d4e",
+      "reason": "중학교 사회적 건강의 응급 대처를 고교 운동 손상 관리로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.039c51ec34c5e262"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.fa7773a93482f12b1556"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.62 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.465f41d477ecf41e7d8c"
+      ],
+      "id": "kr.transition.fcb354cd56b8839ee7123060",
+      "reason": "중학교 스포츠 표현 창작과 감상을 고교 작품 창작과 비평으로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.402672abea801ba4"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.040ad16f25772bf827f2"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.73 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.aa17e056409e703ecc39"
+      ],
+      "id": "kr.transition.fd56b2895d3c297a00e18ba4",
+      "reason": "중학교 체력 진단과 관리를 고교 트레이닝 프로그램 적용으로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.039c51ec34c5e262"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.c6048c29bf72742d10bc"
+      ],
+      "transitionKind": "deepens"
+    },
+    {
+      "basis": "교육부 고시 제2022-33호 별책11 체육과 교육과정 p.53 성취기준 적용 시 고려 사항",
+      "basisKind": "official-source",
+      "fromCourseIds": [
+        "kr.course.2022.middle.fa59961d660b0ad4"
+      ],
+      "fromSchoolLevel": "middle",
+      "fromTopicIds": [
+        "kr.topic.2022.middle.f7639752f0074217a608"
+      ],
+      "id": "kr.transition.fd7290644b8e906e9937c42f",
+      "reason": "중학교 신체 건강 활동 방법을 생애주기별 건강 관리로 심화한다.",
+      "reviewStatus": "internal-reviewed",
+      "sourceRefs": [
+        "kr-moe-2022-33-annex11"
+      ],
+      "toCourseIds": [
+        "kr.course.2022.high.5ad7a1f55e918f4d"
+      ],
+      "toSchoolLevel": "high",
+      "toTopicIds": [
+        "kr.topic.2022.high.cc5c715cf41404830113"
+      ],
+      "transitionKind": "deepens"
     }
   ],
   "recordType": "transitionAlignments",
-  "releaseId": "kr-2022-middle-high-bridge-v0.4.0-candidate"
+  "releaseId": "kr-2022-middle-high-bridge-v0.5.0-candidate"
 }

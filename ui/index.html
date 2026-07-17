@@ -18,7 +18,7 @@
     <div class="hero__copy">
       <p class="eyebrow">MIDDLE × HIGH SCHOOL</p>
       <h1>중등교육의 길을<br><em>한눈에 잇다.</em></h1>
-      <p class="lede">중학교의 기반에서 고등학교의 공통·선택·전문 과목까지. 공식 성취기준과 검토 가능한 전이 관계를 단계별로 탐색합니다.</p>
+      <p class="lede">중학교의 기반에서 고등학교의 공통·선택·전문 과목까지. 공식 성취기준과 공식 문서가 명시한 학습·전이 관계를 단계별로 확인합니다.</p>
     </div>
     <div id="stats" class="stats" aria-label="데이터 요약"></div>
   </header>
@@ -26,7 +26,7 @@
   <main id="main">
     <section class="notice" aria-label="중요 안내">
       <strong>읽기 전에</strong>
-      <p>이 지도는 교육과정 탐색 도구입니다. 학교별 개설 과목이나 공식 이수 요건을 대신하지 않으며, 관계와 경로는 전문가 검토 전 후보입니다.</p>
+      <p>관계는 공식 문서가 직접 뒷받침하는 항목만 표시합니다. 학교별 개설 과목이나 이수 요건을 대신하지 않으며, 경로 안내는 선택지를 살펴보는 예시입니다.</p>
     </section>
 
     <div class="tabs" role="tablist" aria-label="학습지도 보기">
@@ -38,7 +38,7 @@
     </div>
 
     <section id="explorer" class="panel tab-panel" role="tabpanel" aria-labelledby="tab-explorer">
-      <div class="section-heading"><div><p class="eyebrow">L0 → L5 PROGRESSIVE DISCLOSURE</p><h2>과목에서 근거까지 내려가기</h2></div><p>학교급과 교과군을 고른 뒤 과목을 열면 성취기준, 주제, 학습 증거, 출처 위치가 이어집니다.</p></div>
+      <div class="section-heading"><div><p class="eyebrow">L0 → L5 PROGRESSIVE DISCLOSURE</p><h2>과목에서 근거까지 내려가기</h2></div><p>학교급과 교과군을 고른 뒤 과목을 열면 성취기준, 주제, 공식 관계와 근거 페이지·출처가 이어집니다.</p></div>
       <div class="filters" aria-label="과목 필터">
         <label>학교급<select id="level-filter"><option value="all">중·고 전체</option><option value="middle">중학교</option><option value="high">고등학교</option></select></label>
         <label>교과군<select id="group-filter"><option value="all">전체 교과군</option></select></label>
@@ -53,13 +53,14 @@
     </section>
 
     <section id="transitions" class="panel tab-panel" role="tabpanel" aria-labelledby="tab-transitions" hidden>
-      <div class="section-heading"><div><p class="eyebrow">BRIDGE RELEASE</p><h2>중학교에서 고등학교로</h2></div><p>같은 교과군 안에서 어떤 중학교 과목이 고등학교 과목으로 이어지는지 보여 주는 과정 수준의 검토 후보입니다.</p></div>
+      <div class="section-heading"><div><p class="eyebrow">OFFICIAL BRIDGE</p><h2>중학교에서 고등학교로</h2></div><p>공식 교육과정 문서가 직접 명시한 중학교 주제와 고등학교 주제의 전이만 보여 줍니다.</p></div>
       <div class="filters compact"><label>교과군<select id="transition-group"><option value="all">전체 교과군</option></select></label><label class="search-label">전이 검색<input id="transition-search" type="search" placeholder="중학교·고등학교 과목"></label></div>
+      <div class="list-meta transition-meta"><strong id="transition-result-count" aria-live="polite">공식 전이 관계 0건</strong><span>각 관계에서 근거 페이지와 출처를 확인할 수 있습니다.</span></div>
       <div id="transition-list" class="transition-list"></div>
     </section>
 
     <section id="compare" class="panel tab-panel" role="tabpanel" aria-labelledby="tab-compare" hidden>
-      <div class="section-heading"><div><p class="eyebrow">SIDE BY SIDE</p><h2>두 과목 구조 비교</h2></div><p>학교급·범주·성취기준 수를 비교합니다. 수량이 난이도나 중요도를 뜻하지는 않습니다.</p></div>
+      <div class="section-heading"><div><p class="eyebrow">SIDE BY SIDE</p><h2>두 과목 구조 비교</h2></div><p>학교급·범주·성취기준과 공식 문서 관계 수를 비교합니다. 수량이 난이도나 중요도를 뜻하지는 않습니다.</p></div>
       <div class="compare-pickers"><label>첫 번째 과목<select id="compare-a"></select></label><span aria-hidden="true">↔</span><label>두 번째 과목<select id="compare-b"></select></label></div>
       <div id="compare-grid" class="compare-grid"></div>
     </section>
@@ -73,7 +74,7 @@
     <section id="provenance" class="panel tab-panel" role="tabpanel" aria-labelledby="tab-provenance" hidden>
       <div class="section-heading"><div><p class="eyebrow">PROVENANCE & RIGHTS</p><h2>무엇을 확인했고, 무엇은 아직인가</h2></div></div>
       <div id="boundary-list" class="boundary-grid"></div>
-      <div class="provenance-card"><h3>검증 상태는 세 축으로 나뉩니다</h3><dl><div><dt>공식 코드 확인</dt><dd>NCIC 공식 PDF의 첨부 번호·SHA-256·페이지와 연결</dd></div><div><dt>교육적 해석</dt><dd>세부 주제·관계·경로는 자동 생성 후보, 전문가 검토 대기</dd></div><div><dt>권리 상태</dt><dd>원문 비포함. 문서별 재사용 검토 전까지 HOLD</dd></div></dl></div>
+      <div class="provenance-card"><h3>검증 상태는 세 축으로 나뉩니다</h3><dl><div><dt>공식 코드 확인</dt><dd>NCIC 공식 PDF의 첨부 번호·SHA-256·페이지와 연결</dd></div><div><dt>공식 관계 근거</dt><dd>문서가 직접 뒷받침하는 관계만 근거 페이지·출처와 함께 표시</dd></div><div><dt>파생 정보·권리</dt><dd>세부 주제와 예시 경로는 파생 정보이며, 원문은 비포함·권리는 HOLD</dd></div></dl></div>
     </section>
   </main>
 

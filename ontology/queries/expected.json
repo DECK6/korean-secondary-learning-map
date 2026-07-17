@@ -6,9 +6,9 @@
     "scq-02-course-standards-topics": 52909,
     "scq-03-standard-alignments": 52909,
     "scq-04-evidence-prompts": 52909,
-    "scq-05-learning-relations": 52184,
-    "scq-06-relation-review": 52292,
-    "scq-07-middle-high-transition": 50,
+    "scq-05-learning-relations": 564,
+    "scq-06-relation-review": 1068,
+    "scq-07-middle-high-transition": 175,
     "scq-08-course-relations": 39,
     "scq-09-choice-sets": 719,
     "scq-10-credit-rules": 3,
@@ -20,7 +20,7 @@
     "scq-16-independent-status": 115879,
     "scq-17-coverage-gaps": 5,
     "scq-18-candidate-review-queue": 0,
-    "scq-19-elementary-bridge": 19,
+    "scq-19-elementary-bridge": 290,
     "scq-20-no-learner-data": true
   },
   "invariants": {

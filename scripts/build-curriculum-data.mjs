@@ -444,14 +444,14 @@ const records = [...byProfileAndCode.values()].sort((a, b) =>
 );
 
 const releases = {
-  middle: 'kr-2022-middle-v0.4.0-candidate',
-  high: 'kr-2022-high-v0.4.0-candidate',
-  bridges: 'kr-2022-middle-high-bridge-v0.4.0-candidate',
+  middle: 'kr-2022-middle-v0.5.0-candidate',
+  high: 'kr-2022-high-v0.5.0-candidate',
+  bridges: 'kr-2022-middle-high-bridge-v0.5.0-candidate',
 };
 
 const sourceManifest = {
   $schema: '../../../schema/source-manifest.schema.json',
-  version: '0.4.0-candidate',
+  version: '0.5.0-candidate',
   accessDate: catalog.catalogVersion,
   sourceCount: catalog.sources.length,
   sources: catalog.sources.map((source) => {
@@ -705,22 +705,6 @@ const highGroupById = new Map(high.subjectGroups.map((group) => [group.id, group
 for (const [subjectGroupId, courses] of highCoursesByGroup) {
   const common = courses.filter((course) => course.courseCategory === 'common');
   const elective = courses.filter((course) => !['common', 'specialized-common'].includes(course.courseCategory));
-  for (const from of common) {
-    for (const to of elective) {
-      courseRelations.push({
-        id: `kr.cr.${hash(`${from.id}|${to.id}|prepares-for`, 24)}`,
-        fromCourseId: from.id,
-        toCourseId: to.id,
-        relationKind: 'prepares-for',
-        claimStatus: 'candidate',
-        reason: `${from.labelKorean}에서 ${to.labelKorean}로 이어지는 과목 선택 검토 후보 관계다.`,
-        basisKind: 'repository-authored',
-        basis: 'same-subject-group-course-category-candidate-v2',
-        sourceRefs: [...new Set([...from.sourceRefs, ...to.sourceRefs])].sort(),
-        reviewStatus: 'candidate',
-      });
-    }
-  }
   if (elective.length > 1) {
     const choiceSetId = `kr.choice-set.2022.high.${hash(subjectGroupId, 16)}`;
     choiceSets.push({
@@ -749,45 +733,7 @@ for (const [subjectGroupId, courses] of highCoursesByGroup) {
   }
 }
 
-const middleGroupsByLabel = new Map(middle.subjectGroups.map((group) => [group.labelKorean, group]));
-const highGroupsByLabel = new Map(high.subjectGroups.map((group) => [group.labelKorean, group]));
-const middleCoursesByGroup = new Map();
-const highTransitionCoursesByGroup = new Map();
-for (const course of middle.courses) {
-  if (!middleCoursesByGroup.has(course.subjectGroupId)) middleCoursesByGroup.set(course.subjectGroupId, []);
-  middleCoursesByGroup.get(course.subjectGroupId).push(course);
-}
-for (const course of high.courses.filter((course) => ['common', 'general-elective', 'career-elective', 'convergence-elective'].includes(course.courseCategory))) {
-  if (!highTransitionCoursesByGroup.has(course.subjectGroupId)) highTransitionCoursesByGroup.set(course.subjectGroupId, []);
-  highTransitionCoursesByGroup.get(course.subjectGroupId).push(course);
-}
 const transitionAlignments = [];
-for (const [label, middleGroup] of middleGroupsByLabel) {
-  const highGroup = highGroupsByLabel.get(label);
-  if (!highGroup) continue;
-  for (const middleCourse of middleCoursesByGroup.get(middleGroup.id) ?? []) {
-    for (const highCourse of highTransitionCoursesByGroup.get(highGroup.id) ?? []) {
-      const sameNamedCourse = middleCourse.labelKorean.replace(/[^가-힣A-Za-z0-9]/g, '') === highCourse.labelKorean.replace(/[^가-힣A-Za-z0-9]/g, '');
-      const transitionKind = sameNamedCourse ? 'continues' : highCourse.courseCategory === 'common' ? 'deepens' : 'prepares-for';
-      const transitionVerb = transitionKind === 'continues' ? '이어지는' : transitionKind === 'deepens' ? '심화하는' : '준비하는';
-      transitionAlignments.push({
-        id: `kr.transition.${hash(`${middleCourse.id}|${highCourse.id}`, 24)}`,
-        fromSchoolLevel: 'middle',
-        toSchoolLevel: 'high',
-        fromCourseIds: [middleCourse.id],
-        fromTopicIds: [],
-        toCourseIds: [highCourse.id],
-        toTopicIds: [],
-        transitionKind,
-        reason: `${middleCourse.labelKorean}와 고등학교 ${highCourse.labelKorean}가 같은 교과군에 속한다는 구조를 바탕으로 ${transitionVerb} 과정 수준의 검토 후보 관계다.`,
-        basisKind: 'repository-authored',
-        basis: 'same-subject-group-course-transition-candidate-v2',
-        sourceRefs: [...new Set([...middleCourse.sourceRefs, ...highCourse.sourceRefs])].sort(),
-        reviewStatus: 'candidate',
-      });
-    }
-  }
-}
 
 function envelope(profile, releaseId, recordType, records) {
   const schemaFile = profile === 'middle' ? 'middle-profile' : profile === 'high' ? 'high-profile' : 'bridge-profile';
@@ -940,7 +886,7 @@ function highScopeSummary(scope) {
 }
 
 await atomicJson(join(root, 'data/kr/inventory-report.json'), {
-  version: '0.4.0-candidate',
+  version: '0.5.0-candidate',
   extractedOccurrenceCount: extracted.length,
   repeatedProfessionalCommonOccurrenceCount,
   uniqueStandardCount: records.length,

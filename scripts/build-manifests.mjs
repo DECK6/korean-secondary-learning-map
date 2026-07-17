@@ -10,6 +10,7 @@ const profileSchemaFiles = {
   high: 'high-profile.schema.json',
   bridges: 'bridge-profile.schema.json',
 };
+const relationCollectionNames = ['learningRelations', 'courseRelations', 'transitionAlignments', 'elementaryTransitions'];
 
 function sortValue(value) {
   if (Array.isArray(value)) return value.map(sortValue);
@@ -59,6 +60,13 @@ export async function renderManifests(root = projectRoot) {
     const directory = join(root, 'data/kr', profile);
     const releasePath = join(directory, 'release.json');
     const release = JSON.parse(await readFile(releasePath, 'utf8'));
+    for (const collectionName of relationCollectionNames) {
+      const file = release.collections[collectionName];
+      if (!file) continue;
+      const collection = JSON.parse(await readFile(join(directory, file), 'utf8'));
+      const unsupported = collection.records.find((record) => record.basisKind !== 'official-source');
+      if (unsupported) throw new Error(`${profile}/${file} contains non-official relation ${unsupported.id}`);
+    }
     const inputPaths = [
       releasePath,
       ...Object.values(release.collections).map((file) => join(directory, file)),
@@ -107,7 +115,7 @@ export async function renderManifests(root = projectRoot) {
   components.sort((a, b) => a.path.localeCompare(b.path, 'en'));
   const bundle = {
     formatVersion: '1',
-    bundleId: 'kr-2022-secondary-bundle-v0.4.0-candidate',
+    bundleId: 'kr-2022-secondary-bundle-v0.5.0-candidate',
     profiles: profileMeta,
     components,
   };

@@ -253,9 +253,9 @@
         "scope": { "enum": ["same-course", "same-subject-group", "cross-subject", "cross-school-level"] },
         "strength": { "enum": ["required", "recommended"] },
         "reason": { "type": "string", "minLength": 1 },
-        "basisKind": { "enum": ["official-source", "expert-review", "repository-authored", "model-candidate"] },
+        "basisKind": { "const": "official-source" },
         "basis": { "type": "string", "minLength": 1 },
-        "sourceRefs": { "type": "array", "uniqueItems": true, "items": { "$ref": "core.schema.json#/$defs/sourceRef" } },
+        "sourceRefs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "core.schema.json#/$defs/sourceRef" } },
         "reviewStatus": { "$ref": "core.schema.json#/$defs/reviewStatus" }
       },
       "allOf": [

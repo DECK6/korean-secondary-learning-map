@@ -48,7 +48,7 @@
       "status": "open"
     },
     {
-      "description": "일반고·직업계고 전 과목의 탐색 그래프와 공식 과목 연계는 내부 검토되었다. 과목별 의미 선수 관계를 교과·직업계 전문가가 추가 정밀화할 수 있다.",
+      "description": "공식 문서가 직접 설명한 고등학교 과목 연계는 내부 검토되었다. 추가적인 주제 수준 선수 관계를 공식 근거와 함께 발굴하는 작업은 남아 있다.",
       "id": "gap.high.subject-expert-refinement-pending",
       "severity": "medium",
       "sourceRefs": [],
@@ -56,5 +56,5 @@
     }
   ],
   "recordType": "coverageGaps",
-  "releaseId": "kr-2022-high-v0.4.0-candidate"
+  "releaseId": "kr-2022-high-v0.5.0-candidate"
 }

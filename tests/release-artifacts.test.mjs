@@ -2,8 +2,14 @@ import { expect, test } from 'bun:test';
 import { createHash } from 'node:crypto';
 import { readFile } from 'node:fs/promises';
 
+import { officialRelationSpecs } from '../scripts/lib/official-relation-specs/index.mjs';
+
 const readJson = async (path) => JSON.parse(await readFile(new URL(path, import.meta.url), 'utf8'));
 const sha256 = (contents) => createHash('sha256').update(contents).digest('hex');
+const registeredHighRequired = officialRelationSpecs.reduce(
+  (total, spec) => total + (spec.highRequired ?? []).length + (spec.highCommentaryRequired ?? []).length,
+  0,
+);
 
 test('pins the complete official source inventory', async () => {
   const catalog = await readJson('../sources/official/source-catalog.json');
@@ -30,16 +36,23 @@ test('keeps educational interpretations visibly non-official', async () => {
   const transitions = await readJson('../data/kr/bridges/transition-alignments.json');
   expect(pathways.records.every((item) => item.pathwayKind === 'illustrative' && item.notOfficialRequirement === true && item.reviewStatus === 'candidate')).toBe(true);
   expect(transitions.records.every((item) => item.reviewStatus === 'internal-reviewed')).toBe(true);
-  expect(transitions.records.filter((item) => !item.fromTopicIds.length && !item.toTopicIds.length).every((item) => item.basisKind === 'repository-authored')).toBe(true);
-  expect(transitions.records.filter((item) => item.fromTopicIds.length || item.toTopicIds.length).every((item) => item.basisKind === 'official-source')).toBe(true);
+  expect(transitions.records.every((item) => item.basisKind === 'official-source')).toBe(true);
+  expect(transitions.records.every((item) => item.fromTopicIds.length && item.toTopicIds.length)).toBe(true);
 });
 
-test('publishes complete acyclic relation coverage', async () => {
+test('publishes official-only acyclic relation coverage', async () => {
   const report = await readJson('../data/kr/relation-coverage-report.json');
-  expect(report.middle.coverage.coveredCourses).toBe(report.middle.coverage.totalCourses);
-  expect(report.high.coverage.coveredCourses).toBe(report.high.coverage.totalCourses);
-  expect(report.middle.coverage.uncoveredCourseLabels).toEqual([]);
-  expect(report.high.coverage.uncoveredCourseLabels).toEqual([]);
+  expect(report.middle.relations.byBasisKind).toEqual({ 'official-source': 56 });
+  expect(report.high.relations.byBasisKind).toEqual({ 'official-source': 39 + registeredHighRequired });
+  expect(report.high.relations.byRelationKind['required-prerequisite'] ?? 0).toBe(registeredHighRequired);
+  expect(report.high.relations.byRelationKind['recommended-before']).toBe(39);
+  expect(report.high.courseRelations.byBasisKind).toEqual({ 'official-source': 39 });
+  expect(report.middle.courseCoverage.coursesWithOfficialRelations).toBe(15);
+  expect(report.high.courseCoverage.coursesWithOfficialRelations).toBeGreaterThan(0);
+  expect(report.middle.courseCoverage.byCourse.find((course) => course.courseLabel === '수학')).toMatchObject({
+    hasOfficialRelations: true,
+    relationCount: 30,
+  });
   expect(report.validation).toEqual({
     danglingReferences: 0,
     duplicateIds: 0,
@@ -47,4 +60,17 @@ test('publishes complete acyclic relation coverage', async () => {
     highDag: true,
     middleDag: true,
   });
+});
+
+test('publishes registered high-school v2 relations as reviewed official requirements', async () => {
+  const relations = await readJson('../data/kr/high/learning-relations.json');
+  const required = relations.records.filter((relation) => relation.relationKind === 'required-prerequisite');
+  expect(required).toHaveLength(registeredHighRequired);
+  expect(required.every((relation) => (
+    relation.basisKind === 'official-source'
+    && relation.strength === 'required'
+    && relation.reviewStatus === 'internal-reviewed'
+    && ['same-course', 'cross-course'].includes(relation.scope)
+    && /(?:내용 체계\/과목 설계|성취기준 해설) p\.\d+$/.test(relation.basis)
+  ))).toBe(true);
 });

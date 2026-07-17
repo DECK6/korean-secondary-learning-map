@@ -108,6 +108,25 @@ function requireRefs(refs, allowed, label, errors) {
   }
 }
 
+function validateOfficialRelations(profile, collections, errors) {
+  for (const collectionName of ['learningRelations', 'courseRelations', 'transitionAlignments', 'elementaryTransitions']) {
+    for (const relation of collections[collectionName]?.records ?? []) {
+      if (relation.basisKind !== 'official-source') errors.push(`${profile}/${collectionName}/${relation.id}: relation must use official-source evidence`);
+    }
+  }
+}
+
+function validateReviewTargets(profile, collections, indexes, errors) {
+  const allowed = new Set(
+    Object.entries(indexes)
+      .filter(([collectionName]) => collectionName !== 'reviewRecords')
+      .flatMap(([, ids]) => [...ids]),
+  );
+  for (const review of collections.reviewRecords?.records ?? []) {
+    requireRefs(review.targetIds, allowed, `${profile}/reviewRecords/${review.id}`, errors);
+  }
+}
+
 function validateProfileReferences(profile, collections, indexes, errors) {
   const courses = indexes.courses ?? new Set();
   const domains = indexes.domains ?? new Set();
@@ -315,6 +334,8 @@ export async function validateRepository(root = projectRoot) {
       indexes[collectionName] = uniqueIds(collection.records, `${profile}/${file}`, errors);
     }
     loaded[profile] = { release, collections, indexes };
+    validateOfficialRelations(profile, collections, errors);
+    validateReviewTargets(profile, collections, indexes, errors);
     if (profile !== 'bridges') {
       validateProfileReferences(profile, collections, indexes, errors);
       validateLearningGraph(profile, collections, errors);
