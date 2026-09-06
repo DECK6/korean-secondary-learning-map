@@ -26,7 +26,7 @@ async function init() {
 
 function renderStats() {
   const s = map.statistics;
-  const items = [['공식 문서',s.officialDocuments],['중학교 공식 관계',s.middleOfficialRelations],['고교 공식 주제 관계',s.highOfficialRelations],['초→중 공식 전이',s.elementaryOfficialTransitions],['중→고 공식 전이',s.officialTransitions],['권장 순서(후보)',s.middleCandidateRelations+s.highCandidateRelations+s.elementaryCandidateTransitions]];
+  const items = [['공식 문서',s.officialDocuments],['중학교 공식 관계',s.middleOfficialRelations],['고교 공식 주제 관계',s.highOfficialRelations+s.highVocationalOfficialRelations],['초→중 공식 전이',s.elementaryOfficialTransitions],['중→고 공식 전이',s.officialTransitions],['권장 순서(후보)',s.middleCandidateRelations+s.highCandidateRelations+s.elementaryCandidateTransitions]];
   $('#stats').innerHTML = items.map(([label,value]) => `<div class="stat"><strong>${number(value)}</strong><span>${label}</span></div>`).join('');
 }
 

@@ -37,7 +37,15 @@ adversarial_conforms, _, adversarial_report = validate(
 if adversarial_conforms:
     raise SystemExit("adversarial SHACL fixture unexpectedly conformed")
 
-full_abox = graph("dist/ontology/learning-map.ttl")
+# The published ABox files are validated together: a vocational relation may name an academic
+# prerequisite, so the shapes need both graphs whenever the vocational file was built.
+import json
+
+manifest = json.loads((ROOT / "dist/ontology/manifest.json").read_text())
+abox_files = ["dist/ontology/learning-map.ttl"]
+if manifest.get("includesVocational"):
+    abox_files.append("dist/ontology/high-vocational.ttl")
+full_abox = graph(*abox_files)
 full_conforms, _, full_report = validate(
     full_abox,
     shacl_graph=shapes,
@@ -48,4 +56,4 @@ full_conforms, _, full_report = validate(
 if not full_conforms:
     raise SystemExit(f"full ABox SHACL validation failed:\n{full_report}")
 
-print(f"SHACL Advanced validation passed: positive conforms, adversarial rejected, full ABox conforms ({len(full_abox)} triples)")
+print(f"SHACL Advanced validation passed: positive conforms, adversarial rejected, {'+'.join(abox_files)} conforms ({len(full_abox)} triples)")

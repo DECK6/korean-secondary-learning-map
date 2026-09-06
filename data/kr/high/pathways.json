@@ -1,144 +1,8 @@
 {
   "$schema": "../../../schema/high-profile.schema.json#/$defs/pathwayCollection",
   "profile": "high",
-  "recordCount": 33,
+  "recordCount": 16,
   "records": [
-    {
-      "audience": "student",
-      "id": "kr.pathway.2022.high.bcea15b61cb207b8",
-      "labelKorean": "전기·전자 탐색 경로",
-      "notOfficialRequirement": true,
-      "pathwayKind": "illustrative",
-      "reviewStatus": "candidate",
-      "steps": [
-        {
-          "choiceSetId": "kr.choice-set.2022.high.bcea15b61cb207b8",
-          "courseIds": [],
-          "order": 1,
-          "reason": "관심과 진로에 따라 선택 과목을 비교한다.",
-          "stepKind": "alternative"
-        }
-      ]
-    },
-    {
-      "audience": "student",
-      "id": "kr.pathway.2022.high.caea48b051e43923",
-      "labelKorean": "농림·축산 탐색 경로",
-      "notOfficialRequirement": true,
-      "pathwayKind": "illustrative",
-      "reviewStatus": "candidate",
-      "steps": [
-        {
-          "choiceSetId": "kr.choice-set.2022.high.caea48b051e43923",
-          "courseIds": [],
-          "order": 1,
-          "reason": "관심과 진로에 따라 선택 과목을 비교한다.",
-          "stepKind": "alternative"
-        }
-      ]
-    },
-    {
-      "audience": "student",
-      "id": "kr.pathway.2022.high.1ada7cc190eea567",
-      "labelKorean": "환경·안전·소방 탐색 경로",
-      "notOfficialRequirement": true,
-      "pathwayKind": "illustrative",
-      "reviewStatus": "candidate",
-      "steps": [
-        {
-          "choiceSetId": "kr.choice-set.2022.high.1ada7cc190eea567",
-          "courseIds": [],
-          "order": 1,
-          "reason": "관심과 진로에 따라 선택 과목을 비교한다.",
-          "stepKind": "alternative"
-        }
-      ]
-    },
-    {
-      "audience": "student",
-      "id": "kr.pathway.2022.high.0f4560f8b8977d30",
-      "labelKorean": "기계 탐색 경로",
-      "notOfficialRequirement": true,
-      "pathwayKind": "illustrative",
-      "reviewStatus": "candidate",
-      "steps": [
-        {
-          "choiceSetId": "kr.choice-set.2022.high.0f4560f8b8977d30",
-          "courseIds": [],
-          "order": 1,
-          "reason": "관심과 진로에 따라 선택 과목을 비교한다.",
-          "stepKind": "alternative"
-        }
-      ]
-    },
-    {
-      "audience": "student",
-      "id": "kr.pathway.2022.high.818bbb22371356ba",
-      "labelKorean": "보건·복지 탐색 경로",
-      "notOfficialRequirement": true,
-      "pathwayKind": "illustrative",
-      "reviewStatus": "candidate",
-      "steps": [
-        {
-          "choiceSetId": "kr.choice-set.2022.high.818bbb22371356ba",
-          "courseIds": [],
-          "order": 1,
-          "reason": "관심과 진로에 따라 선택 과목을 비교한다.",
-          "stepKind": "alternative"
-        }
-      ]
-    },
-    {
-      "audience": "student",
-      "id": "kr.pathway.2022.high.22c0db1dffc678b0",
-      "labelKorean": "식품·조리 탐색 경로",
-      "notOfficialRequirement": true,
-      "pathwayKind": "illustrative",
-      "reviewStatus": "candidate",
-      "steps": [
-        {
-          "choiceSetId": "kr.choice-set.2022.high.22c0db1dffc678b0",
-          "courseIds": [],
-          "order": 1,
-          "reason": "관심과 진로에 따라 선택 과목을 비교한다.",
-          "stepKind": "alternative"
-        }
-      ]
-    },
-    {
-      "audience": "student",
-      "id": "kr.pathway.2022.high.2a55e1a6ec347c3e",
-      "labelKorean": "건축·토목 탐색 경로",
-      "notOfficialRequirement": true,
-      "pathwayKind": "illustrative",
-      "reviewStatus": "candidate",
-      "steps": [
-        {
-          "choiceSetId": "kr.choice-set.2022.high.2a55e1a6ec347c3e",
-          "courseIds": [],
-          "order": 1,
-          "reason": "관심과 진로에 따라 선택 과목을 비교한다.",
-          "stepKind": "alternative"
-        }
-      ]
-    },
-    {
-      "audience": "student",
-      "id": "kr.pathway.2022.high.33c4625ce392683d",
-      "labelKorean": "문화·예술·디자인·방송 탐색 경로",
-      "notOfficialRequirement": true,
-      "pathwayKind": "illustrative",
-      "reviewStatus": "candidate",
-      "steps": [
-        {
-          "choiceSetId": "kr.choice-set.2022.high.33c4625ce392683d",
-          "courseIds": [],
-          "order": 1,
-          "reason": "관심과 진로에 따라 선택 과목을 비교한다.",
-          "stepKind": "alternative"
-        }
-      ]
-    },
     {
       "audience": "student",
       "id": "kr.pathway.2022.high.da7fcea7ec301b57",
@@ -199,23 +63,6 @@
     },
     {
       "audience": "student",
-      "id": "kr.pathway.2022.high.b1291a5e1afc399e",
-      "labelKorean": "경영·금융 탐색 경로",
-      "notOfficialRequirement": true,
-      "pathwayKind": "illustrative",
-      "reviewStatus": "candidate",
-      "steps": [
-        {
-          "choiceSetId": "kr.choice-set.2022.high.b1291a5e1afc399e",
-          "courseIds": [],
-          "order": 1,
-          "reason": "관심과 진로에 따라 선택 과목을 비교한다.",
-          "stepKind": "alternative"
-        }
-      ]
-    },
-    {
-      "audience": "student",
       "id": "kr.pathway.2022.high.66297e1116aa6b91",
       "labelKorean": "과학 계열 탐색 경로",
       "notOfficialRequirement": true,
@@ -241,23 +88,6 @@
       "steps": [
         {
           "choiceSetId": "kr.choice-set.2022.high.68567a1ba0bafa8c",
-          "courseIds": [],
-          "order": 1,
-          "reason": "관심과 진로에 따라 선택 과목을 비교한다.",
-          "stepKind": "alternative"
-        }
-      ]
-    },
-    {
-      "audience": "student",
-      "id": "kr.pathway.2022.high.1dc45295c4cc7682",
-      "labelKorean": "화학공업 탐색 경로",
-      "notOfficialRequirement": true,
-      "pathwayKind": "illustrative",
-      "reviewStatus": "candidate",
-      "steps": [
-        {
-          "choiceSetId": "kr.choice-set.2022.high.1dc45295c4cc7682",
           "courseIds": [],
           "order": 1,
           "reason": "관심과 진로에 따라 선택 과목을 비교한다.",
@@ -352,40 +182,6 @@
     },
     {
       "audience": "student",
-      "id": "kr.pathway.2022.high.4f6bf43816952ccf",
-      "labelKorean": "관광·레저 탐색 경로",
-      "notOfficialRequirement": true,
-      "pathwayKind": "illustrative",
-      "reviewStatus": "candidate",
-      "steps": [
-        {
-          "choiceSetId": "kr.choice-set.2022.high.4f6bf43816952ccf",
-          "courseIds": [],
-          "order": 1,
-          "reason": "관심과 진로에 따라 선택 과목을 비교한다.",
-          "stepKind": "alternative"
-        }
-      ]
-    },
-    {
-      "audience": "student",
-      "id": "kr.pathway.2022.high.8fe35044452a8da1",
-      "labelKorean": "수산·해운 탐색 경로",
-      "notOfficialRequirement": true,
-      "pathwayKind": "illustrative",
-      "reviewStatus": "candidate",
-      "steps": [
-        {
-          "choiceSetId": "kr.choice-set.2022.high.8fe35044452a8da1",
-          "courseIds": [],
-          "order": 1,
-          "reason": "관심과 진로에 따라 선택 과목을 비교한다.",
-          "stepKind": "alternative"
-        }
-      ]
-    },
-    {
-      "audience": "student",
       "id": "kr.pathway.2022.high.282c5f0315e3b67b",
       "labelKorean": "교양 탐색 경로",
       "notOfficialRequirement": true,
@@ -420,23 +216,6 @@
     },
     {
       "audience": "student",
-      "id": "kr.pathway.2022.high.ce180b31a721b991",
-      "labelKorean": "재료 탐색 경로",
-      "notOfficialRequirement": true,
-      "pathwayKind": "illustrative",
-      "reviewStatus": "candidate",
-      "steps": [
-        {
-          "choiceSetId": "kr.choice-set.2022.high.ce180b31a721b991",
-          "courseIds": [],
-          "order": 1,
-          "reason": "관심과 진로에 따라 선택 과목을 비교한다.",
-          "stepKind": "alternative"
-        }
-      ]
-    },
-    {
-      "audience": "student",
       "id": "kr.pathway.2022.high.ce688f7aed691cbc",
       "labelKorean": "기술·가정/정보 탐색 경로",
       "notOfficialRequirement": true,
@@ -445,57 +224,6 @@
       "steps": [
         {
           "choiceSetId": "kr.choice-set.2022.high.ce688f7aed691cbc",
-          "courseIds": [],
-          "order": 1,
-          "reason": "관심과 진로에 따라 선택 과목을 비교한다.",
-          "stepKind": "alternative"
-        }
-      ]
-    },
-    {
-      "audience": "student",
-      "id": "kr.pathway.2022.high.eafa2cb6fe7fd033",
-      "labelKorean": "미용 탐색 경로",
-      "notOfficialRequirement": true,
-      "pathwayKind": "illustrative",
-      "reviewStatus": "candidate",
-      "steps": [
-        {
-          "choiceSetId": "kr.choice-set.2022.high.eafa2cb6fe7fd033",
-          "courseIds": [],
-          "order": 1,
-          "reason": "관심과 진로에 따라 선택 과목을 비교한다.",
-          "stepKind": "alternative"
-        }
-      ]
-    },
-    {
-      "audience": "student",
-      "id": "kr.pathway.2022.high.b3f8bd6c307ce3e5",
-      "labelKorean": "정보·통신 탐색 경로",
-      "notOfficialRequirement": true,
-      "pathwayKind": "illustrative",
-      "reviewStatus": "candidate",
-      "steps": [
-        {
-          "choiceSetId": "kr.choice-set.2022.high.b3f8bd6c307ce3e5",
-          "courseIds": [],
-          "order": 1,
-          "reason": "관심과 진로에 따라 선택 과목을 비교한다.",
-          "stepKind": "alternative"
-        }
-      ]
-    },
-    {
-      "audience": "student",
-      "id": "kr.pathway.2022.high.0ad4844c662e6b42",
-      "labelKorean": "섬유·의류 탐색 경로",
-      "notOfficialRequirement": true,
-      "pathwayKind": "illustrative",
-      "reviewStatus": "candidate",
-      "steps": [
-        {
-          "choiceSetId": "kr.choice-set.2022.high.0ad4844c662e6b42",
           "courseIds": [],
           "order": 1,
           "reason": "관심과 진로에 따라 선택 과목을 비교한다.",
@@ -557,23 +285,6 @@
       "steps": [
         {
           "choiceSetId": "kr.choice-set.2022.high.43934008e86ede2b",
-          "courseIds": [],
-          "order": 1,
-          "reason": "관심과 진로에 따라 선택 과목을 비교한다.",
-          "stepKind": "alternative"
-        }
-      ]
-    },
-    {
-      "audience": "student",
-      "id": "kr.pathway.2022.high.5247e4820832b1c6",
-      "labelKorean": "융복합·지식재산 탐색 경로",
-      "notOfficialRequirement": true,
-      "pathwayKind": "illustrative",
-      "reviewStatus": "candidate",
-      "steps": [
-        {
-          "choiceSetId": "kr.choice-set.2022.high.5247e4820832b1c6",
           "courseIds": [],
           "order": 1,
           "reason": "관심과 진로에 따라 선택 과목을 비교한다.",

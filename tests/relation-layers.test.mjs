@@ -1,11 +1,12 @@
 import { describe, expect, test } from 'bun:test';
+import { existsSync } from 'node:fs';
 import { readFile } from 'node:fs/promises';
 
 import { createAjv } from '../scripts/validate.mjs';
 import bridgeDomainMap from '../scripts/lib/bridge-domain-map.mjs';
 
 const readJson = async (path) => JSON.parse(await readFile(new URL(path, import.meta.url), 'utf8'));
-const officialFiles = ['../data/kr/middle/learning-relations.json', '../data/kr/high/learning-relations.json'];
+const officialFiles = ['../data/kr/middle/learning-relations.json', '../data/kr/high/learning-relations.json', '../data/kr/high-vocational/learning-relations.json'];
 const candidateFiles = ['../data/kr/middle/learning-relations.candidate.json', '../data/kr/high/learning-relations.candidate.json'];
 const facetKeys = new Set(['concept', 'procedure', 'representation', 'application', 'inquiry', 'communication', 'reflection', 'core']);
 const candidateBasisKinds = new Set(['official-code-order', 'decomposition-order']);
@@ -85,6 +86,10 @@ describe('relation layers', () => {
       .flatMap((courseId) => highCourses.get(courseId).programScopes));
     expect(scopes.has('specialized-vocational')).toBe(false);
     expect(scopes.has('all-high-schools')).toBe(true);
+    // The vocational release publishes the official layer only; no candidate file exists for it.
+    expect(existsSync(new URL('../data/kr/high-vocational/learning-relations.candidate.json', import.meta.url))).toBe(false);
+    const vocationalRelease = await readJson('../data/kr/high-vocational/release.json');
+    expect(vocationalRelease.collections.candidateLearningRelations).toBeUndefined();
   });
 
   test('topics carry the shared eight-key facet vocabulary', async () => {

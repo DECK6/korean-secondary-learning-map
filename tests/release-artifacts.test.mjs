@@ -6,10 +6,12 @@ import { officialRelationSpecs } from '../scripts/lib/official-relation-specs/in
 
 const readJson = async (path) => JSON.parse(await readFile(new URL(path, import.meta.url), 'utf8'));
 const sha256 = (contents) => createHash('sha256').update(contents).digest('hex');
-const registeredHighRequired = officialRelationSpecs.reduce(
+const highRequiredIn = (specs) => specs.reduce(
   (total, spec) => total + (spec.highRequired ?? []).length + (spec.highCommentaryRequired ?? []).length,
   0,
 );
+const registeredHighRequired = highRequiredIn(officialRelationSpecs.filter((spec) => !spec.subject.startsWith('voc-')));
+const registeredVocationalRequired = highRequiredIn(officialRelationSpecs.filter((spec) => spec.subject.startsWith('voc-')));
 
 test('pins the complete official source inventory', async () => {
   const catalog = await readJson('../sources/official/source-catalog.json');
@@ -45,6 +47,8 @@ test('publishes official-only acyclic relation coverage', async () => {
   expect(report.middle.relations.byBasisKind).toEqual({ 'official-source': 56 });
   expect(report.high.relations.byBasisKind).toEqual({ 'official-source': registeredHighRequired });
   expect(report.high.relations.byRelationKind).toEqual({ 'required-prerequisite': registeredHighRequired });
+  expect(report.highVocational.relations.byBasisKind).toEqual({ 'official-source': registeredVocationalRequired });
+  expect(report.highVocational.relations.byRelationKind).toEqual({ 'required-prerequisite': registeredVocationalRequired });
   expect(report.high.courseRelations.byBasisKind).toEqual({ 'official-source': 39 });
   expect(report.middle.courseCoverage.coursesWithOfficialRelations).toBe(15);
   expect(report.high.courseCoverage.coursesWithOfficialRelations).toBeGreaterThan(0);
@@ -57,19 +61,45 @@ test('publishes official-only acyclic relation coverage', async () => {
     duplicateIds: 0,
     highCourseDag: true,
     highDag: true,
+    highVocationalDag: true,
     middleDag: true,
   });
 });
 
 test('publishes registered high-school v2 relations as reviewed official requirements', async () => {
-  const relations = await readJson('../data/kr/high/learning-relations.json');
-  const required = relations.records.filter((relation) => relation.relationKind === 'required-prerequisite');
-  expect(required).toHaveLength(registeredHighRequired);
-  expect(required.every((relation) => (
-    relation.basisKind === 'official-source'
-    && relation.strength === 'required'
-    && relation.reviewStatus === 'internal-reviewed'
-    && ['same-course', 'cross-course'].includes(relation.scope)
-    && /(?:내용 체계\/과목 설계|성취기준 해설) p\.\d+$/.test(relation.basis)
-  ))).toBe(true);
+  for (const [path, expected] of [
+    ['../data/kr/high/learning-relations.json', registeredHighRequired],
+    ['../data/kr/high-vocational/learning-relations.json', registeredVocationalRequired],
+  ]) {
+    const relations = await readJson(path);
+    const required = relations.records.filter((relation) => relation.relationKind === 'required-prerequisite');
+    expect(required).toHaveLength(expected);
+    expect(required.every((relation) => (
+      relation.basisKind === 'official-source'
+      && relation.strength === 'required'
+      && relation.reviewStatus === 'internal-reviewed'
+      && ['same-course', 'cross-course'].includes(relation.scope)
+      && /(?:내용 체계\/과목 설계|성취기준 해설) p\.\d+$/.test(relation.basis)
+    ))).toBe(true);
+  }
+});
+
+test('keeps every high-school id stable across the vocational split', async () => {
+  const readProfile = async (profile, collection) => {
+    const release = await readJson(`../data/kr/${profile}/release.json`);
+    const entry = release.collections[collection];
+    const files = Array.isArray(entry) ? entry : [entry];
+    const records = [];
+    for (const file of files) records.push(...(await readJson(`../data/kr/${profile}/${file}`)).records);
+    return records;
+  };
+  for (const [collection, total] of [['standards', 50749], ['topics', 50749], ['courses', 759], ['domains', 5169], ['clusters', 5169]]) {
+    const ids = [
+      ...(await readProfile('high', collection)).map((record) => record.id),
+      ...(await readProfile('high-vocational', collection)).map((record) => record.id),
+    ];
+    expect(ids).toHaveLength(total);
+    expect(new Set(ids).size).toBe(total);
+    expect(ids.every((id) => id.startsWith('kr.') && id.includes('.2022.high.'))).toBe(true);
+  }
 });

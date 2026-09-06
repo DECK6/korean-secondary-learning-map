@@ -29,7 +29,13 @@ if (!spec || typeof spec !== 'object') {
 const loadJson = (p) => JSON.parse(readFileSync(resolve(p), 'utf8'));
 const middleStandards = loadJson('data/kr/middle/standards.json').records;
 const middleCourses = loadJson('data/kr/middle/courses.json').records;
-const highStandards = loadJson('data/kr/high/standards.json').records;
+// Codes are looked up across both high-school releases: the academic profile and the sharded
+// specialised vocational profile share one id namespace.
+const loadProfileCollection = (profile, collection) => {
+  const entry = loadJson(`data/kr/${profile}/release.json`).collections[collection];
+  return (Array.isArray(entry) ? entry : [entry]).flatMap((file) => loadJson(`data/kr/${profile}/${file}`).records);
+};
+const highStandards = [...loadProfileCollection('high', 'standards'), ...loadProfileCollection('high-vocational', 'standards')];
 const inventory = new Set(loadJson('data/kr/bridges/elementary-topic-inventory.json').topicIds);
 const catalog = loadJson('sources/official/source-catalog.json');
 const catalogIds = new Set(

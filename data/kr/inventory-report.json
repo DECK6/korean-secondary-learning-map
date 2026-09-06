@@ -23,19 +23,30 @@
   "extractedOccurrenceCount": 52478,
   "high": {
     "candidateLearningRelations": 2353,
-    "choiceSets": 33,
-    "clusters": 5169,
+    "choiceSets": 16,
+    "clusters": 689,
     "courseRelations": 39,
-    "courses": 759,
+    "courses": 231,
     "coverageGaps": 2,
     "creditRules": 3,
-    "domains": 5169,
-    "learningRelations": 469,
-    "pathways": 33,
+    "domains": 689,
+    "learningRelations": 171,
+    "pathways": 16,
     "reviewRecords": 1,
-    "standards": 50749,
-    "subjectGroups": 34,
-    "topics": 50749
+    "standards": 3124,
+    "subjectGroups": 16,
+    "topics": 3124
+  },
+  "high-vocational": {
+    "clusters": 4480,
+    "courses": 528,
+    "coverageGaps": 2,
+    "domains": 4480,
+    "learningRelations": 298,
+    "reviewRecords": 1,
+    "standards": 47625,
+    "subjectGroups": 18,
+    "topics": 47625
   },
   "highScopeBreakdown": {
     "allHighSchools": {

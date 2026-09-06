@@ -5,10 +5,12 @@ import { parseHTML } from 'linkedom';
 import { officialRelationSpecs } from '../scripts/lib/official-relation-specs/index.mjs';
 
 const read = (path) => readFile(new URL(path, import.meta.url), 'utf8');
-const registeredHighRequired = officialRelationSpecs.reduce(
+const highRequiredIn = (specs) => specs.reduce(
   (total, spec) => total + (spec.highRequired ?? []).length + (spec.highCommentaryRequired ?? []).length,
   0,
 );
+const registeredHighRequired = highRequiredIn(officialRelationSpecs.filter((spec) => !spec.subject.startsWith('voc-')));
+const registeredVocationalRequired = highRequiredIn(officialRelationSpecs.filter((spec) => spec.subject.startsWith('voc-')));
 
 test('has a keyboard-addressable tab and form structure', async () => {
   const html = await read('../ui/index.html');
@@ -44,12 +46,23 @@ test('publishes one lazy detail payload per course', async () => {
   expect(index.courses.length).toBe(783);
   expect(new Set(index.courses.map((course) => course.detailFile)).size).toBe(783);
   expect(manifest.courseDetailCount).toBe(783);
+  // The vocational release keeps its own lazily fetched payload directory so the first-screen
+  // index never grows with 528 specialised subjects.
+  const vocationalRows = index.courses.filter((course) => course.programScope === 'specialized-vocational');
+  expect(vocationalRows).toHaveLength(528);
+  expect(vocationalRows.every((course) => course.detailFile.startsWith('data/high-vocational/'))).toBe(true);
+  expect(index.courses.filter((course) => course.programScope !== 'specialized-vocational')
+    .every((course) => course.detailFile.startsWith('data/courses/'))).toBe(true);
+  expect(index.courses.every((course) => ['middle', 'high'].includes(course.level))).toBe(true);
   expect(index.statistics.middleTopics).toBe(2160);
   expect(index.statistics.highAcademicStandards).toBe(3124);
   expect(index.statistics.highVocationalStandards).toBe(47625);
   expect(index.statistics.highAcademicStandards + index.statistics.highVocationalStandards).toBe(index.statistics.highStandards);
   expect(index.statistics.middleOfficialRelations).toBe(56);
   expect(index.statistics.highOfficialRelations).toBe(registeredHighRequired);
+  expect(index.statistics.highVocationalOfficialRelations).toBe(registeredVocationalRequired);
+  expect(index.statistics.highAcademicCourses).toBe(231);
+  expect(index.statistics.highVocationalCourses).toBe(528);
   expect(index.statistics.middleCandidateRelations).toBeGreaterThan(0);
   expect(index.statistics.highCandidateRelations).toBeGreaterThan(0);
   expect(index.statistics.highOfficialCourseRelations).toBe(39);

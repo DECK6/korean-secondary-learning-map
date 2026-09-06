@@ -1,11 +1,16 @@
 import { describe, expect, test } from 'bun:test';
-import { createAjv, validateRepository } from '../scripts/validate.mjs';
+import { readdir, stat } from 'node:fs/promises';
+import { MAX_DATA_FILE_BYTES, createAjv, validateRepository } from '../scripts/validate.mjs';
 import { officialRelationSpecs } from '../scripts/lib/official-relation-specs/index.mjs';
 
-const registeredHighRequired = officialRelationSpecs.reduce(
+const highRequiredIn = (specs) => specs.reduce(
   (total, spec) => total + (spec.highRequired ?? []).length + (spec.highCommentaryRequired ?? []).length,
   0,
 );
+// R5-A publishes the specialised vocational subjects as their own release; every voc-* spec module
+// lands there, and the academic release keeps the rest. Ids never moved.
+const registeredHighRequired = highRequiredIn(officialRelationSpecs.filter((spec) => !spec.subject.startsWith('voc-')));
+const registeredVocationalRequired = highRequiredIn(officialRelationSpecs.filter((spec) => spec.subject.startsWith('voc-')));
 
 describe('repository schema contract', () => {
   test('validates the complete candidate repository', async () => {
@@ -13,16 +18,24 @@ describe('repository schema contract', () => {
     expect(result.errors).toEqual([]);
     expect(result.loaded.middle.release.counts.coverageGaps).toBe(2);
     expect(result.loaded.high.release.counts.coverageGaps).toBe(2);
+    expect(result.loaded['high-vocational'].release.counts.coverageGaps).toBe(2);
     expect(result.loaded.bridges.release.counts.coverageGaps).toBe(1);
     expect(result.loaded.middle.release.counts.standards).toBe(714);
     expect(result.loaded.middle.release.counts.topics).toBe(2160);
-    expect(result.loaded.high.release.counts.standards).toBe(50749);
+    expect(result.loaded.high.release.counts.standards).toBe(3124);
+    expect(result.loaded['high-vocational'].release.counts.standards).toBe(47625);
+    expect(result.loaded.high.release.counts.standards + result.loaded['high-vocational'].release.counts.standards).toBe(50749);
+    expect(result.loaded.high.release.counts.courses).toBe(231);
+    expect(result.loaded['high-vocational'].release.counts.courses).toBe(528);
     expect(result.loaded.middle.release.counts.domains).toBe(149);
-    expect(result.loaded.high.release.counts.domains).toBe(5169);
+    expect(result.loaded.high.release.counts.domains).toBe(689);
+    expect(result.loaded['high-vocational'].release.counts.domains).toBe(4480);
     expect(result.loaded.middle.release.counts.learningRelations).toBe(56);
     expect(result.loaded.high.release.counts.learningRelations).toBe(registeredHighRequired);
+    expect(result.loaded['high-vocational'].release.counts.learningRelations).toBe(registeredVocationalRequired);
     expect(result.loaded.middle.release.counts.candidateLearningRelations).toBeGreaterThan(0);
     expect(result.loaded.high.release.counts.candidateLearningRelations).toBeGreaterThan(0);
+    expect(result.loaded['high-vocational'].release.collections.candidateLearningRelations).toBeUndefined();
     expect(result.loaded.high.release.counts.courseRelations).toBe(39);
     expect(result.loaded.bridges.release.counts.transitionAlignments).toBe(175);
     expect(result.loaded.bridges.release.counts.elementaryTransitions).toBe(290);
@@ -30,7 +43,50 @@ describe('repository schema contract', () => {
     expect(result.inventoryReport.diagnosticCount).toBe(0);
     expect(result.inventoryReport.middleTopicDecomposition.topicsPerStandard.distribution).toEqual({ '2': 77, '3': 564, '4': 51, '5': 22 });
     expect(result.inventoryReport.comparisonBaselines.elementary.dataRelease).toBe('kr-full-depth-v0.5');
-  }, 30000);
+    // Every published data file stays under the 25 MB limit; standards and topics are sharded.
+    expect(result.dataFileCount).toBeGreaterThan(0);
+    expect(result.loaded['high-vocational'].release.collections.standards).toHaveLength(18);
+    expect(result.loaded['high-vocational'].release.collections.topics).toHaveLength(18);
+  }, 60000);
+
+  test('keeps every published data file under the 25 MB publish limit', async () => {
+    const files = [];
+    const queue = ['data/kr'];
+    while (queue.length) {
+      const directory = queue.pop();
+      for (const entry of await readdir(new URL(`../${directory}`, import.meta.url), { withFileTypes: true })) {
+        if (entry.isDirectory()) queue.push(`${directory}/${entry.name}`);
+        else if (entry.name.endsWith('.json')) files.push(`${directory}/${entry.name}`);
+      }
+    }
+    expect(files.length).toBeGreaterThan(50);
+    for (const file of files) {
+      const { size } = await stat(new URL(`../${file}`, import.meta.url));
+      expect([file, size <= MAX_DATA_FILE_BYTES]).toEqual([file, true]);
+    }
+  });
+
+  test('rejects a vocational course that does not declare the specialised program scope', async () => {
+    const ajv = await createAjv();
+    const validate = ajv.getSchema('https://dexa.art/learnmap/schema/secondary/high-vocational-profile.schema.json#/$defs/course');
+    const candidate = {
+      id: 'kr.course.2022.high.example',
+      labelKorean: '예시 전공 실무',
+      labelEnglish: null,
+      sourceRefs: [],
+      verificationStatus: 'official-source-checked',
+      reviewStatus: 'candidate',
+      sourceTextIncluded: false,
+      schoolLevel: 'high',
+      subjectGroupId: 'kr.subject-group.example',
+      courseCategory: 'major-practical',
+      programScopes: ['all-high-schools'],
+      gradeScope: null,
+      creditRuleRefs: [],
+    };
+    expect(validate(candidate)).toBe(false);
+    expect(validate({ ...candidate, programScopes: ['specialized-vocational'] })).toBe(true);
+  });
 
   test('requires high-school course category and program scope', async () => {
     const ajv = await createAjv();

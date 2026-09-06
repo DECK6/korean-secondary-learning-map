@@ -1,0 +1,154 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dexa.art/learnmap/schema/secondary/high-vocational-profile.schema.json",
+  "title": "Korean Secondary Learning Map — high-school specialised vocational profile",
+  "description": "직업계 전문교과 릴리스. 레코드 모양은 high-profile과 같고(같은 학교급·같은 ID 네임스페이스), 릴리스 구성만 다르다. 이 프로필에는 subject 선택 묶음·경로·학점 규칙·과목 관계·후보 관계 층이 없다. standards·topics는 25MB 파일 한도 때문에 교과군 단위로 샤딩한다.",
+  "$ref": "#/$defs/release",
+  "$defs": {
+    "shardList": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^(standards|topics)/[a-z0-9-]+\\.json$" }
+    },
+    "release": {
+      "type": "object",
+      "required": [
+        "$schema",
+        "releaseId",
+        "profile",
+        "schoolLevel",
+        "curriculumVersion",
+        "status",
+        "createdDate",
+        "sourceManifest",
+        "rightsStatus",
+        "textPolicy",
+        "collections",
+        "counts"
+      ],
+      "properties": {
+        "$schema": { "type": "string", "format": "uri-reference" },
+        "releaseId": {
+          "type": "string",
+          "pattern": "^kr-2022-high-vocational-v[0-9]+\\.[0-9]+(?:\\.[0-9]+)?(?:-[a-z0-9.-]+)?$"
+        },
+        "profile": { "const": "high-vocational" },
+        "schoolLevel": { "const": "high" },
+        "curriculumVersion": { "const": "2022-revised" },
+        "status": { "enum": ["design-skeleton", "inventory", "candidate", "formal-release"] },
+        "createdDate": { "type": "string", "format": "date" },
+        "sourceManifest": { "type": "string", "pattern": "^\\.\\./shared/[^/]+\\.json$" },
+        "rightsStatus": { "$ref": "core.schema.json#/$defs/rightsStatus" },
+        "textPolicy": { "$ref": "core.schema.json#/$defs/textPolicy" },
+        "collections": {
+          "type": "object",
+          "required": [
+            "subjectGroups",
+            "courses",
+            "domains",
+            "standards",
+            "topics",
+            "clusters",
+            "learningRelations",
+            "reviewRecords",
+            "coverageGaps"
+          ],
+          "properties": {
+            "subjectGroups": { "const": "subject-groups.json" },
+            "courses": { "const": "courses.json" },
+            "domains": { "const": "domains.json" },
+            "standards": { "$ref": "#/$defs/shardList" },
+            "topics": { "$ref": "#/$defs/shardList" },
+            "clusters": { "const": "clusters.json" },
+            "learningRelations": { "const": "learning-relations.json" },
+            "reviewRecords": { "const": "review-records.json" },
+            "coverageGaps": { "const": "coverage-gaps.json" }
+          },
+          "additionalProperties": false
+        },
+        "counts": {
+          "type": "object",
+          "required": [
+            "subjectGroups",
+            "courses",
+            "domains",
+            "standards",
+            "topics",
+            "clusters",
+            "learningRelations",
+            "reviewRecords",
+            "coverageGaps"
+          ],
+          "properties": {
+            "subjectGroups": { "type": "integer", "minimum": 0 },
+            "courses": { "type": "integer", "minimum": 0 },
+            "domains": { "type": "integer", "minimum": 0 },
+            "standards": { "type": "integer", "minimum": 0 },
+            "topics": { "type": "integer", "minimum": 0 },
+            "clusters": { "type": "integer", "minimum": 0 },
+            "learningRelations": { "type": "integer", "minimum": 0 },
+            "reviewRecords": { "type": "integer", "minimum": 0 },
+            "coverageGaps": { "type": "integer", "minimum": 0 }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "course": {
+      "allOf": [
+        { "$ref": "high-profile.schema.json#/$defs/course" },
+        {
+          "type": "object",
+          "properties": {
+            "programScopes": { "type": "array", "contains": { "const": "specialized-vocational" } }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "envelopeBase": {
+      "allOf": [
+        { "$ref": "core.schema.json#/$defs/collectionEnvelopeBase" },
+        { "type": "object", "properties": { "profile": { "const": "high-vocational" } } }
+      ]
+    },
+    "subjectGroupCollection": {
+      "allOf": [{ "$ref": "#/$defs/envelopeBase" }, { "properties": { "recordType": { "const": "subjectGroups" }, "records": { "items": { "$ref": "high-profile.schema.json#/$defs/subjectGroup" } } } }],
+      "unevaluatedProperties": false
+    },
+    "courseCollection": {
+      "allOf": [{ "$ref": "#/$defs/envelopeBase" }, { "properties": { "recordType": { "const": "courses" }, "records": { "items": { "$ref": "#/$defs/course" } } } }],
+      "unevaluatedProperties": false
+    },
+    "domainCollection": {
+      "allOf": [{ "$ref": "#/$defs/envelopeBase" }, { "properties": { "recordType": { "const": "domains" }, "records": { "items": { "$ref": "high-profile.schema.json#/$defs/domain" } } } }],
+      "unevaluatedProperties": false
+    },
+    "standardCollection": {
+      "allOf": [{ "$ref": "#/$defs/envelopeBase" }, { "properties": { "recordType": { "const": "standards" }, "records": { "items": { "$ref": "high-profile.schema.json#/$defs/standard" } } } }],
+      "unevaluatedProperties": false
+    },
+    "topicCollection": {
+      "allOf": [{ "$ref": "#/$defs/envelopeBase" }, { "properties": { "recordType": { "const": "topics" }, "records": { "items": { "$ref": "high-profile.schema.json#/$defs/topic" } } } }],
+      "unevaluatedProperties": false
+    },
+    "clusterCollection": {
+      "allOf": [{ "$ref": "#/$defs/envelopeBase" }, { "properties": { "recordType": { "const": "clusters" }, "records": { "items": { "$ref": "high-profile.schema.json#/$defs/cluster" } } } }],
+      "unevaluatedProperties": false
+    },
+    "learningRelationCollection": {
+      "allOf": [{ "$ref": "#/$defs/envelopeBase" }, { "properties": { "recordType": { "const": "learningRelations" }, "records": { "items": { "$ref": "high-profile.schema.json#/$defs/learningRelation" } } } }],
+      "unevaluatedProperties": false
+    },
+    "reviewRecordCollection": {
+      "allOf": [{ "$ref": "#/$defs/envelopeBase" }, { "properties": { "recordType": { "const": "reviewRecords" }, "records": { "items": { "$ref": "core.schema.json#/$defs/reviewRecord" } } } }],
+      "unevaluatedProperties": false
+    },
+    "coverageGapCollection": {
+      "allOf": [{ "$ref": "#/$defs/envelopeBase" }, { "properties": { "recordType": { "const": "coverageGaps" }, "records": { "items": { "$ref": "core.schema.json#/$defs/coverageGap" } } } }],
+      "unevaluatedProperties": false
+    }
+  }
+}

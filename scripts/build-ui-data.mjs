@@ -1,12 +1,16 @@
 import { createHash } from 'node:crypto';
-import { mkdir, readFile, rename, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, readdir, rename, unlink, writeFile } from 'node:fs/promises';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+
+import { readProfileCollection, readRelease } from './lib/profile-collections.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const dataRoot = join(root, 'data/kr');
 const uiRoot = join(root, 'ui/data');
-const detailRoot = join(uiRoot, 'courses');
+// Vocational course payloads live in their own lazily fetched directory so the first-screen
+// index stays the same size while 528 specialised subjects stay browsable.
+const detailDirectories = { middle: 'courses', high: 'courses', 'high-vocational': 'high-vocational' };
 const distUiRoot = join(root, 'dist/ui');
 const readJson = async (path) => JSON.parse(await readFile(path, 'utf8'));
 const stable = (value) => `${JSON.stringify(value, null, 2)}\n`;
@@ -22,15 +26,21 @@ async function atomicJson(path, value) {
   await rename(temporary, path);
 }
 
-await mkdir(detailRoot, { recursive: true });
+for (const directory of new Set(Object.values(detailDirectories))) await mkdir(join(uiRoot, directory), { recursive: true });
 await mkdir(distUiRoot, { recursive: true });
+const profileNames = ['middle', 'high', 'high-vocational'];
+const collectionKeys = {
+  middle: ['subjectGroups', 'courses', 'domains', 'standards', 'topics', 'learningRelations', 'candidateLearningRelations'],
+  high: ['subjectGroups', 'courses', 'domains', 'standards', 'topics', 'learningRelations', 'candidateLearningRelations'],
+  'high-vocational': ['subjectGroups', 'courses', 'domains', 'standards', 'topics', 'learningRelations'],
+};
 const profiles = {};
-for (const profile of ['middle', 'high']) {
-  const names = ['subject-groups', 'courses', 'domains', 'standards', 'topics', 'clusters', 'learning-relations', 'learning-relations.candidate'];
-  profiles[profile] = {};
-  for (const name of names) {
-    const records = (await readJson(join(dataRoot, profile, `${name}.json`))).records;
-    profiles[profile][name] = name === 'learning-relations' ? officialRecords(records, `${profile}/${name}`) : records;
+for (const profile of profileNames) {
+  const release = await readRelease(root, profile);
+  profiles[profile] = { candidateLearningRelations: [] };
+  for (const name of collectionKeys[profile]) {
+    const records = await readProfileCollection(root, profile, name, release);
+    profiles[profile][name] = name === 'learningRelations' ? officialRecords(records, `${profile}/${name}`) : records;
   }
 }
 const highExtras = {};
@@ -48,8 +58,8 @@ const inventory = await readJson(join(dataRoot, 'inventory-report.json'));
 const groupById = new Map();
 const courseById = new Map();
 const topicById = new Map();
-for (const profile of ['middle', 'high']) {
-  for (const group of profiles[profile]['subject-groups']) groupById.set(group.id, group);
+for (const profile of profileNames) {
+  for (const group of profiles[profile].subjectGroups) groupById.set(group.id, group);
   for (const course of profiles[profile].courses) courseById.set(course.id, course);
   for (const topic of profiles[profile].topics) topicById.set(topic.id, topic);
 }
@@ -81,7 +91,7 @@ for (const relation of highExtras['course-relations']) {
 }
 
 const courseIndex = [];
-for (const profile of ['middle', 'high']) {
+for (const profile of profileNames) {
   const standardsByCourse = Map.groupBy(profiles[profile].standards, (record) => record.courseId);
   const topicsByCourse = new Map();
   for (const topic of profiles[profile].topics) {
@@ -91,14 +101,14 @@ for (const profile of ['middle', 'high']) {
     }
   }
   const relationsByTopic = new Map();
-  for (const relation of profiles[profile]['learning-relations']) {
+  for (const relation of profiles[profile].learningRelations) {
     for (const id of [relation.prerequisiteTopicId, relation.dependentTopicId]) {
       if (!relationsByTopic.has(id)) relationsByTopic.set(id, []);
       relationsByTopic.get(id).push(relation);
     }
   }
   const candidatesByTopic = new Map();
-  for (const relation of profiles[profile]['learning-relations.candidate']) {
+  for (const relation of profiles[profile].candidateLearningRelations) {
     for (const id of [relation.prerequisiteTopicId, relation.dependentTopicId]) {
       if (!candidatesByTopic.has(id)) candidatesByTopic.set(id, []);
       candidatesByTopic.get(id).push(relation);
@@ -117,7 +127,7 @@ for (const profile of ['middle', 'high']) {
       ...relations.flatMap((relation) => relation.sourceRefs),
       ...courseRelations.flatMap((relation) => relation.sourceRefs),
     ]);
-    const detailFile = `data/courses/${fileFor(course.id)}`;
+    const detailFile = `data/${detailDirectories[profile]}/${fileFor(course.id)}`;
     const detail = {
       course,
       subjectGroup: groupById.get(course.subjectGroupId),
@@ -133,7 +143,7 @@ for (const profile of ['middle', 'high']) {
     courseIndex.push({
       id: course.id,
       label: course.labelKorean,
-      level: profile,
+      level: profile === 'middle' ? 'middle' : 'high',
       category: course.courseCategory,
       programScope: course.programScopes?.[0] ?? 'middle',
       groupId: course.subjectGroupId,
@@ -216,36 +226,39 @@ await atomicJson(join(uiRoot, 'elementary-bridges.json'), elementaryBridgeIndex)
 
 const levelOrder = { middle: 0, high: 1 };
 courseIndex.sort((a, b) => levelOrder[a.level] - levelOrder[b.level] || a.groupLabel.localeCompare(b.groupLabel, 'ko') || a.label.localeCompare(b.label, 'ko'));
-const highAcademicCourseIds = new Set(profiles.high.courses.filter((course) => course.programScopes.includes('all-high-schools')).map((course) => course.id));
-const highVocationalCourseIds = new Set(profiles.high.courses.filter((course) => course.programScopes.includes('specialized-vocational')).map((course) => course.id));
-const index = {
-  version: inventory.version,
-  generatedFrom: '2022-revised-current-notice-baseline',
-  statistics: {
+// The high-school aggregate keeps counting both releases so the map stays a single K-12 view; the
+// per-scope figures name which release each number comes from.
+const vocational = profiles['high-vocational'];
+const statistics = {
     officialDocuments: sourceManifest.sourceCount,
     middleCourses: inventory.middle.courses,
     middleStandards: inventory.middle.standards,
     middleTopics: inventory.middle.topics,
     middleSourceGroundedTopics: profiles.middle.topics.filter((topic) => topic.contentKind === 'source-grounded-draft').length,
-    highSourceGroundedTopics: profiles.high.topics.filter((topic) => topic.contentKind === 'source-grounded-draft').length,
-    highCourses: inventory.high.courses,
-    highStandards: inventory.high.standards,
-    highAcademicCourses: highAcademicCourseIds.size,
-    highAcademicDomains: profiles.high.domains.filter((domain) => highAcademicCourseIds.has(domain.courseId)).length,
-    highAcademicStandards: profiles.high.standards.filter((standard) => highAcademicCourseIds.has(standard.courseId)).length,
-    highVocationalCourses: highVocationalCourseIds.size,
-    highVocationalDomains: profiles.high.domains.filter((domain) => highVocationalCourseIds.has(domain.courseId)).length,
-    highVocationalStandards: profiles.high.standards.filter((standard) => highVocationalCourseIds.has(standard.courseId)).length,
-    middleOfficialRelations: profiles.middle['learning-relations'].length,
-    highOfficialRelations: profiles.high['learning-relations'].length,
-    middleCandidateRelations: profiles.middle['learning-relations.candidate'].length,
-    highCandidateRelations: profiles.high['learning-relations.candidate'].length,
+    highSourceGroundedTopics: [...profiles.high.topics, ...vocational.topics].filter((topic) => topic.contentKind === 'source-grounded-draft').length,
+    highCourses: inventory.high.courses + inventory['high-vocational'].courses,
+    highStandards: inventory.high.standards + inventory['high-vocational'].standards,
+    highAcademicCourses: profiles.high.courses.length,
+    highAcademicDomains: profiles.high.domains.length,
+    highAcademicStandards: profiles.high.standards.length,
+    highVocationalCourses: vocational.courses.length,
+    highVocationalDomains: vocational.domains.length,
+    highVocationalStandards: vocational.standards.length,
+    middleOfficialRelations: profiles.middle.learningRelations.length,
+    highOfficialRelations: profiles.high.learningRelations.length,
+    highVocationalOfficialRelations: vocational.learningRelations.length,
+    middleCandidateRelations: profiles.middle.candidateLearningRelations.length,
+    highCandidateRelations: profiles.high.candidateLearningRelations.length,
     highOfficialCourseRelations: highExtras['course-relations'].length,
     officialTransitions: transitions.length,
     transitions: inventory.bridges.transitionAlignments,
     elementaryOfficialTransitions: elementaryBridges.length,
     elementaryCandidateTransitions: elementaryCandidateBridges.length,
-  },
+};
+const index = {
+  version: inventory.version,
+  generatedFrom: '2022-revised-current-notice-baseline',
+  statistics,
   elementaryBridgeFile: 'data/elementary-bridges.json',
   comparisonBaselines: inventory.comparisonBaselines,
   subjectGroups: [...groupById.values()].map((group) => ({ id: group.id, label: group.labelKorean, level: group.schoolLevel })).sort((a, b) => a.level.localeCompare(b.level, 'en') || a.label.localeCompare(b.label, 'ko')),
@@ -262,10 +275,18 @@ const index = {
     '공식 교육과정 원문은 포함하지 않고 코드·출처 위치와 기계적 초안 요약만 제공합니다.',
     '‘검토 초안’ 배지가 붙은 주제는 성취기준 해설 등 공식 출처를 근거로 새로 쓴 관찰 증거·평가 질문이며, 배지가 없는 주제는 성취기준 요약을 치환한 기계적 템플릿입니다. 둘 다 전문가 검토 전 후보입니다.',
     `초등 ${inventory.comparisonBaselines.elementary.dataRelease}의 기준당 주제 ${inventory.comparisonBaselines.elementary.topicsPerStandard.toFixed(2)}개와 비교해 중학교는 ${inventory.middleTopicDecomposition.topicsPerStandard.average.toFixed(2)}개이며, 모두 전문가 검토 전 후보입니다.`,
-    '고등학교 합계는 비직업계 231과목과 직업계 전문교과 528과목을 포함하므로 학교급 수량을 그대로 비교하지 않습니다.',
+    `고등학교 합계는 비직업계 ${statistics.highAcademicCourses}과목과 직업계 전문교과 ${statistics.highVocationalCourses}과목을 포함하므로 학교급 수량을 그대로 비교하지 않습니다. 두 범위는 별도 릴리스(kr-2022-high / kr-2022-high-vocational)이고 직업계 상세 데이터는 필요할 때만 내려받습니다.`,
   ],
 };
 await atomicJson(join(uiRoot, 'map-index.json'), index);
+// Course details are addressed by an id hash, so a course that moves between releases leaves the
+// old payload behind. Drop anything the current index does not name.
+const publishedDetails = new Set(courseIndex.map((course) => course.detailFile));
+for (const directory of new Set(Object.values(detailDirectories))) {
+  for (const file of await readdir(join(uiRoot, directory))) {
+    if (file.endsWith('.json') && !publishedDetails.has(`data/${directory}/${file}`)) await unlink(join(uiRoot, directory, file));
+  }
+}
 const artifactPaths = ['ui/index.html', 'ui/styles.css', 'ui/app.js', 'ui/data/map-index.json', 'ui/data/elementary-bridges.json', ...courseIndex.map((course) => `ui/${course.detailFile}`)].sort((a, b) => a.localeCompare(b, 'en'));
 const artifacts = [];
 for (const path of artifactPaths) {

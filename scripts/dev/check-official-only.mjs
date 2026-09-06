@@ -8,6 +8,7 @@ import { execFileSync } from 'node:child_process';
 const relationFiles = [
   'data/kr/middle/learning-relations.json',
   'data/kr/high/learning-relations.json',
+  'data/kr/high-vocational/learning-relations.json',
   'data/kr/high/course-relations.json',
   'data/kr/bridges/transition-alignments.json',
   'data/kr/bridges/elementary-transitions.json',

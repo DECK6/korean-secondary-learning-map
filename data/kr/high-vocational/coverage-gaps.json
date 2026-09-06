@@ -1,0 +1,41 @@
+{
+  "$schema": "../../../schema/high-vocational-profile.schema.json#/$defs/coverageGapCollection",
+  "profile": "high-vocational",
+  "recordCount": 2,
+  "records": [
+    {
+      "description": "직업계 전문교과 별책의 문서별 재사용 조건 검토가 완료되지 않았다.",
+      "id": "gap.high-vocational.document-rights-review-pending",
+      "severity": "high",
+      "sourceRefs": [
+        "kr-nec-2024-3-annex23",
+        "kr-nec-2024-3-annex24",
+        "kr-nec-2024-3-annex25",
+        "kr-nec-2024-3-annex26",
+        "kr-nec-2024-3-annex27",
+        "kr-nec-2024-3-annex28",
+        "kr-nec-2024-3-annex29",
+        "kr-nec-2024-3-annex30",
+        "kr-nec-2024-3-annex31",
+        "kr-nec-2024-3-annex32",
+        "kr-nec-2024-3-annex33",
+        "kr-nec-2024-3-annex34",
+        "kr-nec-2024-3-annex35",
+        "kr-nec-2024-3-annex36",
+        "kr-nec-2024-3-annex37",
+        "kr-nec-2024-3-annex38",
+        "kr-nec-2024-3-annex39"
+      ],
+      "status": "open"
+    },
+    {
+      "description": "직업계 전문교과는 튜터 제품 범위 밖의 참조 릴리스다. 성취기준 해설이 직접 뒷받침하는 선수 관계만 담았고 후보 층은 만들지 않았으며, 산업계·교과 전문가 검토가 필요하다.",
+      "id": "gap.high-vocational.subject-expert-refinement-pending",
+      "severity": "high",
+      "sourceRefs": [],
+      "status": "open"
+    }
+  ],
+  "recordType": "coverageGaps",
+  "releaseId": "kr-2022-high-vocational-v0.6.0-candidate"
+}

@@ -3,14 +3,9 @@ import { mkdir, readFile, rename, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { dirname, join, relative, resolve } from 'node:path';
 import { contentOverlayDirectory, readContentOverlays } from './lib/content-overlay.mjs';
+import { collectionFiles, profileNames, profileSchemaNames } from './lib/profile-collections.mjs';
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..');
-const profileNames = ['middle', 'high', 'bridges'];
-const profileSchemaFiles = {
-  middle: 'middle-profile.schema.json',
-  high: 'high-profile.schema.json',
-  bridges: 'bridge-profile.schema.json',
-};
 const relationCollectionNames = ['learningRelations', 'courseRelations', 'transitionAlignments', 'elementaryTransitions'];
 
 function sortValue(value) {
@@ -63,21 +58,25 @@ export async function renderManifests(root = projectRoot) {
     const releasePath = join(directory, 'release.json');
     const release = JSON.parse(await readFile(releasePath, 'utf8'));
     for (const collectionName of relationCollectionNames) {
-      const file = release.collections[collectionName];
-      if (!file) continue;
-      const collection = JSON.parse(await readFile(join(directory, file), 'utf8'));
-      const unsupported = collection.records.find((record) => record.basisKind !== 'official-source');
-      if (unsupported) throw new Error(`${profile}/${file} contains non-official relation ${unsupported.id}`);
+      const entry = release.collections[collectionName];
+      if (!entry) continue;
+      for (const file of collectionFiles(entry)) {
+        const collection = JSON.parse(await readFile(join(directory, file), 'utf8'));
+        const unsupported = collection.records.find((record) => record.basisKind !== 'official-source');
+        if (unsupported) throw new Error(`${profile}/${file} contains non-official relation ${unsupported.id}`);
+      }
     }
     // Content overlays are build inputs, so the release manifest pins their hashes too.
     const overlayPaths = (await readContentOverlays(contentOverlayDirectory(root, profile))).map((overlay) => overlay.path);
     const inputPaths = [
       releasePath,
-      ...Object.values(release.collections).map((file) => join(directory, file)),
+      ...Object.values(release.collections).flatMap((entry) => collectionFiles(entry)).map((file) => join(directory, file)),
       ...overlayPaths,
       ...sharedPaths,
       ...sharedSchemaPaths,
-      join(root, 'schema', profileSchemaFiles[profile]),
+      join(root, 'schema', `${profileSchemaNames[profile]}.schema.json`),
+      // The vocational profile schema reuses the high-school record shapes, so pin both files.
+      ...(profile === 'high-vocational' ? [join(root, 'schema/high-profile.schema.json')] : []),
     ];
     const files = [];
     for (const path of inputPaths) files.push(await fileEntry(root, path));

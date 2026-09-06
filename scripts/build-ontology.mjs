@@ -3,9 +3,16 @@ import { mkdir, readFile, readdir, rename, writeFile } from 'node:fs/promises';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
+import { readCollectionRecords, readRelease } from './lib/profile-collections.mjs';
+
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const outDir = join(root, 'dist/ontology');
 const checkOnly = process.argv.includes('--check');
+// The 528 specialised vocational subjects are 93.8% of the high-school records. They ship as their
+// own ABox file so the default graph stays small enough to load, validate and query quickly.
+const includeVocational = process.argv.includes('--include-vocational');
+const academicProfiles = ['middle', 'high', 'bridges'];
+const vocationalProfiles = ['high-vocational'];
 const base = 'https://dexa.art/learnmap/secondary/resource/';
 const elementaryTopicBase = 'https://dexa.art/learnmap/#/topic/';
 const slm = 'https://dexa.art/learnmap/secondary/ontology#';
@@ -33,8 +40,31 @@ async function atomicWrite(path, contents) {
 const collectionNames = {
   middle: ['subject-groups', 'courses', 'domains', 'standards', 'topics', 'clusters', 'learning-relations', 'learning-relations.candidate', 'coverage-gaps'],
   high: ['subject-groups', 'courses', 'domains', 'standards', 'topics', 'clusters', 'learning-relations', 'learning-relations.candidate', 'course-relations', 'credit-rules', 'choice-sets', 'pathways', 'coverage-gaps'],
+  'high-vocational': ['subject-groups', 'courses', 'domains', 'standards', 'topics', 'clusters', 'learning-relations', 'coverage-gaps'],
   bridges: ['transition-alignments', 'elementary-transitions', 'elementary-transitions.candidate', 'coverage-gaps'],
 };
+// Collections are resolved through the release so a sharded file list stays an implementation
+// detail of data/kr/high-vocational.
+const releaseCollectionKeys = {
+  'subject-groups': 'subjectGroups',
+  courses: 'courses',
+  domains: 'domains',
+  standards: 'standards',
+  topics: 'topics',
+  clusters: 'clusters',
+  'learning-relations': 'learningRelations',
+  'learning-relations.candidate': 'candidateLearningRelations',
+  'course-relations': 'courseRelations',
+  'credit-rules': 'creditRules',
+  'choice-sets': 'choiceSets',
+  pathways: 'pathways',
+  'transition-alignments': 'transitionAlignments',
+  'elementary-transitions': 'elementaryTransitions',
+  'elementary-transitions.candidate': 'candidateElementaryTransitions',
+  'coverage-gaps': 'coverageGaps',
+};
+// A vocational course is still a high-school course; only the release it ships in differs.
+const schoolLevelOf = { middle: 'middle', high: 'high', 'high-vocational': 'high' };
 const officialRelationCollections = new Set(['learning-relations', 'course-relations', 'transition-alignments', 'elementary-transitions']);
 
 function officialRecords(records, label) {
@@ -43,16 +73,19 @@ function officialRecords(records, label) {
   return records;
 }
 
-async function loadCollections() {
+async function loadCollections(profiles) {
   const loaded = {};
-  for (const [profile, names] of Object.entries(collectionNames)) {
+  const releases = {};
+  for (const profile of profiles) {
+    const release = await readRelease(root, profile);
+    releases[profile] = release;
     loaded[profile] = {};
-    for (const name of names) {
-      const records = (await readJson(join(root, 'data/kr', profile, `${name}.json`))).records;
+    for (const name of collectionNames[profile]) {
+      const records = await readCollectionRecords(root, profile, release.collections[releaseCollectionKeys[name]]);
       loaded[profile][name] = officialRelationCollections.has(name) ? officialRecords(records, `${profile}/${name}`) : records;
     }
   }
-  return loaded;
+  return { loaded, releases };
 }
 
 function pushNode(graph, ttl, node) {
@@ -64,10 +97,11 @@ function refs(records, property) {
   return records.map((value) => ({ '@id': jsonIri(value[property] ?? value) }));
 }
 
-async function build() {
-  const data = await loadCollections();
-  const sources = (await readJson(join(root, 'data/kr/shared/source-manifest.json'))).sources;
-  const releases = await Promise.all(['middle', 'high', 'bridges'].map((profile) => readJson(join(root, 'data/kr', profile, 'release.json'))));
+async function build(profiles) {
+  const { loaded: data, releases: releaseByProfile } = await loadCollections(profiles);
+  const emitShared = profiles.includes('middle');
+  const sources = emitShared ? (await readJson(join(root, 'data/kr/shared/source-manifest.json'))).sources : [];
+  const releases = profiles.map((profile) => releaseByProfile[profile]);
   const context = (await readJson(join(root, 'ontology/context.jsonld')))['@context'];
   const graph = [];
   const ttl = ['@prefix slm: <https://dexa.art/learnmap/secondary/ontology#> .', '@prefix core: <https://dexa.art/learnmap/ontology/k12-core#> .', '@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .', '@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .'];
@@ -84,21 +118,22 @@ async function build() {
     triples: [`a slm:SourceDocument`, `rdfs:label ${ko(source.name)}`, `slm:publisher ${literal(source.publisher)}`, `slm:sourceUrl ${literal(source.url)}^^xsd:anyURI`, `slm:attachmentNumber ${literal(source.attachmentNo)}`, `slm:fileSha256 ${literal(source.sha256)}`, `slm:verificationStatus ${literal(source.verificationStatus)}`, `slm:rightsStatus ${literal(source.rightsStatus)}`],
   });
 
-  for (const profile of ['middle', 'high']) {
+  for (const profile of profiles.filter((name) => name !== 'bridges')) {
+    const level = schoolLevelOf[profile];
     for (const record of data[profile]['subject-groups']) pushNode(graph, ttl, {
       id: record.id,
-      json: { '@id': jsonIri(record.id), '@type': 'slm:SubjectGroup', label: record.labelKorean, schoolLevel: profile, hasSource: refs(record.sourceRefs), verificationStatus: record.verificationStatus, reviewStatus: record.reviewStatus },
-      triples: [`a slm:SubjectGroup`, `rdfs:label ${ko(record.labelKorean)}`, `slm:schoolLevel ${literal(profile)}`, ...record.sourceRefs.map((id) => `slm:hasSource ${iri(id)}`), `slm:verificationStatus ${literal(record.verificationStatus)}`, `slm:reviewStatus ${literal(record.reviewStatus)}`],
+      json: { '@id': jsonIri(record.id), '@type': 'slm:SubjectGroup', label: record.labelKorean, schoolLevel: level, hasSource: refs(record.sourceRefs), verificationStatus: record.verificationStatus, reviewStatus: record.reviewStatus },
+      triples: [`a slm:SubjectGroup`, `rdfs:label ${ko(record.labelKorean)}`, `slm:schoolLevel ${literal(level)}`, ...record.sourceRefs.map((id) => `slm:hasSource ${iri(id)}`), `slm:verificationStatus ${literal(record.verificationStatus)}`, `slm:reviewStatus ${literal(record.reviewStatus)}`],
     });
     for (const record of data[profile].courses) pushNode(graph, ttl, {
       id: record.id,
-      json: { '@id': jsonIri(record.id), '@type': 'slm:Course', label: record.labelKorean, schoolLevel: profile, courseCategory: record.courseCategory, programScope: record.programScopes ?? [], gradeScope: record.gradeScope ?? [], creditRule: refs(record.creditRuleRefs ?? []), inSubjectGroup: { '@id': jsonIri(record.subjectGroupId) }, hasSource: refs(record.sourceRefs), verificationStatus: record.verificationStatus, reviewStatus: record.reviewStatus },
-      triples: [`a slm:Course`, `rdfs:label ${ko(record.labelKorean)}`, `slm:schoolLevel ${literal(profile)}`, `slm:courseCategory ${literal(record.courseCategory)}`, ...((record.programScopes ?? []).map((value) => `slm:programScope ${literal(value)}`)), ...((record.gradeScope ?? []).map((value) => `slm:gradeScope ${literal(value)}`)), ...((record.creditRuleRefs ?? []).map((id) => `slm:creditRule ${iri(id)}`)), `slm:inSubjectGroup ${iri(record.subjectGroupId)}`, ...record.sourceRefs.map((id) => `slm:hasSource ${iri(id)}`), `slm:verificationStatus ${literal(record.verificationStatus)}`, `slm:reviewStatus ${literal(record.reviewStatus)}`],
+      json: { '@id': jsonIri(record.id), '@type': 'slm:Course', label: record.labelKorean, schoolLevel: level, courseCategory: record.courseCategory, programScope: record.programScopes ?? [], gradeScope: record.gradeScope ?? [], creditRule: refs(record.creditRuleRefs ?? []), inSubjectGroup: { '@id': jsonIri(record.subjectGroupId) }, hasSource: refs(record.sourceRefs), verificationStatus: record.verificationStatus, reviewStatus: record.reviewStatus },
+      triples: [`a slm:Course`, `rdfs:label ${ko(record.labelKorean)}`, `slm:schoolLevel ${literal(level)}`, `slm:courseCategory ${literal(record.courseCategory)}`, ...((record.programScopes ?? []).map((value) => `slm:programScope ${literal(value)}`)), ...((record.gradeScope ?? []).map((value) => `slm:gradeScope ${literal(value)}`)), ...((record.creditRuleRefs ?? []).map((id) => `slm:creditRule ${iri(id)}`)), `slm:inSubjectGroup ${iri(record.subjectGroupId)}`, ...record.sourceRefs.map((id) => `slm:hasSource ${iri(id)}`), `slm:verificationStatus ${literal(record.verificationStatus)}`, `slm:reviewStatus ${literal(record.reviewStatus)}`],
     });
     for (const record of data[profile].domains) pushNode(graph, ttl, {
       id: record.id,
-      json: { '@id': jsonIri(record.id), '@type': 'slm:Domain', label: record.labelKorean, schoolLevel: profile, domainOfCourse: { '@id': jsonIri(record.courseId) }, hasSource: refs(record.sourceRefs), verificationStatus: record.verificationStatus, reviewStatus: record.reviewStatus },
-      triples: [`a slm:Domain`, `rdfs:label ${ko(record.labelKorean)}`, `slm:schoolLevel ${literal(profile)}`, `slm:domainOfCourse ${iri(record.courseId)}`, ...record.sourceRefs.map((id) => `slm:hasSource ${iri(id)}`), `slm:verificationStatus ${literal(record.verificationStatus)}`, `slm:reviewStatus ${literal(record.reviewStatus)}`],
+      json: { '@id': jsonIri(record.id), '@type': 'slm:Domain', label: record.labelKorean, schoolLevel: level, domainOfCourse: { '@id': jsonIri(record.courseId) }, hasSource: refs(record.sourceRefs), verificationStatus: record.verificationStatus, reviewStatus: record.reviewStatus },
+      triples: [`a slm:Domain`, `rdfs:label ${ko(record.labelKorean)}`, `slm:schoolLevel ${literal(level)}`, `slm:domainOfCourse ${iri(record.courseId)}`, ...record.sourceRefs.map((id) => `slm:hasSource ${iri(id)}`), `slm:verificationStatus ${literal(record.verificationStatus)}`, `slm:reviewStatus ${literal(record.reviewStatus)}`],
     });
     for (const record of data[profile].standards) {
       const locatorId = `${record.id}.locator`;
@@ -128,8 +163,8 @@ async function build() {
       }
       pushNode(graph, ttl, {
       id: record.id,
-      json: { '@id': jsonIri(record.id), '@type': profile === 'middle' ? ['slm:LearningTopic', 'slm:MiddleLearningTopic'] : 'slm:LearningTopic', label: record.labelKorean, schoolLevel: profile, description: record.description, topicInCourse: refs(record.courseIds), inDomain: { '@id': jsonIri(record.domainId) }, alignsToStandard: refs(record.standardAlignments, 'standardId'), alignmentKind: record.standardAlignments.map((a) => a.alignmentKind), basis: record.standardAlignments.map((a) => a.basis), topicType: record.types, ...(record.decompositionKind ? { decompositionKind: record.decompositionKind } : {}), ...(record.facetKey ? { facetKey: record.facetKey, 'core:facetKey': { '@id': coreJsonIri(`facet-${record.facetKey}`) } } : {}), ...(record.facetKeyDetail ? { facetKeyDetail: record.facetKeyDetail } : {}), 'core:contentKind': { '@id': coreJsonIri(`content-${record.contentKind}`) }, ...(record.misconceptions?.length ? { 'core:misconception': [...record.misconceptions] } : {}), ...(contentLocatorId ? { 'core:contentSourceLocator': { '@id': jsonIri(contentLocatorId) } } : {}), evidence: record.evidence, assessmentPrompt: record.assessmentPrompts, hasSource: refs(record.sourceRefs), verificationStatus: record.verificationStatus, reviewStatus: record.reviewStatus },
-      triples: [`a slm:LearningTopic${profile === 'middle' ? ', slm:MiddleLearningTopic' : ''}`, `rdfs:label ${ko(record.labelKorean)}`, `slm:schoolLevel ${literal(profile)}`, `slm:description ${ko(record.description)}`, ...record.courseIds.map((id) => `slm:topicInCourse ${iri(id)}`), `slm:inDomain ${iri(record.domainId)}`, ...record.standardAlignments.map((a) => `slm:alignsToStandard ${iri(a.standardId)}`), ...record.standardAlignments.map((a) => `slm:alignmentKind ${literal(a.alignmentKind)}`), ...record.standardAlignments.map((a) => `slm:basis ${literal(a.basis)}`), ...record.types.map((value) => `slm:topicType ${literal(value)}`), ...(record.decompositionKind ? [`slm:decompositionKind ${literal(record.decompositionKind)}`] : []), ...(record.facetKey ? [`slm:facetKey ${literal(record.facetKey)}`, `core:facetKey ${coreIri(`facet-${record.facetKey}`)}`] : []), ...(record.facetKeyDetail ? [`slm:facetKeyDetail ${literal(record.facetKeyDetail)}`] : []), `core:contentKind ${coreIri(`content-${record.contentKind}`)}`, ...((record.misconceptions ?? []).map((value) => `core:misconception ${ko(value)}`)), ...(contentLocatorId ? [`core:contentSourceLocator ${iri(contentLocatorId)}`] : []), ...record.evidence.map((value) => `slm:evidence ${ko(value)}`), ...record.assessmentPrompts.map((value) => `slm:assessmentPrompt ${ko(value)}`), ...record.sourceRefs.map((id) => `slm:hasSource ${iri(id)}`), `slm:verificationStatus ${literal(record.verificationStatus)}`, `slm:reviewStatus ${literal(record.reviewStatus)}`],
+      json: { '@id': jsonIri(record.id), '@type': profile === 'middle' ? ['slm:LearningTopic', 'slm:MiddleLearningTopic'] : 'slm:LearningTopic', label: record.labelKorean, schoolLevel: level, description: record.description, topicInCourse: refs(record.courseIds), inDomain: { '@id': jsonIri(record.domainId) }, alignsToStandard: refs(record.standardAlignments, 'standardId'), alignmentKind: record.standardAlignments.map((a) => a.alignmentKind), basis: record.standardAlignments.map((a) => a.basis), topicType: record.types, ...(record.decompositionKind ? { decompositionKind: record.decompositionKind } : {}), ...(record.facetKey ? { facetKey: record.facetKey, 'core:facetKey': { '@id': coreJsonIri(`facet-${record.facetKey}`) } } : {}), ...(record.facetKeyDetail ? { facetKeyDetail: record.facetKeyDetail } : {}), 'core:contentKind': { '@id': coreJsonIri(`content-${record.contentKind}`) }, ...(record.misconceptions?.length ? { 'core:misconception': [...record.misconceptions] } : {}), ...(contentLocatorId ? { 'core:contentSourceLocator': { '@id': jsonIri(contentLocatorId) } } : {}), evidence: record.evidence, assessmentPrompt: record.assessmentPrompts, hasSource: refs(record.sourceRefs), verificationStatus: record.verificationStatus, reviewStatus: record.reviewStatus },
+      triples: [`a slm:LearningTopic${profile === 'middle' ? ', slm:MiddleLearningTopic' : ''}`, `rdfs:label ${ko(record.labelKorean)}`, `slm:schoolLevel ${literal(level)}`, `slm:description ${ko(record.description)}`, ...record.courseIds.map((id) => `slm:topicInCourse ${iri(id)}`), `slm:inDomain ${iri(record.domainId)}`, ...record.standardAlignments.map((a) => `slm:alignsToStandard ${iri(a.standardId)}`), ...record.standardAlignments.map((a) => `slm:alignmentKind ${literal(a.alignmentKind)}`), ...record.standardAlignments.map((a) => `slm:basis ${literal(a.basis)}`), ...record.types.map((value) => `slm:topicType ${literal(value)}`), ...(record.decompositionKind ? [`slm:decompositionKind ${literal(record.decompositionKind)}`] : []), ...(record.facetKey ? [`slm:facetKey ${literal(record.facetKey)}`, `core:facetKey ${coreIri(`facet-${record.facetKey}`)}`] : []), ...(record.facetKeyDetail ? [`slm:facetKeyDetail ${literal(record.facetKeyDetail)}`] : []), `core:contentKind ${coreIri(`content-${record.contentKind}`)}`, ...((record.misconceptions ?? []).map((value) => `core:misconception ${ko(value)}`)), ...(contentLocatorId ? [`core:contentSourceLocator ${iri(contentLocatorId)}`] : []), ...record.evidence.map((value) => `slm:evidence ${ko(value)}`), ...record.assessmentPrompts.map((value) => `slm:assessmentPrompt ${ko(value)}`), ...record.sourceRefs.map((id) => `slm:hasSource ${iri(id)}`), `slm:verificationStatus ${literal(record.verificationStatus)}`, `slm:reviewStatus ${literal(record.reviewStatus)}`],
       });
     }
     for (const record of data[profile].clusters) pushNode(graph, ttl, {
@@ -139,7 +174,7 @@ async function build() {
     });
     // Both layers are LearningRelations, separated by a subclass and the slm:layer qualifier so
     // SHACL can reject a candidate assertion that leaks into the official layer.
-    for (const collectionName of ['learning-relations', 'learning-relations.candidate']) {
+    for (const collectionName of collectionNames[profile].filter((name) => name.startsWith('learning-relations'))) {
       const layerClass = collectionName === 'learning-relations' ? 'slm:OfficialLearningRelation' : 'slm:CandidateLearningRelation';
       for (const record of data[profile][collectionName]) pushNode(graph, ttl, {
         id: record.id,
@@ -149,7 +184,7 @@ async function build() {
     }
   }
 
-  for (const record of data.bridges['transition-alignments']) pushNode(graph, ttl, {
+  for (const record of profiles.includes('bridges') ? data.bridges['transition-alignments'] : []) pushNode(graph, ttl, {
     id: record.id,
     json: { '@id': jsonIri(record.id), '@type': 'slm:TransitionAlignment', transitionFromCourse: refs(record.fromCourseIds), transitionToCourse: refs(record.toCourseIds), fromTopic: refs(record.fromTopicIds), toTopic: refs(record.toTopicIds), relationKind: record.transitionKind, reason: record.reason, basisKind: record.basisKind, basis: record.basis, hasSource: refs(record.sourceRefs), reviewStatus: record.reviewStatus },
     triples: [`a slm:TransitionAlignment`, ...record.fromCourseIds.map((id) => `slm:transitionFromCourse ${iri(id)}`), ...record.toCourseIds.map((id) => `slm:transitionToCourse ${iri(id)}`), ...record.fromTopicIds.map((id) => `slm:fromTopic ${iri(id)}`), ...record.toTopicIds.map((id) => `slm:toTopic ${iri(id)}`), `slm:relationKind ${literal(record.transitionKind)}`, `slm:reason ${ko(record.reason)}`, `slm:basisKind ${literal(record.basisKind)}`, `slm:basis ${literal(record.basis)}`, ...record.sourceRefs.map((id) => `slm:hasSource ${iri(id)}`), `slm:reviewStatus ${literal(record.reviewStatus)}`],
@@ -157,7 +192,7 @@ async function build() {
   // The candidate bridge layer is materialized with the slm:layer qualifier and its own subclass so
   // SHACL can reject a candidate bridge that claims official evidence. Derived prerequisite views
   // stay on the official layer only.
-  for (const collectionName of ['elementary-transitions', 'elementary-transitions.candidate']) {
+  for (const collectionName of profiles.includes('bridges') ? ['elementary-transitions', 'elementary-transitions.candidate'] : []) {
     const isCandidate = collectionName.endsWith('.candidate');
     const types = isCandidate ? ['slm:TransitionAlignment', 'slm:CandidateTransitionAlignment'] : 'slm:TransitionAlignment';
     for (const record of data.bridges[collectionName]) pushNode(graph, ttl, {
@@ -166,22 +201,23 @@ async function build() {
       triples: [`a slm:TransitionAlignment${isCandidate ? ', slm:CandidateTransitionAlignment' : ''}`, `slm:layer ${literal(record.layer)}`, `core:layerConcept ${coreIri(`layer-${record.layer}`)}`, `slm:fromTopic ${elementaryIri(record.prerequisiteTopicId)}`, `slm:toTopic ${iri(record.dependentTopicId)}`, `slm:relationKind ${literal(record.relationKind)}`, `slm:reason ${ko(record.reason)}`, `slm:basisKind ${literal(record.basisKind)}`, `slm:basis ${literal(record.basis)}`, ...record.sourceRefs.map((id) => `slm:hasSource ${iri(id)}`), `slm:reviewStatus ${literal(record.reviewStatus)}`],
     });
   }
-  for (const record of data.high['course-relations']) pushNode(graph, ttl, {
+  const highExtras = profiles.includes('high') ? data.high : { 'course-relations': [], 'credit-rules': [], 'choice-sets': [], pathways: [] };
+  for (const record of highExtras['course-relations']) pushNode(graph, ttl, {
     id: record.id,
     json: { '@id': jsonIri(record.id), '@type': 'slm:CourseRelation', courseRelationFrom: { '@id': jsonIri(record.fromCourseId) }, courseRelationTo: { '@id': jsonIri(record.toCourseId) }, relationKind: record.relationKind, claimStatus: record.claimStatus, reason: record.reason, basisKind: record.basisKind, basis: record.basis, hasSource: refs(record.sourceRefs), reviewStatus: record.reviewStatus },
     triples: [`a slm:CourseRelation`, `slm:courseRelationFrom ${iri(record.fromCourseId)}`, `slm:courseRelationTo ${iri(record.toCourseId)}`, `slm:relationKind ${literal(record.relationKind)}`, `slm:claimStatus ${literal(record.claimStatus)}`, `slm:reason ${ko(record.reason)}`, `slm:basisKind ${literal(record.basisKind)}`, `slm:basis ${literal(record.basis)}`, ...record.sourceRefs.map((id) => `slm:hasSource ${iri(id)}`), `slm:reviewStatus ${literal(record.reviewStatus)}`],
   });
-  for (const record of data.high['credit-rules']) pushNode(graph, ttl, {
+  for (const record of highExtras['credit-rules']) pushNode(graph, ttl, {
     id: record.id,
     json: { '@id': jsonIri(record.id), '@type': 'slm:CreditRule', label: record.labelKorean, effectiveFrom: record.effectiveFrom, ...(record.effectiveTo ? { effectiveTo: record.effectiveTo } : {}), ruleKind: record.ruleKind, value: record.value, unit: record.unit, hasSource: refs(record.sourceRefs), verificationStatus: record.verificationStatus, rightsStatus: record.rightsStatus },
     triples: [`a slm:CreditRule`, `rdfs:label ${ko(record.labelKorean)}`, `slm:effectiveFrom ${literal(record.effectiveFrom)}^^xsd:date`, ...(record.effectiveTo ? [`slm:effectiveTo ${literal(record.effectiveTo)}^^xsd:date`] : []), `slm:ruleKind ${literal(record.ruleKind)}`, `slm:value ${literal(record.value)}^^xsd:integer`, `slm:unit ${literal(record.unit)}`, ...record.sourceRefs.map((id) => `slm:hasSource ${iri(id)}`), `slm:verificationStatus ${literal(record.verificationStatus)}`, `slm:rightsStatus ${literal(record.rightsStatus)}`],
   });
-  for (const record of data.high['choice-sets']) pushNode(graph, ttl, {
+  for (const record of highExtras['choice-sets']) pushNode(graph, ttl, {
     id: record.id,
     json: { '@id': jsonIri(record.id), '@type': 'slm:ChoiceSet', label: record.labelKorean, choiceKind: record.choiceKind, minimumSelections: record.minimumSelections, ...(record.maximumSelections === null ? {} : { maximumSelections: record.maximumSelections }), hasCourse: refs(record.courseIds), ruleBasis: record.ruleBasis, hasSource: refs(record.sourceRefs), reviewStatus: record.reviewStatus },
     triples: [`a slm:ChoiceSet`, `rdfs:label ${ko(record.labelKorean)}`, `slm:choiceKind ${literal(record.choiceKind)}`, `slm:minimumSelections ${literal(record.minimumSelections)}^^xsd:integer`, ...(record.maximumSelections === null ? [] : [`slm:maximumSelections ${literal(record.maximumSelections)}^^xsd:integer`]), ...record.courseIds.map((id) => `slm:hasCourse ${iri(id)}`), `slm:ruleBasis ${literal(record.ruleBasis)}`, ...record.sourceRefs.map((id) => `slm:hasSource ${iri(id)}`), `slm:reviewStatus ${literal(record.reviewStatus)}`],
   });
-  for (const record of data.high.pathways) {
+  for (const record of highExtras.pathways) {
     const stepIds = record.steps.map((step) => `${record.id}.step.${step.order}`);
     for (const [index, step] of record.steps.entries()) pushNode(graph, ttl, {
       id: stepIds[index],
@@ -194,7 +230,7 @@ async function build() {
       triples: [`a slm:IllustrativePathway`, `rdfs:label ${ko(record.labelKorean)}`, `slm:pathwayKind ${literal(record.pathwayKind)}`, `slm:audience ${literal(record.audience)}`, ...stepIds.map((id) => `slm:hasStep ${iri(id)}`), `slm:notOfficialRequirement ${literal(record.notOfficialRequirement)}^^xsd:boolean`, `slm:reviewStatus ${literal(record.reviewStatus)}`],
     });
   }
-  for (const profile of ['middle', 'high', 'bridges']) {
+  for (const profile of profiles) {
     for (const record of data[profile]['coverage-gaps']) pushNode(graph, ttl, {
       id: record.id,
       json: { '@id': jsonIri(record.id), '@type': 'slm:CoverageGap', label: record.description, description: record.description, severity: record.severity, status: record.status, hasSource: refs(record.sourceRefs) },
@@ -217,12 +253,22 @@ if (checkOnly) {
   }
   console.log(`ontology artifact check passed: ${manifest.artifacts.length} files`);
 } else {
-  const built = await build();
+  const built = await build(academicProfiles);
   await atomicWrite(join(outDir, 'learning-map.ttl'), built.turtle);
   await atomicWrite(join(outDir, 'learning-map.jsonld'), built.jsonld);
+  let vocational = null;
+  if (includeVocational) {
+    vocational = await build(vocationalProfiles);
+    await atomicWrite(join(outDir, 'high-vocational.ttl'), vocational.turtle);
+    await atomicWrite(join(outDir, 'high-vocational.jsonld'), vocational.jsonld);
+  }
   const artifactDefinitions = [
     ['dist/ontology/learning-map.ttl', 'text/turtle'],
     ['dist/ontology/learning-map.jsonld', 'application/ld+json'],
+    ...(includeVocational ? [
+      ['dist/ontology/high-vocational.ttl', 'text/turtle'],
+      ['dist/ontology/high-vocational.jsonld', 'application/ld+json'],
+    ] : []),
     ['ontology/learning-map.ttl', 'text/turtle'],
     ['ontology/k12-core.ttl', 'text/turtle'],
     ['ontology/shapes.ttl', 'text/turtle'],
@@ -242,6 +288,13 @@ if (checkOnly) {
     const contents = await readFile(join(root, path));
     artifacts.push({ path, mediaType, bytes: contents.byteLength, sha256: sha256(contents) });
   }
-  await atomicWrite(join(outDir, 'manifest.json'), `${JSON.stringify({ version: '0.6.0-candidate', graphNodeCount: built.graphCount, artifacts }, null, 2)}\n`);
-  console.log(`ontology build passed: ${built.graphCount} graph nodes`);
+  const manifest = {
+    version: '0.6.0-candidate',
+    includesVocational: includeVocational,
+    graphNodeCount: built.graphCount,
+    ...(includeVocational ? { vocationalGraphNodeCount: vocational.graphCount } : {}),
+    artifacts,
+  };
+  await atomicWrite(join(outDir, 'manifest.json'), `${JSON.stringify(manifest, null, 2)}\n`);
+  console.log(`ontology build passed: ${built.graphCount} graph nodes${includeVocational ? ` + ${vocational.graphCount} vocational nodes` : ''}`);
 }

@@ -41,16 +41,31 @@ data/kr/
     review-records.json
     coverage-gaps.json
     content/                # 주제 콘텐츠 오버레이(빌드 입력, 5.1절)
+  high-vocational/          # 직업계 전문교과 528과목 (아키텍처 5.3절)
+    release.json
+    subject-groups.json
+    courses.json
+    domains.json
+    standards/<교과군슬러그>.json   # 18개 샤드
+    topics/<교과군슬러그>.json      # 18개 샤드
+    clusters.json
+    learning-relations.json
+    review-records.json
+    coverage-gaps.json
   bridges/
     release.json
     transition-alignments.json
     review-records.json
-  local-offerings/          # 선택 확장; 세 국가 수준 릴리스와 분리
+  local-offerings/          # 선택 확장; 네 국가 수준 릴리스와 분리
 ```
 
-교과별 작성 작업은 `workstreams/<school-level>/<subject-group>.json`에서 수행한다. 중학교·고등학교·bridge 빌더는 각각 독립 manifest를 생성하며, 통합 bundle manifest는 세 릴리스의 해시만 조합한다.
+교과별 작성 작업은 `workstreams/<school-level>/<subject-group>.json`에서 수행한다. 중학교·고등학교(일반·직업계)·bridge 빌더는 각각 독립 manifest를 생성하며, 통합 bundle manifest는 릴리스별 해시만 조합한다.
 
-스키마도 `core`, `middle-profile`, `high-profile`, `bridge-profile`로 나눈다. 고등학교의 학점·선택 제약을 중학교 레코드에 요구하지 않는다.
+스키마도 `core`, `middle-profile`, `high-profile`, `high-vocational-profile`, `bridge-profile`로 나눈다. 고등학교의 학점·선택 제약을 중학교 레코드에 요구하지 않고, 일반 고교의 선택 묶음·경로·과목 관계·후보 관계 층을 직업계 릴리스에 요구하지 않는다. `high-vocational-profile`의 레코드 모양은 `high-profile`을 재사용하며 릴리스 구성만 다르다.
+
+**`collections` 항목은 문자열 또는 샤드 경로 배열이다.** 한 파일로 담기는 컬렉션은 `"topics.json"`처럼 파일명 하나를 쓰고, 샤딩한 컬렉션은 `["topics/agriculture.json", …]`처럼 릴리스 순서를 유지한 경로 배열을 쓴다. 소비자는 경로를 하드코딩하지 않고 `release.json`을 통해 파일 목록을 얻는다(`scripts/lib/profile-collections.mjs`의 `readProfileCollection`). 샤드 슬러그는 공개 경로의 일부이므로 안정 식별자로 취급하며 `vocationalSubjectGroupSlugs`에 교과군 라벨 기준으로 고정한다.
+
+**파일 크기 한도 25 MB.** `scripts/validate.mjs`의 `MAX_DATA_FILE_BYTES`가 `data/kr/**`의 모든 `.json`을 걸어 개당 25 MB 초과를 실패로 처리한다. GitHub 100 MB 하드 리밋에서 여유를 두기 위한 게이트이며, 한도를 넘길 컬렉션은 의미 있는 축(교과군)으로 샤딩한다. 현재 최대 단일 파일은 `high-vocational/topics/agriculture.json` 10.3 MB다.
 
 ## 2. 공통 필드
 
@@ -336,3 +351,4 @@ official 파일에 `layer != official`, `basisKind != official-source`, `relatio
 - n-ary 주장에는 SHA-256 기반 결정적 ID를 사용하며 정규화 알고리즘을 버전 관리한다.
 - 삭제·통합·이름 변경은 tombstone과 replacement mapping으로 처리한다.
 - 개인 정보, 로컬 파일 경로, 서명 URL, 원문 문장을 IRI에 넣지 않는다.
+- **레코드가 어느 릴리스 파일에 있느냐는 ID에 영향을 주지 않는다.** 파일 배치는 배포 결정이고 ID는 의미 결정이다. 고등학교 레코드는 한 번의 빌드로 `high` 네임스페이스에서 발급한 뒤 일반·직업계 두 릴리스로 나누므로, 분리 후에도 두 릴리스의 ID가 모두 `kr.*.2022.high.*` 네임스페이스를 유지한다. 샤딩도 마찬가지로 ID를 바꾸지 않는다.

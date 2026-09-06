@@ -1,9 +1,10 @@
 import { createHash } from 'node:crypto';
-import { readFile, rename, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, rename, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { dirname, join, resolve } from 'node:path';
 import { buildJoinLexicon, joinBrokenHangul } from './lib/text-normalize.mjs';
 import { applyContentOverlay, contentOverlayDirectory, indexOverlayEntries, readContentOverlays } from './lib/content-overlay.mjs';
+import { profileSchemaNames, releaseIds, shardDirectories, vocationalSubjectGroupSlugs } from './lib/profile-collections.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const catalog = JSON.parse(await readFile(join(root, 'sources/official/source-catalog.json'), 'utf8'));
@@ -118,8 +119,18 @@ function stableJson(value) {
 
 async function atomicJson(path, value) {
   const temporary = `${path}.${process.pid}.tmp`;
+  await mkdir(dirname(path), { recursive: true });
   await writeFile(temporary, stableJson(value), 'utf8');
   await rename(temporary, path);
+}
+
+async function readJsonIfPresent(path) {
+  try {
+    return JSON.parse(await readFile(path, 'utf8'));
+  } catch (error) {
+    if (error.code === 'ENOENT') return null;
+    throw error;
+  }
 }
 
 function normalizeLine(line) {
@@ -487,11 +498,7 @@ const records = [...byProfileAndCode.values()].sort((a, b) =>
   a.code.localeCompare(b.code, 'ko'),
 );
 
-const releases = {
-  middle: 'kr-2022-middle-v0.6.0-candidate',
-  high: 'kr-2022-high-v0.6.0-candidate',
-  bridges: 'kr-2022-middle-high-bridge-v0.6.0-candidate',
-};
+const releases = releaseIds;
 
 const sourceManifest = {
   $schema: '../../../schema/source-manifest.schema.json',
@@ -694,8 +701,6 @@ function buildProfile(profile) {
     if (unused.size) throw new Error(`data/kr/${profile}/content: ${unused.size} overlay entries reference unknown topics (${[...unused].slice(0, 3).join(', ')})`);
   }
 
-  const learningRelations = [];
-
   return {
     subjectGroups: [...subjectGroups.values()].sort((a, b) => a.labelKorean.localeCompare(b.labelKorean, 'ko')),
     courses: [...courses.values()].sort((a, b) => a.labelKorean.localeCompare(b.labelKorean, 'ko')),
@@ -703,7 +708,6 @@ function buildProfile(profile) {
     standards: standards.sort((a, b) => a.code.localeCompare(b.code, 'ko')),
     topics: topics.sort((a, b) => a.id.localeCompare(b.id, 'en')),
     clusters: [...clustersByKey.values()].map((cluster) => ({ ...cluster, topicIds: cluster.topicIds.sort() })).sort((a, b) => a.id.localeCompare(b.id, 'en')),
-    learningRelations: learningRelations.sort((a, b) => a.id.localeCompare(b.id, 'en')),
   };
 }
 
@@ -718,6 +722,45 @@ for (const profile of ['middle', 'high']) {
 
 const middle = buildProfile('middle');
 const high = buildProfile('high');
+
+// The high school is built in one pass so every id keeps hashing the `high` namespace, then the
+// published product splits: `high` keeps the 231 courses open to every high school and
+// `high-vocational` takes the 528 specialised subjects. No id changes, only the file a record
+// lives in. See docs/architecture.md 5.3.
+const vocationalCourseIds = new Set(
+  high.courses.filter((course) => course.programScopes.includes('specialized-vocational')).map((course) => course.id),
+);
+const vocationalSubjectGroupIds = new Set(
+  high.courses.filter((course) => vocationalCourseIds.has(course.id)).map((course) => course.subjectGroupId),
+);
+const vocationalPredicates = {
+  subjectGroups: (record) => vocationalSubjectGroupIds.has(record.id),
+  courses: (record) => vocationalCourseIds.has(record.id),
+  domains: (record) => vocationalCourseIds.has(record.courseId),
+  standards: (record) => vocationalCourseIds.has(record.courseId),
+  topics: (record) => record.courseIds.some((courseId) => vocationalCourseIds.has(courseId)),
+  clusters: (record) => vocationalCourseIds.has(record.courseId),
+};
+const highAcademic = {};
+const highVocational = {};
+for (const [collectionName, isVocational] of Object.entries(vocationalPredicates)) {
+  highVocational[collectionName] = high[collectionName].filter(isVocational);
+  highAcademic[collectionName] = high[collectionName].filter((record) => !isVocational(record));
+}
+for (const group of highAcademic.subjectGroups) {
+  if (vocationalSubjectGroupIds.has(group.id)) throw new Error(`subject group ${group.labelKorean} mixes academic and vocational courses`);
+}
+const vocationalGroupLabelById = new Map(highVocational.subjectGroups.map((group) => [group.id, group.labelKorean]));
+const vocationalShardSlugByCourseId = new Map(highVocational.courses.map((course) => {
+  const label = vocationalGroupLabelById.get(course.subjectGroupId);
+  const slug = vocationalSubjectGroupSlugs[label];
+  if (!slug) throw new Error(`no vocational shard slug for subject group ${label}`);
+  return [course.id, slug];
+}));
+const vocationalShardKeys = {
+  standards: (record) => vocationalShardSlugByCourseId.get(record.courseId),
+  topics: (record) => vocationalShardSlugByCourseId.get(record.courseIds[0]),
+};
 
 const creditRules = [
   {
@@ -758,15 +801,16 @@ const creditRules = [
   },
 ];
 
+// Choice sets and illustrative pathways describe how a general high school compares electives, so
+// they are built from the academic profile only; the vocational release carries no selection model.
 const highCoursesByGroup = new Map();
-for (const course of high.courses) {
+for (const course of highAcademic.courses) {
   if (!highCoursesByGroup.has(course.subjectGroupId)) highCoursesByGroup.set(course.subjectGroupId, []);
   highCoursesByGroup.get(course.subjectGroupId).push(course);
 }
-const courseRelations = [];
 const choiceSets = [];
 const pathways = [];
-const highGroupById = new Map(high.subjectGroups.map((group) => [group.id, group]));
+const highGroupById = new Map(highAcademic.subjectGroups.map((group) => [group.id, group]));
 for (const [subjectGroupId, courses] of highCoursesByGroup) {
   const common = courses.filter((course) => course.courseCategory === 'common');
   const elective = courses.filter((course) => !['common', 'specialized-common'].includes(course.courseCategory));
@@ -798,10 +842,8 @@ for (const [subjectGroupId, courses] of highCoursesByGroup) {
   }
 }
 
-const transitionAlignments = [];
-
-function envelope(profile, releaseId, recordType, records) {
-  const schemaFile = profile === 'middle' ? 'middle-profile' : profile === 'high' ? 'high-profile' : 'bridge-profile';
+function envelope(profile, releaseId, recordType, records, depth = 3) {
+  const schemaFile = profileSchemaNames[profile];
   const definition = {
     subjectGroups: 'subjectGroupCollection',
     courses: 'courseCollection',
@@ -819,7 +861,7 @@ function envelope(profile, releaseId, recordType, records) {
     coverageGaps: 'coverageGapCollection',
   }[recordType];
   return {
-    $schema: `../../../schema/${schemaFile}.schema.json#/$defs/${definition}`,
+    $schema: `${'../'.repeat(depth)}schema/${schemaFile}.schema.json#/$defs/${definition}`,
     profile,
     releaseId,
     recordType,
@@ -828,6 +870,10 @@ function envelope(profile, releaseId, recordType, records) {
   };
 }
 
+// Only the collections derived straight from the official PDFs belong to this build. Relation,
+// review and coverage-gap files are owned by build:relations and build:candidates, so this build
+// never writes them; it declares their filenames and carries their counts forward. That is what
+// makes `bun run build:data` idempotent (docs/plans/PROGRESS.md 2026-09-06).
 const middleCollections = {
   subjectGroups: middle.subjectGroups,
   courses: middle.courses,
@@ -835,40 +881,39 @@ const middleCollections = {
   standards: middle.standards,
   topics: middle.topics,
   clusters: middle.clusters,
-  learningRelations: middle.learningRelations,
-  reviewRecords: [],
-  coverageGaps: [
-    { id: 'gap.middle.document-rights-review-pending', description: '중학교 관련 공식 PDF의 문서별 재사용 조건 검토를 완료했다. 공공저작물로 재사용 가능하며 원문은 배포하지 않는다.', severity: 'low', status: 'resolved', sourceRefs: catalog.sources.filter((source) => source.profileScopes.includes('middle')).map((source) => source.id).sort() },
-    { id: 'gap.middle.subject-expert-review-pending', description: '세부 주제는 자동 생성 후보이며 선수 관계는 근거 없는 자동 생성을 중단했다. 교과 전문가와 학교 현장 검토가 필요하다.', severity: 'high', status: 'open', sourceRefs: [] },
-  ],
 };
 const highCollections = {
-  subjectGroups: high.subjectGroups,
-  courses: high.courses,
-  domains: high.domains,
-  standards: high.standards,
-  topics: high.topics,
-  clusters: high.clusters,
-  learningRelations: high.learningRelations,
-  courseRelations,
+  subjectGroups: highAcademic.subjectGroups,
+  courses: highAcademic.courses,
+  domains: highAcademic.domains,
+  standards: highAcademic.standards,
+  topics: highAcademic.topics,
+  clusters: highAcademic.clusters,
   creditRules,
   choiceSets,
   pathways,
-  reviewRecords: [],
-  coverageGaps: [
-    { id: 'gap.high.document-rights-review-pending', description: '고등학교 관련 공식 PDF의 문서별 재사용 조건 검토가 완료되지 않았다.', severity: 'high', status: 'open', sourceRefs: catalog.sources.filter((source) => source.profileScopes.includes('high')).map((source) => source.id).sort() },
-    { id: 'gap.high.subject-expert-review-pending', description: '세부 주제, 과목 관계, 선택 묶음과 예시 경로는 자동 생성 후보이며 교과·직업계 전문가 검토가 필요하다.', severity: 'high', status: 'open', sourceRefs: [] },
-  ],
 };
-const bridgeCollections = {
-  transitionAlignments,
-  reviewRecords: [],
-  coverageGaps: [
-    { id: 'gap.bridges.transition-review-pending', description: '중학교→고등학교 전이 관계는 동일 교과군의 과정 수준 후보이며 주제 수준 의미를 주장하지 않는다. 교과 전문가 검토가 필요하다.', severity: 'high', status: 'open', sourceRefs: [] },
-  ],
+const highVocationalCollections = {
+  subjectGroups: highVocational.subjectGroups,
+  courses: highVocational.courses,
+  domains: highVocational.domains,
+  standards: highVocational.standards,
+  topics: highVocational.topics,
+  clusters: highVocational.clusters,
+};
+const bridgeCollections = {};
+
+const derivedCollections = {
+  middle: ['learningRelations', 'candidateLearningRelations', 'reviewRecords', 'coverageGaps'],
+  high: ['learningRelations', 'candidateLearningRelations', 'courseRelations', 'reviewRecords', 'coverageGaps'],
+  'high-vocational': ['learningRelations', 'reviewRecords', 'coverageGaps'],
+  bridges: ['transitionAlignments', 'elementaryTransitions', 'candidateElementaryTransitions', 'reviewRecords', 'coverageGaps'],
 };
 
 const fileNames = {
+  candidateLearningRelations: 'learning-relations.candidate.json',
+  elementaryTransitions: 'elementary-transitions.json',
+  candidateElementaryTransitions: 'elementary-transitions.candidate.json',
   subjectGroups: 'subject-groups.json',
   courses: 'courses.json',
   domains: 'domains.json',
@@ -885,13 +930,41 @@ const fileNames = {
   coverageGaps: 'coverage-gaps.json',
 };
 
-async function writeProfile(profile, collections) {
+/** Splits one collection into `<dir>/<slug>.json` shards so no published file passes 25 MB. */
+async function writeShards(profile, releaseId, recordType, records, shardKey) {
+  const directory = shardDirectories[recordType];
+  const grouped = new Map();
+  for (const record of records) {
+    const slug = shardKey(record);
+    if (!slug) throw new Error(`${profile}/${recordType}: record ${record.id} has no shard key`);
+    if (!grouped.has(slug)) grouped.set(slug, []);
+    grouped.get(slug).push(record);
+  }
+  const files = [];
+  for (const slug of [...grouped.keys()].sort((a, b) => a.localeCompare(b, 'en'))) {
+    files.push(`${directory}/${slug}.json`);
+    await atomicJson(
+      join(root, 'data/kr', profile, directory, `${slug}.json`),
+      envelope(profile, releaseId, recordType, grouped.get(slug), 4),
+    );
+  }
+  return files;
+}
+
+async function writeProfile(profile, collections, shardKeys = {}) {
   const releaseId = releases[profile];
+  const collectionFiles = Object.fromEntries(derivedCollections[profile].map((key) => [key, fileNames[key]]));
+  const previous = await readJsonIfPresent(join(root, 'data/kr', profile, 'release.json'));
+  const counts = Object.fromEntries(derivedCollections[profile].map((key) => [key, previous?.counts?.[key] ?? 0]));
   for (const [recordType, profileRecords] of Object.entries(collections)) {
+    counts[recordType] = profileRecords.length;
+    if (shardKeys[recordType]) {
+      collectionFiles[recordType] = await writeShards(profile, releaseId, recordType, profileRecords, shardKeys[recordType]);
+      continue;
+    }
+    collectionFiles[recordType] = fileNames[recordType];
     await atomicJson(join(root, 'data/kr', profile, fileNames[recordType]), envelope(profile, releaseId, recordType, profileRecords));
   }
-  const collectionFiles = Object.fromEntries(Object.keys(collections).map((key) => [key, fileNames[key]]));
-  const counts = Object.fromEntries(Object.entries(collections).map(([key, values]) => [key, values.length]));
   const release = profile === 'bridges'
     ? {
         $schema: '../../../schema/bridge-profile.schema.json',
@@ -908,10 +981,10 @@ async function writeProfile(profile, collections) {
         counts,
       }
     : {
-        $schema: `../../../schema/${profile}-profile.schema.json`,
+        $schema: `../../../schema/${profileSchemaNames[profile]}.schema.json`,
         releaseId,
         profile,
-        schoolLevel: profile,
+        schoolLevel: profile === 'middle' ? 'middle' : 'high',
         curriculumVersion: '2022-revised',
         status: 'candidate',
         createdDate: catalog.catalogVersion,
@@ -929,6 +1002,7 @@ async function writeProfile(profile, collections) {
 
 await writeProfile('middle', middleCollections);
 await writeProfile('high', highCollections);
+await writeProfile('high-vocational', highVocationalCollections, vocationalShardKeys);
 await writeProfile('bridges', bridgeCollections);
 
 const middleTopicCountsByStandard = new Map();
@@ -940,15 +1014,20 @@ const middleTopicDistribution = Object.fromEntries(
     .sort(([a], [b]) => a - b)
     .map(([count, values]) => [String(count), values.length]),
 );
-function highScopeSummary(scope) {
-  const courseIds = new Set(high.courses.filter((course) => course.programScopes.includes(scope)).map((course) => course.id));
-  return {
-    courses: courseIds.size,
-    domains: high.domains.filter((domain) => courseIds.has(domain.courseId)).length,
-    standards: high.standards.filter((standard) => courseIds.has(standard.courseId)).length,
-    topics: high.topics.filter((topic) => topic.courseIds.some((courseId) => courseIds.has(courseId))).length,
-  };
-}
+const highScopeSummary = (split) => ({
+  courses: split.courses.length,
+  domains: split.domains.length,
+  standards: split.standards.length,
+  topics: split.topics.length,
+});
+
+// Relation, review and gap totals stay owned by build:relations/build:candidates, so carry the
+// previous figures instead of resetting them to zero.
+const previousInventory = await readJsonIfPresent(join(root, 'data/kr/inventory-report.json'));
+const inventoryCounts = (profile, collections) => ({
+  ...Object.fromEntries(derivedCollections[profile].map((key) => [key, previousInventory?.[profile]?.[key] ?? 0])),
+  ...Object.fromEntries(Object.entries(collections).map(([key, values]) => [key, values.length])),
+});
 
 await atomicJson(join(root, 'data/kr/inventory-report.json'), {
   version: '0.6.0-candidate',
@@ -967,7 +1046,7 @@ await atomicJson(join(root, 'data/kr/inventory-report.json'), {
       topicsPerStandard: 1956 / 620,
     },
   },
-  middle: Object.fromEntries(Object.entries(middleCollections).map(([key, values]) => [key, values.length])),
+  middle: inventoryCounts('middle', middleCollections),
   middleTopicDecomposition: {
     policy: 'middle-subject-facet-decomposition-v1',
     stableCoreTopics: middle.topics.filter((topic) => topic.decompositionKind === 'standard-core').length,
@@ -979,15 +1058,16 @@ await atomicJson(join(root, 'data/kr/inventory-report.json'), {
       distribution: middleTopicDistribution,
     },
   },
-  high: Object.fromEntries(Object.entries(highCollections).map(([key, values]) => [key, values.length])),
+  high: inventoryCounts('high', highCollections),
+  'high-vocational': inventoryCounts('high-vocational', highVocationalCollections),
   highScopeBreakdown: {
-    allHighSchools: highScopeSummary('all-high-schools'),
-    specializedVocational: highScopeSummary('specialized-vocational'),
+    allHighSchools: highScopeSummary(highAcademic),
+    specializedVocational: highScopeSummary(highVocational),
   },
-  bridges: Object.fromEntries(Object.entries(bridgeCollections).map(([key, values]) => [key, values.length])),
+  bridges: inventoryCounts('bridges', bridgeCollections),
   diagnosticCount: diagnostics.length,
   diagnostics,
 });
 
 const overlayEntryCount = Object.values(contentOverlays).reduce((total, overlay) => total + overlay.entries.size, 0);
-console.log(`curriculum build passed: ${middle.standards.length} middle standards, ${high.standards.length} high standards, ${transitionAlignments.length} transitions, ${overlayEntryCount} content overlay entries, ${diagnostics.length} diagnostics`);
+console.log(`curriculum build passed: ${middle.standards.length} middle standards, ${highAcademic.standards.length} high standards, ${highVocational.standards.length} high-vocational standards, ${overlayEntryCount} content overlay entries, ${diagnostics.length} diagnostics`);

@@ -4,16 +4,12 @@ import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import { officialRelationSpecs } from './lib/official-relation-specs/index.mjs';
+import { profileSchemaNames, readCollectionRecords, releaseIds } from './lib/profile-collections.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const checkOnly = process.argv.includes('--check');
 const version = '0.6.0-candidate';
 const elementaryReleaseVersion = 'kr-full-depth-v0.5';
-const releaseIds = {
-  middle: 'kr-2022-middle-v0.6.0-candidate',
-  high: 'kr-2022-high-v0.6.0-candidate',
-  bridges: 'kr-2022-middle-high-bridge-v0.6.0-candidate',
-};
 const natural = new Intl.Collator('ko', { numeric: true, sensitivity: 'base' });
 
 const officialHighCourseProgressions = [
@@ -93,7 +89,7 @@ async function writeOrCheck(relativePath, value) {
 }
 
 function collection(profile, recordType, records) {
-  const schemaFile = profile === 'middle' ? 'middle-profile' : profile === 'high' ? 'high-profile' : 'bridge-profile';
+  const schemaFile = profileSchemaNames[profile];
   const definition = {
     learningRelations: 'learningRelationCollection',
     courseRelations: 'courseRelationCollection',
@@ -299,14 +295,13 @@ const [
   middleStandardsEnvelope,
   middleTopicsEnvelope,
   middleRelease,
-  middleGapsEnvelope,
   highCoursesEnvelope,
   highStandardsEnvelope,
   highTopicsEnvelope,
   highRelease,
-  highGapsEnvelope,
+  vocationalRelease,
+  vocationalCoursesEnvelope,
   bridgeRelease,
-  bridgeGapsEnvelope,
   elementaryInventory,
   inventoryReport,
   sourceManifest,
@@ -316,14 +311,13 @@ const [
   readJson('data/kr/middle/standards.json'),
   readJson('data/kr/middle/topics.json'),
   readJson('data/kr/middle/release.json'),
-  readJson('data/kr/middle/coverage-gaps.json'),
   readJson('data/kr/high/courses.json'),
   readJson('data/kr/high/standards.json'),
   readJson('data/kr/high/topics.json'),
   readJson('data/kr/high/release.json'),
-  readJson('data/kr/high/coverage-gaps.json'),
+  readJson('data/kr/high-vocational/release.json'),
+  readJson('data/kr/high-vocational/courses.json'),
   readJson('data/kr/bridges/release.json'),
-  readJson('data/kr/bridges/coverage-gaps.json'),
   readJson('data/kr/bridges/elementary-topic-inventory.json'),
   readJson('data/kr/inventory-report.json'),
   readJson('data/kr/shared/source-manifest.json'),
@@ -336,6 +330,14 @@ const middleTopics = records(middleTopicsEnvelope);
 const highCourses = records(highCoursesEnvelope);
 const highStandards = records(highStandardsEnvelope);
 const highTopics = records(highTopicsEnvelope);
+const vocationalCourses = records(vocationalCoursesEnvelope);
+const vocationalStandards = await readCollectionRecords(root, 'high-vocational', vocationalRelease.collections.standards);
+const vocationalTopics = await readCollectionRecords(root, 'high-vocational', vocationalRelease.collections.topics);
+// Both high-school releases share one id namespace, so codes resolve against the union and the
+// dependent endpoint decides which release publishes the relation.
+const allHighStandards = [...highStandards, ...vocationalStandards];
+const allHighTopics = [...highTopics, ...vocationalTopics];
+const vocationalTopicIds = new Set(vocationalTopics.map((topic) => topic.id));
 const officialSourceIds = new Set(sourceManifest.sources.map((source) => source.id));
 const sourceCatalogById = new Map(sourceCatalog.sources.map((source) => [source.id, source]));
 const elementaryTopicIds = new Set(elementaryInventory.topicIds);
@@ -358,16 +360,16 @@ function elementaryPrerequisite(sourceTopicId) {
   return standard.representativeTopicId;
 }
 
-for (const [label, release] of [['middle', middleRelease], ['high', highRelease], ['bridges', bridgeRelease]]) {
+for (const [label, release] of [['middle', middleRelease], ['high', highRelease], ['high-vocational', vocationalRelease], ['bridges', bridgeRelease]]) {
   if (release.releaseId !== releaseIds[label]) {
     throw new Error(`${label} base release is ${release.releaseId}; run bun run build:data after updating to ${releaseIds[label]}`);
   }
 }
 
 const middleStandardByCode = new Map(middleStandards.map((standard) => [normalizeCode(standard.code), standard]));
-const highStandardByCode = new Map(highStandards.map((standard) => [normalizeCode(standard.code), standard]));
+const highStandardByCode = new Map(allHighStandards.map((standard) => [normalizeCode(standard.code), standard]));
 const middleTopicIndexes = topicIndex(middleTopics, middleStandards, 'middle');
-const highTopicIndexes = topicIndex(highTopics, highStandards, 'high');
+const highTopicIndexes = topicIndex(allHighTopics, allHighStandards, 'high');
 
 const requireStandard = (index, code, profile) => {
   const standard = index.get(normalizeCode(code));
@@ -439,7 +441,7 @@ for (const spec of officialRelationSpecs) {
 const middleRelations = finalizeLearningRelations('middle', middleDrafts);
 
 const highDrafts = new Map();
-const highStandardsByCourse = groupBy(highStandards, (standard) => standard.courseId);
+const highStandardsByCourse = groupBy(allHighStandards, (standard) => standard.courseId);
 const highCourseRelations = [];
 for (const [fromLabel, toLabel, sourceId, page, basisSummary] of officialHighCourseProgressions) {
   const from = oneByLabel(highCourses, fromLabel, 'high');
@@ -504,7 +506,17 @@ for (const spec of officialRelationSpecs) {
     });
   }
 }
-const highRelations = finalizeLearningRelations('high', highDrafts);
+// Ids are minted once in the `high` namespace and stay stable; the dependent topic decides which
+// release publishes the relation. The ten 미술 전공 실기 → 미용 links keep an academic prerequisite,
+// so the vocational graph is checked against the union of both topic sets.
+const allHighRelations = finalizeLearningRelations('high', highDrafts);
+const highRelations = allHighRelations.filter((relation) => !vocationalTopicIds.has(relation.dependentTopicId));
+const vocationalRelations = allHighRelations.filter((relation) => vocationalTopicIds.has(relation.dependentTopicId));
+for (const relation of highRelations) {
+  if (vocationalTopicIds.has(relation.prerequisiteTopicId)) {
+    throw new Error(`${relation.id}: an academic high relation may not depend on a vocational prerequisite`);
+  }
+}
 
 const transitionAlignments = [];
 for (const spec of officialRelationSpecs) {
@@ -601,6 +613,11 @@ const highReviews = [makeReviewRecord(
   [...highRelations, ...highCourseRelations].map((relation) => relation.id),
   '교과 교육과정의 내용 체계·과목 설계·성취기준 해설이 직접 뒷받침하는 고등학교 필수 선수 관계와 과목 간 추천 연계를 검토했다. 자동 검증은 공식 출처·참조 무결성·중복·순환을 검사한다.',
 )];
+const vocationalReviews = [makeReviewRecord(
+  'high-vocational',
+  vocationalRelations.map((relation) => relation.id),
+  '직업계 전문교과 별책의 성취기준 해설이 직접 뒷받침하는 필수 선수 관계를 검토했다. 자동 검증은 공식 출처·참조 무결성·중복·순환을 검사한다.',
+)];
 const bridgeReviews = [makeReviewRecord(
   'bridges',
   [...transitionAlignments, ...elementaryTransitions].map((relation) => relation.id),
@@ -610,6 +627,7 @@ const bridgeReviews = [makeReviewRecord(
 for (const [label, values] of [
   ['middle relations', middleRelations],
   ['high relations', highRelations],
+  ['high-vocational relations', vocationalRelations],
   ['high course relations', highCourseRelations],
   ['middle-high transitions', transitionAlignments],
   ['elementary transitions', elementaryTransitions],
@@ -622,15 +640,30 @@ for (const [label, values] of [
 }
 assertDag('middle learning graph', middleTopics.map((topic) => topic.id), middleRelations, 'prerequisiteTopicId', 'dependentTopicId');
 assertDag('high learning graph', highTopics.map((topic) => topic.id), highRelations, 'prerequisiteTopicId', 'dependentTopicId');
+assertDag('high-vocational learning graph', allHighTopics.map((topic) => topic.id), vocationalRelations, 'prerequisiteTopicId', 'dependentTopicId');
 assertDag('high course graph', highCourses.map((course) => course.id), highCourseRelations, 'fromCourseId', 'toCourseId');
 
 const middleCoverage = topicCoverage(middleTopics, middleCourses, middleRelations);
 const highCoverage = topicCoverage(highTopics, highCourses, highRelations);
+const vocationalCoverage = topicCoverage(vocationalTopics, vocationalCourses, vocationalRelations);
 const middleCourseCoverage = courseCoverage(middleCourses, middleTopics, middleRelations);
 const highCourseCoverage = courseCoverage(highCourses, highTopics, highRelations, highCourseRelations);
+const vocationalCourseCoverage = courseCoverage(vocationalCourses, allHighTopics, vocationalRelations);
 
+// This build owns the coverage-gap files, so the standing rights and refinement gaps are declared
+// here rather than seeded by build:data (which must stay idempotent).
+const rightsSources = (scope, keep) => sourceCatalog.sources
+  .filter((source) => source.profileScopes.includes(scope) && keep(source.annex))
+  .map((source) => source.id)
+  .sort();
 const middleGaps = [
-  ...records(middleGapsEnvelope).filter((gap) => gap.id === 'gap.middle.document-rights-review-pending'),
+  {
+    id: 'gap.middle.document-rights-review-pending',
+    description: '중학교 관련 공식 PDF의 문서별 재사용 조건 검토를 완료했다. 공공저작물로 재사용 가능하며 원문은 배포하지 않는다.',
+    severity: 'low',
+    status: 'resolved',
+    sourceRefs: rightsSources('middle', () => true),
+  },
   {
     id: 'gap.middle.subject-expert-refinement-pending',
     description: '수학의 공식 선수 관계는 내부 검토되었다. 공식 문서 근거가 있는 다른 과목의 선수 관계를 추가 발굴하는 작업은 남아 있다.',
@@ -640,7 +673,13 @@ const middleGaps = [
   },
 ];
 const highGaps = [
-  ...records(highGapsEnvelope).filter((gap) => gap.id === 'gap.high.document-rights-review-pending'),
+  {
+    id: 'gap.high.document-rights-review-pending',
+    description: '고등학교 관련 공식 PDF의 문서별 재사용 조건 검토가 완료되지 않았다.',
+    severity: 'high',
+    status: 'open',
+    sourceRefs: rightsSources('high', (annex) => annex < 23),
+  },
   {
     id: 'gap.high.subject-expert-refinement-pending',
     description: '공식 문서가 직접 설명한 고등학교 과목 연계는 내부 검토되었다. 추가적인 주제 수준 선수 관계를 공식 근거와 함께 발굴하는 작업은 남아 있다.',
@@ -649,8 +688,23 @@ const highGaps = [
     sourceRefs: [],
   },
 ];
+const vocationalGaps = [
+  {
+    id: 'gap.high-vocational.document-rights-review-pending',
+    description: '직업계 전문교과 별책의 문서별 재사용 조건 검토가 완료되지 않았다.',
+    severity: 'high',
+    status: 'open',
+    sourceRefs: rightsSources('high', (annex) => annex >= 23 && annex <= 39),
+  },
+  {
+    id: 'gap.high-vocational.subject-expert-refinement-pending',
+    description: '직업계 전문교과는 튜터 제품 범위 밖의 참조 릴리스다. 성취기준 해설이 직접 뒷받침하는 선수 관계만 담았고 후보 층은 만들지 않았으며, 산업계·교과 전문가 검토가 필요하다.',
+    severity: 'high',
+    status: 'open',
+    sourceRefs: [],
+  },
+];
 const bridgeGaps = [
-  ...records(bridgeGapsEnvelope).filter((gap) => gap.id === 'gap.bridges.document-rights-review-pending'),
   {
     id: 'gap.bridges.subject-expert-refinement-pending',
     description: '수학의 공식 주제 수준 학교급 전이는 내부 검토되었다. 수학 이외 교과의 주제 수준 전이를 공식 근거와 함께 발굴하는 작업은 남아 있다.',
@@ -681,6 +735,11 @@ const nextHighRelease = updatedRelease(highRelease, 'high', {
   reviewRecords: highReviews.length,
   coverageGaps: highGaps.length,
 }, {});
+const nextVocationalRelease = updatedRelease(vocationalRelease, 'high-vocational', {
+  learningRelations: vocationalRelations.length,
+  reviewRecords: vocationalReviews.length,
+  coverageGaps: vocationalGaps.length,
+}, {});
 const nextBridgeRelease = updatedRelease(bridgeRelease, 'bridges', {
   transitionAlignments: transitionAlignments.length,
   elementaryTransitions: elementaryTransitions.length,
@@ -693,6 +752,7 @@ const nextInventoryReport = {
   version,
   middle: { ...inventoryReport.middle, learningRelations: middleRelations.length, reviewRecords: middleReviews.length, coverageGaps: middleGaps.length },
   high: { ...inventoryReport.high, learningRelations: highRelations.length, courseRelations: highCourseRelations.length, reviewRecords: highReviews.length, coverageGaps: highGaps.length },
+  'high-vocational': { ...inventoryReport['high-vocational'], learningRelations: vocationalRelations.length, reviewRecords: vocationalReviews.length, coverageGaps: vocationalGaps.length },
   bridges: { ...inventoryReport.bridges, transitionAlignments: transitionAlignments.length, elementaryTransitions: elementaryTransitions.length, reviewRecords: bridgeReviews.length, coverageGaps: bridgeGaps.length },
 };
 
@@ -721,6 +781,7 @@ const relationCoverageReport = {
   },
   middle: { relations: relationStats(middleRelations), coverage: middleCoverage, courseCoverage: middleCourseCoverage },
   high: { relations: relationStats(highRelations), courseRelations: relationStats(highCourseRelations), coverage: highCoverage, courseCoverage: highCourseCoverage },
+  highVocational: { relations: relationStats(vocationalRelations), coverage: vocationalCoverage, courseCoverage: vocationalCourseCoverage },
   bridges: {
     transitionAlignments: transitionAlignments.length,
     courseLevelTransitions: transitionAlignments.filter((relation) => !relation.fromTopicIds.length && !relation.toTopicIds.length).length,
@@ -734,6 +795,7 @@ const relationCoverageReport = {
   validation: {
     middleDag: true,
     highDag: true,
+    highVocationalDag: true,
     highCourseDag: true,
     danglingReferences: 0,
     duplicateIds: 0,
@@ -750,6 +812,10 @@ const outputs = [
   ['data/kr/high/review-records.json', collection('high', 'reviewRecords', highReviews)],
   ['data/kr/high/coverage-gaps.json', collection('high', 'coverageGaps', highGaps)],
   ['data/kr/high/release.json', nextHighRelease],
+  ['data/kr/high-vocational/learning-relations.json', collection('high-vocational', 'learningRelations', vocationalRelations)],
+  ['data/kr/high-vocational/review-records.json', collection('high-vocational', 'reviewRecords', vocationalReviews)],
+  ['data/kr/high-vocational/coverage-gaps.json', collection('high-vocational', 'coverageGaps', vocationalGaps)],
+  ['data/kr/high-vocational/release.json', nextVocationalRelease],
   ['data/kr/bridges/transition-alignments.json', collection('bridges', 'transitionAlignments', transitionAlignments)],
   ['data/kr/bridges/elementary-transitions.json', collection('bridges', 'elementaryTransitions', elementaryTransitions)],
   ['data/kr/bridges/review-records.json', collection('bridges', 'reviewRecords', bridgeReviews)],
@@ -763,7 +829,7 @@ for (const [path, value] of outputs) await writeOrCheck(path, value);
 
 console.log(
   `learning relation ${checkOnly ? 'check' : 'build'} passed: `
-  + `${middleRelations.length} middle, ${highRelations.length} high, `
+  + `${middleRelations.length} middle, ${highRelations.length} high, ${vocationalRelations.length} high-vocational, `
   + `${highCourseRelations.length} high-course, ${transitionAlignments.length} middle-high, `
   + `${elementaryTransitions.length} elementary-middle relations`,
 );

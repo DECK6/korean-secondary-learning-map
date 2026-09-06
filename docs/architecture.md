@@ -78,6 +78,7 @@ SourceDocument ─ SourceLocator ─ VerificationRecord ─ ReviewRecord
 | 출처·검증·권리 모델 | 공유 | 공식 코드 확인과 권리 HOLD를 같은 방식으로 관리 |
 | 중학교 ABox·JSON·manifest | 분리 | 학년군·공통 기반 중심으로 독립 검수 |
 | 고등학교 ABox·JSON·manifest | 분리 | 과목 범주·학점·선택·프로그램 범위를 독립 검수 |
+| 고교 직업계 ABox·JSON·manifest | 분리 | 튜터 제품 범위 밖의 참조 데이터이고, 한 파일에 두면 파일 크기 한도를 넘으며, 산업계 관점의 독립 검수가 필요 |
 | SHACL 프로필 | 코어+학교급별 분리 | 중학교에 고등학교 학점 제약을 강제하지 않음 |
 | 중→고 전이 관계 | 별도 bridge 릴리스 | 양쪽 버전을 명시하고 독립 교체 가능 |
 | 사용자 탐색 화면 | 공유 | 한 서비스에서 학교급 전이와 과목 선택을 연속 탐색 |
@@ -87,14 +88,16 @@ SourceDocument ─ SourceLocator ─ VerificationRecord ─ ReviewRecord
 권장 배포 단위는 다음과 같다.
 
 ```text
-middle release ─┐
-                ├─ secondary bundle / unified explorer
-high release ───┤
-                │
-transition bridge release
+middle release ───────────┐
+                          │
+high release ─────────────┼─ secondary bundle / unified explorer
+                          │
+high-vocational release ──┤
+                          │
+transition bridge release ┘
 ```
 
-bridge manifest는 사용한 `middleReleaseId`와 `highReleaseId`를 반드시 고정한다. 한쪽 데이터만 갱신되면 bridge를 자동 승격하지 않고 재검토 대기 상태로 둔다.
+bridge manifest는 사용한 `middleReleaseId`와 `highReleaseId`를 반드시 고정한다. 한쪽 데이터만 갱신되면 bridge를 자동 승격하지 않고 재검토 대기 상태로 둔다. bridge는 일반 고교 릴리스만 핀한다 — 중→고 전이는 직업계 전문교과를 대상으로 하지 않는다.
 
 ### 5.1 중학교
 
@@ -114,6 +117,26 @@ bridge manifest는 사용한 `middleReleaseId`와 `highReleaseId`를 반드시 �
 - 고교학점제 규칙은 시행 버전을 가진 `CreditRule`로 관리하며 과목 그래프와 분리한다.
 - 특정 학교가 개설하지 않은 과목을 “수강 가능”으로 표시하지 않는다. 국가 수준에서는 “교육과정에 정의됨”까지만 주장한다.
 
+### 5.3 고등학교 직업계 전문교과
+
+고등학교 데이터 제품은 `kr-2022-high-v0.6.0-candidate`(일반, 231과목)와 `kr-2022-high-vocational-v0.6.0-candidate`(직업계 전문교과, 528과목) 두 릴리스로 물리 분리한다. 스키마는 `schema/high-vocational-profile.schema.json`이며 레코드 모양은 `high-profile`을 재사용하고 릴리스 구성만 다르다.
+
+**분리 이유**는 세 가지다.
+
+- **제품 범위**: 직업계 전문교과는 튜터 제품이 다루는 범위 밖의 참조 데이터다. 그런데도 고등학교 성취기준의 93.8%(47,625 / 50,749)를 차지해 한 릴리스에 두면 제품이 실제로 쓰는 231과목이 묻힌다.
+- **파일 크기**: 합쳐 둔 `high/topics.json`은 80.4 MB, `high/standards.json`은 52.1 MB였다. GitHub 100 MB 하드 리밋에 근접해 푸시마다 GH001 경고가 떴다.
+- **검수 축**: 직업계 성취기준은 산업계·교과 전문가 검토가 필요해 일반 고교 과목과 검토 주체가 다르다(`high-vocational/coverage-gaps.json`). 릴리스를 나누면 한쪽만 교체·재검수할 수 있다.
+
+**직업계 릴리스에 없는 컬렉션.** `credit-rules`·`choice-sets`·`pathways`·`course-relations`와 후보 관계 층(`learning-relations.candidate.json`)이 없다. 없는 것이 정상이며 스키마의 `collections`·`counts`가 `additionalProperties: false`로 그렇게 규정한다. 직업계 교과군에는 선택 비교 모델을 만들지 않기로 했고, 후보 층은 `programScopes`에 `all-high-schools`가 있는 과목만 대상이기 때문이다. `subject-groups`도 두 릴리스가 공유하지 않고 각자 자기 것만 담는다(일반 16 + 직업계 18 = 34, 겹침 없음).
+
+**ID 네임스페이스는 하나다.** 분리는 레코드가 어느 파일에 있느냐만 바꾸고 ID는 바꾸지 않는다. 두 릴리스의 레코드 모두 `kr.*.2022.high.*` 네임스페이스를 유지하며, 해시 입력에 프로필 이름이 들어가지 않는다.
+
+**교차 참조 규칙.** 직업계 official 관계 298건 중 **10건은 일반 고교 성취기준을 선수로 가진다**. 별책26 미용전문교과 해설이 예술 계열 「미술 전공 실기」의 `[12미전02-04]`·`[12미전03-02]`를 헤어·피부·네일·메이크업 과목의 선수 지식으로 지목하기 때문이다. 두 릴리스가 하나의 ID 네임스페이스를 공유하므로 검증기는 직업계 관계의 선수 참조를 `high ∪ high-vocational` 주제 집합으로 해석한다. **반대 방향은 거부한다** — 일반 릴리스의 관계가 직업계 주제를 참조하면 dangling reference로 실패한다. 일반 릴리스가 직업계 없이 단독으로 성립해야 하기 때문이다.
+
+**샤딩 규칙.** `standards`와 `topics`는 한 파일로 두면 25 MB를 넘으므로 교과군 단위로 나눈다. 릴리스의 `collections` 항목은 문자열 하나가 아니라 **샤드 경로 배열**이 되고, 소비자는 `release.json`을 통해 파일 목록을 얻는다(`scripts/lib/profile-collections.mjs`의 `readProfileCollection`). 샤드 슬러그는 교과군 라벨 기준이며 `vocationalSubjectGroupSlugs`에 고정한다(농림·축산 → `agriculture`, 전기·전자 → `electric-electronics`, 전문 공통 → `specialized-common` 등 18개). 슬러그는 공개 경로의 일부이므로 안정 식별자로 취급한다.
+
+**25 MB 한도.** `scripts/validate.mjs`의 `MAX_DATA_FILE_BYTES`가 `data/kr/**`의 모든 `.json`을 걸어 개당 25 MB 초과를 실패로 처리한다. GitHub 하드 리밋에서 여유를 두기 위한 게이트이며, 한도를 넘길 컬렉션은 파일을 쪼개는 대신 **의미 있는 축(교과군)으로 샤딩**한다. 현재 최대 단일 파일은 `high-vocational/topics/agriculture.json` 10.3 MB다.
+
 ## 6. 관계 의미론
 
 ### 6.1 학습 주제 관계
@@ -132,7 +155,7 @@ bridge manifest는 사용한 `middleReleaseId`와 `highReleaseId`를 반드시 �
 
 | 층 | 파일 | 의미 | 제품 사용 |
 | --- | --- | --- | --- |
-| `official` | `data/kr/{middle,high}/learning-relations.json`, `data/kr/bridges/elementary-transitions.json` | 공식 문서가 직접 뒷받침하는 필수 선수 관계 | "먼저 알아야 한다" |
+| `official` | `data/kr/{middle,high,high-vocational}/learning-relations.json`, `data/kr/bridges/elementary-transitions.json` | 공식 문서가 직접 뒷받침하는 필수 선수 관계 | "먼저 알아야 한다" |
 | `pedagogical-candidate` | `data/kr/{middle,high}/learning-relations.candidate.json`, `data/kr/bridges/elementary-transitions.candidate.json` | 코드 순서·분해 순서·내용 체계표 영역 연속에서 만든 권장 학습 순서 | "권장 순서"로만 |
 
 official 층은 전건 `required-prerequisite` + `official-source` + 인쇄 쪽번호이며, 저장소 소유자가 승인한 내부 검토 범위에서 `internal-reviewed`를 기록하고 각 관계를 검토 레코드에 핀한다. 후보 층은 전건 `recommended-before` + `candidate`이며 검토 레코드에 핀하지 않는다. 온톨로지는 두 층을 `slm:OfficialLearningRelation`·`slm:CandidateLearningRelation`(초→중 bridge는 `slm:CandidateTransitionAlignment`) 하위 클래스와 `slm:layer` 한정자로 구분하고, SHACL이 official 클래스에 후보 층 값이 들어오면 거부한다. 파생 관계를 물질화할 경우 official 층에서만 만든다.

@@ -1,9 +1,10 @@
-import { readFile } from 'node:fs/promises';
+import { readdir, readFile, stat } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { dirname, join, resolve } from 'node:path';
 import Ajv2020 from 'ajv/dist/2020.js';
 import addFormats from 'ajv-formats';
 import { OVERLAY_SCHEMA_ID, analyzeOverlay, contentOverlayDirectory, indexOverlayEntries, readContentOverlays } from './lib/content-overlay.mjs';
+import { collectionFiles } from './lib/profile-collections.mjs';
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -15,6 +16,7 @@ const schemaFiles = [
   'official-source-receipts.schema.json',
   'middle-profile.schema.json',
   'high-profile.schema.json',
+  'high-vocational-profile.schema.json',
   'bridge-profile.schema.json',
   'content-overlay.schema.json',
 ];
@@ -50,6 +52,20 @@ const profileConfig = {
       creditRules: 'creditRuleCollection',
       choiceSets: 'choiceSetCollection',
       pathways: 'pathwayCollection',
+      reviewRecords: 'reviewRecordCollection',
+      coverageGaps: 'coverageGapCollection',
+    },
+  },
+  'high-vocational': {
+    schemaId: 'https://dexa.art/learnmap/schema/secondary/high-vocational-profile.schema.json',
+    collectionDefs: {
+      subjectGroups: 'subjectGroupCollection',
+      courses: 'courseCollection',
+      domains: 'domainCollection',
+      standards: 'standardCollection',
+      topics: 'topicCollection',
+      clusters: 'clusterCollection',
+      learningRelations: 'learningRelationCollection',
       reviewRecords: 'reviewRecordCollection',
       coverageGaps: 'coverageGapCollection',
     },
@@ -219,7 +235,7 @@ function validateReviewTargets(profile, collections, indexes, errors) {
   }
 }
 
-function validateProfileReferences(profile, collections, indexes, errors) {
+function validateProfileReferences(profile, collections, indexes, errors, siblingTopics = new Set()) {
   const courses = indexes.courses ?? new Set();
   const domains = indexes.domains ?? new Set();
   const subjectGroups = indexes.subjectGroups ?? new Set();
@@ -251,8 +267,10 @@ function validateProfileReferences(profile, collections, indexes, errors) {
     requireRefs([cluster.domainId], domains, `${profile}/clusters/${cluster.id}`, errors);
     requireRefs(cluster.topicIds, topics, `${profile}/clusters/${cluster.id}`, errors);
   }
+  const prerequisiteTopics = siblingTopics.size ? new Set([...topics, ...siblingTopics]) : topics;
   for (const relation of collections.learningRelations?.records ?? []) {
-    requireRefs([relation.dependentTopicId, relation.prerequisiteTopicId], topics, `${profile}/learningRelations/${relation.id}`, errors);
+    requireRefs([relation.dependentTopicId], topics, `${profile}/learningRelations/${relation.id}`, errors);
+    requireRefs([relation.prerequisiteTopicId], prerequisiteTopics, `${profile}/learningRelations/${relation.id}`, errors);
   }
   for (const relation of collections.courseRelations?.records ?? []) {
     requireRefs([relation.fromCourseId, relation.toCourseId], courses, `${profile}/courseRelations/${relation.id}`, errors);
@@ -369,9 +387,36 @@ export async function createAjv(root = projectRoot) {
   return ajv;
 }
 
+// Every published data file must stay well under GitHub's 100 MB hard limit, so a collection that
+// would grow past this is sharded (see data/kr/high-vocational). Keep in sync with docs/data-contract.md 1절.
+export const MAX_DATA_FILE_BYTES = 25 * 1024 * 1024;
+
+async function validateDataFileSizes(root, errors) {
+  const queue = [join(root, 'data/kr')];
+  let checked = 0;
+  while (queue.length) {
+    const directory = queue.pop();
+    for (const entry of await readdir(directory, { withFileTypes: true })) {
+      const path = join(directory, entry.name);
+      if (entry.isDirectory()) {
+        queue.push(path);
+        continue;
+      }
+      if (!entry.name.endsWith('.json')) continue;
+      checked += 1;
+      const { size } = await stat(path);
+      if (size > MAX_DATA_FILE_BYTES) {
+        errors.push(`${path.slice(root.length + 1)}: ${(size / 1048576).toFixed(1)} MB exceeds the ${MAX_DATA_FILE_BYTES / 1048576} MB publish limit; shard the collection`);
+      }
+    }
+  }
+  return checked;
+}
+
 export async function validateRepository(root = projectRoot) {
   const errors = [];
   const ajv = await createAjv(root);
+  const dataFileCount = await validateDataFileSizes(root, errors);
 
   const sourceManifest = await readJson(join(root, 'data/kr/shared/source-manifest.json'));
   const vocabularies = await readJson(join(root, 'data/kr/shared/controlled-vocabularies.json'));
@@ -433,38 +478,51 @@ export async function validateRepository(root = projectRoot) {
 
     const collections = {};
     const indexes = {};
-    for (const [collectionName, file] of Object.entries(release.collections)) {
+    for (const [collectionName, entry] of Object.entries(release.collections)) {
       const definition = config.collectionDefs[collectionName];
       if (!definition) {
         errors.push(`${profile}/release.json: no schema mapping for collection ${collectionName}`);
         continue;
       }
-      if (file.includes('/') || file.includes('..')) {
-        errors.push(`${profile}/release.json: collection path must be a local filename: ${file}`);
-        continue;
+      // A collection is one file, or an ordered list of `<dir>/<slug>.json` shards when a single
+      // document would pass the 25 MB publish limit.
+      const files = collectionFiles(entry);
+      let merged = null;
+      const records = [];
+      for (const file of files) {
+        if (!/^(?:[a-z][a-z0-9-]*\/)?[a-z][a-z0-9.-]*\.json$/.test(file)) {
+          errors.push(`${profile}/release.json: collection path must be a local file: ${file}`);
+          continue;
+        }
+        const collection = await readJson(join(directory, file));
+        assertSchema(ajv.getSchema(`${config.schemaId}#/$defs/${definition}`), collection, `${profile}/${file}`, errors);
+        if (collection.profile !== profile) errors.push(`${profile}/${file}: profile mismatch`);
+        if (collection.releaseId !== release.releaseId) errors.push(`${profile}/${file}: releaseId mismatch`);
+        if (collection.recordType !== collectionName) errors.push(`${profile}/${file}: recordType mismatch`);
+        if (collection.recordCount !== collection.records.length) {
+          errors.push(`${profile}/${file}: recordCount ${collection.recordCount} != ${collection.records.length}`);
+        }
+        walkSourceRefs(collection.records, (sourceRef) => {
+          if (!sourceIds.has(sourceRef)) errors.push(`${profile}/${file}: unresolved sourceRef ${sourceRef}`);
+        });
+        records.push(...collection.records);
+        merged = collection;
       }
-      const collection = await readJson(join(directory, file));
-      assertSchema(ajv.getSchema(`${config.schemaId}#/$defs/${definition}`), collection, `${profile}/${file}`, errors);
-      if (collection.profile !== profile) errors.push(`${profile}/${file}: profile mismatch`);
-      if (collection.releaseId !== release.releaseId) errors.push(`${profile}/${file}: releaseId mismatch`);
-      if (collection.recordType !== collectionName) errors.push(`${profile}/${file}: recordType mismatch`);
-      if (collection.recordCount !== collection.records.length) {
-        errors.push(`${profile}/${file}: recordCount ${collection.recordCount} != ${collection.records.length}`);
+      if (!merged) continue;
+      if (release.counts[collectionName] !== records.length) {
+        errors.push(`${profile}/release.json: count ${collectionName}=${release.counts[collectionName]} != ${records.length}`);
       }
-      if (release.counts[collectionName] !== collection.recordCount) {
-        errors.push(`${profile}/release.json: count ${collectionName}=${release.counts[collectionName]} != ${collection.recordCount}`);
-      }
-      walkSourceRefs(collection.records, (sourceRef) => {
-        if (!sourceIds.has(sourceRef)) errors.push(`${profile}/${file}: unresolved sourceRef ${sourceRef}`);
-      });
-      collections[collectionName] = collection;
-      indexes[collectionName] = uniqueIds(collection.records, `${profile}/${file}`, errors);
+      collections[collectionName] = { ...merged, recordCount: records.length, records };
+      indexes[collectionName] = uniqueIds(records, `${profile}/${collectionName}`, errors);
     }
     loaded[profile] = { release, collections, indexes };
     validateOfficialRelations(profile, collections, errors);
     validateReviewTargets(profile, collections, indexes, errors);
     if (profile !== 'bridges') {
-      validateProfileReferences(profile, collections, indexes, errors);
+      // Both high-school releases share one id namespace: a vocational relation may name an
+      // academic prerequisite (별책26 미용전문교과 cites 미술 전공 실기), never the other way round.
+      const siblingTopics = profile === 'high-vocational' ? loaded.high?.indexes.topics ?? new Set() : new Set();
+      validateProfileReferences(profile, collections, indexes, errors, siblingTopics);
       validateLearningGraph(profile, collections, errors);
       validateRelationLayers(profile, collections, errors);
       await validateContentOverlays(root, profile, collections, sourceIds, ajv, errors);
@@ -510,7 +568,7 @@ export async function validateRepository(root = projectRoot) {
   }
   if (bridge.release.rightsStatus !== 'cleared') errors.push('bridges/release.json: rights status must be cleared (public official documents)');
   if (inventoryReport.diagnosticCount !== 0) errors.push(`data/kr/inventory-report.json: ${inventoryReport.diagnosticCount} unresolved diagnostics`);
-  for (const profile of ['middle', 'high', 'bridges']) {
+  for (const profile of Object.keys(profileConfig)) {
     for (const [name, count] of Object.entries(inventoryReport[profile])) {
       if (loaded[profile].release.counts[name] !== count) errors.push(`data/kr/inventory-report.json: ${profile}.${name} count mismatch`);
     }
@@ -519,6 +577,7 @@ export async function validateRepository(root = projectRoot) {
   return {
     ok: errors.length === 0,
     errors,
+    dataFileCount,
     loaded,
     sourceManifest,
     vocabularies,
@@ -537,5 +596,5 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
   const summary = Object.fromEntries(
     Object.entries(result.loaded).map(([profile, value]) => [profile, value.release.counts]),
   );
-  console.log(`validation passed: ${JSON.stringify(summary)}`);
+  console.log(`validation passed: ${result.dataFileCount} data files under ${MAX_DATA_FILE_BYTES / 1048576} MB, ${JSON.stringify(summary)}`);
 }

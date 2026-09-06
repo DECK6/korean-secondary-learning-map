@@ -18,7 +18,7 @@
     },
     "releaseId": {
       "type": "string",
-      "pattern": "^kr-2022-(middle|high|middle-high-bridge)-v[0-9]+\\.[0-9]+(?:\\.[0-9]+)?(?:-[a-z0-9.-]+)?$"
+      "pattern": "^kr-2022-(middle|high-vocational|high|middle-high-bridge)-v[0-9]+\\.[0-9]+(?:\\.[0-9]+)?(?:-[a-z0-9.-]+)?$"
     },
     "sourceRef": {
       "$ref": "#/$defs/stableId"
@@ -127,7 +127,7 @@
       "required": ["$schema", "profile", "releaseId", "recordType", "recordCount", "records"],
       "properties": {
         "$schema": { "type": "string", "format": "uri-reference" },
-        "profile": { "enum": ["middle", "high", "bridges"] },
+        "profile": { "enum": ["middle", "high", "high-vocational", "bridges"] },
         "releaseId": { "$ref": "#/$defs/releaseId" },
         "recordType": { "type": "string", "minLength": 1 },
         "recordCount": { "type": "integer", "minimum": 0 },

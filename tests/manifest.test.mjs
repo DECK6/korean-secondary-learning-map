@@ -6,7 +6,9 @@ test('renders deterministic profile and bundle manifests', async () => {
   const first = await renderManifests();
   const second = await renderManifests();
   expect([...first.entries()]).toEqual([...second.entries()]);
-  expect(first.size).toBe(4);
+  // middle, high, high-vocational, bridges plus the bundle manifest.
+  expect(first.size).toBe(5);
+  expect([...first.keys()].some((path) => path.includes('/dist/high-vocational/'))).toBe(true);
 });
 
 test('tracked manifests match deterministic rendering', async () => {

@@ -5,11 +5,12 @@ import { fileURLToPath } from 'node:url';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const readJson = async (path) => JSON.parse(await readFile(join(root, path), 'utf8'));
-const [manifest, index, middleRelations, highRelations, middleCandidates, highCandidates, highCourseRelations, transitions, elementaryBridges, elementaryCandidateBridges, elementaryBridgeIndex] = await Promise.all([
+const [manifest, index, middleRelations, highRelations, vocationalRelations, middleCandidates, highCandidates, highCourseRelations, transitions, elementaryBridges, elementaryCandidateBridges, elementaryBridgeIndex] = await Promise.all([
   readJson('dist/ui/manifest.json'),
   readJson('ui/data/map-index.json'),
   readJson('data/kr/middle/learning-relations.json'),
   readJson('data/kr/high/learning-relations.json'),
+  readJson('data/kr/high-vocational/learning-relations.json'),
   readJson('data/kr/middle/learning-relations.candidate.json'),
   readJson('data/kr/high/learning-relations.candidate.json'),
   readJson('data/kr/high/course-relations.json'),
@@ -22,6 +23,7 @@ const errors = [];
 const expectedStatistics = {
   middleOfficialRelations: middleRelations.recordCount,
   highOfficialRelations: highRelations.recordCount,
+  highVocationalOfficialRelations: vocationalRelations.recordCount,
   highOfficialCourseRelations: highCourseRelations.recordCount,
   officialTransitions: transitions.recordCount,
   middleCandidateRelations: middleCandidates.recordCount,
@@ -66,11 +68,18 @@ for (const artifact of manifest.artifacts) {
     errors.push(`${artifact.path}: ${error.message}`);
   }
 }
-if (manifest.courseDetailCount !== manifest.artifacts.filter((item) => item.path.startsWith('ui/data/courses/')).length) errors.push('courseDetailCount mismatch');
-const expectedDetails = new Set(manifest.artifacts.filter((item) => item.path.startsWith('ui/data/courses/')).map((item) => item.path.slice('ui/data/courses/'.length)));
-for (const file of await readdir(join(root, 'ui/data/courses'))) {
-  if (file.endsWith('.json') && !expectedDetails.has(file)) errors.push(`ui/data/courses/${file}: untracked stale course detail`);
+// Middle and academic high details share ui/data/courses; the vocational release keeps its own
+// lazily fetched directory so the first-screen payload does not grow.
+const detailDirectories = ['ui/data/courses', 'ui/data/high-vocational'];
+const detailArtifacts = manifest.artifacts.filter((item) => detailDirectories.some((directory) => item.path.startsWith(`${directory}/`)));
+if (manifest.courseDetailCount !== detailArtifacts.length) errors.push('courseDetailCount mismatch');
+const expectedDetails = new Set(detailArtifacts.map((item) => item.path));
+for (const directory of detailDirectories) {
+  for (const file of await readdir(join(root, directory))) {
+    if (file.endsWith('.json') && !expectedDetails.has(`${directory}/${file}`)) errors.push(`${directory}/${file}: untracked stale course detail`);
+  }
 }
+if (!manifest.artifacts.some((item) => item.path.startsWith('ui/data/high-vocational/'))) errors.push('vocational course details are not published to their own lazy directory');
 const app = await readFile(join(root, 'ui/app.js'), 'utf8');
 if (!app.includes('공식 문서가 명시한 선수학습 관계 없음')) errors.push('ui/app.js: sparse relation state message missing');
 if (!app.includes('권장 순서(후보)')) errors.push('ui/app.js: candidate layer section missing');
@@ -78,4 +87,4 @@ if (!app.includes('권장(후보)')) errors.push('ui/app.js: elementary bridge c
 if (!app.includes('검토 초안')) errors.push('ui/app.js: source-grounded content badge missing');
 if (app.includes('관계 후보')) errors.push('ui/app.js: candidate relation label remains');
 if (errors.length) { console.error(errors.join('\n')); process.exit(1); }
-console.log(`UI artifact check passed: ${manifest.courseDetailCount} course details, ${middleRelations.recordCount + highRelations.recordCount + highCourseRelations.recordCount + transitions.recordCount} official relations, ${manifest.artifacts.length} files`);
+console.log(`UI artifact check passed: ${manifest.courseDetailCount} course details, ${middleRelations.recordCount + highRelations.recordCount + vocationalRelations.recordCount + highCourseRelations.recordCount + transitions.recordCount} official relations, ${manifest.artifacts.length} files`);

@@ -2,20 +2,27 @@ import { readdir, readFile } from 'node:fs/promises';
 import { dirname, extname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { normalizeText } from './lib/content-overlay.mjs';
+import { readProfileCollection, readRelease } from './lib/profile-collections.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const errors = [];
 const contentMetrics = {};
 const readJson = async (path) => JSON.parse(await readFile(path, 'utf8'));
 
-for (const profile of ['middle', 'high']) {
-  const courses = (await readJson(join(root, 'data/kr', profile, 'courses.json'))).records;
-  const domains = (await readJson(join(root, 'data/kr', profile, 'domains.json'))).records;
-  const standards = (await readJson(join(root, 'data/kr', profile, 'standards.json'))).records;
-  const topics = (await readJson(join(root, 'data/kr', profile, 'topics.json'))).records;
-  const clusters = (await readJson(join(root, 'data/kr', profile, 'clusters.json'))).records;
-  const learningRelations = (await readJson(join(root, 'data/kr', profile, 'learning-relations.json'))).records;
-  const reviewRecords = (await readJson(join(root, 'data/kr', profile, 'review-records.json'))).records;
+// The academic and vocational high-school releases carry the same record contract, so both run the
+// same governance checks; only the review record they belong to differs.
+const academicHighTopicIds = new Set(
+  (await readProfileCollection(root, 'high', 'topics')).map((topic) => topic.id),
+);
+for (const profile of ['middle', 'high', 'high-vocational']) {
+  const release = await readRelease(root, profile);
+  const courses = await readProfileCollection(root, profile, 'courses', release);
+  const domains = await readProfileCollection(root, profile, 'domains', release);
+  const standards = await readProfileCollection(root, profile, 'standards', release);
+  const topics = await readProfileCollection(root, profile, 'topics', release);
+  const clusters = await readProfileCollection(root, profile, 'clusters', release);
+  const learningRelations = await readProfileCollection(root, profile, 'learningRelations', release);
+  const reviewRecords = await readProfileCollection(root, profile, 'reviewRecords', release);
   const reviewedTargetIds = new Set(reviewRecords.flatMap((review) => review.targetIds));
   const courseIds = new Set(courses.map((course) => course.id));
   const domainIds = new Set(domains.map((domain) => domain.id));
@@ -86,7 +93,7 @@ for (const profile of ['middle', 'high']) {
   contentMetrics[profile] = metrics;
 
   if (profile === 'middle' && (topics.length < standards.length * 2 || topics.length > standards.length * 5)) errors.push('middle topic decomposition must remain within 2-5 topics per standard');
-  if (profile === 'high' && topics.length !== standards.length) errors.push('high topic count must remain one mechanical candidate per standard until a separate decomposition policy exists');
+  if (profile !== 'middle' && topics.length !== standards.length) errors.push(`${profile} topic count must remain one mechanical candidate per standard until a separate decomposition policy exists`);
   for (const cluster of clusters) {
     if (!domainIds.has(cluster.domainId)) errors.push(`${cluster.id}: missing domain`);
   }
@@ -129,14 +136,20 @@ const sources = (await readJson(join(root, 'data/kr/shared/source-manifest.json'
 for (const source of sources) if (source.rightsStatus !== 'cleared') errors.push(`${source.id}: official document rights status must be cleared (public official documents)`);
 
 const uiIndex = await readJson(join(root, 'ui/data/map-index.json'));
-const middleRelease = await readJson(join(root, 'data/kr/middle/release.json'));
-const highRelease = await readJson(join(root, 'data/kr/high/release.json'));
-if (uiIndex.statistics.middleCourses !== middleRelease.counts.courses || uiIndex.statistics.highCourses !== highRelease.counts.courses) errors.push('UI course statistics are stale');
-if (uiIndex.statistics.middleStandards !== middleRelease.counts.standards || uiIndex.statistics.highStandards !== highRelease.counts.standards) errors.push('UI standard statistics are stale');
+const middleRelease = await readRelease(root, 'middle');
+const highRelease = await readRelease(root, 'high');
+const vocationalRelease = await readRelease(root, 'high-vocational');
+const highSchoolCourses = highRelease.counts.courses + vocationalRelease.counts.courses;
+const highSchoolStandards = highRelease.counts.standards + vocationalRelease.counts.standards;
+const highSourceGroundedTopics = contentMetrics.high.sourceGroundedDraft + contentMetrics['high-vocational'].sourceGroundedDraft;
+if (uiIndex.statistics.middleCourses !== middleRelease.counts.courses || uiIndex.statistics.highCourses !== highSchoolCourses) errors.push('UI course statistics are stale');
+if (uiIndex.statistics.middleStandards !== middleRelease.counts.standards || uiIndex.statistics.highStandards !== highSchoolStandards) errors.push('UI standard statistics are stale');
 if (uiIndex.statistics.middleTopics !== middleRelease.counts.topics) errors.push('UI middle topic statistics are stale');
-if (uiIndex.statistics.middleSourceGroundedTopics !== contentMetrics.middle.sourceGroundedDraft || uiIndex.statistics.highSourceGroundedTopics !== contentMetrics.high.sourceGroundedDraft) errors.push('UI source-grounded topic statistics are stale');
-if (uiIndex.statistics.highAcademicStandards + uiIndex.statistics.highVocationalStandards !== highRelease.counts.standards) errors.push('UI high-school scope split is stale');
-if (uiIndex.statistics.highAcademicCourses + uiIndex.statistics.highVocationalCourses !== highRelease.counts.courses) errors.push('UI high-school course scope split is stale');
+if (uiIndex.statistics.middleSourceGroundedTopics !== contentMetrics.middle.sourceGroundedDraft || uiIndex.statistics.highSourceGroundedTopics !== highSourceGroundedTopics) errors.push('UI source-grounded topic statistics are stale');
+if (uiIndex.statistics.highAcademicStandards !== highRelease.counts.standards || uiIndex.statistics.highVocationalStandards !== vocationalRelease.counts.standards) errors.push('UI high-school scope split is stale');
+if (uiIndex.statistics.highAcademicCourses !== highRelease.counts.courses || uiIndex.statistics.highVocationalCourses !== vocationalRelease.counts.courses) errors.push('UI high-school course scope split is stale');
+if (uiIndex.statistics.highAcademicStandards + uiIndex.statistics.highVocationalStandards !== uiIndex.statistics.highStandards) errors.push('UI high-school scope split does not add up to the aggregate');
+if (!uiIndex.courses.some((course) => course.detailFile.startsWith('data/high-vocational/'))) errors.push('UI vocational course details are not lazily separated');
 if (uiIndex.sourceSummary.rightsStatus !== 'cleared' || uiIndex.sourceSummary.officialTextIncluded !== false) errors.push('UI rights boundary is stale');
 const html = await readFile(join(root, 'ui/index.html'), 'utf8');
 const css = await readFile(join(root, 'ui/styles.css'), 'utf8');

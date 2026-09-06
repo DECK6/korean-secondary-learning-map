@@ -292,8 +292,15 @@ const normalizeCode = (code) =>
 
 function readRepoCodes() {
   const middle = JSON.parse(readFileSync(join(REPO_ROOT, 'data/kr/middle/standards.json'), 'utf8'));
-  const highStandards = JSON.parse(readFileSync(join(REPO_ROOT, 'data/kr/high/standards.json'), 'utf8'));
-  const highCourses = JSON.parse(readFileSync(join(REPO_ROOT, 'data/kr/high/courses.json'), 'utf8'));
+  // Both high-school releases are read: `high` carries the 231 academic courses and
+  // `high-vocational` the 528 specialised subjects (standards sharded by subject group).
+  const readProfile = (profile, collection) => {
+    const entry = JSON.parse(readFileSync(join(REPO_ROOT, `data/kr/${profile}/release.json`), 'utf8')).collections[collection];
+    return (Array.isArray(entry) ? entry : [entry])
+      .flatMap((file) => JSON.parse(readFileSync(join(REPO_ROOT, `data/kr/${profile}/${file}`), 'utf8')).records);
+  };
+  const highStandards = { records: [...readProfile('high', 'standards'), ...readProfile('high-vocational', 'standards')] };
+  const highCourses = { records: [...readProfile('high', 'courses'), ...readProfile('high-vocational', 'courses')] };
   const generalCourseIds = new Set(
     highCourses.records
       .filter((c) => (c.programScopes ?? []).includes('all-high-schools'))

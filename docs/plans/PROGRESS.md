@@ -27,6 +27,10 @@
 | R3 | R3-D 통합교과 즐거운 생활 연계 채굴 | 초등 | 완료(모듈) | 통과 | 후보 21건(23은 집계 오기) 중 16 채택·5 방향 미판정, D 11→27. 빌드 반영은 집필 완료 후 오케스트레이터 통합 빌드 |
 | R4 | K-12 코어 TBox(k12-core.ttl)·contentKind/STAS locator 배출·초등 summary 교체·중등 v0.6.0-candidate 승격·bridge 재핀 | 양쪽 | 완료 | 통과(중등 bun verify 52테스트·SPARQL 21·적대 12·SHACL 2,142,988 트리플, sec-layers·sec-hygiene / 초등 verify:formal 7게이트·93 테스트·python 5) | 코어 클래스 11·속성 29·개념 38, 정합 축 초등 46+중등 28, 초등 트리플 238,343→248,548·리소스 21,800→22,163, 중등 노드 176,185·트리플 2,142,988. bridge 핀 = 초등 topics.json sha 16a2b843… |
 
+| R5 | R5-A 고교 직업계 분리(high-vocational 프로필)·build:data 멱등화·25MB 파일 게이트 | 중등 | 실행 중(Opus) | bun 전체 + sec-layers/hygiene(합집합 ID) | 브리프 scratchpad/r5-voc-split-brief.md |
+| R5 | R5-B1~3 초등 국어(1~2·3~4 / 5~6)·과학(3~4·5~6) 오버레이 | 초등 | 실행 중(Opus ×3) | check-content-overlay | 348+306 주제 |
+| R5 | R5-B4~5 중학교 국어(204)·과학(261) 오버레이 | 중등 | 실행 중(Opus ×2) | check-content-overlay | scratchpad 초안 후 cp |
+
 ## 로그
 
 - 2026-09-05 점검 완료, 계획서·스펙 작성. R1 4태스크 pumasi 발주 준비.
@@ -68,3 +72,8 @@
 - 2026-09-06 R4 **미정**: 온톨로지 IRI(`https://dexa.art/learnmap/ontology/k12-core`)의 실제 호스팅은 소유자 몫. 커밋·푸시 없음(승인 게이트).
 - 2026-09-06 09:20 소유자 푸시 승인. R4 완료 → 오케스트레이터 재검증 → 커밋·푸시 예정.
 - 2026-09-06 09:50 **푸시 완료**: 초등 main 3ef0563→e7f9502, 중등 main 68e6228→d5696ba. 주의(R4 보고): 중등 `bun run build:data`는 멱등이 아니라 R2/R3 산출물을 덮어씀 — 재실행 금지, `bun run build`만 사용. 후속 후보: 사회·역사 초→중 영역 대응표, 영어 EFL concept facet 부재, facet 인위적 성취기준 축약 규칙, 즐거운 생활 방향 미판정 5건, 온톨로지 IRI 호스팅(dexa.art), 외부 교사 검토(P4-2).
+- 2026-09-06 11:15 소유자 지시: 리밋 대기는 /rate-limit-options 자동 재개, 후속 = 국어·과학 오버레이 + 직업계 분리 → 원장 순. R5 6에이전트 발주. 이후 순서: 통합 빌드·게이트 → 커밋·푸시(승인 유지) → 원장 후속(사회·역사 대응표, 영어 facet, 축약 규칙, 즐 방향 미판정, 외부 검토).
+- 2026-09-06 11:40 R5-B5 중학교 과학 완료(261엔트리, 해설 근거 63%, verbatim 0). 발견: 중등 standards.sourceLocator.printedPage 전부 null(pdfPage만, 영역 시작 면 단위) → 별책별 오프셋으로 기계 채움 후보(R5-A 이후). 과학 [9과06-02∼03] 해설 합본, 진로·재난 영역은 inquiry facet 해석 확장.
+- 2026-09-06 11:50 R5-B2 초등 국어 5~6 완료(136엔트리, 해설 근거 65%, 게이트 재확인). 발견: 국어 facet 축 불균일(매체 영역만 representation, 읽기 영역 .01 접미사=communication), 태도형 성취기준 4건은 reflection facet과 본문 중복 → facet 축약 규칙 후보에 추가. evidence 최소 25자가 한국어 문장에 다소 빡빡함.
+- 2026-09-06 12:05 R5-B1 초등 국어 1~2(92)·3~4(120) 완료·게이트 재확인. 발견: PROVENANCE_SIGNAL의 '출처·원문'이 국어 학습 내용([4국02-05]·[4국06-03])에서 오탐 → 오버레이 경로에서는 문장 끝 provenance 문구만 잡도록 완화 후보. 별책5 p.13 [2국01-03] 해설 원문 중복 인쇄(원문 오류).
+- 2026-09-06 12:30 R5-B4 중학교 국어 완료(204엔트리, 해설 근거 61%, 게이트 재확인). 발견: 중등 summary 기계 변환(~한다→~하기) 불일치·줄바꿈 공백 잔재(9국02-01 '참여 하고' 등 8건, text-normalize가 조사 앞 공백은 못 잡음), 점검·조정 성취기준 3건은 core/reflection 겹침, core facet alignmentKind가 'supports'뿐(assesses 검토).
