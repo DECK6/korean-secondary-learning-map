@@ -1,0 +1,909 @@
+{
+  "$schema": "../../../../schema/content-overlay.schema.json",
+  "contentKind": "source-grounded-draft",
+  "subjectKorean": "생활 프랑스어",
+  "authoredAt": "2026-09-06",
+  "sourceRefs": [
+    "kr-moe-2022-33-annex16"
+  ],
+  "note": "교육부 고시 제2022-33호 별책 16 제2외국어과 교육과정 「생활 프랑스어」의 성취기준·성취기준 해설·성취기준 적용 시 고려 사항을 근거로, 성취기준별 core·이해와 상호작용·표현과 성찰 주제에 서로 다른 관찰 증거·평가 과제·오개념을 새로 작성한 초안이다. 한국어를 모어로 하는 중학교 초급(A1 이하) 학습자를 전제로 삼았다.",
+  "entries": {
+    "kr.topic.2022.middle.04375a1b672052dbd690": {
+      "evidence": [
+        "들은 내용에 반응한 결과를 글이나 그림으로 남긴다.",
+        "반응 방식을 바꿔 다시 해 보고 두 방식의 차이를 적는다."
+      ],
+      "assessmentPrompts": [
+        "친구가 소개한 프랑스 노래를 듣고 느낀 점을 그림 한 장과 프랑스어 한 문장(C'est beau ! 등)으로 남긴 뒤, 말로 반응했을 때와 무엇이 달랐는지 두 줄로 쓰세요."
+      ],
+      "misconceptions": [
+        "듣기 활동의 반응은 곧바로 말로 해야만 하고 나중에 글로 남기는 것은 반응이 아니라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex16",
+        "printedPage": 25,
+        "section": "성취기준 해설",
+        "code": "[9생프01-03]"
+      }
+    },
+    "kr.topic.2022.middle.063d1603abe16121cca4": {
+      "evidence": [
+        "상대의 말에 Ah bon ? 또는 D'accord.로 곧바로 반응한다.",
+        "들은 내용을 몸짓이나 표정으로 나타내 보여 준다."
+      ],
+      "assessmentPrompts": [
+        "짝이 자기가 좋아하는 것을 J'aime la musique.처럼 두 문장으로 말하면 Ah bon ? Super ! 같은 말과 표정으로 호응하고, 어떤 반응을 썼는지 표에 적으세요."
+      ],
+      "misconceptions": [
+        "호응은 상대 말을 그대로 따라 하는 일이라고 여겨 늘 같은 문장을 되풀이한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex16",
+        "printedPage": 25,
+        "section": "성취기준 해설",
+        "code": "[9생프01-03]"
+      }
+    },
+    "kr.topic.2022.middle.0675a816381f13ce7531": {
+      "evidence": [
+        "프랑스어권 인사법과 우리 인사법의 같은 점과 다른 점을 나누어 적는다.",
+        "다른 점을 두고 좋고 나쁨 대신 그렇게 된 까닭을 찾아 말한다."
+      ],
+      "assessmentPrompts": [
+        "프랑스의 볼 인사(la bise)와 우리나라 인사법을 견주어 같은 점 한 가지와 다른 점 두 가지를 적고, 그런 차이가 생긴 까닭을 짐작해 한 줄로 쓰세요."
+      ],
+      "misconceptions": [
+        "우리와 다른 인사법은 예의 없는 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex16",
+        "printedPage": 27,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9생프05-03]"
+      },
+      "note": "해설 없음: 성취기준 문장과 해당 영역의 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.089fbba61f17e772cae9": {
+      "evidence": [
+        "짝의 글에서 성과 수가 어긋난 곳을 찾아 표시한다.",
+        "고칠 곳을 짝에게 설명하고 함께 다시 써 본다."
+      ],
+      "assessmentPrompts": [
+        "짝이 쓴 네 문장을 바꿔 읽고 관사·형용사·악상 세 가지를 기준으로 고칠 곳을 표시한 뒤, 왜 고쳐야 하는지 한 줄씩 적어 돌려주세요."
+      ],
+      "misconceptions": [
+        "악상을 빠뜨려도 뜻이 통하니 틀린 것이 아니라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex16",
+        "printedPage": 26,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9생프04-01]"
+      },
+      "note": "해설 없음: 성취기준 문장과 해당 영역의 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.0b0332e1fab3732a77b3": {
+      "evidence": [
+        "읽은 자료를 바탕으로 계획이나 목록을 만들어 낸다.",
+        "만든 결과를 자료와 다시 맞추어 잘못된 곳을 고친다."
+      ],
+      "assessmentPrompts": [
+        "프랑스 학교의 하루 시간표 자료를 읽고 우리 학교 시간표와 견주는 표를 만든 뒤, 잘못 옮긴 곳을 자료와 다시 맞추어 고치고 무엇을 고쳤는지 쓰세요."
+      ],
+      "misconceptions": [
+        "자료를 옮겨 적은 표는 다시 확인하지 않아도 틀릴 일이 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex16",
+        "printedPage": 26,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9생프03-03]"
+      },
+      "note": "해설 없음: 성취기준 문장과 해당 영역의 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.0c941189b4f389bdb2f5": {
+      "evidence": [
+        "vous êtes처럼 연음이 일어나는 자리를 듣고 그 자리에 표시한다.",
+        "petit과 petite를 듣고 끝소리가 나는 쪽을 골라 적는다."
+      ],
+      "assessmentPrompts": [
+        "Vous êtes coréen ?와 Ils ont deux amis. 두 문장을 두 번 듣고 연음이 일어난 자리에 표시한 뒤, 어떤 소리가 이어져 났는지 우리말로 적으세요."
+      ],
+      "misconceptions": [
+        "프랑스어 낱말 끝 자음은 언제나 소리 나지 않는다고 여겨 연음까지 빼고 듣는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex16",
+        "printedPage": 25,
+        "section": "성취기준 해설",
+        "code": "[9생프01-01]"
+      }
+    },
+    "kr.topic.2022.middle.10876dc558ccd5162652": {
+      "evidence": [
+        "조사할 주제를 좁혀 하나의 물음으로 다듬어 적는다.",
+        "찾은 자료가 어느 기관에서 낸 것인지 적어 둔다."
+      ],
+      "assessmentPrompts": [
+        "프랑스어권 문화 가운데 하나를 골라 무엇을 알고 싶은지 묻는 물음으로 적고, 공공 기관 누리집 두 곳에서 자료를 찾아 기관 이름과 확인한 날짜를 함께 정리하세요."
+      ],
+      "misconceptions": [
+        "누리집에 있는 글은 모두 믿을 수 있어 어느 기관 것인지 가릴 필요가 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex16",
+        "printedPage": 27,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9생프05-02]"
+      },
+      "note": "해설 없음: 성취기준 문장과 해당 영역의 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.14c2ff5ca8e4c7dae95b": {
+      "evidence": [
+        "받은 메시지의 목적을 읽어 내고 그에 맞는 답장을 쓴다.",
+        "빠진 정보가 있으면 그것을 묻는 문장을 넣어 채운다."
+      ],
+      "assessmentPrompts": [
+        "짝이 쓴 프랑스어 초대장을 읽고 참석 여부를 밝히는 답장을 세 줄로 쓰되, 빠진 정보가 있으면 그것을 묻는 문장을 한 줄 넣으세요."
+      ],
+      "misconceptions": [
+        "답장에서 모르는 것을 물으면 상대를 귀찮게 하는 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex16",
+        "printedPage": 26,
+        "section": "성취기준 해설",
+        "code": "[9생프04-02]"
+      }
+    },
+    "kr.topic.2022.middle.1da1c8b4e68443326625": {
+      "evidence": [
+        "프랑스 도시 이름과 그 도시의 특징을 짝지어 말한다.",
+        "대화에서 쓸 문화 정보를 골라 문장 안에 넣어 말한다."
+      ],
+      "assessmentPrompts": [
+        "Tu veux aller où en France ?라는 물음에 도시 하나를 골라 답하고, 그 도시가 무엇으로 이름났는지 프랑스어 한 문장이나 우리말 한 문장으로 덧붙이세요."
+      ],
+      "misconceptions": [
+        "프랑스어를 쓰는 곳은 프랑스뿐이라고 여겨 캐나다 퀘벡이나 아프리카 여러 나라를 빼놓는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex16",
+        "printedPage": 27,
+        "section": "성취기준 해설",
+        "code": "[9생프05-01]"
+      }
+    },
+    "kr.topic.2022.middle.1ef434f332d7f216cb27": {
+      "evidence": [
+        "짝이 물은 정보를 시각 자료에서 찾아 짚어 준다.",
+        "자료에 없는 정보는 없다고 짝에게 밝혀 알려 준다."
+      ],
+      "assessmentPrompts": [
+        "짝과 서로 다른 프랑스어 광고문을 하나씩 보고 세 가지씩 물음을 주고받으세요. 자료에 답이 없으면 없다고 밝히고 어디까지 나와 있는지 설명하세요."
+      ],
+      "misconceptions": [
+        "광고문에 없는 정보도 그럴듯하게 짐작해 답하면 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex16",
+        "printedPage": 26,
+        "section": "성취기준 해설",
+        "code": "[9생프03-02]"
+      }
+    },
+    "kr.topic.2022.middle.1fe37178d8efe19e67fd": {
+      "evidence": [
+        "짝과 번갈아 읽으며 서로 다르게 읽은 곳을 짚어 준다.",
+        "짚어 준 곳을 발음 규칙에 따라 다시 읽어 본다."
+      ],
+      "assessmentPrompts": [
+        "네 문장짜리 짧은 안내문을 짝과 한 문장씩 번갈아 읽고, 상대가 규칙과 다르게 읽은 곳 두 군데를 표시해 어떤 규칙 때문인지 말해 준 뒤 다시 읽으세요."
+      ],
+      "misconceptions": [
+        "소리 내어 읽을 때 연음은 노래나 시에서만 하는 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex16",
+        "printedPage": 26,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9생프03-01]"
+      },
+      "note": "해설 없음: 성취기준 문장과 해당 영역의 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.24046e2ac308335ecea0": {
+      "evidence": [
+        "다른 관점의 설명을 듣고 자기 생각과 견주어 본다.",
+        "다른 사람 말을 듣고 생각이 바뀐 부분을 밝혀 말한다."
+      ],
+      "assessmentPrompts": [
+        "모둠에서 프랑스 학교의 점심시간을 다룬 자료를 읽고 각자 느낀 점을 말한 뒤, 다른 사람 말을 듣고 생각이 바뀐 부분을 한 가지씩 밝히세요."
+      ],
+      "misconceptions": [
+        "문화를 이해한다는 것은 그 문화를 좋아하게 되는 일이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex16",
+        "printedPage": 27,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9생프05-03]"
+      },
+      "note": "해설 없음: 성취기준 문장과 해당 영역의 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.276bf0162d54d51ccde0": {
+      "evidence": [
+        "친구 글을 읽고 좋았던 표현을 찾아 쪽지로 알려 준다.",
+        "친구가 알려 준 표현을 자기 글에 넣어 고쳐 쓴다."
+      ],
+      "assessmentPrompts": [
+        "모둠에서 서로 글을 돌려 읽고 마음에 든 표현 한 가지를 쪽지에 적어 주세요. 받은 쪽지 가운데 하나를 골라 자기 글을 고쳐 쓰고 무엇을 바꿨는지 밝히세요."
+      ],
+      "misconceptions": [
+        "친구 표현을 가져다 쓰는 것은 베끼는 일이라 절대 하면 안 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex16",
+        "printedPage": 26,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9생프04-03]"
+      },
+      "note": "해설 없음: 성취기준 문장과 해당 영역의 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.29d3167463ad2dd2764d": {
+      "evidence": [
+        "Ça va ?를 듣고 알맞은 대답을 보기에서 골라 표시한다.",
+        "들은 표현이 인사인지 부탁인지 갈라 적어 나눈다."
+      ],
+      "assessmentPrompts": [
+        "Bonjour ! / Merci ! / Pardon ! / Ça va ? 네 표현을 순서 없이 듣고 번호를 적은 뒤, 각 표현이 쓰이는 상황을 그림 네 장에서 골라 이으세요."
+      ],
+      "misconceptions": [
+        "Ça va ?는 묻는 말일 때와 답하는 말일 때가 늘 다른 말이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex16",
+        "printedPage": 25,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9생프01-02]"
+      },
+      "note": "해설 없음: 성취기준 문장과 해당 영역의 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.34308f2de1ef739e6f8d": {
+      "evidence": [
+        "자기 발음을 녹음해 본보기 음성과 견주어 표시한다.",
+        "고칠 소리를 하나 정해 연습한 뒤 다시 녹음한다."
+      ],
+      "assessmentPrompts": [
+        "Je suis coréen(ne). Je viens de Séoul. 두 문장을 녹음해 본보기 음성과 견주고, 가장 다른 소리 하나를 골라 연습한 뒤 다시 녹음해 무엇이 달라졌는지 쓰세요."
+      ],
+      "misconceptions": [
+        "한 번 따라 말해 비슷하게 들리면 더 연습할 필요가 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex16",
+        "printedPage": 25,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9생프02-01]"
+      },
+      "note": "해설 없음: 성취기준 문장과 해당 영역의 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.34a5fb5e4b2d69ffdc13": {
+      "evidence": [
+        "같은 내용을 메모와 문자 메시지로 각각 바꾸어 쓴다.",
+        "두 글의 차이를 짚어 목적에 맞는 쪽을 골라 낸다."
+      ],
+      "assessmentPrompts": [
+        "'내일 3시에 도서관에서 만나자'는 내용을 프랑스어 메모 한 장과 문자 메시지 한 통으로 각각 쓰고, 두 글의 다른 점 두 가지를 찾아 적으세요."
+      ],
+      "misconceptions": [
+        "메모와 문자 메시지는 같은 글이므로 형식을 나눌 필요가 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex16",
+        "printedPage": 26,
+        "section": "성취기준 해설",
+        "code": "[9생프04-02]"
+      }
+    },
+    "kr.topic.2022.middle.35a6225e630f6abe26d2": {
+      "evidence": [
+        "읽은 내용에 맞게 짧은 답을 골라 상대에게 말한다.",
+        "짝과 서로 다르게 읽은 부분을 견주어 근거를 댄다."
+      ],
+      "assessmentPrompts": [
+        "Tu peux venir chez moi samedi soir ?로 시작하는 초대 메시지를 읽고 갈 수 있는 경우와 없는 경우의 답을 각각 한 문장으로 고른 뒤, 짝과 고른 까닭을 견주어 보세요."
+      ],
+      "misconceptions": [
+        "초대에 답할 때는 거절하는 표현을 쓰면 안 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex16",
+        "printedPage": 26,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9생프03-03]"
+      },
+      "note": "해설 없음: 성취기준 문장과 해당 영역의 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.662b4b079da34e8b3a9a": {
+      "evidence": [
+        "상대 의견에 동의하거나 다른 뜻을 밝히며 대화를 이어 간다.",
+        "말이 없는 친구에게 물음을 건네 대화 안으로 들어오게 한다."
+      ],
+      "assessmentPrompts": [
+        "모둠에서 주말 계획을 정하는 대화를 하며 D'accord. 또는 Non merci.를 써서 뜻을 밝히고, 아직 말하지 않은 친구에게 Et toi ?로 물어 대화에 넣으세요."
+      ],
+      "misconceptions": [
+        "대화에서 반대하는 말을 하면 상대를 존중하지 않는 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex16",
+        "printedPage": 26,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9생프02-03]"
+      },
+      "note": "해설 없음: 성취기준 문장과 해당 영역의 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.700923bad71f8339a1a6": {
+      "evidence": [
+        "포스터에서 행사 날짜와 장소를 찾아 표시한다.",
+        "등록 서식의 칸 이름을 보고 무엇을 적는 자리인지 고른다."
+      ],
+      "assessmentPrompts": [
+        "프랑스어 영화제 포스터에서 날짜·장소·입장료를 찾아 표에 옮기고, 등록카드의 Nom·Prénom·Adresse 칸에 각각 무엇을 쓰는지 우리말로 적으세요."
+      ],
+      "misconceptions": [
+        "Nom과 Prénom을 우리말 순서대로 여겨 성과 이름을 뒤바꿔 적는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex16",
+        "printedPage": 26,
+        "section": "성취기준 해설",
+        "code": "[9생프03-02]"
+      }
+    },
+    "kr.topic.2022.middle.7314be21277384290a2f": {
+      "evidence": [
+        "쓰고 싶은 주제를 골라 프랑스어 낱말을 먼저 모아 적는다.",
+        "한 문장에서 시작해 문장 수를 늘려 가며 쓴다."
+      ],
+      "assessmentPrompts": [
+        "좋아하는 계절이나 음식을 골라 프랑스어 낱말 다섯 개를 모으고, J'aime ...로 한 문장을 쓴 뒤 까닭을 덧붙여 세 문장으로 늘려 쓰세요."
+      ],
+      "misconceptions": [
+        "아는 낱말이 적으면 글쓰기 활동에 참여할 수 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex16",
+        "printedPage": 26,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9생프04-03]"
+      },
+      "note": "해설 없음: 성취기준 문장과 해당 영역의 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.76119c94c262221544f1": {
+      "evidence": [
+        "짝이 읽어 준 낱말을 듣고 철자 카드에서 알맞은 것을 골라 든다.",
+        "고른 까닭을 소리와 철자의 관계로 짝에게 설명한다."
+      ],
+      "assessmentPrompts": [
+        "짝이 vu, vous, bu, boue 가운데 하나를 읽어 주면 철자 카드를 골라 들어 보이고, u와 ou 소리를 어떻게 갈랐는지 서로 설명하세요. 역할을 바꿔 네 번 하세요."
+      ],
+      "misconceptions": [
+        "u와 ou를 모두 우리말 우로 들어 vu와 vous를 같은 낱말로 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex16",
+        "printedPage": 25,
+        "section": "성취기준 해설",
+        "code": "[9생프01-01]"
+      }
+    },
+    "kr.topic.2022.middle.7624e8320b73fb983cfe": {
+      "evidence": [
+        "탐구 결과를 정해진 형식의 발표 자료로 만들어 낸다.",
+        "탐구 과정을 되짚어 다음에 바꿀 점을 적어 남긴다."
+      ],
+      "assessmentPrompts": [
+        "탐구한 내용을 세 장짜리 발표 자료로 만들어 모둠에 보이고, 자료를 찾고 정리하는 동안 어려웠던 점과 다음에 바꿀 점을 각각 한 줄로 쓰세요."
+      ],
+      "misconceptions": [
+        "탐구는 결과만 좋으면 되고 과정을 되짚는 일은 시간 낭비라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex16",
+        "printedPage": 27,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9생프05-04]"
+      },
+      "note": "해설 없음: 성취기준 문장과 해당 영역의 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.799f4001743937252892": {
+      "evidence": [
+        "상대가 말하는 중에는 끼어들지 않고 자기 차례를 기다린다.",
+        "다 듣고 나서 되묻는 말을 건네 대화를 이어 간다."
+      ],
+      "assessmentPrompts": [
+        "짝과 2분 동안 주말 이야기를 나누되 상대 말이 끝난 뒤에만 말하고, 한 번은 Et toi ?로 되물어 대화를 이으세요. 끼어든 횟수를 서로 세어 적으세요."
+      ],
+      "misconceptions": [
+        "빨리 대답할수록 잘 듣는 것이라 여겨 상대 말이 끝나기 전에 답을 시작한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex16",
+        "printedPage": 25,
+        "section": "성취기준 해설",
+        "code": "[9생프01-03]"
+      }
+    },
+    "kr.topic.2022.middle.89bb2c31a0210c97a55a": {
+      "evidence": [
+        "어말 자음이 소리 나지 않는 낱말을 골라 표시하며 읽는다.",
+        "악상이 붙은 é와 è를 구별해 소리 내어 읽는다."
+      ],
+      "assessmentPrompts": [
+        "petit, grand, café, très가 든 짧은 문장 네 개를 소리 내어 읽고, 소리 나지 않는 끝 자음에 X를, 악상에 따라 달라지는 소리에 O를 표시하세요."
+      ],
+      "misconceptions": [
+        "악상은 글자를 꾸미는 표시일 뿐 소리와는 상관없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex16",
+        "printedPage": 26,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9생프03-01]"
+      },
+      "note": "해설 없음: 성취기준 문장과 해당 영역의 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.90f0a05ab5d7cabf7279": {
+      "evidence": [
+        "들은 부탁에 몸짓이나 짧은 말로 그 자리에서 반응한다.",
+        "반응이 어긋났을 때 다시 듣고 알맞게 고쳐 반응한다."
+      ],
+      "assessmentPrompts": [
+        "교사가 Ouvre la porte, s'il te plaît. / Répète, s'il te plaît. 같은 부탁을 말하면 알맞게 행동하거나 D'accord.로 답하세요. 어긋난 반응은 다시 듣고 고쳐 보세요."
+      ],
+      "misconceptions": [
+        "듣고 반응하기는 말로 답할 때만 인정되고 몸짓으로 답하면 안 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex16",
+        "printedPage": 25,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9생프01-02]"
+      },
+      "note": "해설 없음: 성취기준 문장과 해당 영역의 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.95044ff8d6117d31e0c3": {
+      "evidence": [
+        "자주 틀린 철자와 소리의 짝을 모아 프랑스어 낱말 목록으로 만든다.",
+        "만든 목록을 보며 다시 듣고 나아진 항목에 표시한다."
+      ],
+      "assessmentPrompts": [
+        "한 시간 동안 헷갈린 프랑스어 낱말 네 개를 모아 소리와 철자를 나란히 적은 표를 만들고, 다음 시간에 다시 들어 맞힌 것에 표시한 뒤 남은 것을 어떻게 익힐지 쓰세요."
+      ],
+      "misconceptions": [
+        "듣기에서 틀린 낱말은 다시 볼 필요 없이 새 낱말을 외우면 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex16",
+        "printedPage": 25,
+        "section": "성취기준 해설",
+        "code": "[9생프01-01]"
+      }
+    },
+    "kr.topic.2022.middle.9a576dad695e81577a2e": {
+      "evidence": [
+        "자기 참여 모습을 정해진 기준에 따라 스스로 점검한다.",
+        "다음 활동에서 바꿀 점을 하나 정해 실제로 실행한다."
+      ],
+      "assessmentPrompts": [
+        "말하기 활동 뒤 '차례 지키기·격려하기·먼저 말 걸기' 세 기준으로 자기를 되짚어 각각 한 줄로 적고, 다음 시간에 늘릴 행동 하나를 골라 계획을 쓰세요."
+      ],
+      "misconceptions": [
+        "프랑스어를 잘하는 사람만 대화를 이끌어야 활동이 잘 굴러간다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex16",
+        "printedPage": 26,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9생프02-03]"
+      },
+      "note": "해설 없음: 성취기준 문장과 해당 영역의 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.a115ea360f8a9e7a80c5": {
+      "evidence": [
+        "받은 조언을 반영해 자기 프랑스어 문장을 다시 쓴다.",
+        "자주 틀리는 항목을 모아 다음에 쓸 점검표를 만든다."
+      ],
+      "assessmentPrompts": [
+        "교사와 짝에게 받은 조언 가운데 두 가지를 골라 자기 문장을 고쳐 쓰고, 이번에 자주 틀린 항목 두 가지를 골라 다음에 쓸 점검표를 만드세요."
+      ],
+      "misconceptions": [
+        "글을 한 번 낸 뒤에는 고쳐 써도 실력이 늘지 않는다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex16",
+        "printedPage": 26,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9생프04-01]"
+      },
+      "note": "해설 없음: 성취기준 문장과 해당 영역의 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.a4a3333d6defc7d2f51e": {
+      "evidence": [
+        "짧은 대화를 만들어 발표한 뒤 실수한 곳을 표시한다.",
+        "실수 가운데 뜻을 막은 것만 골라 고쳐 다시 말한다."
+      ],
+      "assessmentPrompts": [
+        "친구를 영화관에 초대하는 여섯 마디 대화를 On va au cinéma ?로 시작해 만들고 발표한 뒤, 실수 가운데 뜻이 통하지 않게 만든 것만 골라 고쳐 다시 말하세요."
+      ],
+      "misconceptions": [
+        "말하기에서는 작은 실수도 모두 고쳐야 하므로 자꾸 멈추어야 한다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex16",
+        "printedPage": 25,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9생프02-02]"
+      },
+      "note": "해설 없음: 성취기준 문장과 해당 영역의 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.a80d30e27c0befe51b8b": {
+      "evidence": [
+        "그림 단서를 근거로 무슨 상황인지 짐작해 글로 적는다.",
+        "짐작이 맞았는지 다시 듣고 판단 근거를 고쳐 쓴다."
+      ],
+      "assessmentPrompts": [
+        "소리만 들려주는 20초짜리 상황(빵집·학교·전화) 하나를 듣고 어디인지 짐작해 근거 낱말 두 개와 함께 쓴 뒤, 그림을 본 다음 짐작을 어떻게 고쳤는지 적으세요."
+      ],
+      "misconceptions": [
+        "한 번에 알아듣지 못하면 상황을 짐작해 보는 일은 소용없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex16",
+        "printedPage": 25,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9생프01-02]"
+      },
+      "note": "해설 없음: 성취기준 문장과 해당 영역의 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.ad78aeb1f7b44155e2b4": {
+      "evidence": [
+        "남성 명사와 여성 명사에 맞는 관사를 골라 붙여 쓴다.",
+        "형용사를 명사의 성과 수에 맞추어 모양을 고쳐 쓴다."
+      ],
+      "assessmentPrompts": [
+        "un과 une를 골라 ami, amie, livre, maison 앞에 쓰고, 각각 grand 또는 petit을 성에 맞게 고쳐 붙인 짧은 문장 네 개를 쓰세요."
+      ],
+      "misconceptions": [
+        "형용사는 언제나 명사 앞에 오고 모양도 바뀌지 않는다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex16",
+        "printedPage": 26,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9생프04-01]"
+      },
+      "note": "해설 없음: 성취기준 문장과 해당 영역의 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.b256e7539e5ed92ecd44": {
+      "evidence": [
+        "모둠에서 찾은 내용을 나누고 서로 궁금한 점을 묻는다.",
+        "친구 의견을 반영해 자기 탐구 방향을 조정한다."
+      ],
+      "assessmentPrompts": [
+        "모둠에서 각자 찾은 프랑스어권 문화 자료를 나누고 서로 두 가지씩 물은 뒤, 친구 의견을 반영해 자기 탐구에서 무엇을 더 찾을지 정하세요."
+      ],
+      "misconceptions": [
+        "탐구 방향은 처음 정한 대로 끝까지 지켜야 한다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex16",
+        "printedPage": 27,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9생프05-04]"
+      },
+      "note": "해설 없음: 성취기준 문장과 해당 영역의 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.b41678bd21614f54f18c": {
+      "evidence": [
+        "문화 정보를 넣은 짧은 대화를 만들어 시연해 보인다.",
+        "시연을 마친 뒤 어색한 부분을 골라 다른 표현으로 바꾼다."
+      ],
+      "assessmentPrompts": [
+        "프랑스 빵집에서 손님과 점원이 나누는 대화를 여섯 마디로 만들어 시연하고, 어색했던 한 마디를 골라 어떻게 바꿀지 까닭과 함께 쓰세요."
+      ],
+      "misconceptions": [
+        "대화에 문화 내용을 넣을 때는 우리 방식을 그대로 옮기면 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex16",
+        "printedPage": 27,
+        "section": "성취기준 해설",
+        "code": "[9생프05-01]"
+      }
+    },
+    "kr.topic.2022.middle.ba42233f55f0e8dbc83b": {
+      "evidence": [
+        "정리한 내용을 한 장짜리 안내물로 만들어 낸다.",
+        "만든 안내물을 다시 보며 덜어 낼 부분을 골라 고친다."
+      ],
+      "assessmentPrompts": [
+        "조사한 프랑스어권 문화 내용을 한 장짜리 안내물로 만들고, 친구에게 보인 뒤 이해하기 어려웠다는 부분을 덜어 내거나 고쳐 다시 만드세요."
+      ],
+      "misconceptions": [
+        "조사한 내용은 하나도 빠뜨리지 않고 모두 담아야 한다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex16",
+        "printedPage": 27,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9생프05-02]"
+      },
+      "note": "해설 없음: 성취기준 문장과 해당 영역의 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.c0782f4692f71239cc5f": {
+      "evidence": [
+        "끊어 읽을 자리를 표시해 두 번째 읽기에 반영해 읽는다.",
+        "처음 읽기와 다시 읽기가 어떻게 달랐는지 적어 남긴다."
+      ],
+      "assessmentPrompts": [
+        "짧은 광고문을 처음 읽고 어려웠던 곳에 표시한 뒤, 발음 규칙을 확인하고 다시 읽어 두 번의 읽기가 어떻게 달랐는지 두 줄로 쓰세요."
+      ],
+      "misconceptions": [
+        "읽기 연습은 낱말 뜻을 다 안 뒤에야 시작할 수 있다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex16",
+        "printedPage": 26,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9생프03-01]"
+      },
+      "note": "해설 없음: 성취기준 문장과 해당 영역의 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.cb817273de3ee481089d": {
+      "evidence": [
+        "읽은 서식을 본떠 자기 정보를 넣은 서식을 만든다.",
+        "만든 서식을 원본과 견주어 빠진 칸을 찾아 채운다."
+      ],
+      "assessmentPrompts": [
+        "프랑스 도서관 등록카드를 본떠 학급 동아리 신청서를 프랑스어 낱말로 만들고, 원본과 견주어 빠뜨린 칸을 찾아 채운 뒤 무엇을 더했는지 쓰세요."
+      ],
+      "misconceptions": [
+        "서식은 칸 이름만 옮겨 적으면 되고 무엇을 묻는 칸인지는 몰라도 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex16",
+        "printedPage": 26,
+        "section": "성취기준 해설",
+        "code": "[9생프03-02]"
+      }
+    },
+    "kr.topic.2022.middle.ce1784b48e01baf622ca": {
+      "evidence": [
+        "두 문화를 견준 결과를 표나 글로 정리해 낸다.",
+        "정리하면서 한쪽으로 치우친 표현을 찾아 고쳐 쓴다."
+      ],
+      "assessmentPrompts": [
+        "프랑스와 우리나라의 식사 예절을 견주는 표를 만들고, 쓴 문장 가운데 한쪽을 낮추어 말한 표현이 있는지 찾아 고친 뒤 무엇을 왜 고쳤는지 쓰세요."
+      ],
+      "misconceptions": [
+        "문화를 견줄 때는 어느 쪽이 더 나은지 가려 결론을 내야 한다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex16",
+        "printedPage": 27,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9생프05-03]"
+      },
+      "note": "해설 없음: 성취기준 문장과 해당 영역의 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.d13cbfb30673d15f4e4b": {
+      "evidence": [
+        "모둠원과 자료를 나누며 겹치는 내용을 골라 정리한다.",
+        "서로 어긋난 내용은 자료를 다시 찾아 맞추어 본다."
+      ],
+      "assessmentPrompts": [
+        "모둠에서 같은 주제를 각자 조사한 뒤 모여 겹치는 내용과 어긋나는 내용을 갈라 표로 정리하고, 어긋난 것은 자료를 다시 찾아 어느 쪽이 맞는지 밝히세요."
+      ],
+      "misconceptions": [
+        "자료가 서로 다르면 더 많은 쪽을 고르면 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex16",
+        "printedPage": 27,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9생프05-02]"
+      },
+      "note": "해설 없음: 성취기준 문장과 해당 영역의 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.d2e182acc27f2b6aa6e9": {
+      "evidence": [
+        "모둠에서 말할 차례를 고루 나누어 정하고 그대로 지킨다.",
+        "친구가 실수해도 놀리지 않고 격려하는 말을 건넨다."
+      ],
+      "assessmentPrompts": [
+        "네 명이 돌아가며 좋아하는 것을 J'aime ...로 말하되, 한 사람이 말한 뒤 옆 사람이 C'est super !처럼 격려하는 말을 덧붙이는 규칙으로 두 바퀴 하세요."
+      ],
+      "misconceptions": [
+        "친구가 발음을 틀리면 곧바로 웃어넘겨야 분위기가 좋아진다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex16",
+        "printedPage": 26,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9생프02-03]"
+      },
+      "note": "해설 없음: 성취기준 문장과 해당 영역의 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.d7271d343a0840e2dc07": {
+      "evidence": [
+        "상대의 물음에 문화 정보를 담아 프랑스어로 답한다.",
+        "상대의 답에서 새로 알게 된 정보를 되물어 확인한다."
+      ],
+      "assessmentPrompts": [
+        "짝과 프랑스 여행 계획을 주고받는 대화를 여섯 마디로 하되, 각자 한 번은 가고 싶은 곳과 그 까닭을 문화 정보로 말하고 상대에게 한 가지를 되물으세요."
+      ],
+      "misconceptions": [
+        "문화 정보를 넣으면 대화가 어려워지므로 인사말만 주고받는 편이 낫다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex16",
+        "printedPage": 27,
+        "section": "성취기준 해설",
+        "code": "[9생프05-01]"
+      }
+    },
+    "kr.topic.2022.middle.de3843aa242248c14577": {
+      "evidence": [
+        "교사가 들려준 낱말의 마지막 음절에 힘을 주어 따라 말한다.",
+        "비모음이 든 낱말을 코로 소리를 내보내며 소리 낸다."
+      ],
+      "assessmentPrompts": [
+        "bonjour, maison, chanson 세 낱말을 듣고 따라 말하되 마지막 음절을 길게 하고, 코를 살짝 막았을 때 소리가 달라지는 낱말을 찾아 적으세요."
+      ],
+      "misconceptions": [
+        "프랑스어도 영어처럼 첫 음절에 힘을 주어 말해야 한다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex16",
+        "printedPage": 25,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9생프02-01]"
+      },
+      "note": "해설 없음: 성취기준 문장과 해당 영역의 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.ded5b1571c79fc466cd9": {
+      "evidence": [
+        "관심 있는 주제를 골라 어떤 매체로 찾을지 정해 적는다.",
+        "탐구할 일을 단계로 나누어 계획표에 적어 둔다."
+      ],
+      "assessmentPrompts": [
+        "프랑스어권 문화 가운데 궁금한 것을 하나 골라 영화·누리집·책 가운데 어떤 매체로 찾을지 정하고, 무엇을 언제 할지 세 단계 계획을 세우세요."
+      ],
+      "misconceptions": [
+        "영화나 광고는 놀 거리일 뿐 문화 탐구 자료로는 쓸 수 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex16",
+        "printedPage": 27,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9생프05-04]"
+      },
+      "note": "해설 없음: 성취기준 문장과 해당 영역의 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.ea52c4b7b223b4925793": {
+      "evidence": [
+        "대화문을 읽고 누가 무엇을 부탁했는지 찾아 적는다.",
+        "글쓴이가 무엇을 바라고 있는지 골라 표시한다."
+      ],
+      "assessmentPrompts": [
+        "친구에게 온 프랑스어 문자 메시지 네 줄을 읽고, 무엇을 부탁했는지와 언제까지 답해야 하는지 찾아 적은 뒤 그 근거가 되는 부분을 표시하세요."
+      ],
+      "misconceptions": [
+        "메시지의 뜻은 마지막 문장만 보면 알 수 있다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex16",
+        "printedPage": 26,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9생프03-03]"
+      },
+      "note": "해설 없음: 성취기준 문장과 해당 영역의 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.ea7a273a2c977b58bdeb": {
+      "evidence": [
+        "메모와 초대장에 각각 들어갈 항목을 갈라 적어 둔다.",
+        "짧은 문장으로 글의 목적이 드러나게 써 낸다."
+      ],
+      "assessmentPrompts": [
+        "생일 파티 초대장을 프랑스어 네 줄로 쓰되 Je t'invite.로 시작해 날짜·시각·장소를 넣고, 마지막 줄에 답을 청하는 말을 덧붙이세요."
+      ],
+      "misconceptions": [
+        "초대장은 길고 꾸민 문장이 많을수록 좋은 글이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex16",
+        "printedPage": 26,
+        "section": "성취기준 해설",
+        "code": "[9생프04-02]"
+      }
+    },
+    "kr.topic.2022.middle.ee159987c8ee8d8d5331": {
+      "evidence": [
+        "짝의 발음을 듣고 같은 속도에 맞추어 따라 말한다.",
+        "서로 다르게 난 소리를 짚어 바르게 다시 말해 준다."
+      ],
+      "assessmentPrompts": [
+        "짝과 Je m'appelle ...와 J'ai 15 ans. 두 문장을 번갈아 따라 말하며 상대 발음에서 다른 점 한 가지를 짚어 주고, 고쳐 말한 뒤 나아졌는지 서로 표시하세요."
+      ],
+      "misconceptions": [
+        "따라 말하기는 소리만 흉내 내면 되고 뜻은 몰라도 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex16",
+        "printedPage": 25,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9생프02-01]"
+      },
+      "note": "해설 없음: 성취기준 문장과 해당 영역의 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.f11335f35df23eb6659b": {
+      "evidence": [
+        "가게에서 값을 묻는 말과 답하는 말을 골라 짝지어 말한다.",
+        "낱말이나 짧은 표현만으로도 전하려는 뜻을 나타낸다."
+      ],
+      "assessmentPrompts": [
+        "빵집 상황 카드를 뽑아 Je voudrais une baguette, s'il vous plaît.와 C'est combien ?을 넣어 네 마디 대화를 짝과 주고받고, 완전한 문장이 아닌 말도 한 번 써 보세요."
+      ],
+      "misconceptions": [
+        "완전한 문장으로 말하지 못하면 아무 말도 하지 않는 편이 낫다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex16",
+        "printedPage": 25,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9생프02-02]"
+      },
+      "note": "해설 없음: 성취기준 문장과 해당 영역의 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.f32af0190857ee6a7dbb": {
+      "evidence": [
+        "상대가 묻는 내용에 맞추어 대답을 바꾸어 말한다.",
+        "못 알아들으면 다시 말해 달라고 프랑스어로 청한다."
+      ],
+      "assessmentPrompts": [
+        "짝이 Tu as quel âge ? 또는 Tu habites où ? 가운데 하나를 물으면 알맞게 답하고, 못 알아들었을 때는 Encore une fois, s'il vous plaît.로 청해 다시 듣고 답하세요."
+      ],
+      "misconceptions": [
+        "상대 물음을 놓쳤을 때 되묻기보다 아무 대답이나 하는 편이 낫다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex16",
+        "printedPage": 25,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9생프02-02]"
+      },
+      "note": "해설 없음: 성취기준 문장과 해당 영역의 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.f9f78a19beb95de20850": {
+      "evidence": [
+        "그동안 쓴 글을 모아 자기 글이 어떻게 달라졌는지 견준다.",
+        "다음에 써 보고 싶은 글감을 정해 까닭과 함께 적는다."
+      ],
+      "assessmentPrompts": [
+        "이번 학기에 쓴 프랑스어 글 세 편을 늘어놓고 문장 수와 쓴 표현을 견주어 달라진 점 두 가지를 적은 뒤, 다음에 써 보고 싶은 글감과 까닭을 쓰세요."
+      ],
+      "misconceptions": [
+        "글쓰기 실력은 눈에 보이지 않으므로 예전 글을 다시 볼 까닭이 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex16",
+        "printedPage": 26,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9생프04-03]"
+      },
+      "note": "해설 없음: 성취기준 문장과 해당 영역의 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    }
+  }
+}
