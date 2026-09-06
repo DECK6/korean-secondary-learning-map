@@ -43,9 +43,8 @@ test('keeps educational interpretations visibly non-official', async () => {
 test('publishes official-only acyclic relation coverage', async () => {
   const report = await readJson('../data/kr/relation-coverage-report.json');
   expect(report.middle.relations.byBasisKind).toEqual({ 'official-source': 56 });
-  expect(report.high.relations.byBasisKind).toEqual({ 'official-source': 39 + registeredHighRequired });
-  expect(report.high.relations.byRelationKind['required-prerequisite'] ?? 0).toBe(registeredHighRequired);
-  expect(report.high.relations.byRelationKind['recommended-before']).toBe(39);
+  expect(report.high.relations.byBasisKind).toEqual({ 'official-source': registeredHighRequired });
+  expect(report.high.relations.byRelationKind).toEqual({ 'required-prerequisite': registeredHighRequired });
   expect(report.high.courseRelations.byBasisKind).toEqual({ 'official-source': 39 });
   expect(report.middle.courseCoverage.coursesWithOfficialRelations).toBe(15);
   expect(report.high.courseCoverage.coursesWithOfficialRelations).toBeGreaterThan(0);

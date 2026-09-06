@@ -1,0 +1,43 @@
+{
+  "collectedAt": "2026-09-05T07:16:39.506Z",
+  "baseUrl": "https://stas.moe.go.kr",
+  "curriculum": "2022년 개정",
+  "endpoints": [
+    "/rest/cmn/clsfc/eduCurclmList:combo",
+    "/rest/cmn/clsfc/schlClsList:combo?sEduCurclmCd=2022",
+    "/rest/acvmt/acvmtStd/acvmtStdList?sEduCurclmCd=2022&sSchlClsCd={level}&page=0&size=5000",
+    "/rest/acvmt/acvmtStd/acvmtStd?sAcvmtStdSeq={seq}",
+    "/rest/cmn/cmn/pageContById?sPageContId=AGREEMENT"
+  ],
+  "recordCount": 4586,
+  "recordCountBySchoolLevel": {
+    "elementary": 611,
+    "middle": 714,
+    "high": 3261
+  },
+  "filesSha256": {
+    "curricula.json": "533dded230478e11d1ed0950b839f7fec5147f32639f916312071295d5055e17",
+    "research-agreement.json": "e48c88abac6dd260a4a91d8d0298894445344d560dc3dec8eabbf23654e1a1a1",
+    "research-code.json": "5207e381c56d6b33b1e501a6421df89a869ad49c8b4411a662ee12166a5b92a8",
+    "research-conf.json": "096260b600ff0b596b68d2dde50646981c4791afef7ff2e4a6ea93246dd24ebe",
+    "research-curricula.json": "7a4c8e4935b85514f5f880dbaf5e3da26d1d0374f2f69a6bd33c1fcb3b6ebff0",
+    "research-detail-page.json": "87df72bbdc88709de70ca7fe3129578be81ba181f42af9ddbcca918d8fd74c43",
+    "research-fn.json": "c3da3a022319e7df6c5c886dca7cf676fcbca3c1b43fa0b965a3b0cedfb2777e",
+    "research-footer.json": "22e596bcf1e733bdf091f6cd4a65448c21293ce6677a9e816604eb790aca7fb2",
+    "research-main.json": "a43f1a7d761fd8cd752c7dd9735b0adac94107bec824600fde2d4d1957cf2064",
+    "research-robots.json": "e74e43fb3d5fed6873c705f298e46d68081a5a40e1d539f2da95f88e1b6fd17a",
+    "research-sample.json": "51bb0e97526a3e28179574e4212705d9e6ca28eeb837bc115f6f4a94ac500bde",
+    "research-schools.json": "c9cb1ce7ebb98575494a0b197962beb779183b60a584bb23745a999a1e04e7ec",
+    "research-standards-page.json": "67e125270b8cbe2c94f58242cbc4a4795961d6a043deef49d1432be9b7192160",
+    "research-terms-page.json": "7b81a3202a342beffa07c375b1b85bfcc5564e34ed23d62c3415bdf3a829f779",
+    "school-levels.json": "80e2d762bb9b88bcd327006efbce0ed5b1624889efacda3d27e05139ea964f83",
+    "standards-2022-elementary-detail.json": "bc2f59a4ae1980d78d1ad65a72b061f61a6acbc1165c6b5eb224a97ec7d62320",
+    "standards-2022-elementary-list.json": "e059455fb5345274f8d18df8f27a6ca49bc35edd5a4282c608d6cdc9c8ccad9e",
+    "standards-2022-high-detail.json": "6a2f54c9ed297bf8ac2c722023379e4607ecb25833bca732d92cfca84822d38e",
+    "standards-2022-high-list.json": "1717e17e4c93fc4e505690e08afb349e64b06c5051971dfdb93c97a121d553f2",
+    "standards-2022-middle-detail.json": "fe796d85c72005f9236433d81aae9a0cd64237621c60d10abec115687c24d08c",
+    "standards-2022-middle-list.json": "6ffba8367d96895b7d6bd1bfd2c99fcc420584c7ac53ffc896938714b80e0c6f",
+    "terms-agreement.json": "1fb602a9830bc518e395dc995d174f568bbd6dc380fc376b44e7f3ed038a5146"
+  },
+  "termsNotice": "KICE 학생평가지원포털 이용약관 제10조①2(회원이 서비스에서 얻은 정보를 KICE 사전승낙 없이 본래 이용 이외의 목적으로 복제·제공하는 행위 금지), 제16조②(게시자 사전 동의 없는 가공·판매 등 영리 목적 이용 금지). 공공누리(KOGL) 유형 표시는 사이트 어디에도 게시되어 있지 않음. 푸터 고지: \"학생평가지원포털 및 모든 학생평가 관련 탑재 자료는 학생평가 지원 사업의 일환으로 16개 시도교육청의 지원을 받아 수업 지원 목적으로 개발되었습니다.\" 따라서 본 수집물은 비영리 연구·대조 검증 목적의 로컬 캐시로만 보관하며 재배포하지 않는다(sources/stas/raw/ 는 .gitignore 처리)."
+}

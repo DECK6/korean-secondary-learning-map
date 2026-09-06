@@ -1,6 +1,7 @@
 @prefix bad: <https://dexa.art/learnmap/secondary/fixture/bad/> .
 @prefix old: <https://dexa.art/learnmap/#/> .
 @prefix slm: <https://dexa.art/learnmap/secondary/ontology#> .
+@prefix core: <https://dexa.art/learnmap/ontology/k12-core#> .
 
 bad:grade-forced a slm:Course ; slm:schoolLevel "high" ; slm:grade "10" ; slm:courseCategory "common" ; slm:inSubjectGroup bad:group .
 bad:offering-conflation a slm:Course, slm:CourseOffering ; slm:courseCategory "common" ; slm:inSubjectGroup bad:group .
@@ -12,4 +13,6 @@ bad:duplicate-b a slm:LearningRelation ; slm:prerequisiteTopic bad:t1 ; slm:depe
 bad:path-boundary-missing a slm:IllustrativePathway ; slm:reviewStatus "candidate" .
 bad:reminted-elementary a slm:LearningTopic ; slm:replaces <https://dexa.art/learnmap/#/topic/elementary-p3-id> .
 bad:rights-auto-release a slm:CurriculumRelease ; slm:rightsStatus "released" ; slm:verificationStatus "formal-validation-passed" .
+bad:candidate-in-official-layer a slm:LearningRelation, slm:OfficialLearningRelation ; slm:layer "pedagogical-candidate" ; slm:prerequisiteTopic bad:t1 ; slm:dependentTopic bad:t3 ; slm:relationKind "recommended-before" ; slm:scope "same-domain" ; slm:strength "recommended" ; slm:basisKind "official-code-order" ; slm:basis "R-CODE 코드 순서" ; slm:reason "코드 순서"@ko ; slm:reviewStatus "candidate" .
 bad:self-cycle a slm:LearningRelation ; slm:prerequisiteTopic bad:t1 ; slm:dependentTopic bad:t1 ; slm:relationKind "required-before" ; slm:reviewStatus "candidate" .
+bad:unsourced-authored-draft a slm:LearningTopic ; core:facetKey core:facet-inquiry ; core:contentKind core:content-source-grounded-draft ; core:misconception "근거 없이 결론을 단정한다."@ko .

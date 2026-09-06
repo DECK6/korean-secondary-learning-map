@@ -1,9 +1,11 @@
 import { readdir, readFile } from 'node:fs/promises';
 import { dirname, extname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { normalizeText } from './lib/content-overlay.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const errors = [];
+const contentMetrics = {};
 const readJson = async (path) => JSON.parse(await readFile(path, 'utf8'));
 
 for (const profile of ['middle', 'high']) {
@@ -48,6 +50,41 @@ for (const profile of ['middle', 'high']) {
       if (topic.decompositionKind === 'subject-facet' && !topic.standardAlignments.some((alignment) => alignment.basis === 'middle-subject-facet-decomposition-v1')) errors.push(`${topic.id}: subject facet basis missing`);
     }
   }
+  // P3-2 지표: 완전 중복 문장, 템플릿 비율(성취기준 요약을 'X'로 치환한 뒤 남는 동일 문자열), 출처 기반 초안 수.
+  const summaryById = new Map(standards.map((standard) => [standard.id, normalizeText(standard.summary)]));
+  const templateShape = (topic, text) => {
+    let shape = normalizeText(text);
+    for (const alignment of topic.standardAlignments ?? []) {
+      const summary = summaryById.get(alignment.standardId);
+      if (summary) shape = shape.split(summary).join('X');
+    }
+    return shape;
+  };
+  const metrics = { topics: topics.length, sourceGroundedDraft: 0, mechanicalDerivative: 0, duplicateEvidence: 0, duplicateAssessmentPrompts: 0, templateRatio: 0, misconceptions: 0 };
+  const seenEvidence = new Map();
+  const seenPrompts = new Map();
+  const shapes = new Set();
+  let shapeTotal = 0;
+  for (const topic of topics) {
+    if (topic.contentKind === 'source-grounded-draft') metrics.sourceGroundedDraft += 1;
+    else metrics.mechanicalDerivative += 1;
+    metrics.misconceptions += topic.misconceptions?.length ?? 0;
+    for (const [field, seen, counter] of [['evidence', seenEvidence, 'duplicateEvidence'], ['assessmentPrompts', seenPrompts, 'duplicateAssessmentPrompts']]) {
+      for (const text of topic[field] ?? []) {
+        const normalized = normalizeText(text);
+        const previous = seen.get(normalized);
+        if (previous) {
+          metrics[counter] += 1;
+          if (topic.contentKind === 'source-grounded-draft') errors.push(`${topic.id}: source-grounded ${field} duplicates ${previous} exactly`);
+        } else seen.set(normalized, topic.id);
+        shapes.add(templateShape(topic, text));
+        shapeTotal += 1;
+      }
+    }
+  }
+  metrics.templateRatio = shapeTotal ? Number(((shapeTotal - shapes.size) / shapeTotal).toFixed(4)) : 0;
+  contentMetrics[profile] = metrics;
+
   if (profile === 'middle' && (topics.length < standards.length * 2 || topics.length > standards.length * 5)) errors.push('middle topic decomposition must remain within 2-5 topics per standard');
   if (profile === 'high' && topics.length !== standards.length) errors.push('high topic count must remain one mechanical candidate per standard until a separate decomposition policy exists');
   for (const cluster of clusters) {
@@ -82,6 +119,12 @@ for (const transition of elementaryTransitions) {
   if (transition.reviewStatus !== 'internal-reviewed' || transition.relationKind !== 'required-prerequisite' || transition.basisKind !== 'official-source' || !transition.sourceRefs.length) errors.push(`${transition.id}: elementary transition provenance boundary missing`);
   if (!bridgeReviewTargets.has(transition.id)) errors.push(`${transition.id}: elementary transition has no review record`);
 }
+const candidateElementaryTransitions = (await readJson(join(root, 'data/kr/bridges/elementary-transitions.candidate.json'))).records;
+for (const transition of candidateElementaryTransitions) {
+  if (transition.reviewStatus !== 'candidate' || transition.relationKind !== 'recommended-before' || transition.basisKind === 'official-source' || !transition.sourceRefs.length) errors.push(`${transition.id}: candidate elementary transition boundary missing`);
+  if (!/^R-[A-Z-]+ /.test(transition.basis)) errors.push(`${transition.id}: candidate elementary transition basis must name its rule`);
+  if (bridgeReviewTargets.has(transition.id)) errors.push(`${transition.id}: candidate elementary transition must not be claimed as reviewed`);
+}
 const sources = (await readJson(join(root, 'data/kr/shared/source-manifest.json'))).sources;
 for (const source of sources) if (source.rightsStatus !== 'cleared') errors.push(`${source.id}: official document rights status must be cleared (public official documents)`);
 
@@ -91,6 +134,7 @@ const highRelease = await readJson(join(root, 'data/kr/high/release.json'));
 if (uiIndex.statistics.middleCourses !== middleRelease.counts.courses || uiIndex.statistics.highCourses !== highRelease.counts.courses) errors.push('UI course statistics are stale');
 if (uiIndex.statistics.middleStandards !== middleRelease.counts.standards || uiIndex.statistics.highStandards !== highRelease.counts.standards) errors.push('UI standard statistics are stale');
 if (uiIndex.statistics.middleTopics !== middleRelease.counts.topics) errors.push('UI middle topic statistics are stale');
+if (uiIndex.statistics.middleSourceGroundedTopics !== contentMetrics.middle.sourceGroundedDraft || uiIndex.statistics.highSourceGroundedTopics !== contentMetrics.high.sourceGroundedDraft) errors.push('UI source-grounded topic statistics are stale');
 if (uiIndex.statistics.highAcademicStandards + uiIndex.statistics.highVocationalStandards !== highRelease.counts.standards) errors.push('UI high-school scope split is stale');
 if (uiIndex.statistics.highAcademicCourses + uiIndex.statistics.highVocationalCourses !== highRelease.counts.courses) errors.push('UI high-school course scope split is stale');
 if (uiIndex.sourceSummary.rightsStatus !== 'cleared' || uiIndex.sourceSummary.officialTextIncluded !== false) errors.push('UI rights boundary is stale');
@@ -116,3 +160,6 @@ for (const path of await sourceFiles(root)) {
 
 if (errors.length) { console.error(errors.slice(0, 100).join('\n')); process.exit(1); }
 console.log(`content/governance check passed: ${sources.length} sources, ${pathways.length} illustrative pathways, ${transitions.length} reviewed transitions`);
+for (const [profile, metrics] of Object.entries(contentMetrics)) {
+  console.log(`${profile} content: ${metrics.sourceGroundedDraft} source-grounded-draft / ${metrics.topics} topics, duplicates evidence ${metrics.duplicateEvidence} prompt ${metrics.duplicateAssessmentPrompts}, template ratio ${(metrics.templateRatio * 100).toFixed(1)}%, misconceptions ${metrics.misconceptions}`);
+}

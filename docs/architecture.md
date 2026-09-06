@@ -120,16 +120,24 @@ bridge manifest는 사용한 `middleReleaseId`와 `highReleaseId`를 반드시 �
 
 `LearningRelation`은 한정자를 가진 선수 관계 주장으로 아래 필드를 사용한다.
 
+- `layer`: `official` 또는 `pedagogical-candidate` — 파일과 일치해야 한다
 - `relationKind`: `required-prerequisite` 또는 `recommended-before`
-- `scope`: 동일 과목, 동일 교과군, 교과 간, 학교급 전이
+- `scope`: 동일 성취기준, 동일 영역, 동일 과목, 동일 교과군, 교과 간, 학교급 전이
 - `applicability`: 적용되는 학교급·과목·경로·학습 맥락
-- `basisKind`: 공식 문서, 전문가 검토, 저장소 편집, 모델 후보
+- `basisKind`: 공식 문서, 공식 코드 순서, 분해 순서, 저장소 편집, 전문가 작성
 - `reviewStatus`: 후보, 내부 검토, 교과 전문가 검토, 현장 검토
 - `confidence`: 수치가 아니라 등급과 근거 메모를 함께 사용
 
-모델이 자동 생성한 관계는 `candidate`이며 사람의 검토 없이 `required`가 될 수 없다. v0.4의 관계 빌더는 저장소 소유자가 승인한 내부 검토 범위에서만 `internal-reviewed`를 기록하고 각 관계를 검토 레코드에 핀한다.
+관계는 **두 층으로 파일이 분리된다**(K-12 공통 계약 v1 1절).
 
-공식 문서 배열은 그 자체로 교육적 필수 선수 관계가 아니다. 전 과목 탐색 가능성을 위해 검토한 배열 간선은 `recommended-before`와 `repository-authored`로 기록하고 이유에 비강제 탐색 순서임을 명시한다. `required-prerequisite`는 공식 내용 체계·해설의 직접 근거, `official-source`와 페이지 locator가 모두 있는 경우에만 허용한다.
+| 층 | 파일 | 의미 | 제품 사용 |
+| --- | --- | --- | --- |
+| `official` | `data/kr/{middle,high}/learning-relations.json`, `data/kr/bridges/elementary-transitions.json` | 공식 문서가 직접 뒷받침하는 필수 선수 관계 | "먼저 알아야 한다" |
+| `pedagogical-candidate` | `data/kr/{middle,high}/learning-relations.candidate.json`, `data/kr/bridges/elementary-transitions.candidate.json` | 코드 순서·분해 순서·내용 체계표 영역 연속에서 만든 권장 학습 순서 | "권장 순서"로만 |
+
+official 층은 전건 `required-prerequisite` + `official-source` + 인쇄 쪽번호이며, 저장소 소유자가 승인한 내부 검토 범위에서 `internal-reviewed`를 기록하고 각 관계를 검토 레코드에 핀한다. 후보 층은 전건 `recommended-before` + `candidate`이며 검토 레코드에 핀하지 않는다. 온톨로지는 두 층을 `slm:OfficialLearningRelation`·`slm:CandidateLearningRelation`(초→중 bridge는 `slm:CandidateTransitionAlignment`) 하위 클래스와 `slm:layer` 한정자로 구분하고, SHACL이 official 클래스에 후보 층 값이 들어오면 거부한다. 파생 관계를 물질화할 경우 official 층에서만 만든다.
+
+공식 문서 배열은 그 자체로 교육적 필수 선수 관계가 아니다. 코드 순서 간선은 후보 층의 `R-CODE`(`official-code-order`), 주제 분해 순서는 `R-FACET`(`decomposition-order`)으로만 기록한다. `required-prerequisite`는 공식 내용 체계·해설의 직접 근거, `official-source`와 페이지 locator가 모두 있는 경우에만 허용한다.
 
 ### 6.2 과목 관계
 
@@ -171,6 +179,17 @@ korean-secondary-learning-map
 
 첫 구현 단계에서 기존 초등 릴리스를 이동시키지 않는다. 먼저 새 코어가 기존 P3 의미와 식별자를 바이트·그래프 수준에서 보존하는지 검증한 뒤 권위 저장소를 이전한다. 마이그레이션 전까지 중등 프로젝트는 기존 TBox를 참조하고 중등 전용 용어를 별도 초안으로 관리한다.
 
+### 7.1 현재 구현: 동기화 사본 코어 (v0.6.0-candidate)
+
+별도 저장소를 만들기 전 단계로, 공통 TBox를 `ontology/k12-core.ttl` 한 파일에 모으고 **두 저장소가 바이트 동일 사본**을 보관한다.
+
+- 온톨로지 IRI `https://dexa.art/learnmap/ontology/k12-core`, versionIRI `…/1.0.0`.
+- 두 저장소의 `ontology/learning-map.ttl`이 `owl:imports`로 코어를 선언하되, 검증기는 **로컬 파일에서 읽는다**. 네트워크 접근이 필요 없고, IRI의 실제 호스팅은 이 릴리스의 범위가 아니다.
+- 사본 동기화는 각 저장소의 `tests/k12-core-sync.test.mjs`가 검사한다. 기준 해시는 코어 파일 헤더의 `# k12-core-sync-sha256:` 줄이며, 그 줄을 제거한 나머지의 sha256이다. 두 사본이 같은 값을 선언하고 각자 자기 본문과 맞으면 두 본문은 같다.
+- `slm:`·`lm:` IRI는 **하나도 재발급하지 않는다**. 클래스는 `owl:equivalentClass`, 속성은 `owl:equivalentProperty`, 통제 어휘 개념은 `skos:exactMatch`로 코어에 연결한다. 중등은 관계 한정자를 토큰(문자열)으로 저장하므로 코어의 `*Token` 하위 속성에, 초등은 개념 IRI로 저장하므로 `*Concept` 하위 속성에 연결한다.
+- 두 저장소의 ABox는 코어 어휘 `core:facetKey`·`core:contentKind`·`core:misconception`·`core:contentSourceLocator`·`core:layerConcept`를 함께 배출한다. 그래서 중등 `scq-21-k12-core-vocabulary.rq`와 초등 `cq-18-k12-core-vocabulary.rq`는 **질의문이 완전히 동일**하고 두 저장소 모두에서 답이 나온다.
+- STAS 레코드 locator 어휘(`core:stasEndpoint`·`core:stasRecordId`·`core:collectedAt`·`core:fileSha256`)는 TBox와 shape에만 있고 데이터 배출은 없다. 2026-09-05 출처 판정에 따라 STAS는 어디서 읽었는지만 기록하고 본문은 담지 않는다.
+
 중등 저장소 내부 권장 구조는 다음과 같다.
 
 ```text
@@ -205,7 +224,7 @@ apps/explorer/         세 릴리스를 결합하는 통합 탐색 UI
 
 - `학교급 지도`: 중학교 공통 기반과 고등학교 선택 구조 비교
 - `과목 탐색기`: 과목 범주·교과군·학습 영역·성취기준 탐색
-- `전이 지도`: 초등 5~6학년 → 중학교 → 고등학교 과목 연결
+- `전이 지도`: 초등 5~6학년 → 중학교 → 고등학교 과목 연결. 초→중은 공식 층과 권장(후보) 층을 배지·필터로 구분한다
 - `경로 설계기`: 목적을 고르면 필수·권장·대안 과목과 근거를 비교
 - `과목 비교`: 두 과목의 공통 주제, 차이, 선행 추천, 후속 연결 비교
 - `근거 패널`: 출처, 위치, 검토 상태, 권리 상태, 모델 한계 표시

@@ -12,7 +12,11 @@
     "learningRelationKinds",
     "courseRelationKinds",
     "transitionKinds",
-    "reviewStatuses"
+    "reviewStatuses",
+    "relationLayers",
+    "basisKinds",
+    "facetKeys",
+    "facetKeyMappings"
   ],
   "properties": {
     "$schema": { "type": "string", "format": "uri-reference" },
@@ -23,10 +27,30 @@
     "learningRelationKinds": { "$ref": "#/$defs/uniqueTerms" },
     "courseRelationKinds": { "$ref": "#/$defs/uniqueTerms" },
     "transitionKinds": { "$ref": "#/$defs/uniqueTerms" },
-    "reviewStatuses": { "$ref": "#/$defs/uniqueTerms" }
+    "reviewStatuses": { "$ref": "#/$defs/uniqueTerms" },
+    "relationLayers": { "$ref": "#/$defs/uniqueTerms" },
+    "basisKinds": { "$ref": "#/$defs/uniqueTerms" },
+    "facetKeys": { "$ref": "#/$defs/uniqueTerms" },
+    "facetKeyMappings": { "$ref": "#/$defs/facetKeyMappings" }
   },
   "additionalProperties": false,
   "$defs": {
+    "facetKeyMappings": {
+      "description": "중학교 주제의 과목별 facetKeyDetail(24종)을 공통 facetKey(8종)로 사상한다.",
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "required": ["id", "labelKorean", "facetKey"],
+        "properties": {
+          "id": { "$ref": "core.schema.json#/$defs/stableId" },
+          "labelKorean": { "type": "string", "minLength": 1 },
+          "facetKey": { "$ref": "core.schema.json#/$defs/facetKey" }
+        },
+        "additionalProperties": false
+      }
+    },
     "uniqueTerms": {
       "type": "array",
       "minItems": 1,

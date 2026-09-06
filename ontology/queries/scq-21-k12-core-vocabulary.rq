@@ -1,0 +1,10 @@
+PREFIX core: <https://dexa.art/learnmap/ontology/k12-core#>
+
+SELECT ?vocabulary ?concept (COUNT(?subject) AS ?subjectCount)
+WHERE {
+  { ?subject core:facetKey ?concept . BIND("facet" AS ?vocabulary) }
+  UNION
+  { ?subject core:layerConcept ?concept . BIND("layer" AS ?vocabulary) }
+}
+GROUP BY ?vocabulary ?concept
+ORDER BY ?vocabulary ?concept

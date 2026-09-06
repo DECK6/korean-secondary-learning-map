@@ -1,4 +1,5 @@
 @prefix slm: <https://dexa.art/learnmap/secondary/ontology#> .
+@prefix core: <https://dexa.art/learnmap/ontology/k12-core#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -6,7 +7,10 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://dexa.art/learnmap/secondary/ontology> a owl:Ontology ;
-  owl:versionIRI <https://dexa.art/learnmap/secondary/ontology/0.4.0-candidate> ;
+  owl:imports <https://dexa.art/learnmap/ontology/k12-core> ;
+  owl:versionIRI <https://dexa.art/learnmap/secondary/ontology/0.6.0-candidate> ;
+  owl:priorVersion <https://dexa.art/learnmap/secondary/ontology/0.5.0-candidate> ;
+  owl:versionInfo "0.6.0-candidate" ;
   rdfs:label "대한민국 중등교육 학습지도 온톨로지"@ko .
 
 slm:CurriculumRelease a owl:Class .
@@ -20,7 +24,10 @@ slm:LearningTopic a owl:Class .
 slm:MiddleLearningTopic a owl:Class ; rdfs:subClassOf slm:LearningTopic .
 slm:LearningCluster a owl:Class .
 slm:LearningRelation a owl:Class .
+slm:OfficialLearningRelation a owl:Class ; rdfs:subClassOf slm:LearningRelation ; rdfs:comment "공식 문서가 직접 뒷받침하는 선수 관계 층."@ko .
+slm:CandidateLearningRelation a owl:Class ; rdfs:subClassOf slm:LearningRelation ; rdfs:comment "코드 순서·분해 순서로 만든 권장 순서 층. 파생 관계를 만들지 않는다."@ko .
 slm:TransitionAlignment a owl:Class .
+slm:CandidateTransitionAlignment a owl:Class ; rdfs:subClassOf slm:TransitionAlignment ; rdfs:comment "내용 체계표 영역 연속으로 만든 학교급 간 권장 순서 층. 파생 관계를 만들지 않는다."@ko .
 slm:CourseRelation a owl:Class .
 slm:ChoiceSet a owl:Class .
 slm:IllustrativePathway a owl:Class .
@@ -69,6 +76,8 @@ slm:assessmentPrompt a owl:DatatypeProperty ; rdfs:range rdf:langString .
 slm:topicType a owl:DatatypeProperty ; rdfs:range xsd:string .
 slm:decompositionKind a owl:DatatypeProperty ; rdfs:domain slm:LearningTopic ; rdfs:range xsd:string .
 slm:facetKey a owl:DatatypeProperty ; rdfs:domain slm:LearningTopic ; rdfs:range xsd:string .
+slm:facetKeyDetail a owl:DatatypeProperty ; rdfs:domain slm:LearningTopic ; rdfs:range xsd:string .
+slm:layer a owl:DatatypeProperty ; rdfs:range xsd:string .
 slm:alignmentKind a owl:DatatypeProperty ; rdfs:range xsd:string .
 slm:relationKind a owl:DatatypeProperty ; rdfs:range xsd:string .
 slm:claimStatus a owl:DatatypeProperty ; rdfs:range xsd:string .
@@ -115,5 +124,53 @@ slm:LearningRelation rdfs:subClassOf
   [ a owl:Restriction ; owl:onProperty slm:prerequisiteTopic ; owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ; owl:onClass slm:LearningTopic ],
   [ a owl:Restriction ; owl:onProperty slm:dependentTopic ; owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ; owl:onClass slm:LearningTopic ] .
 
+slm:OfficialLearningRelation owl:disjointWith slm:CandidateLearningRelation .
+
+slm:facetScheme a skos:ConceptScheme ; skos:prefLabel "K-12 공통 facet 어휘"@ko .
+slm:facet-concept a skos:Concept ; skos:inScheme slm:facetScheme ; skos:notation "concept" ; skos:prefLabel "개념"@ko ; skos:definition "개념·조건·예 구분"@ko .
+slm:facet-procedure a skos:Concept ; skos:inScheme slm:facetScheme ; skos:notation "procedure" ; skos:prefLabel "절차"@ko ; skos:definition "절차·기능·제작 수행"@ko .
+slm:facet-representation a skos:Concept ; skos:inScheme slm:facetScheme ; skos:notation "representation" ; skos:prefLabel "표현"@ko ; skos:definition "표현·모델링·변환"@ko .
+slm:facet-application a skos:Concept ; skos:inScheme slm:facetScheme ; skos:notation "application" ; skos:prefLabel "적용"@ko ; skos:definition "적용·문제 해결"@ko .
+slm:facet-inquiry a skos:Concept ; skos:inScheme slm:facetScheme ; skos:notation "inquiry" ; skos:prefLabel "탐구"@ko ; skos:definition "탐구·자료·근거"@ko .
+slm:facet-communication a skos:Concept ; skos:inScheme slm:facetScheme ; skos:notation "communication" ; skos:prefLabel "의사소통"@ko ; skos:definition "언어 표현·의사소통"@ko .
+slm:facet-reflection a skos:Concept ; skos:inScheme slm:facetScheme ; skos:notation "reflection" ; skos:prefLabel "성찰"@ko ; skos:definition "성찰·태도·전이"@ko .
+slm:facet-core a skos:Concept ; skos:inScheme slm:facetScheme ; skos:notation "core" ; skos:prefLabel "핵심"@ko ; skos:definition "성취기준 전체 핵심"@ko .
+
 slm:MiddleSchool a slm:SchoolLevel, skos:Concept ; skos:prefLabel "중학교"@ko .
 slm:HighSchool a slm:SchoolLevel, skos:Concept ; skos:prefLabel "고등학교"@ko .
+
+## K-12 코어 정합 (온톨로지 0.6.0-candidate)
+## 코어 모듈은 import만 하고 slm: IRI는 재발급하지 않는다. 로컬 사본 ontology/k12-core.ttl에서
+## 읽으므로 네트워크 접근이 필요 없다. 중등은 관계 한정자를 토큰(문자열)으로 저장하므로
+## 개념형이 아니라 코어의 token 하위 속성에 연결한다.
+
+slm:AchievementStandard owl:equivalentClass core:AchievementStandard .
+slm:LearningTopic owl:equivalentClass core:LearningTopic .
+slm:LearningCluster owl:equivalentClass core:LearningCluster .
+slm:SourceDocument owl:equivalentClass core:SourceDocument .
+slm:SourceLocator owl:equivalentClass core:SourceLocator .
+slm:CoverageGap owl:equivalentClass core:CoverageGap .
+slm:LearningRelation rdfs:subClassOf core:LearningRelation .
+slm:TransitionAlignment rdfs:subClassOf core:LearningRelation .
+
+slm:layer owl:equivalentProperty core:layerToken .
+slm:relationKind owl:equivalentProperty core:relationKindToken .
+slm:basisKind owl:equivalentProperty core:basisKindToken .
+slm:scope owl:equivalentProperty core:scopeToken .
+slm:reviewStatus owl:equivalentProperty core:reviewStatusToken .
+slm:printedPage owl:equivalentProperty core:printedPage .
+slm:sourcePage owl:equivalentProperty core:pdfPage .
+slm:sourceSection owl:equivalentProperty core:sourceSection .
+slm:attachmentNumber owl:equivalentProperty core:attachmentNumber .
+slm:fileSha256 owl:equivalentProperty core:fileSha256 .
+slm:officialCode rdfs:subPropertyOf core:standardCode .
+
+slm:facet-concept skos:exactMatch core:facet-concept .
+slm:facet-procedure skos:exactMatch core:facet-procedure .
+slm:facet-representation skos:exactMatch core:facet-representation .
+slm:facet-application skos:exactMatch core:facet-application .
+slm:facet-inquiry skos:exactMatch core:facet-inquiry .
+slm:facet-communication skos:exactMatch core:facet-communication .
+slm:facet-reflection skos:exactMatch core:facet-reflection .
+slm:facet-core skos:exactMatch core:facet-core .
+slm:facetScheme skos:exactMatch core:FacetScheme .

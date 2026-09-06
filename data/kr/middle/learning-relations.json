@@ -8,6 +8,7 @@
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.3bb5a5ecb55e72817af8",
       "id": "kr.learning-relation.2022.middle.03d243672f7d19bc0acb",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.7385d118d2fa88491874",
       "reason": "삼국 문화 이해를 바탕으로 통일신라 문화의 특징을 파악한다.",
       "relationKind": "required-prerequisite",
@@ -23,6 +24,7 @@
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.64d013651f146a0cf5d5",
       "id": "kr.learning-relation.2022.middle.09dae45a2a9e62356654",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.b13a0af6759f26942667",
       "reason": "표현 실험에서 얻은 경험을 삶의 문제 해결에 연결한다.",
       "relationKind": "required-prerequisite",
@@ -34,10 +36,11 @@
       "strength": "required"
     },
     {
-      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 변화와 관계 내용 체계표 p.14",
+      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 변화와 관계 내용 체계표 p.8",
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.fa639f062b593b08b3e6",
       "id": "kr.learning-relation.2022.middle.0fe2bafb123b653b8fa0",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.841527cca63b9acf6959",
       "reason": "수학과 내용 체계표의 변화와 관계 학년군 계열과 개념 의존성을 대조한 [9수02-04] → [9수02-17] 필수 선수 연결이다.",
       "relationKind": "required-prerequisite",
@@ -49,10 +52,11 @@
       "strength": "required"
     },
     {
-      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 자료와 가능성 내용 체계표 p.16",
+      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 자료와 가능성 내용 체계표 p.10",
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.c7299fb834689ea98155",
       "id": "kr.learning-relation.2022.middle.101746b8757578aee61d",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.d44fe9e4546c6e93ff07",
       "reason": "수학과 내용 체계표의 자료와 가능성 학년군 계열과 개념 의존성을 대조한 [9수04-06] → [9수04-08] 필수 선수 연결이다.",
       "relationKind": "required-prerequisite",
@@ -68,6 +72,7 @@
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.680d61059ecc11d3467b",
       "id": "kr.learning-relation.2022.middle.1073ac4a4fef226277cb",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.f9fca7469542f580164f",
       "reason": "근거 중심 주장 쓰기를 바탕으로 쟁점에 대한 주장을 사회 맥락에 맞게 확장한다.",
       "relationKind": "required-prerequisite",
@@ -83,6 +88,7 @@
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.d58dc0dcdb0875907e7e",
       "id": "kr.learning-relation.2022.middle.110ef229af88eb6274a8",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.8390b2eb9cde1de4c802",
       "reason": "조사·정리한 한일 문화 비교 내용을 발표·토론하고 공유한다.",
       "relationKind": "required-prerequisite",
@@ -98,6 +104,7 @@
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.199acb500dd941c40f5d",
       "id": "kr.learning-relation.2022.middle.27dd0dee2a9a43efbee4",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.f16723d9cd6142ed9967",
       "reason": "습득한 러시아 문화 지식을 간단한 대화 상황에 활용한다.",
       "relationKind": "required-prerequisite",
@@ -109,10 +116,11 @@
       "strength": "required"
     },
     {
-      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 변화와 관계 내용 체계표 p.14",
+      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 변화와 관계 내용 체계표 p.8",
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.e22aec4f7338d96514d3",
       "id": "kr.learning-relation.2022.middle.287f450242d2ff3861e1",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.bfbbc93af425559f1f69",
       "reason": "수학과 내용 체계표의 변화와 관계 학년군 계열과 개념 의존성을 대조한 [9수02-16] → [9수02-21] 필수 선수 연결이다.",
       "relationKind": "required-prerequisite",
@@ -124,10 +132,11 @@
       "strength": "required"
     },
     {
-      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 변화와 관계 내용 체계표 p.14",
+      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 변화와 관계 내용 체계표 p.8",
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.6321a0bee182a2e77805",
       "id": "kr.learning-relation.2022.middle.31110b1e2515561fa747",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.bb7af1f3f4ed5c434bdc",
       "reason": "수학과 내용 체계표의 변화와 관계 학년군 계열과 개념 의존성을 대조한 [9수02-07] → [9수02-14] 필수 선수 연결이다.",
       "relationKind": "required-prerequisite",
@@ -143,6 +152,7 @@
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.64d013651f146a0cf5d5",
       "id": "kr.learning-relation.2022.middle.34b3fd5709bd5808166e",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.05b259dc37fa75926b30",
       "reason": "작품 공유와 상호 작용 경험을 삶의 문제 해결에 연결한다.",
       "relationKind": "required-prerequisite",
@@ -158,6 +168,7 @@
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.ef67a2907e0b271d488e",
       "id": "kr.learning-relation.2022.middle.370bb862e7a611310dc9",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.c46c88b8ba00edd529ad",
       "reason": "건강관리에서 익힌 생활기술을 약물 유혹과 압력 대처에 적용한다.",
       "relationKind": "required-prerequisite",
@@ -169,10 +180,11 @@
       "strength": "required"
     },
     {
-      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 자료와 가능성 내용 체계표 p.16",
+      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 자료와 가능성 내용 체계표 p.10",
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.c7299fb834689ea98155",
       "id": "kr.learning-relation.2022.middle.3ae5f1765b44449ff94e",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.41fcc93171e027f2dcf9",
       "reason": "수학과 내용 체계표의 자료와 가능성 학년군 계열과 개념 의존성을 대조한 [9수04-04] → [9수04-08] 필수 선수 연결이다.",
       "relationKind": "required-prerequisite",
@@ -188,6 +200,7 @@
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.b251f8af6738ba1e724b",
       "id": "kr.learning-relation.2022.middle.3cef0e7724d8470b7fa5",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.4f779d24792c128f8612",
       "reason": "아랍 문화 내용을 이해한 뒤 의사소통 상황에 활용하도록 지도한다.",
       "relationKind": "required-prerequisite",
@@ -199,10 +212,11 @@
       "strength": "required"
     },
     {
-      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 자료와 가능성 내용 체계표 p.16",
+      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 자료와 가능성 내용 체계표 p.10",
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.15d7bc6a340e3e7d7702",
       "id": "kr.learning-relation.2022.middle.41b1a0d223a7643ed0f1",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.f571176f4816eed42496",
       "reason": "수학과 내용 체계표의 자료와 가능성 학년군 계열과 개념 의존성을 대조한 [9수04-01] → [9수04-07] 필수 선수 연결이다.",
       "relationKind": "required-prerequisite",
@@ -214,10 +228,11 @@
       "strength": "required"
     },
     {
-      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 변화와 관계 내용 체계표 p.14",
+      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 변화와 관계 내용 체계표 p.8",
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.e22aec4f7338d96514d3",
       "id": "kr.learning-relation.2022.middle.43d3779e908b13d12b76",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.081e2a577f7efca58ba2",
       "reason": "수학과 내용 체계표의 변화와 관계 학년군 계열과 개념 의존성을 대조한 [9수02-20] → [9수02-21] 필수 선수 연결이다.",
       "relationKind": "required-prerequisite",
@@ -233,6 +248,7 @@
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.68d08365c793dccfe7b3",
       "id": "kr.learning-relation.2022.middle.4869f3ab81730daa1633",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.67d7dc02913884e8d9f2",
       "reason": "기후행동 사례 탐구를 학교와 지역의 기후행동 계획에 활용한다.",
       "relationKind": "required-prerequisite",
@@ -244,10 +260,11 @@
       "strength": "required"
     },
     {
-      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 변화와 관계 내용 체계표 p.14",
+      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 변화와 관계 내용 체계표 p.8",
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.081e2a577f7efca58ba2",
       "id": "kr.learning-relation.2022.middle.4ddc8fb01377247584c3",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.841527cca63b9acf6959",
       "reason": "수학과 내용 체계표의 변화와 관계 학년군 계열과 개념 의존성을 대조한 [9수02-04] → [9수02-20] 필수 선수 연결이다.",
       "relationKind": "required-prerequisite",
@@ -259,10 +276,11 @@
       "strength": "required"
     },
     {
-      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 변화와 관계 내용 체계표 p.14",
+      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 변화와 관계 내용 체계표 p.8",
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.fa639f062b593b08b3e6",
       "id": "kr.learning-relation.2022.middle.517b493e079acc8217c2",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.bfbbc93af425559f1f69",
       "reason": "수학과 내용 체계표의 변화와 관계 학년군 계열과 개념 의존성을 대조한 [9수02-16] → [9수02-17] 필수 선수 연결이다.",
       "relationKind": "required-prerequisite",
@@ -278,6 +296,7 @@
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.3df4e5b1097b8a956db5",
       "id": "kr.learning-relation.2022.middle.5cfa45356a3f1f874b19",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.d7b926416090b7db6c4f",
       "reason": "삶의 목적과 행복에 관한 성찰을 마음의 안정과 평화 학습의 바탕으로 삼는다.",
       "relationKind": "required-prerequisite",
@@ -289,10 +308,11 @@
       "strength": "required"
     },
     {
-      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 변화와 관계 내용 체계표 p.14",
+      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 변화와 관계 내용 체계표 p.8",
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.560573dafa16e540eae5",
       "id": "kr.learning-relation.2022.middle.5e8b4e9835ce74f65da6",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.4184c26783af1969666e",
       "reason": "수학과 내용 체계표의 변화와 관계 학년군 계열과 개념 의존성을 대조한 [9수02-10] → [9수02-19] 필수 선수 연결이다.",
       "relationKind": "required-prerequisite",
@@ -308,6 +328,7 @@
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.8010c579f8cd9516d76e",
       "id": "kr.learning-relation.2022.middle.65bd7a91eb53c8ea05e7",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.8a06d28b0ee077c91b93",
       "reason": "습득한 스페인어권 문화 지식을 대화의 질문·응답·설명에 활용한다.",
       "relationKind": "required-prerequisite",
@@ -319,10 +340,11 @@
       "strength": "required"
     },
     {
-      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 수와 연산 내용 체계표 p.13",
+      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 수와 연산 내용 체계표 p.7",
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.9d0aa38802820584d068",
       "id": "kr.learning-relation.2022.middle.714857df37df42ff4313",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.884840c3d4b644ebbd2a",
       "reason": "수학과 내용 체계표의 수와 연산 학년군 계열과 개념 의존성을 대조한 [9수01-06] → [9수01-07] 필수 선수 연결이다.",
       "relationKind": "required-prerequisite",
@@ -334,10 +356,11 @@
       "strength": "required"
     },
     {
-      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 변화와 관계 내용 체계표 p.14",
+      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 변화와 관계 내용 체계표 p.8",
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.61f418bf4128414c5f93",
       "id": "kr.learning-relation.2022.middle.73376bfbd3da1a238c3e",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.4184c26783af1969666e",
       "reason": "수학과 내용 체계표의 변화와 관계 학년군 계열과 개념 의존성을 대조한 [9수02-10] → [9수02-13] 필수 선수 연결이다.",
       "relationKind": "required-prerequisite",
@@ -353,6 +376,7 @@
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.2571ba15da1b41e45c37",
       "id": "kr.learning-relation.2022.middle.78031179e0e89563fd60",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.0afb33f9af0ac9455527",
       "reason": "낱말·구·문장 쓰기에서 텍스트 작성으로 진행 순서를 제시한다.",
       "relationKind": "required-prerequisite",
@@ -364,10 +388,11 @@
       "strength": "required"
     },
     {
-      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 도형과 측정 내용 체계표 p.15",
+      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 도형과 측정 내용 체계표 p.9",
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.f7bf80b9ecdce0eface7",
       "id": "kr.learning-relation.2022.middle.792826ababb56691f80e",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.c4d31abb02e38f69bf73",
       "reason": "수학과 내용 체계표의 도형과 측정 학년군 계열과 개념 의존성을 대조한 [9수03-15] → [9수03-16] 필수 선수 연결이다.",
       "relationKind": "required-prerequisite",
@@ -379,10 +404,11 @@
       "strength": "required"
     },
     {
-      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 도형과 측정 내용 체계표 p.15",
+      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 도형과 측정 내용 체계표 p.9",
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.7d49418e24781c520fe3",
       "id": "kr.learning-relation.2022.middle.7d4cd01880698388f3ce",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.bcd089e70c8ece3c59b5",
       "reason": "수학과 내용 체계표의 도형과 측정 학년군 계열과 개념 의존성을 대조한 [9수03-06] → [9수03-09] 필수 선수 연결이다.",
       "relationKind": "required-prerequisite",
@@ -394,10 +420,11 @@
       "strength": "required"
     },
     {
-      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 수와 연산 내용 체계표 p.13",
+      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 수와 연산 내용 체계표 p.7",
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.884840c3d4b644ebbd2a",
       "id": "kr.learning-relation.2022.middle.834542e8ad39b4f9b215",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.e6249de9a4e967dcd2ca",
       "reason": "수학과 내용 체계표의 수와 연산 학년군 계열과 개념 의존성을 대조한 [9수01-05] → [9수01-06] 필수 선수 연결이다.",
       "relationKind": "required-prerequisite",
@@ -409,10 +436,11 @@
       "strength": "required"
     },
     {
-      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 변화와 관계 내용 체계표 p.14",
+      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 변화와 관계 내용 체계표 p.8",
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.e7ba8df29ffd7f7ea14c",
       "id": "kr.learning-relation.2022.middle.856a9234634cd98889ee",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.841527cca63b9acf6959",
       "reason": "수학과 내용 체계표의 변화와 관계 학년군 계열과 개념 의존성을 대조한 [9수02-04] → [9수02-11] 필수 선수 연결이다.",
       "relationKind": "required-prerequisite",
@@ -424,10 +452,11 @@
       "strength": "required"
     },
     {
-      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 변화와 관계 내용 체계표 p.14",
+      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 변화와 관계 내용 체계표 p.8",
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.081e2a577f7efca58ba2",
       "id": "kr.learning-relation.2022.middle.8b72389f5c630a550138",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.560573dafa16e540eae5",
       "reason": "수학과 내용 체계표의 변화와 관계 학년군 계열과 개념 의존성을 대조한 [9수02-19] → [9수02-20] 필수 선수 연결이다.",
       "relationKind": "required-prerequisite",
@@ -443,6 +472,7 @@
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.92be7cb31433f02593ae",
       "id": "kr.learning-relation.2022.middle.94217538deee4c9c0780",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.db9791598ee41e1cf894",
       "reason": "진로 경로의 다양성 이해를 관심 분야의 경로 설정 기반으로 삼는다.",
       "relationKind": "required-prerequisite",
@@ -458,6 +488,7 @@
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.35e20312f3779f76d3b6",
       "id": "kr.learning-relation.2022.middle.9686e227eb07e74918c6",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.ff7b1d54ab14618e5b6c",
       "reason": "인간과 환경의 연결 인식을 환경 체계의 통합적 탐구 기반으로 삼는다.",
       "relationKind": "required-prerequisite",
@@ -473,6 +504,7 @@
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.3df4e5b1097b8a956db5",
       "id": "kr.learning-relation.2022.middle.9aff1616932f5cb2c459",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.df12b6429901194a1a8d",
       "reason": "삶의 유한성과 의미에 관한 성찰을 마음의 안정과 평화 학습의 바탕으로 삼는다.",
       "relationKind": "required-prerequisite",
@@ -488,6 +520,7 @@
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.aebdbc196ff1610bddc8",
       "id": "kr.learning-relation.2022.middle.9b9f127051eb96d95188",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.ce84635babd152fcf7f9",
       "reason": "발표·토의 내용을 구성하기 위해 자료를 검색·수집·정리한다.",
       "relationKind": "required-prerequisite",
@@ -499,10 +532,11 @@
       "strength": "required"
     },
     {
-      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 도형과 측정 내용 체계표 p.15",
+      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 도형과 측정 내용 체계표 p.9",
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.7d49418e24781c520fe3",
       "id": "kr.learning-relation.2022.middle.9e01f7cf6222724792b8",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.c1f5455544fda4b7b2be",
       "reason": "수학과 내용 체계표의 도형과 측정 학년군 계열과 개념 의존성을 대조한 [9수03-04] → [9수03-09] 필수 선수 연결이다.",
       "relationKind": "required-prerequisite",
@@ -514,10 +548,11 @@
       "strength": "required"
     },
     {
-      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 도형과 측정 내용 체계표 p.15",
+      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 도형과 측정 내용 체계표 p.9",
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.4d27996714120516d7af",
       "id": "kr.learning-relation.2022.middle.9e7a0a57be1d6a2f1353",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.bcd089e70c8ece3c59b5",
       "reason": "수학과 내용 체계표의 도형과 측정 학년군 계열과 개념 의존성을 대조한 [9수03-06] → [9수03-18] 필수 선수 연결이다.",
       "relationKind": "required-prerequisite",
@@ -533,6 +568,7 @@
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.046490a03583b128b07a",
       "id": "kr.learning-relation.2022.middle.a40056055ed43d86bf7d",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.58a35418604bf3499d01",
       "reason": "독일어권 문화 지식을 익힌 뒤 독일어 대화에 활용하도록 해설한다.",
       "relationKind": "required-prerequisite",
@@ -544,10 +580,11 @@
       "strength": "required"
     },
     {
-      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 변화와 관계 내용 체계표 p.14",
+      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 변화와 관계 내용 체계표 p.8",
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.61f418bf4128414c5f93",
       "id": "kr.learning-relation.2022.middle.a4087463ecf04b260d4a",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.841527cca63b9acf6959",
       "reason": "수학과 내용 체계표의 변화와 관계 학년군 계열과 개념 의존성을 대조한 [9수02-04] → [9수02-13] 필수 선수 연결이다.",
       "relationKind": "required-prerequisite",
@@ -559,10 +596,11 @@
       "strength": "required"
     },
     {
-      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 도형과 측정 내용 체계표 p.15",
+      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 도형과 측정 내용 체계표 p.9",
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.c3e79330718e70da9ec4",
       "id": "kr.learning-relation.2022.middle.a71204d8e5579c4104cc",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.12c2d1c8b3a83a6653b6",
       "reason": "수학과 내용 체계표의 도형과 측정 학년군 계열과 개념 의존성을 대조한 [9수03-02] → [9수03-03] 필수 선수 연결이다.",
       "relationKind": "required-prerequisite",
@@ -578,6 +616,7 @@
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.64d013651f146a0cf5d5",
       "id": "kr.learning-relation.2022.middle.aef00a426e354ebca0ec",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.9ba0f217c40cce60f018",
       "reason": "작품 제작에서 얻은 경험을 삶의 문제 해결에 연결한다.",
       "relationKind": "required-prerequisite",
@@ -589,10 +628,11 @@
       "strength": "required"
     },
     {
-      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 변화와 관계 내용 체계표 p.14",
+      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 변화와 관계 내용 체계표 p.8",
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.98edd9b379dd00c20da8",
       "id": "kr.learning-relation.2022.middle.b1b4e08699e764cd52f6",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.de77549b98c539a40cc4",
       "reason": "수학과 내용 체계표의 변화와 관계 학년군 계열과 개념 의존성을 대조한 [9수02-02] → [9수02-08] 필수 선수 연결이다.",
       "relationKind": "required-prerequisite",
@@ -608,6 +648,7 @@
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.64d013651f146a0cf5d5",
       "id": "kr.learning-relation.2022.middle.b1f585e440bda1380459",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.53c0a5690c914dcefcfd",
       "reason": "주제 탐구와 계획에서 얻은 경험을 삶의 문제 해결에 연결한다.",
       "relationKind": "required-prerequisite",
@@ -619,10 +660,11 @@
       "strength": "required"
     },
     {
-      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 도형과 측정 내용 체계표 p.15",
+      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 도형과 측정 내용 체계표 p.9",
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.4d27996714120516d7af",
       "id": "kr.learning-relation.2022.middle.b2925ab98d4b152d4a26",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.f28b5507b0e84df02e9a",
       "reason": "수학과 내용 체계표의 도형과 측정 학년군 계열과 개념 의존성을 대조한 [9수03-17] → [9수03-18] 필수 선수 연결이다.",
       "relationKind": "required-prerequisite",
@@ -638,6 +680,7 @@
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.f4118e605715b737814e",
       "id": "kr.learning-relation.2022.middle.babd7121f089164890cf",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.3aa0baa8e91c7b34d004",
       "reason": "고등학교 교육과정과 입학 요건 이해를 졸업 후 교육 계획 수립에 활용한다.",
       "relationKind": "required-prerequisite",
@@ -653,6 +696,7 @@
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.7eda3c198af3d4eca8a1",
       "id": "kr.learning-relation.2022.middle.c6c5eb8909628f289d95",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.07a6a9fb1a6491d27f66",
       "reason": "건강의 연속성과 항상성 이해를 정서적 지지와 유대 인식의 기반으로 삼는다.",
       "relationKind": "required-prerequisite",
@@ -664,10 +708,11 @@
       "strength": "required"
     },
     {
-      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 수와 연산 내용 체계표 p.13",
+      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 수와 연산 내용 체계표 p.7",
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.884840c3d4b644ebbd2a",
       "id": "kr.learning-relation.2022.middle.c873831d003295d579ae",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.1d5f34a8b2214e6badcb",
       "reason": "수학과 내용 체계표의 수와 연산 학년군 계열과 개념 의존성을 대조한 [9수01-02] → [9수01-06] 필수 선수 연결이다.",
       "relationKind": "required-prerequisite",
@@ -683,6 +728,7 @@
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.a43e44eb2f9d77e1cdbd",
       "id": "kr.learning-relation.2022.middle.cf403dd56a974654330b",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.6b7a08e6b32171481061",
       "reason": "앞서 발견한 지역 문제를 해결 방안 모색과 실천으로 확장한다.",
       "relationKind": "required-prerequisite",
@@ -694,10 +740,11 @@
       "strength": "required"
     },
     {
-      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 변화와 관계 내용 체계표 p.14",
+      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 변화와 관계 내용 체계표 p.8",
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.190a815b941929ff60b0",
       "id": "kr.learning-relation.2022.middle.d1c40a6acc176dd9dad9",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.de77549b98c539a40cc4",
       "reason": "수학과 내용 체계표의 변화와 관계 학년군 계열과 개념 의존성을 대조한 [9수02-02] → [9수02-03] 필수 선수 연결이다.",
       "relationKind": "required-prerequisite",
@@ -709,10 +756,11 @@
       "strength": "required"
     },
     {
-      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 자료와 가능성 내용 체계표 p.16",
+      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 자료와 가능성 내용 체계표 p.10",
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.15d7bc6a340e3e7d7702",
       "id": "kr.learning-relation.2022.middle.d39aa5d6d2a9ccca5dcd",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.41fcc93171e027f2dcf9",
       "reason": "수학과 내용 체계표의 자료와 가능성 학년군 계열과 개념 의존성을 대조한 [9수04-04] → [9수04-07] 필수 선수 연결이다.",
       "relationKind": "required-prerequisite",
@@ -728,6 +776,7 @@
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.301bfbc1d81861d3c520",
       "id": "kr.learning-relation.2022.middle.d48cf008c7f8b76ce83a",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.88cd7bd845eb3d52c3c6",
       "reason": "한·아랍 문화 비교·표현에 앞서 아랍 문화 조사·정리를 학습한다.",
       "relationKind": "required-prerequisite",
@@ -739,10 +788,11 @@
       "strength": "required"
     },
     {
-      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 도형과 측정 내용 체계표 p.15",
+      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 도형과 측정 내용 체계표 p.9",
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.f7bf80b9ecdce0eface7",
       "id": "kr.learning-relation.2022.middle.d699bf94cfb4d2da93ed",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.c450ca225db852a40ba8",
       "reason": "수학과 내용 체계표의 도형과 측정 학년군 계열과 개념 의존성을 대조한 [9수03-14] → [9수03-16] 필수 선수 연결이다.",
       "relationKind": "required-prerequisite",
@@ -758,6 +808,7 @@
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.e3809e89328ddabff46b",
       "id": "kr.learning-relation.2022.middle.e18164b23a31d6d6bfb6",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.7bf28958d5f3a200c7a5",
       "reason": "습득한 베트남 문화 지식을 베트남어 대화 상황에 활용한다.",
       "relationKind": "required-prerequisite",
@@ -769,10 +820,11 @@
       "strength": "required"
     },
     {
-      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 도형과 측정 내용 체계표 p.15",
+      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 도형과 측정 내용 체계표 p.9",
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.4d27996714120516d7af",
       "id": "kr.learning-relation.2022.middle.e37e8ed7713a8ad7a704",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.c4d31abb02e38f69bf73",
       "reason": "수학과 내용 체계표의 도형과 측정 학년군 계열과 개념 의존성을 대조한 [9수03-15] → [9수03-18] 필수 선수 연결이다.",
       "relationKind": "required-prerequisite",
@@ -784,10 +836,11 @@
       "strength": "required"
     },
     {
-      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 도형과 측정 내용 체계표 p.15",
+      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 도형과 측정 내용 체계표 p.9",
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.0f035c7cf9224a4aaf60",
       "id": "kr.learning-relation.2022.middle.eb918c4e883bfbc1eb44",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.910779f80ad80ba9cba7",
       "reason": "수학과 내용 체계표의 도형과 측정 학년군 계열과 개념 의존성을 대조한 [9수03-11] → [9수03-12] 필수 선수 연결이다.",
       "relationKind": "required-prerequisite",
@@ -803,6 +856,7 @@
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.71751084a17945ebbb39",
       "id": "kr.learning-relation.2022.middle.ed3d27359737730c06d0",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.e12061352e1539d22ac5",
       "reason": "직업인의 진로 특성 학습으로 자신의 진로 특성에 대한 인식을 넓힌다.",
       "relationKind": "required-prerequisite",
@@ -814,10 +868,11 @@
       "strength": "required"
     },
     {
-      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 도형과 측정 내용 체계표 p.15",
+      "basis": "교육부 고시 제2022-33호 별책8 수학과 교육과정 도형과 측정 내용 체계표 p.9",
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.c4d31abb02e38f69bf73",
       "id": "kr.learning-relation.2022.middle.effee1913fe38ad90281",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.c450ca225db852a40ba8",
       "reason": "수학과 내용 체계표의 도형과 측정 학년군 계열과 개념 의존성을 대조한 [9수03-14] → [9수03-15] 필수 선수 연결이다.",
       "relationKind": "required-prerequisite",
@@ -833,6 +888,7 @@
       "basisKind": "official-source",
       "dependentTopicId": "kr.topic.2022.middle.e0dcffbbff325daf76e5",
       "id": "kr.learning-relation.2022.middle.f03fe3913458b22e870a",
+      "layer": "official",
       "prerequisiteTopicId": "kr.topic.2022.middle.9ea350c3dcdba72df9e3",
       "reason": "낱말 쓰기에서 어법에 맞는 문장 완성으로 단계화한다.",
       "relationKind": "required-prerequisite",
@@ -845,5 +901,5 @@
     }
   ],
   "recordType": "learningRelations",
-  "releaseId": "kr-2022-middle-v0.5.0-candidate"
+  "releaseId": "kr-2022-middle-v0.6.0-candidate"
 }

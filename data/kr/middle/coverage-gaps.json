@@ -4,9 +4,9 @@
   "recordCount": 2,
   "records": [
     {
-      "description": "중학교 관련 공식 PDF의 문서별 재사용 조건 검토가 완료되지 않았다.",
+      "description": "중학교 관련 공식 PDF의 문서별 재사용 조건 검토를 완료했다. 공공저작물로 재사용 가능하며 원문은 배포하지 않는다.",
       "id": "gap.middle.document-rights-review-pending",
-      "severity": "high",
+      "severity": "low",
       "sourceRefs": [
         "kr-moe-2022-33-annex10",
         "kr-moe-2022-33-annex11",
@@ -25,7 +25,7 @@
         "kr-nec-2026-1-annex1",
         "kr-nec-2026-1-annex3"
       ],
-      "status": "open"
+      "status": "resolved"
     },
     {
       "description": "수학의 공식 선수 관계는 내부 검토되었다. 공식 문서 근거가 있는 다른 과목의 선수 관계를 추가 발굴하는 작업은 남아 있다.",
@@ -36,5 +36,5 @@
     }
   ],
   "recordType": "coverageGaps",
-  "releaseId": "kr-2022-middle-v0.5.0-candidate"
+  "releaseId": "kr-2022-middle-v0.6.0-candidate"
 }

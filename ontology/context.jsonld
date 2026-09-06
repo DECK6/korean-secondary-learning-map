@@ -2,6 +2,7 @@
   "@context": {
     "@version": 1.1,
     "slm": "https://dexa.art/learnmap/secondary/ontology#",
+    "core": "https://dexa.art/learnmap/ontology/k12-core#",
     "res": "https://dexa.art/learnmap/secondary/resource/",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
@@ -45,6 +46,8 @@
     "topicType": "slm:topicType",
     "decompositionKind": "slm:decompositionKind",
     "facetKey": "slm:facetKey",
+    "facetKeyDetail": "slm:facetKeyDetail",
+    "layer": "slm:layer",
     "alignmentKind": "slm:alignmentKind",
     "relationKind": "slm:relationKind",
     "claimStatus": "slm:claimStatus",
@@ -78,6 +81,15 @@
     "stepOrder": {"@id": "slm:stepOrder", "@type": "xsd:integer"},
     "stepKind": "slm:stepKind",
     "severity": "slm:severity",
-    "status": "slm:status"
+    "status": "slm:status",
+    "core:facetKey": {"@id": "core:facetKey", "@type": "@id"},
+    "core:contentKind": {"@id": "core:contentKind", "@type": "@id"},
+    "core:contentSourceLocator": {"@id": "core:contentSourceLocator", "@type": "@id"},
+    "core:layerConcept": {"@id": "core:layerConcept", "@type": "@id"},
+    "core:locatorKind": {"@id": "core:locatorKind", "@type": "@id"},
+    "core:misconception": {"@id": "core:misconception", "@language": "ko"},
+    "core:standardCode": "core:standardCode",
+    "core:printedPage": {"@id": "core:printedPage", "@type": "xsd:integer"},
+    "core:sourceSection": "core:sourceSection"
   }
 }

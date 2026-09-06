@@ -1,4 +1,6 @@
 @prefix slm: <https://dexa.art/learnmap/secondary/ontology#> .
+@prefix core: <https://dexa.art/learnmap/ontology/k12-core#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -55,13 +57,14 @@ slm:TopicShape a sh:NodeShape ;
   sh:property [ sh:path slm:assessmentPrompt ; sh:minCount 1 ] ;
   sh:property [ sh:path slm:hasSource ; sh:minCount 1 ; sh:class slm:SourceDocument ] ;
   sh:property [ sh:path slm:decompositionKind ; sh:maxCount 1 ; sh:in ("standard-core" "subject-facet") ] ;
-  sh:property [ sh:path slm:facetKey ; sh:maxCount 1 ; sh:pattern "^[a-z0-9-]+$" ] .
+  sh:property [ sh:path slm:facetKey ; sh:minCount 1 ; sh:maxCount 1 ; sh:in ("concept" "procedure" "representation" "application" "inquiry" "communication" "reflection" "core") ] ;
+  sh:property [ sh:path slm:facetKeyDetail ; sh:maxCount 1 ; sh:pattern "^[a-z0-9-]+$" ] .
 
 slm:MiddleTopicShape a sh:NodeShape ;
   sh:targetClass slm:MiddleLearningTopic ;
   sh:property [ sh:path slm:schoolLevel ; sh:minCount 1 ; sh:maxCount 1 ; sh:hasValue "middle" ] ;
   sh:property [ sh:path slm:decompositionKind ; sh:minCount 1 ; sh:maxCount 1 ; sh:in ("standard-core" "subject-facet") ] ;
-  sh:property [ sh:path slm:facetKey ; sh:minCount 1 ; sh:maxCount 1 ; sh:pattern "^[a-z0-9-]+$" ] .
+  sh:property [ sh:path slm:facetKeyDetail ; sh:minCount 1 ; sh:maxCount 1 ; sh:pattern "^[a-z0-9-]+$" ] .
 
 slm:ClusterShape a sh:NodeShape ;
   sh:targetClass slm:LearningCluster ;
@@ -77,10 +80,28 @@ slm:LearningRelationShape a sh:NodeShape ;
   sh:property [ sh:path slm:basisKind ; sh:minCount 1 ; sh:maxCount 1 ] ;
   sh:property [ sh:path slm:basis ; sh:minCount 1 ; sh:maxCount 1 ] ;
   sh:property [ sh:path slm:reviewStatus ; sh:minCount 1 ; sh:maxCount 1 ] ;
+  sh:property [ sh:path slm:layer ; sh:minCount 1 ; sh:maxCount 1 ; sh:in ("official" "pedagogical-candidate") ] ;
   sh:sparql [
     sh:message "선수 관계의 양 끝점은 같을 수 없다."@ko ;
     sh:select "PREFIX slm: <https://dexa.art/learnmap/secondary/ontology#> SELECT $this WHERE { $this slm:prerequisiteTopic ?x ; slm:dependentTopic ?x . }"
   ] .
+
+slm:OfficialLearningRelationShape a sh:NodeShape ;
+  sh:targetClass slm:OfficialLearningRelation ;
+  sh:property [ sh:path slm:layer ; sh:minCount 1 ; sh:maxCount 1 ; sh:hasValue "official" ;
+    sh:message "official 층 그래프에는 layer=official 관계만 들어갈 수 있다."@ko ] ;
+  sh:property [ sh:path slm:basisKind ; sh:minCount 1 ; sh:maxCount 1 ; sh:hasValue "official-source" ] ;
+  sh:property [ sh:path slm:relationKind ; sh:minCount 1 ; sh:maxCount 1 ; sh:hasValue "required-prerequisite" ] ;
+  sh:property [ sh:path slm:reviewStatus ; sh:minCount 1 ; sh:maxCount 1 ; sh:in ("internal-reviewed" "subject-expert-reviewed" "field-reviewed") ] ;
+  sh:property [ sh:path slm:hasSource ; sh:minCount 1 ; sh:class slm:SourceDocument ] .
+
+slm:CandidateLearningRelationShape a sh:NodeShape ;
+  sh:targetClass slm:CandidateLearningRelation ;
+  sh:property [ sh:path slm:layer ; sh:minCount 1 ; sh:maxCount 1 ; sh:hasValue "pedagogical-candidate" ] ;
+  sh:property [ sh:path slm:basisKind ; sh:minCount 1 ; sh:maxCount 1 ; sh:in ("official-code-order" "decomposition-order" "repository-authored") ] ;
+  sh:property [ sh:path slm:relationKind ; sh:minCount 1 ; sh:maxCount 1 ; sh:hasValue "recommended-before" ] ;
+  sh:property [ sh:path slm:strength ; sh:minCount 1 ; sh:maxCount 1 ; sh:hasValue "recommended" ] ;
+  sh:property [ sh:path slm:reviewStatus ; sh:minCount 1 ; sh:maxCount 1 ; sh:hasValue "candidate" ] .
 
 slm:TransitionShape a sh:NodeShape ;
   sh:targetClass slm:TransitionAlignment ;
@@ -95,6 +116,13 @@ slm:TransitionShape a sh:NodeShape ;
   sh:property [ sh:path slm:basisKind ; sh:minCount 1 ; sh:maxCount 1 ] ;
   sh:property [ sh:path slm:basis ; sh:minCount 1 ; sh:maxCount 1 ] ;
   sh:property [ sh:path slm:reviewStatus ; sh:minCount 1 ; sh:maxCount 1 ; sh:in ("candidate" "internal-reviewed" "subject-expert-reviewed" "field-reviewed") ] .
+
+slm:CandidateTransitionAlignmentShape a sh:NodeShape ;
+  sh:targetClass slm:CandidateTransitionAlignment ;
+  sh:property [ sh:path slm:layer ; sh:minCount 1 ; sh:maxCount 1 ; sh:hasValue "pedagogical-candidate" ] ;
+  sh:property [ sh:path slm:basisKind ; sh:minCount 1 ; sh:maxCount 1 ; sh:in ("official-code-order" "decomposition-order" "repository-authored") ] ;
+  sh:property [ sh:path slm:relationKind ; sh:minCount 1 ; sh:maxCount 1 ; sh:hasValue "recommended-before" ] ;
+  sh:property [ sh:path slm:reviewStatus ; sh:minCount 1 ; sh:maxCount 1 ; sh:hasValue "candidate" ] .
 
 slm:CourseRelationShape a sh:NodeShape ;
   sh:targetClass slm:CourseRelation ;
@@ -150,4 +178,93 @@ slm:SourceDocumentShape a sh:NodeShape ;
 slm:CoverageGapShape a sh:NodeShape ;
   sh:targetClass slm:CoverageGap ;
   sh:property [ sh:path slm:severity ; sh:minCount 1 ; sh:maxCount 1 ; sh:in ("low" "medium" "high" "critical") ] ;
-  sh:property [ sh:path slm:status ; sh:minCount 1 ; sh:maxCount 1 ; sh:in ("open" "in-progress" "closed" "accepted") ] .
+  sh:property [ sh:path slm:status ; sh:minCount 1 ; sh:maxCount 1 ; sh:in ("open" "in-review" "resolved" "accepted") ] .
+
+## K-12 코어 콘텐츠 셰이프 (온톨로지 0.6.0-candidate)
+## contentKind·misconceptions·contentSourceLocator는 초등 저장소와 공유하는 코어 용어다.
+## 출처 기반 초안은 자기가 읽은 문단을 반드시 지목해야 한다.
+
+core:TopicContentShape a sh:NodeShape ;
+  sh:targetSubjectsOf core:contentKind ;
+  sh:property [
+    sh:path core:contentKind ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:in (
+      <https://dexa.art/learnmap/ontology/k12-core#content-mechanical-derivative>
+      <https://dexa.art/learnmap/ontology/k12-core#content-source-grounded-draft>
+    )
+  ] ;
+  sh:property [ sh:path core:misconception ; sh:datatype rdf:langString ] ;
+  sh:property [ sh:path core:contentSourceLocator ; sh:maxCount 1 ; sh:class core:SourceLocator ] ;
+  sh:or (
+    [ sh:property [
+        sh:path core:contentKind ;
+        sh:hasValue <https://dexa.art/learnmap/ontology/k12-core#content-mechanical-derivative> ] ]
+    [ sh:property [ sh:path core:contentSourceLocator ; sh:minCount 1 ; sh:class core:SourceLocator ] ]
+  ) ;
+  sh:message "출처 기반 초안 주제는 contentSourceLocator를 정확히 하나 가져야 한다."@ko .
+
+core:FacetProjectionShape a sh:NodeShape ;
+  sh:targetSubjectsOf core:facetKey ;
+  sh:property [
+    sh:path core:facetKey ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:in (
+      <https://dexa.art/learnmap/ontology/k12-core#facet-concept>
+      <https://dexa.art/learnmap/ontology/k12-core#facet-procedure>
+      <https://dexa.art/learnmap/ontology/k12-core#facet-representation>
+      <https://dexa.art/learnmap/ontology/k12-core#facet-application>
+      <https://dexa.art/learnmap/ontology/k12-core#facet-inquiry>
+      <https://dexa.art/learnmap/ontology/k12-core#facet-communication>
+      <https://dexa.art/learnmap/ontology/k12-core#facet-reflection>
+      <https://dexa.art/learnmap/ontology/k12-core#facet-core>
+    )
+  ] .
+
+core:LayerProjectionShape a sh:NodeShape ;
+  sh:targetSubjectsOf core:layerConcept ;
+  sh:property [
+    sh:path core:layerConcept ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:in (
+      <https://dexa.art/learnmap/ontology/k12-core#layer-official>
+      <https://dexa.art/learnmap/ontology/k12-core#layer-pedagogical-candidate>
+    )
+  ] .
+
+## 출처 위치 종류. STAS 레코드 위치는 이번 릴리스에서 어휘만 예약한다
+## (2026-09-05 출처 판정: 어디서 읽었는지만 기록하고 본문은 절대 담지 않는다).
+core:SourceLocatorShape a sh:NodeShape ;
+  sh:targetClass core:SourceLocator ;
+  sh:property [
+    sh:path core:locatorKind ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:in (
+      <https://dexa.art/learnmap/ontology/k12-core#locator-printed-page>
+      <https://dexa.art/learnmap/ontology/k12-core#locator-stas-record>
+    )
+  ] ;
+  sh:or (
+    [ sh:property [
+        sh:path core:locatorKind ;
+        sh:hasValue <https://dexa.art/learnmap/ontology/k12-core#locator-printed-page> ] ;
+      sh:property [ sh:path core:printedPage ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:integer ; sh:minInclusive 1 ] ;
+      sh:property [ sh:path core:sourceSection ; sh:minCount 1 ; sh:maxCount 1 ] ;
+      sh:property [ sh:path slm:hasSource ; sh:minCount 1 ; sh:class slm:SourceDocument ] ]
+    [ sh:property [
+        sh:path core:locatorKind ;
+        sh:hasValue <https://dexa.art/learnmap/ontology/k12-core#locator-stas-record> ] ;
+      sh:property [ sh:path core:stasEndpoint ; sh:minCount 1 ; sh:maxCount 1 ] ;
+      sh:property [ sh:path core:stasRecordId ; sh:minCount 1 ; sh:maxCount 1 ] ;
+      sh:property [ sh:path core:collectedAt ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:date ] ;
+      sh:property [ sh:path core:fileSha256 ; sh:minCount 1 ; sh:maxCount 1 ; sh:pattern "^[a-f0-9]{64}$" ] ]
+  ) ;
+  sh:message "STAS 레코드 위치는 endpoint·acvmtStdSeq·수집일·응답 해시를 모두 가져야 한다."@ko .

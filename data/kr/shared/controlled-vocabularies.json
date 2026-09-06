@@ -1,13 +1,13 @@
 {
   "$schema": "../../../schema/controlled-vocabularies.schema.json",
-  "version": "0.4.0-candidate",
+  "version": "0.6.0-candidate",
   "schoolLevels": [
     { "id": "middle", "labelKorean": "중학교", "description": "중학교 1~3학년 교육과정 프로필", "status": "active" },
     { "id": "high", "labelKorean": "고등학교", "description": "고등학교 교육과정 프로필", "status": "active" }
   ],
   "courseCategories": [
-    { "id": "common", "labelKorean": "공통", "description": "공통 교과 또는 공통 과목", "status": "draft" },
-    { "id": "middle-elective", "labelKorean": "중학교 선택 교과", "description": "중학교 선택 교과 범주", "status": "draft" },
+    { "id": "common", "labelKorean": "공통", "description": "공통 교과 또는 공통 과목", "status": "active" },
+    { "id": "middle-elective", "labelKorean": "중학교 선택 교과", "description": "중학교 선택 교과 범주", "status": "active" },
     { "id": "general-elective", "labelKorean": "일반 선택", "description": "고등학교 일반 선택 과목", "status": "active" },
     { "id": "career-elective", "labelKorean": "진로 선택", "description": "고등학교 진로 선택 과목", "status": "active" },
     { "id": "convergence-elective", "labelKorean": "융합 선택", "description": "고등학교 융합 선택 과목", "status": "active" },
@@ -38,6 +38,53 @@
     { "id": "continues", "labelKorean": "계속", "description": "같은 개념 계열이 다음 학교급에서 이어짐", "status": "active" },
     { "id": "deepens", "labelKorean": "심화", "description": "이전 개념을 더 형식적·복합적으로 다룸", "status": "active" },
     { "id": "prepares-for", "labelKorean": "준비", "description": "이후 과목의 배경을 형성", "status": "active" }
+  ],
+  "relationLayers": [
+    { "id": "official", "labelKorean": "공식 층", "description": "공식 문서가 직접 뒷받침하는 선수 관계. 튜터가 ‘먼저 알아야 한다’로 쓴다.", "status": "active" },
+    { "id": "pedagogical-candidate", "labelKorean": "교육적 후보 층", "description": "코드 순서·분해 순서에서 도출한 권장 학습 순서. 튜터가 ‘권장 순서’로만 쓴다.", "status": "active" }
+  ],
+  "basisKinds": [
+    { "id": "official-source", "labelKorean": "공식 출처", "description": "고시 별책의 내용 체계표·성취기준 해설이 직접 뒷받침한다", "status": "active" },
+    { "id": "official-code-order", "labelKorean": "공식 코드 순서", "description": "같은 과목·영역 안에서 공식 성취기준 코드가 인접한다", "status": "active" },
+    { "id": "decomposition-order", "labelKorean": "분해 순서", "description": "한 성취기준을 핵심 주제와 facet 주제로 나눈 저장소 분해 순서다", "status": "active" },
+    { "id": "repository-authored", "labelKorean": "저장소 작성", "description": "저장소가 교육적으로 추론했다", "status": "active" },
+    { "id": "expert-authored", "labelKorean": "전문가 작성", "description": "교과 전문가가 작성했다", "status": "active" }
+  ],
+  "facetKeys": [
+    { "id": "concept", "labelKorean": "개념", "description": "개념·조건·예 구분", "status": "active" },
+    { "id": "procedure", "labelKorean": "절차", "description": "절차·기능·제작 수행", "status": "active" },
+    { "id": "representation", "labelKorean": "표현", "description": "표현·모델링·변환", "status": "active" },
+    { "id": "application", "labelKorean": "적용", "description": "적용·문제 해결", "status": "active" },
+    { "id": "inquiry", "labelKorean": "탐구", "description": "탐구·자료·근거", "status": "active" },
+    { "id": "communication", "labelKorean": "의사소통", "description": "언어 표현·의사소통", "status": "active" },
+    { "id": "reflection", "labelKorean": "성찰", "description": "성찰·태도·전이", "status": "active" },
+    { "id": "core", "labelKorean": "핵심", "description": "성취기준 전체 핵심", "status": "active" }
+  ],
+  "facetKeyMappings": [
+    { "id": "application-evidence", "labelKorean": "사례·자료 적용과 근거 제시", "facetKey": "application" },
+    { "id": "appreciation-reflection", "labelKorean": "감상·비평과 문화 성찰", "facetKey": "reflection" },
+    { "id": "case-judgment", "labelKorean": "도덕적 사례 분석과 근거 판단", "facetKey": "inquiry" },
+    { "id": "communication-production", "labelKorean": "의사소통 표현과 수행", "facetKey": "communication" },
+    { "id": "core", "labelKorean": "성취기준 핵심 주제", "facetKey": "core" },
+    { "id": "critical-reflection", "labelKorean": "비판적 검토와 언어생활 성찰", "facetKey": "reflection" },
+    { "id": "design-problem-solving", "labelKorean": "설계·문제 해결과 안전한 수행", "facetKey": "procedure" },
+    { "id": "dialogue-practice", "labelKorean": "대화·토론과 공동체 실천", "facetKey": "communication" },
+    { "id": "ethical-concept", "labelKorean": "윤리 개념과 가치 관계 이해", "facetKey": "concept" },
+    { "id": "evidence-explanation", "labelKorean": "증거 기반 설명과 적용", "facetKey": "application" },
+    { "id": "evidence-judgment", "labelKorean": "근거 기반 판단과 사회적 적용", "facetKey": "application" },
+    { "id": "exploration-expression", "labelKorean": "조형 탐색과 시각적 표현", "facetKey": "representation" },
+    { "id": "inquiry-data", "labelKorean": "탐구 설계와 자료 해석", "facetKey": "inquiry" },
+    { "id": "language-analysis", "labelKorean": "언어 자료 분석과 의미 구성", "facetKey": "inquiry" },
+    { "id": "participation-reflection", "labelKorean": "참여·협력과 활동 성찰", "facetKey": "reflection" },
+    { "id": "performance-creation", "labelKorean": "연주·창작과 음악적 표현", "facetKey": "procedure" },
+    { "id": "problem-solving-explanation", "labelKorean": "문제 해결과 수학적 설명", "facetKey": "application" },
+    { "id": "production-reflection", "labelKorean": "언어 산출과 의사소통 성찰", "facetKey": "procedure" },
+    { "id": "reception-interaction", "labelKorean": "이해·상호작용과 의미 협상", "facetKey": "communication" },
+    { "id": "reflection-action", "labelKorean": "삶의 성찰과 실천 계획", "facetKey": "reflection" },
+    { "id": "reflection-transfer", "labelKorean": "판단·성찰과 생활 맥락 전이", "facetKey": "reflection" },
+    { "id": "representation-modeling", "labelKorean": "표현·모델링과 수학적 연결", "facetKey": "representation" },
+    { "id": "skill-strategy", "labelKorean": "기능·전략과 안전한 수행", "facetKey": "procedure" },
+    { "id": "source-context", "labelKorean": "자료·맥락 해석과 관점 비교", "facetKey": "inquiry" }
   ],
   "reviewStatuses": [
     { "id": "candidate", "labelKorean": "후보", "description": "검토 전 후보", "status": "active" },

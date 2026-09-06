@@ -1,13 +1,13 @@
 {
-  "version": "0.4.0-candidate",
-  "queryCount": 20,
+  "version": "0.6.0-candidate",
+  "queryCount": 21,
   "results": {
     "scq-01-courses": 783,
     "scq-02-course-standards-topics": 52909,
     "scq-03-standard-alignments": 52909,
-    "scq-04-evidence-prompts": 52909,
-    "scq-05-learning-relations": 564,
-    "scq-06-relation-review": 1068,
+    "scq-04-evidence-prompts": 53089,
+    "scq-05-learning-relations": 4866,
+    "scq-06-relation-review": 8550,
     "scq-07-middle-high-transition": 175,
     "scq-08-course-relations": 39,
     "scq-09-choice-sets": 719,
@@ -19,20 +19,22 @@
     "scq-15-source-locators": 51463,
     "scq-16-independent-status": 115879,
     "scq-17-coverage-gaps": 5,
-    "scq-18-candidate-review-queue": 0,
-    "scq-19-elementary-bridge": 290,
-    "scq-20-no-learner-data": true
+    "scq-18-candidate-review-queue": 7521,
+    "scq-19-elementary-bridge": 3470,
+    "scq-20-no-learner-data": true,
+    "scq-21-k12-core-vocabulary": 10
   },
   "invariants": {
     "scq-01": "course count equals middle+high release course counts",
     "scq-02": "every standard has a materialized domain; middle standards have 2-5 aligned topics and high standards retain one candidate topic",
-    "scq-05": "all middle and high learning relations are materialized with qualified semantics",
+    "scq-05": "both relation layers are materialized with qualified semantics; slm:layer separates official prerequisites from pedagogical candidates",
     "scq-07": "transition count equals the reviewed middle-high bridge release count",
     "scq-09": "choice rows include kind, minimum, optional maximum, course, and basis",
     "scq-10": "three effective high-school credit rules include kind, value, unit, and dates",
     "scq-13": "illustrative pathways return step order, kind, reason, and course or choice set",
     "scq-15": "every official standard locator returns page, attachment, SHA-256, section, and source",
-    "scq-19": "elementary topic IRIs remain canonical and the pinned mathematics bridge returns 19 alignments",
+    "scq-18": "the candidate review queue returns the pedagogical-candidate layer only",
+    "scq-19": "elementary topic IRIs remain canonical; the query returns both bridge layers (official 290, pedagogical-candidate 3,180) and slm:layer separates them",
     "scq-20": true
   }
 }

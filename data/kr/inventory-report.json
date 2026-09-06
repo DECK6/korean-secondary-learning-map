@@ -1,5 +1,6 @@
 {
   "bridges": {
+    "candidateElementaryTransitions": 3180,
     "coverageGaps": 1,
     "elementaryTransitions": 290,
     "reviewRecords": 1,
@@ -7,9 +8,10 @@
   },
   "comparisonBaselines": {
     "elementary": {
-      "clusters": 153,
-      "dataRelease": "kr-full-depth-v0.4",
-      "learningRelations": 1894,
+      "candidateLearningRelations": 1875,
+      "clusters": 152,
+      "dataRelease": "kr-full-depth-v0.5",
+      "learningRelations": 400,
       "repository": "https://github.com/DECK6/korean-elementary-learning-map",
       "standards": 620,
       "topics": 1956,
@@ -20,6 +22,7 @@
   "diagnostics": [],
   "extractedOccurrenceCount": 52478,
   "high": {
+    "candidateLearningRelations": 2353,
     "choiceSets": 33,
     "clusters": 5169,
     "courseRelations": 39,
@@ -27,7 +30,7 @@
     "coverageGaps": 2,
     "creditRules": 3,
     "domains": 5169,
-    "learningRelations": 508,
+    "learningRelations": 469,
     "pathways": 33,
     "reviewRecords": 1,
     "standards": 50749,
@@ -49,6 +52,7 @@
     }
   },
   "middle": {
+    "candidateLearningRelations": 1988,
     "clusters": 149,
     "courses": 24,
     "coverageGaps": 2,
@@ -77,5 +81,5 @@
   },
   "repeatedProfessionalCommonOccurrenceCount": 912,
   "uniqueStandardCount": 51463,
-  "version": "0.5.0-candidate"
+  "version": "0.6.0-candidate"
 }

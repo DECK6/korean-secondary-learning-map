@@ -2,6 +2,7 @@ import { createHash } from 'node:crypto';
 import { mkdir, readFile, rename, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { dirname, join, relative, resolve } from 'node:path';
+import { contentOverlayDirectory, readContentOverlays } from './lib/content-overlay.mjs';
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const profileNames = ['middle', 'high', 'bridges'];
@@ -54,6 +55,7 @@ export async function renderManifests(root = projectRoot) {
     join(root, 'schema/controlled-vocabularies.schema.json'),
     join(root, 'schema/official-source-catalog.schema.json'),
     join(root, 'schema/official-source-receipts.schema.json'),
+    join(root, 'schema/content-overlay.schema.json'),
   ];
 
   for (const profile of profileNames) {
@@ -67,9 +69,12 @@ export async function renderManifests(root = projectRoot) {
       const unsupported = collection.records.find((record) => record.basisKind !== 'official-source');
       if (unsupported) throw new Error(`${profile}/${file} contains non-official relation ${unsupported.id}`);
     }
+    // Content overlays are build inputs, so the release manifest pins their hashes too.
+    const overlayPaths = (await readContentOverlays(contentOverlayDirectory(root, profile))).map((overlay) => overlay.path);
     const inputPaths = [
       releasePath,
       ...Object.values(release.collections).map((file) => join(directory, file)),
+      ...overlayPaths,
       ...sharedPaths,
       ...sharedSchemaPaths,
       join(root, 'schema', profileSchemaFiles[profile]),
@@ -115,7 +120,7 @@ export async function renderManifests(root = projectRoot) {
   components.sort((a, b) => a.path.localeCompare(b.path, 'en'));
   const bundle = {
     formatVersion: '1',
-    bundleId: 'kr-2022-secondary-bundle-v0.5.0-candidate',
+    bundleId: 'kr-2022-secondary-bundle-v0.6.0-candidate',
     profiles: profileMeta,
     components,
   };

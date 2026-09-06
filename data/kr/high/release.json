@@ -1,6 +1,7 @@
 {
   "$schema": "../../../schema/high-profile.schema.json",
   "collections": {
+    "candidateLearningRelations": "learning-relations.candidate.json",
     "choiceSets": "choice-sets.json",
     "clusters": "clusters.json",
     "courseRelations": "course-relations.json",
@@ -16,6 +17,7 @@
     "topics": "topics.json"
   },
   "counts": {
+    "candidateLearningRelations": 2353,
     "choiceSets": 33,
     "clusters": 5169,
     "courseRelations": 39,
@@ -23,7 +25,7 @@
     "coverageGaps": 2,
     "creditRules": 3,
     "domains": 5169,
-    "learningRelations": 508,
+    "learningRelations": 469,
     "pathways": 33,
     "reviewRecords": 1,
     "standards": 50749,
@@ -33,7 +35,7 @@
   "createdDate": "2026-07-13",
   "curriculumVersion": "2022-revised",
   "profile": "high",
-  "releaseId": "kr-2022-high-v0.5.0-candidate",
+  "releaseId": "kr-2022-high-v0.6.0-candidate",
   "rightsStatus": "cleared",
   "schoolLevel": "high",
   "sourceManifest": "../shared/source-manifest.json",

@@ -57,6 +57,11 @@
       <div class="filters compact"><label>교과군<select id="transition-group"><option value="all">전체 교과군</option></select></label><label class="search-label">전이 검색<input id="transition-search" type="search" placeholder="중학교·고등학교 과목"></label></div>
       <div class="list-meta transition-meta"><strong id="transition-result-count" aria-live="polite">공식 전이 관계 0건</strong><span>각 관계에서 근거 페이지와 출처를 확인할 수 있습니다.</span></div>
       <div id="transition-list" class="transition-list"></div>
+
+      <div class="section-heading bridge-heading"><div><p class="eyebrow">ELEMENTARY BRIDGE</p><h2>초등학교에서 중학교로</h2></div><p>공식 문서가 명시한 전이와, 내용 체계표의 영역 연속에서 저장소가 만든 권장(후보) 순서를 층으로 구분해 보여 줍니다.</p></div>
+      <div class="filters compact"><label>층<select id="bridge-layer"><option value="all">두 층 모두</option><option value="official">공식 문서 근거</option><option value="pedagogical-candidate">권장(후보)</option></select></label><label>중학교 과목<select id="bridge-course"><option value="all">전체 과목</option></select></label><label class="search-label">전이 검색<input id="bridge-search" type="search" placeholder="성취기준 코드·영역"></label></div>
+      <div class="list-meta transition-meta"><strong id="bridge-result-count" aria-live="polite">초→중 전이 0건</strong><span id="bridge-layer-note">권장(후보)는 공식 선수 관계가 아니라 저장소의 순서 제안입니다.</span></div>
+      <div id="bridge-list" class="transition-list"></div>
     </section>
 
     <section id="compare" class="panel tab-panel" role="tabpanel" aria-labelledby="tab-compare" hidden>

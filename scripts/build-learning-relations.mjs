@@ -7,12 +7,12 @@ import { officialRelationSpecs } from './lib/official-relation-specs/index.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const checkOnly = process.argv.includes('--check');
-const version = '0.5.0-candidate';
-const elementaryReleaseVersion = 'kr-full-depth-v0.4';
+const version = '0.6.0-candidate';
+const elementaryReleaseVersion = 'kr-full-depth-v0.5';
 const releaseIds = {
-  middle: 'kr-2022-middle-v0.5.0-candidate',
-  high: 'kr-2022-high-v0.5.0-candidate',
-  bridges: 'kr-2022-middle-high-bridge-v0.5.0-candidate',
+  middle: 'kr-2022-middle-v0.6.0-candidate',
+  high: 'kr-2022-high-v0.6.0-candidate',
+  bridges: 'kr-2022-middle-high-bridge-v0.6.0-candidate',
 };
 const natural = new Intl.Collator('ko', { numeric: true, sensitivity: 'base' });
 
@@ -131,12 +131,6 @@ function groupBy(values, keyFor) {
   return groups;
 }
 
-function standardOrder(a, b) {
-  return (a.sourceLocator.pdfPage ?? 0) - (b.sourceLocator.pdfPage ?? 0)
-    || natural.compare(a.code, b.code)
-    || a.id.localeCompare(b.id, 'en');
-}
-
 function oneByLabel(courses, label, profile) {
   const matches = courses.filter((course) => course.labelKorean === label);
   if (matches.length !== 1) throw new Error(`${profile} course label ${JSON.stringify(label)} resolved to ${matches.length} records`);
@@ -180,11 +174,18 @@ function addLearningRelation(map, draft) {
 
 function finalizeLearningRelations(profile, drafts) {
   return [...drafts.values()]
-    .map((draft) => ({
-      id: `kr.learning-relation.2022.${profile}.${hash(`${draft.prerequisiteTopicId}|${draft.dependentTopicId}|${draft.relationKind}|${draft.basis}`)}`,
+    .map(({ idBasis, ...draft }) => ({
+      id: `kr.learning-relation.2022.${profile}.${hash(`${draft.prerequisiteTopicId}|${draft.dependentTopicId}|${draft.relationKind}|${idBasis ?? draft.basis}`)}`,
       ...draft,
     }))
     .sort((a, b) => a.id.localeCompare(b.id, 'en'));
+}
+
+// A spec module that carries `idPageOffset` had its citations corrected from PDF pages to
+// printed pages after its relation ids were minted. Ids stay stable because the hash seed
+// keeps citing the pre-correction page; only the published basis text moves.
+function citationPages(spec, page) {
+  return { page, idPage: page - (spec.idPageOffset ?? 0) };
 }
 
 function makeReviewRecord(profile, targetIds, note) {
@@ -341,6 +342,21 @@ const elementaryTopicIds = new Set(elementaryInventory.topicIds);
 if (elementaryInventory.elementaryReleaseVersion !== elementaryReleaseVersion) {
   throw new Error(`elementary inventory is ${elementaryInventory.elementaryReleaseVersion}; expected ${elementaryReleaseVersion}`);
 }
+const elementaryStandardByTopicId = new Map();
+for (const standard of elementaryInventory.standards) {
+  for (const topicId of standard.topicIds) elementaryStandardByTopicId.set(topicId, standard);
+}
+
+// Contract v1 section 3: a bridge tuple names an elementary topic, but the published prerequisite is
+// always that topic's achievement standard expanded through its representative (facetKey=concept)
+// topic, so every subject picks the same facet. The tuple's own topic id stays the id hash seed, so
+// normalising the facet never remints a relation id.
+function elementaryPrerequisite(sourceTopicId) {
+  if (!elementaryTopicIds.has(sourceTopicId)) throw new Error(`elementary inventory is missing ${sourceTopicId}`);
+  const standard = elementaryStandardByTopicId.get(sourceTopicId);
+  if (!standard) throw new Error(`elementary inventory has no standard for ${sourceTopicId}`);
+  return standard.representativeTopicId;
+}
 
 for (const [label, release] of [['middle', middleRelease], ['high', highRelease], ['bridges', bridgeRelease]]) {
   if (release.releaseId !== releaseIds[label]) {
@@ -381,34 +397,40 @@ function relationSpecContext(spec) {
 const middleDrafts = new Map();
 for (const spec of officialRelationSpecs) {
   const { citation, subjectLabel } = relationSpecContext(spec);
-  for (const [prerequisiteCode, dependentCode, domainLabel, page] of spec.middleRequired) {
+  for (const [prerequisiteCode, dependentCode, domainLabel, citedPage] of spec.middleRequired) {
     const prerequisite = requireStandard(middleStandardByCode, prerequisiteCode, 'middle');
     const dependent = requireStandard(middleStandardByCode, dependentCode, 'middle');
+    const { page, idPage } = citationPages(spec, citedPage);
     addLearningRelation(middleDrafts, {
       dependentTopicId: middleTopicIndexes.coreByStandard.get(dependent.id).id,
       prerequisiteTopicId: middleTopicIndexes.coreByStandard.get(prerequisite.id).id,
+      layer: 'official',
       relationKind: 'required-prerequisite',
       scope: 'same-course',
       strength: 'required',
       reason: `${subjectLabel}과 내용 체계표의 ${domainLabel} 학년군 계열과 개념 의존성을 대조한 ${prerequisite.code} → ${dependent.code} 필수 선수 연결이다.`,
       basisKind: 'official-source',
       basis: `${citation} ${domainLabel} 내용 체계표 p.${page}`,
+      idBasis: `${citation} ${domainLabel} 내용 체계표 p.${idPage}`,
       sourceRefs: [spec.annexId],
       reviewStatus: 'internal-reviewed',
     });
   }
-  for (const [prerequisiteCode, dependentCode, page, reason] of spec.middleCommentaryRequired) {
+  for (const [prerequisiteCode, dependentCode, citedPage, reason] of spec.middleCommentaryRequired) {
     const prerequisite = requireStandard(middleStandardByCode, prerequisiteCode, 'middle');
     const dependent = requireStandard(middleStandardByCode, dependentCode, 'middle');
+    const { page, idPage } = citationPages(spec, citedPage);
     addLearningRelation(middleDrafts, {
       dependentTopicId: middleTopicIndexes.coreByStandard.get(dependent.id).id,
       prerequisiteTopicId: middleTopicIndexes.coreByStandard.get(prerequisite.id).id,
+      layer: 'official',
       relationKind: 'required-prerequisite',
       scope: 'same-course',
       strength: 'required',
       reason,
       basisKind: 'official-source',
       basis: `${citation} 성취기준 해설 p.${page}`,
+      idBasis: `${citation} 성취기준 해설 p.${idPage}`,
       sourceRefs: [spec.annexId],
       reviewStatus: 'internal-reviewed',
     });
@@ -422,23 +444,11 @@ const highCourseRelations = [];
 for (const [fromLabel, toLabel, sourceId, page, basisSummary] of officialHighCourseProgressions) {
   const from = oneByLabel(highCourses, fromLabel, 'high');
   const to = oneByLabel(highCourses, toLabel, 'high');
-  const fromStandards = [...(highStandardsByCourse.get(from.id) ?? [])].sort(standardOrder);
-  const toStandards = [...(highStandardsByCourse.get(to.id) ?? [])].sort(standardOrder);
+  const fromStandards = highStandardsByCourse.get(from.id) ?? [];
+  const toStandards = highStandardsByCourse.get(to.id) ?? [];
   if (!fromStandards.length || !toStandards.length) throw new Error(`course progression has no standards: ${fromLabel} -> ${toLabel}`);
-  const prerequisite = fromStandards.at(-1);
-  const dependent = toStandards[0];
-  addLearningRelation(highDrafts, {
-    dependentTopicId: highTopicIndexes.coreByStandard.get(dependent.id).id,
-    prerequisiteTopicId: highTopicIndexes.coreByStandard.get(prerequisite.id).id,
-    relationKind: 'recommended-before',
-    scope: from.subjectGroupId === to.subjectGroupId ? 'same-subject-group' : 'cross-subject',
-    strength: 'recommended',
-    reason: `${basisSummary}. ${fromLabel}의 마지막 탐색 지점에서 ${toLabel}의 첫 탐색 지점으로 잇되, 공식 이수 조건으로 해석하지 않는다.`,
-    basisKind: 'official-source',
-    basis: `${sourceId} p.${page} 과목 설계의 연계·심화 설명`,
-    sourceRefs: [sourceId],
-    reviewStatus: 'internal-reviewed',
-  });
+  // Course design linkage stays a CourseRelation. The official learning-relation layer only
+  // carries required prerequisites, so this progression is not projected onto topics.
   highCourseRelations.push({
     id: `kr.cr.${hash(`${from.id}|${to.id}|recommended-before|${sourceId}|${page}`, 24)}`,
     fromCourseId: from.id,
@@ -455,34 +465,40 @@ for (const [fromLabel, toLabel, sourceId, page, basisSummary] of officialHighCou
 highCourseRelations.sort((a, b) => a.id.localeCompare(b.id, 'en'));
 for (const spec of officialRelationSpecs) {
   const { citation } = relationSpecContext(spec);
-  for (const [prerequisiteCode, dependentCode, domainLabel, page] of spec.highRequired ?? []) {
+  for (const [prerequisiteCode, dependentCode, domainLabel, citedPage] of spec.highRequired ?? []) {
     const prerequisite = requireStandard(highStandardByCode, prerequisiteCode, 'high');
     const dependent = requireStandard(highStandardByCode, dependentCode, 'high');
+    const { page, idPage } = citationPages(spec, citedPage);
     addLearningRelation(highDrafts, {
       dependentTopicId: highTopicIndexes.coreByStandard.get(dependent.id).id,
       prerequisiteTopicId: highTopicIndexes.coreByStandard.get(prerequisite.id).id,
+      layer: 'official',
       relationKind: 'required-prerequisite',
       scope: prerequisite.courseId === dependent.courseId ? 'same-course' : 'cross-course',
       strength: 'required',
       reason: `${domainLabel} 내용 체계/과목 설계가 ${prerequisite.code} → ${dependent.code} 필수 선수 관계를 직접 뒷받침한다.`,
       basisKind: 'official-source',
       basis: `${citation} 내용 체계/과목 설계 p.${page}`,
+      idBasis: `${citation} 내용 체계/과목 설계 p.${idPage}`,
       sourceRefs: [spec.annexId],
       reviewStatus: 'internal-reviewed',
     });
   }
-  for (const [prerequisiteCode, dependentCode, page, reason] of spec.highCommentaryRequired ?? []) {
+  for (const [prerequisiteCode, dependentCode, citedPage, reason] of spec.highCommentaryRequired ?? []) {
     const prerequisite = requireStandard(highStandardByCode, prerequisiteCode, 'high');
     const dependent = requireStandard(highStandardByCode, dependentCode, 'high');
+    const { page, idPage } = citationPages(spec, citedPage);
     addLearningRelation(highDrafts, {
       dependentTopicId: highTopicIndexes.coreByStandard.get(dependent.id).id,
       prerequisiteTopicId: highTopicIndexes.coreByStandard.get(prerequisite.id).id,
+      layer: 'official',
       relationKind: 'required-prerequisite',
       scope: prerequisite.courseId === dependent.courseId ? 'same-course' : 'cross-course',
       strength: 'required',
       reason,
       basisKind: 'official-source',
       basis: `${citation} 성취기준 해설 p.${page}`,
+      idBasis: `${citation} 성취기준 해설 p.${idPage}`,
       sourceRefs: [spec.annexId],
       reviewStatus: 'internal-reviewed',
     });
@@ -520,14 +536,15 @@ transitionAlignments.sort((a, b) => a.id.localeCompare(b.id, 'en'));
 const elementaryTransitions = [];
 for (const spec of officialRelationSpecs) {
   const { citation, subjectLabel } = relationSpecContext(spec);
-  for (const [prerequisiteTopicId, middleCode, domainLabel, page, conceptLabel] of spec.elementaryToMiddleRequired) {
-    if (!elementaryTopicIds.has(prerequisiteTopicId)) throw new Error(`elementary inventory is missing ${prerequisiteTopicId}`);
+  for (const [sourceTopicId, middleCode, domainLabel, page, conceptLabel] of spec.elementaryToMiddleRequired) {
+    const prerequisiteTopicId = elementaryPrerequisite(sourceTopicId);
     const middleStandard = requireStandard(middleStandardByCode, middleCode, 'middle');
     const dependentTopicId = middleTopicIndexes.coreByStandard.get(middleStandard.id).id;
     elementaryTransitions.push({
-      id: `kr.learning-relation.2022.bridge.elementary.${hash(`${prerequisiteTopicId}|${dependentTopicId}|content-table`)}`,
+      id: `kr.learning-relation.2022.bridge.elementary.${hash(`${sourceTopicId}|${dependentTopicId}|content-table`)}`,
       dependentTopicId,
       prerequisiteTopicId,
+      layer: 'official',
       relationKind: 'required-prerequisite',
       scope: 'cross-school-level',
       strength: 'required',
@@ -538,14 +555,15 @@ for (const spec of officialRelationSpecs) {
       reviewStatus: 'internal-reviewed',
     });
   }
-  for (const [prerequisiteTopicId, middleCode, page, conceptLabel] of spec.elementaryCommentaryRequired) {
-    if (!elementaryTopicIds.has(prerequisiteTopicId)) throw new Error(`elementary inventory is missing ${prerequisiteTopicId}`);
+  for (const [sourceTopicId, middleCode, page, conceptLabel] of spec.elementaryCommentaryRequired) {
+    const prerequisiteTopicId = elementaryPrerequisite(sourceTopicId);
     const middleStandard = requireStandard(middleStandardByCode, middleCode, 'middle');
     const dependentTopicId = middleTopicIndexes.coreByStandard.get(middleStandard.id).id;
     elementaryTransitions.push({
-      id: `kr.learning-relation.2022.bridge.elementary.${hash(`${prerequisiteTopicId}|${dependentTopicId}|commentary`)}`,
+      id: `kr.learning-relation.2022.bridge.elementary.${hash(`${sourceTopicId}|${dependentTopicId}|commentary`)}`,
       dependentTopicId,
       prerequisiteTopicId,
+      layer: 'official',
       relationKind: 'required-prerequisite',
       scope: 'cross-school-level',
       strength: 'required',
@@ -558,6 +576,20 @@ for (const spec of officialRelationSpecs) {
   }
 }
 elementaryTransitions.sort((a, b) => a.id.localeCompare(b.id, 'en'));
+
+// P2-3 coverage indicator: how many middle achievement standards carry an official elementary bridge.
+// build:candidates adds the official+candidate figure to the same block after this build.
+const middleStandardIdByCoreTopic = new Map(
+  middleStandards.map((standard) => [middleTopicIndexes.coreByStandard.get(standard.id).id, standard.id]),
+);
+const officialBridgeStandardIds = new Set(
+  elementaryTransitions.map((relation) => middleStandardIdByCoreTopic.get(relation.dependentTopicId)).filter(Boolean),
+);
+const bridgeStandardCoverage = {
+  middleStandards: middleStandards.length,
+  middleStandardsWithOfficialBridge: officialBridgeStandardIds.size,
+  officialBridgeStandardCoverage: Number((officialBridgeStandardIds.size / middleStandards.length).toFixed(4)),
+};
 
 const middleReviews = [makeReviewRecord(
   'middle',
@@ -664,14 +696,28 @@ const nextInventoryReport = {
   bridges: { ...inventoryReport.bridges, transitionAlignments: transitionAlignments.length, elementaryTransitions: elementaryTransitions.length, reviewRecords: bridgeReviews.length, coverageGaps: bridgeGaps.length },
 };
 
+// build:candidates owns these bridge metrics and writes them after this build; carry them forward so
+// `--check` does not see its own output as stale.
+const previousCoverageReport = await readJson('data/kr/relation-coverage-report.json');
+const candidateOwnedBridgeMetrics = Object.fromEntries(
+  Object.entries(previousCoverageReport.bridges ?? {}).filter(([key]) => [
+    'candidateElementaryTransitions',
+    'mappedElementaryDomainPairs',
+    'middleCoursesWithCandidateBridge',
+    'middleStandardsWithAnyBridge',
+    'anyBridgeStandardCoverage',
+  ].includes(key)),
+);
+
 const relationCoverageReport = {
   version,
   generatedDate: '2026-07-17',
   releaseIds,
   policy: {
-    officialOnly: '학습 관계와 학교급 전이는 공식 문서가 직접 뒷받침하는 official-source 레코드만 공개한다.',
+    officialOnly: '이 보고서는 official 층만 센다. official 층의 학습 관계와 학교급 전이는 공식 문서가 직접 뒷받침하는 official-source 레코드만 담는다.',
     officialRequired: '공식 내용 체계·해설이 직접 뒷받침하는 관계만 required-prerequisite로 기록한다.',
-    courseProgression: '교과 총론이 직접 설명한 연계·심화만 reviewed-recommendation으로 기록한다.',
+    courseProgression: '교과 총론이 직접 설명한 연계·심화만 과목 관계(reviewed-recommendation)로 기록하고 주제 수준으로 투영하지 않는다.',
+    candidateLayer: '코드 순서·분해 순서 관계는 learning-relations.candidate.json(pedagogical-candidate 층)에 있으며 이 보고서에 포함하지 않는다.',
   },
   middle: { relations: relationStats(middleRelations), coverage: middleCoverage, courseCoverage: middleCourseCoverage },
   high: { relations: relationStats(highRelations), courseRelations: relationStats(highCourseRelations), coverage: highCoverage, courseCoverage: highCourseCoverage },
@@ -682,6 +728,8 @@ const relationCoverageReport = {
     elementaryTransitions: elementaryTransitions.length,
     mappedMiddleCourses: new Set(transitionAlignments.flatMap((relation) => relation.fromCourseIds)).size,
     totalMiddleCourses: middleCourses.length,
+    ...bridgeStandardCoverage,
+    ...candidateOwnedBridgeMetrics,
   },
   validation: {
     middleDag: true,

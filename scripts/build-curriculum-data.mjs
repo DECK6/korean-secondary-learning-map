@@ -2,6 +2,8 @@ import { createHash } from 'node:crypto';
 import { readFile, rename, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { dirname, join, resolve } from 'node:path';
+import { buildJoinLexicon, joinBrokenHangul } from './lib/text-normalize.mjs';
+import { applyContentOverlay, contentOverlayDirectory, indexOverlayEntries, readContentOverlays } from './lib/content-overlay.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const catalog = JSON.parse(await readFile(join(root, 'sources/official/source-catalog.json'), 'utf8'));
@@ -305,6 +307,42 @@ function topicType(statement) {
 
 const facet = (key, label, type, alignmentKind = 'supports') => ({ key, label, type, alignmentKind });
 
+// K-12 공통 계약 v1 4절의 공통 facet 8종. 주제 ID는 과목별 24종 키(facetKeyDetail)로 해시하므로
+// 원값을 보존하고, 공통 어휘는 facetKey에 담는다. 사상 근거는
+// docs/decisions/2026-09-05-facet-mapping.md 참조.
+const commonFacetKeyByDetail = {
+  core: 'core',
+  'application-evidence': 'application',
+  'appreciation-reflection': 'reflection',
+  'case-judgment': 'inquiry',
+  'communication-production': 'communication',
+  'critical-reflection': 'reflection',
+  'design-problem-solving': 'procedure',
+  'dialogue-practice': 'communication',
+  'ethical-concept': 'concept',
+  'evidence-explanation': 'application',
+  'evidence-judgment': 'application',
+  'exploration-expression': 'representation',
+  'inquiry-data': 'inquiry',
+  'language-analysis': 'inquiry',
+  'participation-reflection': 'reflection',
+  'performance-creation': 'procedure',
+  'problem-solving-explanation': 'application',
+  'production-reflection': 'procedure',
+  'reception-interaction': 'communication',
+  'reflection-action': 'reflection',
+  'reflection-transfer': 'reflection',
+  'representation-modeling': 'representation',
+  'skill-strategy': 'procedure',
+  'source-context': 'inquiry',
+};
+
+function commonFacetKey(detail) {
+  const key = commonFacetKeyByDetail[detail];
+  if (!key) throw new Error(`no common facet mapping for ${detail}`);
+  return key;
+}
+
 function middleTopicFacets(record) {
   if (record.courseTitle === '국어') return [
     facet('language-analysis', '언어 자료 분석과 의미 구성', 'language'),
@@ -374,6 +412,10 @@ function sourceUrl(source) {
   return `https://ncic.re.kr/inv/org/download.do?year=${year}&seq=${source.attachmentNo}&orgType=ogi4`;
 }
 
+// `pdftotext -layout` wraps Korean lines mid-word, so the extracted text carries
+// intra-word spaces ("추 론하기"). The corpus itself decides which pairs to rejoin.
+const joinLexicon = buildJoinLexicon(await Promise.all(receipts.sources.map((source) => readFile(join(root, source.textFile), 'utf8'))));
+
 const extracted = [];
 const diagnostics = [];
 for (const source of catalog.sources.filter((item) => item.annex >= 5 && item.annex <= 39 && item.annex !== 15)) {
@@ -395,7 +437,7 @@ for (const source of catalog.sources.filter((item) => item.annex >= 5 && item.an
     const category = categoryFor(lines, index, profile, source.annex, sections);
     const courseTitle = courseTitleFor(lines, sections, index, code, source.annex, profile);
     const domain = domainFor(lines, index, code);
-    const statement = statementFor(lines, index, match[2]);
+    const statement = joinBrokenHangul(statementFor(lines, index, match[2]), joinLexicon);
     if (/두 자리 수로 제시|교과목의 2개 글자를 제시/.test(statement)) continue;
     extracted.push({
       code,
@@ -410,7 +452,9 @@ for (const source of catalog.sources.filter((item) => item.annex >= 5 && item.an
       category,
       coursePrefix: coursePrefix(code),
       courseTitle,
+      courseLabel: joinBrokenHangul(courseTitle, joinLexicon),
       domain,
+      domainLabel: joinBrokenHangul(domain, joinLexicon),
       statement,
     });
     count += 1;
@@ -444,14 +488,14 @@ const records = [...byProfileAndCode.values()].sort((a, b) =>
 );
 
 const releases = {
-  middle: 'kr-2022-middle-v0.5.0-candidate',
-  high: 'kr-2022-high-v0.5.0-candidate',
-  bridges: 'kr-2022-middle-high-bridge-v0.5.0-candidate',
+  middle: 'kr-2022-middle-v0.6.0-candidate',
+  high: 'kr-2022-high-v0.6.0-candidate',
+  bridges: 'kr-2022-middle-high-bridge-v0.6.0-candidate',
 };
 
 const sourceManifest = {
   $schema: '../../../schema/source-manifest.schema.json',
-  version: '0.5.0-candidate',
+  version: '0.6.0-candidate',
   accessDate: catalog.catalogVersion,
   sourceCount: catalog.sources.length,
   sources: catalog.sources.map((source) => {
@@ -507,7 +551,7 @@ function buildProfile(profile) {
     if (!courses.has(courseId)) {
       const base = {
         id: courseId,
-        labelKorean: record.courseTitle,
+        labelKorean: record.courseLabel,
         labelEnglish: null,
         schoolLevel: profile,
         subjectGroupId,
@@ -532,12 +576,12 @@ function buildProfile(profile) {
 
     const compactCode = record.code.replace(/\s+/g, '');
     const standardId = `kr.standard.2022.${profile}.${hash(`${courseId}|${compactCode}`, 20)}`;
-    const summary = paraphrase(record.statement, record.domain);
+    const summary = paraphrase(record.statement, record.domainLabel);
     const domainId = `kr.domain.2022.${profile}.${hash(`${courseId}|${record.domain}`, 16)}`;
     if (!domains.has(domainId)) {
       domains.set(domainId, {
         id: domainId,
-        labelKorean: record.domain,
+        labelKorean: record.domainLabel,
         labelEnglish: null,
         schoolLevel: profile,
         courseId,
@@ -552,7 +596,7 @@ function buildProfile(profile) {
     }
     standards.push({
       id: standardId,
-      labelKorean: `${record.courseTitle} ${record.domain} ${record.code}`,
+      labelKorean: `${record.courseLabel} ${record.domainLabel} ${record.code}`,
       labelEnglish: null,
       courseId,
       code: `[${record.code}]`,
@@ -565,7 +609,7 @@ function buildProfile(profile) {
         sha256: record.sourceSha256,
         pdfPage: record.pdfPage,
         printedPage: null,
-        section: `${record.courseTitle} > ${record.domain}`,
+        section: `${record.courseLabel} > ${record.domainLabel}`,
         code: `[${record.code}]`,
       },
       officialTextIncluded: false,
@@ -578,17 +622,18 @@ function buildProfile(profile) {
     const topicId = `kr.topic.2022.${profile}.${hash(standardId, 20)}`;
     const generatedTopics = [{
       id: topicId,
-      labelKorean: `${record.courseTitle} — ${summary}`,
+      labelKorean: `${record.courseLabel} — ${summary}`,
       labelEnglish: null,
       schoolLevel: profile,
       courseIds: [courseId],
       domainId,
       types: [topicType(record.statement)],
-      description: `${record.courseTitle}의 ${record.domain} 영역에서 ${summary}를 다루는 세부 학습 주제다.`,
+      description: `${record.courseLabel}의 ${record.domainLabel} 영역에서 ${summary}를 다루는 세부 학습 주제다.`,
       evidence: [`학습자가 ${summary}와 관련된 개념, 판단 근거 또는 수행 과정을 자신의 말이나 결과물로 보여 준다.`],
       assessmentPrompts: [`${summary}와 관련된 과제나 사례를 제시하고, 학습자가 해결 과정과 근거를 설명하거나 수행하게 한다.`],
+      contentKind: 'mechanical-derivative',
       standardAlignments: [{ standardId, alignmentKind: 'supports', basis: 'official-standard-derived-topic-v2' }],
-      ...(profile === 'middle' ? { decompositionKind: 'standard-core', facetKey: 'core' } : {}),
+      ...(profile === 'middle' ? { decompositionKind: 'standard-core', facetKey: 'core', facetKeyDetail: 'core' } : { facetKey: 'core' }),
       sourceRefs: [...record.sourceIds].sort(),
       verificationStatus: 'public-doc-derived',
       reviewStatus: 'candidate',
@@ -598,18 +643,20 @@ function buildProfile(profile) {
       for (const facetRecord of middleTopicFacets(record)) {
         generatedTopics.push({
           id: `kr.topic.2022.middle.${hash(`${standardId}|${facetRecord.key}`, 20)}`,
-          labelKorean: `${record.courseTitle} — ${summary} — ${facetRecord.label}`,
+          labelKorean: `${record.courseLabel} — ${summary} — ${facetRecord.label}`,
           labelEnglish: null,
           schoolLevel: 'middle',
           courseIds: [courseId],
           domainId,
           types: [facetRecord.type],
-          description: `${record.courseTitle}의 ${record.domain} 영역에서 ${summary}를 ‘${facetRecord.label}’ 관점으로 분해한 세부 학습 주제 후보다.`,
+          description: `${record.courseLabel}의 ${record.domainLabel} 영역에서 ${summary}를 ‘${facetRecord.label}’ 관점으로 분해한 세부 학습 주제 후보다.`,
           evidence: [facetEvidence(summary, facetRecord)],
           assessmentPrompts: [facetPrompt(summary, facetRecord)],
+          contentKind: 'mechanical-derivative',
           standardAlignments: [{ standardId, alignmentKind: facetRecord.alignmentKind, basis: 'middle-subject-facet-decomposition-v1' }],
           decompositionKind: 'subject-facet',
-          facetKey: facetRecord.key,
+          facetKey: commonFacetKey(facetRecord.key),
+          facetKeyDetail: facetRecord.key,
           sourceRefs: [...record.sourceIds].sort(),
           verificationStatus: 'public-doc-derived',
           reviewStatus: 'candidate',
@@ -623,12 +670,12 @@ function buildProfile(profile) {
     if (!clustersByKey.has(clusterKey)) {
       clustersByKey.set(clusterKey, {
         id: `kr.cluster.2022.${profile}.${hash(clusterKey, 18)}`,
-        labelKorean: `${record.courseTitle} — ${record.domain}`,
+        labelKorean: `${record.courseLabel} — ${record.domainLabel}`,
         labelEnglish: null,
         courseId,
         domainId,
         topicIds: [],
-        summary: `${record.courseTitle}의 ${record.domain} 성취기준과 세부 주제를 묶은 학습 클러스터다.`,
+        summary: `${record.courseLabel}의 ${record.domainLabel} 성취기준과 세부 주제를 묶은 학습 클러스터다.`,
         sourceRefs: [...record.sourceIds].sort(),
         verificationStatus: 'public-doc-derived',
         reviewStatus: 'candidate',
@@ -636,6 +683,15 @@ function buildProfile(profile) {
       });
     }
     clustersByKey.get(clusterKey).topicIds.push(...generatedTopics.map((topic) => topic.id));
+  }
+
+  const overlay = contentOverlays[profile];
+  if (overlay) {
+    const unused = new Set(overlay.entries.keys());
+    for (const topic of topics) {
+      if (applyContentOverlay(topic, overlay.entries.get(topic.id))) unused.delete(topic.id);
+    }
+    if (unused.size) throw new Error(`data/kr/${profile}/content: ${unused.size} overlay entries reference unknown topics (${[...unused].slice(0, 3).join(', ')})`);
   }
 
   const learningRelations = [];
@@ -649,6 +705,15 @@ function buildProfile(profile) {
     clusters: [...clustersByKey.values()].map((cluster) => ({ ...cluster, topicIds: cluster.topicIds.sort() })).sort((a, b) => a.id.localeCompare(b.id, 'en')),
     learningRelations: learningRelations.sort((a, b) => a.id.localeCompare(b.id, 'en')),
   };
+}
+
+// 주제 콘텐츠 오버레이(P3-2). 파일이 없으면 기계적 템플릿을 그대로 둔다.
+const contentOverlays = {};
+for (const profile of ['middle', 'high']) {
+  const documents = await readContentOverlays(contentOverlayDirectory(root, profile));
+  const { entries, errors } = indexOverlayEntries(documents);
+  if (errors.length) throw new Error(errors.join('\n'));
+  contentOverlays[profile] = { documents, entries };
 }
 
 const middle = buildProfile('middle');
@@ -773,7 +838,7 @@ const middleCollections = {
   learningRelations: middle.learningRelations,
   reviewRecords: [],
   coverageGaps: [
-    { id: 'gap.middle.document-rights-review-pending', description: '중학교 관련 공식 PDF의 문서별 재사용 조건 검토가 완료되지 않았다.', severity: 'high', status: 'open', sourceRefs: catalog.sources.filter((source) => source.profileScopes.includes('middle')).map((source) => source.id).sort() },
+    { id: 'gap.middle.document-rights-review-pending', description: '중학교 관련 공식 PDF의 문서별 재사용 조건 검토를 완료했다. 공공저작물로 재사용 가능하며 원문은 배포하지 않는다.', severity: 'low', status: 'resolved', sourceRefs: catalog.sources.filter((source) => source.profileScopes.includes('middle')).map((source) => source.id).sort() },
     { id: 'gap.middle.subject-expert-review-pending', description: '세부 주제는 자동 생성 후보이며 선수 관계는 근거 없는 자동 생성을 중단했다. 교과 전문가와 학교 현장 검토가 필요하다.', severity: 'high', status: 'open', sourceRefs: [] },
   ],
 };
@@ -886,18 +951,19 @@ function highScopeSummary(scope) {
 }
 
 await atomicJson(join(root, 'data/kr/inventory-report.json'), {
-  version: '0.5.0-candidate',
+  version: '0.6.0-candidate',
   extractedOccurrenceCount: extracted.length,
   repeatedProfessionalCommonOccurrenceCount,
   uniqueStandardCount: records.length,
   comparisonBaselines: {
     elementary: {
       repository: 'https://github.com/DECK6/korean-elementary-learning-map',
-      dataRelease: 'kr-full-depth-v0.4',
+      dataRelease: 'kr-full-depth-v0.5',
       standards: 620,
       topics: 1956,
-      clusters: 153,
-      learningRelations: 1894,
+      clusters: 152,
+      learningRelations: 400,
+      candidateLearningRelations: 1875,
       topicsPerStandard: 1956 / 620,
     },
   },
@@ -923,4 +989,5 @@ await atomicJson(join(root, 'data/kr/inventory-report.json'), {
   diagnostics,
 });
 
-console.log(`curriculum build passed: ${middle.standards.length} middle standards, ${high.standards.length} high standards, ${transitionAlignments.length} transitions, ${diagnostics.length} diagnostics`);
+const overlayEntryCount = Object.values(contentOverlays).reduce((total, overlay) => total + overlay.entries.size, 0);
+console.log(`curriculum build passed: ${middle.standards.length} middle standards, ${high.standards.length} high standards, ${transitionAlignments.length} transitions, ${overlayEntryCount} content overlay entries, ${diagnostics.length} diagnostics`);

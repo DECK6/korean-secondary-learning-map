@@ -44,6 +44,7 @@
             "topics",
             "clusters",
             "learningRelations",
+            "candidateLearningRelations",
             "reviewRecords",
             "coverageGaps"
           ],
@@ -55,6 +56,7 @@
             "topics": { "const": "topics.json" },
             "clusters": { "const": "clusters.json" },
             "learningRelations": { "const": "learning-relations.json" },
+            "candidateLearningRelations": { "const": "learning-relations.candidate.json" },
             "reviewRecords": { "const": "review-records.json" },
             "coverageGaps": { "const": "coverage-gaps.json" }
           },
@@ -70,6 +72,7 @@
             "topics",
             "clusters",
             "learningRelations",
+            "candidateLearningRelations",
             "reviewRecords",
             "coverageGaps"
           ],
@@ -81,6 +84,7 @@
             "topics": { "type": "integer", "minimum": 0 },
             "clusters": { "type": "integer", "minimum": 0 },
             "learningRelations": { "type": "integer", "minimum": 0 },
+            "candidateLearningRelations": { "type": "integer", "minimum": 0 },
             "reviewRecords": { "type": "integer", "minimum": 0 },
             "coverageGaps": { "type": "integer", "minimum": 0 }
           },
@@ -159,7 +163,7 @@
         { "$ref": "core.schema.json#/$defs/baseRecord" },
         {
           "type": "object",
-          "required": ["schoolLevel", "courseIds", "domainId", "types", "description", "evidence", "assessmentPrompts", "standardAlignments", "decompositionKind", "facetKey"],
+          "required": ["schoolLevel", "courseIds", "domainId", "types", "description", "evidence", "assessmentPrompts", "contentKind", "standardAlignments", "decompositionKind", "facetKey", "facetKeyDetail"],
           "properties": {
             "schoolLevel": { "const": "middle" },
             "courseIds": {
@@ -178,8 +182,12 @@
             "description": { "type": "string", "minLength": 1 },
             "evidence": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
             "assessmentPrompts": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+            "contentKind": { "$ref": "core.schema.json#/$defs/contentKind" },
+            "misconceptions": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+            "contentSourceLocator": { "$ref": "core.schema.json#/$defs/sourceLocator" },
             "decompositionKind": { "enum": ["standard-core", "subject-facet"] },
-            "facetKey": { "type": "string", "minLength": 1, "pattern": "^[a-z0-9-]+$" },
+            "facetKey": { "$ref": "core.schema.json#/$defs/facetKey" },
+            "facetKeyDetail": { "type": "string", "minLength": 1, "pattern": "^[a-z0-9-]+$" },
             "standardAlignments": {
               "type": "array",
               "minItems": 1,
@@ -198,11 +206,20 @@
           "allOf": [
             {
               "if": { "properties": { "decompositionKind": { "const": "standard-core" } } },
-              "then": { "properties": { "facetKey": { "const": "core" } } }
+              "then": { "properties": { "facetKey": { "const": "core" }, "facetKeyDetail": { "const": "core" } } }
             },
             {
               "if": { "properties": { "decompositionKind": { "const": "subject-facet" } } },
-              "then": { "properties": { "facetKey": { "not": { "const": "core" } } } }
+              "then": {
+                "properties": {
+                  "facetKey": { "not": { "const": "core" } },
+                  "facetKeyDetail": { "not": { "const": "core" } }
+                }
+              }
+            },
+            {
+              "if": { "required": ["contentKind"], "properties": { "contentKind": { "const": "source-grounded-draft" } } },
+              "then": { "required": ["contentSourceLocator"], "properties": { "contentSourceLocator": { "$ref": "core.schema.json#/$defs/sourceLocator" } } }
             }
           ]
         }
@@ -230,12 +247,14 @@
       ],
       "unevaluatedProperties": false
     },
-    "learningRelation": {
+    "candidateLearningRelation": {
       "type": "object",
+      "description": "K-12 공통 계약 v1의 pedagogical-candidate 층. 공식 문서가 명시한 선수 관계가 아니라 코드 순서·분해 순서에서 도출한 권장 학습 순서다.",
       "required": [
         "id",
         "dependentTopicId",
         "prerequisiteTopicId",
+        "layer",
         "relationKind",
         "scope",
         "strength",
@@ -249,6 +268,39 @@
         "id": { "$ref": "core.schema.json#/$defs/stableId" },
         "dependentTopicId": { "$ref": "core.schema.json#/$defs/stableId" },
         "prerequisiteTopicId": { "$ref": "core.schema.json#/$defs/stableId" },
+        "layer": { "const": "pedagogical-candidate" },
+        "relationKind": { "const": "recommended-before" },
+        "scope": { "enum": ["same-standard", "same-domain", "same-course", "same-subject-group"] },
+        "strength": { "const": "recommended" },
+        "reason": { "type": "string", "minLength": 1 },
+        "basisKind": { "enum": ["official-code-order", "decomposition-order", "repository-authored"] },
+        "basis": { "type": "string", "minLength": 1 },
+        "sourceRefs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "core.schema.json#/$defs/sourceRef" } },
+        "reviewStatus": { "const": "candidate" }
+      },
+      "additionalProperties": false
+    },
+    "learningRelation": {
+      "type": "object",
+      "required": [
+        "id",
+        "dependentTopicId",
+        "prerequisiteTopicId",
+        "layer",
+        "relationKind",
+        "scope",
+        "strength",
+        "reason",
+        "basisKind",
+        "basis",
+        "sourceRefs",
+        "reviewStatus"
+      ],
+      "properties": {
+        "id": { "$ref": "core.schema.json#/$defs/stableId" },
+        "dependentTopicId": { "$ref": "core.schema.json#/$defs/stableId" },
+        "prerequisiteTopicId": { "$ref": "core.schema.json#/$defs/stableId" },
+        "layer": { "const": "official" },
         "relationKind": { "enum": ["required-prerequisite", "recommended-before"] },
         "scope": { "enum": ["same-course", "same-subject-group", "cross-subject", "cross-school-level"] },
         "strength": { "enum": ["required", "recommended"] },
@@ -311,6 +363,13 @@
       "allOf": [
         { "$ref": "core.schema.json#/$defs/collectionEnvelopeBase" },
         { "properties": { "profile": { "const": "middle" }, "recordType": { "const": "clusters" }, "records": { "items": { "$ref": "#/$defs/cluster" } } } }
+      ],
+      "unevaluatedProperties": false
+    },
+    "candidateLearningRelationCollection": {
+      "allOf": [
+        { "$ref": "core.schema.json#/$defs/collectionEnvelopeBase" },
+        { "properties": { "profile": { "const": "middle" }, "recordType": { "const": "candidateLearningRelations" }, "records": { "items": { "$ref": "#/$defs/candidateLearningRelation" } } } }
       ],
       "unevaluatedProperties": false
     },

@@ -41,6 +41,37 @@
         "deprecated"
       ]
     },
+    "relationLayer": {
+      "enum": ["official", "pedagogical-candidate"],
+      "description": "K-12 공통 계약 v1의 관계 2층. official은 공식 문서가 직접 뒷받침하는 선수 관계, pedagogical-candidate는 코드 순서·분해 순서로 만든 권장 순서다."
+    },
+    "facetKey": {
+      "enum": [
+        "concept",
+        "procedure",
+        "representation",
+        "application",
+        "inquiry",
+        "communication",
+        "reflection",
+        "core"
+      ],
+      "description": "K-12 공통 facet 8종. 중학교 주제의 과목별 24종 원값은 facetKeyDetail에 보존한다."
+    },
+    "basisKind": {
+      "enum": [
+        "official-source",
+        "official-code-order",
+        "decomposition-order",
+        "repository-authored",
+        "expert-authored"
+      ],
+      "description": "관계 근거의 종류. official 층 파일은 official-source만 허용한다."
+    },
+    "contentKind": {
+      "enum": ["mechanical-derivative", "source-grounded-draft"],
+      "description": "주제 evidence·assessmentPrompts의 출처. mechanical-derivative는 성취기준 요약을 치환한 템플릿, source-grounded-draft는 data/kr/<level>/content 오버레이가 대체한 출처 기반 초안이다."
+    },
     "rightsStatus": {
       "enum": ["hold", "needs-document-level-review", "cleared", "not-applicable"]
     },

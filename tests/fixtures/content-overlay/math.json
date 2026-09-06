@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schema/content-overlay.schema.json",
+  "contentKind": "source-grounded-draft",
+  "subjectKorean": "수학",
+  "authoredAt": "2026-09-05",
+  "sourceRefs": ["kr-moe-2022-33-annex8"],
+  "note": "테스트 픽스처. 실제 콘텐츠가 아니라 병합·검증 경로를 확인하는 표본이다.",
+  "entries": {
+    "kr.topic.2022.middle.0180f61b656c5de360d0": {
+      "evidence": [
+        "부등식의 성질을 이유로 들어 이항과 양변 나눗셈을 정당화하고, 해집합을 수직선 위에 나타낸다.",
+        "생활 속 조건을 부등식으로 세우고, 구한 해가 문제 상황에서 뜻하는 범위를 말로 설명한다."
+      ],
+      "assessmentPrompts": [
+        "음수로 나누는 단계가 들어 있는 문제를 주고, 부등호 방향을 바꾼 까닭을 성질로 설명하며 해를 수직선에 표시하게 한다."
+      ],
+      "misconceptions": [
+        "음수를 곱하거나 나눌 때 부등호 방향을 그대로 두는 오류",
+        "해를 하나의 값으로만 답하고 범위로 답하지 않는 오류"
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex8",
+        "printedPage": 23,
+        "section": "성취기준 해설"
+      }
+    }
+  }
+}

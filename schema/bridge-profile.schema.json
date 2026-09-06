@@ -81,6 +81,9 @@
             },
             "elementaryTransitions": {
               "const": "elementary-transitions.json"
+            },
+            "candidateElementaryTransitions": {
+              "const": "elementary-transitions.candidate.json"
             }
           },
           "additionalProperties": false
@@ -106,6 +109,10 @@
               "minimum": 0
             },
             "elementaryTransitions": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "candidateElementaryTransitions": {
               "type": "integer",
               "minimum": 0
             }
@@ -294,6 +301,7 @@
         "id",
         "dependentTopicId",
         "prerequisiteTopicId",
+        "layer",
         "relationKind",
         "scope",
         "strength",
@@ -312,6 +320,9 @@
         },
         "prerequisiteTopicId": {
           "$ref": "core.schema.json#/$defs/elementaryTopicId"
+        },
+        "layer": {
+          "const": "official"
         },
         "relationKind": {
           "enum": [
@@ -374,6 +385,104 @@
       ],
       "additionalProperties": false,
       "description": "초등(korean-elementary-learning-map) 토픽을 선수로 갖는 중학교 토픽의 학교급 간 학습 관계. prerequisiteTopicId는 elementary-topic-inventory.json에 핀된 초등 토픽 ID다."
+    },
+    "candidateElementaryTransition": {
+      "type": "object",
+      "description": "K-12 공통 계약 v1의 pedagogical-candidate 층 초→중 전이. 공식 문서가 명시한 선수 관계가 아니라 내용 체계표의 영역 연속(R-DOMAIN-CONTINUITY)에서 도출한 권장 학습 순서다.",
+      "required": [
+        "id",
+        "dependentTopicId",
+        "prerequisiteTopicId",
+        "layer",
+        "relationKind",
+        "scope",
+        "strength",
+        "reason",
+        "basisKind",
+        "basis",
+        "sourceRefs",
+        "reviewStatus"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "core.schema.json#/$defs/stableId"
+        },
+        "dependentTopicId": {
+          "$ref": "core.schema.json#/$defs/stableId"
+        },
+        "prerequisiteTopicId": {
+          "$ref": "core.schema.json#/$defs/elementaryTopicId"
+        },
+        "layer": {
+          "const": "pedagogical-candidate"
+        },
+        "relationKind": {
+          "const": "recommended-before"
+        },
+        "scope": {
+          "const": "cross-school-level"
+        },
+        "strength": {
+          "const": "recommended"
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        },
+        "basisKind": {
+          "enum": [
+            "official-code-order",
+            "decomposition-order",
+            "repository-authored"
+          ]
+        },
+        "basis": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sourceRefs": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "core.schema.json#/$defs/sourceRef"
+          }
+        },
+        "reviewStatus": {
+          "const": "candidate"
+        }
+      },
+      "additionalProperties": false
+    },
+    "candidateElementaryTransitionCollection": {
+      "allOf": [
+        {
+          "$ref": "core.schema.json#/$defs/collectionEnvelopeBase"
+        },
+        {
+          "properties": {
+            "profile": {
+              "const": "bridges"
+            },
+            "recordType": {
+              "const": "candidateElementaryTransitions"
+            },
+            "elementaryReleaseVersion": {
+              "type": "string",
+              "minLength": 1
+            },
+            "records": {
+              "items": {
+                "$ref": "#/$defs/candidateElementaryTransition"
+              }
+            }
+          },
+          "required": [
+            "elementaryReleaseVersion"
+          ]
+        }
+      ],
+      "unevaluatedProperties": false
     },
     "elementaryTransitionCollection": {
       "allOf": [

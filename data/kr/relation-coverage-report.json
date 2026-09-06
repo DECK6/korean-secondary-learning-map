@@ -1,8 +1,16 @@
 {
   "bridges": {
+    "anyBridgeStandardCoverage": 0.6261,
+    "candidateElementaryTransitions": 3180,
     "courseLevelTransitions": 0,
     "elementaryTransitions": 290,
+    "mappedElementaryDomainPairs": 57,
     "mappedMiddleCourses": 10,
+    "middleCoursesWithCandidateBridge": 10,
+    "middleStandards": 714,
+    "middleStandardsWithAnyBridge": 447,
+    "middleStandardsWithOfficialBridge": 259,
+    "officialBridgeStandardCoverage": 0.3627,
     "topicLevelTransitions": 175,
     "totalMiddleCourses": 24,
     "transitionAlignments": 175
@@ -213,7 +221,7 @@
           "courseId": "kr.course.2022.high.292f890cfcc63417",
           "courseLabel": "고급 체육 전공 실기",
           "hasOfficialRelations": true,
-          "relationCount": 5
+          "relationCount": 4
         },
         {
           "courseId": "kr.course.2022.high.706bf7c1454169b3",
@@ -303,37 +311,37 @@
           "courseId": "kr.course.2022.high.4166f628015541ac",
           "courseLabel": "공통국어1",
           "hasOfficialRelations": true,
-          "relationCount": 3
+          "relationCount": 2
         },
         {
           "courseId": "kr.course.2022.high.08a52bc2723f8254",
           "courseLabel": "공통국어2",
           "hasOfficialRelations": true,
-          "relationCount": 11
+          "relationCount": 6
         },
         {
           "courseId": "kr.course.2022.high.c5134bb916edf899",
           "courseLabel": "공통수학1",
           "hasOfficialRelations": true,
-          "relationCount": 4
+          "relationCount": 3
         },
         {
           "courseId": "kr.course.2022.high.f699e06d5f857844",
           "courseLabel": "공통수학2",
           "hasOfficialRelations": true,
-          "relationCount": 10
+          "relationCount": 5
         },
         {
           "courseId": "kr.course.2022.high.1aa7a52049208785",
           "courseLabel": "공통영어1",
           "hasOfficialRelations": true,
-          "relationCount": 2
+          "relationCount": 1
         },
         {
           "courseId": "kr.course.2022.high.b500bfc2d692a67a",
           "courseLabel": "공통영어2",
           "hasOfficialRelations": true,
-          "relationCount": 8
+          "relationCount": 4
         },
         {
           "courseId": "kr.course.2022.high.69a2557a68909b72",
@@ -357,13 +365,13 @@
           "courseId": "kr.course.2022.high.405980f16b59bcfe",
           "courseLabel": "과학탐구실험1",
           "hasOfficialRelations": true,
-          "relationCount": 2
+          "relationCount": 1
         },
         {
           "courseId": "kr.course.2022.high.650024939bd22742",
           "courseLabel": "과학탐구실험2",
           "hasOfficialRelations": true,
-          "relationCount": 2
+          "relationCount": 1
         },
         {
           "courseId": "kr.course.2022.high.6134c42b048dbc5f",
@@ -597,31 +605,31 @@
           "courseId": "kr.course.2022.high.f0d7204a23c5c159",
           "courseLabel": "기본수학1",
           "hasOfficialRelations": true,
-          "relationCount": 2
+          "relationCount": 1
         },
         {
           "courseId": "kr.course.2022.high.8fda79d3e68f95aa",
           "courseLabel": "기본수학2",
           "hasOfficialRelations": true,
-          "relationCount": 2
+          "relationCount": 1
         },
         {
           "courseId": "kr.course.2022.high.1a2a0f41692de8e3",
           "courseLabel": "기본영어1",
           "hasOfficialRelations": true,
-          "relationCount": 2
+          "relationCount": 1
         },
         {
           "courseId": "kr.course.2022.high.04c2bef80f49173a",
           "courseLabel": "기본영어2",
           "hasOfficialRelations": true,
-          "relationCount": 2
+          "relationCount": 1
         },
         {
           "courseId": "kr.course.2022.high.555fee91e0f5a8df",
           "courseLabel": "기술⋅가정",
           "hasOfficialRelations": true,
-          "relationCount": 12
+          "relationCount": 6
         },
         {
           "courseId": "kr.course.2022.high.57f2d4ebbac2b0d2",
@@ -657,13 +665,13 @@
           "courseId": "kr.course.2022.high.b1fea654f7356128",
           "courseLabel": "기초 체육 전공 실기",
           "hasOfficialRelations": true,
-          "relationCount": 5
+          "relationCount": 4
         },
         {
           "courseId": "kr.course.2022.high.618d9440455dea57",
           "courseLabel": "기하",
           "hasOfficialRelations": true,
-          "relationCount": 3
+          "relationCount": 2
         },
         {
           "courseId": "kr.course.2022.high.d44038d624b2c0e8",
@@ -885,7 +893,7 @@
           "courseId": "kr.course.2022.high.c792f480cf5de7d8",
           "courseLabel": "대수",
           "hasOfficialRelations": true,
-          "relationCount": 3
+          "relationCount": 2
         },
         {
           "courseId": "kr.course.2022.high.0ed39856d2026b91",
@@ -939,7 +947,7 @@
           "courseId": "kr.course.2022.high.e25a4f5a23afbd53",
           "courseLabel": "독서와 작문",
           "hasOfficialRelations": true,
-          "relationCount": 2
+          "relationCount": 1
         },
         {
           "courseId": "kr.course.2022.high.24379bf8c674afe5",
@@ -1101,7 +1109,7 @@
           "courseId": "kr.course.2022.high.3f8e42a8e51cf11d",
           "courseLabel": "로봇과 공학세계",
           "hasOfficialRelations": true,
-          "relationCount": 4
+          "relationCount": 3
         },
         {
           "courseId": "kr.course.2022.high.e8b558b6f8a41e3a",
@@ -1239,7 +1247,7 @@
           "courseId": "kr.course.2022.high.3d6576f4f53fd651",
           "courseLabel": "문학",
           "hasOfficialRelations": true,
-          "relationCount": 2
+          "relationCount": 1
         },
         {
           "courseId": "kr.course.2022.high.ee57fe51c50463ee",
@@ -1275,7 +1283,7 @@
           "courseId": "kr.course.2022.high.a3e0712414844bb3",
           "courseLabel": "물리학",
           "hasOfficialRelations": true,
-          "relationCount": 9
+          "relationCount": 6
         },
         {
           "courseId": "kr.course.2022.high.3e0c36e1e3ce0728",
@@ -1287,7 +1295,7 @@
           "courseId": "kr.course.2022.high.ccdce9a9cbfbe8be",
           "courseLabel": "물질과 에너지",
           "hasOfficialRelations": true,
-          "relationCount": 2
+          "relationCount": 1
         },
         {
           "courseId": "kr.course.2022.high.13e453c37845e746",
@@ -1371,7 +1379,7 @@
           "courseId": "kr.course.2022.high.40c49396f0b4120a",
           "courseLabel": "미적분Ⅰ",
           "hasOfficialRelations": true,
-          "relationCount": 2
+          "relationCount": 1
         },
         {
           "courseId": "kr.course.2022.high.f2f37c909b8de62e",
@@ -1815,7 +1823,7 @@
           "courseId": "kr.course.2022.high.e4000a151f61fc2d",
           "courseLabel": "생명과학",
           "hasOfficialRelations": true,
-          "relationCount": 6
+          "relationCount": 3
         },
         {
           "courseId": "kr.course.2022.high.702213fc0dd545f9",
@@ -1827,7 +1835,7 @@
           "courseId": "kr.course.2022.high.92ec69a3474b6737",
           "courseLabel": "생물의 유전",
           "hasOfficialRelations": true,
-          "relationCount": 2
+          "relationCount": 1
         },
         {
           "courseId": "kr.course.2022.high.f089a356a4c64c4b",
@@ -1839,7 +1847,7 @@
           "courseId": "kr.course.2022.high.646724eed0ea6def",
           "courseLabel": "생애 설계와 자립",
           "hasOfficialRelations": true,
-          "relationCount": 2
+          "relationCount": 1
         },
         {
           "courseId": "kr.course.2022.high.1a3cceb94fcda565",
@@ -1857,7 +1865,7 @@
           "courseId": "kr.course.2022.high.64bc8da5e0581507",
           "courseLabel": "생활과학 탐구",
           "hasOfficialRelations": true,
-          "relationCount": 2
+          "relationCount": 1
         },
         {
           "courseId": "kr.course.2022.high.fd552c9b1f090621",
@@ -2043,7 +2051,7 @@
           "courseId": "kr.course.2022.high.9259e0722898177b",
           "courseLabel": "세포와 물질대사",
           "hasOfficialRelations": true,
-          "relationCount": 2
+          "relationCount": 1
         },
         {
           "courseId": "kr.course.2022.high.5c7afd6207b24e26",
@@ -2535,7 +2543,7 @@
           "courseId": "kr.course.2022.high.89cbeea5b619f291",
           "courseLabel": "심화 체육 전공 실기",
           "hasOfficialRelations": true,
-          "relationCount": 8
+          "relationCount": 6
         },
         {
           "courseId": "kr.course.2022.high.7c8d02894293899d",
@@ -2559,7 +2567,7 @@
           "courseId": "kr.course.2022.high.ec9979c5e9dcdbba",
           "courseLabel": "아동발달과 부모",
           "hasOfficialRelations": true,
-          "relationCount": 2
+          "relationCount": 1
         },
         {
           "courseId": "kr.course.2022.high.4a17d7c173e709c4",
@@ -2697,7 +2705,7 @@
           "courseId": "kr.course.2022.high.4c5c974f5e3449db",
           "courseLabel": "역학과 에너지",
           "hasOfficialRelations": true,
-          "relationCount": 4
+          "relationCount": 3
         },
         {
           "courseId": "kr.course.2022.high.4fe4c9a1f2969e05",
@@ -2787,7 +2795,7 @@
           "courseId": "kr.course.2022.high.fc40e63c46a838a9",
           "courseLabel": "영어 독해와 작문",
           "hasOfficialRelations": true,
-          "relationCount": 2
+          "relationCount": 1
         },
         {
           "courseId": "kr.course.2022.high.58c5c33e945d5350",
@@ -2799,13 +2807,13 @@
           "courseId": "kr.course.2022.high.5303ffa8a293a42a",
           "courseLabel": "영어 I",
           "hasOfficialRelations": true,
-          "relationCount": 4
+          "relationCount": 2
         },
         {
           "courseId": "kr.course.2022.high.586e769f7ff7d976",
           "courseLabel": "영어 Ⅱ",
           "hasOfficialRelations": true,
-          "relationCount": 2
+          "relationCount": 1
         },
         {
           "courseId": "kr.course.2022.high.ab1f6cd825a40c22",
@@ -3525,7 +3533,7 @@
           "courseId": "kr.course.2022.high.47cd1defd30f5bd7",
           "courseLabel": "전자기와 양자",
           "hasOfficialRelations": true,
-          "relationCount": 3
+          "relationCount": 2
         },
         {
           "courseId": "kr.course.2022.high.a30c021a634b739f",
@@ -3741,7 +3749,7 @@
           "courseId": "kr.course.2022.high.9587081f2a5eebb2",
           "courseLabel": "지구과학",
           "hasOfficialRelations": true,
-          "relationCount": 6
+          "relationCount": 3
         },
         {
           "courseId": "kr.course.2022.high.08e05bce52c7c12f",
@@ -3753,7 +3761,7 @@
           "courseId": "kr.course.2022.high.8a1581742b2c86f6",
           "courseLabel": "지구시스템과학",
           "hasOfficialRelations": true,
-          "relationCount": 4
+          "relationCount": 3
         },
         {
           "courseId": "kr.course.2022.high.53dbdbe0f1a64e8d",
@@ -3765,7 +3773,7 @@
           "courseId": "kr.course.2022.high.231db579e1a3b213",
           "courseLabel": "지식 재산 일반",
           "hasOfficialRelations": true,
-          "relationCount": 2
+          "relationCount": 1
         },
         {
           "courseId": "kr.course.2022.high.84c88ba49694a269",
@@ -3783,13 +3791,13 @@
           "courseId": "kr.course.2022.high.ac8d5ed8f99fc56c",
           "courseLabel": "직무 영어",
           "hasOfficialRelations": true,
-          "relationCount": 2
+          "relationCount": 1
         },
         {
           "courseId": "kr.course.2022.high.2d7e009bac947d08",
           "courseLabel": "직무 의사소통",
           "hasOfficialRelations": true,
-          "relationCount": 3
+          "relationCount": 2
         },
         {
           "courseId": "kr.course.2022.high.bbd850cda9d2eacf",
@@ -3813,7 +3821,7 @@
           "courseId": "kr.course.2022.high.74610e8ebab5b4a1",
           "courseLabel": "창의 공학 설계",
           "hasOfficialRelations": true,
-          "relationCount": 7
+          "relationCount": 6
         },
         {
           "courseId": "kr.course.2022.high.895ce4021b21cb27",
@@ -4017,13 +4025,13 @@
           "courseId": "kr.course.2022.high.997f40d6e251b180",
           "courseLabel": "통합과학1",
           "hasOfficialRelations": true,
-          "relationCount": 2
+          "relationCount": 1
         },
         {
           "courseId": "kr.course.2022.high.3e1de9b39f3e77e3",
           "courseLabel": "통합과학2",
           "hasOfficialRelations": true,
-          "relationCount": 10
+          "relationCount": 5
         },
         {
           "courseId": "kr.course.2022.high.39d5366ad464cca2",
@@ -4383,7 +4391,7 @@
           "courseId": "kr.course.2022.high.e56e90f718cb34b9",
           "courseLabel": "행성우주과학",
           "hasOfficialRelations": true,
-          "relationCount": 2
+          "relationCount": 1
         },
         {
           "courseId": "kr.course.2022.high.8f1f1767bf3e4081",
@@ -4431,7 +4439,7 @@
           "courseId": "kr.course.2022.high.0c5b1f3120b2156f",
           "courseLabel": "화법과 언어",
           "hasOfficialRelations": true,
-          "relationCount": 2
+          "relationCount": 1
         },
         {
           "courseId": "kr.course.2022.high.154068eb2aaf3715",
@@ -4443,7 +4451,7 @@
           "courseId": "kr.course.2022.high.a9a3a9a36115d467",
           "courseLabel": "화학",
           "hasOfficialRelations": true,
-          "relationCount": 7
+          "relationCount": 4
         },
         {
           "courseId": "kr.course.2022.high.c5c0bc921a7084d8",
@@ -4461,7 +4469,7 @@
           "courseId": "kr.course.2022.high.bbb3fc715f09a9f1",
           "courseLabel": "화학 반응의 세계",
           "hasOfficialRelations": true,
-          "relationCount": 2
+          "relationCount": 1
         },
         {
           "courseId": "kr.course.2022.high.526bbc98b7b4728f",
@@ -4497,7 +4505,7 @@
           "courseId": "kr.course.2022.high.4614f96eca3261d1",
           "courseLabel": "확률과 통계",
           "hasOfficialRelations": true,
-          "relationCount": 4
+          "relationCount": 3
         },
         {
           "courseId": "kr.course.2022.high.734bc29d3c0e2b92",
@@ -4583,10 +4591,10 @@
       "total": 39
     },
     "coverage": {
-      "coveredCourses": 179,
+      "coveredCourses": 148,
       "graphNodes": 50749,
-      "participatingTopics": 657,
-      "rootTopics": 50382,
+      "participatingTopics": 605,
+      "rootTopics": 50417,
       "totalCourses": 759,
       "uncoveredCourseLabels": [
         "3D 프린터 개발",
@@ -4633,8 +4641,13 @@
         "공작 기계 설치·정비",
         "공정 관리",
         "공중 보건",
+        "공통수학2",
+        "공통영어1",
+        "공통영어2",
         "과수 재배",
         "과학의 역사와 문화",
+        "과학탐구실험1",
+        "과학탐구실험2",
         "관광 농업",
         "관광 문화와 자원",
         "관광 서비스",
@@ -4669,6 +4682,11 @@
         "기관 직무 일반",
         "기관사 직무",
         "기능성 정밀 화학 제품 제조",
+        "기본수학1",
+        "기본수학2",
+        "기본영어1",
+        "기본영어2",
+        "기술⋅가정",
         "기업 자원 통합 관리",
         "기업과 경영",
         "기초 제도",
@@ -4707,6 +4725,7 @@
         "도시의 미래 탐구",
         "도자기",
         "도자기 공예",
+        "독서와 작문",
         "독일어 회화",
         "동물 자원",
         "동아시아 역사 기행",
@@ -4747,12 +4766,14 @@
         "무용의 이해",
         "문예 창작의 이해",
         "문장론",
+        "문학",
         "문학 감상과 비평",
         "문학과 매체",
         "문학과 영상",
         "문화 콘텐츠 산업 일반",
         "물류 관리",
         "물리학 실험",
+        "물질과 에너지",
         "미디어 영어",
         "미술",
         "미술 매체 탐구",
@@ -4760,6 +4781,7 @@
         "미술과 사회",
         "미술사",
         "미용의 기초",
+        "미적분Ⅰ",
         "밀링 가공",
         "바리스타",
         "바이오 기초 화학",
@@ -4818,8 +4840,12 @@
         "산업용 전자 기기·기구 개발",
         "삶과 종교",
         "상업 경제",
+        "생명과학",
         "생명과학 실험",
+        "생물의 유전",
+        "생애 설계와 자립",
         "생활 서비스 산업의 이해",
+        "생활과학 탐구",
         "서양 의복 구성과 생산",
         "선박 갑판 관리",
         "선박 건조",
@@ -4846,6 +4872,7 @@
         "세계사",
         "세계시민과 지리",
         "세라믹 원리·공정",
+        "세포와 물질대사",
         "소방 건축",
         "소방 기계",
         "소방 기초",
@@ -4909,6 +4936,7 @@
         "심화 영어",
         "심화 영어 독해와 작문",
         "아동 복지",
+        "아동발달과 부모",
         "안무",
         "알고리즘 설계",
         "압연",
@@ -4937,7 +4965,10 @@
         "염색·가공 기초",
         "영미 문학 읽기",
         "영상 제작 기초",
+        "영어 독해와 작문",
         "영어 발표와 토론",
+        "영어 I",
+        "영어 Ⅱ",
         "영유아 교수 방법",
         "영화 감상과 비평",
         "영화 제작 실습",
@@ -5063,10 +5094,13 @@
         "주조",
         "중국어 회화",
         "중식 조리",
+        "지구과학",
         "지구과학 실험",
         "지식 재산 관리",
+        "지식 재산 일반",
         "지적",
         "직무 수학",
+        "직무 영어",
         "창구 사무",
         "창업 일반",
         "철근 콘크리트 시공",
@@ -5093,6 +5127,8 @@
         "토양‧지하수 관리",
         "토질·수리",
         "통신 시스템",
+        "통합과학1",
+        "통합과학2",
         "통합사회1",
         "통합사회2",
         "특수 가공",
@@ -5146,15 +5182,18 @@
         "해양 생산 일반",
         "해양 오염･방제",
         "해양의 이해",
+        "행성우주과학",
         "현대사회와 윤리",
         "호텔 객실 서비스 실무",
         "호텔 식음료 서비스 실무",
         "화공 안전 관리",
         "화공 플랜트 기계",
         "화공 플랜트 전기",
+        "화법과 언어",
         "화장품 제조",
         "화학 공정 유지 운영",
         "화학 물질 관리",
+        "화학 반응의 세계",
         "화학 분석",
         "화학 실험",
         "화훼 장식",
@@ -5173,16 +5212,15 @@
     },
     "relations": {
       "byBasisKind": {
-        "official-source": 508
+        "official-source": 469
       },
       "byRelationKind": {
-        "recommended-before": 39,
         "required-prerequisite": 469
       },
       "byReviewStatus": {
-        "internal-reviewed": 508
+        "internal-reviewed": 469
       },
-      "total": 508
+      "total": 469
     }
   },
   "middle": {
@@ -5369,14 +5407,15 @@
     }
   },
   "policy": {
-    "courseProgression": "교과 총론이 직접 설명한 연계·심화만 reviewed-recommendation으로 기록한다.",
-    "officialOnly": "학습 관계와 학교급 전이는 공식 문서가 직접 뒷받침하는 official-source 레코드만 공개한다.",
+    "candidateLayer": "코드 순서·분해 순서 관계는 learning-relations.candidate.json(pedagogical-candidate 층)에 있으며 이 보고서에 포함하지 않는다.",
+    "courseProgression": "교과 총론이 직접 설명한 연계·심화만 과목 관계(reviewed-recommendation)로 기록하고 주제 수준으로 투영하지 않는다.",
+    "officialOnly": "이 보고서는 official 층만 센다. official 층의 학습 관계와 학교급 전이는 공식 문서가 직접 뒷받침하는 official-source 레코드만 담는다.",
     "officialRequired": "공식 내용 체계·해설이 직접 뒷받침하는 관계만 required-prerequisite로 기록한다."
   },
   "releaseIds": {
-    "bridges": "kr-2022-middle-high-bridge-v0.5.0-candidate",
-    "high": "kr-2022-high-v0.5.0-candidate",
-    "middle": "kr-2022-middle-v0.5.0-candidate"
+    "bridges": "kr-2022-middle-high-bridge-v0.6.0-candidate",
+    "high": "kr-2022-high-v0.6.0-candidate",
+    "middle": "kr-2022-middle-v0.6.0-candidate"
   },
   "validation": {
     "danglingReferences": 0,
@@ -5385,5 +5424,5 @@
     "highDag": true,
     "middleDag": true
   },
-  "version": "0.5.0-candidate"
+  "version": "0.6.0-candidate"
 }

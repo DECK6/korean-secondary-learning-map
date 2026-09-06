@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dexa.art/learnmap/schema/secondary/content-overlay.schema.json",
+  "title": "Korean Secondary Learning Map — 주제 콘텐츠 오버레이",
+  "description": "data/kr/<level>/content/<courseSlug>.json. 기계적 템플릿 evidence·assessmentPrompts를 출처 기반 초안으로 교체하는 빌드 입력이다.",
+  "type": "object",
+  "required": ["contentKind", "subjectKorean", "authoredAt", "sourceRefs", "entries"],
+  "properties": {
+    "$schema": { "type": "string", "format": "uri-reference" },
+    "contentKind": { "const": "source-grounded-draft" },
+    "subjectKorean": { "type": "string", "minLength": 1 },
+    "authoredAt": { "type": "string", "format": "date" },
+    "sourceRefs": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "$ref": "core.schema.json#/$defs/sourceRef" }
+    },
+    "note": { "type": "string", "minLength": 1 },
+    "entries": {
+      "type": "object",
+      "minProperties": 1,
+      "propertyNames": { "$ref": "core.schema.json#/$defs/stableId" },
+      "additionalProperties": { "$ref": "#/$defs/entry" }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "entry": {
+      "type": "object",
+      "required": ["evidence", "assessmentPrompts", "sourceLocator"],
+      "properties": {
+        "evidence": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 25 }
+        },
+        "assessmentPrompts": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 40 }
+        },
+        "misconceptions": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 15 }
+        },
+        "sourceLocator": { "$ref": "core.schema.json#/$defs/sourceLocator" },
+        "note": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false
+    }
+  }
+}

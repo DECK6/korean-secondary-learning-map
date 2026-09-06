@@ -12,7 +12,7 @@ def graph(*paths: str) -> Graph:
     return result
 
 
-ontology = graph("ontology/learning-map.ttl", "ontology/metadata.ttl")
+ontology = graph("ontology/learning-map.ttl", "ontology/k12-core.ttl", "ontology/metadata.ttl")
 shapes = graph("ontology/shapes.ttl")
 positive = graph("ontology/fixtures/canonical-positive.ttl")
 adversarial = graph("ontology/fixtures/adversarial/all.ttl")

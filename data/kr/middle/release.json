@@ -1,6 +1,7 @@
 {
   "$schema": "../../../schema/middle-profile.schema.json",
   "collections": {
+    "candidateLearningRelations": "learning-relations.candidate.json",
     "clusters": "clusters.json",
     "courses": "courses.json",
     "coverageGaps": "coverage-gaps.json",
@@ -12,6 +13,7 @@
     "topics": "topics.json"
   },
   "counts": {
+    "candidateLearningRelations": 1988,
     "clusters": 149,
     "courses": 24,
     "coverageGaps": 2,
@@ -25,7 +27,7 @@
   "createdDate": "2026-07-13",
   "curriculumVersion": "2022-revised",
   "profile": "middle",
-  "releaseId": "kr-2022-middle-v0.5.0-candidate",
+  "releaseId": "kr-2022-middle-v0.6.0-candidate",
   "rightsStatus": "cleared",
   "schoolLevel": "middle",
   "sourceManifest": "../shared/source-manifest.json",

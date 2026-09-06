@@ -19,8 +19,10 @@ data/kr/
     topics.json
     clusters.json
     learning-relations.json
+    learning-relations.candidate.json
     review-records.json
     coverage-gaps.json
+    content/                # 주제 콘텐츠 오버레이(빌드 입력, 5.1절)
   high/
     release.json
     curriculum-frameworks.json
@@ -31,12 +33,14 @@ data/kr/
     topics.json
     clusters.json
     learning-relations.json
+    learning-relations.candidate.json
     course-relations.json
     credit-rules.json
     choice-sets.json
     pathways.json
     review-records.json
     coverage-gaps.json
+    content/                # 주제 콘텐츠 오버레이(빌드 입력, 5.1절)
   bridges/
     release.json
     transition-alignments.json
@@ -146,8 +150,10 @@ data/kr/
   "assessmentPrompts": [
     "증거를 끌어내는 평가 질문"
   ],
+  "contentKind": "mechanical-derivative",
   "decompositionKind": "subject-facet",
-  "facetKey": "representation-modeling",
+  "facetKey": "representation",
+  "facetKeyDetail": "representation-modeling",
   "standardAlignments": [
     {
       "standardId": "kr.standard.2022.high.example-code",
@@ -162,7 +168,48 @@ data/kr/
 
 중등에서는 하나의 주제가 여러 과목에서 재맥락화될 수 있다. 다만 과목별 의미가 달라지면 억지로 같은 노드를 공유하지 않고 `TransitionAlignment` 또는 `relatedTopic`으로 연결한다.
 
+`facetKey`는 K-12 공통 계약의 공통 8종(`concept`, `procedure`, `representation`, `application`, `inquiry`, `communication`, `reflection`, `core`)이고, 중학교의 과목별 24종 원값은 `facetKeyDetail`에 보존한다. 주제 ID는 `facetKeyDetail`을 해시 입력으로 쓰므로 공통 어휘 도입이 ID를 바꾸지 않는다. 사상표와 근거는 `docs/decisions/2026-09-05-facet-mapping.md`, 통제 어휘는 `controlled-vocabularies.json`의 `facetKeys`·`facetKeyMappings`에 있다. 고등학교 주제는 성취기준과 1:1이라 `facetKey: core`만 갖는다.
+
 중학교는 초등 학습지도의 과목별 분해 밀도와 맞춰 성취기준당 2~5개 주제 후보를 둔다. 기존 1:1 주제는 `decompositionKind: standard-core`, `facetKey: core`로 식별자를 보존하고, 추가 주제는 `subject-facet`과 과목별 facet key를 갖는다. 국어는 기준당 4개, 도덕은 5개, 기술·가정/정보는 2개, 나머지는 3개다. 모든 분해는 후보이며 `middle-subject-facet-decomposition-v1` 생성 근거를 보존한다. 고등학교는 별도 분해 정책을 만들기 전까지 성취기준당 하나의 기계적 후보만 유지한다.
+
+### 5.1 주제 콘텐츠 오버레이
+
+`evidence`·`assessmentPrompts`의 기계적 템플릿을 성취기준 해설 등 공식 출처를 근거로 새로 쓴 문장으로 바꾸는 **빌드 입력**이다(개선계획 P3-2).
+
+- 경로: `data/kr/<level>/content/<courseSlug>.json` (`level`은 `middle` 또는 `high`). 예: `data/kr/middle/content/math.json`.
+- `courseSlug`는 과목 라벨의 안전한 슬러그다. 규칙은 `scripts/lib/content-overlay.mjs`의 `courseSlug()` 하나뿐이며, 중학교 24과목과 고등학교 공통과목은 표로 고정하고(`수학`→`math`, `국어`→`korean`, `기술·가정`→`technology-home-economics` …), 표에 없는 라벨은 `course-<sha256 앞 12자리>`로 결정한다. 엔트리의 주제가 속한 과목의 슬러그와 파일 이름이 다르면 검증에서 실패한다.
+- 파일 형식은 `schema/content-overlay.schema.json`. `entries` 키는 실제 주제 ID여야 하고(dangling 금지), 한 주제는 한 파일에서만 작성한다.
+- 최소 길이: `evidence` 25자, `assessmentPrompts` 40자, `misconceptions` 15자. 성취기준 `summary`를 통째로 포함한 문장은 금지한다(원문 대량 재수록 방지). 파일 안의 완전 중복 문장도 금지한다.
+- 빈 오버레이(엔트리 0건) 파일은 두지 않는다. 디렉터리가 없으면 오버레이 0건으로 동작한다.
+
+```json
+{
+  "$schema": "../../../../schema/content-overlay.schema.json",
+  "contentKind": "source-grounded-draft",
+  "subjectKorean": "수학",
+  "authoredAt": "2026-09-05",
+  "sourceRefs": ["kr-moe-2022-33-annex8"],
+  "entries": {
+    "kr.topic.2022.middle.0180f61b656c5de360d0": {
+      "evidence": ["관찰 가능한 수행 증거 1", "관찰 가능한 수행 증거 2"],
+      "assessmentPrompts": ["증거를 끌어내는 평가 질문"],
+      "misconceptions": ["자주 나타나는 오답 유형"],
+      "sourceLocator": { "sourceId": "kr-moe-2022-33-annex8", "printedPage": 23, "section": "성취기준 해설" }
+    }
+  }
+}
+```
+
+병합 지점은 `scripts/build-curriculum-data.mjs`의 `buildProfile()` 안, 주제 생성 루프 뒤다. 오버레이가 있으면 해당 주제의 `evidence`·`assessmentPrompts`를 교체하고 `contentKind: "source-grounded-draft"`, `misconceptions`, `contentSourceLocator`를 기록한다. 없으면 템플릿을 그대로 두고 `contentKind: "mechanical-derivative"`만 남긴다. 모든 주제는 두 값 중 하나를 반드시 갖는다.
+
+`bun run validate`는 스키마·출처 참조·dangling·원문 복사·중복과 함께 "오버레이가 빌드 산출물에 반영되었는지"까지 본다. 오버레이를 고친 뒤에는 `bun run build:data && bun run build`를 다시 돌려야 한다. `dist/<level>/manifest.json`은 오버레이 파일과 `schema/content-overlay.schema.json`의 해시를 핀한다. UI는 `source-grounded-draft` 주제에 ‘검토 초안’ 배지를 붙인다.
+
+콘텐츠 작성자용 단일 파일 게이트:
+
+```bash
+bun scripts/dev/check-content-overlay.mjs data/kr/middle/content/math.json
+bun scripts/dev/check-content-overlay.mjs 초안.json --profile middle   # content 디렉터리 밖의 초안
+```
 
 ## 6. 학습 관계 주장
 
@@ -188,7 +235,24 @@ data/kr/
 
 간선의 결정적 식별자는 양 끝점만이 아니라 관계 종류·적용 범위·근거·출처를 포함한 정규 튜플로 만든다.
 
-코드 배열 순서만으로 필수 선수 관계를 만들지 않는다. v0.4의 공식 문서 배열 관계는 검토 레코드를 가진 `recommended-before` 탐색 순서이고, 이유와 `repository-authored` basis로 비강제 성격을 명시한다. 필수 관계는 공식 출처·페이지와 `official-source` basis가 있는 경우에만 이 계약으로 추가한다.
+### 6.1 관계 2층
+
+| 층 | 파일 | `layer` | `relationKind` | `basisKind` | `reviewStatus` |
+| --- | --- | --- | --- | --- | --- |
+| 공식 | `learning-relations.json`, `bridges/elementary-transitions.json` | `official` | `required-prerequisite` | `official-source`만 | `internal-reviewed` 이상 |
+| 교육적 후보 | `learning-relations.candidate.json`, `bridges/elementary-transitions.candidate.json` | `pedagogical-candidate` | `recommended-before` | `official-code-order`, `decomposition-order`, `repository-authored` | `candidate` |
+
+official 파일에 `layer != official`, `basisKind != official-source`, `relationKind != required-prerequisite`, 인쇄 쪽번호 없는 `basis`가 있으면 스키마 또는 `scripts/validate.mjs`가 거부한다. 후보 파일에 `official-source`를 넣어도 거부한다. 두 층 각각이 DAG여야 하고 합집합도 DAG여야 하며, 같은 (선수, 후속) 쌍이 두 층에 동시에 있으면 실패한다.
+
+후보 층 생성 규칙은 아래 세 가지뿐이며 각 레코드의 `basis`가 규칙 ID로 시작한다.
+
+- `R-CODE` (`official-code-order`): 같은 과목·같은 영역에서 공식 성취기준 코드가 인접한 두 기준의 핵심 주제 사이.
+- `R-FACET` (`decomposition-order`): 한 성취기준의 핵심 주제 → 같은 성취기준의 각 `subject-facet` 주제 (중학교 전용).
+- `R-DOMAIN-CONTINUITY` (`repository-authored`, 초→중 bridge 전용): 내용 체계표가 초등 5~6학년군 영역과 중학교 영역을 같은 영역 계열로 제시할 때, 그 초등 영역 성취기준의 대표 주제 → 그 중학교 영역 성취기준의 `standard-core` 주제. 영역 대응표는 `scripts/lib/bridge-domain-map.mjs`에 교과별로 명시하며 대응이 불명확한 교과는 비워 둔다.
+
+영역은 병렬 갈래이므로 영역 사이 순서(`R-DOMAIN-FIRST`)는 만들지 않는다. 과목 간·교과 간 후보도 만들지 않으며 과목 수준 연계는 official `course-relations.json`이 담당한다. 고등학교 후보는 `programScopes`에 `all-high-schools`가 있는 과목만 대상으로 하고 직업계 전문교과는 제외한다.
+
+코드 배열 순서만으로 필수 선수 관계를 만들지 않는다. 필수 관계는 공식 출처·페이지와 `official-source` basis가 있는 경우에만 official 층으로 추가한다.
 
 ## 7. 과목 관계와 선택 묶음
 

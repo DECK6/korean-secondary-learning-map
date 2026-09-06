@@ -5,13 +5,18 @@ import { fileURLToPath } from 'node:url';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const readJson = async (path) => JSON.parse(await readFile(join(root, path), 'utf8'));
-const [manifest, index, middleRelations, highRelations, highCourseRelations, transitions] = await Promise.all([
+const [manifest, index, middleRelations, highRelations, middleCandidates, highCandidates, highCourseRelations, transitions, elementaryBridges, elementaryCandidateBridges, elementaryBridgeIndex] = await Promise.all([
   readJson('dist/ui/manifest.json'),
   readJson('ui/data/map-index.json'),
   readJson('data/kr/middle/learning-relations.json'),
   readJson('data/kr/high/learning-relations.json'),
+  readJson('data/kr/middle/learning-relations.candidate.json'),
+  readJson('data/kr/high/learning-relations.candidate.json'),
   readJson('data/kr/high/course-relations.json'),
   readJson('data/kr/bridges/transition-alignments.json'),
+  readJson('data/kr/bridges/elementary-transitions.json'),
+  readJson('data/kr/bridges/elementary-transitions.candidate.json'),
+  readJson('ui/data/elementary-bridges.json'),
 ]);
 const errors = [];
 const expectedStatistics = {
@@ -19,12 +24,29 @@ const expectedStatistics = {
   highOfficialRelations: highRelations.recordCount,
   highOfficialCourseRelations: highCourseRelations.recordCount,
   officialTransitions: transitions.recordCount,
+  middleCandidateRelations: middleCandidates.recordCount,
+  highCandidateRelations: highCandidates.recordCount,
+  elementaryOfficialTransitions: elementaryBridges.recordCount,
+  elementaryCandidateTransitions: elementaryCandidateBridges.recordCount,
 };
 for (const [name, expected] of Object.entries(expectedStatistics)) {
   if (index.statistics[name] !== expected) errors.push(`ui/data/map-index.json: statistics.${name} expected ${expected}, received ${index.statistics[name]}`);
 }
 if (index.transitions.length !== transitions.recordCount) errors.push('ui/data/map-index.json: official transition count mismatch');
 if (index.transitions.some((item) => !item.basis || !item.sourceRefs.length)) errors.push('ui/data/map-index.json: transition basis or source missing');
+if (index.elementaryBridgeFile !== 'data/elementary-bridges.json') errors.push('ui/data/map-index.json: elementary bridge payload is not linked');
+if (elementaryBridgeIndex.counts.official !== elementaryBridges.recordCount || elementaryBridgeIndex.counts.candidate !== elementaryCandidateBridges.recordCount) {
+  errors.push('ui/data/elementary-bridges.json: layer counts are stale');
+}
+if (elementaryBridgeIndex.records.length !== elementaryBridges.recordCount + elementaryCandidateBridges.recordCount) {
+  errors.push('ui/data/elementary-bridges.json: record count mismatch');
+}
+if (elementaryBridgeIndex.records.some((item) => !['official', 'pedagogical-candidate'].includes(item.layer) || !item.basis || !item.sourceRefs.length || !item.from.code || !item.to.courseLabel)) {
+  errors.push('ui/data/elementary-bridges.json: layer boundary, basis, source or endpoint label missing');
+}
+if (elementaryBridgeIndex.records.some((item) => (item.layer === 'official') !== (item.relationKind === 'required-prerequisite'))) {
+  errors.push('ui/data/elementary-bridges.json: relation kind does not match its layer');
+}
 const courseByDetail = new Map(index.courses.map((course) => [`ui/${course.detailFile}`, course]));
 for (const artifact of manifest.artifacts) {
   try {
@@ -36,6 +58,9 @@ for (const artifact of manifest.artifacts) {
       const relations = [...detail.relations, ...detail.courseRelations];
       if (relations.length !== courseByDetail.get(artifact.path).relationCount) errors.push(`${artifact.path}: official relation count mismatch`);
       if (relations.some((relation) => relation.basisKind !== 'official-source' || !relation.basis || !relation.sourceRefs.length)) errors.push(`${artifact.path}: non-official or unsourced relation`);
+      const candidates = detail.candidateRelations ?? [];
+      if (candidates.length !== courseByDetail.get(artifact.path).candidateRelationCount) errors.push(`${artifact.path}: candidate relation count mismatch`);
+      if (candidates.some((relation) => relation.layer !== 'pedagogical-candidate' || relation.relationKind !== 'recommended-before')) errors.push(`${artifact.path}: candidate layer boundary missing`);
     }
   } catch (error) {
     errors.push(`${artifact.path}: ${error.message}`);
@@ -48,6 +73,9 @@ for (const file of await readdir(join(root, 'ui/data/courses'))) {
 }
 const app = await readFile(join(root, 'ui/app.js'), 'utf8');
 if (!app.includes('공식 문서가 명시한 선수학습 관계 없음')) errors.push('ui/app.js: sparse relation state message missing');
+if (!app.includes('권장 순서(후보)')) errors.push('ui/app.js: candidate layer section missing');
+if (!app.includes('권장(후보)')) errors.push('ui/app.js: elementary bridge candidate layer badge missing');
+if (!app.includes('검토 초안')) errors.push('ui/app.js: source-grounded content badge missing');
 if (app.includes('관계 후보')) errors.push('ui/app.js: candidate relation label remains');
 if (errors.length) { console.error(errors.join('\n')); process.exit(1); }
 console.log(`UI artifact check passed: ${manifest.courseDetailCount} course details, ${middleRelations.recordCount + highRelations.recordCount + highCourseRelations.recordCount + transitions.recordCount} official relations, ${manifest.artifacts.length} files`);

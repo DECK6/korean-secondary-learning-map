@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0",
+  "milestone": "M1 K-12 learning-map ontology cleanup before tutor agent",
+  "phase": "P3 done (relation layers, official mining 11 subjects, integrated re-pin, content overlays math, bridge) → P4: k12-core TBox, contentKind emission, elementary summary refresh, secondary v0.6.0-candidate",
+  "gate": "round-4",
+  "status": "in_progress",
+  "owner_runtime": "claude-code",
+  "acceptance_criteria": [
+    "elementary: dependencies.json holds only official-source edges; dependencies.candidate.json holds the rest; all topics carry facetKey/decompositionKind/standardKey/sourceStandardCode; all npm gates pass",
+    "secondary: middle/high summaries and derived labels free of PDF intra-word spaces; standard/topic ID sets unchanged; bun verify gates pass",
+    "elementary docs: source-version matrix and 2024-3/2026-1 diff report exist; no data files changed",
+    "secondary: STAS collector + receipt + assessment report exist"
+  ],
+  "evidence": [
+    {
+      "at": "2026-09-05T06:00:00Z",
+      "kind": "command",
+      "cmd": "npm test (elementary)",
+      "exit": 0,
+      "note": "62 pass"
+    },
+    {
+      "at": "2026-09-05T06:00:00Z",
+      "kind": "command",
+      "cmd": "bun test && bun run validate && bun run check:relations (secondary)",
+      "exit": 0,
+      "note": "19 pass; 56/508/39/175/290"
+    },
+    {
+      "at": "2026-09-05T11:40:00Z",
+      "kind": "command",
+      "cmd": "npm run build && npm test && npm run validate && npm run check:content && npm run validate:ontology && npm run check:ontology:artifacts && npm run check:ontology:release && node gates/elem-layers.mjs (elementary)",
+      "exit": 0,
+      "note": "75 pass; official 398, candidate 1891, topics 1956"
+    },
+    {
+      "at": "2026-09-05T10:55:00Z",
+      "kind": "command",
+      "cmd": "bun test && bun gates/sec-hygiene.mjs (secondary)",
+      "exit": 0,
+      "note": "24 pass; middle suspicious 0/714, high 1137/50749, IDs unchanged"
+    },
+    {
+      "at": "2026-09-05T11:00:00Z",
+      "kind": "artifact",
+      "path": "docs/decisions/2026-09-05-stas-source-assessment.md",
+      "note": "STAS 4586 records; not usable for prerequisite ordering"
+    },
+    {
+      "at": "2026-09-06T00:10:00Z",
+      "kind": "command",
+      "cmd": "elementary: npm run build && npm test && validate && check:content && validate:ontology && check:ontology:artifacts/release && verify:formal:python && gates/elem-layers.mjs; determinism",
+      "exit": 0,
+      "note": "89 pass; official 416, candidate 1875, drafts 363/1956"
+    },
+    {
+      "at": "2026-09-06T00:12:00Z",
+      "kind": "command",
+      "cmd": "secondary: pin-elementary-inventory && build:data && build && validate && validate:ontology && check:content && bun test && check && validate:shacl && validate:sparql && gates/sec-layers.mjs && gates/sec-hygiene.mjs",
+      "exit": 0,
+      "note": "49 pass; bridge pin matches elementary topics.json; middle official 56/candidate 1988, high 469/2353, bridge 290/3180"
+    }
+  ],
+  "updated_at": "2026-09-05T22:58:26.605958+00:00"
+}

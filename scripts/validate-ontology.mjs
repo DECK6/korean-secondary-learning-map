@@ -7,6 +7,7 @@ import { Parser as SparqlParser } from 'sparqljs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const SLM = 'https://dexa.art/learnmap/secondary/ontology#';
+const CORE = 'https://dexa.art/learnmap/ontology/k12-core#';
 const RDF_TYPE = 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type';
 const errors = [];
 const readJson = async (path) => JSON.parse(await readFile(path, 'utf8'));
@@ -22,7 +23,7 @@ function parseTurtle(path) {
 }
 
 const staticQuads = [];
-for (const file of ['learning-map.ttl', 'shapes.ttl', 'metadata.ttl']) {
+for (const file of ['learning-map.ttl', 'k12-core.ttl', 'shapes.ttl', 'metadata.ttl']) {
   staticQuads.push(...parseTurtle(await readFile(join(root, 'ontology', file), 'utf8')));
 }
 parseTurtle(await readFile(join(root, 'ontology/fixtures/canonical-positive.ttl'), 'utf8'));
@@ -39,7 +40,7 @@ if (!inferredTypes.has('https://dexa.art/learnmap/secondary/fixture/reasoning/co
 if (inferredTypes.has('https://dexa.art/learnmap/secondary/fixture/reasoning/course-relation|https://dexa.art/learnmap/secondary/ontology#TransitionAlignment')) errors.push('CourseRelation was incorrectly inferred as TransitionAlignment');
 
 const queryFiles = (await readdir(join(root, 'ontology/queries'))).filter((name) => name.endsWith('.rq')).sort();
-if (queryFiles.length !== 20) errors.push(`expected 20 competency queries, found ${queryFiles.length}`);
+if (queryFiles.length !== 21) errors.push(`expected 21 competency queries, found ${queryFiles.length}`);
 const sparqlParser = new SparqlParser();
 for (const file of queryFiles) {
   try {
@@ -70,6 +71,9 @@ for (const relation of types('LearningRelation')) {
   const after = objects(relation, 'dependentTopic')[0]?.value;
   if (before && before === after) violations.add('LEARNING_RELATION_CYCLE');
 }
+for (const relation of types('OfficialLearningRelation')) {
+  if (objects(relation, 'layer').some((term) => term.value !== 'official')) violations.add('CANDIDATE_IN_OFFICIAL_LAYER');
+}
 for (const standard of types('AchievementStandard')) {
   if (objects(standard, 'verificationStatus').some((term) => term.value === 'official-source-checked') && !objects(standard, 'hasLocator').length) violations.add('OFFICIAL_LOCATOR_MISSING');
 }
@@ -78,6 +82,11 @@ for (const relation of types('LearningRelation')) {
   const key = ['prerequisiteTopic', 'dependentTopic', 'relationKind'].map((predicate) => objects(relation, predicate)[0]?.value ?? '').join('|');
   if (relationKeys.has(key)) violations.add('DUPLICATE_RELATION_ASSERTION');
   relationKeys.add(key);
+}
+// An authored draft must name the passage it was written from, or source grounding is a claim
+// with nothing behind it.
+for (const draft of adversarial.getSubjects(named(`${CORE}contentKind`), named(`${CORE}content-source-grounded-draft`), null)) {
+  if (!adversarial.getObjects(draft, named(`${CORE}contentSourceLocator`), null).length) violations.add('UNSOURCED_AUTHORED_DRAFT');
 }
 for (const pathway of types('IllustrativePathway')) if (!objects(pathway, 'notOfficialRequirement').some((term) => term.value === 'true')) violations.add('PATHWAY_BOUNDARY_MISSING');
 if (subjects('replaces').some((term) => term.value.includes('reminted-elementary'))) violations.add('ELEMENTARY_IRI_REMINTED');

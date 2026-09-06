@@ -49,11 +49,19 @@ test('publishes one lazy detail payload per course', async () => {
   expect(index.statistics.highVocationalStandards).toBe(47625);
   expect(index.statistics.highAcademicStandards + index.statistics.highVocationalStandards).toBe(index.statistics.highStandards);
   expect(index.statistics.middleOfficialRelations).toBe(56);
-  expect(index.statistics.highOfficialRelations).toBe(39 + registeredHighRequired);
+  expect(index.statistics.highOfficialRelations).toBe(registeredHighRequired);
+  expect(index.statistics.middleCandidateRelations).toBeGreaterThan(0);
+  expect(index.statistics.highCandidateRelations).toBeGreaterThan(0);
   expect(index.statistics.highOfficialCourseRelations).toBe(39);
   expect(index.statistics.officialTransitions).toBe(175);
+  expect(index.statistics.elementaryOfficialTransitions).toBe(290);
+  expect(index.statistics.elementaryCandidateTransitions).toBeGreaterThan(0);
+  expect(index.elementaryBridgeFile).toBe('data/elementary-bridges.json');
   expect(index.comparisonBaselines.elementary.topics).toBe(1956);
   expect(index.boundaries.some((text) => text.includes('공식 문서 근거가 있는 항목만 제공'))).toBe(true);
+  expect(index.boundaries.some((text) => text.includes('‘검토 초안’ 배지'))).toBe(true);
+  expect(index.statistics.middleSourceGroundedTopics).toBeGreaterThanOrEqual(0);
+  expect(index.statistics.highSourceGroundedTopics).toBeGreaterThanOrEqual(0);
   expect(index.transitions.every((transition) => transition.basis && transition.sourceRefs.length > 0)).toBe(true);
 
   const relatedCourse = index.courses.find((course) => course.label === '공통국어2');
@@ -71,5 +79,23 @@ test('labels relations as official evidence and explains the sparse state', asyn
   const app = await read('../ui/app.js');
   expect(app).toContain('공식 문서가 명시한 선수학습 관계 없음');
   expect(app).toContain('공식 문서 근거');
+  expect(app).toContain('권장 순서(후보)');
   expect(app).not.toContain('관계 후보');
+});
+
+test('separates the two elementary bridge layers on the transition map', async () => {
+  const { document } = parseHTML(await read('../ui/index.html'));
+  const layerOptions = [...document.querySelectorAll('#bridge-layer option')].map((option) => option.value || option.textContent);
+  expect(layerOptions).toEqual(['all', 'official', 'pedagogical-candidate']);
+  expect(document.getElementById('bridge-list')).not.toBeNull();
+  const app = await read('../ui/app.js');
+  expect(app).toContain('권장(후보)');
+  expect(app).toContain('elementaryBridgeFile');
+
+  const payload = JSON.parse(await read('../ui/data/elementary-bridges.json'));
+  expect(payload.counts.official).toBe(290);
+  expect(payload.counts.candidate).toBeGreaterThan(0);
+  expect(payload.records.length).toBe(payload.counts.official + payload.counts.candidate);
+  expect(payload.layers.map((layer) => layer.id)).toEqual(['official', 'pedagogical-candidate']);
+  expect(payload.records.every((record) => record.basis && record.sourceRefs.length > 0)).toBe(true);
 });

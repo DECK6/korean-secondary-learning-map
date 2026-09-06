@@ -1,0 +1,351 @@
+# K-12 코어 TBox — 초등(korean-elementary-learning-map)과 중등(korean-secondary-learning-map)
+# 두 저장소가 공유하는 클래스·속성·개념 어휘. 두 저장소에 같은 내용의 사본을 두고,
+# 각 저장소의 tests/k12-core-sync.test.mjs가 아래 기준 해시로 동기화를 검사한다.
+# 기준 해시 = 이 파일에서 `# k12-core-sync-sha256:` 줄 하나를 제거한 나머지의 sha256.
+# k12-core-sync-sha256: cb2c8da73100e35a3573d8ab8bab09a6dd383012e1675276abe60503450b464a
+#
+# 기존 lm:·slm: IRI는 재발급하지 않는다. 각 저장소의 learning-map.ttl이
+# owl:equivalentClass / owl:equivalentProperty / skos:exactMatch로 이 코어에 연결한다.
+
+@prefix core: <https://dexa.art/learnmap/ontology/k12-core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://dexa.art/learnmap/ontology/k12-core>
+  a owl:Ontology ;
+  dcterms:title "K-12 Korean Curriculum Learning Map Core"@en ;
+  dcterms:title "한국 K-12 학습지도 코어 온톨로지"@ko ;
+  dcterms:description "Classes, properties, and concept schemes shared by the Korean elementary and secondary learning maps. Repository ontologies keep their own IRIs and align to this core."@en ;
+  dcterms:created "2026-09-06"^^xsd:date ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  owl:versionIRI <https://dexa.art/learnmap/ontology/k12-core/1.0.0> ;
+  owl:versionInfo "1.0.0" ;
+  rdfs:comment "코어는 어휘만 정의한다. 인스턴스(ABox)는 각 저장소가 자기 네임스페이스로 발행한다."@ko .
+
+## Classes
+
+core:AchievementStandard a owl:Class ;
+  rdfs:label "Achievement standard"@en ;
+  rdfs:label "성취기준"@ko ;
+  rdfs:comment "A source-anchored curriculum expectation identified by an official standard code."@en .
+
+core:LearningTopic a owl:Class ;
+  rdfs:label "Learning topic"@en ;
+  rdfs:label "학습 주제"@ko ;
+  rdfs:comment "A repository-authored teachable unit aligned to one or more achievement standards."@en .
+
+core:LearningCluster a owl:Class ;
+  rdfs:label "Learning cluster"@en ;
+  rdfs:label "학습 묶음"@ko ;
+  rdfs:comment "A navigational grouping of learning topics under a documented coverage policy."@en .
+
+core:EvidenceCriterion a owl:Class ;
+  rdfs:label "Evidence criterion"@en ;
+  rdfs:label "증거 준거"@ko ;
+  rdfs:comment "A learner-observable condition used to judge whether a topic has been demonstrated."@en .
+
+core:AssessmentPrompt a owl:Class ;
+  rdfs:label "Assessment prompt"@en ;
+  rdfs:label "평가 과제"@ko ;
+  rdfs:comment "A prompt or task that elicits evidence relevant to a learning topic."@en .
+
+core:SourceDocument a owl:Class ;
+  rdfs:label "Source document"@en ;
+  rdfs:label "출처 문서"@ko ;
+  rdfs:comment "A document or artifact cited as evidence for curriculum identity, codes, mappings, or provenance."@en .
+
+core:SourceLocator a owl:Class ;
+  rdfs:label "Source locator"@en ;
+  rdfs:label "출처 위치"@ko ;
+  rdfs:comment "A structured location inside or alongside a source document. The locator kind selects which fields apply."@en .
+
+core:VerificationRecord a owl:Class ;
+  rdfs:label "Verification record"@en ;
+  rdfs:label "검증 기록"@ko ;
+  rdfs:comment "A dated or status-bearing record of what was checked, by which method, and with what limitations."@en .
+
+core:CoverageGap a owl:Class ;
+  rdfs:label "Coverage gap"@en ;
+  rdfs:label "커버리지 갭"@ko ;
+  rdfs:comment "An explicit completeness, calibration, reconciliation, or review gap retained for release evaluation."@en .
+
+core:LearningRelation a owl:Class ;
+  rdfs:label "Learning relation"@en ;
+  rdfs:label "학습 관계"@ko ;
+  rdfs:comment "The common superclass of the two repositories' n-ary prerequisite and recommended-order records. A relation is model-relative and never a universal learning-order fact."@en .
+
+core:StandardTopicAlignment a owl:Class ;
+  rdfs:label "Standard-topic alignment"@en ;
+  rdfs:label "성취기준-주제 정합"@ko ;
+  rdfs:comment "The n-ary record for a topic-to-standard alignment and all of its qualifiers."@en .
+
+## Relation qualifiers (K-12 relation contract v1, section 3)
+## Each qualifier has a concept-valued form and a token-valued form. The elementary map uses
+## concept IRIs, the secondary map uses the SKOS notation string; both are sub-properties of the
+## same abstract qualifier so a core query can target either shape.
+
+core:layer a rdf:Property ;
+  rdfs:label "relation layer"@en ;
+  rdfs:label "관계 층"@ko ;
+  rdfs:domain core:LearningRelation ;
+  rdfs:comment "Release layer of the relation. Only the official layer may materialize derived prerequisite views."@en .
+
+core:layerConcept a owl:ObjectProperty ;
+  rdfs:subPropertyOf core:layer ;
+  rdfs:label "relation layer concept"@en ;
+  rdfs:domain core:LearningRelation ;
+  rdfs:range skos:Concept .
+
+core:layerToken a owl:DatatypeProperty ;
+  rdfs:subPropertyOf core:layer ;
+  rdfs:label "relation layer token"@en ;
+  rdfs:domain core:LearningRelation ;
+  rdfs:range xsd:string .
+
+core:relationKind a rdf:Property ;
+  rdfs:label "relation kind"@en ;
+  rdfs:label "관계 종류"@ko ;
+  rdfs:domain core:LearningRelation ;
+  rdfs:comment "Normalized reading of the relation: a required prerequisite or a recommended order."@en .
+
+core:relationKindConcept a owl:ObjectProperty ;
+  rdfs:subPropertyOf core:relationKind ;
+  rdfs:label "relation kind concept"@en ;
+  rdfs:domain core:LearningRelation ;
+  rdfs:range skos:Concept .
+
+core:relationKindToken a owl:DatatypeProperty ;
+  rdfs:subPropertyOf core:relationKind ;
+  rdfs:label "relation kind token"@en ;
+  rdfs:domain core:LearningRelation ;
+  rdfs:range xsd:string .
+
+core:basisKind a rdf:Property ;
+  rdfs:label "basis kind"@en ;
+  rdfs:label "근거 종류"@ko ;
+  rdfs:domain core:LearningRelation ;
+  rdfs:comment "Kind of evidence behind the relation; official-source is reserved for the official layer."@en .
+
+core:basisKindConcept a owl:ObjectProperty ;
+  rdfs:subPropertyOf core:basisKind ;
+  rdfs:label "basis kind concept"@en ;
+  rdfs:domain core:LearningRelation ;
+  rdfs:range skos:Concept .
+
+core:basisKindToken a owl:DatatypeProperty ;
+  rdfs:subPropertyOf core:basisKind ;
+  rdfs:label "basis kind token"@en ;
+  rdfs:domain core:LearningRelation ;
+  rdfs:range xsd:string .
+
+core:scope a rdf:Property ;
+  rdfs:label "relation scope"@en ;
+  rdfs:label "관계 범위"@ko ;
+  rdfs:domain core:LearningRelation ;
+  rdfs:comment "Mechanically computed distance between the two endpoints: standard, domain, subject, or school level."@en .
+
+core:scopeConcept a owl:ObjectProperty ;
+  rdfs:subPropertyOf core:scope ;
+  rdfs:label "relation scope concept"@en ;
+  rdfs:domain core:LearningRelation ;
+  rdfs:range skos:Concept .
+
+core:scopeToken a owl:DatatypeProperty ;
+  rdfs:subPropertyOf core:scope ;
+  rdfs:label "relation scope token"@en ;
+  rdfs:domain core:LearningRelation ;
+  rdfs:range xsd:string .
+
+core:reviewStatus a rdf:Property ;
+  rdfs:label "review status"@en ;
+  rdfs:label "검토 상태"@ko ;
+  rdfs:comment "Human review reached for the record."@en .
+
+core:reviewStatusConcept a owl:ObjectProperty ;
+  rdfs:subPropertyOf core:reviewStatus ;
+  rdfs:label "review status concept"@en ;
+  rdfs:range skos:Concept .
+
+core:reviewStatusToken a owl:DatatypeProperty ;
+  rdfs:subPropertyOf core:reviewStatus ;
+  rdfs:label "review status token"@en ;
+  rdfs:range xsd:string .
+
+## Topic facet and authored-content properties
+
+core:facetKey a owl:ObjectProperty ;
+  rdfs:label "facet key"@en ;
+  rdfs:label "facet 키"@ko ;
+  rdfs:domain core:LearningTopic ;
+  rdfs:range skos:Concept ;
+  rdfs:comment "The single shared K-12 facet of a topic, drawn from the eight-concept facet scheme."@en .
+
+core:contentKind a owl:ObjectProperty ;
+  rdfs:label "content kind"@en ;
+  rdfs:label "콘텐츠 종류"@ko ;
+  rdfs:domain core:LearningTopic ;
+  rdfs:range skos:Concept ;
+  rdfs:comment "Whether the topic's evidence and prompt are a mechanical derivative of the standard or an authored source-grounded draft."@en .
+
+core:misconception a owl:DatatypeProperty ;
+  rdfs:label "misconception"@en ;
+  rdfs:label "오개념"@ko ;
+  rdfs:domain core:LearningTopic ;
+  rdfs:range rdf:langString ;
+  rdfs:comment "A learner misconception an authored draft expects to encounter. Repeatable; never a copy of official source text."@en .
+
+core:contentSourceLocator a owl:ObjectProperty ;
+  rdfs:label "content source locator"@en ;
+  rdfs:label "콘텐츠 출처 위치"@ko ;
+  rdfs:domain core:LearningTopic ;
+  rdfs:range core:SourceLocator ;
+  rdfs:comment "The passage an authored source-grounded draft was written from. Required whenever contentKind is source-grounded-draft."@en .
+
+## Source locator fields
+
+core:locatorKind a owl:ObjectProperty ;
+  rdfs:label "locator kind"@en ;
+  rdfs:label "위치 종류"@ko ;
+  rdfs:domain core:SourceLocator ;
+  rdfs:range skos:Concept ;
+  rdfs:comment "Selects which locator fields apply: a printed page in a document, or a record in the STAS achievement-standard service."@en .
+
+core:printedPage a owl:DatatypeProperty ;
+  rdfs:label "printed page"@en ;
+  rdfs:domain core:SourceLocator ;
+  rdfs:range xsd:integer ;
+  rdfs:comment "The page number printed on the page, which may differ from the PDF page index."@en .
+
+core:pdfPage a owl:DatatypeProperty ;
+  rdfs:label "PDF page"@en ;
+  rdfs:domain core:SourceLocator ;
+  rdfs:range xsd:integer .
+
+core:sourceSection a owl:DatatypeProperty ;
+  rdfs:label "source section"@en ;
+  rdfs:domain core:SourceLocator ;
+  rdfs:range xsd:string .
+
+core:attachmentNumber a owl:DatatypeProperty ;
+  rdfs:label "attachment number"@en ;
+  rdfs:domain [ a owl:Class ; owl:unionOf ( core:SourceDocument core:SourceLocator ) ] ;
+  rdfs:range xsd:string .
+
+core:fileSha256 a owl:DatatypeProperty ;
+  rdfs:label "file sha256"@en ;
+  rdfs:domain [ a owl:Class ; owl:unionOf ( core:SourceDocument core:SourceLocator ) ] ;
+  rdfs:range xsd:string .
+
+core:standardCode a owl:DatatypeProperty ;
+  rdfs:label "achievement standard code"@en ;
+  rdfs:domain [ a owl:Class ; owl:unionOf ( core:AchievementStandard core:SourceLocator ) ] ;
+  rdfs:range xsd:string .
+
+## STAS record locator fields (reserved vocabulary; no instance data is emitted in this release).
+## The 2026-09-05 source assessment concluded that STAS achievement-level text may not be reused,
+## so a STAS locator records only where a record was read, never what it said.
+
+core:stasEndpoint a owl:DatatypeProperty ;
+  rdfs:label "STAS endpoint"@en ;
+  rdfs:domain core:SourceLocator ;
+  rdfs:range xsd:anyURI ;
+  rdfs:comment "REST endpoint path a STAS record was collected from."@en .
+
+core:stasRecordId a owl:DatatypeProperty ;
+  rdfs:label "STAS record id"@en ;
+  rdfs:domain core:SourceLocator ;
+  rdfs:range xsd:string ;
+  rdfs:comment "The acvmtStdSeq primary key of the STAS achievement-standard record."@en .
+
+core:collectedAt a owl:DatatypeProperty ;
+  rdfs:label "collected at"@en ;
+  rdfs:domain core:SourceLocator ;
+  rdfs:range xsd:date ;
+  rdfs:comment "Collection date of a service-backed locator; service responses are not stable over time."@en .
+
+## Shared concept schemes
+
+core:FacetScheme a skos:ConceptScheme ;
+  skos:prefLabel "K-12 learning facet"@en ;
+  skos:prefLabel "K-12 공통 facet 어휘"@ko ;
+  skos:definition "Eight facets shared by the Korean elementary and secondary learning maps; every topic carries exactly one."@en ;
+  skos:hasTopConcept
+    core:facet-concept, core:facet-procedure, core:facet-representation, core:facet-application,
+    core:facet-inquiry, core:facet-communication, core:facet-reflection, core:facet-core .
+
+core:facet-concept a skos:Concept ; skos:inScheme core:FacetScheme ; skos:notation "concept" ; skos:prefLabel "concept"@en ; skos:prefLabel "개념"@ko ; skos:definition "Distinguishing concepts, conditions, and examples."@en .
+core:facet-procedure a skos:Concept ; skos:inScheme core:FacetScheme ; skos:notation "procedure" ; skos:prefLabel "procedure"@en ; skos:prefLabel "절차"@ko ; skos:definition "Carrying out a procedure, skill, or making task."@en .
+core:facet-representation a skos:Concept ; skos:inScheme core:FacetScheme ; skos:notation "representation" ; skos:prefLabel "representation"@en ; skos:prefLabel "표현"@ko ; skos:definition "Representing, modelling, or converting between forms."@en .
+core:facet-application a skos:Concept ; skos:inScheme core:FacetScheme ; skos:notation "application" ; skos:prefLabel "application"@en ; skos:prefLabel "적용"@ko ; skos:definition "Applying learning to problems and life situations."@en .
+core:facet-inquiry a skos:Concept ; skos:inScheme core:FacetScheme ; skos:notation "inquiry" ; skos:prefLabel "inquiry"@en ; skos:prefLabel "탐구"@ko ; skos:definition "Investigating, gathering data, and reasoning from evidence."@en .
+core:facet-communication a skos:Concept ; skos:inScheme core:FacetScheme ; skos:notation "communication" ; skos:prefLabel "communication"@en ; skos:prefLabel "의사소통"@ko ; skos:definition "Expressing and interacting through language."@en .
+core:facet-reflection a skos:Concept ; skos:inScheme core:FacetScheme ; skos:notation "reflection" ; skos:prefLabel "reflection"@en ; skos:prefLabel "성찰"@ko ; skos:definition "Reflecting on, valuing, and transferring learning."@en .
+core:facet-core a skos:Concept ; skos:inScheme core:FacetScheme ; skos:notation "core" ; skos:prefLabel "core"@en ; skos:prefLabel "핵심"@ko ; skos:definition "The whole achievement standard rather than one facet of it."@en .
+
+core:RelationLayerScheme a skos:ConceptScheme ;
+  skos:prefLabel "Relation layer"@en ;
+  skos:definition "Release layer of a learning relation under the K-12 relation contract v1."@en ;
+  skos:hasTopConcept core:layer-official, core:layer-pedagogical-candidate .
+
+core:layer-official a skos:Concept ; skos:inScheme core:RelationLayerScheme ; skos:notation "official" ; skos:prefLabel "official"@en ; skos:definition "Backed directly by an official curriculum document with a page locator."@en .
+core:layer-pedagogical-candidate a skos:Concept ; skos:inScheme core:RelationLayerScheme ; skos:notation "pedagogical-candidate" ; skos:prefLabel "pedagogical-candidate"@en ; skos:definition "Code order, decomposition order, or repository reasoning; a recommended order only."@en .
+
+core:RelationKindScheme a skos:ConceptScheme ;
+  skos:prefLabel "Relation kind"@en ;
+  skos:hasTopConcept core:relation-required-prerequisite, core:relation-recommended-before .
+
+core:relation-required-prerequisite a skos:Concept ; skos:inScheme core:RelationKindScheme ; skos:notation "required-prerequisite" ; skos:prefLabel "required-prerequisite"@en .
+core:relation-recommended-before a skos:Concept ; skos:inScheme core:RelationKindScheme ; skos:notation "recommended-before" ; skos:prefLabel "recommended-before"@en .
+
+core:BasisKindScheme a skos:ConceptScheme ;
+  skos:prefLabel "Basis kind"@en ;
+  skos:hasTopConcept
+    core:basis-official-source, core:basis-official-code-order, core:basis-decomposition-order,
+    core:basis-repository-authored, core:basis-expert-authored .
+
+core:basis-official-source a skos:Concept ; skos:inScheme core:BasisKindScheme ; skos:notation "official-source" ; skos:prefLabel "official-source"@en ; skos:definition "An official document sentence or content-system progression states the order."@en .
+core:basis-official-code-order a skos:Concept ; skos:inScheme core:BasisKindScheme ; skos:notation "official-code-order" ; skos:prefLabel "official-code-order"@en ; skos:definition "Derived from official code or unit ordering, which is document arrangement rather than a prerequisite claim."@en .
+core:basis-decomposition-order a skos:Concept ; skos:inScheme core:BasisKindScheme ; skos:notation "decomposition-order" ; skos:prefLabel "decomposition-order"@en ; skos:definition "Derived from the repository facet decomposition inside one achievement standard."@en .
+core:basis-repository-authored a skos:Concept ; skos:inScheme core:BasisKindScheme ; skos:notation "repository-authored" ; skos:prefLabel "repository-authored"@en ; skos:definition "Pedagogical reasoning authored in a repository without a document sentence."@en .
+core:basis-expert-authored a skos:Concept ; skos:inScheme core:BasisKindScheme ; skos:notation "expert-authored" ; skos:prefLabel "expert-authored"@en ; skos:definition "Authored by an external subject expert whose review is recorded."@en .
+
+core:RelationScopeScheme a skos:ConceptScheme ;
+  skos:prefLabel "Relation scope"@en ;
+  skos:hasTopConcept
+    core:scope-same-standard, core:scope-same-domain, core:scope-same-subject, core:scope-cross-school-level .
+
+core:scope-same-standard a skos:Concept ; skos:inScheme core:RelationScopeScheme ; skos:notation "same-standard" ; skos:prefLabel "same-standard"@en .
+core:scope-same-domain a skos:Concept ; skos:inScheme core:RelationScopeScheme ; skos:notation "same-domain" ; skos:prefLabel "same-domain"@en .
+core:scope-same-subject a skos:Concept ; skos:inScheme core:RelationScopeScheme ; skos:notation "same-subject" ; skos:prefLabel "same-subject"@en .
+core:scope-cross-school-level a skos:Concept ; skos:inScheme core:RelationScopeScheme ; skos:notation "cross-school-level" ; skos:prefLabel "cross-school-level"@en .
+
+core:ReviewStatusScheme a skos:ConceptScheme ;
+  skos:prefLabel "Review status"@en ;
+  skos:hasTopConcept
+    core:review-candidate, core:review-internal-reviewed, core:review-subject-expert-reviewed,
+    core:review-classroom-reviewed, core:review-field-reviewed .
+
+core:review-candidate a skos:Concept ; skos:inScheme core:ReviewStatusScheme ; skos:notation "candidate" ; skos:prefLabel "candidate"@en .
+core:review-internal-reviewed a skos:Concept ; skos:inScheme core:ReviewStatusScheme ; skos:notation "internal-reviewed" ; skos:prefLabel "internal-reviewed"@en .
+core:review-subject-expert-reviewed a skos:Concept ; skos:inScheme core:ReviewStatusScheme ; skos:notation "subject-expert-reviewed" ; skos:prefLabel "subject-expert-reviewed"@en .
+core:review-classroom-reviewed a skos:Concept ; skos:inScheme core:ReviewStatusScheme ; skos:notation "classroom-reviewed" ; skos:prefLabel "classroom-reviewed"@en ; skos:definition "Elementary wording for review carried out with learners in a classroom."@en .
+core:review-field-reviewed a skos:Concept ; skos:inScheme core:ReviewStatusScheme ; skos:notation "field-reviewed" ; skos:prefLabel "field-reviewed"@en ; skos:definition "Secondary wording for review carried out in the field."@en .
+
+core:ContentKindScheme a skos:ConceptScheme ;
+  skos:prefLabel "Content kind"@en ;
+  skos:definition "Provenance of a topic's evidence, assessment prompt, and misconceptions."@en ;
+  skos:hasTopConcept core:content-mechanical-derivative, core:content-source-grounded-draft .
+
+core:content-mechanical-derivative a skos:Concept ; skos:inScheme core:ContentKindScheme ; skos:notation "mechanical-derivative" ; skos:prefLabel "mechanical-derivative"@en ; skos:definition "Generated from the standard record by a deterministic template; not authored against a source passage."@en .
+core:content-source-grounded-draft a skos:Concept ; skos:inScheme core:ContentKindScheme ; skos:notation "source-grounded-draft" ; skos:prefLabel "source-grounded-draft"@en ; skos:definition "Authored against a cited source passage and awaiting subject-expert review."@en .
+
+core:LocatorKindScheme a skos:ConceptScheme ;
+  skos:prefLabel "Source locator kind"@en ;
+  skos:hasTopConcept core:locator-printed-page, core:locator-stas-record .
+
+core:locator-printed-page a skos:Concept ; skos:inScheme core:LocatorKindScheme ; skos:notation "printed-page" ; skos:prefLabel "printed-page"@en ; skos:definition "A page and section inside a published curriculum document."@en .
+core:locator-stas-record a skos:Concept ; skos:inScheme core:LocatorKindScheme ; skos:notation "stas-record" ; skos:prefLabel "stas-record"@en ; skos:definition "A record read from the STAS achievement-standard service, identified by endpoint, acvmtStdSeq, collection date, and response hash."@en .

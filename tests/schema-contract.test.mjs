@@ -20,13 +20,16 @@ describe('repository schema contract', () => {
     expect(result.loaded.middle.release.counts.domains).toBe(149);
     expect(result.loaded.high.release.counts.domains).toBe(5169);
     expect(result.loaded.middle.release.counts.learningRelations).toBe(56);
-    expect(result.loaded.high.release.counts.learningRelations).toBe(39 + registeredHighRequired);
+    expect(result.loaded.high.release.counts.learningRelations).toBe(registeredHighRequired);
+    expect(result.loaded.middle.release.counts.candidateLearningRelations).toBeGreaterThan(0);
+    expect(result.loaded.high.release.counts.candidateLearningRelations).toBeGreaterThan(0);
     expect(result.loaded.high.release.counts.courseRelations).toBe(39);
     expect(result.loaded.bridges.release.counts.transitionAlignments).toBe(175);
     expect(result.loaded.bridges.release.counts.elementaryTransitions).toBe(290);
+    expect(result.loaded.bridges.release.counts.candidateElementaryTransitions).toBeGreaterThan(0);
     expect(result.inventoryReport.diagnosticCount).toBe(0);
     expect(result.inventoryReport.middleTopicDecomposition.topicsPerStandard.distribution).toEqual({ '2': 77, '3': 564, '4': 51, '5': 22 });
-    expect(result.inventoryReport.comparisonBaselines.elementary.dataRelease).toBe('kr-full-depth-v0.4');
+    expect(result.inventoryReport.comparisonBaselines.elementary.dataRelease).toBe('kr-full-depth-v0.5');
   }, 30000);
 
   test('requires high-school course category and program scope', async () => {
@@ -89,6 +92,7 @@ describe('repository schema contract', () => {
       id: 'kr.learning-relation.example',
       dependentTopicId: 'kr.topic.b',
       prerequisiteTopicId: 'kr.topic.a',
+      layer: 'official',
       relationKind: 'recommended-before',
       scope: 'same-course',
       strength: 'recommended',
@@ -108,6 +112,7 @@ describe('repository schema contract', () => {
       id: 'kr.learning-relation.example',
       dependentTopicId: 'kr.topic.b',
       prerequisiteTopicId: 'kr.topic.a',
+      layer: 'official',
       relationKind: 'required-prerequisite',
       scope: 'cross-course',
       strength: 'required',

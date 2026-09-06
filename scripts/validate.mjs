@@ -3,6 +3,7 @@ import { fileURLToPath } from 'node:url';
 import { dirname, join, resolve } from 'node:path';
 import Ajv2020 from 'ajv/dist/2020.js';
 import addFormats from 'ajv-formats';
+import { OVERLAY_SCHEMA_ID, analyzeOverlay, contentOverlayDirectory, indexOverlayEntries, readContentOverlays } from './lib/content-overlay.mjs';
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -15,6 +16,7 @@ const schemaFiles = [
   'middle-profile.schema.json',
   'high-profile.schema.json',
   'bridge-profile.schema.json',
+  'content-overlay.schema.json',
 ];
 
 const profileConfig = {
@@ -28,6 +30,7 @@ const profileConfig = {
       topics: 'topicCollection',
       clusters: 'clusterCollection',
       learningRelations: 'learningRelationCollection',
+      candidateLearningRelations: 'candidateLearningRelationCollection',
       reviewRecords: 'reviewRecordCollection',
       coverageGaps: 'coverageGapCollection',
     },
@@ -42,6 +45,7 @@ const profileConfig = {
       topics: 'topicCollection',
       clusters: 'clusterCollection',
       learningRelations: 'learningRelationCollection',
+      candidateLearningRelations: 'candidateLearningRelationCollection',
       courseRelations: 'courseRelationCollection',
       creditRules: 'creditRuleCollection',
       choiceSets: 'choiceSetCollection',
@@ -55,6 +59,7 @@ const profileConfig = {
     collectionDefs: {
       transitionAlignments: 'transitionAlignmentCollection',
       elementaryTransitions: 'elementaryTransitionCollection',
+      candidateElementaryTransitions: 'candidateElementaryTransitionCollection',
       reviewRecords: 'reviewRecordCollection',
       coverageGaps: 'coverageGapCollection',
     },
@@ -113,6 +118,93 @@ function validateOfficialRelations(profile, collections, errors) {
     for (const relation of collections[collectionName]?.records ?? []) {
       if (relation.basisKind !== 'official-source') errors.push(`${profile}/${collectionName}/${relation.id}: relation must use official-source evidence`);
     }
+  }
+}
+
+const candidateBasisKinds = new Set(['official-code-order', 'decomposition-order', 'repository-authored']);
+
+function findCycle(edges) {
+  const outgoing = new Map();
+  const indegree = new Map();
+  for (const edge of edges) {
+    const { prerequisiteTopicId: before, dependentTopicId: after } = edge;
+    if (!outgoing.has(before)) outgoing.set(before, []);
+    outgoing.get(before).push(after);
+    indegree.set(before, indegree.get(before) ?? 0);
+    indegree.set(after, (indegree.get(after) ?? 0) + 1);
+  }
+  const queue = [...indegree].filter(([, degree]) => degree === 0).map(([id]) => id);
+  let visited = 0;
+  for (let index = 0; index < queue.length; index += 1) {
+    visited += 1;
+    for (const next of outgoing.get(queue[index]) ?? []) {
+      indegree.set(next, indegree.get(next) - 1);
+      if (indegree.get(next) === 0) queue.push(next);
+    }
+  }
+  return indegree.size - visited;
+}
+
+// K-12 공통 계약 v1 7절 1·2: 층 불변식, 층별 DAG, 합집합 DAG, dangling 참조, 층 간 중복.
+function validateRelationLayers(profile, collections, errors) {
+  const official = collections.learningRelations?.records ?? [];
+  const candidate = collections.candidateLearningRelations?.records ?? [];
+  const topicIds = new Set((collections.topics?.records ?? []).map((topic) => topic.id));
+  for (const relation of official) {
+    const label = `${profile}/learningRelations/${relation.id}`;
+    if (relation.layer !== 'official') errors.push(`${label}: official file must carry layer=official`);
+    if (relation.basisKind !== 'official-source') errors.push(`${label}: official layer allows only official-source evidence`);
+    if (relation.relationKind !== 'required-prerequisite') errors.push(`${label}: official layer allows only required-prerequisite`);
+    if (!/ p\.\d+/.test(relation.basis)) errors.push(`${label}: official basis must cite a printed page`);
+  }
+  const officialPairs = new Set(official.map((relation) => `${relation.prerequisiteTopicId}|${relation.dependentTopicId}`));
+  for (const relation of candidate) {
+    const label = `${profile}/candidateLearningRelations/${relation.id}`;
+    if (relation.layer !== 'pedagogical-candidate') errors.push(`${label}: candidate file must carry layer=pedagogical-candidate`);
+    if (relation.relationKind !== 'recommended-before') errors.push(`${label}: candidate layer allows only recommended-before`);
+    if (relation.strength !== 'recommended') errors.push(`${label}: candidate layer allows only recommended strength`);
+    if (relation.reviewStatus !== 'candidate') errors.push(`${label}: candidate layer must stay under review`);
+    if (!candidateBasisKinds.has(relation.basisKind)) errors.push(`${label}: candidate basisKind ${relation.basisKind} is not a candidate evidence kind`);
+    if (officialPairs.has(`${relation.prerequisiteTopicId}|${relation.dependentTopicId}`)) errors.push(`${label}: duplicates an official relation`);
+    for (const topicId of [relation.prerequisiteTopicId, relation.dependentTopicId]) {
+      if (!topicIds.has(topicId)) errors.push(`${label}: unresolved reference ${topicId}`);
+    }
+  }
+  for (const [label, edges] of [
+    [`${profile}/candidateLearningRelations`, candidate],
+    [`${profile} official+candidate union`, [...official, ...candidate]],
+  ]) {
+    const cyclic = findCycle(edges);
+    if (cyclic) errors.push(`${label}: cycle detected (${cyclic} nodes)`);
+  }
+}
+
+// K-12 공통 계약 v1 7절 1·2를 초→중 bridge에 적용한다. 두 층은 파일이 다르고, 후보 층은 official 쌍을
+// 반복하지 않으며, 두 층의 합집합도 DAG여야 한다.
+function validateBridgeLayers(collections, elementaryTopicIds, representativeById, middleTopicIds, errors) {
+  const official = collections.elementaryTransitions?.records ?? [];
+  const candidate = collections.candidateElementaryTransitions?.records ?? [];
+  const officialPairs = new Set(official.map((relation) => `${relation.prerequisiteTopicId}|${relation.dependentTopicId}`));
+  for (const relation of candidate) {
+    const label = `bridges/candidateElementaryTransitions/${relation.id}`;
+    if (relation.layer !== 'pedagogical-candidate') errors.push(`${label}: candidate file must carry layer=pedagogical-candidate`);
+    if (relation.relationKind !== 'recommended-before') errors.push(`${label}: candidate layer allows only recommended-before`);
+    if (relation.strength !== 'recommended') errors.push(`${label}: candidate layer allows only recommended strength`);
+    if (relation.reviewStatus !== 'candidate') errors.push(`${label}: candidate layer must stay under review`);
+    if (!candidateBasisKinds.has(relation.basisKind)) errors.push(`${label}: candidate basisKind ${relation.basisKind} is not a candidate evidence kind`);
+    if (officialPairs.has(`${relation.prerequisiteTopicId}|${relation.dependentTopicId}`)) errors.push(`${label}: duplicates an official bridge`);
+    requireRefs([relation.prerequisiteTopicId], elementaryTopicIds, label, errors);
+    requireRefs([relation.dependentTopicId], middleTopicIds, label, errors);
+    if (!representativeById.has(relation.prerequisiteTopicId)) {
+      errors.push(`${label}: prerequisite is not the pinned representative topic of its elementary standard`);
+    }
+  }
+  for (const [label, edges] of [
+    ['bridges/candidateElementaryTransitions', candidate],
+    ['bridges official+candidate union', [...official, ...candidate]],
+  ]) {
+    const cyclic = findCycle(edges);
+    if (cyclic) errors.push(`${label}: cycle detected (${cyclic} nodes)`);
   }
 }
 
@@ -228,6 +320,41 @@ function validateLearningGraph(profile, collections, errors) {
   }
 }
 
+// 주제 콘텐츠 오버레이(P3-2): 스키마·dangling·원문 복사·중복·빌드 반영 여부를 함께 본다.
+async function validateContentOverlays(root, profile, collections, sourceIds, ajv, errors) {
+  const overlays = await readContentOverlays(contentOverlayDirectory(root, profile));
+  const validate = ajv.getSchema(OVERLAY_SCHEMA_ID);
+  const topicsById = new Map((collections.topics?.records ?? []).map((topic) => [topic.id, topic]));
+  const standardsById = new Map((collections.standards?.records ?? []).map((standard) => [standard.id, standard]));
+  const coursesById = new Map((collections.courses?.records ?? []).map((course) => [course.id, course]));
+
+  for (const overlay of overlays) {
+    const label = `${profile}/content/${overlay.file}`;
+    assertSchema(validate, overlay.document, label, errors);
+    requireRefs(overlay.document.sourceRefs, sourceIds, label, errors);
+    for (const entry of Object.values(overlay.document.entries ?? {})) {
+      requireRefs([entry.sourceLocator?.sourceId], sourceIds, label, errors);
+    }
+    errors.push(...analyzeOverlay({ label, overlay, topicsById, standardsById, coursesById }).errors);
+  }
+  const { entries, errors: indexErrors } = indexOverlayEntries(overlays);
+  for (const message of indexErrors) errors.push(`${profile}/content: ${message}`);
+
+  // The built topics must already carry the overlay: run `bun run build:data` after authoring.
+  for (const [topicId, hit] of entries) {
+    const topic = topicsById.get(topicId);
+    if (!topic) continue;
+    const same = topic.contentKind === 'source-grounded-draft'
+      && JSON.stringify(topic.evidence) === JSON.stringify(hit.entry.evidence)
+      && JSON.stringify(topic.assessmentPrompts) === JSON.stringify(hit.entry.assessmentPrompts);
+    if (!same) errors.push(`${profile}/topics/${topicId}: content overlay ${hit.file} is not merged into the build output`);
+  }
+  for (const topic of topicsById.values()) {
+    if (topic.contentKind === 'source-grounded-draft' && !entries.has(topic.id)) errors.push(`${profile}/topics/${topic.id}: source-grounded-draft without a content overlay entry`);
+  }
+  return overlays.length;
+}
+
 export async function createAjv(root = projectRoot) {
   const ajv = new Ajv2020({
     allErrors: true,
@@ -339,6 +466,8 @@ export async function validateRepository(root = projectRoot) {
     if (profile !== 'bridges') {
       validateProfileReferences(profile, collections, indexes, errors);
       validateLearningGraph(profile, collections, errors);
+      validateRelationLayers(profile, collections, errors);
+      await validateContentOverlays(root, profile, collections, sourceIds, ajv, errors);
       if (release.rightsStatus !== 'cleared') errors.push(`${profile}/release.json: rights status must be cleared (public official documents)`);
     }
   }
@@ -362,14 +491,22 @@ export async function validateRepository(root = projectRoot) {
     if (inventory.topicCount !== elementaryTopicIds.size) {
       errors.push('bridges/elementary-topic-inventory.json: topicCount mismatch');
     }
+    const representativeById = new Map((inventory.standards ?? []).map((standard) => [standard.representativeTopicId, standard]));
     const collection = bridge.collections.elementaryTransitions;
     if (collection.elementaryReleaseVersion !== inventory.elementaryReleaseVersion) {
       errors.push('bridges/elementary-transitions.json: elementaryReleaseVersion does not pin the inventory version');
     }
     for (const record of collection.records) {
+      if (record.layer !== 'official') errors.push(`bridges/elementaryTransitions/${record.id}: bridge file must carry layer=official`);
       requireRefs([record.prerequisiteTopicId], elementaryTopicIds, `bridges/elementaryTransitions/${record.id}`, errors);
       requireRefs([record.dependentTopicId], loaded.middle.indexes.topics, `bridges/elementaryTransitions/${record.id}`, errors);
+      // Contract v1 section 3: every bridge starts from the pinned representative topic of an
+      // elementary standard, so one subject cannot pick a different facet than another.
+      if (!representativeById.has(record.prerequisiteTopicId)) {
+        errors.push(`bridges/elementaryTransitions/${record.id}: prerequisite is not the pinned representative topic of its elementary standard`);
+      }
     }
+    validateBridgeLayers(bridge.collections, elementaryTopicIds, representativeById, loaded.middle.indexes.topics, errors);
   }
   if (bridge.release.rightsStatus !== 'cleared') errors.push('bridges/release.json: rights status must be cleared (public official documents)');
   if (inventoryReport.diagnosticCount !== 0) errors.push(`data/kr/inventory-report.json: ${inventoryReport.diagnosticCount} unresolved diagnostics`);
