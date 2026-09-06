@@ -67,3 +67,4 @@
 - 2026-09-06 R4 **버전**: 중등 데이터·온톨로지·controlled-vocabularies 모두 `0.6.0-candidate`, `docs/release/v0.6.0-candidate.md` 신규(250줄). 초등은 데이터 `kr-full-depth-v0.5` / 온톨로지 `0.4.0` 유지하고 CHANGELOG·ontology/CHANGELOG·릴리스 보고서·README·PROVENANCE·NOTICE를 이번 세션 전체 변경으로 갱신. bridge를 초등 topics.json 신규 sha(16a2b843…)로 재핀.
 - 2026-09-06 R4 **미정**: 온톨로지 IRI(`https://dexa.art/learnmap/ontology/k12-core`)의 실제 호스팅은 소유자 몫. 커밋·푸시 없음(승인 게이트).
 - 2026-09-06 09:20 소유자 푸시 승인. R4 완료 → 오케스트레이터 재검증 → 커밋·푸시 예정.
+- 2026-09-06 09:50 **푸시 완료**: 초등 main 3ef0563→e7f9502, 중등 main 68e6228→d5696ba. 주의(R4 보고): 중등 `bun run build:data`는 멱등이 아니라 R2/R3 산출물을 덮어씀 — 재실행 금지, `bun run build`만 사용. 후속 후보: 사회·역사 초→중 영역 대응표, 영어 EFL concept facet 부재, facet 인위적 성취기준 축약 규칙, 즐거운 생활 방향 미판정 5건, 온톨로지 IRI 호스팅(dexa.art), 외부 교사 검토(P4-2).
