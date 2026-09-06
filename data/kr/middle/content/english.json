@@ -1,0 +1,1170 @@
+{
+  "$schema": "../../../../schema/content-overlay.schema.json",
+  "contentKind": "source-grounded-draft",
+  "subjectKorean": "영어",
+  "authoredAt": "2026-09-06",
+  "sourceRefs": [
+    "kr-nec-2024-3-annex14"
+  ],
+  "note": "교육부 고시 제2024-3호 별책 14 영어과 교육과정의 중학교 1~3학년군 성취기준 해설과 성취기준 적용 시 고려사항을 근거로, 성취기준별 core·procedure·communication 주제에 서로 다른 관찰 증거·평가 과제·오개념을 EFL 관점에서 새로 작성한 초안이다.",
+  "entries": {
+    "kr.topic.2022.middle.010bed8da663fee57108": {
+      "evidence": [
+        "되풀이되는 낱말과 마무리 문단을 근거로 글의 중심 생각을 한 문장으로 고른다.",
+        "고른 중심 문장을 뒷받침하는 문장 두 개를 밑줄로 표시한다."
+      ],
+      "assessmentPrompts": [
+        "재활용을 다룬 200단어 안팎의 글을 읽고 중심 생각을 영어 한 문장으로 쓴 다음, 그렇게 본 근거가 되는 문장 두 개에 밑줄을 그으세요."
+      ],
+      "misconceptions": [
+        "글의 첫 문장이 언제나 중심 생각이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 20,
+        "section": "성취기준 해설",
+        "code": "[9영01-03]"
+      }
+    },
+    "kr.topic.2022.middle.0bb5aab11d29bdc76aca": {
+      "evidence": [
+        "말할 상황과 목적에 맞는 표현 방식을 골라 정한다.",
+        "모르는 낱말을 다른 말로 바꿔 말해 뜻을 이어 간다."
+      ],
+      "assessmentPrompts": [
+        "우산을 뜻하는 영어 낱말이 떠오르지 않는 상황을 가정해, 그 물건을 다른 영어 표현으로 설명하여 짝이 알아맞히게 하세요."
+      ],
+      "misconceptions": [
+        "정확한 낱말이 떠오르지 않으면 말을 멈추는 수밖에 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 23,
+        "section": "성취기준 해설",
+        "code": "[9영02-10]"
+      }
+    },
+    "kr.topic.2022.middle.1a6e0d4c2d1ed4105f1f": {
+      "evidence": [
+        "세기와 결이 다른 감정 낱말을 골라 상황에 맞게 가려 쓴다.",
+        "감정을 나타내는 문장에 그렇게 느낀 까닭을 덧붙여 말한다."
+      ],
+      "assessmentPrompts": [
+        "오늘 있었던 일 하나를 골라 자신의 기분을 happy, glad, thrilled 가운데 하나로 고르고, \"I feel … because …\" 꼴로 두 문장을 말하세요."
+      ],
+      "misconceptions": [
+        "감정 표현은 good과 bad 두 낱말로 충분하다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 22,
+        "section": "성취기준 해설",
+        "code": "[9영02-02]"
+      }
+    },
+    "kr.topic.2022.middle.1ca5c4fa9158cf3b1b8d": {
+      "evidence": [
+        "듣거나 읽는 동안 든 반감이나 동의를 따로 적어 둔다.",
+        "적어 둔 반응이 글 이해를 어떻게 흔들었는지 되짚어 쓴다."
+      ],
+      "assessmentPrompts": [
+        "글을 읽으며 동의한 곳에 O, 반대한 곳에 X를 표시하고, 표시가 몰린 곳에서 내용을 놓치지 않았는지 다시 확인해 한 줄로 쓰세요."
+      ],
+      "misconceptions": [
+        "글에 대한 자기 감정과 글의 내용 파악은 아무 상관이 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 21,
+        "section": "성취기준 적용 시 고려사항",
+        "code": "[9영01-09]"
+      },
+      "note": "해설 없음: 성취기준 문장과 [9영01-09]를 다른 성취기준과 연계해 수행평가로 다루라는 이해 영역 고려사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.1e3cf8ddcd387d15d42a": {
+      "evidence": [
+        "문장에서 이어 발음할 자리와 줄여 말할 자리를 미리 표시한다.",
+        "표시한 대로 문장을 소리 내어 말하고 뜻이 통하는지 확인받는다."
+      ],
+      "assessmentPrompts": [
+        "\"Do you want to come with us?\"를 또박또박 읽은 것과 이어서 말한 것을 각각 녹음하고, 이어 말한 자리를 문장 위에 표시해 함께 내세요."
+      ],
+      "misconceptions": [
+        "빨리 말하기만 하면 연음이나 축약이 저절로 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 22,
+        "section": "성취기준 해설",
+        "code": "[9영02-01]"
+      }
+    },
+    "kr.topic.2022.middle.22c0b3a6bff820ec014a": {
+      "evidence": [
+        "자기 요약과 읽은 글을 견주어 빠뜨린 중심 내용을 찾는다.",
+        "빠뜨린 내용을 채우고 늘어진 부분은 줄여 다시 쓴다."
+      ],
+      "assessmentPrompts": [
+        "쓴 요약을 읽은 글 옆에 두고 빠뜨린 중심 내용에 별표를 한 뒤, 그 내용을 넣고 대신 덜 중요한 문장을 지워 길이를 맞춰 다시 쓰세요."
+      ],
+      "misconceptions": [
+        "요약은 짧을수록 좋으므로 중심 내용이 빠져도 괜찮다고 본다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 23,
+        "section": "성취기준 적용 시 고려사항",
+        "code": "[9영02-07]"
+      },
+      "note": "해설 없음: 성취기준 문장과 표현 영역 성취기준 적용 시 고려사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.2368362a5a5b9e7252ac": {
+      "evidence": [
+        "같은 사안을 다르게 본 두 글에서 관점이 갈리는 지점을 찾아낸다.",
+        "자기 생각과 다른 주장을 뒤틀지 않고 요약해 말한다."
+      ],
+      "assessmentPrompts": [
+        "교복 자율화를 두고 찬반이 갈린 두 글을 읽고 각 글쓴이의 주장과 근거를 한 칸씩 정리한 뒤, 자신과 다른 쪽 주장을 영어 한 문장으로 요약하세요."
+      ],
+      "misconceptions": [
+        "자신과 다른 주장은 근거가 없거나 잘못된 정보라고 미리 단정한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 21,
+        "section": "성취기준 적용 시 고려사항",
+        "code": "[9영01-09]"
+      },
+      "note": "해설 없음: 성취기준 문장과 [9영01-09]를 다른 성취기준과 연계해 수행평가로 다루라는 이해 영역 고려사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.2a801d58cfde7b9870e6": {
+      "evidence": [
+        "만든 결과물에서 남의 것과 자기 것을 갈라 표시한다.",
+        "표시가 빠진 곳을 채우고 어떻게 고쳤는지 적는다."
+      ],
+      "assessmentPrompts": [
+        "완성한 발표 자료를 다시 보며 남의 자료를 쓴 곳에 표시를 하고, 표시가 빠진 곳을 채운 뒤 무엇을 어떻게 고쳤는지 세 줄로 쓰세요."
+      ],
+      "misconceptions": [
+        "자기가 다시 그리거나 말을 바꾸면 남의 자료가 아니게 된다고 생각한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 23,
+        "section": "성취기준 해설",
+        "code": "[9영02-09]"
+      }
+    },
+    "kr.topic.2022.middle.37058b35900b59520578": {
+      "evidence": [
+        "자기가 고른 자료를 짝에게 소개하고 어디가 좋았는지 말한다.",
+        "짝이 추천한 자료를 하나 골라 읽고 소감을 되돌려 준다."
+      ],
+      "assessmentPrompts": [
+        "자기가 고른 영어 자료를 짝에게 1분 동안 영어로 소개하고, 짝이 추천한 자료 하나를 읽은 뒤 어떤 점이 좋았는지 짝에게 말해 주세요."
+      ],
+      "misconceptions": [
+        "읽을거리 고르기는 혼자 하는 일이라 남과 나눌 까닭이 없다고 본다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 21,
+        "section": "성취기준 해설",
+        "code": "[9영01-10]"
+      }
+    },
+    "kr.topic.2022.middle.3ca5153baabafe3ba23c": {
+      "evidence": [
+        "제목과 그림을 먼저 훑어본 뒤 이어질 내용을 미리 적어 둔다.",
+        "듣거나 읽으며 미리 적은 내용이 맞았는지 하나씩 표시한다."
+      ],
+      "assessmentPrompts": [
+        "영상 자료의 제목과 첫 화면만 본 뒤 다음에 나올 내용을 영어 두 문장으로 예측해 적고, 끝까지 본 다음 맞은 것과 빗나간 것을 표시하세요."
+      ],
+      "misconceptions": [
+        "예측이 빗나가면 잘못한 활동이라고 보고 예측하기를 그만둔다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 20,
+        "section": "성취기준 해설",
+        "code": "[9영01-08]"
+      }
+    },
+    "kr.topic.2022.middle.3d495a219f4cbbc7873f": {
+      "evidence": [
+        "짝이 설명한 인과 관계에서 빠진 고리를 찾아 되묻는다.",
+        "되물음에 답하며 자기 설명의 빠진 고리를 채워 말한다."
+      ],
+      "assessmentPrompts": [
+        "짝의 인과 설명을 듣고 \"Why did that happen?\"으로 빠진 고리를 물은 뒤, 자기 차례에는 짝의 물음에 답해 설명을 채워 말하세요."
+      ],
+      "misconceptions": [
+        "설명이 길면 듣는 이가 알아서 인과 관계를 채운다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 22,
+        "section": "성취기준 해설",
+        "code": "[9영02-05]"
+      }
+    },
+    "kr.topic.2022.middle.42b469abaedd2644b27a": {
+      "evidence": [
+        "자기 말하기 녹음에서 뜻이 흐려진 대목을 찾아 표시한다.",
+        "속도와 끊는 자리를 바꿔 다시 말하고 나아진 점을 적는다."
+      ],
+      "assessmentPrompts": [
+        "짧은 대사를 두 번 녹음하되 두 번째에는 끊어 말할 자리를 바꾸고, 어느 녹음이 더 알아듣기 쉬운지와 그 까닭을 두 문장으로 쓰세요."
+      ],
+      "misconceptions": [
+        "발음이 원어민과 같아야만 소통에 성공한 것이라고 생각한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 22,
+        "section": "성취기준 해설",
+        "code": "[9영02-01]"
+      }
+    },
+    "kr.topic.2022.middle.4508d6adc6bb8f2a3118": {
+      "evidence": [
+        "모둠에서 자기가 쓴 방법을 설명하고 다른 사람의 방법과 견준다.",
+        "짝의 방법을 한 번 따라 해 보고 무엇이 달라졌는지 말한다."
+      ],
+      "assessmentPrompts": [
+        "같은 팟캐스트를 들은 모둠원끼리 어떤 방법으로 들었는지 서로 설명하고, 짝의 방법으로 한 번 더 들은 뒤 무엇이 더 잘 들렸는지 말하세요."
+      ],
+      "misconceptions": [
+        "듣기 방법은 사람마다 같아야 하며 하나의 정답 방법이 있다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 20,
+        "section": "성취기준 해설",
+        "code": "[9영01-08]"
+      }
+    },
+    "kr.topic.2022.middle.47cd46898956e633c411": {
+      "evidence": [
+        "쓴 글을 보내기 전에 목적, 받는 이, 형식 항목으로 점검한다.",
+        "점검표에서 걸린 항목을 고치고 무엇을 바꿨는지 적는다."
+      ],
+      "assessmentPrompts": [
+        "이메일 초고를 쓴 뒤 목적, 받는 이, 인사말, 맞춤법 네 항목 점검표로 확인하고, 고친 곳 두 군데를 표시해 초고와 함께 내세요."
+      ],
+      "misconceptions": [
+        "초고를 다 쓰면 곧바로 보내야 하고 고쳐 쓰기는 시간 낭비라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 23,
+        "section": "성취기준 적용 시 고려사항",
+        "code": "[9영02-08]"
+      },
+      "note": "해설 없음: 성취기준 문장과 표현 영역 성취기준 적용 시 고려사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.484f00468b4ba286a839": {
+      "evidence": [
+        "쓴 문단에서 되풀이된 감정 낱말을 찾아 표시한다.",
+        "되풀이된 낱말을 다른 표현으로 바꿔 문단을 고쳐 쓴다."
+      ],
+      "assessmentPrompts": [
+        "감정을 묘사한 자기 문단에서 같은 낱말이 두 번 넘게 나온 곳을 찾아 낱말 목록을 써서 다른 표현으로 바꾼 뒤, 두 문단을 나란히 견주세요."
+      ],
+      "misconceptions": [
+        "문장이 길어야 감정이 잘 드러난다고 보고 낱말 고르기는 살피지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 22,
+        "section": "성취기준 해설",
+        "code": "[9영02-02]"
+      }
+    },
+    "kr.topic.2022.middle.4aa182d0d4a3dd1a64c7": {
+      "evidence": [
+        "짝의 자료에는 있고 자기 자료에는 없는 항목을 골라 무엇을 물을지 정한다.",
+        "\"When does it start?\" 같은 질문을 던져 빠진 항목을 채워 넣는다."
+      ],
+      "assessmentPrompts": [
+        "짝과 서로 다른 절반씩 채워진 시간표를 들고 빠진 칸을 영어 질문으로만 물어 모두 채운 뒤, 두 표가 같아졌는지 맞춰 보세요."
+      ],
+      "misconceptions": [
+        "정보 차 활동에서 자료를 곧바로 보여 주고 질문 없이 옮겨 적는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 20,
+        "section": "성취기준 해설",
+        "code": "[9영01-02]"
+      }
+    },
+    "kr.topic.2022.middle.4e93134fff83033b6c59": {
+      "evidence": [
+        "설명할 대상의 정보를 종류별로 나누어 말할 차례를 정한다.",
+        "정한 차례에 따라 위치나 절차를 영어 문장으로 설명한다."
+      ],
+      "assessmentPrompts": [
+        "학교 도서관까지 가는 길을 지도를 보며 영어로 설명하되 출발점, 방향, 표지물, 도착점을 차례대로 넣어 네 문장 이상으로 말하세요."
+      ],
+      "misconceptions": [
+        "설명은 아는 것을 떠오르는 대로 말하면 된다고 보고 차례를 정하지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 22,
+        "section": "성취기준 해설",
+        "code": "[9영02-03]"
+      }
+    },
+    "kr.topic.2022.middle.4ec428cbd54ab775f621": {
+      "evidence": [
+        "짝이 읽어 준 대사에서 감정이 드러난 대목을 되짚어 말한다.",
+        "\"You sound worried. Is that right?\"처럼 감정을 확인하며 반응한다."
+      ],
+      "assessmentPrompts": [
+        "짝이 감정을 담아 읽은 대사를 듣고 어떤 기분으로 들렸는지 영어로 되물어 확인한 다음, 그 감정에 어울리는 반응 한 문장을 이어 말하세요."
+      ],
+      "misconceptions": [
+        "상대의 감정을 확인하지 않고 곧바로 조언이나 해결책부터 말한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 21,
+        "section": "성취기준 적용 시 고려사항",
+        "code": "[9영01-05]"
+      },
+      "note": "해설 없음: 성취기준 문장과 이해 영역 성취기준 적용 시 고려사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.54b8db1b5196d503ba42": {
+      "evidence": [
+        "도표에서 무엇을 먼저 말할지 듣는 이의 관심을 물어 정한다.",
+        "듣는 이의 반응을 보며 어려운 낱말을 쉬운 말로 바꿔 말한다."
+      ],
+      "assessmentPrompts": [
+        "우리 반 취미 조사 막대그래프를 짝에게 영어로 설명하되, 짝이 모르겠다고 하면 같은 내용을 더 쉬운 표현으로 바꿔 다시 말하세요."
+      ],
+      "misconceptions": [
+        "도표 설명은 수치를 모두 읽어 주기만 하면 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 22,
+        "section": "성취기준 해설",
+        "code": "[9영02-03]"
+      }
+    },
+    "kr.topic.2022.middle.595b9dca15e395c7df3d": {
+      "evidence": [
+        "짝의 결과물에서 밝히지 않은 자료를 찾아 알려 준다.",
+        "지적받은 곳을 고치고 고친 까닭을 짝에게 설명한다."
+      ],
+      "assessmentPrompts": [
+        "짝의 발표 자료를 서로 바꿔 보고 밝히지 않은 자료를 하나씩 찾아 알려 준 다음, 자기 자료를 고쳐 무엇을 왜 바꿨는지 짝에게 말하세요."
+      ],
+      "misconceptions": [
+        "친구끼리는 어디서 가져온 자료인지 밝히지 않아도 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 23,
+        "section": "성취기준 해설",
+        "code": "[9영02-09]"
+      }
+    },
+    "kr.topic.2022.middle.59d88c6870c94de26204": {
+      "evidence": [
+        "짝의 순서 배열과 다른 곳을 찾아 어느 문장을 근거로 삼았는지 묻는다.",
+        "서로의 근거를 견주어 어느 배열이 글과 맞는지 함께 정한다."
+      ],
+      "assessmentPrompts": [
+        "짝과 배열이 다른 카드 두 장을 골라 \"Why do you think it comes first?\"로 서로 묻고, 글의 문장을 근거로 최종 순서를 정하세요."
+      ],
+      "misconceptions": [
+        "배열이 다르면 상대가 틀렸다고 보고 근거를 묻지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 20,
+        "section": "성취기준 해설",
+        "code": "[9영01-04]"
+      }
+    },
+    "kr.topic.2022.middle.5b6bd2160dbab619a691": {
+      "evidence": [
+        "짝의 표정과 말투를 보고 어떤 기분인지 물어 확인한다.",
+        "짝의 감정에 맞춰 공감하는 말을 골라 대화를 잇는다."
+      ],
+      "assessmentPrompts": [
+        "짝이 겪은 일을 듣고 \"How did you feel?\"로 감정을 물은 뒤, 짝의 대답에 어울리는 공감 표현 한 문장을 영어로 이어 말하세요."
+      ],
+      "misconceptions": [
+        "상대의 감정을 물으면 말이 끊긴다고 보고 자기 이야기부터 꺼낸다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 22,
+        "section": "성취기준 해설",
+        "code": "[9영02-02]"
+      }
+    },
+    "kr.topic.2022.middle.622b6c6514b292998c9a": {
+      "evidence": [
+        "담화나 글에서 숫자, 장소, 시각에 해당하는 대목을 찾아 표에 옮긴다.",
+        "표에 옮긴 정보로 질문에 답하고 그 근거가 된 문장을 가리킨다."
+      ],
+      "assessmentPrompts": [
+        "학교 축제 안내 방송을 듣고 날짜, 시작 시각, 장소, 참가비를 표에 채운 뒤 각 항목을 어느 문장에서 들었는지 함께 쓰세요."
+      ],
+      "misconceptions": [
+        "아는 낱말이 나온 자리를 곧 정답이라고 보고 숫자나 장소를 잘못 옮긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 20,
+        "section": "성취기준 해설",
+        "code": "[9영01-02]"
+      }
+    },
+    "kr.topic.2022.middle.6335ed15a190dfae8e85": {
+      "evidence": [
+        "대화가 막혔을 때 쓸 표현을 미리 마련해 둔다.",
+        "마련한 표현으로 대화를 이어 가고 통한 표현을 기록한다."
+      ],
+      "assessmentPrompts": [
+        "\"How do you say … in English?\" 같은 표현 세 개를 미리 적어 두고 짝과 3분 동안 대화한 뒤, 실제로 쓴 표현과 그때 상황을 적으세요."
+      ],
+      "misconceptions": [
+        "대화가 막히면 우리말로 바꿔 말하는 것이 가장 빠른 해결이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 23,
+        "section": "성취기준 해설",
+        "code": "[9영02-10]"
+      }
+    },
+    "kr.topic.2022.middle.7236493441c079f9a712": {
+      "evidence": [
+        "모둠에서 서로 다른 요지 문장을 견주어 어디가 다른지 말한다.",
+        "다른 점을 두고 근거를 주고받아 하나의 요지로 합의한다."
+      ],
+      "assessmentPrompts": [
+        "모둠원이 각자 쓴 요지 문장을 칠판에 붙이고 \"I think so because…\"로 근거를 말하며 모둠의 요지 한 문장을 정하세요."
+      ],
+      "misconceptions": [
+        "목소리가 큰 사람의 요지를 근거를 따지지 않고 모둠 답으로 삼는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 20,
+        "section": "성취기준 해설",
+        "code": "[9영01-03]"
+      }
+    },
+    "kr.topic.2022.middle.72ab2213bf66b7d27deb": {
+      "evidence": [
+        "사건의 원인과 결과를 갈라 어느 쪽이 앞서는지 정한다.",
+        "because, as a result 같은 표현을 써서 두 사건을 문장으로 잇는다."
+      ],
+      "assessmentPrompts": [
+        "교실이 어질러진 까닭을 원인과 결과로 나눠 적고, 이어 주는 표현을 써서 원인 두 개와 결과 하나를 잇는 영어 문단을 쓰세요."
+      ],
+      "misconceptions": [
+        "and로만 문장을 이어도 원인과 결과가 저절로 드러난다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 22,
+        "section": "성취기준 해설",
+        "code": "[9영02-05]"
+      }
+    },
+    "kr.topic.2022.middle.753804aabeb6edd2e4b7": {
+      "evidence": [
+        "인물의 말투와 행동 묘사에서 감정을 드러내는 단서를 골라낸다.",
+        "골라낸 단서에 맞는 감정 낱말을 대고 그 까닭을 문장으로 밝힌다."
+      ],
+      "assessmentPrompts": [
+        "대화 음성을 듣고 화자의 기분을 sad, annoyed, excited 가운데 하나로 고른 뒤, 그렇게 고른 단서를 목소리 높낮이와 낱말에서 각각 하나씩 쓰세요."
+      ],
+      "misconceptions": [
+        "글에 감정 낱말이 직접 나와야만 감정을 알아낼 수 있다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 21,
+        "section": "성취기준 적용 시 고려사항",
+        "code": "[9영01-05]"
+      },
+      "note": "해설 없음: 성취기준 문장과 이해 영역 성취기준 적용 시 고려사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.76b848a6008e8f4ad4c1": {
+      "evidence": [
+        "자기가 푼 숨은 뜻이 대화 상황과 맞아떨어지는지 다시 따져 본다.",
+        "맞지 않으면 다른 해석을 적고 근거로 드는 문장을 바꾼다."
+      ],
+      "assessmentPrompts": [
+        "숨은 뜻을 한 번 쓴 뒤 상황 설명만 바꾼 대화를 읽고 해석이 달라지는지 확인해, 최종 해석과 근거 문장을 다시 정리하세요."
+      ],
+      "misconceptions": [
+        "한 표현의 숨은 뜻은 어느 상황에서나 하나로 굳어 있다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 21,
+        "section": "성취기준 적용 시 고려사항",
+        "code": "[9영01-07]"
+      },
+      "note": "해설 없음: 성취기준 문장과 이해 영역 성취기준 적용 시 고려사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.7abebcc5dbb9310fd4be": {
+      "evidence": [
+        "찾아낸 세부 정보 가운데 확신이 낮은 항목을 스스로 표시한다.",
+        "다시 들으며 표시한 항목을 고치고 무엇 때문에 틀렸는지 적는다."
+      ],
+      "assessmentPrompts": [
+        "안내문을 한 번 읽고 답을 채운 뒤 확신이 낮은 칸에 물음표를 하고, 두 번째 읽기에서 고친 칸마다 처음에 왜 놓쳤는지 한 줄로 쓰세요."
+      ],
+      "misconceptions": [
+        "고쳐 쓴 답만 남기고 처음 답이 왜 틀렸는지는 살피지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 20,
+        "section": "성취기준 해설",
+        "code": "[9영01-02]"
+      }
+    },
+    "kr.topic.2022.middle.8918b8f3c09007a7543c": {
+      "evidence": [
+        "자기가 판단한 목적이 글의 마무리 문장과 어긋나지 않는지 견준다.",
+        "어긋난 곳이 있으면 판단을 바꾸고 무엇 때문에 바꿨는지 적는다."
+      ],
+      "assessmentPrompts": [
+        "먼저 정한 글의 목적을 적어 두고 마지막 문단을 다시 읽은 다음, 판단을 그대로 두거나 바꾼 까닭을 문장 하나로 설명하세요."
+      ],
+      "misconceptions": [
+        "글의 목적은 첫 문장만 보면 곧바로 정해진다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 21,
+        "section": "성취기준 적용 시 고려사항",
+        "code": "[9영01-06]"
+      },
+      "note": "해설 없음: 성취기준 문장과 이해 영역 성취기준 적용 시 고려사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.89f172913a485a639c01": {
+      "evidence": [
+        "가져다 쓴 자료가 어디서 온 것인지 결과물에 밝혀 적는다.",
+        "매체를 골라 자기 생각을 담은 결과물을 만들어 낸다."
+      ],
+      "assessmentPrompts": [
+        "환경 캠페인 포스터를 만들되 남의 사진이나 문구를 쓴 곳마다 어디서 가져왔는지 적고, 직접 만든 영어 문장 두 개를 넣으세요."
+      ],
+      "misconceptions": [
+        "인터넷에 올라온 자료는 누구나 마음대로 가져다 써도 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 23,
+        "section": "성취기준 해설",
+        "code": "[9영02-09]"
+      }
+    },
+    "kr.topic.2022.middle.96fe547086f78d03a50e": {
+      "evidence": [
+        "말 그대로의 뜻과 그 상황에서 통하는 뜻이 갈리는 자리를 짚는다.",
+        "앞뒤 문장을 근거로 삼아 숨은 뜻을 우리말로 풀어 쓴다."
+      ],
+      "assessmentPrompts": [
+        "\"It's getting late.\"이라는 말이 나온 대화 세 편을 읽고 각 상황에서 이 말이 실제로 무엇을 뜻하는지 상황마다 다르게 쓰세요."
+      ],
+      "misconceptions": [
+        "낱말의 사전 뜻만 알면 문장의 뜻이 언제나 정해진다고 본다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 21,
+        "section": "성취기준 적용 시 고려사항",
+        "code": "[9영01-07]"
+      },
+      "note": "해설 없음: 성취기준 문장과 이해 영역 성취기준 적용 시 고려사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.99c0da73517e305ce778": {
+      "evidence": [
+        "자기가 쓴 요지 문장이 글 전체를 덮는지 문단마다 맞춰 본다.",
+        "덮지 못한 문단이 있으면 요지 문장을 고쳐 다시 쓴다."
+      ],
+      "assessmentPrompts": [
+        "처음 쓴 요지 문장을 각 문단 옆에 대 보고 어느 문단이 빠졌는지 표시한 다음, 그 문단까지 담기도록 요지를 고쳐 쓰세요."
+      ],
+      "misconceptions": [
+        "요지를 길게 쓸수록 정확해진다고 보고 세부 사항을 모두 집어넣는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 20,
+        "section": "성취기준 해설",
+        "code": "[9영01-03]"
+      }
+    },
+    "kr.topic.2022.middle.a6de132740005cee6c3c": {
+      "evidence": [
+        "지난 일과 앞으로 할 일을 시제를 갈라 문장으로 만든다.",
+        "겪은 일의 차례와 계획의 차례를 이어서 말한다."
+      ],
+      "assessmentPrompts": [
+        "지난 방학에 한 일 두 가지와 다음 방학에 할 일 두 가지를 시제를 갈라 영어로 말하고, 두 이야기를 잇는 문장을 하나 덧붙이세요."
+      ],
+      "misconceptions": [
+        "지난 일도 현재 시제로 말하면 뜻이 통하니 시제는 중요하지 않다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 23,
+        "section": "성취기준 적용 시 고려사항",
+        "code": "[9영02-04]"
+      },
+      "note": "해설 없음: 성취기준 문장과 표현 영역 성취기준 적용 시 고려사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.ad264ab869adc4095d83": {
+      "evidence": [
+        "세운 계획과 실제로 읽은 분량을 견주어 어긋난 곳을 짚는다.",
+        "다음 계획을 자기 수준과 시간에 맞게 고쳐 쓴다."
+      ],
+      "assessmentPrompts": [
+        "2주 동안 실제로 읽거나 들은 분량을 기록표에 채우고, 계획과 어긋난 주를 골라 무엇이 걸림돌이었는지와 다음 계획을 어떻게 바꿀지 쓰세요."
+      ],
+      "misconceptions": [
+        "계획대로 못 하면 기록을 멈추는 편이 낫다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 21,
+        "section": "성취기준 해설",
+        "code": "[9영01-10]"
+      }
+    },
+    "kr.topic.2022.middle.af41341846875245586f": {
+      "evidence": [
+        "글에서 중심 문장과 곁가지 문장을 갈라 표시한다.",
+        "중심 문장만 이어 붙여 원래 글보다 짧은 요약을 만든다."
+      ],
+      "assessmentPrompts": [
+        "300단어 안팎의 글을 읽고 중심 문장에 밑줄을 그은 뒤, 그 문장들만 이어 영어 다섯 문장 이내로 요약을 쓰세요."
+      ],
+      "misconceptions": [
+        "요약은 읽은 글에서 문장을 그대로 옮겨 붙이는 일이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 23,
+        "section": "성취기준 적용 시 고려사항",
+        "code": "[9영02-07]"
+      },
+      "note": "해설 없음: 성취기준 문장과 표현 영역 성취기준 적용 시 고려사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.b8bb14c83a9b35c76647": {
+      "evidence": [
+        "말하는 이가 무엇을 바라는지 짝에게 확인하는 질문을 만든다.",
+        "확인한 뜻에 맞춰 응답을 골라 대화를 이어 간다."
+      ],
+      "assessmentPrompts": [
+        "\"Can you help me with this?\"라는 말을 듣고 상대가 바라는 바를 \"Do you mean…?\"으로 확인한 뒤, 확인한 내용에 맞는 대답을 영어로 하세요."
+      ],
+      "misconceptions": [
+        "부탁인지 불평인지 확인하지 않고 자기 짐작대로 대답한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 21,
+        "section": "성취기준 적용 시 고려사항",
+        "code": "[9영01-06]"
+      },
+      "note": "해설 없음: 성취기준 문장과 이해 영역 성취기준 적용 시 고려사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.b9130fcb0f48421f02f5": {
+      "evidence": [
+        "짝의 주장을 듣고 근거가 무엇이었는지 되짚어 확인한다.",
+        "\"I agree, but…\"처럼 예의를 지키며 다른 의견을 낸다."
+      ],
+      "assessmentPrompts": [
+        "짝의 주장을 듣고 근거를 영어로 되짚어 확인한 뒤, 동의하거나 반대하는 자기 의견을 근거 하나와 함께 예의 있는 표현으로 말하세요."
+      ],
+      "misconceptions": [
+        "토론에서는 상대의 근거를 확인하기보다 곧바로 반박해야 한다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 23,
+        "section": "성취기준 해설",
+        "code": "[9영02-06]"
+      }
+    },
+    "kr.topic.2022.middle.baf73fde785a56e89c61": {
+      "evidence": [
+        "들려준 문장에서 두 낱말이 이어져 한 덩어리로 들린 자리를 표시한다.",
+        "같은 문장을 끊어 읽은 것과 이어 읽은 것을 번갈아 소리 내어 재현한다."
+      ],
+      "assessmentPrompts": [
+        "\"What are you doing?\"과 \"Whatcha doin'?\"을 차례로 듣고 소리가 줄거나 이어진 자리를 문장 위에 표시한 뒤, 두 가지를 번갈아 소리 내어 읽으세요."
+      ],
+      "misconceptions": [
+        "연음이나 축약을 발음이 틀린 것이거나 게으른 말투라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 20,
+        "section": "성취기준 해설",
+        "code": "[9영01-01]"
+      }
+    },
+    "kr.topic.2022.middle.bb37fa1a4f7d4f2c5226": {
+      "evidence": [
+        "말하기 전에 핵심 낱말만 적은 쪽지를 만들어 순서를 잡는다.",
+        "발표 뒤 쪽지 없이 다시 말하며 매끄러워진 곳을 확인한다."
+      ],
+      "assessmentPrompts": [
+        "핵심 낱말 다섯 개만 적은 쪽지를 만들어 방학 계획을 말한 뒤, 쪽지를 덮고 한 번 더 말하면서 달라진 점을 두 문장으로 적으세요."
+      ],
+      "misconceptions": [
+        "발표는 원고를 그대로 외워야 잘한 것이라고 생각한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 23,
+        "section": "성취기준 적용 시 고려사항",
+        "code": "[9영02-04]"
+      },
+      "note": "해설 없음: 성취기준 문장과 표현 영역 성취기준 적용 시 고려사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.bc28373e31552aeae0a3": {
+      "evidence": [
+        "초고에서 목적에 맞지 않는 문장을 골라 표시한다.",
+        "표시한 문장을 고쳐 쓰고 앞뒤 글을 견주어 나아진 점을 밝힌다."
+      ],
+      "assessmentPrompts": [
+        "동아리 모집 글 초고에서 읽는 이의 관심을 끌지 못하는 문장 두 개를 골라 고쳐 쓰고, 고치기 전과 후를 나란히 붙여 무엇이 나아졌는지 쓰세요."
+      ],
+      "misconceptions": [
+        "고쳐 쓰기는 맞춤법 오류만 손보는 일이라고 생각한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 23,
+        "section": "성취기준 해설",
+        "code": "[9영02-10]"
+      }
+    },
+    "kr.topic.2022.middle.bf5e56bef017d08bc7a8": {
+      "evidence": [
+        "자기 발음을 녹음해 들으며 이어 말해야 할 자리를 놓친 곳을 찾아낸다.",
+        "놓친 자리를 다시 녹음하고 앞뒤 녹음을 견주어 달라진 점을 말한다."
+      ],
+      "assessmentPrompts": [
+        "\"I want to go\"가 들어간 문장 세 개를 녹음해 원어 음성과 견준 다음, 이어지거나 줄어든 소리 두 곳을 골라 무엇을 어떻게 고칠지 적으세요."
+      ],
+      "misconceptions": [
+        "한 번 들은 것만으로 소리를 다 잡았다고 보고 다시 듣기를 건너뛴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 20,
+        "section": "성취기준 해설",
+        "code": "[9영01-01]"
+      }
+    },
+    "kr.topic.2022.middle.c096ae92f2ba585dac2c": {
+      "evidence": [
+        "자기 관심 분야에 맞는 영어 자료를 고르고 고른 까닭을 밝힌다.",
+        "고른 자료를 읽거나 듣는 계획을 날짜와 분량으로 세운다."
+      ],
+      "assessmentPrompts": [
+        "관심 있는 주제의 영어 영상이나 글을 세 편 찾아 목록을 만들고, 왜 그 자료를 골랐는지와 2주 동안 어떤 순서로 볼지 계획표에 쓰세요."
+      ],
+      "misconceptions": [
+        "수준이 높은 자료를 고를수록 좋은 선택이라고 보고 끝까지 보지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 21,
+        "section": "성취기준 해설",
+        "code": "[9영01-10]"
+      }
+    },
+    "kr.topic.2022.middle.c29eeaf4ca6ddfba4920": {
+      "evidence": [
+        "다른 의견을 말한 짝의 말을 끝까지 듣고 되짚어 확인한다.",
+        "\"I see your point, but…\"처럼 존중을 담은 표현으로 반응한다."
+      ],
+      "assessmentPrompts": [
+        "짝이 자신과 반대되는 의견을 말하면 끊지 않고 들은 뒤 들은 내용을 영어로 되짚고, 존중을 담은 표현으로 자기 생각을 덧붙이세요."
+      ],
+      "misconceptions": [
+        "관점을 존중한다는 말을 반대 의견을 내면 안 된다는 뜻으로 받아들인다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 21,
+        "section": "성취기준 적용 시 고려사항",
+        "code": "[9영01-09]"
+      },
+      "note": "해설 없음: 성취기준 문장과 [9영01-09]를 다른 성취기준과 연계해 수행평가로 다루라는 이해 영역 고려사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.c909144425d3b36767fe": {
+      "evidence": [
+        "쓰던 전략이 자료에 맞지 않는 순간을 스스로 알아차린다.",
+        "훑어보기에서 자세히 읽기로 방법을 바꾸고 그 까닭을 밝힌다."
+      ],
+      "assessmentPrompts": [
+        "같은 글을 훑어보기로 한 번, 자세히 읽기로 한 번 읽고 각 방법으로 알아낸 것을 나눠 적은 뒤, 어떤 질문에 어떤 방법이 알맞았는지 쓰세요."
+      ],
+      "misconceptions": [
+        "어떤 자료든 처음부터 끝까지 한 낱말씩 읽는 방법이 가장 좋다고 믿는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 20,
+        "section": "성취기준 해설",
+        "code": "[9영01-08]"
+      }
+    },
+    "kr.topic.2022.middle.c936c04eb82f483b54c0": {
+      "evidence": [
+        "짝이 알아듣지 못한 낱말을 골라 다시 또렷하게 말해 준다.",
+        "짝의 되묻기 신호를 알아채고 말하기 속도를 조절한다."
+      ],
+      "assessmentPrompts": [
+        "짝에게 전화번호와 약속 시각을 영어로 알려 주되, 짝이 \"Sorry?\"라고 되물으면 속도나 끊는 자리를 바꿔 다시 말해 끝까지 전달하세요."
+      ],
+      "misconceptions": [
+        "상대가 못 알아들으면 목소리만 키우면 된다고 생각한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 22,
+        "section": "성취기준 해설",
+        "code": "[9영02-01]"
+      }
+    },
+    "kr.topic.2022.middle.ca52787b16eca35aaeee": {
+      "evidence": [
+        "주장 한 문장과 뒷받침 근거 두 가지를 갈라 적는다.",
+        "근거가 주장을 받치는지 하나씩 대 보고 약한 근거를 가려낸다."
+      ],
+      "assessmentPrompts": [
+        "\"Students should have longer breaks.\"에 찬성하거나 반대하는 주장을 정하고 근거 두 가지를 든 뒤, 어느 근거가 더 센지와 그 까닭을 쓰세요."
+      ],
+      "misconceptions": [
+        "목소리를 세게 내면 근거가 없어도 주장이 설득력을 얻는다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 23,
+        "section": "성취기준 해설",
+        "code": "[9영02-06]"
+      }
+    },
+    "kr.topic.2022.middle.d12e3c13d11ed6c72efe": {
+      "evidence": [
+        "같은 내용을 무례하게 말한 문장과 배려한 문장을 갈라낸다.",
+        "배려를 담은 표현을 골라 상황에 맞게 바꿔 말한다."
+      ],
+      "assessmentPrompts": [
+        "\"Give me your pen.\"을 상대를 배려한 표현 두 가지로 바꿔 쓰고, 각각 어떤 상황에서 알맞은지 한 줄씩 설명하세요."
+      ],
+      "misconceptions": [
+        "영어에는 높임 표현이 없으니 어떻게 말해도 무례하지 않다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 23,
+        "section": "성취기준 적용 시 고려사항",
+        "code": "[9영02-11]"
+      },
+      "note": "해설 없음: 성취기준 문장과 [9영02-11]을 다른 성취기준과 연계해 평가하라는 표현 영역 고려사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.d3e50251c6a725ea1b98": {
+      "evidence": [
+        "받은 편지에서 요청을 가려내 무엇에 답해야 할지 정한다.",
+        "요청마다 답을 달아 답장을 쓰고 빠진 답이 없는지 확인한다."
+      ],
+      "assessmentPrompts": [
+        "질문 세 개가 담긴 영어 편지를 받았다고 보고 질문마다 번호를 매겨 모두 답하는 답장을 쓴 뒤, 빠뜨린 질문이 없는지 확인하세요."
+      ],
+      "misconceptions": [
+        "답장은 받은 글의 분위기만 맞추면 되고 질문은 골라 답해도 된다고 본다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 23,
+        "section": "성취기준 적용 시 고려사항",
+        "code": "[9영02-08]"
+      },
+      "note": "해설 없음: 성취기준 문장과 표현 영역 성취기준 적용 시 고려사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.d4817a48f12681e90d39": {
+      "evidence": [
+        "짝의 요약을 듣고 읽은 글에 없는 내용이 섞였는지 짚는다.",
+        "짚어 낸 곳을 근거와 함께 알려 주고 고칠 방향을 말한다."
+      ],
+      "assessmentPrompts": [
+        "짝의 요약을 듣고 읽은 글에 없거나 뜻이 달라진 곳을 하나 골라, 어느 문장과 어긋나는지 짚어 주고 어떻게 고치면 좋을지 말하세요."
+      ],
+      "misconceptions": [
+        "요약에 자기 의견을 넣어야 더 좋은 요약이 된다고 생각한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 23,
+        "section": "성취기준 적용 시 고려사항",
+        "code": "[9영02-07]"
+      },
+      "note": "해설 없음: 성취기준 문장과 표현 영역 성취기준 적용 시 고려사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.d5a28370bac6358b53ee": {
+      "evidence": [
+        "상대의 말이 돌려 말한 것인지 짝에게 물어 확인한다.",
+        "확인한 뜻을 자기 말로 바꿔 말해 오해를 줄인다."
+      ],
+      "assessmentPrompts": [
+        "짝이 \"Maybe next time.\"이라고 말한 상황을 듣고 그 말의 속뜻을 영어로 되물은 다음, 확인한 뜻을 자기 문장으로 바꿔 말하세요."
+      ],
+      "misconceptions": [
+        "돌려 말한 표현을 곧이곧대로 받아들여 거절을 승낙으로 읽는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 21,
+        "section": "성취기준 적용 시 고려사항",
+        "code": "[9영01-07]"
+      },
+      "note": "해설 없음: 성취기준 문장과 이해 영역 성취기준 적용 시 고려사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.d9e2469df703e217feeb": {
+      "evidence": [
+        "자기 주장에 나올 만한 반론을 미리 적어 둔다.",
+        "반론을 염두에 두고 근거를 보태거나 바꿔 원고를 고친다."
+      ],
+      "assessmentPrompts": [
+        "자기 주장에 대해 나올 법한 반론을 두 개 적고, 그 가운데 하나에 답하는 문장을 더해 주장 문단을 다시 쓰세요."
+      ],
+      "misconceptions": [
+        "반론을 언급하면 자기 주장이 약해 보인다고 생각한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 23,
+        "section": "성취기준 해설",
+        "code": "[9영02-06]"
+      }
+    },
+    "kr.topic.2022.middle.da333a14a54042b54935": {
+      "evidence": [
+        "글의 종류에 맞는 첫인사와 끝인사 형식을 골라 쓴다.",
+        "받는 이와 목적에 맞춰 문장의 격식을 정해 글을 쓴다."
+      ],
+      "assessmentPrompts": [
+        "같은 부탁을 담아 친구에게 보내는 이메일과 선생님께 보내는 이메일을 각각 쓰고, 인사말과 맺음말을 어떻게 달리했는지 표시하세요."
+      ],
+      "misconceptions": [
+        "이메일과 일기는 형식이 같아 첫인사만 붙이면 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 23,
+        "section": "성취기준 적용 시 고려사항",
+        "code": "[9영02-08]"
+      },
+      "note": "해설 없음: 성취기준 문장과 표현 영역 성취기준 적용 시 고려사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.db816a53795d235cacaa": {
+      "evidence": [
+        "글에 나온 사건을 일어난 차례대로 늘어놓고 순서가 뒤바뀐 자리를 짚는다.",
+        "because, so, then 같은 표지를 근거로 원인과 결과를 이어 그린다."
+      ],
+      "assessmentPrompts": [
+        "정전이 일어난 하루를 다룬 이야기를 읽고 사건 카드 다섯 장을 시간 순으로 배열한 뒤, 원인과 결과로 이어지는 두 쌍을 화살표로 연결하세요."
+      ],
+      "misconceptions": [
+        "글에 먼저 나온 사건이 언제나 먼저 일어난 일이라고 본다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 20,
+        "section": "성취기준 해설",
+        "code": "[9영01-04]"
+      }
+    },
+    "kr.topic.2022.middle.df72f16d85b490a970c7": {
+      "evidence": [
+        "자기 글에서 상대가 불편해할 만한 표현을 찾아 표시한다.",
+        "표시한 표현을 바꿔 쓰고 무엇이 달라졌는지 견준다."
+      ],
+      "assessmentPrompts": [
+        "모둠 활동 피드백을 영어로 쓴 뒤 상대가 불편해할 만한 표현에 밑줄을 긋고, 부드러운 표현으로 바꿔 두 문장을 나란히 견주세요."
+      ],
+      "misconceptions": [
+        "솔직하게 말하는 것이 언제나 배려보다 앞선다고 생각한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 23,
+        "section": "성취기준 적용 시 고려사항",
+        "code": "[9영02-11]"
+      },
+      "note": "해설 없음: 성취기준 문장과 [9영02-11]을 다른 성취기준과 연계해 평가하라는 표현 영역 고려사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.e6b25c0f69ffa515ae69": {
+      "evidence": [
+        "짝의 말을 놓쳤을 때 어느 대목이 들리지 않았는지 짚어 되묻는다.",
+        "되물어 얻은 정보를 자기 말로 확인해 짝에게 되돌려 준다."
+      ],
+      "assessmentPrompts": [
+        "짝이 빠르게 읽은 문장을 듣고 못 알아들은 부분을 \"Say that again, please. A bit slower?\"로 되물은 뒤, 들은 내용을 한 문장으로 확인해 말하세요."
+      ],
+      "misconceptions": [
+        "못 알아들어도 되묻지 않고 고개를 끄덕여 넘어가는 편이 예의라고 생각한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 20,
+        "section": "성취기준 해설",
+        "code": "[9영01-01]"
+      }
+    },
+    "kr.topic.2022.middle.eedc6d5f0b88c283a57b": {
+      "evidence": [
+        "쓴 문단에서 이어 주는 표현이 관계와 맞는지 하나씩 따진다.",
+        "맞지 않는 표현을 바꾸고 왜 바꿨는지 밝힌다."
+      ],
+      "assessmentPrompts": [
+        "자기 문단에서 so, but, because를 쓴 자리에 동그라미를 치고 앞뒤 내용과 맞지 않는 자리를 하나 골라 바꾼 뒤, 그 까닭을 쓰세요."
+      ],
+      "misconceptions": [
+        "이어 주는 표현은 문장을 길게 만드는 장식이라고 생각한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 22,
+        "section": "성취기준 해설",
+        "code": "[9영02-05]"
+      }
+    },
+    "kr.topic.2022.middle.f38cd73a9b9939aacc51": {
+      "evidence": [
+        "말할 차례를 지키고 짝의 말이 끝나기를 기다린다.",
+        "짝의 말을 인정하는 반응을 넣어 대화를 이어 간다."
+      ],
+      "assessmentPrompts": [
+        "짝과 4분 동안 영어로 대화하며 상대의 말이 끝난 뒤에 말하기와 \"That's a good point.\" 같은 반응 넣기를 지키고, 지킨 횟수를 서로 세어 보세요."
+      ],
+      "misconceptions": [
+        "상대의 말에 곧바로 끼어들어야 대화에 적극 참여하는 것이라고 본다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 23,
+        "section": "성취기준 적용 시 고려사항",
+        "code": "[9영02-11]"
+      },
+      "note": "해설 없음: 성취기준 문장과 [9영02-11]을 다른 성취기준과 연계해 평가하라는 표현 영역 고려사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.f6fb780cb3071871dcd4": {
+      "evidence": [
+        "짝의 경험을 듣고 더 알고 싶은 점을 골라 묻는다.",
+        "짝의 질문에 맞춰 자기 계획을 자세히 덧붙여 말한다."
+      ],
+      "assessmentPrompts": [
+        "짝의 방학 이야기를 듣고 \"What did you do there?\"처럼 더 묻는 질문을 두 개 하고, 짝이 자신에게 한 질문에는 문장을 더해 답하세요."
+      ],
+      "misconceptions": [
+        "대화에서는 자기 차례에 할 말만 준비하면 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 23,
+        "section": "성취기준 적용 시 고려사항",
+        "code": "[9영02-04]"
+      },
+      "note": "해설 없음: 성취기준 문장과 표현 영역 성취기준 적용 시 고려사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.f84b23045c85f458cca6": {
+      "evidence": [
+        "자기가 그린 관계도에서 근거가 약한 화살표를 골라 표시한다.",
+        "표시한 화살표를 지우거나 다른 문장을 근거로 다시 잇는다."
+      ],
+      "assessmentPrompts": [
+        "관계도를 완성한 뒤 근거 문장을 대지 못하는 화살표에 별표를 하고, 다시 읽어 근거를 찾았는지 아니면 화살표를 지웠는지 그 까닭을 쓰세요."
+      ],
+      "misconceptions": [
+        "두 사건이 잇달아 나오면 그것만으로 인과 관계라고 단정한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 20,
+        "section": "성취기준 해설",
+        "code": "[9영01-04]"
+      }
+    },
+    "kr.topic.2022.middle.fb7613270cfcf2faa260": {
+      "evidence": [
+        "자기 설명에서 빠진 단계를 듣는 이의 질문으로 알아낸다.",
+        "듣는 이가 물은 자리마다 빠진 단계를 채워 설명 원고를 고쳐 쓴다."
+      ],
+      "assessmentPrompts": [
+        "라면 끓이는 절차를 영어로 설명한 뒤 듣는 이가 한 질문을 모두 적고, 질문이 나온 자리마다 문장을 더해 설명을 다시 쓰세요."
+      ],
+      "misconceptions": [
+        "자기가 아는 절차는 남도 다 알 것이라고 보고 중간 단계를 건너뛴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 22,
+        "section": "성취기준 해설",
+        "code": "[9영02-03]"
+      }
+    },
+    "kr.topic.2022.middle.fd79d595efa886a0f485": {
+      "evidence": [
+        "자기가 고른 감정과 다른 감정을 함께 적어 두 해석을 견준다.",
+        "단서가 더 많은 쪽을 골라 처음 판단을 고쳐 적는다."
+      ],
+      "assessmentPrompts": [
+        "같은 대화에 어울릴 감정 낱말을 두 개 적고 각각의 단서를 나눠 쓴 다음, 어느 쪽 단서가 더 많은지 세어 최종 답과 그 까닭을 쓰세요."
+      ],
+      "misconceptions": [
+        "자신이 그 상황이라면 느낄 감정을 인물의 감정으로 그대로 옮긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 21,
+        "section": "성취기준 적용 시 고려사항",
+        "code": "[9영01-05]"
+      },
+      "note": "해설 없음: 성취기준 문장과 이해 영역 성취기준 적용 시 고려사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.fe19c85eabcd172d782c": {
+      "evidence": [
+        "글이 실린 자리와 읽는 이를 살펴 글이 무엇을 하려는 글인지 가려낸다.",
+        "목적을 드러내는 표현을 찾아 안내, 설득, 요청 가운데 하나로 분류한다."
+      ],
+      "assessmentPrompts": [
+        "같은 소재를 다룬 광고문과 안내문을 나란히 읽고 각 글의 목적을 고른 뒤, 그렇게 본 표현을 각 글에서 하나씩 옮겨 적으세요."
+      ],
+      "misconceptions": [
+        "글의 소재가 같으면 글쓴이의 목적도 같다고 본다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex14",
+        "printedPage": 21,
+        "section": "성취기준 적용 시 고려사항",
+        "code": "[9영01-06]"
+      },
+      "note": "해설 없음: 성취기준 문장과 이해 영역 성취기준 적용 시 고려사항을 근거로 작성했다."
+    }
+  }
+}

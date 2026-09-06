@@ -8,6 +8,8 @@
 //                                       achievement-standard unit belongs to
 // `printedPage` is the printed page of the annex content system table that carries the correspondence.
 // Subjects whose correspondence is not established stay in `unmapped` and produce no candidate bridge.
+import { annexId as socialAnnexId, socialBridgeDomains } from './social-domain-map.mjs';
+
 export default {
   ruleId: 'R-DOMAIN-CONTINUITY',
   subjects: [
@@ -136,12 +138,24 @@ export default {
         },
       ],
     },
+    {
+      // 사회·역사는 두 저장소 모두 domain이 단원명이라, 단원 → 내용 체계 영역 대응표를
+      // social-domain-map.mjs에 따로 두고 여기서는 그 표가 만든 영역 짝만 쓴다.
+      elementarySubject: '사회',
+      middleCourse: '사회',
+      annexId: socialAnnexId,
+      evidenceKind: 'review-documented-correspondence',
+      domains: socialBridgeDomains('사회'),
+    },
+    {
+      elementarySubject: '사회',
+      middleCourse: '역사',
+      annexId: socialAnnexId,
+      evidenceKind: 'review-documented-correspondence',
+      domains: socialBridgeDomains('역사'),
+    },
   ],
   unmapped: [
-    {
-      middleCourses: ['사회', '역사'],
-      reason: '별책7의 내용 체계 영역은 지리 인식·자연환경과 인간생활·인문환경과 인간생활·지속가능한 세계·정치·법·경제·사회⋅문화·역사 일반 9종이지만, 두 저장소의 domain은 초등·중등 모두 단원명이다. 단원명에서 영역으로 가는 대응표가 아직 두 저장소 어디에도 없어 추측 없이 규칙을 적용할 수 없다.',
-    },
     {
       middleCourses: ['보건', '진로와 직업', '한문', '환경', '생활 독일어', '생활 러시아어', '생활 베트남어', '생활 스페인어', '생활 아랍어', '생활 일본어', '생활 중국어', '생활 프랑스어'],
       reason: '초등학교에 대응 교과가 없다. 중학교 선택 교과이거나 초등 교육과정에 같은 영역 계열이 존재하지 않는다.',

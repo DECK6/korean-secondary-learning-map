@@ -2,6 +2,7 @@ import { createHash } from 'node:crypto';
 import { mkdir, readFile, rename, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { dirname, join, resolve } from 'node:path';
+import { printedPageFor, printedPageOffset } from './lib/printed-page-offsets.mjs';
 import { buildJoinLexicon, joinBrokenHangul } from './lib/text-normalize.mjs';
 import { applyContentOverlay, contentOverlayDirectory, indexOverlayEntries, readContentOverlays } from './lib/content-overlay.mjs';
 import { profileSchemaNames, releaseIds, shardDirectories, vocationalSubjectGroupSlugs } from './lib/profile-collections.mjs';
@@ -433,6 +434,11 @@ for (const source of catalog.sources.filter((item) => item.annex >= 5 && item.an
   const receipt = receiptById.get(source.id);
   const text = await readFile(join(root, receipt.textFile), 'utf8');
   const lines = text.split(/\r?\n/);
+  // Standards cite the printed page a teacher sees, which the annex prints in its own running foot.
+  const pageOffset = printedPageOffset(text);
+  if (pageOffset.offset === null) {
+    diagnostics.push({ type: 'printed-page-offset-unresolved', sourceId: source.id, offsets: pageOffset.offsets, numberedPages: pageOffset.numberedPages });
+  }
   const sections = findCourseSections(lines);
   let count = 0;
   for (let index = 0; index < lines.length; index += 1) {
@@ -449,6 +455,7 @@ for (const source of catalog.sources.filter((item) => item.annex >= 5 && item.an
     const courseTitle = courseTitleFor(lines, sections, index, code, source.annex, profile);
     const domain = domainFor(lines, index, code);
     const statement = joinBrokenHangul(statementFor(lines, index, match[2]), joinLexicon);
+    const pdfPage = pageFor(lines, index);
     if (/두 자리 수로 제시|교과목의 2개 글자를 제시/.test(statement)) continue;
     extracted.push({
       code,
@@ -457,7 +464,8 @@ for (const source of catalog.sources.filter((item) => item.annex >= 5 && item.an
       sourceId: source.id,
       attachmentNo: source.attachmentNo,
       sourceSha256: receipt.sha256,
-      pdfPage: pageFor(lines, index),
+      pdfPage,
+      printedPage: printedPageFor(pdfPage, pageOffset.offset),
       line: index + 1,
       subjectGroup: subjectGroupByAnnex[source.annex],
       category,
@@ -583,7 +591,9 @@ function buildProfile(profile) {
 
     const compactCode = record.code.replace(/\s+/g, '');
     const standardId = `kr.standard.2022.${profile}.${hash(`${courseId}|${compactCode}`, 20)}`;
-    const summary = paraphrase(record.statement, record.domainLabel);
+    // Rewriting the ending can expose a wrap the statement hid ("설명 한다" → "설명 하기"), so the
+    // corpus repair runs once more over the paraphrase.
+    const summary = joinBrokenHangul(paraphrase(record.statement, record.domainLabel), joinLexicon);
     const domainId = `kr.domain.2022.${profile}.${hash(`${courseId}|${record.domain}`, 16)}`;
     if (!domains.has(domainId)) {
       domains.set(domainId, {
@@ -615,7 +625,7 @@ function buildProfile(profile) {
         attachmentNo: record.attachmentNo,
         sha256: record.sourceSha256,
         pdfPage: record.pdfPage,
-        printedPage: null,
+        printedPage: record.printedPage,
         section: `${record.courseLabel} > ${record.domainLabel}`,
         code: `[${record.code}]`,
       },

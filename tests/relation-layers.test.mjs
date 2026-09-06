@@ -4,6 +4,7 @@ import { readFile } from 'node:fs/promises';
 
 import { createAjv } from '../scripts/validate.mjs';
 import bridgeDomainMap from '../scripts/lib/bridge-domain-map.mjs';
+import { areaPrintedPages, elementaryUnitAreas, middleUnitAreas, socialBridgeDomains } from '../scripts/lib/social-domain-map.mjs';
 
 const readJson = async (path) => JSON.parse(await readFile(new URL(path, import.meta.url), 'utf8'));
 const officialFiles = ['../data/kr/middle/learning-relations.json', '../data/kr/high/learning-relations.json', '../data/kr/high-vocational/learning-relations.json'];
@@ -166,6 +167,25 @@ describe('relation layers', () => {
     const unmappedCourses = bridgeDomainMap.unmapped.flatMap((entry) => entry.middleCourses);
     expect(unmappedCourses.filter((course) => mappedCourses.has(course))).toEqual([]);
     expect(bridgeDomainMap.unmapped.every((entry) => entry.reason.length > 0)).toBe(true);
+  });
+
+  test('the social unit map carries a printed page for every area and skips the units without evidence', async () => {
+    const units = [...elementaryUnitAreas.map((entry) => entry.unit), ...middleUnitAreas.map((entry) => `${entry.course} ${entry.unit}`)];
+    expect(units.length).toBe(new Set(units).size);
+    for (const entry of [...elementaryUnitAreas, ...middleUnitAreas]) {
+      expect(entry.areas.length).toBeGreaterThan(0);
+      expect(entry.areas.length).toBe(new Set(entry.areas).size);
+      for (const area of entry.areas) expect(Number.isInteger(areaPrintedPages[area])).toBe(true);
+    }
+    // 별책7 내용 체계표에 초등 대응 요소가 없는 단원은 대응표에 넣지 않는다.
+    const mapped = new Set(middleUnitAreas.map((entry) => entry.unit));
+    for (const unit of ['남부 지역', '시장과 가격', '인간과 사회생활', '세계 대전과 사회 변동', '현대 세계의 전개와 과제']) {
+      expect(mapped.has(unit)).toBe(false);
+    }
+    const middleDomains = (await readJson('../data/kr/middle/domains.json')).records;
+    const known = new Set(middleDomains.map((domain) => domain.labelKorean));
+    for (const unit of mapped) expect(known.has(unit)).toBe(true);
+    expect(socialBridgeDomains('역사').every((entry) => entry.printedPage >= 16)).toBe(true);
   });
 
   test('elementary bridges cover at least 60% of middle achievement standards across both layers', async () => {

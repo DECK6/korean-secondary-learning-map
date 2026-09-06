@@ -2,7 +2,12 @@ import { readFile } from 'node:fs/promises';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { beforeAll, describe, expect, test } from 'bun:test';
-import { HANGUL_SINGLE_TOKEN_ALLOWLIST, buildJoinLexicon, findSuspiciousTokens, joinBrokenHangul } from '../scripts/lib/text-normalize.mjs';
+import {
+  HANGUL_SINGLE_TOKEN_ALLOWLIST,
+  buildJoinLexicon,
+  findSuspiciousTokens,
+  joinBrokenHangul,
+} from '../scripts/lib/text-normalize.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -16,6 +21,13 @@ const defects = [
   ['세계 다양한 주체들의 협력 사 례를 조사한다', '세계 다양한 주체들의 협력 사례를 조사한다'],
   ['생명 존 중 및 윤리적 태도를 갖는다', '생명 존중 및 윤리적 태도를 갖는다'],
   ['적절한 응 급처치와 협력적 대응 방안을 탐색한다', '적절한 응급처치와 협력적 대응 방안을 탐색한다'],
+  // 조사·어미가 통째로 다음 줄로 넘어간 유형 (R5-B4 보고).
+  ['사회적 독서에 참여 하고 독서 문화 형성에 기여한다', '사회적 독서에 참여하고 독서 문화 형성에 기여한다'],
+  ['표현 방법의 적절성을 평가 하며 읽는다', '표현 방법의 적절성을 평가하며 읽는다'],
+  ['멘델 유전 현상을 조사 하여 협력적으로 소통한다', '멘델 유전 현상을 조사하여 협력적으로 소통한다'],
+  ['다양한 문제 상황을 중심 으로 대처 방안을 탐색한다', '다양한 문제 상황을 중심으로 대처 방안을 탐색한다'],
+  ['이를 이용한 사례를 주변 에서 찾을 수 있다', '이를 이용한 사례를 주변에서 찾을 수 있다'],
+  ['해결 방안을 탐색, 실현, 평가함 으로써 태도를 갖는다', '해결 방안을 탐색, 실현, 평가함으로써 태도를 갖는다'],
 ];
 
 // Correct spacing that must survive: 의존 명사·관형사, and one-syllable words
@@ -32,6 +44,11 @@ const preserved = [
   '광 통신 시스템의 구조를 이해한다',
   '타 분야와 연계하여 다양한 재료와 기법을 활용한다',
   '다소 긴 글이나 대화를 듣고 대의나 주제를 파악한다',
+  // 두 토큰 모두 두 음절 이상인 정상 복합어는 조사·어미가 아니므로 붙이지 않는다.
+  '사회 과학 탐구 방법과 자연 과학 탐구 방법을 비교한다',
+  '세계 다양한 주체들의 협력 사례를 조사한다',
+  '자기 주도적으로 학습 계획을 세우고 점검한다',
+  '학습 활동 결과를 정리하여 발표한다',
 ];
 
 describe('pdftotext hangul spacing repair', () => {
@@ -61,6 +78,14 @@ describe('pdftotext hangul spacing repair', () => {
     const standards = JSON.parse(await readFile(join(root, 'data/kr/middle/standards.json'), 'utf8')).records;
     const suspicious = standards.filter((standard) => findSuspiciousTokens(standard.summary).length);
     expect(suspicious.map((standard) => `${standard.code} ${standard.summary}`)).toEqual([]);
+  });
+
+  test('the repair leaves nothing for a second pass to merge', async () => {
+    for (const file of ['data/kr/middle/standards.json', 'data/kr/high/standards.json']) {
+      const standards = JSON.parse(await readFile(join(root, file), 'utf8')).records;
+      const residual = standards.filter((standard) => joinBrokenHangul(standard.summary, lexicon) !== standard.summary);
+      expect(residual.map((standard) => `${standard.code} ${standard.summary}`)).toEqual([]);
+    }
   });
 
   test('flags only tokens outside the allowlist', () => {

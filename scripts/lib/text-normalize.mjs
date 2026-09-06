@@ -49,6 +49,19 @@ export const HANGUL_SINGLE_TOKEN_ALLOWLIST = new Set([
 // mandated by 한글 맞춤법 (의존 명사·관형사·접속 부사).
 const NEVER_JOIN_SINGLE_TOKENS = new Set(['및', '등', '각', '두', '할', '수']);
 
+// Two multi-syllable tokens normally stay apart, because correctly spaced compounds ("사회 과학",
+// "협력 사례를") are indistinguishable from a wrap by corpus counts alone. The exception is a right
+// token that 한글 맞춤법 always writes attached to the preceding noun: a 하다/되다 conjugation
+// ("참여 하고", "평가 하며") or a 격조사 ("바탕 으로", "과정 에서"). Such a token can never stand
+// alone, so a wrap is the only way it becomes its own token — the corpus evidence rule still decides.
+const BOUND_RIGHT_TOKEN =
+  /^(?:하|되)(?:고|기|는|며|면|여|어|지|게|자|도록|므로|여야|어야|였다|었다|더라도)$|^(?:한다|된다)$|^(?:에서|에게|에게서|으로|으로서|으로써)$/;
+
+// True when the pair may be considered at all; the merge itself still needs corpus evidence.
+function joinable(leftRun, rightRun) {
+  return leftRun.length === 1 || rightRun.length === 1 || BOUND_RIGHT_TOKEN.test(rightRun);
+}
+
 function hangulRunOf(token) {
   const match = HANGUL_RUN.exec(token);
   return match ? match[1] : null;
@@ -82,7 +95,7 @@ export function buildJoinLexicon(corpusTexts) {
         if (run.length >= MIN_PREFIX_LENGTH) countPrefixes(run, joined);
         const next = runs[index + 1];
         if (!next) continue;
-        if (run.length !== 1 && next.length !== 1) continue;
+        if (!joinable(run, next)) continue;
         // Index right-hand prefixes so inflected variants of the same spaced
         // phrase ("빅 데이터", "빅 데이터와") vouch for each other.
         const limit = Math.min(MAX_SPACED_TAIL_LENGTH, next.length);
@@ -101,7 +114,7 @@ function joinScore(left, right, lexicon) {
   const leftRun = hangulRunOf(left);
   const rightRun = hangulRunOf(right);
   if (!leftRun || !rightRun) return 0;
-  if (leftRun.length !== 1 && rightRun.length !== 1) return 0;
+  if (!joinable(leftRun, rightRun)) return 0;
   if (leftRun.length === 1 && NEVER_JOIN_SINGLE_TOKENS.has(leftRun)) return 0;
   if (rightRun.length === 1 && NEVER_JOIN_SINGLE_TOKENS.has(rightRun)) return 0;
   const merged = leftRun + rightRun;

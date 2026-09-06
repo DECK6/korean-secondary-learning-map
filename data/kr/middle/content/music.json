@@ -1,0 +1,714 @@
+{
+  "$schema": "../../../../schema/content-overlay.schema.json",
+  "contentKind": "source-grounded-draft",
+  "subjectKorean": "음악",
+  "authoredAt": "2026-09-06",
+  "sourceRefs": [
+    "kr-nec-2024-3-annex12"
+  ],
+  "note": "교육부 고시 제2024-3호 별책 12 음악과 교육과정의 중학교 1~3학년군 성취기준 해설을 근거로, 성취기준별 core·procedure·reflection 주제에 서로 다른 관찰 증거·평가 과제·오개념을 새로 작성한 초안이다. 중학교 13개 성취기준 모두 해설이 제시되어 있다.",
+  "entries": {
+    "kr.topic.2022.middle.0491b5cc89c93c9da206": {
+      "evidence": [
+        "여러 소리가 겹칠 때 어느 소리가 앞으로 나오는지 가려낸다.",
+        "자기 소리의 크기와 시작 시점을 다른 소리에 맞춰 조절한다."
+      ],
+      "assessmentPrompts": [
+        "모둠이 함께 한 곡을 연주하며 자기 파트가 잘 들리는 마디와 묻히는 마디를 표시하고, 묻히는 마디에서 무엇을 조절할지 정해 다시 연주하세요."
+      ],
+      "misconceptions": [
+        "합주에서는 자기 소리를 크게 낼수록 잘하는 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex12",
+        "printedPage": 18,
+        "section": "성취기준 해설",
+        "code": "[9음01-03]"
+      }
+    },
+    "kr.topic.2022.middle.0a3b5522d204fb0e8c81": {
+      "evidence": [
+        "같은 곡에 대해 사람마다 다른 느낌이 나오는 까닭을 짚는다.",
+        "자기 느낌을 근거와 함께 말하고 다른 느낌도 받아들인다."
+      ],
+      "assessmentPrompts": [
+        "같은 곡을 모둠이 함께 듣고 각자 느낀 정서를 낱말로 적은 뒤, 서로 다른 낱말이 나온 까닭을 곡의 요소와 각자의 경험에서 찾아 이야기하세요."
+      ],
+      "misconceptions": [
+        "한 곡이 주는 느낌은 누구에게나 같아야 한다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex12",
+        "printedPage": 19,
+        "section": "성취기준 해설",
+        "code": "[9음02-04]"
+      }
+    },
+    "kr.topic.2022.middle.11c968e3f14ee29c043f": {
+      "evidence": [
+        "만든 곡을 들려주고 어떤 의도로 만들었는지 밝힌다.",
+        "들은 사람의 반응과 자기 의도를 견주어 차이를 짚는다."
+      ],
+      "assessmentPrompts": [
+        "완성한 곡을 반 친구들에게 들려주고 어떤 느낌이 들었는지 받아 적은 다음, 자기 의도와 겹친 점과 어긋난 점을 나누어 쓰세요."
+      ],
+      "misconceptions": [
+        "듣는 사람이 의도를 못 알아채면 듣는 사람의 문제라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex12",
+        "printedPage": 20,
+        "section": "성취기준 해설",
+        "code": "[9음03-03]"
+      }
+    },
+    "kr.topic.2022.middle.20f8ddc59838e74c1284": {
+      "evidence": [
+        "악곡에서 두드러지는 음악 요소를 짚어 악보에 표시한다.",
+        "표시한 요소가 드러나도록 연주해 모둠 앞에서 발표한다."
+      ],
+      "assessmentPrompts": [
+        "연주할 악곡의 악보에서 셈여림과 빠르기와 이음줄이 두드러지는 자리를 표시하고, 그 자리가 들리도록 연주해 모둠 앞에서 발표하세요."
+      ],
+      "misconceptions": [
+        "발표는 틀리지 않고 끝까지 치기만 하면 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex12",
+        "printedPage": 18,
+        "section": "성취기준 해설",
+        "code": "[9음01-02]"
+      }
+    },
+    "kr.topic.2022.middle.2cfe1123ab27ace8d473": {
+      "evidence": [
+        "생활 속 상황에 어울리는 곡을 골라 목록을 만든다.",
+        "고른 곡을 순서대로 이어 붙여 상황에 맞는 재생 목록을 완성한다."
+      ],
+      "assessmentPrompts": [
+        "아침 등교와 시험 전과 잠들기 전 세 상황에 맞는 곡을 두 곡씩 골라 재생 목록을 만들고, 각 곡을 고른 까닭을 음악 요소를 들어 적으세요."
+      ],
+      "misconceptions": [
+        "음악 고르기는 취향의 문제라 근거를 댈 수 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex12",
+        "printedPage": 19,
+        "section": "성취기준 해설",
+        "code": "[9음02-04]"
+      }
+    },
+    "kr.topic.2022.middle.2e786b795be7a9b31fe0": {
+      "evidence": [
+        "같은 곡을 두 번 듣고 처음에 놓친 요소를 찾아 적는다.",
+        "두 번의 감상 기록을 견주어 자기 듣기 방식을 되짚는다."
+      ],
+      "assessmentPrompts": [
+        "같은 곡을 두 번 듣되 두 번째에는 한 가지 요소에만 집중하고, 두 감상 기록을 견주어 무엇이 새로 들렸는지와 그 까닭을 쓰세요."
+      ],
+      "misconceptions": [
+        "한 번 들어서 못 느낀 곡은 여러 번 들어도 마찬가지라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex12",
+        "printedPage": 19,
+        "section": "성취기준 해설",
+        "code": "[9음02-01]"
+      }
+    },
+    "kr.topic.2022.middle.30e166c8fee982accc1d": {
+      "evidence": [
+        "전통 연주와 요즘 연주의 자리와 방식이 어떻게 다른지 견준다.",
+        "연주에 참여한 뒤 느낀 점을 문화의 변화와 이어 말한다."
+      ],
+      "assessmentPrompts": [
+        "국악 연주 영상과 대중음악 공연 영상을 견주어 무대와 관객과 옷차림의 차이를 적고, 자신이 참여한 연주가 어느 쪽에 가까웠는지 소감문에 쓰세요."
+      ],
+      "misconceptions": [
+        "전통 음악은 옛것이라 오늘의 연주 문화와는 이어지지 않는다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex12",
+        "printedPage": 18,
+        "section": "성취기준 해설",
+        "code": "[9음01-04]"
+      }
+    },
+    "kr.topic.2022.middle.3fc2eeeb377e5cbebd3b": {
+      "evidence": [
+        "발표 전에 되짚을 항목을 정해 자기 점검표를 만든다.",
+        "점검표에 따라 자기 연주를 되짚고 고칠 곳을 골라낸다."
+      ],
+      "assessmentPrompts": [
+        "빠르기 유지와 셈여림 대비와 마무리 처리 세 항목으로 점검표를 만들어 자기 연주를 채점하고, 가장 낮은 항목을 다시 연습해 결과를 적으세요."
+      ],
+      "misconceptions": [
+        "자기 연주는 스스로 판단할 수 없으니 선생님 평만 기다리면 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex12",
+        "printedPage": 18,
+        "section": "성취기준 해설",
+        "code": "[9음01-02]"
+      }
+    },
+    "kr.topic.2022.middle.46038963552466a75934": {
+      "evidence": [
+        "왜 악보로 적어 두어야 하는지 자기 경험을 들어 말한다.",
+        "친구가 자기 악보를 보고 연주한 결과를 견주어 살핀다."
+      ],
+      "assessmentPrompts": [
+        "자기 악보를 친구에게 주어 연주하게 한 뒤 자신이 생각한 소리와 어떻게 달랐는지 적고, 악보에 어떤 표시를 보태면 좋을지 쓰세요."
+      ],
+      "misconceptions": [
+        "악보는 자기만 알아보면 되니 표시를 자세히 할 필요가 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex12",
+        "printedPage": 20,
+        "section": "성취기준 해설",
+        "code": "[9음03-02]"
+      }
+    },
+    "kr.topic.2022.middle.58566ebf8b22934de5b5": {
+      "evidence": [
+        "같은 시기의 음악이 어떤 자리에서 쓰였는지 조사해 정리한다.",
+        "두 음악의 쓰임과 역할을 항목별로 견주어 밝힌다."
+      ],
+      "assessmentPrompts": [
+        "노동요와 오늘날의 응원가를 골라 언제 어디서 누가 불렀는지 조사하고, 두 음악이 사람들에게 한 역할을 표로 견주어 쓰세요."
+      ],
+      "misconceptions": [
+        "음악은 감상하려고만 만들어진다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex12",
+        "printedPage": 19,
+        "section": "성취기준 해설",
+        "code": "[9음02-03]"
+      }
+    },
+    "kr.topic.2022.middle.5ba3e99da5952f03ce5d": {
+      "evidence": [
+        "감상곡에서 리듬과 가락과 화성 가운데 두드러진 요소를 골라낸다.",
+        "고른 요소가 곡 안에서 어떻게 바뀌는지 그림이나 표로 나타낸다."
+      ],
+      "assessmentPrompts": [
+        "3분 안팎의 감상곡을 듣고 셈여림과 빠르기의 변화를 시간 순 그래프로 그린 뒤, 가장 크게 달라진 지점 두 곳을 표시해 설명하세요."
+      ],
+      "misconceptions": [
+        "음악 분석은 악보를 읽을 줄 알아야만 할 수 있다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex12",
+        "printedPage": 19,
+        "section": "성취기준 해설",
+        "code": "[9음02-01]"
+      }
+    },
+    "kr.topic.2022.middle.60d3eec23d348df883ea": {
+      "evidence": [
+        "유네스코 목록에 오른 우리 음악 유산을 찾아 갈래를 정리한다.",
+        "그 음악의 소리와 연행 방식의 특징을 들어 설명한다."
+      ],
+      "assessmentPrompts": [
+        "유네스코 무형문화유산 목록에서 우리나라 음악 유산을 두 가지 찾아 음원을 듣고, 각 유산의 악기 구성과 연행 방식을 표로 정리하세요."
+      ],
+      "misconceptions": [
+        "국악 유산은 궁중 음악만 해당한다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex12",
+        "printedPage": 19,
+        "section": "성취기준 해설",
+        "code": "[9음02-05]"
+      }
+    },
+    "kr.topic.2022.middle.6135eaba1bb464d093dc": {
+      "evidence": [
+        "파악한 짜임을 도표나 도형으로 옮겨 나타낸다.",
+        "그 짜임을 본떠 짧은 음악을 만들어 들려준다."
+      ],
+      "assessmentPrompts": [
+        "감상곡의 단락 짜임을 도형으로 그린 뒤 같은 짜임을 본떠 여덟 마디 음악을 만들어 연주하고, 어느 부분이 어느 단락인지 표시하세요."
+      ],
+      "misconceptions": [
+        "곡의 짜임은 서양 음악에만 있는 개념이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex12",
+        "printedPage": 19,
+        "section": "성취기준 해설",
+        "code": "[9음02-02]"
+      }
+    },
+    "kr.topic.2022.middle.633836a4f218a0f0214f": {
+      "evidence": [
+        "자기 연주에서 고칠 주법 한 가지를 골라 연습 목표로 삼는다.",
+        "정한 주법을 적용해 같은 악곡을 앞뒤로 다르게 연주해 보인다."
+      ],
+      "assessmentPrompts": [
+        "연주할 악곡에서 어려운 마디 두 곳을 골라 어떤 주법을 어떻게 바꿀지 정하고, 바꾸기 전과 뒤의 연주를 각각 녹음해 함께 내세요."
+      ],
+      "misconceptions": [
+        "연주를 잘하려면 빠르게 치는 것이 가장 중요하다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex12",
+        "printedPage": 17,
+        "section": "성취기준 해설",
+        "code": "[9음01-01]"
+      }
+    },
+    "kr.topic.2022.middle.66d07ac733719fe23a4d": {
+      "evidence": [
+        "오선보와 정간보에서 같은 가락이 어떻게 적히는지 견준다.",
+        "주어진 조건에 맞춰 악곡의 한 부분을 바꿔 적는다."
+      ],
+      "assessmentPrompts": [
+        "네 마디 가락을 오선보와 정간보로 각각 적고, 리듬만 바꾸라는 조건에 따라 둘째 마디를 고쳐 두 기보에 모두 옮겨 적으세요."
+      ],
+      "misconceptions": [
+        "정간보는 옛 악보라서 지금은 적을 일이 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex12",
+        "printedPage": 20,
+        "section": "성취기준 해설",
+        "code": "[9음03-02]"
+      }
+    },
+    "kr.topic.2022.middle.728ab861beed65788647": {
+      "evidence": [
+        "같은 곡을 서로 다르게 연주한 사례를 견주어 차이를 짚는다.",
+        "그 차이를 자기 연주의 표현 선택에 견주어 말한다."
+      ],
+      "assessmentPrompts": [
+        "같은 악곡을 연주한 두 음원을 듣고 빠르기와 셈여림의 차이를 표로 적은 뒤, 자신은 어느 쪽에 가깝게 연주하고 싶은지 까닭과 함께 쓰세요."
+      ],
+      "misconceptions": [
+        "악보대로만 연주하면 개성은 드러날 수 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex12",
+        "printedPage": 17,
+        "section": "성취기준 해설",
+        "code": "[9음01-01]"
+      }
+    },
+    "kr.topic.2022.middle.756af59b97539b2fc7b5": {
+      "evidence": [
+        "저작권과 얽힌 사례를 찾아 무엇이 문제였는지 짚는다.",
+        "자기 창작에서 지킬 규칙을 정해 학급과 나눈다."
+      ],
+      "assessmentPrompts": [
+        "음악 저작권이 문제가 된 사례를 하나 찾아 무엇이 쟁점이었는지 정리하고, 우리 반 창작 활동에서 지킬 규칙 세 가지를 제안하세요."
+      ],
+      "misconceptions": [
+        "저작권은 어른들의 일이라 학생 창작과는 상관없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex12",
+        "printedPage": 21,
+        "section": "성취기준 해설",
+        "code": "[9음03-04]"
+      }
+    },
+    "kr.topic.2022.middle.7bf64f4d7cc0fb8090f4": {
+      "evidence": [
+        "만들고 싶은 음악의 의도를 한 문장으로 적어 둔다.",
+        "의도에 맞는 매체와 표현 방식을 골라 계획을 세운다."
+      ],
+      "assessmentPrompts": [
+        "\"비 오는 날\"을 소재로 전하고 싶은 느낌을 한 문장으로 적고, 그 느낌에 맞는 소리 재료와 표현 방식을 골라 창작 계획서를 쓰세요."
+      ],
+      "misconceptions": [
+        "창작은 영감이 떠올라야만 시작할 수 있다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex12",
+        "printedPage": 20,
+        "section": "성취기준 해설",
+        "code": "[9음03-01]"
+      }
+    },
+    "kr.topic.2022.middle.8f474e7d0a705a4f20cc": {
+      "evidence": [
+        "들은 국악의 장단이나 가락을 소리 내어 따라 해 본다.",
+        "따라 한 장단을 바탕으로 짧은 표현을 만들어 연주한다."
+      ],
+      "assessmentPrompts": [
+        "감상한 국악의 장단 한 가지를 익혀 네 장단 이상 치고, 그 장단 위에 자기 가락을 얹은 짧은 표현을 만들어 연주하세요."
+      ],
+      "misconceptions": [
+        "국악 장단은 배워도 요즘 음악에는 쓸 데가 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex12",
+        "printedPage": 19,
+        "section": "성취기준 해설",
+        "code": "[9음02-05]"
+      }
+    },
+    "kr.topic.2022.middle.916830dba2a8d304949f": {
+      "evidence": [
+        "낯선 문화권 음악을 듣고 느낀 첫인상을 기록으로 남긴다.",
+        "그 음악의 배경을 알아본 뒤 첫인상이 어떻게 바뀌었는지 말한다."
+      ],
+      "assessmentPrompts": [
+        "처음 듣는 문화권의 음악을 듣고 첫인상을 먼저 적은 다음, 그 음악이 쓰이는 자리를 조사해 첫인상이 달라진 점을 이어 쓰세요."
+      ],
+      "misconceptions": [
+        "낯설게 들리는 음악은 완성도가 떨어지는 음악이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex12",
+        "printedPage": 19,
+        "section": "성취기준 해설",
+        "code": "[9음02-02]"
+      }
+    },
+    "kr.topic.2022.middle.932e5363c267b1ebb68f": {
+      "evidence": [
+        "쓴 소리 재료가 누구의 것인지 확인해 목록으로 적는다.",
+        "허락이 필요한 재료를 바꾸거나 직접 만들어 넣는다."
+      ],
+      "assessmentPrompts": [
+        "만든 음악에 쓴 소리 재료를 하나하나 적어 직접 만든 것과 가져온 것을 나누고, 가져온 것 가운데 쓸 수 없는 것은 바꿔 다시 완성하세요."
+      ],
+      "misconceptions": [
+        "짧게 쓰면 남의 음악을 가져다 써도 문제가 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex12",
+        "printedPage": 21,
+        "section": "성취기준 해설",
+        "code": "[9음03-04]"
+      }
+    },
+    "kr.topic.2022.middle.98154e1eb4e4a5a9fd70": {
+      "evidence": [
+        "함께 연주하며 서로 맞추기 어려웠던 순간을 짚어 말한다.",
+        "그 순간을 풀 방법을 모둠과 정해 다음 연주에 적용한다."
+      ],
+      "assessmentPrompts": [
+        "모둠 연주에서 어긋난 지점을 하나 골라 무엇 때문에 어긋났는지 이야기하고, 신호나 순서를 바꾸는 해결책을 정해 다시 연주한 결과를 쓰세요."
+      ],
+      "misconceptions": [
+        "합주가 어긋나면 특정한 한 사람의 잘못이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex12",
+        "printedPage": 18,
+        "section": "성취기준 해설",
+        "code": "[9음01-03]"
+      }
+    },
+    "kr.topic.2022.middle.a812718af2ffa8dc5777": {
+      "evidence": [
+        "감상곡의 짜임을 큰 단락으로 나누어 이름을 붙인다.",
+        "시대나 문화권에 따라 달라지는 특징을 견주어 밝힌다."
+      ],
+      "assessmentPrompts": [
+        "서로 다른 문화권의 음악 두 곡을 듣고 각 곡의 큰 단락을 나눠 표시한 뒤, 악기 구성과 되풀이 방식이 어떻게 다른지 견주어 쓰세요."
+      ],
+      "misconceptions": [
+        "익숙하지 않은 음계로 된 음악은 짜임이 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex12",
+        "printedPage": 19,
+        "section": "성취기준 해설",
+        "code": "[9음02-02]"
+      }
+    },
+    "kr.topic.2022.middle.a823ecb31d5e8db8ca16": {
+      "evidence": [
+        "조사한 배경을 발표 자료로 구성해 순서를 짠다.",
+        "음원을 들려주며 배경과 역할을 이어서 설명한다."
+      ],
+      "assessmentPrompts": [
+        "조사한 두 음악의 배경을 5분 발표로 구성하되 각 음악을 30초씩 들려주고, 들려준 대목이 왜 그 역할을 보여 주는지 설명하세요."
+      ],
+      "misconceptions": [
+        "발표에서 음원을 들려주는 것은 시간 낭비라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex12",
+        "printedPage": 19,
+        "section": "성취기준 해설",
+        "code": "[9음02-03]"
+      }
+    },
+    "kr.topic.2022.middle.ac65a9271edf7305aa13": {
+      "evidence": [
+        "참여할 자리에 맞게 연주할 곡목과 순서를 정한다.",
+        "정한 순서대로 연습하고 실제 자리에서 연주해 본다."
+      ],
+      "assessmentPrompts": [
+        "학급 행사에서 연주할 곡을 두 곡 고르고 소개말과 순서를 짠 뒤, 실제로 연주하고 관객의 반응을 기록해 오세요."
+      ],
+      "misconceptions": [
+        "곡만 잘 연주하면 소개나 순서는 아무래도 좋다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex12",
+        "printedPage": 18,
+        "section": "성취기준 해설",
+        "code": "[9음01-04]"
+      }
+    },
+    "kr.topic.2022.middle.ae67d1dfe1010d691951": {
+      "evidence": [
+        "분석한 결과를 몸짓이나 그림 같은 다른 방식으로 나타낸다.",
+        "나타낸 결과를 연주로 옮겨 요소의 변화를 들려준다."
+      ],
+      "assessmentPrompts": [
+        "감상곡의 리듬 특징을 몸동작으로 옮겨 정리하고, 그 리듬을 타악기로 옮겨 네 마디 이상 연주해 들려주세요."
+      ],
+      "misconceptions": [
+        "감상은 듣기만 하는 활동이므로 연주와는 나뉘어 있다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex12",
+        "printedPage": 19,
+        "section": "성취기준 해설",
+        "code": "[9음02-01]"
+      }
+    },
+    "kr.topic.2022.middle.af813c3cf0835d083aad": {
+      "evidence": [
+        "만들 음악의 형식을 정하고 각 부분의 길이를 나눈다.",
+        "정한 형식에 맞게 가락과 리듬을 배치해 곡을 완성한다."
+      ],
+      "assessmentPrompts": [
+        "여덟 마디씩 두 부분으로 된 형식을 정하고, 두 부분이 서로 대비되도록 리듬이나 가락을 달리해 곡을 만들어 연주하세요."
+      ],
+      "misconceptions": [
+        "형식을 정해 두면 자유롭게 만들 수 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex12",
+        "printedPage": 20,
+        "section": "성취기준 해설",
+        "code": "[9음03-03]"
+      }
+    },
+    "kr.topic.2022.middle.b12e1d6526f23798b5aa": {
+      "evidence": [
+        "연습 일지에 날짜별 목표와 실제 연습량을 적어 남긴다.",
+        "일지를 되짚어 다음 주 연습 계획을 스스로 고쳐 세운다."
+      ],
+      "assessmentPrompts": [
+        "2주 동안 연습 일지를 쓰되 날마다 목표와 실제 연습한 마디를 적고, 둘째 주 계획을 첫째 주 기록을 근거로 고쳐 쓴 까닭을 밝히세요."
+      ],
+      "misconceptions": [
+        "연습은 시간을 오래 들이기만 하면 실력이 는다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex12",
+        "printedPage": 17,
+        "section": "성취기준 해설",
+        "code": "[9음01-01]"
+      }
+    },
+    "kr.topic.2022.middle.b43a85fe1afed7fc325d": {
+      "evidence": [
+        "국악이 다른 나라에서 어떻게 소개되는지 자료를 찾아 살핀다.",
+        "찾은 자료를 근거로 국악의 가치를 자기 말로 밝힌다."
+      ],
+      "assessmentPrompts": [
+        "해외 무대에서 국악이 연주된 사례를 하나 찾아 어떤 자리에서 어떻게 소개되었는지 정리하고, 국악의 가치를 자기 말로 세 문장 쓰세요."
+      ],
+      "misconceptions": [
+        "국악은 우리나라 안에서만 뜻이 있는 음악이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex12",
+        "printedPage": 19,
+        "section": "성취기준 해설",
+        "code": "[9음02-05]"
+      }
+    },
+    "kr.topic.2022.middle.b5f04f5aa716c7d8a507": {
+      "evidence": [
+        "친구의 연주에서 잘된 점과 아쉬운 점을 근거를 들어 말한다.",
+        "받은 평 가운데 받아들일 것을 골라 다음 연주에 반영한다."
+      ],
+      "assessmentPrompts": [
+        "친구 연주를 듣고 음악 요소를 근거로 잘된 점과 아쉬운 점을 하나씩 써 준 뒤, 자기가 받은 평 가운데 하나를 골라 고치고 무엇이 달라졌는지 쓰세요."
+      ],
+      "misconceptions": [
+        "평은 잘한다는 말만 해야 사이가 나빠지지 않는다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex12",
+        "printedPage": 18,
+        "section": "성취기준 해설",
+        "code": "[9음01-02]"
+      }
+    },
+    "kr.topic.2022.middle.b75ddcc1db983721a331": {
+      "evidence": [
+        "목소리와 악기와 신체와 물체 가운데 무엇을 쓸지 정해 배치한다.",
+        "정한 매체로 짧은 합주 구성을 만들어 함께 연주한다."
+      ],
+      "assessmentPrompts": [
+        "교실에서 구할 수 있는 물체 소리와 신체 소리를 두 가지 이상 골라 여덟 마디 합주를 구성하고, 누가 언제 무엇을 내는지 표로 적어 연주하세요."
+      ],
+      "misconceptions": [
+        "악기가 아닌 소리는 음악 재료가 될 수 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex12",
+        "printedPage": 18,
+        "section": "성취기준 해설",
+        "code": "[9음01-03]"
+      }
+    },
+    "kr.topic.2022.middle.bc6873ec49319a7a5519": {
+      "evidence": [
+        "자신이 즐겨 듣는 음악의 갈래를 헤아려 치우침을 살핀다.",
+        "듣지 않던 갈래를 골라 들은 뒤 생각의 변화를 적는다."
+      ],
+      "assessmentPrompts": [
+        "최근 한 달 동안 들은 곡의 갈래를 세어 표로 만들고, 가장 적게 들은 갈래에서 한 곡을 골라 들은 뒤 느낀 점을 기록하세요."
+      ],
+      "misconceptions": [
+        "취향은 타고나는 것이라 넓히려 애쓸 필요가 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex12",
+        "printedPage": 19,
+        "section": "성취기준 해설",
+        "code": "[9음02-04]"
+      }
+    },
+    "kr.topic.2022.middle.c8ae712e17f69b689f3a": {
+      "evidence": [
+        "떠올린 아이디어를 소리로 시험해 보고 그때그때 기록한다.",
+        "시험한 것 가운데 골라 이어 붙여 하나의 작품으로 만든다."
+      ],
+      "assessmentPrompts": [
+        "떠오른 소리 아이디어를 다섯 가지 이상 녹음해 목록으로 만들고, 그 가운데 세 가지를 골라 이어 붙인 1분 안팎의 작품을 완성하세요."
+      ],
+      "misconceptions": [
+        "창작은 한 번에 완성해야 하며 고쳐 만들면 자기 것이 아니라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex12",
+        "printedPage": 20,
+        "section": "성취기준 해설",
+        "code": "[9음03-01]"
+      }
+    },
+    "kr.topic.2022.middle.dffbff360786397e8ad0": {
+      "evidence": [
+        "자기 공동체에서 음악이 하는 역할을 찾아 목록으로 만든다.",
+        "조사한 다른 시대의 사례와 견주어 겹치는 점을 짚는다."
+      ],
+      "assessmentPrompts": [
+        "우리 학교와 동네에서 음악이 쓰이는 자리를 다섯 가지 찾아 적고, 조사한 옛 음악의 역할과 겹치는 점을 두 가지 골라 설명하세요."
+      ],
+      "misconceptions": [
+        "요즘 음악은 즐기기 위한 것일 뿐 사회적 역할은 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex12",
+        "printedPage": 19,
+        "section": "성취기준 해설",
+        "code": "[9음02-03]"
+      }
+    },
+    "kr.topic.2022.middle.e17ef81167e6dbf9f026": {
+      "evidence": [
+        "기보 프로그램이나 앱으로 악보를 입력해 소리로 확인한다.",
+        "소리를 들으며 어색한 자리를 찾아 악보를 고친다."
+      ],
+      "assessmentPrompts": [
+        "앱으로 자기 가락을 입력해 재생하고, 어색하게 들리는 마디를 하나 골라 음이나 리듬을 고친 뒤 고치기 전후의 악보를 함께 내세요."
+      ],
+      "misconceptions": [
+        "악보에 적힌 대로라면 소리로 들어 볼 필요가 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex12",
+        "printedPage": 20,
+        "section": "성취기준 해설",
+        "code": "[9음03-02]"
+      }
+    },
+    "kr.topic.2022.middle.e7e0b8f9ce39ed6ff8fc": {
+      "evidence": [
+        "학교나 마을에서 열리는 연주 자리의 형태를 조사해 갈래를 나눈다.",
+        "조사한 자리 가운데 하나를 골라 참여 계획을 세운다."
+      ],
+      "assessmentPrompts": [
+        "우리 지역에서 열리는 연주 행사를 세 가지 조사해 형식과 관객을 표로 정리하고, 그 가운데 참여할 하나를 골라 준비 계획서를 쓰세요."
+      ],
+      "misconceptions": [
+        "연주는 무대와 관객이 갖춰진 자리에서만 이루어진다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex12",
+        "printedPage": 18,
+        "section": "성취기준 해설",
+        "code": "[9음01-04]"
+      }
+    },
+    "kr.topic.2022.middle.e8662feeb8134a2fc4ef": {
+      "evidence": [
+        "혼자 만들 부분과 함께 만들 부분을 나누어 작업한다.",
+        "모아 붙인 곡을 연주하며 이어지는 자리를 다듬는다."
+      ],
+      "assessmentPrompts": [
+        "모둠에서 각자 네 마디씩 만들어 하나의 곡으로 이어 붙이고, 연결이 어색한 자리를 찾아 함께 고친 뒤 완성곡을 연주하세요."
+      ],
+      "misconceptions": [
+        "여럿이 만든 곡은 각자 맡은 부분만 좋으면 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex12",
+        "printedPage": 20,
+        "section": "성취기준 해설",
+        "code": "[9음03-03]"
+      }
+    },
+    "kr.topic.2022.middle.f6aa1c372a9bed262837": {
+      "evidence": [
+        "생활 속 주제를 골라 음악으로 만들 지점을 정한다.",
+        "만든 음악을 쓸 자리와 방식을 정해 실제로 활용한다."
+      ],
+      "assessmentPrompts": [
+        "안전과 건강과 환경 가운데 한 주제를 골라 학교 방송에 쓸 짧은 음악을 만들고, 언제 어디에 내보낼지 계획해 실제로 활용하세요."
+      ],
+      "misconceptions": [
+        "학생이 만든 음악은 실제로 쓰일 수 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex12",
+        "printedPage": 21,
+        "section": "성취기준 해설",
+        "code": "[9음03-04]"
+      }
+    },
+    "kr.topic.2022.middle.fc36d89aded89e2ee987": {
+      "evidence": [
+        "창작 일지에 그날 정한 것과 미룬 것을 나누어 적는다.",
+        "일지를 되짚어 자기 창작 과정의 버릇을 짚어 말한다."
+      ],
+      "assessmentPrompts": [
+        "창작 일지를 다섯 차례 쓴 뒤 되돌아보며 자신이 잘 정하는 부분과 자꾸 미루는 부분을 각각 찾아 다음 창작에서 바꿀 점을 쓰세요."
+      ],
+      "misconceptions": [
+        "창작 활동의 평가는 결과물만으로 정해진다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex12",
+        "printedPage": 20,
+        "section": "성취기준 해설",
+        "code": "[9음03-01]"
+      }
+    }
+  }
+}

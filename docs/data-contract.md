@@ -137,7 +137,7 @@ data/kr/
     "attachmentNo": "확인값",
     "sha256": "확인값",
     "pdfPage": 1,
-    "printedPage": null,
+    "printedPage": 1,
     "section": "확인한 절",
     "code": "[공식코드]"
   },
@@ -145,6 +145,8 @@ data/kr/
   "officialTextIncluded": false
 }
 ```
+
+`printedPage`는 별책 본문 하단에 인쇄된 쪽번호이고 `pdfPage`는 추출 파일의 form feed 순번이다. 빌더가 `scripts/lib/printed-page-offsets.mjs`로 각 별책의 오프셋(인쇄 = PDF − 오프셋)을 그 별책의 러닝 헤드·풋에 찍힌 쪽번호에서 직접 읽어 채운다. 한 문서 안에서 오프셋이 일정하지 않거나 번호가 붙은 면이 10면 미만이면 그 별책의 `printedPage`는 `null`로 남기고 빌드 진단(`printed-page-offset-unresolved`)에 남긴다.
 
 코드 패턴은 중학교와 고등학교의 실제 공식 코드 인벤토리에서 생성한다. 초등 전용 정규표현식을 복사하지 않는다.
 

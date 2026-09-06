@@ -1,0 +1,678 @@
+{
+  "$schema": "../../../../schema/content-overlay.schema.json",
+  "contentKind": "source-grounded-draft",
+  "subjectKorean": "한문",
+  "authoredAt": "2026-09-06",
+  "sourceRefs": [
+    "kr-moe-2022-33-annex17"
+  ],
+  "note": "교육부 고시 제2022-33호 별책 17 한문과 교육과정의 중학교 성취기준 해설과 성취기준 적용 시 고려 사항을 근거로, 성취기준별 core·application·reflection 주제에 서로 다른 관찰 증거·평가 과제·오개념을 새로 작성한 초안이다.",
+  "entries": {
+    "kr.topic.2022.middle.01bb73010dd49537bceb": {
+      "evidence": [
+        "이웃 나라의 같은 문화 사례 자료를 찾아 견준다.",
+        "견준 결과를 근거로 두 문화의 공통점과 차이를 밝힌다."
+      ],
+      "assessmentPrompts": [
+        "한국과 이웃 나라에서 같은 절기나 명절을 어떻게 지내는지 자료로 찾아 견주고, 공통점과 차이를 근거와 함께 표로 정리하세요."
+      ],
+      "misconceptions": [
+        "한자를 함께 쓰는 나라들은 문화도 똑같다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex17",
+        "printedPage": 8,
+        "section": "성취기준 해설",
+        "code": "[9한01-06]"
+      }
+    },
+    "kr.topic.2022.middle.0681d9c3fcfc53542036": {
+      "evidence": [
+        "구조를 잘못 잡아 어색해진 자기 풀이를 찾아 짚는다.",
+        "문장 구조를 다시 잡아 자기 풀이를 고쳐 쓴다."
+      ],
+      "assessmentPrompts": [
+        "자신이 옮긴 문장 가운데 뜻이 어색한 것을 하나 골라 성분을 다시 끊어 보고, 무엇을 잘못 보았는지와 고친 풀이를 함께 적으세요."
+      ],
+      "misconceptions": [
+        "문장 구조를 자세히 따질수록 풀이가 정확해진다고만 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex17",
+        "printedPage": 9,
+        "section": "성취기준 해설",
+        "code": "[9한02-01]"
+      }
+    },
+    "kr.topic.2022.middle.0907dfdf21233a7ac6ee": {
+      "evidence": [
+        "단어를 주술과 술목과 술보와 수식과 병렬 관계로 갈라 분류한다.",
+        "분류한 짜임을 근거로 그 단어의 뜻을 풀어 쓴다."
+      ],
+      "assessmentPrompts": [
+        "한자 어휘 다섯 개를 골라 각 단어의 짜임을 다섯 가지 관계 가운데 하나로 분류하고, 그 짜임에 맞게 단어의 뜻을 풀어 쓰세요."
+      ],
+      "misconceptions": [
+        "한자 어휘는 앞 글자부터 차례로 풀이하면 언제나 뜻이 통한다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex17",
+        "printedPage": 7,
+        "section": "성취기준 해설",
+        "code": "[9한01-03]"
+      }
+    },
+    "kr.topic.2022.middle.0b047eaae051c5dd34e7": {
+      "evidence": [
+        "글에 담긴 전통문화의 모습을 갈래로 나누어 정리한다.",
+        "그 문화가 지닌 값어치를 근거를 들어 밝힌다."
+      ],
+      "assessmentPrompts": [
+        "한문으로 전해 온 기록에서 전통문화가 드러난 대목을 하나 골라 어떤 모습인지 정리하고, 그 문화가 지닌 값어치를 근거를 들어 쓰세요."
+      ],
+      "misconceptions": [
+        "전통문화는 옛것이라 지금은 값어치가 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex17",
+        "printedPage": 10,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9한02-06]"
+      },
+      "note": "해설 없음: 성취기준 문장과 문장 영역 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.0b9f6ecd8b8e0847b118": {
+      "evidence": [
+        "같은 음을 지닌 한자들을 모양과 뜻을 들어 갈라낸다.",
+        "실생활에서 마주친 한자의 음과 뜻을 찾아 적는다."
+      ],
+      "assessmentPrompts": [
+        "간판이나 안내판에서 찾은 한자 다섯 자를 골라 모양과 음과 뜻을 표에 채우고, 음이 같지만 뜻이 다른 한자를 짝지어 견주어 보세요."
+      ],
+      "misconceptions": [
+        "음이 같은 한자는 뜻도 같다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex17",
+        "printedPage": 8,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9한01-01]"
+      },
+      "note": "해설 없음: 성취기준 문장과 한자와 어휘 영역 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.1d2d29669f25ad28f284": {
+      "evidence": [
+        "글에서 중심이 되는 구절을 골라 밑줄로 표시한다.",
+        "고른 구절을 근거로 주제를 한 문장으로 정리한다."
+      ],
+      "assessmentPrompts": [
+        "짧은 한문 글 한 편을 읽고 중심이 되는 구절에 밑줄을 그은 뒤, 그 구절을 근거로 글의 주제를 한 문장으로 정리해 쓰세요."
+      ],
+      "misconceptions": [
+        "한문 글의 주제는 마지막 구절에 언제나 나온다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex17",
+        "printedPage": 9,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9한02-04]"
+      },
+      "note": "해설 없음: 성취기준 문장과 문장 영역 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.326fe4a7bbc603a22804": {
+      "evidence": [
+        "어휘 속 한자의 뜻을 사전이나 디지털 도구로 찾아 근거로 든다.",
+        "찾아낸 뜻을 근거로 낱말 전체의 뜻을 미루어 밝힌다."
+      ],
+      "assessmentPrompts": [
+        "교과서에 나온 한자어 세 개를 골라 각 글자의 뜻을 사전이나 디지털 도구로 찾고, 그 뜻을 근거로 낱말 전체의 뜻을 풀어 쓰세요."
+      ],
+      "misconceptions": [
+        "한자어의 뜻은 글자 뜻과 상관없이 통째로 외워야 한다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex17",
+        "printedPage": 8,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9한01-01]"
+      },
+      "note": "해설 없음: 성취기준 문장과 한자와 어휘 영역 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.32816a578da322fc6794": {
+      "evidence": [
+        "이미 나와 있는 여러 풀이를 견주어 차이를 찾아낸다.",
+        "차이가 난 까닭을 단어의 뜻이나 구조에서 찾아 밝힌다."
+      ],
+      "assessmentPrompts": [
+        "같은 구절에 대한 두 가지 풀이를 찾아 견주고, 어디서 차이가 났는지 단어의 뜻이나 문장 구조에서 근거를 찾아 설명하세요."
+      ],
+      "misconceptions": [
+        "한문 글의 풀이는 언제나 하나로 정해져 있다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex17",
+        "printedPage": 9,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9한02-03]"
+      },
+      "note": "해설 없음: 성취기준 문장과 문장 영역 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.3b4b087d31694caccc7d": {
+      "evidence": [
+        "성어에 쓰인 글자의 뜻과 그 유래를 갈라 정리한다.",
+        "정리한 것을 바탕으로 성어의 뜻을 풀어 말한다."
+      ],
+      "assessmentPrompts": [
+        "성어 세 개를 골라 각 글자의 뜻과 그 성어의 유래를 조사해 정리하고, 조사한 내용을 바탕으로 성어의 뜻을 자기 말로 풀어 쓰세요."
+      ],
+      "misconceptions": [
+        "성어의 뜻은 유래를 몰라도 글자만 보면 알 수 있다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex17",
+        "printedPage": 8,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9한01-04]"
+      },
+      "note": "해설 없음: 성취기준 문장과 한자와 어휘 영역 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.3bd7ec60e41995f89316": {
+      "evidence": [
+        "전통문화를 대해 온 자기 태도를 되짚어 적는다.",
+        "오늘에 맞게 이어 갈 방법을 정해 다른 사람과 나눈다."
+      ],
+      "assessmentPrompts": [
+        "전통문화를 대해 온 자신의 태도를 되짚어 적고, 그 문화를 오늘에 맞게 이어 갈 방법을 하나 정해 학급 친구들에게 제안하세요."
+      ],
+      "misconceptions": [
+        "전통문화를 지키는 일은 그대로 두고 바꾸지 않는 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex17",
+        "printedPage": 10,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9한02-06]"
+      },
+      "note": "해설 없음: 성취기준 문장과 문장 영역 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.3cab7f6d03f002f8fb4c": {
+      "evidence": [
+        "모양이 비슷해 헷갈렸던 한자를 찾아 다른 획을 표시한다.",
+        "구별할 방법을 스스로 정해 다시 확인해 본다."
+      ],
+      "assessmentPrompts": [
+        "학습한 한자 가운데 모양이 비슷해 헷갈린 것을 세 쌍 골라 어느 획이 다른지 표시하고, 구별할 자기만의 방법을 정해 다시 시험해 보세요."
+      ],
+      "misconceptions": [
+        "한자는 여러 번 쓰기만 하면 저절로 구별된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex17",
+        "printedPage": 8,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9한01-01]"
+      },
+      "note": "해설 없음: 성취기준 문장과 한자와 어휘 영역 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.3fe191047899022e465e": {
+      "evidence": [
+        "짧은 한문 문장을 성분으로 끊어 그 구조를 갈라낸다.",
+        "갈라낸 구조를 근거로 문장을 우리말로 옮긴다."
+      ],
+      "assessmentPrompts": [
+        "네 글자 안팎의 한문 문장 네 개를 성분으로 끊어 어떤 구조인지 표시하고, 그 구조에 맞게 우리말로 옮겨 적으세요."
+      ],
+      "misconceptions": [
+        "한문 문장은 우리말 어순 그대로 읽으면 뜻이 통한다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex17",
+        "printedPage": 9,
+        "section": "성취기준 해설",
+        "code": "[9한02-01]"
+      }
+    },
+    "kr.topic.2022.middle.4da4cb7817580b01e1d7": {
+      "evidence": [
+        "그림이나 사진 자료에 어울리는 성어를 골라 근거를 든다.",
+        "고른 성어를 넣어 그 자료를 설명하는 글을 쓴다."
+      ],
+      "assessmentPrompts": [
+        "신문 사진이나 광고 한 장을 골라 어울리는 성어를 하나 정하고, 왜 그 성어가 어울리는지 근거를 들어 세 문장으로 설명하세요."
+      ],
+      "misconceptions": [
+        "성어를 많이 넣을수록 좋은 글이 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex17",
+        "printedPage": 8,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9한01-05]"
+      },
+      "note": "해설 없음: 성취기준 문장과 한자와 어휘 영역 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.5527ca669ae2b1b564e8": {
+      "evidence": [
+        "같은 주제를 담은 다른 글을 찾아 나란히 견준다.",
+        "견준 결과를 근거로 주제가 드러나는 방식을 밝힌다."
+      ],
+      "assessmentPrompts": [
+        "자신이 읽은 글과 같은 주제를 담은 속담이나 명언을 하나 더 찾아 견주고, 두 글이 주제를 어떤 방식으로 드러내는지 근거와 함께 쓰세요."
+      ],
+      "misconceptions": [
+        "주제가 같은 글은 표현 방식도 같을 수밖에 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex17",
+        "printedPage": 9,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9한02-04]"
+      },
+      "note": "해설 없음: 성취기준 문장과 문장 영역 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.611c8c13022b4a2bd7a0": {
+      "evidence": [
+        "같은 글을 다르게 띄어 읽은 자료를 견주어 차이를 짚는다.",
+        "그 차이를 근거로 알맞은 읽기를 골라 밝힌다."
+      ],
+      "assessmentPrompts": [
+        "같은 한문 구절을 서로 다르게 띄어 읽은 두 가지를 견주어 뜻이 어떻게 달라지는지 적고, 어느 쪽이 알맞은지 근거를 들어 고르세요."
+      ],
+      "misconceptions": [
+        "띄어 읽기는 숨을 쉬려고 하는 것이라 뜻과는 상관없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex17",
+        "printedPage": 9,
+        "section": "성취기준 해설",
+        "code": "[9한02-02]"
+      }
+    },
+    "kr.topic.2022.middle.6431fe2f74f733f8c3c6": {
+      "evidence": [
+        "짜임을 잘못 본 단어를 찾아 어디서 어긋났는지 짚는다.",
+        "다음에 살필 점을 정해 자기 풀이 방법을 고친다."
+      ],
+      "assessmentPrompts": [
+        "자신이 풀이한 단어 가운데 뜻이 어색했던 것을 하나 골라 짜임을 다시 살피고, 무엇을 놓쳤는지와 다음에 살필 점을 적으세요."
+      ],
+      "misconceptions": [
+        "단어의 짜임을 따지는 일은 문법 시험에만 쓸모가 있다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex17",
+        "printedPage": 7,
+        "section": "성취기준 해설",
+        "code": "[9한01-03]"
+      }
+    },
+    "kr.topic.2022.middle.664e71861ab446800d63": {
+      "evidence": [
+        "방송이나 기사에서 쓰인 성어를 찾아 앞뒤 맥락을 정리한다.",
+        "정리한 맥락을 근거로 쓰임이 알맞았는지 판단한다."
+      ],
+      "assessmentPrompts": [
+        "신문이나 방송에서 성어가 쓰인 대목을 두 곳 찾아 앞뒤 맥락을 정리하고, 그 자리에 그 성어가 알맞았는지 근거를 들어 판단하세요."
+      ],
+      "misconceptions": [
+        "성어는 아무 자리에나 넣으면 글이 더 좋아진다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex17",
+        "printedPage": 8,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9한01-04]"
+      },
+      "note": "해설 없음: 성취기준 문장과 한자와 어휘 영역 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.6b78e15abb98feb1aaa0": {
+      "evidence": [
+        "자기 생활에서 그 지혜와 어긋났던 일을 되짚는다.",
+        "바꿀 행동을 하나 정해 일정 기간 동안 실천한다."
+      ],
+      "assessmentPrompts": [
+        "읽은 글의 지혜에 비추어 자기 행동을 되짚어 어긋났던 일을 하나 적고, 바꿀 행동을 정해 2주 동안 실천한 기록을 남기세요."
+      ],
+      "misconceptions": [
+        "글을 읽고 느낀 것은 마음에만 두면 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex17",
+        "printedPage": 9,
+        "section": "성취기준 해설",
+        "code": "[9한02-05]"
+      }
+    },
+    "kr.topic.2022.middle.743e81c0196e743a281c": {
+      "evidence": [
+        "다른 나라 문화를 낯설게 여겼던 자기 생각을 되짚는다.",
+        "서로 교류를 넓힐 방법을 정해 실천으로 옮긴다."
+      ],
+      "assessmentPrompts": [
+        "조사하며 낯설게 느낀 이웃 나라의 문화를 하나 적고 왜 그렇게 느꼈는지 밝힌 다음, 서로 이해를 넓힐 방법을 하나 정해 실천하세요."
+      ],
+      "misconceptions": [
+        "문화 교류는 어른이나 전문가가 하는 일이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex17",
+        "printedPage": 8,
+        "section": "성취기준 해설",
+        "code": "[9한01-06]"
+      }
+    },
+    "kr.topic.2022.middle.7d2d031c6ef15728ba05": {
+      "evidence": [
+        "풀이가 헷갈렸던 성어를 골라 그 까닭을 되짚는다.",
+        "자기 풀이를 고치고 확인할 절차를 정해 둔다."
+      ],
+      "assessmentPrompts": [
+        "뜻을 잘못 알고 있었던 성어를 하나 찾아 왜 그렇게 알았는지 적고, 바른 뜻을 확인한 방법과 앞으로 확인할 절차를 쓰세요."
+      ],
+      "misconceptions": [
+        "성어의 뜻은 한 번 외우면 헷갈릴 일이 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex17",
+        "printedPage": 8,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9한01-04]"
+      },
+      "note": "해설 없음: 성취기준 문장과 한자와 어휘 영역 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.7f1e204dabb6c9a6b41e": {
+      "evidence": [
+        "자기 풀이를 친구의 풀이와 나란히 견주어 되짚는다.",
+        "받아들일 점을 골라 자기 풀이를 다시 고쳐 쓴다."
+      ],
+      "assessmentPrompts": [
+        "같은 글을 풀이한 친구의 글과 자기 글을 바꿔 읽고 다른 점을 세 곳 표시한 다음, 받아들일 점을 골라 자기 풀이를 고쳐 쓰세요."
+      ],
+      "misconceptions": [
+        "자기 풀이를 고치는 것은 실력이 모자란 표시라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex17",
+        "printedPage": 9,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9한02-03]"
+      },
+      "note": "해설 없음: 성취기준 문장과 문장 영역 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.8d78d9edaa4083261f79": {
+      "evidence": [
+        "같은 구조를 지닌 문장을 자료에서 모아 성분을 표시한다.",
+        "모은 문장을 근거로 그 구조의 쓰임을 밝힌다."
+      ],
+      "assessmentPrompts": [
+        "속담이나 명언 가운데 같은 구조를 지닌 한문 문장을 세 개 모아 성분을 표시하고, 그 구조가 어떤 뜻을 나타내기에 알맞은지 쓰세요."
+      ],
+      "misconceptions": [
+        "문장 구조는 종류가 너무 많아 갈래로 나눌 수 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex17",
+        "printedPage": 9,
+        "section": "성취기준 해설",
+        "code": "[9한02-01]"
+      }
+    },
+    "kr.topic.2022.middle.913d09353cbc29156b14": {
+      "evidence": [
+        "한자를 상형과 지사와 회의와 형성으로 갈라 분류한다.",
+        "그렇게 분류한 근거를 글자의 모양에서 찾아 밝힌다."
+      ],
+      "assessmentPrompts": [
+        "제시된 한자 여덟 자를 상형과 지사와 회의와 형성으로 나누어 분류하고, 각 글자를 그렇게 나눈 근거를 모양에서 찾아 적으세요."
+      ],
+      "misconceptions": [
+        "모든 한자는 사물의 모양을 본떠 만들어졌다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex17",
+        "printedPage": 7,
+        "section": "성취기준 해설",
+        "code": "[9한01-02]"
+      }
+    },
+    "kr.topic.2022.middle.98fce00e2b2f0c3fc1f1": {
+      "evidence": [
+        "형성자에서 소리를 맡은 부분과 뜻을 맡은 부분을 갈라낸다.",
+        "갈라낸 부분을 근거로 처음 보는 글자의 음을 미루어 판단한다."
+      ],
+      "assessmentPrompts": [
+        "같은 소리 부분을 지닌 형성자를 네 자 모아 소리 부분과 뜻 부분을 표시하고, 처음 보는 한 글자의 음을 그 근거로 미루어 말해 보세요."
+      ],
+      "misconceptions": [
+        "글자에 들어 있는 부분은 뜻과만 관계가 있다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex17",
+        "printedPage": 7,
+        "section": "성취기준 해설",
+        "code": "[9한01-02]"
+      }
+    },
+    "kr.topic.2022.middle.a4a22cf9d399eb103b07": {
+      "evidence": [
+        "교과서나 신문에서 짜임이 다른 단어를 모아 표로 정리한다.",
+        "모은 자료를 근거로 짜임별 쓰임의 특징을 밝힌다."
+      ],
+      "assessmentPrompts": [
+        "신문 기사에서 한자 어휘를 열 개 모아 짜임별로 나누어 표에 넣고, 어떤 짜임이 가장 많이 쓰였는지와 그 까닭을 근거와 함께 쓰세요."
+      ],
+      "misconceptions": [
+        "한자 어휘는 옛 글에만 나오고 요즘 글에는 거의 쓰이지 않는다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex17",
+        "printedPage": 7,
+        "section": "성취기준 해설",
+        "code": "[9한01-03]"
+      }
+    },
+    "kr.topic.2022.middle.a65d41d8cb8786ecc0ed": {
+      "evidence": [
+        "사회에서 벌어진 일과 글의 지혜를 견주어 정리한다.",
+        "견준 결과를 근거로 그 자리에 필요했던 태도를 밝힌다."
+      ],
+      "assessmentPrompts": [
+        "요즘 사회에서 벌어진 일 하나를 골라 읽은 글의 지혜와 견주어 정리하고, 그 일에서 필요했던 태도를 근거를 들어 제안하세요."
+      ],
+      "misconceptions": [
+        "인성은 글을 읽는다고 길러지는 것이 아니라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex17",
+        "printedPage": 9,
+        "section": "성취기준 해설",
+        "code": "[9한02-05]"
+      }
+    },
+    "kr.topic.2022.middle.a83e963c37a4c4b0be3a": {
+      "evidence": [
+        "자기가 쓴 성어가 읽는 이에게 통했는지 물어 확인한다.",
+        "통하지 않은 자리를 다른 표현으로 고쳐 다시 말한다."
+      ],
+      "assessmentPrompts": [
+        "성어를 넣어 쓴 글을 친구에게 읽히고 뜻이 통했는지 물어 기록한 다음, 통하지 않은 자리를 골라 다른 표현으로 고쳐 쓰세요."
+      ],
+      "misconceptions": [
+        "어려운 표현을 쓰면 상대가 알아서 이해해야 한다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex17",
+        "printedPage": 8,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9한01-05]"
+      },
+      "note": "해설 없음: 성취기준 문장과 한자와 어휘 영역 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.aa4191c28c1ebe0474ca": {
+      "evidence": [
+        "원리를 알고 난 뒤 익히기 쉬워진 글자를 짚어 본다.",
+        "자기 한자 학습 방법을 고쳐 정하고 까닭을 밝힌다."
+      ],
+      "assessmentPrompts": [
+        "원리를 배우기 전과 뒤에 같은 한자를 익히는 데 걸린 시간을 견주어 적고, 앞으로 자신이 쓸 한자 학습 방법을 정해 그 까닭을 쓰세요."
+      ],
+      "misconceptions": [
+        "한자는 외우기만 하면 되므로 원리를 배우는 일은 시간 낭비라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex17",
+        "printedPage": 7,
+        "section": "성취기준 해설",
+        "code": "[9한01-02]"
+      }
+    },
+    "kr.topic.2022.middle.aafd0915bbe9991ae198": {
+      "evidence": [
+        "글에 쓰인 단어와 구절의 뜻을 갈라 확인한다.",
+        "문장 구조를 고려해 글 전체를 우리말로 옮긴다."
+      ],
+      "assessmentPrompts": [
+        "한역 속담 한 편을 골라 단어와 구절의 뜻을 먼저 정리하고, 문장 구조를 살펴 전체를 우리말로 옮긴 다음 어려웠던 자리를 표시하세요."
+      ],
+      "misconceptions": [
+        "글자 하나하나의 뜻을 이으면 저절로 바른 풀이가 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex17",
+        "printedPage": 9,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9한02-03]"
+      },
+      "note": "해설 없음: 성취기준 문장과 문장 영역 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.b33827a89ad0379beac8": {
+      "evidence": [
+        "자기 읽기를 녹음해 들으며 어긋난 자리를 찾아낸다.",
+        "찾아낸 자리를 고쳐 다시 읽고 달라진 점을 말한다."
+      ],
+      "assessmentPrompts": [
+        "짧은 글을 소리 내어 읽고 녹음한 뒤 다시 들으며 음이나 띄어 읽기가 어긋난 자리를 표시하고, 고쳐 다시 읽어 무엇이 나아졌는지 쓰세요."
+      ],
+      "misconceptions": [
+        "글을 소리 내어 읽는 일은 뜻을 아는 데 도움이 되지 않는다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex17",
+        "printedPage": 9,
+        "section": "성취기준 해설",
+        "code": "[9한02-02]"
+      }
+    },
+    "kr.topic.2022.middle.b5b0f37e694b9b71e152": {
+      "evidence": [
+        "지역에 남은 전통문화 자료를 찾아 읽은 글과 이어 본다.",
+        "이어 본 결과를 근거로 이어져 온 흐름을 밝힌다."
+      ],
+      "assessmentPrompts": [
+        "우리 지역에 남아 있는 현판이나 비석이나 세시 풍속 가운데 하나를 찾아 읽은 글과 어떻게 이어지는지 정리하고, 그 흐름을 근거와 함께 설명하세요."
+      ],
+      "misconceptions": [
+        "한문 기록은 책 속에만 있고 우리 주변에는 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex17",
+        "printedPage": 10,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9한02-06]"
+      },
+      "note": "해설 없음: 성취기준 문장과 문장 영역 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.b7c3bbb5abc68574b3f6": {
+      "evidence": [
+        "같은 성어가 지시적 뜻과 비유적 뜻으로 갈리는 자리를 짚는다.",
+        "맥락에 맞는 단어와 성어를 골라 말이나 글에 쓴다."
+      ],
+      "assessmentPrompts": [
+        "성어 하나를 골라 글자 그대로의 뜻과 빗대어 쓰는 뜻을 각각 적고, 두 뜻이 각각 통하는 상황을 만들어 문장으로 써 보세요."
+      ],
+      "misconceptions": [
+        "성어는 글자 뜻 그대로만 쓰이는 표현이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex17",
+        "printedPage": 8,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9한01-05]"
+      },
+      "note": "해설 없음: 성취기준 문장과 한자와 어휘 영역 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.b8dff291b1825a7dc7a4": {
+      "evidence": [
+        "글에 담긴 삶의 지혜를 자기 말로 풀어 정리한다.",
+        "그 지혜를 오늘의 상황에 옮겨 적용해 말한다."
+      ],
+      "assessmentPrompts": [
+        "명언이나 격언 한 편을 골라 거기 담긴 지혜를 자기 말로 정리하고, 요즘 학교생활에서 그 지혜를 쓸 수 있는 상황을 하나 들어 쓰세요."
+      ],
+      "misconceptions": [
+        "옛사람의 말은 지금 세상에는 맞지 않는다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex17",
+        "printedPage": 9,
+        "section": "성취기준 해설",
+        "code": "[9한02-05]"
+      }
+    },
+    "kr.topic.2022.middle.c45ceac4485e65b3819c": {
+      "evidence": [
+        "자기가 잡은 주제가 글 전체를 덮는지 되짚어 본다.",
+        "덮지 못한 부분이 있으면 주제를 고쳐 다시 말한다."
+      ],
+      "assessmentPrompts": [
+        "자신이 정리한 주제를 글의 각 구절에 대어 보고 덮지 못한 구절이 있는지 확인한 다음, 필요하면 주제를 고쳐 다시 쓰세요."
+      ],
+      "misconceptions": [
+        "주제는 짧게 쓸수록 좋은 정리라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex17",
+        "printedPage": 9,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9한02-04]"
+      },
+      "note": "해설 없음: 성취기준 문장과 문장 영역 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.c6556ea693b962581471": {
+      "evidence": [
+        "여러 음을 지닌 한자를 문맥에 맞는 음으로 가려 읽는다.",
+        "뜻이 드러나도록 띄어 읽을 자리를 정해 소리 내어 읽는다."
+      ],
+      "assessmentPrompts": [
+        "여러 음을 지닌 한자가 들어간 짧은 글 두 편을 읽고 각 자리에서 어떤 음으로 읽을지 표시한 뒤, 띄어 읽을 자리를 정해 소리 내어 읽으세요."
+      ],
+      "misconceptions": [
+        "한자는 글자마다 음이 하나뿐이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex17",
+        "printedPage": 9,
+        "section": "성취기준 해설",
+        "code": "[9한02-02]"
+      }
+    },
+    "kr.topic.2022.middle.d2cf276bf8055615c460": {
+      "evidence": [
+        "간지와 절기가 어떻게 짜였는지 갈래로 나누어 정리한다.",
+        "그 문화가 오늘의 생활에 남긴 자취를 찾아 밝힌다."
+      ],
+      "assessmentPrompts": [
+        "간지와 절기 가운데 하나를 골라 어떻게 짜였는지 정리하고, 오늘날 달력이나 생활에서 그 흔적을 찾아 세 가지 적으세요."
+      ],
+      "misconceptions": [
+        "간지나 절기는 지금은 쓰이지 않는 옛 관습일 뿐이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex17",
+        "printedPage": 8,
+        "section": "성취기준 해설",
+        "code": "[9한01-06]"
+      }
+    }
+  }
+}

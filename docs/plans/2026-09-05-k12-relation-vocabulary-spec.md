@@ -84,14 +84,14 @@ export default {
 | --- | --- | --- | --- |
 | `concept` | 개념·조건·예 구분 | concept, understand | CONCEPTUAL |
 | `procedure` | 절차·기능·제작 수행 | procedure, perform, make | PROCEDURAL |
-| `representation` | 표현·모델링·변환 | representation | REPRESENTATIONAL |
+| `representation` | 표현·모델링·변환 | representation, evidence(`type: REPRESENTATIONAL`) | REPRESENTATIONAL |
 | `application` | 적용·문제 해결 | application, practice | — |
-| `inquiry` | 탐구·자료·근거 | inquiry, evidence | — |
+| `inquiry` | 탐구·자료·근거 | inquiry, evidence(그 밖의 `type`) | — |
 | `communication` | 언어 표현·의사소통 | — | LANGUAGE |
 | `reflection` | 성찰·태도·전이 | reflect | META |
 | `core` | 성취기준 전체 핵심 | — | (중등 standard-core 전용) |
 
-숫자 접미사(`.01`~`.04`, 국어·통합교과)는 `type` 폴백으로 결정한다. 한 주제는 facetKey 하나만 갖는다.
+숫자 접미사(`.01`~`.04`, 국어·통합교과)는 `type` 폴백으로 결정한다. 한 주제는 facetKey 하나만 갖고, **한 성취기준 안에서 facetKey는 유일하다**(초등 `validate-kr.mjs`가 검사). 접미사 `evidence`만 두 facet에 걸치므로 `type`으로 가른다: 2026-09-06 이전에는 `evidence`를 무조건 `inquiry`로 읽어 초등 사회 49개 주제가 같은 성취기준의 `.inquiry` 형제와 facetKey가 겹쳤다. 주제 ID는 그대로다.
 
 ## 5. 위생 규칙
 

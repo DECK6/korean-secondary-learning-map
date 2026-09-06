@@ -1,0 +1,1425 @@
+{
+  "$schema": "../../../../schema/content-overlay.schema.json",
+  "contentKind": "source-grounded-draft",
+  "subjectKorean": "보건",
+  "authoredAt": "2026-09-06",
+  "sourceRefs": [
+    "kr-nec-2024-3-annex18"
+  ],
+  "note": "교육부 고시 제2024-3호 별책 18 중학교 선택 교과 교육과정 보건 과목의 성취기준 해설과 성취기준 적용 시 고려 사항을 근거로, 성취기준별 core·application·reflection 주제에 서로 다른 관찰 증거·평가 과제·오개념을 새로 작성한 초안이다.",
+  "entries": {
+    "kr.topic.2022.middle.04c7841bef6f7d55a53a": {
+      "evidence": [
+        "자신의 경계를 어디까지로 둘지 스스로 정해 적는다.",
+        "상대의 경계를 확인하는 자기 태도를 되짚어 고친다."
+      ],
+      "assessmentPrompts": [
+        "자신이 불편하게 느끼는 말과 행동의 경계를 목록으로 정리하고, 최근 상대의 경계를 확인하지 않았던 일이 있었는지 되짚어 어떻게 바꿀지 쓰세요."
+      ],
+      "misconceptions": [
+        "경계는 사람마다 같아서 따로 확인할 필요가 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 33,
+        "section": "성취기준 해설",
+        "code": "[9보03-03]"
+      }
+    },
+    "kr.topic.2022.middle.07a6a9fb1a6491d27f66": {
+      "evidence": [
+        "건강과 질병이 하나의 연속선 위에 놓여 있음을 사례로 가른다.",
+        "건강목표를 세우고 실천 전략과 점검 방법을 계획서에 적는다."
+      ],
+      "assessmentPrompts": [
+        "자신의 건강 상태를 아주 나쁨에서 아주 좋음까지의 선 위에 표시하고 그 자리를 정한 근거를 세 가지 쓴 뒤, 한 달 건강목표와 실천 전략을 계획서로 만드세요."
+      ],
+      "misconceptions": [
+        "건강은 병이 없는 상태만을 뜻한다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 30,
+        "section": "성취기준 해설",
+        "code": "[9보01-01]"
+      }
+    },
+    "kr.topic.2022.middle.0845e720efb1ea7a9559": {
+      "evidence": [
+        "많은 사람이 모인 곳의 사고 사례 자료를 찾아 분석한다.",
+        "분석 결과를 근거로 대처 전략을 세워 제시한다."
+      ],
+      "assessmentPrompts": [
+        "사람이 많이 모이는 행사에서 일어난 사고 사례를 하나 찾아 무엇이 위험을 키웠는지 분석하고, 그런 자리에서 지킬 행동 수칙을 근거와 함께 쓰세요."
+      ],
+      "misconceptions": [
+        "사람이 많은 곳에서는 흐름을 따라가기만 하면 안전하다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 34,
+        "section": "성취기준 해설",
+        "code": "[9보04-01]"
+      }
+    },
+    "kr.topic.2022.middle.0c7f72114b8d5c9df576": {
+      "evidence": [
+        "건강을 누리기 어려운 처지에 놓인 사람들의 조건을 가른다.",
+        "차이를 존중하는 환경을 만들 방안을 정해 실행한다."
+      ],
+      "assessmentPrompts": [
+        "우리 학교에서 건강 관련 도움이 더 필요한 처지를 세 가지 들고, 그 처지에 놓인 사람이 불편하지 않도록 바꿀 점을 하나 골라 실행 계획을 세우세요."
+      ],
+      "misconceptions": [
+        "모두에게 똑같이 대하면 건강에서도 공평해진다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 36,
+        "section": "성취기준 해설",
+        "code": "[9보05-05]"
+      }
+    },
+    "kr.topic.2022.middle.0d2586791adff36fae42": {
+      "evidence": [
+        "실습에서 힘들었던 동작과 그 까닭을 되짚어 적는다.",
+        "다른 사람과 번갈아 할 방법을 정해 몸에 익힌다."
+      ],
+      "assessmentPrompts": [
+        "가슴압박을 2분 동안 해 본 뒤 힘들었던 점을 적고, 짝과 번갈아 교대하는 신호와 방법을 정해 다시 연습한 결과를 기록하세요."
+      ],
+      "misconceptions": [
+        "가슴압박은 혼자서 구급대가 올 때까지 계속해야 한다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 35,
+        "section": "성취기준 해설",
+        "code": "[9보04-05]"
+      }
+    },
+    "kr.topic.2022.middle.197f483a6e7e7fe009c8": {
+      "evidence": [
+        "생활 공간별 위험 요인을 찾아 갈래로 나눈다.",
+        "찾아낸 위험을 줄일 안전 방안을 세워 적용한다."
+      ],
+      "assessmentPrompts": [
+        "학교 안에서 사고가 날 수 있는 자리를 세 곳 찾아 위험 요인을 적고, 각 자리에 맞는 안전 수칙과 개선 방안을 제안하세요."
+      ],
+      "misconceptions": [
+        "사고는 운이 나빠 생기는 일이라 미리 대비할 수 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 34,
+        "section": "성취기준 해설",
+        "code": "[9보04-01]"
+      }
+    },
+    "kr.topic.2022.middle.1ce258fb6007b591637b": {
+      "evidence": [
+        "지역 기온이나 대기 자료에서 건강과 얽힌 근거를 찾아낸다.",
+        "찾아낸 근거로 옹호활동이 필요한 까닭을 밝힌다."
+      ],
+      "assessmentPrompts": [
+        "우리 지역의 폭염 일수나 미세먼지 자료를 찾아 최근 변화를 그래프로 정리하고, 그 자료를 근거로 필요한 건강옹호활동을 제안하세요."
+      ],
+      "misconceptions": [
+        "기후 자료는 전문가만 읽을 수 있어 학생이 쓸 수 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 36,
+        "section": "성취기준 해설",
+        "code": "[9보05-03]"
+      }
+    },
+    "kr.topic.2022.middle.1ff54f8aa7f4615b9558": {
+      "evidence": [
+        "주변에서 자동심장충격기가 놓인 자리를 조사해 지도를 만든다.",
+        "조사한 자리를 근거로 도달에 걸리는 시간을 따져 본다."
+      ],
+      "assessmentPrompts": [
+        "학교와 동네에서 자동심장충격기가 설치된 자리를 조사해 지도로 표시하고, 교실에서 가장 가까운 기기까지 오가는 데 걸리는 시간을 재어 적으세요."
+      ],
+      "misconceptions": [
+        "심정지 상황에서는 구급차를 기다리는 편이 안전하다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 35,
+        "section": "성취기준 해설",
+        "code": "[9보04-05]"
+      }
+    },
+    "kr.topic.2022.middle.28c4b2d59bd677eb7fe0": {
+      "evidence": [
+        "건강 격차를 보여 주는 자료를 찾아 차이를 읽어 낸다.",
+        "읽어 낸 차이를 근거로 지지 방안을 제안한다."
+      ],
+      "assessmentPrompts": [
+        "소득이나 지역에 따른 건강 격차를 보여 주는 자료를 찾아 차이를 정리하고, 그 차이를 줄이기 위해 학교와 지역이 할 일을 근거와 함께 제안하세요."
+      ],
+      "misconceptions": [
+        "건강 차이는 개인의 노력 차이에서만 생긴다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 36,
+        "section": "성취기준 해설",
+        "code": "[9보05-05]"
+      }
+    },
+    "kr.topic.2022.middle.30e0221c185936ef849d": {
+      "evidence": [
+        "정신 건강 치료에 대한 자기 생각을 되짚어 적는다.",
+        "편견을 줄일 말과 행동을 정해 생활 속에서 실천한다."
+      ],
+      "assessmentPrompts": [
+        "마음이 아플 때 치료나 상담을 받는 일에 대해 자신이 품고 있던 생각을 적고, 그 생각에 담긴 편견을 줄일 말과 행동을 정해 실천 약속으로 쓰세요."
+      ],
+      "misconceptions": [
+        "정신 건강 문제는 스스로 이겨 내야 하는 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 36,
+        "section": "성취기준 해설",
+        "code": "[9보05-04]"
+      }
+    },
+    "kr.topic.2022.middle.315f8761968b6b4a55d1": {
+      "evidence": [
+        "건강에 대한 믿음과 관행이 행동을 어떻게 이끄는지 가른다.",
+        "근거가 약한 관행을 고칠 방안을 세워 생활에서 실행한다."
+      ],
+      "assessmentPrompts": [
+        "우리 주변에서 흔히 통하는 건강 관련 믿음이나 관행을 세 가지 모아 근거가 있는지 확인하고, 근거가 약한 것 하나를 고칠 방안을 세우세요."
+      ],
+      "misconceptions": [
+        "오래 이어져 온 건강 관행은 검증된 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 36,
+        "section": "성취기준 해설",
+        "code": "[9보05-04]"
+      }
+    },
+    "kr.topic.2022.middle.35ed7969717ba9b82dc7": {
+      "evidence": [
+        "질병이 있는 사람을 대하는 자기 태도를 되짚는다.",
+        "달라진 생활 방식을 존중하는 행동을 정해 실천한다."
+      ],
+      "assessmentPrompts": [
+        "질병이 있는 친구를 대할 때 자신이 해 온 말이나 행동을 되짚어 적고, 상대의 달라진 생활 방식을 존중하는 행동을 두 가지 정해 실천하세요."
+      ],
+      "misconceptions": [
+        "아픈 사람을 도우려면 대신 해 주는 것이 가장 좋다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 35,
+        "section": "성취기준 해설",
+        "code": "[9보04-02]"
+      }
+    },
+    "kr.topic.2022.middle.3b4629b71611df359337": {
+      "evidence": [
+        "스트레스 반응을 다룬 자료에서 몸과 마음의 신호를 찾아낸다.",
+        "찾은 신호를 자기 사례와 견주어 근거로 든다."
+      ],
+      "assessmentPrompts": [
+        "스트레스가 몸에 남기는 반응을 다룬 자료를 찾아 신호를 정리하고, 자신이 시험 기간에 겪은 반응과 견주어 어디가 같고 다른지 쓰세요."
+      ],
+      "misconceptions": [
+        "스트레스는 마음의 문제라 몸에는 나타나지 않는다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 32,
+        "section": "성취기준 해설",
+        "code": "[9보02-04]"
+      }
+    },
+    "kr.topic.2022.middle.3bbe6465f13359f3a945": {
+      "evidence": [
+        "쟁점에 대한 서로 다른 입장의 근거를 갈라 정리한다.",
+        "각 입장이 놓인 사회문화적 배경을 짚어 설명한다."
+      ],
+      "assessmentPrompts": [
+        "청소년 성 건강과 관련해 공론화된 쟁점을 하나 골라 찬반 입장의 근거를 각각 두 가지씩 정리하고, 각 입장이 놓인 배경을 함께 쓰세요."
+      ],
+      "misconceptions": [
+        "사회적 쟁점에는 언제나 옳은 쪽과 그른 쪽이 정해져 있다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 34,
+        "section": "성취기준 해설",
+        "code": "[9보03-06]"
+      }
+    },
+    "kr.topic.2022.middle.3bc40e339bc7cc33f71d": {
+      "evidence": [
+        "친구와 가족과 미디어 가운데 자기 건강에 영향을 준 요인을 자료로 든다.",
+        "든 자료가 왜 영향 요인의 증거가 되는지 설명한다."
+      ],
+      "assessmentPrompts": [
+        "지난 한 주 동안 먹거리와 수면과 활동을 바꾼 계기를 기록에서 찾아 친구·가족·미디어로 나눠 적고, 각 계기가 왜 영향 요인인지 근거를 들어 설명하세요."
+      ],
+      "misconceptions": [
+        "건강은 오로지 자기 의지에 달린 문제라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 30,
+        "section": "성취기준 해설",
+        "code": "[9보01-01]"
+      }
+    },
+    "kr.topic.2022.middle.3d8827578b60b1306837": {
+      "evidence": [
+        "겉모습이나 성적으로 사람을 재는 자료를 찾아 문제를 짚는다.",
+        "그 자료를 근거로 서로를 지지하는 말을 만든다."
+      ],
+      "assessmentPrompts": [
+        "겉모습이나 성적으로 사람을 평가하는 게시물이나 광고를 찾아 어떤 기준을 강요하는지 짚고, 그 기준을 반박하는 지지 문구를 세 가지 만드세요."
+      ],
+      "misconceptions": [
+        "누구나 자신을 남과 견주며 사니 비교는 문제가 되지 않는다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 32,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9보02-03]"
+      },
+      "note": "해설 없음: 성취기준 문장과 정서와 정신건강 영역 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.422499e74df94c9508f7": {
+      "evidence": [
+        "자기 생활주기를 시간대별로 그려 규칙성을 살핀다.",
+        "생체리듬에 맞는 생활습관 목표를 세워 실천한다."
+      ],
+      "assessmentPrompts": [
+        "하루 24시간을 수면과 식사와 활동과 화면 사용으로 나눠 원그래프를 그리고, 생체리듬에 어긋나는 시간대를 골라 2주 실천 목표를 세우세요."
+      ],
+      "misconceptions": [
+        "잠은 몰아서 자면 모자란 시간을 채울 수 있다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 30,
+        "section": "성취기준 해설",
+        "code": "[9보01-03]"
+      }
+    },
+    "kr.topic.2022.middle.454d3ded59656748970d": {
+      "evidence": [
+        "자아 존중감을 높이는 상황과 낮추는 상황을 갈라 적는다.",
+        "낮추는 상황에서 쓸 대처 방법을 골라 실행한다."
+      ],
+      "assessmentPrompts": [
+        "지난 한 달 동안 뿌듯했던 순간과 위축됐던 순간을 각각 세 가지 적고, 위축된 순간에 쓸 수 있는 대처 방법을 하나 골라 연습하세요."
+      ],
+      "misconceptions": [
+        "자아 존중감은 남이 칭찬해 줄 때만 높아진다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 32,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9보02-03]"
+      },
+      "note": "해설 없음: 성취기준 문장과 정서와 정신건강 영역 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.47e99c6186807043b154": {
+      "evidence": [
+        "삶에서 소중하게 여기는 것을 골라 그 까닭을 밝힌다.",
+        "힘든 생각이 들 때 연락할 곳을 정해 적어 둔다."
+      ],
+      "assessmentPrompts": [
+        "지금 자기 삶에서 소중한 것 다섯 가지를 골라 까닭을 적고, 마음이 몹시 힘들 때 연락할 사람과 상담 전화번호를 적어 지니고 다니세요."
+      ],
+      "misconceptions": [
+        "힘든 마음을 털어놓으면 남에게 짐이 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 32,
+        "section": "성취기준 해설",
+        "code": "[9보02-05]"
+      }
+    },
+    "kr.topic.2022.middle.493d0670d27df666fb23": {
+      "evidence": [
+        "친구를 지지한 말이 상대에게 어떻게 닿았는지 확인한다.",
+        "자신에게 하는 말투를 되짚어 다르게 바꿔 본다."
+      ],
+      "assessmentPrompts": [
+        "친구에게 지지하는 말을 건넨 뒤 그 말이 어떻게 느껴졌는지 물어 기록하고, 자신에게 자주 하는 부정적인 말 한 가지를 골라 다르게 바꿔 쓰세요."
+      ],
+      "misconceptions": [
+        "자신을 몰아세워야 더 나아진다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 32,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9보02-03]"
+      },
+      "note": "해설 없음: 성취기준 문장과 정서와 정신건강 영역 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.4c3e697e0b2671866889": {
+      "evidence": [
+        "실천을 가로막은 조건을 찾아 목록으로 적는다.",
+        "조건을 바꿀 방법을 정해 다음 계획에 넣는다."
+      ],
+      "assessmentPrompts": [
+        "2주 실천 기록에서 목표를 못 지킨 날을 표시하고 무엇이 가로막았는지 적은 뒤, 그 조건을 바꿀 방법 두 가지를 다음 계획에 넣으세요."
+      ],
+      "misconceptions": [
+        "생활습관을 못 지키는 것은 의지가 약해서라고만 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 30,
+        "section": "성취기준 해설",
+        "code": "[9보01-03]"
+      }
+    },
+    "kr.topic.2022.middle.4e6f10fe97a0a7733082": {
+      "evidence": [
+        "사람의 몸을 상품처럼 다루는 자료를 찾아 그 방식을 짚는다.",
+        "그 자료의 문제를 근거로 또래에게 알릴 내용을 만든다."
+      ],
+      "assessmentPrompts": [
+        "사람의 몸을 상품처럼 다루는 게시물이나 광고를 하나 찾아 어떤 방식으로 그렇게 했는지 짚고, 그 문제를 또래에게 알리는 안내 자료를 만드세요."
+      ],
+      "misconceptions": [
+        "그런 자료는 보고 넘기면 그만이라 아무 영향이 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 33,
+        "section": "성취기준 해설",
+        "code": "[9보03-04]"
+      }
+    },
+    "kr.topic.2022.middle.5a1527039910f71c416f": {
+      "evidence": [
+        "감염병 통계나 방역 자료에서 필요한 근거를 찾아낸다.",
+        "찾아낸 근거로 우리 학교 예방 대책을 만든다."
+      ],
+      "assessmentPrompts": [
+        "최근 유행한 감염병의 발생 자료를 찾아 시기와 연령대별 특징을 정리하고, 그 자료를 근거로 우리 학교에 맞는 예방 대책을 제안하세요."
+      ],
+      "misconceptions": [
+        "감염병 예방 수칙은 유행이 지나면 지킬 필요가 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 35,
+        "section": "성취기준 해설",
+        "code": "[9보04-03]"
+      }
+    },
+    "kr.topic.2022.middle.5adcc091cac5b001ea4b": {
+      "evidence": [
+        "쟁점을 다루며 자기 생각이 어떻게 바뀌었는지 되짚는다.",
+        "평등한 성문화를 위해 자신이 할 일을 정해 밝힌다."
+      ],
+      "assessmentPrompts": [
+        "토의 전과 뒤에 자기 생각이 달라진 점을 적고, 우리 학교에서 평등한 성문화를 위해 자신이 할 수 있는 일을 두 가지 정해 밝히세요."
+      ],
+      "misconceptions": [
+        "토의는 결론을 하나로 모아야만 뜻이 있다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 34,
+        "section": "성취기준 해설",
+        "code": "[9보03-06]"
+      }
+    },
+    "kr.topic.2022.middle.6350eab9bfd2ce0fe538": {
+      "evidence": [
+        "자기 몸에 대해 품어 온 생각을 되짚어 적는다.",
+        "자기 몸을 존중하는 말과 행동을 정해 실천한다."
+      ],
+      "assessmentPrompts": [
+        "자기 몸에 대해 자주 하는 생각을 적어 보고 그 생각이 어디에서 왔는지 짚은 다음, 몸을 존중하는 말과 행동을 각각 하나씩 정해 일주일간 실천하세요."
+      ],
+      "misconceptions": [
+        "자기 몸을 흠잡는 말은 겸손한 태도라서 해롭지 않다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 33,
+        "section": "성취기준 해설",
+        "code": "[9보03-02]"
+      }
+    },
+    "kr.topic.2022.middle.64495d36a61f366fae4b": {
+      "evidence": [
+        "실천이 이어지지 못한 까닭을 상황에서 찾아 짚는다.",
+        "함께 이어 갈 방법을 정해 학급 공동체와 나눈다."
+      ],
+      "assessmentPrompts": [
+        "기후와 건강을 위해 실천하려다 이어지지 못한 일을 하나 적고 그 까닭을 짚은 뒤, 반 친구들과 함께 이어 갈 방법을 정해 제안하세요."
+      ],
+      "misconceptions": [
+        "혼자 실천해도 소용없으니 시작할 필요가 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 36,
+        "section": "성취기준 해설",
+        "code": "[9보05-03]"
+      }
+    },
+    "kr.topic.2022.middle.6462bc43186bb351e1e6": {
+      "evidence": [
+        "임신이 이루어지는 과정과 피임의 원리를 갈라 설명한다.",
+        "여러 피임 방법의 효과와 한계를 견주어 정리한다."
+      ],
+      "assessmentPrompts": [
+        "임신이 이루어지는 과정을 순서대로 정리하고, 피임 방법 세 가지의 원리와 한계를 표로 견주어 어떤 점을 함께 살펴야 하는지 쓰세요."
+      ],
+      "misconceptions": [
+        "피임 방법을 하나만 쓰면 어떤 경우에도 안전하다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 34,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9보03-05]"
+      },
+      "note": "해설 없음: 성취기준 문장과 성과 건강 영역 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.6694bad56d118460443d": {
+      "evidence": [
+        "지지가 건강을 바꾼 사례 자료를 찾아 요점을 정리한다.",
+        "그 사례를 근거로 우리 학교에 필요한 지지를 제안한다."
+      ],
+      "assessmentPrompts": [
+        "몸이 불편하거나 아픈 사람이 주변의 지지로 생활을 이어 간 사례를 찾아 정리하고, 우리 학교에 필요한 지지 방안을 근거와 함께 제안하세요."
+      ],
+      "misconceptions": [
+        "몸이 약하면 어떤 도움을 받아도 건강해질 수 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 30,
+        "section": "성취기준 해설",
+        "code": "[9보01-05]"
+      }
+    },
+    "kr.topic.2022.middle.6be668f5c2ee35d21bed": {
+      "evidence": [
+        "같은 증상을 다룬 정보 두 가지를 찾아 근거를 견준다.",
+        "어느 정보가 믿을 만한지 판단 근거를 밝힌다."
+      ],
+      "assessmentPrompts": [
+        "같은 증상을 다룬 인터넷 글과 공공 의료 기관 안내를 찾아 내용을 견주고, 어느 쪽을 믿을 만하다고 보았는지 판단 근거를 세 가지 쓰세요."
+      ],
+      "misconceptions": [
+        "조회 수가 많은 건강 정보일수록 믿을 만하다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 36,
+        "section": "성취기준 해설",
+        "code": "[9보05-02]"
+      }
+    },
+    "kr.topic.2022.middle.6c6b4c4adfd64c42d623": {
+      "evidence": [
+        "건강조사나 건강검사 자료에서 필요한 지표를 골라낸다.",
+        "고른 지표로 자기 또래의 건강 상태를 설명한다."
+      ],
+      "assessmentPrompts": [
+        "청소년 건강행태 조사 자료에서 수면 시간이나 아침 식사 지표를 하나 골라 우리 학년 값과 견주고, 그 차이를 근거로 무엇이 문제인지 쓰세요."
+      ],
+      "misconceptions": [
+        "통계 수치는 나와 상관없는 남의 이야기라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 30,
+        "section": "성취기준 해설",
+        "code": "[9보01-02]"
+      }
+    },
+    "kr.topic.2022.middle.6f1ae0cf2e805e170bc6": {
+      "evidence": [
+        "모둠 시범을 되짚어 늦거나 겹친 대응을 찾아낸다.",
+        "찾아낸 문제를 반영해 협력 대응 방안을 고친다."
+      ],
+      "assessmentPrompts": [
+        "모둠 시범을 영상으로 남겨 다시 보고 늦어진 대목과 겹친 역할을 찾아 표시한 다음, 대응 방안을 고쳐 한 번 더 시범을 보이세요."
+      ],
+      "misconceptions": [
+        "응급처치는 한 번 배워 두면 다시 연습할 필요가 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 35,
+        "section": "성취기준 해설",
+        "code": "[9보04-04]"
+      }
+    },
+    "kr.topic.2022.middle.7169eb07d5d896a42528": {
+      "evidence": [
+        "자기 안의 성 고정관념을 찾아 말로 드러낸다.",
+        "그 생각이 관계에 미친 영향을 되짚어 다르게 고쳐 말한다."
+      ],
+      "assessmentPrompts": [
+        "자신이 무심코 해 온 성별에 따른 구분을 하나 찾아 적고, 그 말이나 행동이 상대에게 어떻게 닿았을지 생각해 다르게 표현하는 문장을 쓰세요."
+      ],
+      "misconceptions": [
+        "고정관념은 나쁜 뜻이 없으면 문제가 되지 않는다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 33,
+        "section": "성취기준 해설",
+        "code": "[9보03-01]"
+      }
+    },
+    "kr.topic.2022.middle.72fbdcfc73ebf86ae27a": {
+      "evidence": [
+        "상황별 응급처치의 순서와 하지 말아야 할 행동을 갈라 정리한다.",
+        "정한 순서대로 응급처치 동작을 실제로 해 보인다."
+      ],
+      "assessmentPrompts": [
+        "화상과 출혈과 골절 가운데 하나를 골라 처치 순서와 삼가야 할 행동을 정리하고, 모형이나 짝을 대상으로 순서대로 실습해 보이세요."
+      ],
+      "misconceptions": [
+        "응급처치는 빨리 손을 대기만 하면 도움이 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 35,
+        "section": "성취기준 해설",
+        "code": "[9보04-04]"
+      }
+    },
+    "kr.topic.2022.middle.73805b2541961c7bd0cf": {
+      "evidence": [
+        "자신이 무심코 남을 밀어낸 말이나 행동을 되짚는다.",
+        "포용을 담은 표현으로 바꿔 학급 친구들과 나눈다."
+      ],
+      "assessmentPrompts": [
+        "누군가를 자리에서 밀어냈을 수 있는 말이나 행동을 하나 되짚어 적고, 포용을 담은 표현으로 바꿔 우리 반 약속으로 제안하세요."
+      ],
+      "misconceptions": [
+        "배려는 특별한 사람에게만 필요한 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 36,
+        "section": "성취기준 해설",
+        "code": "[9보05-05]"
+      }
+    },
+    "kr.topic.2022.middle.740dbcd4604407fbc245": {
+      "evidence": [
+        "가족과 친구와 미디어가 성 인식에 준 영향을 자료로 찾는다.",
+        "찾은 자료를 근거로 영향이 어느 쪽으로 흐르는지 설명한다."
+      ],
+      "assessmentPrompts": [
+        "광고나 드라마에서 성역할이 드러난 장면을 두 가지 골라 어떤 모습이 되풀이되는지 적고, 그 장면이 보는 사람에게 줄 영향을 근거와 함께 설명하세요."
+      ],
+      "misconceptions": [
+        "미디어 속 성 표현은 꾸며 낸 이야기라서 현실에는 영향을 주지 않는다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 33,
+        "section": "성취기준 해설",
+        "code": "[9보03-01]"
+      }
+    },
+    "kr.topic.2022.middle.75baf244cba23edc4755": {
+      "evidence": [
+        "죽음과 상실을 다룬 글이나 영상에서 대처 방식을 찾아낸다.",
+        "찾은 방식이 왜 도움이 되는지 근거를 들어 설명한다."
+      ],
+      "assessmentPrompts": [
+        "상실을 겪은 사람의 이야기를 담은 글이나 영상을 하나 골라 그가 어떤 도움을 받았는지 정리하고, 그 도움이 왜 힘이 되었는지 근거를 들어 쓰세요."
+      ],
+      "misconceptions": [
+        "시간이 지나면 슬픔은 저절로 사라지므로 도움은 필요 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 32,
+        "section": "성취기준 해설",
+        "code": "[9보02-05]"
+      }
+    },
+    "kr.topic.2022.middle.7d76d5b06c58f9d9120e": {
+      "evidence": [
+        "급성 질병과 만성 질병의 경과 차이를 갈라 설명한다.",
+        "질병이 있는 사람과 함께 지낼 때 지킬 방안을 세운다."
+      ],
+      "assessmentPrompts": [
+        "제1형 당뇨나 알레르기처럼 꾸준히 관리해야 하는 질병을 하나 골라 어떤 도움이 필요한지 정리하고, 학급에서 함께 지킬 방안을 만드세요."
+      ],
+      "misconceptions": [
+        "만성 질병이 있으면 학교생활을 온전히 할 수 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 35,
+        "section": "성취기준 해설",
+        "code": "[9보04-02]"
+      }
+    },
+    "kr.topic.2022.middle.7eda3c198af3d4eca8a1": {
+      "evidence": [
+        "자기 감정의 이름과 세기를 상황별로 가려 적는다.",
+        "감정을 상대가 받아들일 수 있는 말로 표현한다."
+      ],
+      "assessmentPrompts": [
+        "일주일 동안 감정 기록표를 쓰며 감정의 이름과 세기를 매기고, 가장 세게 겪은 감정 하나를 골라 상대를 탓하지 않는 문장으로 표현해 보세요."
+      ],
+      "misconceptions": [
+        "감정을 드러내면 약해 보이니 참는 편이 낫다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 32,
+        "section": "성취기준 해설",
+        "code": "[9보02-04]"
+      }
+    },
+    "kr.topic.2022.middle.83011a8941cff4d00bf5": {
+      "evidence": [
+        "질병 위험 요인을 다룬 자료에서 근거를 뽑아낸다.",
+        "뽑아낸 근거로 갑작스러운 상황의 대비 방안을 마련한다."
+      ],
+      "assessmentPrompts": [
+        "아나필락시스나 저혈당처럼 갑자기 나빠질 수 있는 상황을 다룬 자료를 찾아 위험 신호를 정리하고, 그 상황이 생겼을 때 할 일을 순서로 적으세요."
+      ],
+      "misconceptions": [
+        "겉으로 멀쩡해 보이면 위급한 상황은 아니라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 35,
+        "section": "성취기준 해설",
+        "code": "[9보04-02]"
+      }
+    },
+    "kr.topic.2022.middle.86264b28b16061c46b07": {
+      "evidence": [
+        "쟁점을 다룬 보도 자료에서 차별과 고정관념을 찾아낸다.",
+        "찾아낸 내용을 근거로 균형 잡힌 서술로 바꾼다."
+      ],
+      "assessmentPrompts": [
+        "같은 쟁점을 다룬 기사 두 편을 견주어 차별이나 고정관념이 드러난 표현을 찾아 표시하고, 그 문장을 균형 있게 고쳐 쓰세요."
+      ],
+      "misconceptions": [
+        "기사에 실린 내용은 사실만 담고 있어 관점이 들어가지 않는다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 34,
+        "section": "성취기준 해설",
+        "code": "[9보03-06]"
+      }
+    },
+    "kr.topic.2022.middle.89ad997d2549be07885e": {
+      "evidence": [
+        "신고부터 이송까지 응급의료체계의 흐름을 순서로 정리한다.",
+        "가슴압박과 자동심장충격기 사용을 절차대로 수행한다."
+      ],
+      "assessmentPrompts": [
+        "119 신고에서 병원 이송까지의 흐름을 순서로 정리하고, 마네킹으로 가슴압박 30회와 자동심장충격기 사용을 절차대로 수행해 보이세요."
+      ],
+      "misconceptions": [
+        "자동심장충격기는 의료인만 쓸 수 있다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 35,
+        "section": "성취기준 해설",
+        "code": "[9보04-05]"
+      }
+    },
+    "kr.topic.2022.middle.94190d271b267c7dac9a": {
+      "evidence": [
+        "건강권 향상 활동에 참여한 경험을 되짚어 적는다.",
+        "다음에 이어 갈 활동을 정해 계획으로 남긴다."
+      ],
+      "assessmentPrompts": [
+        "건강권과 얽힌 캠페인이나 서명 활동에 참여한 경험을 적고, 그 활동에서 아쉬웠던 점과 다음에 이어 갈 활동을 계획으로 정리하세요."
+      ],
+      "misconceptions": [
+        "학생의 참여는 실제로 아무것도 바꾸지 못한다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 36,
+        "section": "성취기준 해설",
+        "code": "[9보05-01]"
+      }
+    },
+    "kr.topic.2022.middle.94aa32f36f21112bc42c": {
+      "evidence": [
+        "성폭력과 성매개감염병의 위험 요소를 갈래별로 정리한다.",
+        "위험을 줄이는 예방 행동과 신고 절차를 익혀 설명한다."
+      ],
+      "assessmentPrompts": [
+        "디지털 공간에서 일어날 수 있는 성폭력 유형을 세 가지 정리하고, 각 유형에서 증거를 남기고 신고하는 절차를 순서대로 쓰세요."
+      ],
+      "misconceptions": [
+        "온라인에서 일어난 일은 실제 폭력이 아니라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 33,
+        "section": "성취기준 해설",
+        "code": "[9보03-04]"
+      }
+    },
+    "kr.topic.2022.middle.97b5c7899f265ee18399": {
+      "evidence": [
+        "약물이나 음주를 부추기는 광고와 게시물을 찾아 수법을 짚는다.",
+        "짚어 낸 수법을 근거로 또래에게 알릴 자료를 만든다."
+      ],
+      "assessmentPrompts": [
+        "청소년에게 흡연이나 음주를 그럴듯하게 보이게 하는 게시물을 하나 찾아 어떤 수법을 썼는지 짚고, 그 수법을 알리는 카드뉴스를 만드세요."
+      ],
+      "misconceptions": [
+        "영상 속 장면은 연출일 뿐이라 자기 선택에는 영향을 주지 않는다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 32,
+        "section": "성취기준 해설",
+        "code": "[9보02-01]"
+      }
+    },
+    "kr.topic.2022.middle.97f60b27d5750d7211d2": {
+      "evidence": [
+        "디지털 건강 서비스의 이로운 점과 걸리는 점을 갈라 정리한다.",
+        "건강 정보를 가려 쓰는 기준을 정해 적용한다."
+      ],
+      "assessmentPrompts": [
+        "건강 관련 앱이나 인공지능 상담 서비스를 하나 골라 이로운 점과 걸리는 점을 표로 정리하고, 그 서비스를 안전하게 쓰는 기준 세 가지를 정하세요."
+      ],
+      "misconceptions": [
+        "인공지능이 알려 준 건강 정보는 언제나 정확하다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 36,
+        "section": "성취기준 해설",
+        "code": "[9보05-02]"
+      }
+    },
+    "kr.topic.2022.middle.a1de6426530966100656": {
+      "evidence": [
+        "혈압과 맥박과 호흡과 체온의 정상 범위를 자기 수치와 견준다.",
+        "잰 수치를 기록해 자기 건강 상태를 평가하는 데 활용한다."
+      ],
+      "assessmentPrompts": [
+        "일주일 동안 같은 시각에 맥박과 체온을 재어 기록하고, 값이 크게 달랐던 날을 골라 그날의 생활과 연결해 설명하세요."
+      ],
+      "misconceptions": [
+        "활력징후는 병원에서만 재는 것이라 스스로 확인할 수 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 30,
+        "section": "성취기준 해설",
+        "code": "[9보01-02]"
+      }
+    },
+    "kr.topic.2022.middle.a2f007d2ebbf8eaac804": {
+      "evidence": [
+        "수칙을 지키기 어려웠던 상황을 찾아 그 까닭을 짚는다.",
+        "지킬 수 있게 바꿀 방법을 모둠과 함께 정한다."
+      ],
+      "assessmentPrompts": [
+        "예방 수칙을 지키기 어려웠던 상황을 세 가지 모아 까닭을 적고, 모둠에서 그 상황을 바꿀 현실적인 방법을 정해 제안하세요."
+      ],
+      "misconceptions": [
+        "수칙을 지키는 일은 개인의 선택이라 남에게 영향을 주지 않는다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 35,
+        "section": "성취기준 해설",
+        "code": "[9보04-03]"
+      }
+    },
+    "kr.topic.2022.middle.a50ae1d50eeb55f0e219": {
+      "evidence": [
+        "감염병이 퍼지는 경로와 면역이 작동하는 원리를 갈라 설명한다.",
+        "경로에 맞는 건강수칙을 근거와 함께 제안한다."
+      ],
+      "assessmentPrompts": [
+        "호흡기 감염병과 접촉 감염병의 전파 경로를 견주어 정리하고, 각 경로를 끊는 건강수칙을 근거와 함께 두 가지씩 제안하세요."
+      ],
+      "misconceptions": [
+        "손을 씻기만 하면 모든 감염병을 막을 수 있다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 35,
+        "section": "성취기준 해설",
+        "code": "[9보04-03]"
+      }
+    },
+    "kr.topic.2022.middle.acbd91219aab1757944b": {
+      "evidence": [
+        "십대 임신을 다룬 자료에서 개인과 사회에 미치는 영향을 찾아낸다.",
+        "찾은 내용을 근거로 필요한 지원 방안을 제안한다."
+      ],
+      "assessmentPrompts": [
+        "십대 임신과 관련한 통계나 사례 자료를 찾아 당사자와 사회에 미치는 영향을 나눠 정리하고, 학교와 지역에 필요한 지원을 근거와 함께 제안하세요."
+      ],
+      "misconceptions": [
+        "십대 임신은 개인의 잘못일 뿐 사회가 나설 일은 아니라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 34,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9보03-05]"
+      },
+      "note": "해설 없음: 성취기준 문장과 성과 건강 영역 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.af0f1179b18b6d84bec2": {
+      "evidence": [
+        "세운 건강목표를 점검한 뒤 다음 목표를 고쳐 세운다.",
+        "고쳐 세운 까닭을 자기 생활 조건과 이어서 말한다."
+      ],
+      "assessmentPrompts": [
+        "2주 뒤 실천 결과를 점검표로 확인하고 목표를 그대로 둘지 바꿀지 정한 다음, 그렇게 정한 까닭을 자신의 생활 조건과 연결해 쓰세요."
+      ],
+      "misconceptions": [
+        "한 번 세운 건강목표는 끝까지 바꾸지 않아야 한다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 30,
+        "section": "성취기준 해설",
+        "code": "[9보01-01]"
+      }
+    },
+    "kr.topic.2022.middle.b1a60fd9fa733a7d222e": {
+      "evidence": [
+        "기후변화가 건강에 미치는 경로를 갈래로 나누어 설명한다.",
+        "위험을 줄이거나 대비할 실천 방안을 세워 행한다."
+      ],
+      "assessmentPrompts": [
+        "폭염과 대기오염과 신종 감염병 가운데 하나를 골라 기후변화와 건강을 잇는 경로를 정리하고, 개인과 학교가 할 수 있는 대비 방안을 세우세요."
+      ],
+      "misconceptions": [
+        "기후변화는 먼 나라 일이라 우리 건강과는 상관없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 36,
+        "section": "성취기준 해설",
+        "code": "[9보05-03]"
+      }
+    },
+    "kr.topic.2022.middle.b23021170836b2e19d14": {
+      "evidence": [
+        "자신이 건강 정보를 찾는 방식을 되짚어 적는다.",
+        "고칠 점을 정해 새로운 확인 기준을 만들어 쓴다."
+      ],
+      "assessmentPrompts": [
+        "최근에 몸이 아팠을 때 정보를 어디서 어떻게 찾았는지 되짚어 적고, 그 방식에서 고칠 점을 정해 자기만의 확인 기준을 만들어 쓰세요."
+      ],
+      "misconceptions": [
+        "건강 정보를 확인하는 일은 어른이나 의료인만 할 수 있다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 36,
+        "section": "성취기준 해설",
+        "code": "[9보05-02]"
+      }
+    },
+    "kr.topic.2022.middle.b4d8f1ef156f170a7a0d": {
+      "evidence": [
+        "친구의 말을 끊지 않고 들은 뒤 공감하는 반응을 보인다.",
+        "자기 반응이 관계에 어떤 변화를 주었는지 되짚는다."
+      ],
+      "assessmentPrompts": [
+        "친구의 고민을 3분 동안 끊지 않고 들은 뒤 조언 대신 공감하는 말을 건네고, 그 뒤 대화가 어떻게 이어졌는지 기록해 되돌아보세요."
+      ],
+      "misconceptions": [
+        "공감은 상대의 말에 무조건 동의해 주는 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 32,
+        "section": "성취기준 해설",
+        "code": "[9보02-04]"
+      }
+    },
+    "kr.topic.2022.middle.bfcdc401c61f0f71dd04": {
+      "evidence": [
+        "미디어가 건강 행동에 준 영향을 보여 주는 자료를 찾아낸다.",
+        "찾아낸 자료를 근거로 영향의 방향을 설명한다."
+      ],
+      "assessmentPrompts": [
+        "먹거리나 운동에 대한 유행을 다룬 게시물을 두 가지 찾아 어떤 행동을 부추기는지 정리하고, 그 영향이 건강에 어떻게 이어질지 근거와 함께 쓰세요."
+      ],
+      "misconceptions": [
+        "재미로 보는 게시물은 실제 행동에 영향을 주지 않는다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 36,
+        "section": "성취기준 해설",
+        "code": "[9보05-04]"
+      }
+    },
+    "kr.topic.2022.middle.c168b5a09266dbb44903": {
+      "evidence": [
+        "행위 중독의 신호를 자기 일상 행동에서 가려낸다.",
+        "위험 요인을 줄일 방안을 세워 일정 기간 실천한다."
+      ],
+      "assessmentPrompts": [
+        "화면 사용 시간을 사흘 동안 기록해 스스로 조절이 어려웠던 순간을 표시하고, 사용 시간을 줄일 방안을 세 가지 세워 일주일간 실천하세요."
+      ],
+      "misconceptions": [
+        "재미있어서 오래 하는 것은 중독과 아무 상관이 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 32,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9보02-02]"
+      },
+      "note": "해설 없음: 성취기준 문장과 정서와 정신건강 영역 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.c46c88b8ba00edd529ad": {
+      "evidence": [
+        "또래에게 흔한 건강 문제를 골라 원인과 예방 방법을 정리한다.",
+        "의사소통과 의사 결정과 목표설정 기술을 골라 상황에 적용한다."
+      ],
+      "assessmentPrompts": [
+        "눈 건강과 자세와 소화 문제 가운데 하나를 골라 원인과 예방 방법을 정리하고, 친구가 권하는 나쁜 습관을 거절하는 말을 두 가지 만들어 연습하세요."
+      ],
+      "misconceptions": [
+        "청소년기에는 어떤 습관을 들여도 몸이 알아서 회복한다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 30,
+        "section": "성취기준 해설",
+        "code": "[9보01-04]"
+      }
+    },
+    "kr.topic.2022.middle.c74cc26892b0db8e6cff": {
+      "evidence": [
+        "몸에 대한 기준을 내세우는 자료를 찾아 그 근거를 따진다.",
+        "그 기준이 건강에 미칠 영향을 자료로 설명한다."
+      ],
+      "assessmentPrompts": [
+        "특정 체형이나 외모를 이상적이라고 내세우는 자료를 하나 찾아 그 기준이 어디서 왔는지 따지고, 그 기준을 좇을 때 생길 건강 문제를 근거와 함께 쓰세요."
+      ],
+      "misconceptions": [
+        "몸무게를 줄이는 일은 언제나 건강에 이롭다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 33,
+        "section": "성취기준 해설",
+        "code": "[9보03-02]"
+      }
+    },
+    "kr.topic.2022.middle.cab9e1fb3ca47da35034": {
+      "evidence": [
+        "미혼 부모에 대한 편견이 담긴 말을 찾아 짚는다.",
+        "존중하는 태도를 담은 표현으로 바꿔 다시 쓴다."
+      ],
+      "assessmentPrompts": [
+        "미혼 부모나 그 자녀를 두고 쓰이는 편견 섞인 표현을 두 가지 찾아 무엇이 문제인지 적고, 존중을 담은 표현으로 바꿔 쓰세요."
+      ],
+      "misconceptions": [
+        "편견은 말버릇일 뿐이라 당사자에게 실제 영향을 주지 않는다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 34,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9보03-05]"
+      },
+      "note": "해설 없음: 성취기준 문장과 성과 건강 영역 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.cb33c0dcad823a1e05c6": {
+      "evidence": [
+        "또래 압력이 드러난 사례 자료를 찾아 상황을 분석한다.",
+        "그 상황에서 쓸 대처 기술을 근거와 함께 고른다."
+      ],
+      "assessmentPrompts": [
+        "또래의 권유로 건강에 해로운 선택을 한 사례를 하나 찾아 상황을 정리하고, 그 상황에 알맞은 거부 기술을 근거와 함께 골라 대사로 써 보세요."
+      ],
+      "misconceptions": [
+        "거절하면 관계가 끊어지므로 거절 기술은 쓸모가 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 30,
+        "section": "성취기준 해설",
+        "code": "[9보01-04]"
+      }
+    },
+    "kr.topic.2022.middle.d26a67ba117f20c23d0d": {
+      "evidence": [
+        "행위 중독을 다룬 자료에서 위험 요인을 뽑아낸다.",
+        "뽑아낸 요인을 자기 생활과 견주어 근거를 든다."
+      ],
+      "assessmentPrompts": [
+        "게임이나 사회 관계망 이용과 관련된 조사 자료를 찾아 위험 요인을 세 가지 뽑고, 그 가운데 자기 생활에 해당하는 것을 근거를 들어 설명하세요."
+      ],
+      "misconceptions": [
+        "행위 중독은 의지가 약한 사람에게만 생긴다고 여겨 위험 요인을 살피지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 32,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9보02-02]"
+      },
+      "note": "해설 없음: 성취기준 문장과 정서와 정신건강 영역 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.d3c73b73168cea0301d4": {
+      "evidence": [
+        "자기가 쓴 대처 기술이 실제로 통했는지 되짚는다.",
+        "통하지 않은 까닭을 찾아 말과 태도를 고친다."
+      ],
+      "assessmentPrompts": [
+        "한 주 동안 실제로 써 본 대처 기술을 기록하고, 잘 통한 경우와 통하지 않은 경우를 나눠 무엇을 바꿔야 할지 쓰세요."
+      ],
+      "misconceptions": [
+        "한 번 익힌 대처 기술은 어느 상황에서나 똑같이 통한다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 30,
+        "section": "성취기준 해설",
+        "code": "[9보01-04]"
+      }
+    },
+    "kr.topic.2022.middle.d670b0a3e20af2d037fa": {
+      "evidence": [
+        "생활습관과 건강 상태의 관계를 보여 주는 자료를 찾아낸다.",
+        "찾은 자료를 근거로 자기 습관의 문제를 짚는다."
+      ],
+      "assessmentPrompts": [
+        "수면 시간과 학습 집중도의 관계를 다룬 자료를 하나 찾아 요점을 정리하고, 그 자료를 근거로 자기 수면 습관에서 고칠 점을 짚어 쓰세요."
+      ],
+      "misconceptions": [
+        "건강 정보는 인터넷에 많이 나오는 이야기면 믿을 만하다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 30,
+        "section": "성취기준 해설",
+        "code": "[9보01-03]"
+      }
+    },
+    "kr.topic.2022.middle.d9c89c3fbe410b186bf7": {
+      "evidence": [
+        "청소년기 몸의 변화가 사람마다 다른 속도로 온다는 점을 가른다.",
+        "몸의 변화에 맞는 위생과 건강 관리 방법을 실천한다."
+      ],
+      "assessmentPrompts": [
+        "청소년기에 나타나는 몸의 변화를 시기와 개인차를 함께 담아 정리하고, 그 변화에 맞춰 지켜야 할 위생 수칙을 자기 생활에 맞게 계획하세요."
+      ],
+      "misconceptions": [
+        "몸의 변화가 남보다 늦거나 이르면 문제가 있는 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 33,
+        "section": "성취기준 해설",
+        "code": "[9보03-02]"
+      }
+    },
+    "kr.topic.2022.middle.dc5850b9248149a06021": {
+      "evidence": [
+        "응급 상황 사례에서 필요한 역할을 나누어 배치한다.",
+        "역할에 따른 협력 대응 방안을 세워 시범을 보인다."
+      ],
+      "assessmentPrompts": [
+        "교실에서 친구가 쓰러진 상황을 가정해 신고와 처치와 주변 정리 역할을 나누고, 각자 무엇을 할지 정해 모둠 시범을 보인 뒤 고칠 점을 적으세요."
+      ],
+      "misconceptions": [
+        "응급 상황에서는 한 사람이 모든 일을 처리해야 빠르다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 35,
+        "section": "성취기준 해설",
+        "code": "[9보04-04]"
+      }
+    },
+    "kr.topic.2022.middle.e07286b9ff017dc6fa44": {
+      "evidence": [
+        "몸이 보낸 신호를 그냥 넘겼던 경험을 되짚어 적는다.",
+        "같은 신호가 다시 올 때 무엇을 할지 미리 정해 둔다."
+      ],
+      "assessmentPrompts": [
+        "최근 피로나 통증 같은 신호를 그냥 넘겼던 일을 하나 떠올려 적고, 다음에 같은 신호가 왔을 때 언제 누구에게 도움을 청할지 기준을 정해 쓰세요."
+      ],
+      "misconceptions": [
+        "참고 견디면 몸의 이상 신호는 저절로 사라진다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 30,
+        "section": "성취기준 해설",
+        "code": "[9보01-02]"
+      }
+    },
+    "kr.topic.2022.middle.e0d8f10bf7e07bd18f65": {
+      "evidence": [
+        "모둠 활동에서 자기 역할이 어떻게 쓰였는지 되짚는다.",
+        "협력 과정에서 어긋난 지점을 찾아 다음 계획을 고친다."
+      ],
+      "assessmentPrompts": [
+        "옹호활동을 마친 뒤 자기 역할이 결과에 어떻게 이어졌는지 적고, 모둠에서 뜻이 어긋났던 순간과 다음에 바꿀 방법을 함께 쓰세요."
+      ],
+      "misconceptions": [
+        "옹호활동은 결과가 눈에 보여야만 뜻이 있다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 30,
+        "section": "성취기준 해설",
+        "code": "[9보01-05]"
+      }
+    },
+    "kr.topic.2022.middle.e6d6cd6ca8e56c380fbd": {
+      "evidence": [
+        "피해를 겪은 사람을 탓하는 말이 왜 문제인지 짚는다.",
+        "주변에서 도울 수 있는 행동을 정해 실천 약속으로 삼는다."
+      ],
+      "assessmentPrompts": [
+        "피해자를 탓하는 말을 두 가지 모아 무엇이 잘못됐는지 적고, 주변에서 도울 수 있는 행동 세 가지를 정해 우리 반 약속으로 제안하세요."
+      ],
+      "misconceptions": [
+        "피해를 막지 못한 데에는 피해자에게도 잘못이 있다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 33,
+        "section": "성취기준 해설",
+        "code": "[9보03-04]"
+      }
+    },
+    "kr.topic.2022.middle.ea5b6c685694ad166242": {
+      "evidence": [
+        "줄이기 어려웠던 까닭을 감정과 상황으로 나눠 짚는다.",
+        "도움을 받을 방법을 정해 실천 계획에 넣는다."
+      ],
+      "assessmentPrompts": [
+        "실천이 어려웠던 날의 감정과 상황을 나눠 적고, 혼자 하기 힘든 부분에 대해 가족이나 상담 기관의 도움을 어떻게 받을지 계획에 넣으세요."
+      ],
+      "misconceptions": [
+        "중독 문제는 스스로 끊어야만 진짜로 나아진다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 32,
+        "section": "성취기준 적용 시 고려 사항",
+        "code": "[9보02-02]"
+      },
+      "note": "해설 없음: 성취기준 문장과 정서와 정신건강 영역 성취기준 적용 시 고려 사항을 근거로 작성했다."
+    },
+    "kr.topic.2022.middle.eb4e8a69183b70f697a6": {
+      "evidence": [
+        "자신이 위험을 그냥 넘긴 순간을 되짚어 적는다.",
+        "위험한 환경을 고칠 방법을 찾아 학교에 건의한다."
+      ],
+      "assessmentPrompts": [
+        "위험하다고 느끼면서도 그냥 지나쳤던 순간을 하나 적고, 그 자리를 안전하게 바꿀 방법을 정리해 학교에 낼 건의문을 쓰세요."
+      ],
+      "misconceptions": [
+        "안전 문제는 어른들이 알아서 해결할 몫이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 34,
+        "section": "성취기준 해설",
+        "code": "[9보04-01]"
+      }
+    },
+    "kr.topic.2022.middle.ec4f5db345108e8c381c": {
+      "evidence": [
+        "건강을 돕는 지지 요인과 가로막는 요인을 갈라 적는다.",
+        "모둠과 함께 건강옹호활동을 계획해 역할을 나눈다."
+      ],
+      "assessmentPrompts": [
+        "우리 학교에서 건강을 돕는 요인과 가로막는 요인을 각각 세 가지 찾아 표로 정리하고, 가로막는 요인 하나를 고칠 옹호활동을 모둠 계획서로 만드세요."
+      ],
+      "misconceptions": [
+        "건강은 개인이 알아서 챙길 일이지 함께 나설 문제는 아니라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 30,
+        "section": "성취기준 해설",
+        "code": "[9보01-05]"
+      }
+    },
+    "kr.topic.2022.middle.eed23965cc48025b5908": {
+      "evidence": [
+        "자신이 압력을 느꼈던 순간의 감정과 판단을 되짚는다.",
+        "도움을 청할 사람과 상담 기관을 미리 정해 둔다."
+      ],
+      "assessmentPrompts": [
+        "거절하기 어려웠던 순간을 하나 떠올려 그때의 감정과 판단을 적고, 앞으로 도움을 청할 사람과 상담 기관을 두 곳 정해 연락 방법까지 쓰세요."
+      ],
+      "misconceptions": [
+        "도움을 청하면 문제가 커지므로 혼자 해결하는 편이 낫다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 32,
+        "section": "성취기준 해설",
+        "code": "[9보02-01]"
+      }
+    },
+    "kr.topic.2022.middle.ef67a2907e0b271d488e": {
+      "evidence": [
+        "약물과 담배와 술이 몸에 미치는 영향을 갈래별로 정리한다.",
+        "권유 상황을 정해 안전한 선택을 말과 행동으로 보인다."
+      ],
+      "assessmentPrompts": [
+        "담배나 전자담배를 권유받는 상황을 역할극으로 꾸미고, 거절하는 말과 자리를 벗어나는 행동을 함께 넣어 두 가지 방식으로 대처해 보이세요."
+      ],
+      "misconceptions": [
+        "전자담배나 무알코올 음료는 몸에 해가 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 32,
+        "section": "성취기준 해설",
+        "code": "[9보02-01]"
+      }
+    },
+    "kr.topic.2022.middle.f2400667077d203006ef": {
+      "evidence": [
+        "성역할에 대한 기대가 사람마다 다르게 나타남을 사례로 가른다.",
+        "안전하고 존중이 담긴 성문화의 조건을 정리해 말한다."
+      ],
+      "assessmentPrompts": [
+        "남자다움과 여자다움이라는 말이 쓰인 상황을 세 가지 모아 각각 어떤 기대를 담고 있는지 적고, 그 기대가 누구에게 부담이 되는지 쓰세요."
+      ],
+      "misconceptions": [
+        "성역할은 타고나는 것이라 사회와는 상관이 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 33,
+        "section": "성취기준 해설",
+        "code": "[9보03-01]"
+      }
+    },
+    "kr.topic.2022.middle.f55777adb091283ff42d": {
+      "evidence": [
+        "경계와 동의의 뜻을 상황에 맞게 가려 설명한다.",
+        "경계를 알리는 말과 동의를 구하는 말을 상황에 맞게 쓴다."
+      ],
+      "assessmentPrompts": [
+        "친밀도가 다른 세 관계를 정해 각 관계에서 지켜야 할 경계를 적고, 경계를 알리는 말과 동의를 구하는 말을 상황마다 한 문장씩 만드세요."
+      ],
+      "misconceptions": [
+        "친한 사이에서는 동의를 따로 구하지 않아도 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 33,
+        "section": "성취기준 해설",
+        "code": "[9보03-03]"
+      }
+    },
+    "kr.topic.2022.middle.f7c853140d28eb599cb2": {
+      "evidence": [
+        "건강권이 지켜진 사례와 침해된 사례를 갈라 정리한다.",
+        "가까이 있는 건강자원을 조사해 활용 방안을 세운다."
+      ],
+      "assessmentPrompts": [
+        "우리 지역에서 이용할 수 있는 건강자원을 다섯 곳 조사해 무엇을 도와주는 곳인지 정리하고, 그 가운데 하나를 실제로 이용할 계획을 세우세요."
+      ],
+      "misconceptions": [
+        "건강은 스스로 챙길 일이라 권리와는 상관이 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 36,
+        "section": "성취기준 해설",
+        "code": "[9보05-01]"
+      }
+    },
+    "kr.topic.2022.middle.f86ec461375c223f6e0f": {
+      "evidence": [
+        "동의 없이 경계가 침해된 사례 자료를 찾아 문제를 짚는다.",
+        "그 사례에서 쓸 수 있었던 대처 전략을 근거와 함께 든다."
+      ],
+      "assessmentPrompts": [
+        "경계가 지켜지지 않은 상황을 담은 사례 자료를 하나 찾아 어느 지점에서 동의가 빠졌는지 짚고, 그 상황에서 쓸 수 있는 대처 전략을 근거와 함께 쓰세요."
+      ],
+      "misconceptions": [
+        "상대가 싫다고 분명히 말하지 않으면 동의한 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 33,
+        "section": "성취기준 해설",
+        "code": "[9보03-03]"
+      }
+    },
+    "kr.topic.2022.middle.fbd313fff57b789cdce0": {
+      "evidence": [
+        "법률이나 아동 권리 협약에서 건강과 얽힌 조항을 찾아낸다.",
+        "찾아낸 조항을 근거로 학교에 필요한 요구를 제안한다."
+      ],
+      "assessmentPrompts": [
+        "유엔 아동 권리 협약이나 관련 법률에서 건강과 얽힌 조항을 두 개 찾아 뜻을 풀어 쓰고, 그 조항을 근거로 학교에 제안할 사항을 하나 쓰세요."
+      ],
+      "misconceptions": [
+        "권리는 어른이 되어야 주장할 수 있다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 36,
+        "section": "성취기준 해설",
+        "code": "[9보05-01]"
+      }
+    },
+    "kr.topic.2022.middle.fd8576a941cb55996c94": {
+      "evidence": [
+        "상실이 남기는 감정의 여러 갈래를 나누어 적는다.",
+        "상실을 겪은 사람에게 건넬 말과 삼갈 말을 갈라 정한다."
+      ],
+      "assessmentPrompts": [
+        "가까운 사람이나 반려동물을 잃은 상황을 가정해 그때 생길 감정을 세 가지 적고, 그 사람에게 건넬 말과 삼가야 할 말을 나눠 정리하세요."
+      ],
+      "misconceptions": [
+        "상실을 겪은 사람에게는 아무 말도 하지 않는 것이 언제나 옳다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-nec-2024-3-annex18",
+        "printedPage": 32,
+        "section": "성취기준 해설",
+        "code": "[9보02-05]"
+      }
+    }
+  }
+}

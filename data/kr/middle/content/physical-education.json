@@ -1,0 +1,2766 @@
+{
+  "$schema": "../../../../schema/content-overlay.schema.json",
+  "contentKind": "source-grounded-draft",
+  "subjectKorean": "체육",
+  "authoredAt": "2026-09-06",
+  "sourceRefs": [
+    "kr-moe-2022-33-annex11"
+  ],
+  "note": "교육부 고시 제2022-33호 별책 11 체육과 교육과정의 중학교 1~3학년 성취기준 해설과 성취기준 적용 시 고려 사항을 근거로, 성취기준별 core·skill-strategy·participation-reflection 주제에 서로 다른 관찰 증거·평가 과제·오개념을 새로 작성한 초안이다.",
+  "entries": {
+    "kr.topic.2022.middle.0444e1c15b6b22209a45": {
+      "evidence": [
+        "활동 중 사고가 났을 때 취할 조치를 정해 두고 역할을 나눈다.",
+        "활동을 마친 뒤 위험했던 상황과 대처를 되짚어 기록한다."
+      ],
+      "assessmentPrompts": [
+        "지역 시설에서 활동한 뒤 위험하다고 느낀 지점을 표시한 지도를 만들고, 시설 관리자에게 전할 개선 요청을 세 줄로 쓰세요."
+      ],
+      "misconceptions": [
+        "사고가 나지 않았으면 위험은 없었던 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 32,
+        "section": "성취기준 해설",
+        "code": "[9체02-21]"
+      }
+    },
+    "kr.topic.2022.middle.0769967b089dd93e49aa": {
+      "evidence": [
+        "득점과 실점 뒤에도 짝과 신호를 맞추며 경기 흐름을 이어 간다.",
+        "경기 뒤 전환이 늦었던 장면을 되짚어 팀 약속으로 정리한다."
+      ],
+      "assessmentPrompts": [
+        "경기 영상에서 공수 전환이 늦은 장면 두 개를 찾아, 그때 서로가 어떤 신호를 주고받았어야 했는지 정리하세요."
+      ],
+      "misconceptions": [
+        "실점한 뒤에는 짝을 탓해야 정신을 차린다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 31,
+        "section": "성취기준 해설",
+        "code": "[9체02-18]"
+      }
+    },
+    "kr.topic.2022.middle.079b2e3da396abdbad88": {
+      "evidence": [
+        "전통 무예를 다룰 때 문화적 배경을 존중하는 태도로 소개한다.",
+        "조사 결과를 나누며 다른 모둠의 해석에 근거를 물어 확인한다."
+      ],
+      "assessmentPrompts": [
+        "택견이나 씨름의 문화적 배경을 조사해 소개문을 쓰고, 그 종목을 낮추어 부르는 표현을 찾아 대체 표현을 제안하세요."
+      ],
+      "misconceptions": [
+        "전통 무예는 현대 스포츠보다 뒤떨어진다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 30,
+        "section": "성취기준 해설",
+        "code": "[9체02-07]"
+      }
+    },
+    "kr.topic.2022.middle.07cc634a8863ebac0fc6": {
+      "evidence": [
+        "장단이 바뀔 때 동작의 크기와 속도를 조정해 다시 수행한다.",
+        "자신의 동작에서 흐름이 끊기는 지점을 찾아 호흡 지점을 바꾼다."
+      ],
+      "assessmentPrompts": [
+        "같은 동작을 느린 장단과 빠른 장단에 각각 맞춰 보고, 두 경우에 달라진 호흡과 무릎 쓰임을 견주어 쓰세요."
+      ],
+      "misconceptions": [
+        "장단이 바뀌어도 동작은 그대로 하면 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 34,
+        "section": "성취기준 해설",
+        "code": "[9체03-05]"
+      }
+    },
+    "kr.topic.2022.middle.0bca1ef71ec0a5069893": {
+      "evidence": [
+        "상황의 위험 정도를 판단해 먼저 할 일과 나중에 할 일을 가른다.",
+        "주변 도구와 사람을 활용해 대처 방법을 상황에 맞게 바꾼다."
+      ],
+      "assessmentPrompts": [
+        "지진 대피 훈련 상황에서 교실·체육관·운동장 각각의 대피 경로와 주의점을 정하고, 다른 점이 생기는 까닭을 쓰세요."
+      ],
+      "misconceptions": [
+        "대피는 무조건 빨리 뛰어 나가는 것이 가장 안전하다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 27,
+        "section": "성취기준 해설",
+        "code": "[9체01-12]"
+      }
+    },
+    "kr.topic.2022.middle.0bda17ceac5a8eae6d40": {
+      "evidence": [
+        "라인댄스·스트리트댄스 같은 현대 표현의 성립 배경을 조사해 정리한다.",
+        "현대 표현이 전통 표현과 갈라지는 지점을 근거를 들어 밝힌다."
+      ],
+      "assessmentPrompts": [
+        "스트리트댄스가 어디에서 시작해 어떻게 퍼졌는지 조사하고, 그 과정에서 바뀐 표현 방식을 두 가지 쓰세요."
+      ],
+      "misconceptions": [
+        "현대 표현은 최근에 만들어져 역사가 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 34,
+        "section": "성취기준 해설",
+        "code": "[9체03-07]"
+      }
+    },
+    "kr.topic.2022.middle.0d1d9b0aec702746799f": {
+      "evidence": [
+        "자신의 생활 습관을 항목별로 점검해 고쳐야 할 것을 우선순위로 적는다.",
+        "건강 정보를 모둠에서 나눌 때 서로 다른 생활 조건을 존중하며 말한다."
+      ],
+      "assessmentPrompts": [
+        "일주일 동안 자신의 수면 시간과 간식 횟수를 기록하고, 바꾸고 싶은 항목 하나를 골라 실천 계획을 세워 모둠에 설명하세요."
+      ],
+      "misconceptions": [
+        "건강 습관은 어른이 되고 나서 고치면 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 27,
+        "section": "성취기준 해설",
+        "code": "[9체01-07]"
+      }
+    },
+    "kr.topic.2022.middle.0d53bba0b90c52873731": {
+      "evidence": [
+        "판정 결과에 승복하며 상대와 심판에게 예를 갖춰 인사한다.",
+        "경기 뒤 자신의 대응이 통한 장면과 막힌 장면을 나누어 되짚는다."
+      ],
+      "assessmentPrompts": [
+        "겨루기 한 판을 마친 뒤 자신의 계획이 통한 장면과 막힌 장면을 하나씩 골라, 그 차이를 만든 상대의 움직임을 쓰세요."
+      ],
+      "misconceptions": [
+        "판정이 불리하면 항의를 계속하는 것이 정당하다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 30,
+        "section": "성취기준 해설",
+        "code": "[9체02-09]"
+      }
+    },
+    "kr.topic.2022.middle.1058e6104429eca09221": {
+      "evidence": [
+        "자신이 한 체력 운동에 어떤 원리를 적용했는지 활동 일지에 적어 되짚는다.",
+        "모둠 토의에서 친구와 자신의 체력 수준 차이를 인정하며 서로 다른 목표를 존중해 말한다."
+      ],
+      "assessmentPrompts": [
+        "2주 동안 자신이 한 체력 운동을 일지에 기록하고, 세 원리 가운데 지키기 가장 어려웠던 것과 그 까닭을 세 문장으로 정리해 모둠에서 나누세요."
+      ],
+      "misconceptions": [
+        "체력이 좋은 친구와 똑같은 강도로 해야 공평하다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 26,
+        "section": "성취기준 해설",
+        "code": "[9체01-01]"
+      }
+    },
+    "kr.topic.2022.middle.11f998a65a2dea3bceb0": {
+      "evidence": [
+        "지형과 기후 조건에 맞춰 활동 기능을 조절해 수행한다.",
+        "장비 사용법을 익혀 조건이 바뀔 때 다루는 방식을 바꾼다."
+      ],
+      "assessmentPrompts": [
+        "경사가 완만한 길과 가파른 길을 걸으며 보폭과 호흡을 달리해 보고, 두 구간에서 몸이 어떻게 달랐는지 기록하세요."
+      ],
+      "misconceptions": [
+        "체력만 좋으면 어떤 자연 조건에서도 잘한다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 31,
+        "section": "성취기준 해설",
+        "code": "[9체02-23]"
+      }
+    },
+    "kr.topic.2022.middle.1335f84b33d0665133fa": {
+      "evidence": [
+        "과부하·개별성·점진성이 체력 향상에 각각 어떻게 작용하는지 사례를 들어 구분해 말한다.",
+        "같은 운동을 반복해도 효과가 달라지는 까닭을 세 원리로 나누어 분석한 결과를 발표한다."
+      ],
+      "assessmentPrompts": [
+        "윗몸일으키기 기록이 3주째 20회에서 멈춘 친구의 기록표를 보고, 과부하와 점진성 가운데 무엇이 지켜지지 않았는지 근거를 들어 쓰세요."
+      ],
+      "misconceptions": [
+        "운동을 오래 하기만 하면 체력이 저절로 좋아진다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 26,
+        "section": "성취기준 해설",
+        "code": "[9체01-01]"
+      }
+    },
+    "kr.topic.2022.middle.1570079586c0d8fdddd7": {
+      "evidence": [
+        "활동 중 몸 상태를 서로 확인하며 무리하지 않도록 속도를 맞춘다.",
+        "활동 기록을 남겨 다음 계획에 쓸 정보를 정리한다."
+      ],
+      "assessmentPrompts": [
+        "야외 활동을 마친 뒤 이동 시간·휴식 횟수·힘들었던 구간을 기록하고, 다음 활동에서 바꿀 점 두 가지를 정하세요."
+      ],
+      "misconceptions": [
+        "뒤처지는 사람을 기다리면 활동이 실패한다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 31,
+        "section": "성취기준 해설",
+        "code": "[9체02-23]"
+      }
+    },
+    "kr.topic.2022.middle.15b64deeaffbf6044a68": {
+      "evidence": [
+        "공중 동작과 착지에서 생길 수 있는 낙상 위험을 미리 살펴 매트 배치를 조정한다.",
+        "사고가 났을 때 취할 조치를 순서대로 정해 두고 역할을 나눈다."
+      ],
+      "assessmentPrompts": [
+        "도마 착지 구역의 매트 배치도를 그리고, 착지 실패로 넘어질 때를 대비한 보조자 위치와 대처 순서를 세 단계로 쓰세요."
+      ],
+      "misconceptions": [
+        "매트만 깔려 있으면 어떤 동작도 안전하다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 30,
+        "section": "성취기준 해설",
+        "code": "[9체02-03]"
+      }
+    },
+    "kr.topic.2022.middle.15e2ff0436db8e452c95": {
+      "evidence": [
+        "주제·동작·구성·음악·의상 가운데 어떤 요소가 두드러지는지 견주어 짚는다.",
+        "표현 요소를 기준으로 활동을 갈라 묶고 그 기준을 밝힌다."
+      ],
+      "assessmentPrompts": [
+        "스포츠 표현 공연 영상 두 편을 보고 음악과 도구 사용이 어떻게 다른지 표현 요소별로 견주어 정리하세요."
+      ],
+      "misconceptions": [
+        "음악은 배경일 뿐 표현 요소가 아니라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 34,
+        "section": "성취기준 해설",
+        "code": "[9체03-01]"
+      }
+    },
+    "kr.topic.2022.middle.16c2aa4ed311872bcf27": {
+      "evidence": [
+        "패스와 드리블, 슛의 수행 원리를 이어서 적용해 움직임을 만들어 낸다.",
+        "여러 기능을 묶은 복합 과제를 정해진 조건 안에서 수행한다."
+      ],
+      "assessmentPrompts": [
+        "드리블로 3m를 이동한 뒤 패스를 받아 슛까지 잇는 과제를 다섯 번 수행하고, 성공한 횟수와 끊긴 지점을 기록하세요."
+      ],
+      "misconceptions": [
+        "기능은 하나씩 따로 익히면 경기에서 저절로 이어진다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 31,
+        "section": "성취기준 해설",
+        "code": "[9체02-11]"
+      }
+    },
+    "kr.topic.2022.middle.1bcb73e101b8eca5d5a9": {
+      "evidence": [
+        "자신의 생활에서 체력 관리를 방해하는 습관을 찾아 이름 붙여 적는다.",
+        "관리 계획을 지키지 못한 날의 상황을 기록하고 다음 주 계획에 반영한다."
+      ],
+      "assessmentPrompts": [
+        "한 주 동안 앉아 있던 시간과 움직인 시간을 나누어 기록하고, 다음 주에 바꾸고 싶은 습관 한 가지와 실천 방법을 쓰세요."
+      ],
+      "misconceptions": [
+        "계획을 한 번 어기면 그 주의 관리는 의미가 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 27,
+        "section": "성취기준 해설",
+        "code": "[9체01-03]"
+      }
+    },
+    "kr.topic.2022.middle.200018ec7bbce4f17761": {
+      "evidence": [
+        "작품 구성을 도입·전개·마무리로 나눠 배치하고 시간 배분을 정한다.",
+        "감상 기준을 표현 요소별로 세워 작품을 견주어 판단한다."
+      ],
+      "assessmentPrompts": [
+        "다른 모둠의 작품을 표현 요소 다섯 가지 기준으로 평가표에 적고, 가장 인상 깊은 구간과 그 까닭을 함께 쓰세요."
+      ],
+      "misconceptions": [
+        "감상은 좋다·나쁘다를 말하는 일이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 34,
+        "section": "성취기준 해설",
+        "code": "[9체03-03]"
+      }
+    },
+    "kr.topic.2022.middle.2047cda1be39684e841f": {
+      "evidence": [
+        "우리나라와 다른 나라 민속무용의 유래와 변천을 조사해 정리한다.",
+        "전통 표현이 지닌 공통 특성과 지역별 차이를 갈라 제시한다."
+      ],
+      "assessmentPrompts": [
+        "우리나라 민속무용 하나와 다른 나라 민속무용 하나를 골라 동작·의상·쓰이는 자리를 표로 견주어 정리하세요."
+      ],
+      "misconceptions": [
+        "전통 무용은 옛날 모습 그대로 이어져 왔다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 34,
+        "section": "성취기준 해설",
+        "code": "[9체03-04]"
+      }
+    },
+    "kr.topic.2022.middle.21757a013828a62a5e2a": {
+      "evidence": [
+        "투기형 경기의 규칙과 판정 방식에 따라 경기를 진행한다.",
+        "상대의 기술 특성과 기구 조건을 살펴 공격과 방어 계획을 세운다."
+      ],
+      "assessmentPrompts": [
+        "태권도 겨루기에서 상대가 앞발 공격을 자주 쓴다고 할 때, 방어와 반격을 짝지은 대응안 두 가지를 만들어 쓰세요."
+      ],
+      "misconceptions": [
+        "공격만 많이 하면 겨루기에서 이긴다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 30,
+        "section": "성취기준 해설",
+        "code": "[9체02-09]"
+      }
+    },
+    "kr.topic.2022.middle.223e1aa2521b86716798": {
+      "evidence": [
+        "생활공간과 기구의 조건에 맞춰 활동 기능을 조절해 수행한다.",
+        "좁은 공간이나 다른 바닥 상태에서 동작을 바꿔 해낸다."
+      ],
+      "assessmentPrompts": [
+        "플라잉디스크를 잔디밭과 체육관에서 각각 열 번 던져 보고, 두 장소에서 던지는 각도와 힘을 어떻게 달리했는지 쓰세요."
+      ],
+      "misconceptions": [
+        "어디서 하든 같은 자세로 하면 결과가 같다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 31,
+        "section": "성취기준 해설",
+        "code": "[9체02-20]"
+      }
+    },
+    "kr.topic.2022.middle.2332fb8f4562757d65a1": {
+      "evidence": [
+        "2주 동안 활동을 실천한 날과 그때의 기분 변화를 이어서 기록한다.",
+        "활동을 이어 가기 어려웠던 조건을 찾아 계획을 고쳐 적는다."
+      ],
+      "assessmentPrompts": [
+        "2주간의 정신 건강 활동 일지를 보고 실천 뒤 기분이 가장 크게 달라진 날을 골라, 그날의 상황과 활동 조건을 정리하세요."
+      ],
+      "misconceptions": [
+        "기분이 좋은 날에는 정신 건강 활동을 할 필요가 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 27,
+        "section": "성취기준 해설",
+        "code": "[9체01-10]"
+      }
+    },
+    "kr.topic.2022.middle.2add652db930fb9ba72a": {
+      "evidence": [
+        "호흡의 속도와 자세를 조절하며 활동의 강도를 자신에게 맞춘다.",
+        "집중이 흐트러질 때 활동 순서를 바꾸거나 시간을 나눠 이어 간다."
+      ],
+      "assessmentPrompts": [
+        "4초 들이마시고 6초 내쉬는 호흡을 3분간 해 보고, 중간에 흐트러진 지점과 그때 쓴 조절 방법을 기록하세요."
+      ],
+      "misconceptions": [
+        "숨을 오래 참을수록 이완이 잘 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 27,
+        "section": "성취기준 해설",
+        "code": "[9체01-10]"
+      }
+    },
+    "kr.topic.2022.middle.2d0f401743b50b1b5f34": {
+      "evidence": [
+        "표현 요소를 기준으로 전통 무용을 갈라 묶고 근거를 밝힌다.",
+        "자료에서 무용이 쓰이던 자리와 동작의 관계를 짚어 설명한다."
+      ],
+      "assessmentPrompts": [
+        "농사와 관련된 민속무용의 동작을 조사해, 그 동작이 생활의 어떤 장면에서 왔는지 근거를 들어 연결하세요."
+      ],
+      "misconceptions": [
+        "전통 무용의 동작에는 특별한 뜻이 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 34,
+        "section": "성취기준 해설",
+        "code": "[9체03-04]"
+      }
+    },
+    "kr.topic.2022.middle.2e738455f11763cbe75e": {
+      "evidence": [
+        "체급과 규칙의 변화가 경기 전략에 준 영향을 자료에서 찾아 짚는다.",
+        "종목별 금지 기술을 견주어 안전을 위한 규칙의 몫을 설명한다."
+      ],
+      "assessmentPrompts": [
+        "유도와 레슬링의 금지 기술 목록을 견주고, 두 종목이 서로 다른 기술을 금지한 까닭을 안전 관점에서 정리하세요."
+      ],
+      "misconceptions": [
+        "규칙은 경기를 재미없게 만드는 제약일 뿐이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 30,
+        "section": "성취기준 해설",
+        "code": "[9체02-07]"
+      }
+    },
+    "kr.topic.2022.middle.2fb4d62474df6614c08d": {
+      "evidence": [
+        "야구와 소프트볼의 성립 배경과 규칙 차이를 조사해 정리한다.",
+        "공을 치고 달려 득점하는 종목의 구조적 특징을 찾아 밝힌다."
+      ],
+      "assessmentPrompts": [
+        "야구와 소프트볼의 투구 방식, 베이스 간격, 경기 이닝 수를 조사해 견주고, 그 차이가 생긴 까닭을 추론해 쓰세요."
+      ],
+      "misconceptions": [
+        "소프트볼은 야구를 쉽게 만든 놀이일 뿐이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 31,
+        "section": "성취기준 해설",
+        "code": "[9체02-13]"
+      }
+    },
+    "kr.topic.2022.middle.30e44e7d369d6595620e": {
+      "evidence": [
+        "등산·수상·설상 활동의 유래와 변천 과정을 조사해 정리한다.",
+        "자연을 무대로 삼는 활동들의 공통된 특성을 찾아 밝힌다."
+      ],
+      "assessmentPrompts": [
+        "오리엔티어링과 등산의 시작 배경과 필요한 장비를 조사해 견주고, 두 활동이 자연을 이용하는 방식의 차이를 쓰세요."
+      ],
+      "misconceptions": [
+        "자연환경형 활동은 위험해서 전문가만 하는 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 31,
+        "section": "성취기준 해설",
+        "code": "[9체02-22]"
+      }
+    },
+    "kr.topic.2022.middle.32723d96b57fc25a9f09": {
+      "evidence": [
+        "기록형 경기의 진행 규칙에 맞춰 자신의 순서와 역할을 수행한다.",
+        "상대와 팀의 수준, 기구와 기후 조건을 살펴 경기 운영 방법을 정한다."
+      ],
+      "assessmentPrompts": [
+        "바람이 부는 날 400m 계주를 앞두고 주자 순서를 정하고, 바람 방향을 고려해 배치한 까닭을 근거로 밝히세요."
+      ],
+      "misconceptions": [
+        "기록형 경기에서는 전략이 필요 없고 실력만 중요하다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 30,
+        "section": "성취기준 해설",
+        "code": "[9체02-06]"
+      }
+    },
+    "kr.topic.2022.middle.35176b3aba9722d4a3c4": {
+      "evidence": [
+        "활동 공간을 함께 쓰는 사람들을 살피며 순서와 간격을 지킨다.",
+        "활동 뒤 기구를 점검하고 정리한 결과를 기록으로 남긴다."
+      ],
+      "assessmentPrompts": [
+        "학교 밖 공간에서 활동한 뒤, 다른 이용자와 부딪칠 뻔한 순간이 있었는지 적고 다음에 지킬 약속 세 가지를 정하세요."
+      ],
+      "misconceptions": [
+        "공공장소에서는 먼저 온 사람이 우선권을 갖는다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 31,
+        "section": "성취기준 해설",
+        "code": "[9체02-20]"
+      }
+    },
+    "kr.topic.2022.middle.39b9d01cf6d417e267c9": {
+      "evidence": [
+        "운동 빈도·강도·시간·형태가 처방에서 각각 어떤 몫을 하는지 구분해 말한다.",
+        "같은 목표라도 구성 요소를 달리하면 처방이 달라지는 까닭을 사례로 든다."
+      ],
+      "assessmentPrompts": [
+        "체중 조절과 근력 강화를 목표로 한 두 사람의 운동 처방표를 견주어, 네 요소 가운데 어디가 어떻게 다른지 표로 정리하세요."
+      ],
+      "misconceptions": [
+        "운동 처방은 운동 시간만 정하는 일이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 27,
+        "section": "성취기준 해설",
+        "code": "[9체01-05]"
+      }
+    },
+    "kr.topic.2022.middle.3a24aba63cadd4c0d636": {
+      "evidence": [
+        "처방 개념을 자신의 운동 습관에 비추어 고칠 점을 찾아 적는다.",
+        "모둠에서 서로의 처방안을 검토하며 근거를 물어 확인한다."
+      ],
+      "assessmentPrompts": [
+        "모둠 친구의 운동 처방안을 받아 네 요소별로 질문 한 개씩을 만들어 묻고, 답을 들은 뒤 고칠 점을 정리해 돌려주세요."
+      ],
+      "misconceptions": [
+        "남의 처방을 그대로 따라 해도 같은 효과가 난다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 27,
+        "section": "성취기준 해설",
+        "code": "[9체01-05]"
+      }
+    },
+    "kr.topic.2022.middle.3ada219965d7337e9300": {
+      "evidence": [
+        "중간에 그만두고 싶었던 순간과 그때 자신을 붙든 이유를 일지에 적는다.",
+        "스스로 세운 약속을 지킨 날을 표시하며 실천 의지를 이어 간다."
+      ],
+      "assessmentPrompts": [
+        "한 달 운동 일지에서 그만두고 싶었던 날 세 개를 골라, 그날 무엇이 힘들었고 어떻게 넘겼는지 각각 두 문장으로 쓰세요."
+      ],
+      "misconceptions": [
+        "의지가 약해 못 하는 것이니 방법을 바꿔도 소용없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 28,
+        "section": "성취기준 해설",
+        "code": "[9체01-13]"
+      }
+    },
+    "kr.topic.2022.middle.3b390c1330de5c57f936": {
+      "evidence": [
+        "상황별로 어떤 조절 방법이 알맞은지 기준을 세워 고른다.",
+        "자신이 자주 쓰는 대처 방식의 한계를 짚고 다른 방법을 제안한다."
+      ],
+      "assessmentPrompts": [
+        "발표 직전 긴장, 친구와 다툰 뒤의 화, 잠들기 전 걱정이라는 세 상황에 각각 맞는 조절 방법을 고르고 그 까닭을 쓰세요."
+      ],
+      "misconceptions": [
+        "참고 넘기는 것이 감정을 가장 잘 다스리는 방법이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 27,
+        "section": "성취기준 해설",
+        "code": "[9체01-09]"
+      }
+    },
+    "kr.topic.2022.middle.3be2e13961bdec0d9d2a": {
+      "evidence": [
+        "주제에 맞는 의상과 음악을 골라 작품 구성에 반영한다.",
+        "감상 기준을 세워 작품이 전통의 특성을 살렸는지 판단한다."
+      ],
+      "assessmentPrompts": [
+        "다른 모둠의 전통 표현 작품을 보고 전통 요소가 잘 살아난 구간과 어색한 구간을 각각 하나씩 골라 까닭을 쓰세요."
+      ],
+      "misconceptions": [
+        "의상만 전통 옷이면 전통 표현 작품이 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 34,
+        "section": "성취기준 해설",
+        "code": "[9체03-06]"
+      }
+    },
+    "kr.topic.2022.middle.3bf7f39929d929c8c03a": {
+      "evidence": [
+        "조사한 내용을 모둠에서 나누며 서로 다른 해석을 인정하는 말을 한다.",
+        "자료를 찾으며 확인이 어려웠던 정보를 표시해 함께 검토한다."
+      ],
+      "assessmentPrompts": [
+        "스포츠 표현의 역사에서 인상 깊은 장면 하나를 골라 소개하고, 그 자료를 어디서 찾았고 무엇이 확실하지 않은지 밝히세요."
+      ],
+      "misconceptions": [
+        "영상에 나온 내용은 모두 사실이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 34,
+        "section": "성취기준 해설",
+        "code": "[9체03-01]"
+      }
+    },
+    "kr.topic.2022.middle.3d72de07b54e7801bfc4": {
+      "evidence": [
+        "스트레칭과 바른 자세 동작을 정해진 시간과 순서에 맞게 수행한다.",
+        "실천이 끊긴 상황을 찾아 활동 시간이나 장소를 바꿔 다시 이어 간다."
+      ],
+      "assessmentPrompts": [
+        "수업 사이 쉬는 시간 10분에 할 수 있는 스트레칭 다섯 동작을 순서대로 정하고, 각 동작의 유지 시간을 함께 적으세요."
+      ],
+      "misconceptions": [
+        "짧게 하는 활동은 효과가 없어 할 필요가 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 27,
+        "section": "성취기준 해설",
+        "code": "[9체01-08]"
+      }
+    },
+    "kr.topic.2022.middle.43e0cb8b1365ad0469fe": {
+      "evidence": [
+        "조사 결과를 발표하며 자신이 좋아하는 갈래에 치우치지 않도록 근거를 챙긴다.",
+        "친구가 소개한 낯선 갈래를 끝까지 듣고 질문을 만들어 묻는다."
+      ],
+      "assessmentPrompts": [
+        "자신이 잘 모르던 현대 표현 갈래 하나를 골라 조사해 소개하고, 조사 전과 후에 달라진 생각을 함께 쓰세요."
+      ],
+      "misconceptions": [
+        "자기 취향에 맞지 않는 춤은 배울 가치가 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 34,
+        "section": "성취기준 해설",
+        "code": "[9체03-07]"
+      }
+    },
+    "kr.topic.2022.middle.44030208e2dc1fbfd22a": {
+      "evidence": [
+        "자세와 타점을 바꿔 가며 공의 방향과 속도를 조절해 본다.",
+        "실패가 몰리는 조건을 찾아 연습 과제의 난도를 다시 정한다."
+      ],
+      "assessmentPrompts": [
+        "타점을 높였을 때와 낮췄을 때 각각 열 번씩 공격해 보고, 성공률과 공의 궤적 차이를 표로 정리해 자신의 선택을 밝히세요."
+      ],
+      "misconceptions": [
+        "한 가지 자세만 익히면 어떤 공도 처리할 수 있다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 31,
+        "section": "성취기준 해설",
+        "code": "[9체02-17]"
+      }
+    },
+    "kr.topic.2022.middle.44c4840b72f94b84b89f": {
+      "evidence": [
+        "운동 습관·식이 관리·약물과 기호품 관리·질병 예방이 몸에 미치는 영향을 갈래별로 정리한다.",
+        "신체 건강 활동의 종류를 견주며 각 활동의 특성을 구분해 말한다."
+      ],
+      "assessmentPrompts": [
+        "중학생의 하루 생활을 담은 사례 글에서 신체 건강에 도움이 되는 행동과 해가 되는 행동을 각각 세 가지씩 찾아 근거를 쓰세요."
+      ],
+      "misconceptions": [
+        "병에 걸리지 않은 상태만을 신체 건강이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 27,
+        "section": "성취기준 해설",
+        "code": "[9체01-07]"
+      }
+    },
+    "kr.topic.2022.middle.465f41d477ecf41e7d8c": {
+      "evidence": [
+        "스포츠 표현의 특성과 창작 절차를 따라 작품을 만들어 낸다.",
+        "주제·동작·구성·음악·의상 요소를 기준으로 작품을 살펴 감상평을 쓴다."
+      ],
+      "assessmentPrompts": [
+        "모둠에서 90초 분량의 스포츠 표현 작품을 만들고, 주제와 음악을 고른 까닭을 담은 창작 노트를 함께 제출하세요."
+      ],
+      "misconceptions": [
+        "창작은 재능 있는 사람이 한 번에 만들어 내는 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 34,
+        "section": "성취기준 해설",
+        "code": "[9체03-03]"
+      }
+    },
+    "kr.topic.2022.middle.477f60512153937d6fee": {
+      "evidence": [
+        "산·강·바다 같은 환경의 조건을 살펴 활동 방법을 정해 수행한다.",
+        "자연환경과 생태 문화를 고려한 활동 전략을 세워 실행한다."
+      ],
+      "assessmentPrompts": [
+        "가까운 하천에서 할 수 있는 활동 하나를 정하고, 수심·유속·계절을 확인해 진행 여부를 판단한 근거를 쓰세요."
+      ],
+      "misconceptions": [
+        "물이 얕아 보이면 안전한 곳이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 32,
+        "section": "성취기준 해설",
+        "code": "[9체02-24]"
+      }
+    },
+    "kr.topic.2022.middle.4bc4b428cd7248e1a893": {
+      "evidence": [
+        "팀원의 강점에 맞춰 역할을 나누고 필요할 때 바꿔 맡는다.",
+        "갈등이 생긴 장면에서 규칙과 약속을 근거로 해결 방법을 제안한다."
+      ],
+      "assessmentPrompts": [
+        "경기 중 팀원 사이에 의견이 갈린 장면을 하나 적고, 그때 쓸 수 있었던 해결 절차를 세 단계로 정리하세요."
+      ],
+      "misconceptions": [
+        "팀에서는 잘하는 사람의 의견을 따르는 것이 옳다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 32,
+        "section": "성취기준 해설",
+        "code": "[9체02-26]"
+      }
+    },
+    "kr.topic.2022.middle.4bc88662a0b43e60f045": {
+      "evidence": [
+        "주 단위로 유산소성·유연성·근력 운동을 어떻게 배치하는지 기준을 들어 설명한다.",
+        "앉아 지내는 시간을 줄이는 일이 체력 유지에 왜 필요한지 자료를 근거로 밝힌다."
+      ],
+      "assessmentPrompts": [
+        "하루 앉아 있는 시간이 10시간인 학생의 일과표를 보고, 체력 관리 원리에 맞게 고칠 지점 세 곳을 짚고 대안을 쓰세요."
+      ],
+      "misconceptions": [
+        "체력 관리는 운동할 때만 신경 쓰면 되는 일이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 27,
+        "section": "성취기준 해설",
+        "code": "[9체01-03]"
+      }
+    },
+    "kr.topic.2022.middle.4d9a2ceffb734705b825": {
+      "evidence": [
+        "스트레스와 감정 조절이 정신 건강에 어떤 영향을 주는지 갈래를 나눠 설명한다.",
+        "정신 건강 활동의 종류를 특성에 따라 묶어 표로 정리한다."
+      ],
+      "assessmentPrompts": [
+        "시험 기간에 나타나는 몸과 마음의 변화를 적은 사례 글을 읽고, 스트레스 신호와 대처 활동을 짝지어 정리하세요."
+      ],
+      "misconceptions": [
+        "정신 건강은 마음의 문제일 뿐 몸과는 관련이 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 27,
+        "section": "성취기준 해설",
+        "code": "[9체01-09]"
+      }
+    },
+    "kr.topic.2022.middle.4e05f92da6ec840154c8": {
+      "evidence": [
+        "연습 영상에서 동작이 끊기는 지점을 찾아 원인을 짚어 낸다.",
+        "수비가 붙은 조건으로 난도를 올려 가며 기능을 다듬는다."
+      ],
+      "assessmentPrompts": [
+        "수비 한 명을 붙인 채 같은 과제를 수행하고, 수비가 없을 때와 견주어 달라진 점과 그 대응 방법을 쓰세요."
+      ],
+      "misconceptions": [
+        "수비가 없을 때 잘되면 경기에서도 잘된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 31,
+        "section": "성취기준 해설",
+        "code": "[9체02-11]"
+      }
+    },
+    "kr.topic.2022.middle.4e1813a6ca6ac4739f2a": {
+      "evidence": [
+        "공동체 활동에서 안전을 해칠 수 있는 요소를 미리 살펴 대비책을 마련한다.",
+        "함께하는 사람의 조건에 따라 활동 방법을 바꾸어 제시한다."
+      ],
+      "assessmentPrompts": [
+        "학급 걷기 행사를 계획하며 더위·부상·교통 위험 가운데 두 가지를 골라, 예방 조치와 비상 대응 절차를 표로 정리하세요."
+      ],
+      "misconceptions": [
+        "모두 함께하는 활동이면 안전 준비는 덜 해도 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 28,
+        "section": "성취기준 해설",
+        "code": "[9체01-14]"
+      }
+    },
+    "kr.topic.2022.middle.4f4c228c7789b19ff9aa": {
+      "evidence": [
+        "자연환경을 다루는 자료를 살피며 생태에 미치는 영향을 함께 적는다.",
+        "조사 결과를 나눌 때 지역 주민의 처지를 고려한 표현을 고른다."
+      ],
+      "assessmentPrompts": [
+        "인기 등산로의 훼손 사례를 조사해 활동 인원과 환경 변화의 관계를 정리하고, 우리가 지킬 규칙 세 가지를 제안하세요."
+      ],
+      "misconceptions": [
+        "자연에서 하는 활동은 환경에 해를 주지 않는다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 31,
+        "section": "성취기준 해설",
+        "code": "[9체02-22]"
+      }
+    },
+    "kr.topic.2022.middle.542ebf8dceec4a3121d1": {
+      "evidence": [
+        "활동별 기록과 사건 자료에서 환경 조건이 준 영향을 짚는다.",
+        "활동 방법과 전략의 차이를 기준 삼아 종목을 갈라 묶는다."
+      ],
+      "assessmentPrompts": [
+        "산악 사고 사례 한 건을 조사해 날씨·장비·경로 가운데 무엇이 문제였는지 가려내고, 예방할 수 있었던 지점을 밝히세요."
+      ],
+      "misconceptions": [
+        "날씨는 활동 계획과 큰 상관이 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 31,
+        "section": "성취기준 해설",
+        "code": "[9체02-22]"
+      }
+    },
+    "kr.topic.2022.middle.56488bbc7390f9654ea1": {
+      "evidence": [
+        "자신의 건강뿐 아니라 타인과 공동체의 건강한 환경을 위한 활동을 골라 실행한다.",
+        "건강한 환경을 만드는 일에서 자신이 맡을 몫을 정해 밝힌다."
+      ],
+      "assessmentPrompts": [
+        "우리 학교에서 모두의 건강을 해치는 요소 하나를 찾아, 학생이 스스로 바꿀 수 있는 실천 방안을 세 단계로 제안하세요."
+      ],
+      "misconceptions": [
+        "학교 환경을 바꾸는 일은 교사와 학교의 몫일 뿐이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 28,
+        "section": "성취기준 해설",
+        "code": "[9체01-14]"
+      }
+    },
+    "kr.topic.2022.middle.5b634afa3dffc3dbb75a": {
+      "evidence": [
+        "연습 중 균형을 잃는 순간을 찾아 발 위치나 손 잡는 지점을 바꿔 본다.",
+        "상대의 체격 차이에 맞춰 기술 적용 방식을 조정한다."
+      ],
+      "assessmentPrompts": [
+        "자신보다 키가 큰 상대와 겨룰 때 쓸 기술 하나를 고르고, 중심을 낮추는 방법과 잡는 위치를 바꾼 까닭을 쓰세요."
+      ],
+      "misconceptions": [
+        "체격이 큰 상대에게는 어떤 기술도 통하지 않는다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 30,
+        "section": "성취기준 해설",
+        "code": "[9체02-08]"
+      }
+    },
+    "kr.topic.2022.middle.5eb318cf0f69ba73d0d6": {
+      "evidence": [
+        "현대 표현의 원리를 적용해 자유로운 흐름으로 동작을 만들어 낸다.",
+        "자신의 생각과 감정을 몸의 움직임으로 옮겨 보인다."
+      ],
+      "assessmentPrompts": [
+        "“기다림”을 주제로 16박자 동작을 만들어 보이고, 어떤 움직임으로 그 느낌을 나타냈는지 설명하세요."
+      ],
+      "misconceptions": [
+        "정해진 동작을 정확히 따라 해야 좋은 표현이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 34,
+        "section": "성취기준 해설",
+        "code": "[9체03-08]"
+      }
+    },
+    "kr.topic.2022.middle.600d8363a4e43711bd9a": {
+      "evidence": [
+        "종목별 경기 방법과 전략의 차이를 견주어 분류 기준을 세운다.",
+        "규칙이 바뀐 사례에서 전략이 함께 달라진 지점을 짚는다."
+      ],
+      "assessmentPrompts": [
+        "농구의 24초 공격 제한 규칙이 생긴 뒤 달라진 경기 흐름을 조사해, 규칙과 전략이 이어지는 지점을 두 가지 설명하세요."
+      ],
+      "misconceptions": [
+        "규칙 변화는 경기 전략과 상관없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 31,
+        "section": "성취기준 해설",
+        "code": "[9체02-10]"
+      }
+    },
+    "kr.topic.2022.middle.621da8f189cd281ea4e4": {
+      "evidence": [
+        "필드형 경기의 규칙과 순서에 맞춰 공격과 수비 역할을 바꿔 가며 경기한다.",
+        "팀과 선수의 특성을 따져 득점 전략과 수비 배치를 정한다."
+      ],
+      "assessmentPrompts": [
+        "주자 1루 상황에서 쓸 수 있는 공격 작전 두 가지를 고르고, 우리 팀 타자의 특성과 연결해 선택 이유를 쓰세요."
+      ],
+      "misconceptions": [
+        "필드형 경기는 잘 치는 사람만 있으면 이긴다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 31,
+        "section": "성취기준 해설",
+        "code": "[9체02-15]"
+      }
+    },
+    "kr.topic.2022.middle.62a3f1f9fe3080d721c5": {
+      "evidence": [
+        "자신의 스트레스 상황과 대처 방식을 일지에 적어 되짚는다.",
+        "모둠에서 감정 이야기를 나눌 때 상대의 말을 끊지 않고 듣는 태도를 보인다."
+      ],
+      "assessmentPrompts": [
+        "한 주 동안 스트레스를 느낀 순간 세 가지를 골라 그때 한 행동과 그 뒤의 기분 변화를 표로 적고, 바꿔 보고 싶은 대처를 쓰세요."
+      ],
+      "misconceptions": [
+        "남에게 힘든 마음을 말하면 약해 보인다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 27,
+        "section": "성취기준 해설",
+        "code": "[9체01-09]"
+      }
+    },
+    "kr.topic.2022.middle.638c31f3a7e598eaaf7f": {
+      "evidence": [
+        "종목별 기록 단위와 경기 규칙을 견주어 비교표의 기준을 정한다.",
+        "수집한 기록 자료에서 종목별 특성이 드러나는 지점을 짚어 설명한다."
+      ],
+      "assessmentPrompts": [
+        "국궁과 양궁의 사거리, 표적 크기, 점수 계산법을 표로 견주고, 두 종목의 난도를 가르는 요소를 근거와 함께 밝히세요."
+      ],
+      "misconceptions": [
+        "기록형 종목은 모두 빠를수록 좋은 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 30,
+        "section": "성취기준 해설",
+        "code": "[9체02-04]"
+      }
+    },
+    "kr.topic.2022.middle.64245d85c8c7fbf3e06b": {
+      "evidence": [
+        "양성평등과 성 건강, 생활 안전이 공동체 건강과 어떻게 이어지는지 정리해 말한다.",
+        "가정·학교·지역사회에서 필요한 건강 활동을 장면별로 나누어 제시한다."
+      ],
+      "assessmentPrompts": [
+        "학교에서 일어날 수 있는 안전 문제 세 가지를 고르고, 각각을 개인과 공동체가 나눠 맡을 역할로 구분해 정리하세요."
+      ],
+      "misconceptions": [
+        "건강은 각자 알아서 챙기면 되는 개인의 일이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 27,
+        "section": "성취기준 해설",
+        "code": "[9체01-11]"
+      }
+    },
+    "kr.topic.2022.middle.6603d526fe279a8466f3": {
+      "evidence": [
+        "시대별 자료를 견주어 현대 표현의 특성이 드러난 지점을 짚는다.",
+        "표현 요소를 기준으로 현대 표현 갈래를 나누고 근거를 댄다."
+      ],
+      "assessmentPrompts": [
+        "댄스스포츠와 스트리트댄스의 음악·구성·의상을 표로 견주고, 두 갈래를 나눌 기준 하나를 정해 설명하세요."
+      ],
+      "misconceptions": [
+        "유행하는 춤은 모두 같은 갈래라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 34,
+        "section": "성취기준 해설",
+        "code": "[9체03-07]"
+      }
+    },
+    "kr.topic.2022.middle.676f28997b160f0406fb": {
+      "evidence": [
+        "여러 표현 문화를 견주어 자신의 창작에 가져올 요소를 고른다.",
+        "감상 관점을 바꿔 가며 같은 작품을 다시 해석해 본다."
+      ],
+      "assessmentPrompts": [
+        "같은 작품을 창작자 처지와 관객 처지에서 각각 감상해 보고, 두 관점에서 달라진 판단을 표로 정리하세요."
+      ],
+      "misconceptions": [
+        "작품 해석은 하나의 정답만 있다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 35,
+        "section": "성취기준 해설",
+        "code": "[9체03-10]"
+      }
+    },
+    "kr.topic.2022.middle.68c2027bf5ed9a80f18d": {
+      "evidence": [
+        "상대의 약점이 드러나는 지점을 찾아 공격 방향을 바꿔 적용한다.",
+        "점프와 착지, 기구 충돌에서 생기는 손상 위험을 줄이도록 자리를 조정한다."
+      ],
+      "assessmentPrompts": [
+        "한 세트를 치른 뒤 상대가 자주 놓친 코스를 표시하고, 다음 세트의 공격 코스와 안전한 착지 공간 확보 방법을 쓰세요."
+      ],
+      "misconceptions": [
+        "네트 근처에서는 부딪칠 일이 없어 안전하다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 31,
+        "section": "성취기준 해설",
+        "code": "[9체02-18]"
+      }
+    },
+    "kr.topic.2022.middle.6b2310493afecee7c252": {
+      "evidence": [
+        "근력·심폐지구력·유연성 운동의 자세와 호흡을 요소별 요령에 맞게 수행한다.",
+        "수행 중 자세가 무너지는 지점을 찾아 무게나 속도를 조절해 다시 시도한다."
+      ],
+      "assessmentPrompts": [
+        "스쿼트를 15회 하는 동안 무릎이 안쪽으로 모이는 장면을 영상으로 확인하고, 자세를 바로잡을 방법 두 가지를 적어 다시 수행하세요."
+      ],
+      "misconceptions": [
+        "자세가 흐트러져도 횟수만 채우면 운동 효과가 같다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 26,
+        "section": "성취기준 해설",
+        "code": "[9체01-02]"
+      }
+    },
+    "kr.topic.2022.middle.6bf0c43559ff80f9d7c0": {
+      "evidence": [
+        "동작형 경기의 진행 방식과 채점 절차에 맞춰 연기를 구성해 수행한다.",
+        "자신과 팀의 수행 수준, 시설과 기구 상태를 살펴 경기 계획을 세운다."
+      ],
+      "assessmentPrompts": [
+        "학급 기계체조 발표회를 앞두고 자신이 안정적으로 해내는 동작 네 개를 골라 연기 순서를 짜고, 그렇게 배열한 까닭을 쓰세요."
+      ],
+      "misconceptions": [
+        "동작 완성도보다 동작 개수가 많아야 좋은 연기라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 30,
+        "section": "성취기준 해설",
+        "code": "[9체02-03]"
+      }
+    },
+    "kr.topic.2022.middle.6d5926549b831bcdd3ec": {
+      "evidence": [
+        "모둠 조사에서 맡은 종목의 자료를 기한 안에 정리해 공유한다.",
+        "다른 나라에서 발전한 종목의 배경을 존중하는 말로 소개한다."
+      ],
+      "assessmentPrompts": [
+        "모둠에서 동작형 종목 하나를 맡아 조사한 뒤, 발표에서 새로 알게 된 점과 조사 중 확인이 어려웠던 정보를 함께 밝히세요."
+      ],
+      "misconceptions": [
+        "자기가 잘하는 종목이 다른 종목보다 우수하다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 30,
+        "section": "성취기준 해설",
+        "code": "[9체02-01]"
+      }
+    },
+    "kr.topic.2022.middle.6dc7d494c4a358172f35": {
+      "evidence": [
+        "경기 상황에 따라 수비 위치와 송구 목표를 바꿔 실행한다.",
+        "배트와 공, 다른 선수와의 충돌 위험을 줄일 규칙을 정해 지킨다."
+      ],
+      "assessmentPrompts": [
+        "타격 대기 구역과 수비 위치를 그림으로 그리고, 배트가 날아가거나 선수끼리 부딪칠 위험을 줄일 규칙 세 가지를 정하세요."
+      ],
+      "misconceptions": [
+        "헬멧은 타자만 쓰면 충분하다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 31,
+        "section": "성취기준 해설",
+        "code": "[9체02-15]"
+      }
+    },
+    "kr.topic.2022.middle.6f12d40db6e0069f3637": {
+      "evidence": [
+        "연습 상대를 배려해 힘의 세기를 조절하며 약속한 범위 안에서 겨룬다.",
+        "연습 일지에 성공한 기술과 실패한 상황을 나누어 기록한다."
+      ],
+      "assessmentPrompts": [
+        "짝 연습을 마친 뒤 상대가 위험하다고 느낀 순간이 있었는지 물어 기록하고, 다음 연습에서 지킬 약속 두 가지를 정하세요."
+      ],
+      "misconceptions": [
+        "연습에서는 세게 해야 실제 경기에 도움이 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 30,
+        "section": "성취기준 해설",
+        "code": "[9체02-08]"
+      }
+    },
+    "kr.topic.2022.middle.749ca8a9b7bcd8ff4266": {
+      "evidence": [
+        "겨루기 자세와 중심 이동의 수행 원리를 적용해 기본 기술을 해낸다.",
+        "단계별 연습에서 기술의 성공 조건을 확인하며 반복해 익힌다."
+      ],
+      "assessmentPrompts": [
+        "씨름 들배지기의 준비 자세, 중심 이동, 마무리를 세 단계로 나누고, 단계별로 확인할 점검 항목을 하나씩 적으세요."
+      ],
+      "misconceptions": [
+        "투기형 기술은 힘으로 밀어붙이면 성공한다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 30,
+        "section": "성취기준 해설",
+        "code": "[9체02-08]"
+      }
+    },
+    "kr.topic.2022.middle.74e5f17a9ba80fdbe975": {
+      "evidence": [
+        "마루·평균대·도마 종목의 유래와 변천 과정을 조사해 시대순으로 배열한다.",
+        "동작형 종목끼리 공통으로 지닌 특징과 종목마다 다른 점을 갈라 제시한다."
+      ],
+      "assessmentPrompts": [
+        "기계체조 세 종목의 도구, 채점 방식, 대표 인물을 조사해 표로 채우고, 세 종목을 하나로 묶을 수 있는 기준을 제안하세요."
+      ],
+      "misconceptions": [
+        "동작형 스포츠는 예전부터 지금 모습 그대로였다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 30,
+        "section": "성취기준 해설",
+        "code": "[9체02-01]"
+      }
+    },
+    "kr.topic.2022.middle.756ed70116b7888f78f0": {
+      "evidence": [
+        "주차별 실행 결과를 기록해 목표 달성 여부를 스스로 평가한다.",
+        "프로그램을 지속하기 어려웠던 상황을 밝히고 조정한 내용을 남긴다."
+      ],
+      "assessmentPrompts": [
+        "6주 프로그램을 마친 뒤 목표 달성 여부와 중단한 주가 있었다면 그 까닭을 적고, 다음 프로그램에 반영할 점을 세 가지 쓰세요."
+      ],
+      "misconceptions": [
+        "계획을 한 번 세우면 도중에 바꾸면 안 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 27,
+        "section": "성취기준 해설",
+        "code": "[9체01-06]"
+      }
+    },
+    "kr.topic.2022.middle.76ba2cf07cbec437a726": {
+      "evidence": [
+        "영역형 경기의 진행 규칙에 맞춰 자기 역할을 맡아 경기한다.",
+        "선수와 팀의 특성을 살펴 공격과 수비 전략을 골라 팀에 제안한다."
+      ],
+      "assessmentPrompts": [
+        "키가 큰 선수가 많은 우리 팀과 발이 빠른 상대 팀의 경기를 앞두고, 공격 전략과 수비 전략을 하나씩 정해 근거를 쓰세요."
+      ],
+      "misconceptions": [
+        "전략은 감독이 정하는 것이고 선수는 따르기만 하면 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 31,
+        "section": "성취기준 해설",
+        "code": "[9체02-12]"
+      }
+    },
+    "kr.topic.2022.middle.77dde913ea2fb19c9cdf": {
+      "evidence": [
+        "활동 방법과 전략의 차이를 견주어 활동을 묶을 기준을 세운다.",
+        "민속놀이가 현대 활동으로 바뀐 사례에서 달라진 규칙을 짚는다."
+      ],
+      "assessmentPrompts": [
+        "전통 민속놀이 하나와 비슷한 현대 활동을 짝지어, 규칙과 도구가 어떻게 달라졌는지 표로 견주어 쓰세요."
+      ],
+      "misconceptions": [
+        "민속놀이는 스포츠라고 보기 어렵다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 31,
+        "section": "성취기준 해설",
+        "code": "[9체02-19]"
+      }
+    },
+    "kr.topic.2022.middle.79c1b3bed68e6b31f13e": {
+      "evidence": [
+        "모둠 창작에서 맡은 몫을 정해진 기한 안에 마무리해 공유한다.",
+        "다른 모둠의 작품을 볼 때 근거를 들어 긍정과 아쉬움을 함께 말한다."
+      ],
+      "assessmentPrompts": [
+        "창작을 마친 뒤 모둠 안에서 의견이 갈렸던 장면을 하나 적고, 어떻게 정리했는지와 다음에 바꿀 방법을 쓰세요."
+      ],
+      "misconceptions": [
+        "모둠 창작에서는 다수 의견을 따르면 갈등이 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 34,
+        "section": "성취기준 해설",
+        "code": "[9체03-03]"
+      }
+    },
+    "kr.topic.2022.middle.7a50bb657493b5617508": {
+      "evidence": [
+        "조사 발표에서 다른 모둠이 찾은 근거와 자기 근거를 견주어 말한다.",
+        "나라와 지역에 따라 인기 종목이 다른 까닭을 존중하는 태도로 다룬다."
+      ],
+      "assessmentPrompts": [
+        "우리 지역에서 인기 있는 영역형 종목을 조사하고, 다른 나라에서 더 인기 있는 종목과 견주어 그 차이의 배경을 쓰세요."
+      ],
+      "misconceptions": [
+        "인기가 많은 종목이 더 좋은 스포츠라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 31,
+        "section": "성취기준 해설",
+        "code": "[9체02-10]"
+      }
+    },
+    "kr.topic.2022.middle.7aee6ffc7e1c37e00992": {
+      "evidence": [
+        "전통 표현의 원리를 적용해 자연스러운 흐름으로 동작을 해낸다.",
+        "호흡과 장단에 맞춰 동작의 맺고 푸는 지점을 만들어 낸다."
+      ],
+      "assessmentPrompts": [
+        "한 장단에 맞춘 전통 무용 동작을 익혀 두 번 보이고, 맺는 동작과 푸는 동작을 각각 어디에 두었는지 설명하세요."
+      ],
+      "misconceptions": [
+        "전통 무용은 동작이 느려 힘들지 않다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 34,
+        "section": "성취기준 해설",
+        "code": "[9체03-05]"
+      }
+    },
+    "kr.topic.2022.middle.7afe41c60b4be43a9f9d": {
+      "evidence": [
+        "수비 위치에서 자기 차례를 기다리며 맡은 자리를 지킨다.",
+        "기능 연습 기록을 남겨 자신의 강점과 약점을 정리한다."
+      ],
+      "assessmentPrompts": [
+        "3주간의 기능 연습 기록에서 자신 있는 역할과 어려운 역할을 하나씩 고르고, 어려운 역할을 위한 연습안을 세우세요."
+      ],
+      "misconceptions": [
+        "공이 오지 않는 자리에서는 집중하지 않아도 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 31,
+        "section": "성취기준 해설",
+        "code": "[9체02-14]"
+      }
+    },
+    "kr.topic.2022.middle.7d89427d37ba6aa779d6": {
+      "evidence": [
+        "기록이 정체된 구간을 찾아 자세나 호흡 가운데 고칠 요소를 정한다.",
+        "연습 강도를 단계적으로 올리며 기록 변화를 견주어 방법을 조정한다."
+      ],
+      "assessmentPrompts": [
+        "3주간의 달리기 기록표에서 정체 구간을 찾고, 보폭·팔 치기·호흡 가운데 바꿀 요소 하나를 골라 다음 주 연습안을 쓰세요."
+      ],
+      "misconceptions": [
+        "연습량만 늘리면 기록은 계속 좋아진다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 30,
+        "section": "성취기준 해설",
+        "code": "[9체02-05]"
+      }
+    },
+    "kr.topic.2022.middle.7fb5ec31de686daf7ef9": {
+      "evidence": [
+        "신체 접촉과 타격에서 생기는 손상 위험을 줄이도록 보호 장비를 갖춰 겨룬다.",
+        "위험한 상황이 보이면 경기를 멈추고 정해진 절차대로 대처한다."
+      ],
+      "assessmentPrompts": [
+        "겨루기 수업의 안전 점검표를 만들어 장비·매트·심판 신호 항목을 넣고, 경기를 중단해야 하는 상황 세 가지를 적으세요."
+      ],
+      "misconceptions": [
+        "보호 장비를 갖추면 어떤 타격도 위험하지 않다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 30,
+        "section": "성취기준 해설",
+        "code": "[9체02-09]"
+      }
+    },
+    "kr.topic.2022.middle.813ebf72e8e327307e6a": {
+      "evidence": [
+        "공격과 수비가 번갈아 바뀌는 구조가 전략에 미치는 영향을 짚는다.",
+        "자료에서 필드형 종목의 특성이 드러나는 규칙을 골라 근거로 삼는다."
+      ],
+      "assessmentPrompts": [
+        "주자가 있을 때와 없을 때 수비 위치가 달라지는 사례를 조사해 그림으로 그리고, 위치를 바꾸는 까닭을 설명하세요."
+      ],
+      "misconceptions": [
+        "수비 위치는 늘 같은 자리에 서 있으면 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 31,
+        "section": "성취기준 해설",
+        "code": "[9체02-13]"
+      }
+    },
+    "kr.topic.2022.middle.82d523b685830ba06a30": {
+      "evidence": [
+        "스포츠 활동에서 생기는 환경 문제를 찾아 구체적으로 짚어 낸다.",
+        "환경을 덜 해치는 활동 방식을 정해 실천에 옮긴다."
+      ],
+      "assessmentPrompts": [
+        "학교 체육 활동에서 나오는 쓰레기와 소비되는 물품을 일주일간 조사해, 줄일 수 있는 항목 세 가지와 방법을 제안하세요."
+      ],
+      "misconceptions": [
+        "운동은 환경과 관계없는 활동이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 32,
+        "section": "성취기준 해설",
+        "code": "[9체02-27]"
+      }
+    },
+    "kr.topic.2022.middle.8659c62e3deaf057531b": {
+      "evidence": [
+        "목표에 맞게 네 요소의 값을 정하고 그 조합의 근거를 제시한다.",
+        "잘못 짜인 처방 사례에서 어긋난 요소를 골라 바로잡는다."
+      ],
+      "assessmentPrompts": [
+        "“매일 2시간 전력 질주”라는 처방을 보고 빈도·강도·시간 가운데 문제가 되는 요소를 짚고, 중학생 수준으로 다시 정하세요."
+      ],
+      "misconceptions": [
+        "강도가 높을수록 좋은 처방이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 27,
+        "section": "성취기준 해설",
+        "code": "[9체01-05]"
+      }
+    },
+    "kr.topic.2022.middle.86d26ccbb1e76e97efc2": {
+      "evidence": [
+        "목표 횟수에 못 미칠 때 강도를 낮추더라도 활동을 끝까지 마친다.",
+        "자신에게 맞는 대체 운동을 찾아 원래 계획의 목적을 지킨다."
+      ],
+      "assessmentPrompts": [
+        "집에서 할 수 있는 운동만으로 심폐지구력을 기르는 20분 순환 운동을 짜고, 각 동작의 시간과 쉬는 시간을 적으세요."
+      ],
+      "misconceptions": [
+        "기구가 있어야 제대로 된 체력 운동이 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 28,
+        "section": "성취기준 해설",
+        "code": "[9체01-13]"
+      }
+    },
+    "kr.topic.2022.middle.874c0608e4f18759f95f": {
+      "evidence": [
+        "스포츠 표현의 원리를 적용해 역동적인 동작으로 몸을 움직인다.",
+        "동작의 크기와 속도를 조절해 보는 이에게 전할 느낌을 만들어 낸다."
+      ],
+      "assessmentPrompts": [
+        "줄넘기 도구를 쓰는 8박자 동작을 만들어 두 번 보이고, 크기와 속도를 어떻게 달리했는지 각각 설명하세요."
+      ],
+      "misconceptions": [
+        "동작을 크게만 하면 아름다워 보인다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 34,
+        "section": "성취기준 해설",
+        "code": "[9체03-02]"
+      }
+    },
+    "kr.topic.2022.middle.880e3565e63086e6b1af": {
+      "evidence": [
+        "시간·공간의 제약이 있는 상황에서 목표와 방법을 스스로 고쳐 운동을 이어 간다.",
+        "운동을 지속하며 겪은 어려움과 이를 넘어선 방법을 정리해 밝힌다."
+      ],
+      "assessmentPrompts": [
+        "비가 와서 운동장을 쓸 수 없는 2주를 가정하고, 원래 계획을 실내에서 이어 갈 수 있게 고쳐 주차별 표로 만드세요."
+      ],
+      "misconceptions": [
+        "환경이 나빠지면 운동을 잠시 멈추는 것이 당연하다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 28,
+        "section": "성취기준 해설",
+        "code": "[9체01-13]"
+      }
+    },
+    "kr.topic.2022.middle.8fb261818cac3964455f": {
+      "evidence": [
+        "작품의 흐름을 나눠 장면마다 강조할 요소를 정한다.",
+        "감상 기준을 세워 작품이 주제를 얼마나 전했는지 판단한다."
+      ],
+      "assessmentPrompts": [
+        "자기 모둠 작품을 세 장면으로 나눠 각 장면에서 강조한 요소를 적고, 관객이 주제를 알아챌 수 있을지 근거를 대세요."
+      ],
+      "misconceptions": [
+        "동작이 화려하면 주제가 저절로 전해진다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 35,
+        "section": "성취기준 해설",
+        "code": "[9체03-09]"
+      }
+    },
+    "kr.topic.2022.middle.8ffa8e62a509953c619d": {
+      "evidence": [
+        "지역 자원을 조사하며 이용 규칙과 개방 시간을 확인해 기록한다.",
+        "누구나 참여할 수 있는 활동인지 따져 보고 의견을 밝힌다."
+      ],
+      "assessmentPrompts": [
+        "학교 주변 체육 시설 두 곳의 이용 조건을 조사하고, 몸이 불편한 사람도 이용할 수 있는지 확인해 개선 제안을 쓰세요."
+      ],
+      "misconceptions": [
+        "시설이 있으면 누구나 똑같이 이용할 수 있다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 31,
+        "section": "성취기준 해설",
+        "code": "[9체02-19]"
+      }
+    },
+    "kr.topic.2022.middle.92fc1037672b3199f315": {
+      "evidence": [
+        "스스로 정한 목표를 향해 연습을 이어 가며 한계 지점을 넘어선다.",
+        "어려움을 겪은 상황과 그것을 넘긴 방법을 정리해 밝힌다."
+      ],
+      "assessmentPrompts": [
+        "한 종목에서 지금 못 하는 기술 하나를 골라 4주 목표를 세우고, 주차별로 도달 정도를 표시할 기준을 만드세요."
+      ],
+      "misconceptions": [
+        "한 번에 안 되는 기술은 자신에게 맞지 않는다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 32,
+        "section": "성취기준 해설",
+        "code": "[9체02-25]"
+      }
+    },
+    "kr.topic.2022.middle.933f44cebecbc7e76e2d": {
+      "evidence": [
+        "조사 자료를 모둠에서 나누며 확인되지 않은 정보를 표시해 알린다.",
+        "경험이 적은 친구도 알아듣도록 용어를 풀어 설명한다."
+      ],
+      "assessmentPrompts": [
+        "필드형 종목의 용어 열 개를 골라 친구가 이해할 수 있는 말로 풀어 쓰고, 어려웠던 용어를 표시해 함께 확인하세요."
+      ],
+      "misconceptions": [
+        "용어를 모르는 친구는 경기에 끼기 어렵다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 31,
+        "section": "성취기준 해설",
+        "code": "[9체02-13]"
+      }
+    },
+    "kr.topic.2022.middle.96700372855fa477d6ed": {
+      "evidence": [
+        "자신의 수행 영상에서 무게 중심이 흔들리는 지점을 찾아 원인을 짚는다.",
+        "발견한 문제에 맞게 보조 도구나 연습 방법을 바꿔 다시 수행한다."
+      ],
+      "assessmentPrompts": [
+        "평균대 위 걷기 영상을 보고 균형이 무너지는 순간을 표시한 뒤, 시선·팔 위치·보폭 가운데 무엇을 고칠지 정해 다시 시도하세요."
+      ],
+      "misconceptions": [
+        "한 번 성공한 동작은 다시 연습할 필요가 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 30,
+        "section": "성취기준 해설",
+        "code": "[9체02-02]"
+      }
+    },
+    "kr.topic.2022.middle.97265fa82c35665eb15a": {
+      "evidence": [
+        "창작체조와 음악줄넘기가 언제 어떻게 자리 잡았는지 조사해 흐름을 정리한다.",
+        "스포츠 표현이 다른 표현 갈래와 어떻게 다른지 근거를 들어 가른다."
+      ],
+      "assessmentPrompts": [
+        "창작체조와 음악줄넘기의 시작 배경과 대표 인물을 조사해 표로 채우고, 두 활동이 함께 지닌 특징을 두 가지 쓰세요."
+      ],
+      "misconceptions": [
+        "스포츠 표현은 체조 동작을 순서대로 나열한 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 34,
+        "section": "성취기준 해설",
+        "code": "[9체03-01]"
+      }
+    },
+    "kr.topic.2022.middle.9bdf4d7c2bd32e7169da": {
+      "evidence": [
+        "일상에서 쉽게 쓸 수 있는 기구와 공간을 골라 운동 방법을 조정한다.",
+        "실행 결과가 목표에 못 미치면 강도나 빈도를 바꿔 다음 주 계획에 반영한다."
+      ],
+      "assessmentPrompts": [
+        "집에 운동 기구가 없는 상황을 가정하고, 계단과 의자만으로 근지구력을 기르는 주 3회 운동 방법을 정해 실행 순서를 적으세요."
+      ],
+      "misconceptions": [
+        "전문 기구가 없으면 제대로 된 체력 관리는 못 한다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 27,
+        "section": "성취기준 해설",
+        "code": "[9체01-04]"
+      }
+    },
+    "kr.topic.2022.middle.9f0b64b3dd126e289c6d": {
+      "evidence": [
+        "경기 뒤 상대 팀과 심판에게 예를 갖춰 인사하고 소감을 나눈다.",
+        "자신의 태도가 팀 분위기에 미친 영향을 되짚어 기록한다."
+      ],
+      "assessmentPrompts": [
+        "경기를 마친 뒤 팀원끼리 서로 고마웠던 행동 하나씩을 적어 전하고, 다음 경기에서 고칠 태도를 스스로 하나 정하세요."
+      ],
+      "misconceptions": [
+        "패배한 팀에게는 위로하지 않는 편이 낫다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 32,
+        "section": "성취기준 해설",
+        "code": "[9체02-26]"
+      }
+    },
+    "kr.topic.2022.middle.a0b2f912d367e9bc9ffe": {
+      "evidence": [
+        "경기 중 상대의 대응에 따라 미리 정한 전략을 바꿔 적용한다.",
+        "신체 접촉과 충돌 위험이 큰 구역을 파악해 움직임을 조정한다."
+      ],
+      "assessmentPrompts": [
+        "전반전에 상대가 우리 전략을 막아 냈다면 후반전에 바꿀 점 두 가지를 정하고, 충돌 위험을 줄일 방법도 함께 적으세요."
+      ],
+      "misconceptions": [
+        "몸을 부딪치는 것은 영역형 경기에서 당연한 일이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 31,
+        "section": "성취기준 해설",
+        "code": "[9체02-12]"
+      }
+    },
+    "kr.topic.2022.middle.a3d5969e7241a4274d21": {
+      "evidence": [
+        "날씨와 지형 정보를 확인해 활동 경로와 속도를 정한다.",
+        "장비가 제 기능을 못 할 때를 대비한 대체 방법을 마련한다."
+      ],
+      "assessmentPrompts": [
+        "기온이 5도 낮아지고 바람이 강해진 예보를 보고, 예정한 야외 활동의 경로·복장·휴식 계획을 어떻게 고칠지 쓰세요."
+      ],
+      "misconceptions": [
+        "예보가 나빠도 계획대로 가는 것이 책임감이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 31,
+        "section": "성취기준 해설",
+        "code": "[9체02-23]"
+      }
+    },
+    "kr.topic.2022.middle.a4ec5fdfa596d69978cc": {
+      "evidence": [
+        "목표가 너무 높거나 낮을 때 단계를 나눠 다시 정한다.",
+        "연습 방법을 바꿔 가며 자신에게 맞는 접근을 찾아낸다."
+      ],
+      "assessmentPrompts": [
+        "4주 목표에 도달하지 못했다면 목표를 세 단계로 쪼개고, 각 단계에서 확인할 수 있는 성공 신호를 정해 쓰세요."
+      ],
+      "misconceptions": [
+        "목표를 낮추는 것은 포기하는 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 32,
+        "section": "성취기준 해설",
+        "code": "[9체02-25]"
+      }
+    },
+    "kr.topic.2022.middle.a626a35b86c4b8c336b9": {
+      "evidence": [
+        "축구·농구·핸드볼의 성립 과정과 규칙 변화를 조사해 시기별로 정리한다.",
+        "상대 영역을 침범해 득점하는 종목들의 공통 구조를 찾아 밝힌다."
+      ],
+      "assessmentPrompts": [
+        "농구와 핸드볼의 코트 크기, 인원, 득점 방식을 조사해 표로 견주고, 두 종목을 같은 유형으로 묶는 근거를 쓰세요."
+      ],
+      "misconceptions": [
+        "공을 쓰는 경기는 모두 같은 유형이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 31,
+        "section": "성취기준 해설",
+        "code": "[9체02-10]"
+      }
+    },
+    "kr.topic.2022.middle.a6e10ae6773a85a02a13": {
+      "evidence": [
+        "함께 정한 환경 약속을 지키며 다른 구성원의 참여를 이끈다.",
+        "실천 결과를 기록해 학급에 공유하고 다음 계획에 반영한다."
+      ],
+      "assessmentPrompts": [
+        "한 달간 지킨 환경 약속의 실천율을 정리해 게시하고, 참여가 낮았던 항목의 원인과 개선안을 학급 회의에서 제안하세요."
+      ],
+      "misconceptions": [
+        "혼자 실천해도 달라지는 것이 없으니 소용없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 32,
+        "section": "성취기준 해설",
+        "code": "[9체02-27]"
+      }
+    },
+    "kr.topic.2022.middle.a72bb024b5162dcf757b": {
+      "evidence": [
+        "조사 과정에서 확인한 자료의 출처를 밝히며 모둠에 전달한다.",
+        "기록 경쟁에 얽힌 사건을 다룰 때 선수를 존중하는 표현을 골라 쓴다."
+      ],
+      "assessmentPrompts": [
+        "기록형 종목의 역사에서 인상 깊은 사건 하나를 골라 조사하고, 그 사건을 소개할 때 조심해야 할 표현을 함께 정리하세요."
+      ],
+      "misconceptions": [
+        "기록을 세우지 못한 선수의 이야기는 다룰 가치가 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 30,
+        "section": "성취기준 해설",
+        "code": "[9체02-04]"
+      }
+    },
+    "kr.topic.2022.middle.a9b1abba969469caf823": {
+      "evidence": [
+        "창작 과정의 시도와 실패를 기록해 결정의 흐름을 남긴다.",
+        "감상평을 주고받으며 작품과 사람을 구분해 말한다."
+      ],
+      "assessmentPrompts": [
+        "다른 모둠 작품에 감상평을 쓰되, 작품의 요소를 근거로 삼고 사람을 평가하는 표현이 없는지 스스로 점검하세요."
+      ],
+      "misconceptions": [
+        "감상평은 솔직하기만 하면 어떤 표현이든 괜찮다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 35,
+        "section": "성취기준 해설",
+        "code": "[9체03-09]"
+      }
+    },
+    "kr.topic.2022.middle.aa17e056409e703ecc39": {
+      "evidence": [
+        "체력 측정 결과를 계획·실행·평가 절차에 맞춰 자신의 관리 방법으로 옮긴다.",
+        "진단 결과에서 우선 관리할 요소를 고른 까닭을 수치를 들어 밝힌다."
+      ],
+      "assessmentPrompts": [
+        "자신의 유연성·근지구력 측정값을 학급 평균과 견주어, 먼저 관리할 요소를 정하고 4주 계획을 계획·실행·평가 순서로 작성하세요."
+      ],
+      "misconceptions": [
+        "측정은 점수를 매기려는 일일 뿐 관리 계획과는 상관없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 27,
+        "section": "성취기준 해설",
+        "code": "[9체01-04]"
+      }
+    },
+    "kr.topic.2022.middle.b013c5dddb52a5722c06": {
+      "evidence": [
+        "던지기·받기·타격의 수행 원리를 이어 붙여 연속 동작으로 해낸다.",
+        "역할별 기능 과제를 조건에 맞게 수행하고 결과를 남긴다."
+      ],
+      "assessmentPrompts": [
+        "10m 거리에서 던지고 받기를 열 번 수행한 뒤, 놓친 공의 방향을 표시해 자신이 약한 방향을 찾아 쓰세요."
+      ],
+      "misconceptions": [
+        "타격은 힘껏 휘두를수록 멀리 나간다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 31,
+        "section": "성취기준 해설",
+        "code": "[9체02-14]"
+      }
+    },
+    "kr.topic.2022.middle.b038804811116cd5dfe8": {
+      "evidence": [
+        "건강·안전 활동에 꾸준히 참여하며 맡은 역할을 끝까지 해낸다.",
+        "활동 뒤 서로의 행동을 되짚으며 긍정적인 관계를 이어 가는 말을 건넨다."
+      ],
+      "assessmentPrompts": [
+        "모둠 응급처치 실습을 마친 뒤, 잘된 점과 아쉬운 점을 한 가지씩 서로에게 말로 전하고 그 내용을 일지에 정리하세요."
+      ],
+      "misconceptions": [
+        "실습에서 실수한 친구를 지적하는 것이 도움이 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 27,
+        "section": "성취기준 해설",
+        "code": "[9체01-12]"
+      }
+    },
+    "kr.topic.2022.middle.b3475a41cfcdafd5384c": {
+      "evidence": [
+        "건강 활동 자료를 견주어 근거가 뚜렷한 정보와 그렇지 않은 정보를 가른다.",
+        "자신에게 필요한 활동을 고르고 선택 기준을 밝혀 제시한다."
+      ],
+      "assessmentPrompts": [
+        "누리소통망에 올라온 “일주일 5kg 감량” 식단 게시글을 읽고, 식이 관리 관점에서 문제가 되는 점 세 가지를 근거와 함께 쓰세요."
+      ],
+      "misconceptions": [
+        "많이 알려진 방법이면 누구에게나 안전하다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 27,
+        "section": "성취기준 해설",
+        "code": "[9체01-07]"
+      }
+    },
+    "kr.topic.2022.middle.b59320a5a32ce3e2741d": {
+      "evidence": [
+        "짝 연습에서 상대가 받기 좋은 공을 보내며 순서를 지킨다.",
+        "연습 기록을 되짚어 자신의 성공 조건을 정리해 남긴다."
+      ],
+      "assessmentPrompts": [
+        "2주간의 서브 성공률 기록을 보고 가장 잘된 날의 준비 과정과 몸 상태를 적어, 다음 연습에서 재현할 조건을 정하세요."
+      ],
+      "misconceptions": [
+        "짝이 못 받으면 그 사람의 실력 탓이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 31,
+        "section": "성취기준 해설",
+        "code": "[9체02-17]"
+      }
+    },
+    "kr.topic.2022.middle.b6fd45b3df2decaf2379": {
+      "evidence": [
+        "조사 결과를 나눌 때 다른 모둠의 자료와 어긋나는 부분을 짚어 확인한다.",
+        "종목별 경험 차이를 존중하며 서로의 조사 방식을 인정하는 말을 한다."
+      ],
+      "assessmentPrompts": [
+        "모둠별 조사 결과에서 서로 다르게 적힌 항목을 찾아, 어느 자료가 더 믿을 만한지 판단 기준을 세워 정리하세요."
+      ],
+      "misconceptions": [
+        "먼저 찾은 자료가 언제나 옳다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 31,
+        "section": "성취기준 해설",
+        "code": "[9체02-16]"
+      }
+    },
+    "kr.topic.2022.middle.b7d8dd29eaa8ab32a2a6": {
+      "evidence": [
+        "익숙하지 않은 동작을 반복해 익히며 연습 과정을 기록으로 남긴다.",
+        "함께 배우는 친구의 속도를 살피며 맞춰 움직인다."
+      ],
+      "assessmentPrompts": [
+        "2주간의 전통 표현 연습 일지에서 가장 어려웠던 동작을 골라, 익히기 위해 바꿔 본 방법 세 가지를 정리하세요."
+      ],
+      "misconceptions": [
+        "전통 무용은 몇 번 따라 하면 바로 익힐 수 있다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 34,
+        "section": "성취기준 해설",
+        "code": "[9체03-05]"
+      }
+    },
+    "kr.topic.2022.middle.b7f1c6bcfb07331e2e1d": {
+      "evidence": [
+        "감상 나눔에서 자신과 다른 해석을 끝까지 듣고 근거를 물어본다.",
+        "창작과 감상의 경험을 일지에 남겨 자신의 표현 태도를 되짚는다."
+      ],
+      "assessmentPrompts": [
+        "한 학기 표현 활동 일지를 되짚어 자신의 표현이 달라진 지점 두 곳을 찾아, 그 변화를 만든 활동과 함께 쓰세요."
+      ],
+      "misconceptions": [
+        "표현 활동은 결과 작품만 남기면 되는 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 35,
+        "section": "성취기준 해설",
+        "code": "[9체03-10]"
+      }
+    },
+    "kr.topic.2022.middle.b822739a1ca76e171455": {
+      "evidence": [
+        "다른 나라의 전통을 소개할 때 그 문화를 존중하는 표현을 골라 쓴다.",
+        "영상 보기와 자료 읽기로 간접 체험한 내용을 정리해 나눈다."
+      ],
+      "assessmentPrompts": [
+        "다른 나라 민속무용 영상을 보고 인상 깊은 점을 쓰되, 그 문화를 낮추어 보이게 하는 표현이 없는지 스스로 점검하세요."
+      ],
+      "misconceptions": [
+        "낯선 문화의 춤은 이상하다고 말해도 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 34,
+        "section": "성취기준 해설",
+        "code": "[9체03-04]"
+      }
+    },
+    "kr.topic.2022.middle.b90b918ffa136f0ab7d8": {
+      "evidence": [
+        "생활 안전 활동과 응급처치 활동을 절차에 맞게 수행한다.",
+        "재난·재해 상황에서 자신과 주변 사람을 위한 행동 순서를 정해 실행한다."
+      ],
+      "assessmentPrompts": [
+        "운동장에서 친구가 넘어져 팔을 다친 상황을 가정하고, 도움 요청부터 응급처치까지의 행동을 순서대로 적어 시연하세요."
+      ],
+      "misconceptions": [
+        "응급 상황에서는 어른이 올 때까지 아무것도 하지 않는 편이 낫다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 27,
+        "section": "성취기준 해설",
+        "code": "[9체01-12]"
+      }
+    },
+    "kr.topic.2022.middle.bc95cebeecad7189cbe8": {
+      "evidence": [
+        "동작 수행과 창작에서 남과 다른 자기만의 시도를 만들어 낸다.",
+        "작품을 감상한 뒤 공감한 지점과 비판할 지점을 나누어 밝힌다."
+      ],
+      "assessmentPrompts": [
+        "한 작품을 보고 공감한 대목과 아쉬운 대목을 각각 근거와 함께 쓰고, 그 판단의 기준이 무엇이었는지 밝히세요."
+      ],
+      "misconceptions": [
+        "비평은 흠을 찾아내는 일이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 35,
+        "section": "성취기준 해설",
+        "code": "[9체03-10]"
+      }
+    },
+    "kr.topic.2022.middle.bf06d24f89995faf807b": {
+      "evidence": [
+        "연습을 그만두고 싶던 순간과 이어 간 까닭을 일지에 남긴다.",
+        "모둠이 함께 세운 목표를 향해 자기 몫을 끝까지 해낸다."
+      ],
+      "assessmentPrompts": [
+        "4주 도전 일지에서 가장 힘들었던 날을 골라 그날의 상황과 자신을 붙든 생각을 쓰고, 모둠에서 서로의 기록을 나누세요."
+      ],
+      "misconceptions": [
+        "남보다 늦게 성공하면 도전이 실패한 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 32,
+        "section": "성취기준 해설",
+        "code": "[9체02-25]"
+      }
+    },
+    "kr.topic.2022.middle.bf72cc6a454bde4c0c97": {
+      "evidence": [
+        "연습 일지에 시도 횟수와 성공 여부를 기록해 변화를 따라간다.",
+        "수준이 다른 친구와 짝을 이뤄 보조하며 서로의 진전을 확인해 준다."
+      ],
+      "assessmentPrompts": [
+        "2주간의 동작 연습 일지를 보고 성공률이 오른 동작과 제자리인 동작을 하나씩 골라, 연습 방법의 차이를 정리하세요."
+      ],
+      "misconceptions": [
+        "잘하는 친구와 같은 연습량이면 결과도 같아진다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 30,
+        "section": "성취기준 해설",
+        "code": "[9체02-02]"
+      }
+    },
+    "kr.topic.2022.middle.c1389518766b930b5de8": {
+      "evidence": [
+        "연습에서 실수한 뒤에도 다음 과제에 바로 참여하는 태도를 보인다.",
+        "동료의 성공 장면을 인정하는 말을 건네며 연습 분위기를 이어 간다."
+      ],
+      "assessmentPrompts": [
+        "모둠 연습을 마친 뒤 서로에게 도움이 된 조언 한 가지씩을 적어 나누고, 다음 연습에서 시도할 점을 정리하세요."
+      ],
+      "misconceptions": [
+        "실수한 친구에게 지적을 많이 할수록 팀이 좋아진다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 31,
+        "section": "성취기준 해설",
+        "code": "[9체02-11]"
+      }
+    },
+    "kr.topic.2022.middle.c2341ac5138b874f2663": {
+      "evidence": [
+        "상황별로 알맞은 대처 방법을 골라 순서를 세워 제시한다.",
+        "자료에 담긴 건강 활동의 특성을 견주어 우리 학교에 맞는 것을 고른다."
+      ],
+      "assessmentPrompts": [
+        "급식실·복도·체육관에서 자주 생기는 사고 유형을 하나씩 고르고, 예방 수칙과 사고 발생 시 대처 순서를 각각 쓰세요."
+      ],
+      "misconceptions": [
+        "안전 규칙은 사고가 난 뒤에 지키면 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 27,
+        "section": "성취기준 해설",
+        "code": "[9체01-11]"
+      }
+    },
+    "kr.topic.2022.middle.c36918b010aa2c705024": {
+      "evidence": [
+        "기후와 지형이 갑자기 바뀔 때를 대비한 판단 기준을 정해 둔다.",
+        "장비의 불안정성을 점검해 사용 전 확인 절차를 밟는다."
+      ],
+      "assessmentPrompts": [
+        "야외 활동 출발 전 점검표를 만들어 장비·기상·비상 연락 항목을 넣고, 활동을 중단해야 하는 조건 세 가지를 적으세요."
+      ],
+      "misconceptions": [
+        "장비 점검은 시간이 남을 때 하면 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 32,
+        "section": "성취기준 해설",
+        "code": "[9체02-24]"
+      }
+    },
+    "kr.topic.2022.middle.c549a5cf49a26895bbf8": {
+      "evidence": [
+        "용품을 오래 쓰거나 나눠 쓰는 방법을 견주어 실행 가능한 안을 고른다.",
+        "활동 계획에 환경 부담을 줄일 절차를 넣어 다시 짠다."
+      ],
+      "assessmentPrompts": [
+        "학급 체육 대회 계획서를 보고 일회용품 사용을 줄일 수 있는 지점 세 곳을 찾아, 대체 방법과 예상 효과를 쓰세요."
+      ],
+      "misconceptions": [
+        "환경을 생각하면 활동이 재미없어진다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 32,
+        "section": "성취기준 해설",
+        "code": "[9체02-27]"
+      }
+    },
+    "kr.topic.2022.middle.c5aa30efa59d6abf63fc": {
+      "evidence": [
+        "출발·질주·마무리 구간의 수행 원리를 적용해 동작을 연결한다.",
+        "구간별 연습 과제를 차례로 수행하며 기록을 재어 남긴다."
+      ],
+      "assessmentPrompts": [
+        "50m 달리기를 출발·가속·유지 세 구간으로 나눠 각각 두 번씩 재고, 어느 구간에서 시간을 가장 많이 잃는지 찾아 쓰세요."
+      ],
+      "misconceptions": [
+        "기록형 운동은 처음부터 끝까지 전력으로 달려야 한다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 30,
+        "section": "성취기준 해설",
+        "code": "[9체02-05]"
+      }
+    },
+    "kr.topic.2022.middle.c7961c9d0cf52665634a": {
+      "evidence": [
+        "동작형 종목의 경기 방법과 채점 기준을 견주어 차이를 만든 요인을 짚는다.",
+        "조사 자료에서 종목 분류에 쓸 기준을 세워 자기 방식으로 나눈다."
+      ],
+      "assessmentPrompts": [
+        "평균대와 마루 운동의 채점표를 견주어, 난도와 실시 점수가 각각 어떤 동작에서 갈리는지 두 가지씩 찾아 쓰세요."
+      ],
+      "misconceptions": [
+        "어려운 기술을 넣기만 하면 점수가 높아진다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 30,
+        "section": "성취기준 해설",
+        "code": "[9체02-01]"
+      }
+    },
+    "kr.topic.2022.middle.ca518dff5461a05aec36": {
+      "evidence": [
+        "자신의 체력 측정 결과에서 약한 요소를 골라 그에 맞는 운동 방법을 선택한다.",
+        "선택한 운동을 정해진 강도와 횟수로 수행하고 기록으로 남긴다."
+      ],
+      "assessmentPrompts": [
+        "자신의 최근 체력 측정표에서 가장 낮은 두 요소를 고르고, 각 요소를 높이는 운동을 하나씩 정해 주 3회 계획으로 짜 보세요."
+      ],
+      "misconceptions": [
+        "체력 운동은 종류만 많이 하면 어떤 요소든 함께 좋아진다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 26,
+        "section": "성취기준 해설",
+        "code": "[9체01-02]"
+      }
+    },
+    "kr.topic.2022.middle.cbd9d2e3f6ac4b9cb78c": {
+      "evidence": [
+        "네트형 경기의 규칙과 순환 순서에 맞춰 자리를 옮기며 경기한다.",
+        "단식과 복식의 조건을 따져 공격과 수비 전환 시점을 정한다."
+      ],
+      "assessmentPrompts": [
+        "복식 경기에서 상대가 코트 뒤쪽을 비운다면 어디로 공을 보낼지 정하고, 그때 두 사람의 자리 이동을 그림으로 그리세요."
+      ],
+      "misconceptions": [
+        "복식은 잘하는 한 사람이 다 처리하면 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 31,
+        "section": "성취기준 해설",
+        "code": "[9체02-18]"
+      }
+    },
+    "kr.topic.2022.middle.cc512303b814831e2f2c": {
+      "evidence": [
+        "타격 동작의 순서를 나눠 어느 구간에서 힘이 새는지 확인한다.",
+        "연습 조건을 바꿔 가며 자신에게 맞는 자세를 찾아 정한다."
+      ],
+      "assessmentPrompts": [
+        "배트를 짧게 잡을 때와 길게 잡을 때 각각 열 번씩 쳐 보고, 정확도와 비거리의 차이를 표로 정리해 자신의 선택을 밝히세요."
+      ],
+      "misconceptions": [
+        "자세는 프로 선수와 똑같이 따라 해야 좋다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 31,
+        "section": "성취기준 해설",
+        "code": "[9체02-14]"
+      }
+    },
+    "kr.topic.2022.middle.cc7dc4a41fb575893941": {
+      "evidence": [
+        "4주 운동 기록을 견주어 자신의 변화 지점을 짚어 말한다.",
+        "힘든 구간에서 포기하지 않고 목표 횟수를 마치는 모습을 꾸준히 보인다."
+      ],
+      "assessmentPrompts": [
+        "4주 동안의 체력 운동 기록에서 나아진 항목과 그대로인 항목을 각각 하나씩 골라, 그 차이가 생긴 까닭을 자기 실천과 연결해 쓰세요."
+      ],
+      "misconceptions": [
+        "하루 몰아서 오래 하면 매일 조금씩 한 것과 같다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 26,
+        "section": "성취기준 해설",
+        "code": "[9체01-02]"
+      }
+    },
+    "kr.topic.2022.middle.cc9bb91b24f7d7e0e664": {
+      "evidence": [
+        "경기 뒤 자신의 연기와 계획을 견주어 달라진 지점을 되짚어 적는다.",
+        "보조 역할을 맡을 때 자리를 지키며 약속한 신호를 정확히 주고받는다."
+      ],
+      "assessmentPrompts": [
+        "발표회를 마친 뒤 계획한 연기와 실제 수행이 달라진 대목을 두 곳 찾아, 그 원인과 다음에 바꿀 점을 각각 쓰세요."
+      ],
+      "misconceptions": [
+        "경기 결과가 좋으면 안전 절차는 지키지 않아도 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 30,
+        "section": "성취기준 해설",
+        "code": "[9체02-03]"
+      }
+    },
+    "kr.topic.2022.middle.ccc9deff48a67afbd929": {
+      "evidence": [
+        "팀의 공동 목표를 위해 맡은 역할을 끝까지 해낸다.",
+        "상대와 심판, 보는 사람 앞에서 규칙을 지키며 경기한다."
+      ],
+      "assessmentPrompts": [
+        "팀 목표를 하나 정하고 구성원별 역할과 지킬 약속을 적은 팀 규약을 만들어, 경기 뒤 지켜진 항목을 표시하세요."
+      ],
+      "misconceptions": [
+        "이기기 위해서라면 규칙을 살짝 어겨도 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 32,
+        "section": "성취기준 해설",
+        "code": "[9체02-26]"
+      }
+    },
+    "kr.topic.2022.middle.cce71b1c48719be7ed4d": {
+      "evidence": [
+        "준비 운동과 정리 운동을 포함해 부상 위험이 큰 동작을 대체 동작으로 바꾼다.",
+        "통증이나 어지럼이 나타나면 즉시 멈추고 정해진 절차대로 대처한다."
+      ],
+      "assessmentPrompts": [
+        "무릎이 아픈 학생에게 점프 동작이 많은 프로그램을 대체할 운동 두 가지를 고르고, 안전하게 진행할 순서와 주의점을 쓰세요."
+      ],
+      "misconceptions": [
+        "아파도 참고 계속해야 프로그램 효과가 난다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 27,
+        "section": "성취기준 해설",
+        "code": "[9체01-06]"
+      }
+    },
+    "kr.topic.2022.middle.ce903b5e34c3823d74b5": {
+      "evidence": [
+        "경기 뒤 팀원과 함께 전략의 효과를 되짚으며 다음 계획을 세운다.",
+        "부상 위험을 본 순간에는 경기를 멈추자고 말하고 조치를 돕는다."
+      ],
+      "assessmentPrompts": [
+        "경기 기록지를 보고 우리 팀이 실점한 장면 세 개를 골라, 공통점을 찾고 다음 경기에서 바꿀 수비 약속을 정하세요."
+      ],
+      "misconceptions": [
+        "이기고 있을 때는 안전보다 경기 진행이 먼저라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 31,
+        "section": "성취기준 해설",
+        "code": "[9체02-12]"
+      }
+    },
+    "kr.topic.2022.middle.cea24878ec67fc011467": {
+      "evidence": [
+        "창작 과정에서 나온 여러 의견을 기록해 결정 근거로 남긴다.",
+        "작품을 감상하며 다른 문화의 표현 방식을 열린 태도로 받아들인다."
+      ],
+      "assessmentPrompts": [
+        "창작 회의록을 만들어 채택한 의견과 접은 의견을 함께 적고, 접은 의견 가운데 다음에 살릴 것을 하나 고르세요."
+      ],
+      "misconceptions": [
+        "창작에서 채택되지 않은 의견은 기록할 필요가 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 34,
+        "section": "성취기준 해설",
+        "code": "[9체03-06]"
+      }
+    },
+    "kr.topic.2022.middle.d57a2b157167887a42d2": {
+      "evidence": [
+        "체력 요소별 운동에 원리를 적용해 강도와 반복 횟수를 어떻게 바꿀지 정한다.",
+        "친구가 세운 운동 계획에서 원리가 어긋난 지점을 찾아 수정안을 제시한다."
+      ],
+      "assessmentPrompts": [
+        "달리기 시간을 매주 5분씩 늘리는 계획과 첫 주에만 30분을 늘리는 계획을 견주어, 어느 쪽이 점진성에 맞는지 까닭과 함께 정리하세요."
+      ],
+      "misconceptions": [
+        "강도를 갑자기 크게 올릴수록 체력이 빨리 좋아진다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 26,
+        "section": "성취기준 해설",
+        "code": "[9체01-01]"
+      }
+    },
+    "kr.topic.2022.middle.d7ed016e2e5216ff0e13": {
+      "evidence": [
+        "환경 조건이 달라질 때 활동 전략을 바꿔 적용한다.",
+        "바닥 미끄러움이나 시설 노후 같은 위험을 미리 확인해 대비한다."
+      ],
+      "assessmentPrompts": [
+        "비 온 뒤 미끄러운 바닥에서 인라인 활동을 한다고 할 때, 활동을 미룰 기준과 진행할 때의 안전 조치를 각각 쓰세요."
+      ],
+      "misconceptions": [
+        "보호 장비만 갖추면 어떤 바닥에서도 안전하다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 32,
+        "section": "성취기준 해설",
+        "code": "[9체02-21]"
+      }
+    },
+    "kr.topic.2022.middle.d8d9acd0a9a397eed790": {
+      "evidence": [
+        "같은 주제를 다른 움직임으로 바꿔 보며 어울리는 방식을 고른다.",
+        "동작의 방향과 높낮이를 조절해 표현의 폭을 넓힌다."
+      ],
+      "assessmentPrompts": [
+        "같은 주제를 서 있는 동작과 낮은 자세 동작으로 각각 만들어 보고, 두 표현이 주는 느낌의 차이를 정리하세요."
+      ],
+      "misconceptions": [
+        "동작을 많이 바꾸면 주제가 흐려진다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 34,
+        "section": "성취기준 해설",
+        "code": "[9체03-08]"
+      }
+    },
+    "kr.topic.2022.middle.da381addded6bc4ec04f": {
+      "evidence": [
+        "2주 실천 기록을 되짚어 이어 가기 쉬웠던 조건을 찾아낸다.",
+        "실천 결과를 친구와 나누며 서로의 방법을 견주어 말한다."
+      ],
+      "assessmentPrompts": [
+        "2주 동안의 신체 건강 활동 기록에서 가장 잘 지킨 날과 못 지킨 날을 골라, 그 차이를 만든 조건을 비교해 쓰세요."
+      ],
+      "misconceptions": [
+        "한 번 빠뜨리면 습관 만들기는 실패한 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 27,
+        "section": "성취기준 해설",
+        "code": "[9체01-08]"
+      }
+    },
+    "kr.topic.2022.middle.db7da0744c328a0d9830": {
+      "evidence": [
+        "서브·리시브·공격의 수행 원리를 적용해 연결된 동작으로 해낸다.",
+        "기능 과제를 조건별로 수행하며 성공률을 기록한다."
+      ],
+      "assessmentPrompts": [
+        "언더핸드 서브를 열 번 넣어 코트 안쪽에 들어간 횟수를 세고, 실패한 공이 어디로 갔는지 방향별로 표시하세요."
+      ],
+      "misconceptions": [
+        "서브는 세게 넣을수록 좋은 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 31,
+        "section": "성취기준 해설",
+        "code": "[9체02-17]"
+      }
+    },
+    "kr.topic.2022.middle.dd2cce8d64222ea1382f": {
+      "evidence": [
+        "배구·배드민턴·탁구의 발전 과정과 규칙 변화를 조사해 정리한다.",
+        "네트를 사이에 둔 종목들의 공통된 경기 구조를 찾아 제시한다."
+      ],
+      "assessmentPrompts": [
+        "배구와 배드민턴의 네트 높이, 코트 크기, 점수 방식을 조사해 표로 견주고, 두 종목의 승부를 가르는 요소를 쓰세요."
+      ],
+      "misconceptions": [
+        "네트형 종목은 모두 같은 방식으로 점수를 낸다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 31,
+        "section": "성취기준 해설",
+        "code": "[9체02-16]"
+      }
+    },
+    "kr.topic.2022.middle.de271ba125d5e59d005b": {
+      "evidence": [
+        "사고가 났을 때 신고와 대피 절차를 정해 두고 역할을 나눠 맡는다.",
+        "활동 뒤 자연에 남긴 흔적을 확인하고 정리한 내용을 기록한다."
+      ],
+      "assessmentPrompts": [
+        "야외 활동을 마치고 남은 쓰레기와 훼손된 지점을 확인해 기록하고, 다음 활동에서 줄일 방법 세 가지를 정하세요."
+      ],
+      "misconceptions": [
+        "자연은 넓으니 흔적이 조금 남아도 괜찮다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 32,
+        "section": "성취기준 해설",
+        "code": "[9체02-24]"
+      }
+    },
+    "kr.topic.2022.middle.e1383abeac6e9f66a4a5": {
+      "evidence": [
+        "점수 제도의 변화가 경기 시간과 전략에 준 영향을 자료에서 짚는다.",
+        "단식과 복식의 규칙 차이를 견주어 분류 기준을 세운다."
+      ],
+      "assessmentPrompts": [
+        "배구의 랠리 포인트 도입 전후 경기 시간 변화를 조사하고, 그 변화가 선수 체력 운영에 준 영향을 설명하세요."
+      ],
+      "misconceptions": [
+        "점수 규칙은 승패와 상관없는 형식이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 31,
+        "section": "성취기준 해설",
+        "code": "[9체02-16]"
+      }
+    },
+    "kr.topic.2022.middle.e144daa5794ce611e89f": {
+      "evidence": [
+        "질주와 착지 과정에서 생기는 근육 손상 위험을 줄일 준비 절차를 마련한다.",
+        "사고가 났을 때의 신고와 응급 조치 순서를 정해 두고 확인한다."
+      ],
+      "assessmentPrompts": [
+        "멀리뛰기 수업에서 발생할 수 있는 부상 두 가지를 고르고, 예방을 위한 준비 운동과 사고 시 대처 순서를 각각 쓰세요."
+      ],
+      "misconceptions": [
+        "짧은 거리를 뛸 때는 준비 운동을 건너뛰어도 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 30,
+        "section": "성취기준 해설",
+        "code": "[9체02-06]"
+      }
+    },
+    "kr.topic.2022.middle.e4ca342e69b3c8150e81": {
+      "evidence": [
+        "4주 실천 기록을 스스로 점검해 습관으로 굳은 항목과 그렇지 않은 항목을 가른다.",
+        "체크리스트에 매일 실행 여부를 표시하며 계획을 이어 간다."
+      ],
+      "assessmentPrompts": [
+        "체력 관리 체크리스트 4주치를 보고 실천율이 가장 낮은 요일을 찾아, 그 요일 계획을 바꿀 방법을 제안하세요."
+      ],
+      "misconceptions": [
+        "기록을 남기는 일은 운동 자체와 상관없는 형식이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 27,
+        "section": "성취기준 해설",
+        "code": "[9체01-04]"
+      }
+    },
+    "kr.topic.2022.middle.ea04913d78ae1a1fa2e4": {
+      "evidence": [
+        "현대 표현의 창조적 특성과 창작 절차에 따라 작품을 완성한다.",
+        "표현 요소를 근거로 작품을 살펴 감상한 내용을 정리한다."
+      ],
+      "assessmentPrompts": [
+        "모둠에서 사회 문제 하나를 주제로 삼아 2분 분량 현대 표현 작품을 만들고, 주제 전달 방식을 창작 노트에 쓰세요."
+      ],
+      "misconceptions": [
+        "현대 표현 작품에는 주제가 없어도 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 35,
+        "section": "성취기준 해설",
+        "code": "[9체03-09]"
+      }
+    },
+    "kr.topic.2022.middle.ebc2988df3285133708c": {
+      "evidence": [
+        "플라잉디스크·스포츠클라이밍 같은 활동의 유래와 변천을 조사해 정리한다.",
+        "생활공간에서 즐기는 활동들의 공통점과 차이를 갈라 제시한다."
+      ],
+      "assessmentPrompts": [
+        "우리 동네에서 할 수 있는 생활환경형 활동 세 가지를 찾아 필요한 공간과 기구를 조사하고, 접근성을 기준으로 순위를 매기세요."
+      ],
+      "misconceptions": [
+        "특별한 시설이 있어야만 스포츠를 할 수 있다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 31,
+        "section": "성취기준 해설",
+        "code": "[9체02-19]"
+      }
+    },
+    "kr.topic.2022.middle.ebc8ec1ee4e9756ee8f8": {
+      "evidence": [
+        "동작을 다듬는 과정에서 친구의 조언을 듣고 시도한 결과를 기록한다.",
+        "보여 주기 어려운 동작 앞에서도 자기 방식으로 표현을 이어 간다."
+      ],
+      "assessmentPrompts": [
+        "연습 일지에 친구에게 받은 조언 세 가지와 그중 실제로 적용한 것을 적고, 적용 뒤 달라진 점을 쓰세요."
+      ],
+      "misconceptions": [
+        "남 앞에서 표현하는 것은 잘하는 사람만 할 일이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 34,
+        "section": "성취기준 해설",
+        "code": "[9체03-02]"
+      }
+    },
+    "kr.topic.2022.middle.ed047a069e3ace515f59": {
+      "evidence": [
+        "자신의 체격·체력 검사 결과와 목적을 따져 처방 프로그램을 설계한다.",
+        "설계·실행·평가 단계에 맞춰 프로그램을 진행한 과정을 정리해 보고한다."
+      ],
+      "assessmentPrompts": [
+        "자신의 신장·체중·체력 검사 결과를 근거로 6주 운동 처방 프로그램을 설계하고, 주차별 목표와 점검 방법을 표에 채우세요."
+      ],
+      "misconceptions": [
+        "운동 처방은 어른이나 선수에게만 필요한 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 27,
+        "section": "성취기준 해설",
+        "code": "[9체01-06]"
+      }
+    },
+    "kr.topic.2022.middle.ee9f926dc1eb509ea755": {
+      "evidence": [
+        "태권도·씨름·유도의 유래와 변천 과정을 조사해 견주어 정리한다.",
+        "투기형 종목이 지닌 겨루기 방식의 공통점과 차이를 갈라 말한다."
+      ],
+      "assessmentPrompts": [
+        "씨름과 유도의 승부 결정 방식과 복장, 경기장 모양을 조사해 표로 견주고, 두 종목이 갈라지는 지점을 두 가지 쓰세요."
+      ],
+      "misconceptions": [
+        "투기형 스포츠는 상대를 다치게 하는 경기라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 30,
+        "section": "성취기준 해설",
+        "code": "[9체02-07]"
+      }
+    },
+    "kr.topic.2022.middle.ef5690606d974cff7c4c": {
+      "evidence": [
+        "경기 뒤 자신의 운영 방법이 기록에 어떻게 작용했는지 되짚어 적는다.",
+        "함께 뛴 친구의 기록을 두고 비교보다 성장에 초점을 둔 말을 건넨다."
+      ],
+      "assessmentPrompts": [
+        "계주를 마친 뒤 배턴 인계 구간에서 잃은 시간을 확인하고, 다음 경기에서 바꿀 신호와 간격을 모둠과 합의해 적으세요."
+      ],
+      "misconceptions": [
+        "기록이 나쁜 주자 때문에 팀이 졌다고 말해도 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 30,
+        "section": "성취기준 해설",
+        "code": "[9체02-06]"
+      }
+    },
+    "kr.topic.2022.middle.ef8105a8e62678e32250": {
+      "evidence": [
+        "자신의 기록 변화를 그래프로 남기며 목표에 다가간 정도를 확인한다.",
+        "기록이 좋지 않은 날에도 정해진 연습 과제를 끝까지 마친다."
+      ],
+      "assessmentPrompts": [
+        "4주간의 기록을 꺾은선으로 그리고, 기록이 떨어진 주의 컨디션·날씨·연습량을 함께 적어 원인을 짚어 보세요."
+      ],
+      "misconceptions": [
+        "기록이 나쁜 날의 연습은 기록할 필요가 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 30,
+        "section": "성취기준 해설",
+        "code": "[9체02-05]"
+      }
+    },
+    "kr.topic.2022.middle.f18ef683439dade9337d": {
+      "evidence": [
+        "전통 표현의 특성과 창작 절차를 살려 작품을 구성해 낸다.",
+        "작품에 담긴 전형적인 표현 요소를 찾아 감상 결과를 정리한다."
+      ],
+      "assessmentPrompts": [
+        "전통 무용의 동작 두 가지를 살려 모둠 작품을 만들고, 어떤 전통 요소를 어디에 넣었는지 표시한 구성도를 그리세요."
+      ],
+      "misconceptions": [
+        "전통을 소재로 하면 마음대로 바꿔도 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 34,
+        "section": "성취기준 해설",
+        "code": "[9체03-06]"
+      }
+    },
+    "kr.topic.2022.middle.f49c31665c3c23261f61": {
+      "evidence": [
+        "육상·경영·양궁의 기록 측정 방식이 어떻게 바뀌어 왔는지 조사해 정리한다.",
+        "기록형 종목들이 함께 지닌 특징을 찾아 다른 유형과 갈라 말한다."
+      ],
+      "assessmentPrompts": [
+        "100m 달리기와 자유형 50m의 기록 측정 장비가 바뀐 과정을 조사하고, 장비 변화가 기록에 준 영향을 두 가지 쓰세요."
+      ],
+      "misconceptions": [
+        "기록이 좋아진 것은 선수의 노력 때문만이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 30,
+        "section": "성취기준 해설",
+        "code": "[9체02-04]"
+      }
+    },
+    "kr.topic.2022.middle.f5a2059e370a86ae1775": {
+      "evidence": [
+        "호흡법·근육이완법·요가 같은 활동을 정해진 방법대로 수행한다.",
+        "자신에게 잘 맞는 활동을 고르고 그 까닭을 경험에 비추어 밝힌다."
+      ],
+      "assessmentPrompts": [
+        "복식 호흡과 점진적 근육이완을 각각 5분씩 해 본 뒤, 두 활동의 느낌과 자신에게 더 맞는 쪽을 근거와 함께 쓰세요."
+      ],
+      "misconceptions": [
+        "정신 건강 활동은 힘들지 않으니 아무 효과도 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 27,
+        "section": "성취기준 해설",
+        "code": "[9체01-10]"
+      }
+    },
+    "kr.topic.2022.middle.f688abdd81b55f6138f2": {
+      "evidence": [
+        "한 주 운동 배치안 두 개를 견주어 어느 쪽이 관리 원리에 맞는지 판단한다.",
+        "운동 종류가 한쪽으로 치우친 계획을 찾아 균형 있게 고쳐 제시한다."
+      ],
+      "assessmentPrompts": [
+        "주 5회 모두 달리기만 하는 계획표를 보고, 유연성과 근력 운동을 넣어 다시 짠 뒤 바꾼 까닭을 항목별로 적으세요."
+      ],
+      "misconceptions": [
+        "한 가지 운동만 열심히 해도 모든 체력 요소가 관리된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 27,
+        "section": "성취기준 해설",
+        "code": "[9체01-03]"
+      }
+    },
+    "kr.topic.2022.middle.f6913b05061a55926161": {
+      "evidence": [
+        "자신만의 움직임을 시도하며 남과 다른 선택을 설명한다.",
+        "친구의 표현을 볼 때 놀리지 않고 궁금한 점을 물어본다."
+      ],
+      "assessmentPrompts": [
+        "친구의 표현에서 자신과 다르게 나타난 지점을 하나 골라 무엇이 궁금한지 질문을 만들고, 답을 들은 뒤 느낀 점을 쓰세요."
+      ],
+      "misconceptions": [
+        "남과 다른 동작은 틀린 동작이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 34,
+        "section": "성취기준 해설",
+        "code": "[9체03-08]"
+      }
+    },
+    "kr.topic.2022.middle.f7639752f0074217a608": {
+      "evidence": [
+        "걷기·스트레칭·바른 자세 같은 활동을 자신의 일과에 넣어 꾸준히 수행한다.",
+        "자신에게 맞는 활동을 고른 까닭을 생활 조건과 연결해 밝힌다."
+      ],
+      "assessmentPrompts": [
+        "등하교 시간과 방과 후 일정을 적은 뒤, 그 틈에 넣을 수 있는 신체 건강 활동 두 가지를 정해 주간 실천표를 만드세요."
+      ],
+      "misconceptions": [
+        "체육 시간에 하는 운동만 건강 활동으로 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 27,
+        "section": "성취기준 해설",
+        "code": "[9체01-08]"
+      }
+    },
+    "kr.topic.2022.middle.f7e95a3bcd61ea417637": {
+      "evidence": [
+        "공동체 건강 활동에 스스로 참여하며 다른 사람의 참여를 이끄는 말을 건넨다.",
+        "활동을 되짚어 자신과 공동체에 남은 변화를 정리해 나눈다."
+      ],
+      "assessmentPrompts": [
+        "한 달간 이어 온 학급 건강 활동을 마친 뒤, 자신이 한 일과 학급에 생긴 변화를 각각 두 가지씩 들어 발표문을 쓰세요."
+      ],
+      "misconceptions": [
+        "참여하지 않는 친구는 그대로 두는 것이 존중이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 28,
+        "section": "성취기준 해설",
+        "code": "[9체01-14]"
+      }
+    },
+    "kr.topic.2022.middle.f7ffe0137bd4409c66f0": {
+      "evidence": [
+        "역할을 바꿔 맡으며 경기 흐름에 맞춰 팀원과 신호를 주고받는다.",
+        "경기 뒤 자신의 역할 수행을 기록해 다음 경기 준비에 쓴다."
+      ],
+      "assessmentPrompts": [
+        "한 경기 동안 맡은 역할을 모두 적고, 가장 어려웠던 역할과 그때 팀원의 도움이 필요했던 순간을 정리해 쓰세요."
+      ],
+      "misconceptions": [
+        "한 사람의 실책이 경기를 망친 원인이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 31,
+        "section": "성취기준 해설",
+        "code": "[9체02-15]"
+      }
+    },
+    "kr.topic.2022.middle.f99e239db4d606545d7a": {
+      "evidence": [
+        "자신의 수행 영상에서 흐름이 끊기는 지점을 찾아 연결 동작을 바꾼다.",
+        "음악의 박과 동작의 시작점을 맞춰 가며 반복해 다듬는다."
+      ],
+      "assessmentPrompts": [
+        "자신의 표현 동작 영상을 보고 박자에 어긋난 구간을 표시한 뒤, 그 구간의 준비 동작을 고쳐 다시 수행하세요."
+      ],
+      "misconceptions": [
+        "박자가 조금 어긋나도 관객은 알아채지 못한다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 34,
+        "section": "성취기준 해설",
+        "code": "[9체03-02]"
+      }
+    },
+    "kr.topic.2022.middle.fbfcddc8db9ef4b07d78": {
+      "evidence": [
+        "주변 지형과 장애물을 살펴 동작의 크기와 방향을 정한다.",
+        "기구를 바꿔 가며 자신에게 맞는 조작 방법을 찾아 적용한다."
+      ],
+      "assessmentPrompts": [
+        "자전거로 좁은 길과 넓은 길을 지날 때 각각의 제동 시점과 속도를 정해 보고, 두 상황에서 달라진 판단 근거를 쓰세요."
+      ],
+      "misconceptions": [
+        "속도를 낼수록 실력이 좋다는 뜻이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 31,
+        "section": "성취기준 해설",
+        "code": "[9체02-20]"
+      }
+    },
+    "kr.topic.2022.middle.fd7bf453b1e3bbe62845": {
+      "evidence": [
+        "구르기·물구나무서기 같은 동작의 수행 원리를 적용해 자세를 만들어 낸다.",
+        "단계별 연습 과제를 순서대로 수행하며 기능을 안정시킨다."
+      ],
+      "assessmentPrompts": [
+        "앞구르기에서 뒤구르기로 이어지는 연결 동작을 3단계로 나누어 연습 계획을 세우고, 각 단계의 성공 기준을 적으세요."
+      ],
+      "misconceptions": [
+        "힘이 세면 기계체조 동작은 저절로 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 30,
+        "section": "성취기준 해설",
+        "code": "[9체02-02]"
+      }
+    },
+    "kr.topic.2022.middle.ff1678ba44ac6ce347e5": {
+      "evidence": [
+        "가정과 지역사회의 활동 공간을 살펴 활동 방법을 정해 실행한다.",
+        "공간과 시설 조건을 파악해 활동 계획에 반영한다."
+      ],
+      "assessmentPrompts": [
+        "집 주변에서 30분 동안 할 수 있는 활동 하나를 정하고, 공간 크기·바닥 상태·이용 시간을 확인해 계획표를 만드세요."
+      ],
+      "misconceptions": [
+        "활동 장소는 넓기만 하면 조건을 따질 필요가 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 32,
+        "section": "성취기준 해설",
+        "code": "[9체02-21]"
+      }
+    },
+    "kr.topic.2022.middle.fff36c0986c72d22e7e9": {
+      "evidence": [
+        "학급의 건강·안전 문제를 토의하며 자기 생각의 근거를 들어 말한다.",
+        "서로 다른 의견을 정리해 학급이 함께 지킬 약속으로 다듬는다."
+      ],
+      "assessmentPrompts": [
+        "학급 안전 문제 한 가지를 정해 모둠 토의를 하고, 나온 의견을 모아 학급 규칙 초안 세 줄을 만들어 발표하세요."
+      ],
+      "misconceptions": [
+        "다수가 찬성하면 소수의 안전 걱정은 넘어가도 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex11",
+        "printedPage": 27,
+        "section": "성취기준 해설",
+        "code": "[9체01-11]"
+      }
+    }
+  }
+}

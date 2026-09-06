@@ -16,7 +16,7 @@
         "attachmentNo": "10004130",
         "code": "[디직 01-01]",
         "pdfPage": 48,
-        "printedPage": null,
+        "printedPage": 42,
         "section": "디지털과 직업 생활 > 디지털 전환과 직업 생활",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -58,7 +58,7 @@
         "attachmentNo": "10004130",
         "code": "[디직 01-02]",
         "pdfPage": 48,
-        "printedPage": null,
+        "printedPage": 42,
         "section": "디지털과 직업 생활 > 디지털 전환과 직업 생활",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -100,7 +100,7 @@
         "attachmentNo": "10004130",
         "code": "[디직 01-03]",
         "pdfPage": 48,
-        "printedPage": null,
+        "printedPage": 42,
         "section": "디지털과 직업 생활 > 디지털 전환과 직업 생활",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -142,7 +142,7 @@
         "attachmentNo": "10004130",
         "code": "[디직 02-01]",
         "pdfPage": 48,
-        "printedPage": null,
+        "printedPage": 42,
         "section": "디지털과 직업 생활 > 디지털 의사소통과 협업",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -184,7 +184,7 @@
         "attachmentNo": "10004130",
         "code": "[디직 02-02]",
         "pdfPage": 48,
-        "printedPage": null,
+        "printedPage": 42,
         "section": "디지털과 직업 생활 > 디지털 의사소통과 협업",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -226,7 +226,7 @@
         "attachmentNo": "10004130",
         "code": "[디직 03-01]",
         "pdfPage": 49,
-        "printedPage": null,
+        "printedPage": 43,
         "section": "디지털과 직업 생활 > 디지털 콘텐츠의 활용과 제작",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -268,7 +268,7 @@
         "attachmentNo": "10004130",
         "code": "[디직 03-02]",
         "pdfPage": 49,
-        "printedPage": null,
+        "printedPage": 43,
         "section": "디지털과 직업 생활 > 디지털 콘텐츠의 활용과 제작",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -310,7 +310,7 @@
         "attachmentNo": "10004130",
         "code": "[디직 03-03]",
         "pdfPage": 49,
-        "printedPage": null,
+        "printedPage": 43,
         "section": "디지털과 직업 생활 > 디지털 콘텐츠의 활용과 제작",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -352,7 +352,7 @@
         "attachmentNo": "10004130",
         "code": "[디직 04-01]",
         "pdfPage": 49,
-        "printedPage": null,
+        "printedPage": 43,
         "section": "디지털과 직업 생활 > 디지털 문제 해결",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -394,7 +394,7 @@
         "attachmentNo": "10004130",
         "code": "[디직 04-02]",
         "pdfPage": 49,
-        "printedPage": null,
+        "printedPage": 43,
         "section": "디지털과 직업 생활 > 디지털 문제 해결",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -436,7 +436,7 @@
         "attachmentNo": "10004130",
         "code": "[디직 04-03]",
         "pdfPage": 49,
-        "printedPage": null,
+        "printedPage": 43,
         "section": "디지털과 직업 생활 > 디지털 문제 해결",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -478,7 +478,7 @@
         "attachmentNo": "10004130",
         "code": "[디직 05-01]",
         "pdfPage": 50,
-        "printedPage": null,
+        "printedPage": 44,
         "section": "디지털과 직업 생활 > 인공지능과 직업 생활",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -520,7 +520,7 @@
         "attachmentNo": "10004130",
         "code": "[디직 05-02]",
         "pdfPage": 50,
-        "printedPage": null,
+        "printedPage": 44,
         "section": "디지털과 직업 생활 > 인공지능과 직업 생활",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -562,7 +562,7 @@
         "attachmentNo": "10004130",
         "code": "[디직 05-03]",
         "pdfPage": 50,
-        "printedPage": null,
+        "printedPage": 44,
         "section": "디지털과 직업 생활 > 인공지능과 직업 생활",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -604,7 +604,7 @@
         "attachmentNo": "10004130",
         "code": "[디직 06-01]",
         "pdfPage": 51,
-        "printedPage": null,
+        "printedPage": 45,
         "section": "디지털과 직업 생활 > 디지털 시민 의식과 직업 윤리",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -646,7 +646,7 @@
         "attachmentNo": "10004130",
         "code": "[디직 06-02]",
         "pdfPage": 51,
-        "printedPage": null,
+        "printedPage": 45,
         "section": "디지털과 직업 생활 > 디지털 시민 의식과 직업 윤리",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -688,7 +688,7 @@
         "attachmentNo": "10004130",
         "code": "[디직 06-03]",
         "pdfPage": 51,
-        "printedPage": null,
+        "printedPage": 45,
         "section": "디지털과 직업 생활 > 디지털 시민 의식과 직업 윤리",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -730,7 +730,7 @@
         "attachmentNo": "10004130",
         "code": "[성직 01-01]",
         "pdfPage": 23,
-        "printedPage": null,
+        "printedPage": 17,
         "section": "성공적인 직업 생활 > 일과 직업",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -755,7 +755,7 @@
         "kr-nec-2024-3-annex39"
       ],
       "sourceTextIncluded": false,
-      "summary": "일과 직업의 의미를 알고, 일과 직업이 자신의 삶에서 어떠한 가치를 가지고 있는지를 설명 하기",
+      "summary": "일과 직업의 의미를 알고, 일과 직업이 자신의 삶에서 어떠한 가치를 가지고 있는지를 설명하기",
       "summaryKind": "mechanical-derivative",
       "verificationStatus": "official-source-checked"
     },
@@ -772,7 +772,7 @@
         "attachmentNo": "10004130",
         "code": "[성직 01-02]",
         "pdfPage": 23,
-        "printedPage": null,
+        "printedPage": 17,
         "section": "성공적인 직업 생활 > 일과 직업",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -814,7 +814,7 @@
         "attachmentNo": "10004130",
         "code": "[성직 02-01]",
         "pdfPage": 23,
-        "printedPage": null,
+        "printedPage": 17,
         "section": "성공적인 직업 생활 > 진로 직업 설계와 직업 기초 능력",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -839,7 +839,7 @@
         "kr-nec-2024-3-annex39"
       ],
       "sourceTextIncluded": false,
-      "summary": "다양한 검색 도구를 활용하여 진로와 직업에 대한 정보를 탐색하여 정리할 수 있고, 자신이 탐색한 진로와 직업 분야에서 성공한 다양한 직업인을 찾아보고 그들의 성공 요인들을 분석 하여 정리할 수 있으며, 자신의 흥미와 적성에 맞는 진로와 직업을 설정하여 구체적으로 미래를 설계해 보고 이를 프레젠테이션 자료로…",
+      "summary": "다양한 검색 도구를 활용하여 진로와 직업에 대한 정보를 탐색하여 정리할 수 있고, 자신이 탐색한 진로와 직업 분야에서 성공한 다양한 직업인을 찾아보고 그들의 성공 요인들을 분석하여 정리할 수 있으며, 자신의 흥미와 적성에 맞는 진로와 직업을 설정하여 구체적으로 미래를 설계해 보고 이를 프레젠테이션 자료로 제작하여 발표하기",
       "summaryKind": "mechanical-derivative",
       "verificationStatus": "official-source-checked"
     },
@@ -856,7 +856,7 @@
         "attachmentNo": "10004130",
         "code": "[성직 02-02]",
         "pdfPage": 23,
-        "printedPage": null,
+        "printedPage": 17,
         "section": "성공적인 직업 생활 > 진로 직업 설계와 직업 기초 능력",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -898,7 +898,7 @@
         "attachmentNo": "10004130",
         "code": "[성직 02-03]",
         "pdfPage": 23,
-        "printedPage": null,
+        "printedPage": 17,
         "section": "성공적인 직업 생활 > 진로 직업 설계와 직업 기초 능력",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -940,7 +940,7 @@
         "attachmentNo": "10004130",
         "code": "[성직 03-01]",
         "pdfPage": 24,
-        "printedPage": null,
+        "printedPage": 18,
         "section": "성공적인 직업 생활 > 취업과 창업",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -982,7 +982,7 @@
         "attachmentNo": "10004130",
         "code": "[성직 03-02]",
         "pdfPage": 24,
-        "printedPage": null,
+        "printedPage": 18,
         "section": "성공적인 직업 생활 > 취업과 창업",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -1024,7 +1024,7 @@
         "attachmentNo": "10004130",
         "code": "[성직 03-03]",
         "pdfPage": 24,
-        "printedPage": null,
+        "printedPage": 18,
         "section": "성공적인 직업 생활 > 취업과 창업",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -1066,7 +1066,7 @@
         "attachmentNo": "10004130",
         "code": "[성직 03-04]",
         "pdfPage": 24,
-        "printedPage": null,
+        "printedPage": 18,
         "section": "성공적인 직업 생활 > 취업과 창업",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -1108,7 +1108,7 @@
         "attachmentNo": "10004130",
         "code": "[성직 04-01]",
         "pdfPage": 24,
-        "printedPage": null,
+        "printedPage": 18,
         "section": "성공적인 직업 생활 > 직업 생활과 직업 윤리",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -1150,7 +1150,7 @@
         "attachmentNo": "10004130",
         "code": "[성직 04-02]",
         "pdfPage": 24,
-        "printedPage": null,
+        "printedPage": 18,
         "section": "성공적인 직업 생활 > 직업 생활과 직업 윤리",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -1192,7 +1192,7 @@
         "attachmentNo": "10004130",
         "code": "[성직 04-03]",
         "pdfPage": 24,
-        "printedPage": null,
+        "printedPage": 18,
         "section": "성공적인 직업 생활 > 직업 생활과 직업 윤리",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -1234,7 +1234,7 @@
         "attachmentNo": "10004130",
         "code": "[성직 05-01]",
         "pdfPage": 25,
-        "printedPage": null,
+        "printedPage": 19,
         "section": "성공적인 직업 생활 > 근로 관계와 산업 안전",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -1276,7 +1276,7 @@
         "attachmentNo": "10004130",
         "code": "[성직 05-02]",
         "pdfPage": 25,
-        "printedPage": null,
+        "printedPage": 19,
         "section": "성공적인 직업 생활 > 근로 관계와 산업 안전",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -1318,7 +1318,7 @@
         "attachmentNo": "10004130",
         "code": "[성직 05-03]",
         "pdfPage": 25,
-        "printedPage": null,
+        "printedPage": 19,
         "section": "성공적인 직업 생활 > 근로 관계와 산업 안전",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -1360,7 +1360,7 @@
         "attachmentNo": "10004130",
         "code": "[성직 05-04]",
         "pdfPage": 25,
-        "printedPage": null,
+        "printedPage": 19,
         "section": "성공적인 직업 생활 > 근로 관계와 산업 안전",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -1402,7 +1402,7 @@
         "attachmentNo": "10004130",
         "code": "[성직 06-01]",
         "pdfPage": 26,
-        "printedPage": null,
+        "printedPage": 20,
         "section": "성공적인 직업 생활 > 경력 관리와 평생 학습",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -1427,7 +1427,7 @@
         "kr-nec-2024-3-annex39"
       ],
       "sourceTextIncluded": false,
-      "summary": "경력의 의미에 대하여 설명할 수 있고, 경력 관리의 중요성과 경력 개발 방법에 대하여 설명 하기",
+      "summary": "경력의 의미에 대하여 설명할 수 있고, 경력 관리의 중요성과 경력 개발 방법에 대하여 설명하기",
       "summaryKind": "mechanical-derivative",
       "verificationStatus": "official-source-checked"
     },
@@ -1444,7 +1444,7 @@
         "attachmentNo": "10004130",
         "code": "[성직 06-02]",
         "pdfPage": 26,
-        "printedPage": null,
+        "printedPage": 20,
         "section": "성공적인 직업 생활 > 경력 관리와 평생 학습",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -1486,7 +1486,7 @@
         "attachmentNo": "10004130",
         "code": "[성직 06-03]",
         "pdfPage": 26,
-        "printedPage": null,
+        "printedPage": 20,
         "section": "성공적인 직업 생활 > 경력 관리와 평생 학습",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -1528,7 +1528,7 @@
         "attachmentNo": "10004130",
         "code": "[인산 01-01]",
         "pdfPage": 33,
-        "printedPage": null,
+        "printedPage": 27,
         "section": "노동 인권과 산업 안전 보건 > 노동과 인간의 존엄",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -1570,7 +1570,7 @@
         "attachmentNo": "10004130",
         "code": "[인산 01-02]",
         "pdfPage": 33,
-        "printedPage": null,
+        "printedPage": 27,
         "section": "노동 인권과 산업 안전 보건 > 노동과 인간의 존엄",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -1612,7 +1612,7 @@
         "attachmentNo": "10004130",
         "code": "[인산 01-03]",
         "pdfPage": 33,
-        "printedPage": null,
+        "printedPage": 27,
         "section": "노동 인권과 산업 안전 보건 > 노동과 인간의 존엄",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -1654,7 +1654,7 @@
         "attachmentNo": "10004130",
         "code": "[인산 02-01]",
         "pdfPage": 34,
-        "printedPage": null,
+        "printedPage": 28,
         "section": "노동 인권과 산업 안전 보건 > 노동 인권의 보장",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -1696,7 +1696,7 @@
         "attachmentNo": "10004130",
         "code": "[인산 02-02]",
         "pdfPage": 34,
-        "printedPage": null,
+        "printedPage": 28,
         "section": "노동 인권과 산업 안전 보건 > 노동 인권의 보장",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -1738,7 +1738,7 @@
         "attachmentNo": "10004130",
         "code": "[인산 02-03]",
         "pdfPage": 34,
-        "printedPage": null,
+        "printedPage": 28,
         "section": "노동 인권과 산업 안전 보건 > 노동 인권의 보장",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -1780,7 +1780,7 @@
         "attachmentNo": "10004130",
         "code": "[인산 03-01]",
         "pdfPage": 35,
-        "printedPage": null,
+        "printedPage": 29,
         "section": "노동 인권과 산업 안전 보건 > 다양한 노동과 노동 인권",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -1822,7 +1822,7 @@
         "attachmentNo": "10004130",
         "code": "[인산 03-02]",
         "pdfPage": 35,
-        "printedPage": null,
+        "printedPage": 29,
         "section": "노동 인권과 산업 안전 보건 > 다양한 노동과 노동 인권",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -1864,7 +1864,7 @@
         "attachmentNo": "10004130",
         "code": "[인산 03-03]",
         "pdfPage": 35,
-        "printedPage": null,
+        "printedPage": 29,
         "section": "노동 인권과 산업 안전 보건 > 다양한 노동과 노동 인권",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -1906,7 +1906,7 @@
         "attachmentNo": "10004130",
         "code": "[인산 04-01]",
         "pdfPage": 35,
-        "printedPage": null,
+        "printedPage": 29,
         "section": "노동 인권과 산업 안전 보건 > 산업 안전 일반",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -1948,7 +1948,7 @@
         "attachmentNo": "10004130",
         "code": "[인산 04-02]",
         "pdfPage": 35,
-        "printedPage": null,
+        "printedPage": 29,
         "section": "노동 인권과 산업 안전 보건 > 산업 안전 일반",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -1990,7 +1990,7 @@
         "attachmentNo": "10004130",
         "code": "[인산 04-03]",
         "pdfPage": 35,
-        "printedPage": null,
+        "printedPage": 29,
         "section": "노동 인권과 산업 안전 보건 > 산업 안전 일반",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -2032,7 +2032,7 @@
         "attachmentNo": "10004130",
         "code": "[인산 05-01]",
         "pdfPage": 36,
-        "printedPage": null,
+        "printedPage": 30,
         "section": "노동 인권과 산업 안전 보건 > 사고 예방의 이해",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -2074,7 +2074,7 @@
         "attachmentNo": "10004130",
         "code": "[인산 05-02]",
         "pdfPage": 36,
-        "printedPage": null,
+        "printedPage": 30,
         "section": "노동 인권과 산업 안전 보건 > 사고 예방의 이해",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -2116,7 +2116,7 @@
         "attachmentNo": "10004130",
         "code": "[인산 05-03]",
         "pdfPage": 36,
-        "printedPage": null,
+        "printedPage": 30,
         "section": "노동 인권과 산업 안전 보건 > 사고 예방의 이해",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -2158,7 +2158,7 @@
         "attachmentNo": "10004130",
         "code": "[인산 06-01]",
         "pdfPage": 36,
-        "printedPage": null,
+        "printedPage": 30,
         "section": "노동 인권과 산업 안전 보건 > 안전한 작업 방법",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -2200,7 +2200,7 @@
         "attachmentNo": "10004130",
         "code": "[인산 06-02]",
         "pdfPage": 36,
-        "printedPage": null,
+        "printedPage": 30,
         "section": "노동 인권과 산업 안전 보건 > 안전한 작업 방법",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -2242,7 +2242,7 @@
         "attachmentNo": "10004130",
         "code": "[인산 06-03]",
         "pdfPage": 36,
-        "printedPage": null,
+        "printedPage": 30,
         "section": "노동 인권과 산업 안전 보건 > 안전한 작업 방법",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -2284,7 +2284,7 @@
         "attachmentNo": "10004130",
         "code": "[인산 07-01]",
         "pdfPage": 37,
-        "printedPage": null,
+        "printedPage": 31,
         "section": "노동 인권과 산업 안전 보건 > 노동 인권 실천과 사회 참여",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -2326,7 +2326,7 @@
         "attachmentNo": "10004130",
         "code": "[인산 07-02]",
         "pdfPage": 37,
-        "printedPage": null,
+        "printedPage": 31,
         "section": "노동 인권과 산업 안전 보건 > 노동 인권 실천과 사회 참여",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
@@ -2368,7 +2368,7 @@
         "attachmentNo": "10004130",
         "code": "[인산 07-03]",
         "pdfPage": 37,
-        "printedPage": null,
+        "printedPage": 31,
         "section": "노동 인권과 산업 안전 보건 > 노동 인권 실천과 사회 참여",
         "sha256": "1d05f9f703587e48a4f760c2a8425e022433e66d620b0c7f8a2f0fdaade3ebbd",
         "sourceId": "kr-nec-2024-3-annex23"
