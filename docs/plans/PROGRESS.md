@@ -36,8 +36,8 @@
 
 | R7 | R7-L1~2 중학교 생활 외국어 8과목 오버레이(402주제) | 중등 | 완료 | 통과(오케스트레이터: 61 테스트·SHACL·SPARQL 두 모드·결정성) | 중학교 24파일 = 2,160/2,160(100%) |
 
-| R8 | R8-E 초등: topicRole·facet 축약, evidence 20자, 실과 type 정합, 영어 anchor, 즐 5건 종결, alignmentKind | 초등 | 실행 중(Opus) | verify:formal + ID 불변 | 계약 8·9절 |
-| R8 | R8-M 중등: topicRole·facet 축약, evidence 20자, core alignmentKind=assesses | 중등 | 실행 중(Opus) | verify + full SPARQL + ID 불변 | 계약 8·9절 |
+| R8 | R8-E 초등: topicRole·facet 축약, evidence 20자, 실과 type 정합, 영어 anchor, 즐 5건 종결, alignmentKind | 초등 | 완료(0dc6f72) | 111 테스트·CQ 19·SHACL·결정성·official ID 불변 | 규칙 22건→auxiliary 24, anchor 620(concept 580·communication 40), 후보 1,877 |
+| R8 | R8-M 중등: topicRole·facet 축약, evidence 20자, core alignmentKind=assesses | 중등 | 완료(5d35ed8) | 72 테스트·SPARQL 22 두 모드·SHACL·결정성·ID 불변 | 규칙 17건→auxiliary 21, anchor 714, 초등 sha 재핀 |
 
 ## 로그
 
@@ -104,3 +104,5 @@
 - 2026-09-07 함정 추가: **Write 도구로 대용량 파일을 비우면 ~/.claude/file-history에 원본 백업(수백 MB)이 생겨 시스템 볼륨을 채움** — ENOSPC 복구 시 Write 트릭 금지, 작은 파일만. 시스템 볼륨(494GB 컨테이너)은 여유 2~5GB 수준이라 임시 산출물·백업은 /Volumes/data(2TB)에 두고, 세션 스크래치는 주기적으로 정리. mo clean은 대화형이라 자동화 불가(dry-run만).
 - 2026-09-07 02:10 소유자 지시: IRI 호스팅·외부 교사 검토 제외한 후속 전부 → 계약 8절(topicRole/collapse)·9절(소규모 정합) 작성, R8-E/R8-M 발주. 크론 하트비트 재등록(b8377099). 초등 워킹트리에 다른 세션이 넣은 미커밋 변경 3건(테스트 픽스처를 .test-fixtures로) 발견 → 유지·검증 후 함께 커밋.
 - 2026-09-07 08:50 R8-M 완료 보고: 축약 규칙 17건→auxiliary 21, 자동 후보 0(최대 자카드 0.25), alignmentKind assesses 714, ID 불변, 72 테스트·full SPARQL·SHACL·결정성 통과. k12-core 동기 해시 dba64373. 초등 topics sha 재핀은 R8-E 종료 후.
+- 2026-09-07 09:30 R8 완료·푸시(초등 0dc6f72, 중등 5d35ed8). k12-core 동기 해시 dba64373, 두 저장소 바이트 동일. 자동 축약 후보 0건(형제 facet 자카드 최대 0.32) — 임계 0.6은 회귀 감시용으로 유지. 남은 후속: 온톨로지 IRI 호스팅(dexa.art), 외부 교사 표본 검토(소유자 보류).
+- 2026-09-07 함정: 병렬 Bash 두 개를 같은 응답에서 띄우면 앞 명령의 `cd`가 뒤 명령 cwd에 새어 들어감 → 중등에서 잘못된 커밋이 먼저 생겨 amend + force-with-lease로 정정. **저장소 두 개를 오갈 땐 모든 Bash 호출 첫 줄에 절대경로 cd.** 초등 테스트 픽스처(.test-fixtures) 누적 1.1GB가 시스템 볼륨 압박의 또 다른 원인이었고 성공 시 삭제 로직 추가로 해소.
