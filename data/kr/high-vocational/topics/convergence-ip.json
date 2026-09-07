@@ -33,6 +33,7 @@
           "standardId": "kr.standard.2022.high.bd1ebb3e0b5903134646"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -68,6 +69,7 @@
           "standardId": "kr.standard.2022.high.ec5755e01063e15e45f1"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -103,6 +105,7 @@
           "standardId": "kr.standard.2022.high.f908458536f9fd830ebf"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -138,6 +141,7 @@
           "standardId": "kr.standard.2022.high.e6295f65905da4bb6536"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -173,6 +177,7 @@
           "standardId": "kr.standard.2022.high.141b9f856736351fc98c"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -208,6 +213,7 @@
           "standardId": "kr.standard.2022.high.f0287146dffb8dc3d7dd"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -243,6 +249,7 @@
           "standardId": "kr.standard.2022.high.85d0e88157b234a0d3cb"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -278,6 +285,7 @@
           "standardId": "kr.standard.2022.high.b59bf71dcf81cf69ab33"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -313,6 +321,7 @@
           "standardId": "kr.standard.2022.high.d14d609811a3391cb051"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -348,6 +357,7 @@
           "standardId": "kr.standard.2022.high.213f49d5abb7d7f5a626"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "representational"
       ],
@@ -383,6 +393,7 @@
           "standardId": "kr.standard.2022.high.353bd3ab2efa6399d5ee"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -418,6 +429,7 @@
           "standardId": "kr.standard.2022.high.83f96e59cb1824acdd7a"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -453,6 +465,7 @@
           "standardId": "kr.standard.2022.high.5dfa5774addb7d658486"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -488,6 +501,7 @@
           "standardId": "kr.standard.2022.high.5cb5046f4c0ab19967f2"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -523,6 +537,7 @@
           "standardId": "kr.standard.2022.high.bd86c70089ee45e89f57"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -558,6 +573,7 @@
           "standardId": "kr.standard.2022.high.e997bdeaf1e78383441a"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -593,6 +609,7 @@
           "standardId": "kr.standard.2022.high.60802fe45e0510a631ed"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -628,6 +645,7 @@
           "standardId": "kr.standard.2022.high.8ca4ee18477fb0b3566b"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -663,6 +681,7 @@
           "standardId": "kr.standard.2022.high.8c6d8e310b71ada56bd2"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -698,6 +717,7 @@
           "standardId": "kr.standard.2022.high.43deeccc9558e14c2a7d"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -733,6 +753,7 @@
           "standardId": "kr.standard.2022.high.11146ca48da2e230be74"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -768,6 +789,7 @@
           "standardId": "kr.standard.2022.high.fc46085dd1f12c05bb54"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -803,6 +825,7 @@
           "standardId": "kr.standard.2022.high.f5b56973e644529456df"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -838,6 +861,7 @@
           "standardId": "kr.standard.2022.high.a9c2425577bfc483c027"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "meta"
       ],
@@ -873,6 +897,7 @@
           "standardId": "kr.standard.2022.high.efb138559d77f2711eee"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -908,6 +933,7 @@
           "standardId": "kr.standard.2022.high.d2d9b2557ff0680909a8"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -943,6 +969,7 @@
           "standardId": "kr.standard.2022.high.98c9f93b92600b714ecc"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "meta"
       ],
@@ -978,6 +1005,7 @@
           "standardId": "kr.standard.2022.high.b82757b1b28842b62523"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -1013,6 +1041,7 @@
           "standardId": "kr.standard.2022.high.61354d31ddfa2c1cfbe1"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -1048,6 +1077,7 @@
           "standardId": "kr.standard.2022.high.1ceb2f36c0340ab09509"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -1083,6 +1113,7 @@
           "standardId": "kr.standard.2022.high.3bf8e4ccc87a101efedf"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -1118,6 +1149,7 @@
           "standardId": "kr.standard.2022.high.ef2e0cd2d2be1aaabd2b"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -1153,6 +1185,7 @@
           "standardId": "kr.standard.2022.high.0cd1546ac8f51413ec1d"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -1188,6 +1221,7 @@
           "standardId": "kr.standard.2022.high.2921bd71043b62c68429"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -1223,6 +1257,7 @@
           "standardId": "kr.standard.2022.high.342a9f6d33bade2c48a8"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -1258,6 +1293,7 @@
           "standardId": "kr.standard.2022.high.bec9c6a34f774d285796"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -1293,6 +1329,7 @@
           "standardId": "kr.standard.2022.high.8609b0e54c1d831069b1"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -1328,6 +1365,7 @@
           "standardId": "kr.standard.2022.high.6b3107fdaea3525cf0f2"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -1363,6 +1401,7 @@
           "standardId": "kr.standard.2022.high.839ad4b1c4009b3d88e6"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -1398,6 +1437,7 @@
           "standardId": "kr.standard.2022.high.7b8600ab1d935414dad0"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -1433,6 +1473,7 @@
           "standardId": "kr.standard.2022.high.98488bfcc004f735696b"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -1468,6 +1509,7 @@
           "standardId": "kr.standard.2022.high.4df153058ff1af7c881f"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -1503,6 +1545,7 @@
           "standardId": "kr.standard.2022.high.9f368bc26de084cdb642"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -1538,6 +1581,7 @@
           "standardId": "kr.standard.2022.high.30a60a8412ade46cf49b"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -1573,6 +1617,7 @@
           "standardId": "kr.standard.2022.high.73f7473f4a569d21300f"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -1608,6 +1653,7 @@
           "standardId": "kr.standard.2022.high.21da52f69e56d4091037"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -1643,6 +1689,7 @@
           "standardId": "kr.standard.2022.high.0ed869f12e79ab3a8b3d"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "representational"
       ],
@@ -1678,6 +1725,7 @@
           "standardId": "kr.standard.2022.high.4e8e01d28fa42dee0b83"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -1713,6 +1761,7 @@
           "standardId": "kr.standard.2022.high.696b691b243bdc695702"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -1748,6 +1797,7 @@
           "standardId": "kr.standard.2022.high.8091aaf25538498efe4a"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -1783,6 +1833,7 @@
           "standardId": "kr.standard.2022.high.5da08dd0d32ef07a5996"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -1818,6 +1869,7 @@
           "standardId": "kr.standard.2022.high.4019d3fb6c85a55ad80d"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -1853,6 +1905,7 @@
           "standardId": "kr.standard.2022.high.9c99f96f89418c302bbf"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -1888,6 +1941,7 @@
           "standardId": "kr.standard.2022.high.17c128570d90668f3ee9"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -1923,6 +1977,7 @@
           "standardId": "kr.standard.2022.high.f844ab5dae9c2f28080d"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -1958,6 +2013,7 @@
           "standardId": "kr.standard.2022.high.86fc39d139171c69013b"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -1993,6 +2049,7 @@
           "standardId": "kr.standard.2022.high.d52d611f82f93931915b"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -2028,6 +2085,7 @@
           "standardId": "kr.standard.2022.high.c4b6ce09f6b116461c62"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -2063,6 +2121,7 @@
           "standardId": "kr.standard.2022.high.084afcf38d5d59a0dc42"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -2098,6 +2157,7 @@
           "standardId": "kr.standard.2022.high.ac6b3292cf05d1c8ea4c"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "meta"
       ],
@@ -2133,6 +2193,7 @@
           "standardId": "kr.standard.2022.high.52716155790b303e72f2"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -2168,6 +2229,7 @@
           "standardId": "kr.standard.2022.high.1dbe05677da93cab286e"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -2203,6 +2265,7 @@
           "standardId": "kr.standard.2022.high.1824bb514947b52c9230"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -2238,6 +2301,7 @@
           "standardId": "kr.standard.2022.high.6dc3e66986ac2311086c"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -2273,6 +2337,7 @@
           "standardId": "kr.standard.2022.high.a9105ce8f06f48c6d50a"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -2308,6 +2373,7 @@
           "standardId": "kr.standard.2022.high.00582c7e5ba159752feb"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -2343,6 +2409,7 @@
           "standardId": "kr.standard.2022.high.745fc33a3d8d2abd8eb4"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -2378,6 +2445,7 @@
           "standardId": "kr.standard.2022.high.4f0a09b9b40a9e0e5ac0"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -2413,6 +2481,7 @@
           "standardId": "kr.standard.2022.high.966abfc22224cb12faf8"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -2448,6 +2517,7 @@
           "standardId": "kr.standard.2022.high.03c542807e78c0ffb650"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -2483,6 +2553,7 @@
           "standardId": "kr.standard.2022.high.e9ae3299cbad61209066"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -2518,6 +2589,7 @@
           "standardId": "kr.standard.2022.high.1856ff4dfc69a5c66159"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -2553,6 +2625,7 @@
           "standardId": "kr.standard.2022.high.36ff9b02d3957d23810a"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -2588,6 +2661,7 @@
           "standardId": "kr.standard.2022.high.931dde2e885fcaf21362"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -2623,6 +2697,7 @@
           "standardId": "kr.standard.2022.high.17d4a81cae70e34a2063"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -2658,6 +2733,7 @@
           "standardId": "kr.standard.2022.high.2288a23ebbe5e3857c86"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -2693,6 +2769,7 @@
           "standardId": "kr.standard.2022.high.71339fe5518422226bbd"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -2728,6 +2805,7 @@
           "standardId": "kr.standard.2022.high.f166febd5471d9c9cc0c"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -2763,6 +2841,7 @@
           "standardId": "kr.standard.2022.high.2bfe0cf00b2ce53b94a4"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -2798,6 +2877,7 @@
           "standardId": "kr.standard.2022.high.9176478be57aafc66492"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -2833,6 +2913,7 @@
           "standardId": "kr.standard.2022.high.8365697328c3975a1c5e"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -2868,6 +2949,7 @@
           "standardId": "kr.standard.2022.high.fea66e72f79c46aa56d4"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -2903,6 +2985,7 @@
           "standardId": "kr.standard.2022.high.1c0ec6cfd4532ce59bc7"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -2938,6 +3021,7 @@
           "standardId": "kr.standard.2022.high.66e468fe8e07131f3af6"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -2973,6 +3057,7 @@
           "standardId": "kr.standard.2022.high.37ff4f70ce580e164b0f"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "representational"
       ],
@@ -3008,6 +3093,7 @@
           "standardId": "kr.standard.2022.high.be7441fc587f1df73365"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "meta"
       ],
@@ -3043,6 +3129,7 @@
           "standardId": "kr.standard.2022.high.5b0911da4450a2419ea6"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -3078,6 +3165,7 @@
           "standardId": "kr.standard.2022.high.7685a961b3f724c82036"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -3113,6 +3201,7 @@
           "standardId": "kr.standard.2022.high.270e7b30c72c0dbd9f22"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -3148,6 +3237,7 @@
           "standardId": "kr.standard.2022.high.f34ed4458d603cc107d9"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -3183,6 +3273,7 @@
           "standardId": "kr.standard.2022.high.d50c78e6dedffd75ad57"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -3218,6 +3309,7 @@
           "standardId": "kr.standard.2022.high.8ccff157fb88743b5362"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -3253,6 +3345,7 @@
           "standardId": "kr.standard.2022.high.e56e3c3274d050426879"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "meta"
       ],
@@ -3288,6 +3381,7 @@
           "standardId": "kr.standard.2022.high.e8f009b37383071df71f"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -3323,6 +3417,7 @@
           "standardId": "kr.standard.2022.high.caccebe4546f6030417b"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -3358,6 +3453,7 @@
           "standardId": "kr.standard.2022.high.d5952b64a807d9704c3f"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -3393,6 +3489,7 @@
           "standardId": "kr.standard.2022.high.50e9a7afa918423950cf"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -3428,6 +3525,7 @@
           "standardId": "kr.standard.2022.high.3ea735cf26cf8b112118"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -3463,6 +3561,7 @@
           "standardId": "kr.standard.2022.high.8ec0c7e4b81e06cdcd7f"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -3498,6 +3597,7 @@
           "standardId": "kr.standard.2022.high.62d40a34b211f6827b6e"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -3533,6 +3633,7 @@
           "standardId": "kr.standard.2022.high.0bfe58e5f44492be2dd9"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -3568,6 +3669,7 @@
           "standardId": "kr.standard.2022.high.2a281d8eed393936b059"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -3603,6 +3705,7 @@
           "standardId": "kr.standard.2022.high.75b776b7e3e01ea449bd"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -3638,6 +3741,7 @@
           "standardId": "kr.standard.2022.high.dcb5232c2abf8eb9cd1d"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -3673,6 +3777,7 @@
           "standardId": "kr.standard.2022.high.8df2838d210c3172b460"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -3708,6 +3813,7 @@
           "standardId": "kr.standard.2022.high.15ec0a5f56e57babcc1a"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -3743,6 +3849,7 @@
           "standardId": "kr.standard.2022.high.a01c37d49e466b3addb7"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "meta"
       ],
@@ -3778,6 +3885,7 @@
           "standardId": "kr.standard.2022.high.860f63c881630e5424c0"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -3813,6 +3921,7 @@
           "standardId": "kr.standard.2022.high.06d75df71f4590cc6584"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -3848,6 +3957,7 @@
           "standardId": "kr.standard.2022.high.9eb505a987b7ef6a5a6b"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -3883,6 +3993,7 @@
           "standardId": "kr.standard.2022.high.356533abf7970e0f5887"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -3918,6 +4029,7 @@
           "standardId": "kr.standard.2022.high.047a80b03d28972a6cdb"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -3953,6 +4065,7 @@
           "standardId": "kr.standard.2022.high.32680c873fb47068d32e"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -3988,6 +4101,7 @@
           "standardId": "kr.standard.2022.high.25beb0d88d8ad4b0a848"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -4023,6 +4137,7 @@
           "standardId": "kr.standard.2022.high.b6cf9719044b8f2db70d"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -4058,6 +4173,7 @@
           "standardId": "kr.standard.2022.high.d864c345f3332254ef24"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -4093,6 +4209,7 @@
           "standardId": "kr.standard.2022.high.b8e9a02354446375cf7a"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -4128,6 +4245,7 @@
           "standardId": "kr.standard.2022.high.f63b2acb740d6187cd9c"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -4163,6 +4281,7 @@
           "standardId": "kr.standard.2022.high.498660253c6156c02898"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -4198,6 +4317,7 @@
           "standardId": "kr.standard.2022.high.1ab44613d567f8ae9556"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -4233,6 +4353,7 @@
           "standardId": "kr.standard.2022.high.726800e7dd8e6045822b"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -4268,6 +4389,7 @@
           "standardId": "kr.standard.2022.high.c0b95104b5d481734f90"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -4303,6 +4425,7 @@
           "standardId": "kr.standard.2022.high.78c8fcfecea235abfa48"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -4338,6 +4461,7 @@
           "standardId": "kr.standard.2022.high.5a6badda07d056562709"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -4373,6 +4497,7 @@
           "standardId": "kr.standard.2022.high.841ddf3f26f68800f47e"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -4408,6 +4533,7 @@
           "standardId": "kr.standard.2022.high.04cf98e55e54e3de0acf"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -4443,6 +4569,7 @@
           "standardId": "kr.standard.2022.high.6de2110baa91a8eb36bb"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -4478,6 +4605,7 @@
           "standardId": "kr.standard.2022.high.855b85ddc681ddff6d57"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -4513,6 +4641,7 @@
           "standardId": "kr.standard.2022.high.4381bcca4fb0930c5d70"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -4548,6 +4677,7 @@
           "standardId": "kr.standard.2022.high.ca0f73a3473ee2ed64a0"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "meta"
       ],
@@ -4583,6 +4713,7 @@
           "standardId": "kr.standard.2022.high.c892e0d5946ce8964374"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -4618,6 +4749,7 @@
           "standardId": "kr.standard.2022.high.51706b22226d968ad49c"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -4653,6 +4785,7 @@
           "standardId": "kr.standard.2022.high.9f0a9aa86a5b30da0321"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -4688,6 +4821,7 @@
           "standardId": "kr.standard.2022.high.59882299108157e1a91e"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -4723,6 +4857,7 @@
           "standardId": "kr.standard.2022.high.e89fa499eb90a434e38b"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "meta"
       ],
@@ -4758,6 +4893,7 @@
           "standardId": "kr.standard.2022.high.050ffecfc9a7f5a3cd98"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -4793,6 +4929,7 @@
           "standardId": "kr.standard.2022.high.91d5d11dde44f6596262"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -4828,6 +4965,7 @@
           "standardId": "kr.standard.2022.high.d6adafda2812beb8cf90"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -4863,6 +5001,7 @@
           "standardId": "kr.standard.2022.high.9884e55cc6ad3623f125"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -4898,6 +5037,7 @@
           "standardId": "kr.standard.2022.high.dfa5a05b9b53b25a67f2"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -4933,6 +5073,7 @@
           "standardId": "kr.standard.2022.high.439e95ab73c5eea81ad0"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -4968,6 +5109,7 @@
           "standardId": "kr.standard.2022.high.7778cdf7871815125431"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -5003,6 +5145,7 @@
           "standardId": "kr.standard.2022.high.69864271287fd45e30fa"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "representational"
       ],
@@ -5038,6 +5181,7 @@
           "standardId": "kr.standard.2022.high.589b5bb4dffb3bda2b4d"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -5073,6 +5217,7 @@
           "standardId": "kr.standard.2022.high.69619a4e3f2404dadd2a"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -5108,6 +5253,7 @@
           "standardId": "kr.standard.2022.high.81b364fba39a1ef46f66"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -5143,6 +5289,7 @@
           "standardId": "kr.standard.2022.high.0f95b380267407e94a86"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -5178,6 +5325,7 @@
           "standardId": "kr.standard.2022.high.8c32db8b7b7338c531b8"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "meta"
       ],
@@ -5213,6 +5361,7 @@
           "standardId": "kr.standard.2022.high.40813fb5b7cf646e820c"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -5248,6 +5397,7 @@
           "standardId": "kr.standard.2022.high.6864c5f16f7ca25d0d5e"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -5283,6 +5433,7 @@
           "standardId": "kr.standard.2022.high.b6ae9de099f8aa8cdfc4"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -5318,6 +5469,7 @@
           "standardId": "kr.standard.2022.high.76f1ef1eda50be1ec6d3"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "representational"
       ],
@@ -5353,6 +5505,7 @@
           "standardId": "kr.standard.2022.high.eabdc77a5b3c1631397d"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -5388,6 +5541,7 @@
           "standardId": "kr.standard.2022.high.705cb2567f52b6c61262"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "meta"
       ],
@@ -5423,6 +5577,7 @@
           "standardId": "kr.standard.2022.high.a14b3c2f87f1d346ba72"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -5458,6 +5613,7 @@
           "standardId": "kr.standard.2022.high.917b69f436bc6395aa7e"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "meta"
       ],
@@ -5493,6 +5649,7 @@
           "standardId": "kr.standard.2022.high.edcc09e5faad92a2b9a9"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -5528,6 +5685,7 @@
           "standardId": "kr.standard.2022.high.3d52349e8c18c98aabba"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -5563,6 +5721,7 @@
           "standardId": "kr.standard.2022.high.def578b7b95d264a5b8a"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -5598,6 +5757,7 @@
           "standardId": "kr.standard.2022.high.a683c0059672e4dd712a"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "representational"
       ],
@@ -5633,6 +5793,7 @@
           "standardId": "kr.standard.2022.high.62f35b26e63b74606492"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -5668,6 +5829,7 @@
           "standardId": "kr.standard.2022.high.ca939cda217d80cccc6d"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -5703,6 +5865,7 @@
           "standardId": "kr.standard.2022.high.7b93a9d3d2b7030205bb"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -5738,6 +5901,7 @@
           "standardId": "kr.standard.2022.high.3ba4a65bbe20271c0b6b"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "meta"
       ],
@@ -5773,6 +5937,7 @@
           "standardId": "kr.standard.2022.high.dfeb667feb78125853ef"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -5808,6 +5973,7 @@
           "standardId": "kr.standard.2022.high.0267d196945e9cdd38e3"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -5843,6 +6009,7 @@
           "standardId": "kr.standard.2022.high.a4d67b013be36334f6f6"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -5878,6 +6045,7 @@
           "standardId": "kr.standard.2022.high.536756befe67318ac2cb"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -5913,6 +6081,7 @@
           "standardId": "kr.standard.2022.high.7702b296c6d2af703d03"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -5948,6 +6117,7 @@
           "standardId": "kr.standard.2022.high.faa384854f16bb940b5d"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -5983,6 +6153,7 @@
           "standardId": "kr.standard.2022.high.00475ddd7114825fd87f"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -6018,6 +6189,7 @@
           "standardId": "kr.standard.2022.high.2da0b6638f10de970dac"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -6053,6 +6225,7 @@
           "standardId": "kr.standard.2022.high.496a6415c1c90b176c95"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -6088,6 +6261,7 @@
           "standardId": "kr.standard.2022.high.44142c5d78805f5b477d"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -6123,6 +6297,7 @@
           "standardId": "kr.standard.2022.high.4b9221bccc987d85caaa"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -6158,6 +6333,7 @@
           "standardId": "kr.standard.2022.high.72f9265f88bba31f7c1e"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -6193,6 +6369,7 @@
           "standardId": "kr.standard.2022.high.7ec7aa47af658db530fc"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -6228,6 +6405,7 @@
           "standardId": "kr.standard.2022.high.d8429844a659999c715e"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -6263,6 +6441,7 @@
           "standardId": "kr.standard.2022.high.4ff61599e045e379a38e"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -6298,6 +6477,7 @@
           "standardId": "kr.standard.2022.high.c1af5b6dd94314b4f417"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -6333,6 +6513,7 @@
           "standardId": "kr.standard.2022.high.539dfba6415300acd732"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -6368,6 +6549,7 @@
           "standardId": "kr.standard.2022.high.11039637d9683bd8e4c9"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -6403,6 +6585,7 @@
           "standardId": "kr.standard.2022.high.1b923bde3e3e5d8ab4d9"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "representational"
       ],
@@ -6438,6 +6621,7 @@
           "standardId": "kr.standard.2022.high.20f232c224b1566aea43"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "representational"
       ],
@@ -6473,6 +6657,7 @@
           "standardId": "kr.standard.2022.high.d1f9886da2ef4924eef2"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -6508,6 +6693,7 @@
           "standardId": "kr.standard.2022.high.a99561a0963208d4aca9"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -6543,6 +6729,7 @@
           "standardId": "kr.standard.2022.high.1b72edd441bfcc92e3cc"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -6578,6 +6765,7 @@
           "standardId": "kr.standard.2022.high.89da4a161126006c483a"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -6613,6 +6801,7 @@
           "standardId": "kr.standard.2022.high.a5497a32ef8bd011762a"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -6648,6 +6837,7 @@
           "standardId": "kr.standard.2022.high.0be22acaa59e9fb2f2c2"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -6683,6 +6873,7 @@
           "standardId": "kr.standard.2022.high.3ee4ae2c07f50743e9bd"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -6718,6 +6909,7 @@
           "standardId": "kr.standard.2022.high.206b12ed47374685c820"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -6753,6 +6945,7 @@
           "standardId": "kr.standard.2022.high.730ead04cf8fd7525b4c"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -6788,6 +6981,7 @@
           "standardId": "kr.standard.2022.high.8dafa0235bd78eac5d5e"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -6823,6 +7017,7 @@
           "standardId": "kr.standard.2022.high.21a4c5937b44e6d86dc1"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -6858,6 +7053,7 @@
           "standardId": "kr.standard.2022.high.a0aafe54de95f800eb00"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "meta"
       ],
@@ -6893,6 +7089,7 @@
           "standardId": "kr.standard.2022.high.0b64f6e7af6a6794b529"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -6928,6 +7125,7 @@
           "standardId": "kr.standard.2022.high.87494b5d3cd1fa67aeb7"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "representational"
       ],
@@ -6963,6 +7161,7 @@
           "standardId": "kr.standard.2022.high.9ff71267d6dda64e4713"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -6998,6 +7197,7 @@
           "standardId": "kr.standard.2022.high.2779aa208be9bb340bba"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "meta"
       ],
@@ -7033,6 +7233,7 @@
           "standardId": "kr.standard.2022.high.89fdedd684cbf328341c"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -7068,6 +7269,7 @@
           "standardId": "kr.standard.2022.high.2f704d8c4be6866ff58b"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "meta"
       ],
@@ -7103,6 +7305,7 @@
           "standardId": "kr.standard.2022.high.1820651627c6aca4c653"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -7138,6 +7341,7 @@
           "standardId": "kr.standard.2022.high.bf12c50ce612c2f526bb"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -7173,6 +7377,7 @@
           "standardId": "kr.standard.2022.high.16370f69a8463fbb2933"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -7208,6 +7413,7 @@
           "standardId": "kr.standard.2022.high.35358cf71dcd80b97d0b"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -7243,6 +7449,7 @@
           "standardId": "kr.standard.2022.high.a25269b5f4b7d9167337"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -7278,6 +7485,7 @@
           "standardId": "kr.standard.2022.high.51649c37270db367e931"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -7313,6 +7521,7 @@
           "standardId": "kr.standard.2022.high.7c37c39a071f6f15c03d"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -7348,6 +7557,7 @@
           "standardId": "kr.standard.2022.high.65de7154958b7d3dbe48"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -7383,6 +7593,7 @@
           "standardId": "kr.standard.2022.high.8f0364c9d6ff65aa9355"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -7418,6 +7629,7 @@
           "standardId": "kr.standard.2022.high.385b43df669e6b204520"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "representational"
       ],
@@ -7453,6 +7665,7 @@
           "standardId": "kr.standard.2022.high.211cb1c09f1fc09d7f9c"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -7488,6 +7701,7 @@
           "standardId": "kr.standard.2022.high.2c18f9120825ce59f828"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -7523,6 +7737,7 @@
           "standardId": "kr.standard.2022.high.0b5b932a124c718586c0"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -7558,6 +7773,7 @@
           "standardId": "kr.standard.2022.high.5c5d571b92f3e3a6ada0"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -7593,6 +7809,7 @@
           "standardId": "kr.standard.2022.high.74d92bc63d6898bb9bf7"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -7628,6 +7845,7 @@
           "standardId": "kr.standard.2022.high.cb9ac34391e6edf2265f"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "meta"
       ],
@@ -7663,6 +7881,7 @@
           "standardId": "kr.standard.2022.high.2f7e310fa0cd4966a18a"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -7698,6 +7917,7 @@
           "standardId": "kr.standard.2022.high.0e01b6894af20b2a62d5"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -7733,6 +7953,7 @@
           "standardId": "kr.standard.2022.high.70aad09f709ad96a869e"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -7768,6 +7989,7 @@
           "standardId": "kr.standard.2022.high.ce0ac0ab39e08ab691d0"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -7803,6 +8025,7 @@
           "standardId": "kr.standard.2022.high.2d0b59b5cc26e50441d4"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -7838,6 +8061,7 @@
           "standardId": "kr.standard.2022.high.bda6b8c9bd5cde8cb374"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -7873,6 +8097,7 @@
           "standardId": "kr.standard.2022.high.9c6f3c742b0875ef43d2"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -7908,6 +8133,7 @@
           "standardId": "kr.standard.2022.high.5875b2abcf59fc32a87b"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -7943,6 +8169,7 @@
           "standardId": "kr.standard.2022.high.373101b5fdeea5be3c7c"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -7978,6 +8205,7 @@
           "standardId": "kr.standard.2022.high.90e494235511c9ec43c5"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -8013,6 +8241,7 @@
           "standardId": "kr.standard.2022.high.88a87f2abd4ccc14fe2d"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -8048,6 +8277,7 @@
           "standardId": "kr.standard.2022.high.952c3152b0d83c94d8b2"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -8083,6 +8313,7 @@
           "standardId": "kr.standard.2022.high.1b5b7f57394fb31fe9b8"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -8118,6 +8349,7 @@
           "standardId": "kr.standard.2022.high.9b5dc7d70a1ece7e6e07"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -8153,6 +8385,7 @@
           "standardId": "kr.standard.2022.high.8ed46abfe34f8b358aca"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -8188,6 +8421,7 @@
           "standardId": "kr.standard.2022.high.92eebd28a5efc84255f7"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -8223,6 +8457,7 @@
           "standardId": "kr.standard.2022.high.9adec822edc7f8660615"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -8258,6 +8493,7 @@
           "standardId": "kr.standard.2022.high.cf51f8dea6eef7295490"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -8293,6 +8529,7 @@
           "standardId": "kr.standard.2022.high.1e0c09b4884423143063"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -8328,6 +8565,7 @@
           "standardId": "kr.standard.2022.high.42800296f5ba41d811b4"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -8363,6 +8601,7 @@
           "standardId": "kr.standard.2022.high.20f3023bbeae04e3342b"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -8398,6 +8637,7 @@
           "standardId": "kr.standard.2022.high.e4026e978116dbdd6bed"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -8433,6 +8673,7 @@
           "standardId": "kr.standard.2022.high.124676bb21645fd64fce"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "meta"
       ],
@@ -8468,6 +8709,7 @@
           "standardId": "kr.standard.2022.high.b6dfcc8b60c7764936d1"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -8503,6 +8745,7 @@
           "standardId": "kr.standard.2022.high.8cfa875a25abebcc7e1e"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -8538,6 +8781,7 @@
           "standardId": "kr.standard.2022.high.79e1cc33f9594a7db980"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -8573,6 +8817,7 @@
           "standardId": "kr.standard.2022.high.7dc7c2982dedeeb056b9"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -8608,6 +8853,7 @@
           "standardId": "kr.standard.2022.high.1ca5b3ad3b48d8abed59"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "meta"
       ],
@@ -8643,6 +8889,7 @@
           "standardId": "kr.standard.2022.high.c9ef45d287fc493711f0"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -8678,6 +8925,7 @@
           "standardId": "kr.standard.2022.high.a34ad3c390620105c247"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -8713,6 +8961,7 @@
           "standardId": "kr.standard.2022.high.893eda8d7808c3edf1d9"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -8748,6 +8997,7 @@
           "standardId": "kr.standard.2022.high.6264800608c1bb971a79"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -8783,6 +9033,7 @@
           "standardId": "kr.standard.2022.high.d8aec92d41c22c76dbfd"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -8818,6 +9069,7 @@
           "standardId": "kr.standard.2022.high.420ce8f62f71cf02a61e"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -8853,6 +9105,7 @@
           "standardId": "kr.standard.2022.high.1b1aea2880d10fe7c911"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -8888,6 +9141,7 @@
           "standardId": "kr.standard.2022.high.fe0d6f2d8423f7c5d50e"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -8923,6 +9177,7 @@
           "standardId": "kr.standard.2022.high.e6ee80862bc3f37ac12b"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -8958,6 +9213,7 @@
           "standardId": "kr.standard.2022.high.b8418f53eb686fdb3b88"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -8993,6 +9249,7 @@
           "standardId": "kr.standard.2022.high.6c35fae83835a4ec24e3"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -9028,6 +9285,7 @@
           "standardId": "kr.standard.2022.high.b2ed962e4374dc7fc555"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -9063,6 +9321,7 @@
           "standardId": "kr.standard.2022.high.a59158822d364aefb245"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -9098,6 +9357,7 @@
           "standardId": "kr.standard.2022.high.998f24fd0bd1e2b857a8"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -9133,6 +9393,7 @@
           "standardId": "kr.standard.2022.high.33b01f90e64bc9e48204"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "representational"
       ],
@@ -9168,6 +9429,7 @@
           "standardId": "kr.standard.2022.high.baf527d0f606f37e1a34"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -9203,6 +9465,7 @@
           "standardId": "kr.standard.2022.high.cfb9d9f15182ff040ff6"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -9238,6 +9501,7 @@
           "standardId": "kr.standard.2022.high.83529a6d932cbbfe5066"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -9273,6 +9537,7 @@
           "standardId": "kr.standard.2022.high.66cc174a072cf464acc7"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -9308,6 +9573,7 @@
           "standardId": "kr.standard.2022.high.6bc6cb641492724f1623"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -9343,6 +9609,7 @@
           "standardId": "kr.standard.2022.high.9e8e9f0dca5f988a6abd"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "meta"
       ],
@@ -9378,6 +9645,7 @@
           "standardId": "kr.standard.2022.high.e5eca24c3ff823bd93c6"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -9413,6 +9681,7 @@
           "standardId": "kr.standard.2022.high.375f3be83c83859daa2e"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -9448,6 +9717,7 @@
           "standardId": "kr.standard.2022.high.fb591382cd10d0fe1ae7"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -9483,6 +9753,7 @@
           "standardId": "kr.standard.2022.high.3b6ea3562433bfa0ea23"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -9518,6 +9789,7 @@
           "standardId": "kr.standard.2022.high.36a3d0bf7c2b283f97c7"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -9553,6 +9825,7 @@
           "standardId": "kr.standard.2022.high.a13ca2c40d3b39d9b685"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "representational"
       ],
@@ -9588,6 +9861,7 @@
           "standardId": "kr.standard.2022.high.d90df09b792668d6e8e6"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -9623,6 +9897,7 @@
           "standardId": "kr.standard.2022.high.263a8e64b9b817c8bff9"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -9658,6 +9933,7 @@
           "standardId": "kr.standard.2022.high.8cfb634fac5b46e1149a"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -9693,6 +9969,7 @@
           "standardId": "kr.standard.2022.high.e78b6d17be619ed75cf0"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -9728,6 +10005,7 @@
           "standardId": "kr.standard.2022.high.d6bd4e673c24f5c48793"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -9763,6 +10041,7 @@
           "standardId": "kr.standard.2022.high.10092405923f6dae2670"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -9798,6 +10077,7 @@
           "standardId": "kr.standard.2022.high.2e4f66b5274af2c5b290"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "meta"
       ],
@@ -9833,6 +10113,7 @@
           "standardId": "kr.standard.2022.high.dd49f0070876600af052"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -9868,6 +10149,7 @@
           "standardId": "kr.standard.2022.high.b41ede66bd12dc3ac3ea"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -9903,6 +10185,7 @@
           "standardId": "kr.standard.2022.high.57c674233ee0a7a21b5b"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "representational"
       ],
@@ -9938,6 +10221,7 @@
           "standardId": "kr.standard.2022.high.d12c43bd56f2343ffe93"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -9973,6 +10257,7 @@
           "standardId": "kr.standard.2022.high.57cd97d911149f06b687"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -10008,6 +10293,7 @@
           "standardId": "kr.standard.2022.high.cbd1c4b74e45c163deb4"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "meta"
       ],
@@ -10043,6 +10329,7 @@
           "standardId": "kr.standard.2022.high.00e69bb941ce71746740"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -10078,6 +10365,7 @@
           "standardId": "kr.standard.2022.high.1ded4812ff2e300f1013"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "meta"
       ],
@@ -10113,6 +10401,7 @@
           "standardId": "kr.standard.2022.high.65c609dcecf87101cbde"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -10148,6 +10437,7 @@
           "standardId": "kr.standard.2022.high.baf23e6b512f72b6c18f"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -10183,6 +10473,7 @@
           "standardId": "kr.standard.2022.high.193e0e3a22b8db0a82a2"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -10218,6 +10509,7 @@
           "standardId": "kr.standard.2022.high.62c4ae2cd6ec417092c2"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -10253,6 +10545,7 @@
           "standardId": "kr.standard.2022.high.620dc7091c43447b301d"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -10288,6 +10581,7 @@
           "standardId": "kr.standard.2022.high.bef757d70383c60b74ff"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -10323,6 +10617,7 @@
           "standardId": "kr.standard.2022.high.9c0c62e5d84bf12baf95"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -10358,6 +10653,7 @@
           "standardId": "kr.standard.2022.high.eb158681b9262a940e29"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -10393,6 +10689,7 @@
           "standardId": "kr.standard.2022.high.9e437824b780d4cd1cb5"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "representational"
       ],
@@ -10428,6 +10725,7 @@
           "standardId": "kr.standard.2022.high.20c022eb5b51236a408c"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -10463,6 +10761,7 @@
           "standardId": "kr.standard.2022.high.b55d6180bce1a413cdd9"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "representational"
       ],
@@ -10498,6 +10797,7 @@
           "standardId": "kr.standard.2022.high.5ad909f8e43ffbdc5831"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -10533,6 +10833,7 @@
           "standardId": "kr.standard.2022.high.d824687499b2f14dc7bf"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -10568,6 +10869,7 @@
           "standardId": "kr.standard.2022.high.8a4e80c814b037c407cf"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -10603,6 +10905,7 @@
           "standardId": "kr.standard.2022.high.243255495855e28bb914"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -10638,6 +10941,7 @@
           "standardId": "kr.standard.2022.high.eb54c4b7a6c48be145e2"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -10673,6 +10977,7 @@
           "standardId": "kr.standard.2022.high.00a83cf93b4b9f283d79"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -10708,6 +11013,7 @@
           "standardId": "kr.standard.2022.high.a04848deceb61ba4f4ee"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -10743,6 +11049,7 @@
           "standardId": "kr.standard.2022.high.78f7e37b35fdbc7046fd"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -10778,6 +11085,7 @@
           "standardId": "kr.standard.2022.high.cc5695b6f919e0f233b3"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -10813,6 +11121,7 @@
           "standardId": "kr.standard.2022.high.c670ac99910e520c6582"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -10848,6 +11157,7 @@
           "standardId": "kr.standard.2022.high.7c122b707d4360ae8800"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "meta"
       ],
@@ -10883,6 +11193,7 @@
           "standardId": "kr.standard.2022.high.e0998adc73750a97fa77"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -10918,6 +11229,7 @@
           "standardId": "kr.standard.2022.high.c704700e2fa4643d03b2"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -10953,6 +11265,7 @@
           "standardId": "kr.standard.2022.high.a655e97b1df7c723dfb4"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -10988,6 +11301,7 @@
           "standardId": "kr.standard.2022.high.9a59a06747cb310c4e8f"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -11023,6 +11337,7 @@
           "standardId": "kr.standard.2022.high.9d92635017a7d0d1f9ae"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -11058,6 +11373,7 @@
           "standardId": "kr.standard.2022.high.0ee4dba6992c22776ec9"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -11093,6 +11409,7 @@
           "standardId": "kr.standard.2022.high.a3890c6abcd017bacf41"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "meta"
       ],
@@ -11128,6 +11445,7 @@
           "standardId": "kr.standard.2022.high.dfc2f619bf7925309ef0"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "representational"
       ],
@@ -11163,6 +11481,7 @@
           "standardId": "kr.standard.2022.high.7dc9da13bd96af810d58"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -11198,6 +11517,7 @@
           "standardId": "kr.standard.2022.high.ae9e1bce3881d1f6205c"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -11233,6 +11553,7 @@
           "standardId": "kr.standard.2022.high.8aea391992c1197edbb0"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -11268,6 +11589,7 @@
           "standardId": "kr.standard.2022.high.15bae10e5743f5bf710b"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "meta"
       ],
@@ -11303,6 +11625,7 @@
           "standardId": "kr.standard.2022.high.34457d7b144b92da035e"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -11338,6 +11661,7 @@
           "standardId": "kr.standard.2022.high.a655265a85a7518e8604"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -11373,6 +11697,7 @@
           "standardId": "kr.standard.2022.high.90bee2de154322e454b1"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -11408,6 +11733,7 @@
           "standardId": "kr.standard.2022.high.c6ae7fbdd49bdea41343"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -11443,6 +11769,7 @@
           "standardId": "kr.standard.2022.high.ee3cca3f47edafa65574"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -11478,6 +11805,7 @@
           "standardId": "kr.standard.2022.high.50e451663fcc7ea39d85"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -11513,6 +11841,7 @@
           "standardId": "kr.standard.2022.high.8c4a61dfec691f67374c"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -11548,6 +11877,7 @@
           "standardId": "kr.standard.2022.high.03f5aa0f85eacfc39cd8"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -11583,6 +11913,7 @@
           "standardId": "kr.standard.2022.high.8e326e71f8b433104ec1"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -11618,6 +11949,7 @@
           "standardId": "kr.standard.2022.high.f032195f282c9b553522"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -11653,6 +11985,7 @@
           "standardId": "kr.standard.2022.high.9fd039ca6091d814947e"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -11688,6 +12021,7 @@
           "standardId": "kr.standard.2022.high.1457155a9f83b8f34a78"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "representational"
       ],
@@ -11723,6 +12057,7 @@
           "standardId": "kr.standard.2022.high.146b8ad60cb287900aa6"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -11758,6 +12093,7 @@
           "standardId": "kr.standard.2022.high.76e2a3296de6d83b5cf2"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -11793,6 +12129,7 @@
           "standardId": "kr.standard.2022.high.3ccde3fe77535fd31062"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -11828,6 +12165,7 @@
           "standardId": "kr.standard.2022.high.18c5b45dbc5d10ae203c"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -11863,6 +12201,7 @@
           "standardId": "kr.standard.2022.high.c42fe7f660d507f7e8a4"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "meta"
       ],
@@ -11898,6 +12237,7 @@
           "standardId": "kr.standard.2022.high.7adecc807c8cff47149d"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -11933,6 +12273,7 @@
           "standardId": "kr.standard.2022.high.06314b569731e35f1101"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -11968,6 +12309,7 @@
           "standardId": "kr.standard.2022.high.307059ec400e192af8fd"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -12003,6 +12345,7 @@
           "standardId": "kr.standard.2022.high.897631a4e5dca227cb84"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -12038,6 +12381,7 @@
           "standardId": "kr.standard.2022.high.0a8b48ac22bc3011bd05"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -12073,6 +12417,7 @@
           "standardId": "kr.standard.2022.high.94cfc681783043edbdc3"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -12108,6 +12453,7 @@
           "standardId": "kr.standard.2022.high.22abfc79adac12cb6ce5"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -12143,6 +12489,7 @@
           "standardId": "kr.standard.2022.high.3813e7e42186b1fecc40"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -12178,6 +12525,7 @@
           "standardId": "kr.standard.2022.high.1bf84b875b306918a59e"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -12213,6 +12561,7 @@
           "standardId": "kr.standard.2022.high.e51c7c6d293e33fe529a"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -12248,6 +12597,7 @@
           "standardId": "kr.standard.2022.high.be890283e93b574b09d4"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -12283,6 +12633,7 @@
           "standardId": "kr.standard.2022.high.eebae0511f70d69e6f85"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "representational"
       ],
@@ -12318,6 +12669,7 @@
           "standardId": "kr.standard.2022.high.7ff8fbe921bda211a852"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -12353,6 +12705,7 @@
           "standardId": "kr.standard.2022.high.5d660d425ae40283427d"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -12388,6 +12741,7 @@
           "standardId": "kr.standard.2022.high.06d41115e277c2b45694"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -12423,6 +12777,7 @@
           "standardId": "kr.standard.2022.high.53ca940655b515e2f94e"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -12458,6 +12813,7 @@
           "standardId": "kr.standard.2022.high.2e6997df4dc81f572743"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -12493,6 +12849,7 @@
           "standardId": "kr.standard.2022.high.bbe1773d1d21e36c4439"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "meta"
       ],
@@ -12528,6 +12885,7 @@
           "standardId": "kr.standard.2022.high.aeef0aefa9d648b5b5bd"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "procedural"
       ],
@@ -12563,6 +12921,7 @@
           "standardId": "kr.standard.2022.high.22cff412876a1d44f750"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -12598,6 +12957,7 @@
           "standardId": "kr.standard.2022.high.4228c3186a5b14e107bb"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],
@@ -12633,6 +12993,7 @@
           "standardId": "kr.standard.2022.high.12015f8ec702300a4c99"
         }
       ],
+      "topicRole": "anchor",
       "types": [
         "conceptual"
       ],

@@ -201,10 +201,11 @@
         { "$ref": "core.schema.json#/$defs/baseRecord" },
         {
           "type": "object",
-          "required": ["schoolLevel", "courseIds", "domainId", "types", "description", "evidence", "assessmentPrompts", "contentKind", "standardAlignments", "facetKey"],
+          "required": ["schoolLevel", "courseIds", "domainId", "types", "description", "evidence", "assessmentPrompts", "contentKind", "standardAlignments", "facetKey", "topicRole"],
           "properties": {
             "schoolLevel": { "const": "high" },
             "facetKey": { "const": "core" },
+            "topicRole": { "const": "anchor" },
             "courseIds": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "core.schema.json#/$defs/stableId" } },
             "domainId": { "$ref": "core.schema.json#/$defs/stableId" },
             "types": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "enum": ["conceptual", "language", "meta", "procedural", "representational"] } },

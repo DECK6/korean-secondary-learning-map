@@ -40,7 +40,7 @@ if (!inferredTypes.has('https://dexa.art/learnmap/secondary/fixture/reasoning/co
 if (inferredTypes.has('https://dexa.art/learnmap/secondary/fixture/reasoning/course-relation|https://dexa.art/learnmap/secondary/ontology#TransitionAlignment')) errors.push('CourseRelation was incorrectly inferred as TransitionAlignment');
 
 const queryFiles = (await readdir(join(root, 'ontology/queries'))).filter((name) => name.endsWith('.rq')).sort();
-if (queryFiles.length !== 21) errors.push(`expected 21 competency queries, found ${queryFiles.length}`);
+if (queryFiles.length !== 22) errors.push(`expected 22 competency queries, found ${queryFiles.length}`);
 const sparqlParser = new SparqlParser();
 for (const file of queryFiles) {
   try {
@@ -88,6 +88,18 @@ for (const relation of types('LearningRelation')) {
 for (const draft of adversarial.getSubjects(named(`${CORE}contentKind`), named(`${CORE}content-source-grounded-draft`), null)) {
   if (!adversarial.getObjects(draft, named(`${CORE}contentSourceLocator`), null).length) violations.add('UNSOURCED_AUTHORED_DRAFT');
 }
+// 계약 8절: exactly one anchor topic per achievement standard, and only an auxiliary topic
+// names the sibling a tutor presents instead.
+const anchorCounts = new Map();
+for (const topic of adversarial.getSubjects(named(`${CORE}topicRole`), null, null)) {
+  const role = adversarial.getObjects(topic, named(`${CORE}topicRole`), null)[0]?.value;
+  if (role === `${CORE}topic-role-auxiliary` && !adversarial.getObjects(topic, named(`${CORE}collapseInto`), null).length) violations.add('AUXILIARY_WITHOUT_COLLAPSE_TARGET');
+  if (role !== `${CORE}topic-role-anchor`) continue;
+  for (const standard of adversarial.getObjects(topic, named(`${SLM}alignsToStandard`), null)) {
+    anchorCounts.set(standard.value, (anchorCounts.get(standard.value) ?? 0) + 1);
+  }
+}
+for (const count of anchorCounts.values()) if (count !== 1) violations.add('DUPLICATE_ANCHOR_ROLE');
 for (const pathway of types('IllustrativePathway')) if (!objects(pathway, 'notOfficialRequirement').some((term) => term.value === 'true')) violations.add('PATHWAY_BOUNDARY_MISSING');
 if (subjects('replaces').some((term) => term.value.includes('reminted-elementary'))) violations.add('ELEMENTARY_IRI_REMINTED');
 for (const release of types('CurriculumRelease')) {

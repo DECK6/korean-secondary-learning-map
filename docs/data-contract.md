@@ -171,6 +171,7 @@ data/kr/
   "decompositionKind": "subject-facet",
   "facetKey": "representation",
   "facetKeyDetail": "representation-modeling",
+  "topicRole": "facet",
   "standardAlignments": [
     {
       "standardId": "kr.standard.2022.high.example-code",
@@ -187,6 +188,8 @@ data/kr/
 
 `facetKey`는 K-12 공통 계약의 공통 8종(`concept`, `procedure`, `representation`, `application`, `inquiry`, `communication`, `reflection`, `core`)이고, 중학교의 과목별 24종 원값은 `facetKeyDetail`에 보존한다. 주제 ID는 `facetKeyDetail`을 해시 입력으로 쓰므로 공통 어휘 도입이 ID를 바꾸지 않는다. 사상표와 근거는 `docs/decisions/2026-09-05-facet-mapping.md`, 통제 어휘는 `controlled-vocabularies.json`의 `facetKeys`·`facetKeyMappings`에 있다. 고등학교 주제는 성취기준과 1:1이라 `facetKey: core`만 갖는다.
 
+`alignmentKind`는 주제 ID 해시 입력이 아니다. 중학교 `standard-core` 주제는 성취기준 전체를 대표·평가하므로 `assesses`이고(K-12 공통 계약 9절), `subject-facet` 주제는 과목별 facet에 따라 `introduces`·`supports`·`extends`를 유지한다. 주제 역할(`topicRole`)과 facet 축약은 5.2절에 있다.
+
 중학교는 초등 학습지도의 과목별 분해 밀도와 맞춰 성취기준당 2~5개 주제 후보를 둔다. 기존 1:1 주제는 `decompositionKind: standard-core`, `facetKey: core`로 식별자를 보존하고, 추가 주제는 `subject-facet`과 과목별 facet key를 갖는다. 국어는 기준당 4개, 도덕은 5개, 기술·가정/정보는 2개, 나머지는 3개다. 모든 분해는 후보이며 `middle-subject-facet-decomposition-v1` 생성 근거를 보존한다. 고등학교는 별도 분해 정책을 만들기 전까지 성취기준당 하나의 기계적 후보만 유지한다.
 
 ### 5.1 주제 콘텐츠 오버레이
@@ -196,7 +199,7 @@ data/kr/
 - 경로: `data/kr/<level>/content/<courseSlug>.json` (`level`은 `middle` 또는 `high`). 예: `data/kr/middle/content/math.json`.
 - `courseSlug`는 과목 라벨의 안전한 슬러그다. 규칙은 `scripts/lib/content-overlay.mjs`의 `courseSlug()` 하나뿐이며, 중학교 24과목과 고등학교 공통과목은 표로 고정하고(`수학`→`math`, `국어`→`korean`, `기술·가정`→`technology-home-economics` …), 표에 없는 라벨은 `course-<sha256 앞 12자리>`로 결정한다. 엔트리의 주제가 속한 과목의 슬러그와 파일 이름이 다르면 검증에서 실패한다.
 - 파일 형식은 `schema/content-overlay.schema.json`. `entries` 키는 실제 주제 ID여야 하고(dangling 금지), 한 주제는 한 파일에서만 작성한다.
-- 최소 길이: `evidence` 25자, `assessmentPrompts` 40자, `misconceptions` 15자. 성취기준 `summary`를 통째로 포함한 문장은 금지한다(원문 대량 재수록 방지). 파일 안의 완전 중복 문장도 금지한다.
+- 최소 길이: `evidence` 20자, `assessmentPrompts` 40자, `misconceptions` 15자(K-12 공통 계약 9절 — 한국어 관찰 행동 문장이 20~24자에서 자연스럽게 끝나는 집필 보고에 따라 25자에서 낮췄다). 성취기준 `summary`를 통째로 포함한 문장은 금지한다(원문 대량 재수록 방지). 파일 안의 완전 중복 문장도 금지한다.
 - 빈 오버레이(엔트리 0건) 파일은 두지 않는다. 디렉터리가 없으면 오버레이 0건으로 동작한다.
 
 ```json
@@ -227,6 +230,22 @@ data/kr/
 bun scripts/dev/check-content-overlay.mjs data/kr/middle/content/math.json
 bun scripts/dev/check-content-overlay.mjs 초안.json --profile middle   # content 디렉터리 밖의 초안
 ```
+
+### 5.2 주제 역할과 facet 축약
+
+K-12 공통 계약 8절. 한 성취기준을 facet 3~5개로 나누는 것이 인위적인 유형(태도·정의적 성취기준, 점검·조정 성취기준, 다단계 과정을 담은 성취기준 등)이 집필 보고에서 반복 확인됐다. 주제 ID·오버레이·bridge·관계가 모두 주제 단위를 참조하므로 **주제를 삭제하지 않고 역할을 표시**한다.
+
+| 필드 | 값 | 규칙 |
+| --- | --- | --- |
+| `topicRole` | `anchor` \| `facet` \| `auxiliary` | 성취기준마다 `anchor` 정확히 1개. 중학교는 `standard-core` 주제가, 고등학교는 성취기준과 1:1인 유일한 주제가 anchor다. 축약 규칙에 걸린 주제는 `auxiliary`, 나머지 분해 주제는 `facet` |
+| `collapseInto` | 주제 ID | `auxiliary`일 때만 존재한다. 튜터가 이 주제를 건너뛰고 대신 제시할 같은 성취기준의 non-auxiliary 형제 주제 |
+| `collapseReason` | `attitude-standard` \| `metacognitive-standard` \| `unit-relation-standard` \| `overlapping-facets` \| `process-standard` | `auxiliary`일 때만 존재한다 |
+
+- 축약 규칙 파일은 `scripts/lib/facet-collapse-rules.mjs` 하나다. 성취기준 코드마다 `{ code, auxiliaryFacetKeys, reason, note }`를 명시하고, 집필·검토 보고가 지목한 성취기준만 넣는다(추측 금지). 규칙이 없는 코드나 분해가 만들지 않는 facet을 가리키면 빌드가 실패한다.
+- 자동 판정: 같은 성취기준에 걸린 두 `source-grounded-draft` 주제의 `evidence` + `assessmentPrompts` 토큰 자카드 유사도가 0.6 이상이면 `check:content`가 `overlapping-facets` 축약 후보로 보고한다. 규칙 파일에 없는 후보는 경고만 내고 빌드를 실패시키지 않는다.
+- 게이트: 성취기준당 `anchor` 1개(`validate.mjs` + SHACL `core:AnchorUniquenessShape`), `auxiliary`의 `collapseInto`가 같은 성취기준의 non-auxiliary 주제를 가리킴, official 관계 층과 bridge의 endpoint가 `auxiliary`면 경고(공식 전개는 anchor를 쓰므로 0이어야 한다).
+- 온톨로지는 `core:topicRole`(개념 3종)과 `core:collapseInto`를 배출한다. 통제 어휘 정의는 두 저장소가 공유하는 `ontology/k12-core.ttl`에 있다. UI는 `auxiliary` 주제를 접힌 상태로 보여 준다.
+- 현재 규칙 17건(수학 4·국어 6·과학 7)이 `auxiliary` 주제 21건을 만든다. 자동 후보는 0건이다.
 
 ## 6. 학습 관계 주장
 

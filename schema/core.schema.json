@@ -58,6 +58,20 @@
       ],
       "description": "K-12 공통 facet 8종. 중학교 주제의 과목별 24종 원값은 facetKeyDetail에 보존한다."
     },
+    "topicRole": {
+      "enum": ["anchor", "facet", "auxiliary"],
+      "description": "K-12 공통 계약 v1 8절. 성취기준마다 anchor 주제가 정확히 하나다(중학교는 standard-core, 고등학교는 1:1 주제). 축약 규칙에 걸린 주제는 auxiliary, 나머지 분해 주제는 facet이다."
+    },
+    "collapseReason": {
+      "enum": [
+        "attitude-standard",
+        "metacognitive-standard",
+        "unit-relation-standard",
+        "overlapping-facets",
+        "process-standard"
+      ],
+      "description": "auxiliary 주제로 판정한 근거의 통제 어휘. 규칙표는 scripts/lib/facet-collapse-rules.mjs에 있다."
+    },
     "basisKind": {
       "enum": [
         "official-source",

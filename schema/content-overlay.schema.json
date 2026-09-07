@@ -34,7 +34,7 @@
           "type": "array",
           "minItems": 1,
           "uniqueItems": true,
-          "items": { "type": "string", "minLength": 25 }
+          "items": { "type": "string", "minLength": 20 }
         },
         "assessmentPrompts": {
           "type": "array",

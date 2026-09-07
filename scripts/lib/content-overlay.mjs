@@ -4,7 +4,7 @@ import { basename, extname, join } from 'node:path';
 
 // 주제 콘텐츠 오버레이(개선계획 P3-2). 빌더·검증기·워커 게이트가 같은 규칙을 쓰도록 한 곳에 모은다.
 export const CONTENT_KINDS = ['mechanical-derivative', 'source-grounded-draft'];
-export const OVERLAY_MIN_LENGTHS = { evidence: 25, assessmentPrompt: 40, misconception: 15 };
+export const OVERLAY_MIN_LENGTHS = { evidence: 20, assessmentPrompt: 40, misconception: 15 };
 export const OVERLAY_SCHEMA_ID = 'https://dexa.art/learnmap/schema/secondary/content-overlay.schema.json';
 
 // 오버레이 파일 이름 규칙: 과목 라벨의 안전한 슬러그. 중학교 24과목과 자주 쓰는 고등학교 과목은

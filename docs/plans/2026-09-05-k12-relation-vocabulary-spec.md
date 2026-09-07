@@ -113,3 +113,26 @@ export default {
 4. 위생: 5장 휴리스틱 결함 0 (허용 목록 예외 제외).
 5. 결정성: 두 번 빌드 시 manifest 해시 동일.
 6. 기존 테스트 전부 통과 + 이 계약을 검사하는 테스트 추가.
+
+
+## 8. 주제 역할(topicRole)과 facet 축약 — 2026-09-07 추가
+
+집필 보고에서 "한 성취기준을 facet 3~5개로 나누는 것이 인위적인" 유형이 반복 확인됐다(태도·성찰형 성취기준의 `reflection`이 본문과 겹침, 점검·조정 성취기준의 `core`↔`reflection`, 단위 관계 성취기준의 `application`↔`representation`, 한 성취기준이 4단계 탐구 과정을 담아 facet 3개로 압축되는 경우 등). 주제 ID·오버레이·bridge·관계가 모두 주제 단위를 참조하므로 **주제를 삭제하지 않고 역할을 표시**한다.
+
+| 필드 | 값 | 규칙 |
+| --- | --- | --- |
+| `topicRole` | `anchor` \| `facet` \| `auxiliary` | 성취기준마다 `anchor` 정확히 1개(중등 `standard-core`, 초등은 `concept` 우선, 없으면 정렬상 첫 주제). 축약 규칙에 걸린 주제는 `auxiliary`, 나머지는 `facet` |
+| `collapseInto` | 주제 ID | `auxiliary`일 때만. 튜터가 이 주제를 건너뛰고 대신 제시할 형제 주제(보통 anchor 또는 겹치는 facet) |
+| `collapseReason` | 통제 어휘 | `attitude-standard`(태도·정의적 성취기준), `metacognitive-standard`(점검·조정 성취기준), `unit-relation-standard`(단위 관계·표기 전환만 다루는 성취기준), `overlapping-facets`(집필 결과 두 facet의 증거·프롬프트가 실질 동일), `process-standard`(한 성취기준이 다단계 과정 전체) |
+
+- 축약 규칙 파일: 초등 `scripts/lib/facet-collapse-rules.mjs`, 중등 `scripts/lib/facet-collapse-rules.mjs`. 성취기준 코드별로 `{ code, auxiliaryFacetKeys[], reason, note }`를 명시한다(추측 금지 — 집필 보고·검토 문서가 지목한 성취기준만). 여기에 더해 **자동 판정**: 같은 성취기준의 두 주제 오버레이(evidence+prompt)의 토큰 자카드 유사도 ≥ 0.6이면 `overlapping-facets` 후보로 `check:content`가 보고하고, 규칙 파일에 없는 후보는 경고만 낸다(빌드 실패 아님).
+- 게이트: 성취기준당 `anchor` 1개, `auxiliary`는 `collapseInto`가 같은 성취기준의 non-auxiliary 주제를 가리킴, 관계 official 층의 endpoint가 `auxiliary`면 경고(bridge·official 전개는 anchor/concept를 쓰므로 0이어야 함).
+- 온톨로지: `core:topicRole` 개념 3종·`core:collapseInto` 속성을 `k12-core.ttl`에 추가(두 저장소 동기), ABox 배출, SHACL로 anchor 유일성 검사. UI는 `auxiliary` 주제를 접힌 상태로 표시.
+
+## 9. 소규모 정합 — 2026-09-07 추가
+
+- **오버레이 evidence 최소 길이**: 25자 → **20자**(두 저장소 스키마·게이트 동시). 한국어 관찰 행동 문장이 20~24자에서 자연스럽게 끝나는 경우가 많다는 집필 보고 4건에 따름. prompt 40·misconception 15는 유지.
+- **초등 `type` 정합**: 주제 `type`(CONCEPTUAL/PROCEDURAL/REPRESENTATIONAL/LANGUAGE/META)은 `facetKey`와 일치해야 한다(concept→CONCEPTUAL, procedure→PROCEDURAL, representation→REPRESENTATIONAL, communication→LANGUAGE, reflection→META, application/inquiry는 PROCEDURAL 허용). 실과 workstream의 순환 배정 29건을 고치고 검증기에 검사를 추가한다. 주제 ID·title 불변.
+- **초등 영어 `concept` facet 부재**: 영어 EFL 주제 120개는 communication/procedure/reflection뿐이라 official 전개·bridge가 `communication`을 anchor로 쓴다. 새 주제를 만들지 않고 `topicRole: anchor`를 `communication` 주제에 부여하는 것으로 해소하며, `official-relations.mjs`·bridge 빌더의 "concept 없으면 첫 주제" 규칙을 "anchor 주제" 규칙으로 교체한다(결과 ID 불변 확인).
+- **중등 `alignmentKind`**: `standard-core` 주제의 `standardAlignments[].alignmentKind`를 `supports` → **`assesses`**로(성취기준 전체를 대표·평가하는 주제). `subject-facet`은 기존 값 유지. 초등은 `StandardTopicAlignment`의 `alignmentKind`를 anchor 주제에 한해 `assesses`로 맞춘다.
+- **통합교과 즐거운 생활 방향 미판정 5건**(초등 검토 문서 10.4절): 순환형 2건은 official 불가로 확정하고 후보 층(`pedagogical-candidate`, basisKind `repository-authored`, reason에 "공식 문장이 양방향 연계를 서술")으로 양방향 중 **바→즐 방향만** 1건씩 넣는다. 단일 서술어형 3건은 후보 층에도 넣지 않고 검토 문서에 종결 표기. 후보 층 파일에 `integrated.candidate` 사양 모듈 형식으로 기록(빌더가 workstream dependencySuggestions 외 입력을 받도록 최소 확장).

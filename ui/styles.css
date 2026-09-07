@@ -85,6 +85,9 @@ select,input { width:100%; color:var(--ink); background:white; border:1px solid 
 .standard code { color:var(--green); font-weight:700; }
 .standard__body { border-top:1px solid var(--line); margin-top:.7rem; padding-top:.7rem; color:var(--muted); font-size:.78rem; line-height:1.65; }
 .standard__body strong { color:var(--ink); }
+.collapsed-topics { margin:.6rem 0; border:1px dashed var(--line); border-radius:6px; padding:.5rem .6rem; }
+.collapsed-topics summary { cursor:pointer; font-weight:700; color:var(--ink); }
+.collapsed-topics p { margin:.5rem 0 0; }
 .source-line { padding:.5rem; background:#f4f3ed; font:500 .68rem "DM Sans"; word-break:break-all; }
 .transition-list { display:grid; gap:.8rem; }
 .transition-meta { margin:-.45rem 0 .8rem; border:1px solid var(--line); border-radius:8px; }

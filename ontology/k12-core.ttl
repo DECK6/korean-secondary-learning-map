@@ -2,7 +2,7 @@
 # 두 저장소가 공유하는 클래스·속성·개념 어휘. 두 저장소에 같은 내용의 사본을 두고,
 # 각 저장소의 tests/k12-core-sync.test.mjs가 아래 기준 해시로 동기화를 검사한다.
 # 기준 해시 = 이 파일에서 `# k12-core-sync-sha256:` 줄 하나를 제거한 나머지의 sha256.
-# k12-core-sync-sha256: cb2c8da73100e35a3573d8ab8bab09a6dd383012e1675276abe60503450b464a
+# k12-core-sync-sha256: dba64373c94d091f5a31458d11658308f09c9551f469d042375f3eca178472a7
 #
 # 기존 lm:·slm: IRI는 재발급하지 않는다. 각 저장소의 learning-map.ttl이
 # owl:equivalentClass / owl:equivalentProperty / skos:exactMatch로 이 코어에 연결한다.
@@ -184,6 +184,20 @@ core:facetKey a owl:ObjectProperty ;
   rdfs:range skos:Concept ;
   rdfs:comment "The single shared K-12 facet of a topic, drawn from the eight-concept facet scheme."@en .
 
+core:topicRole a owl:ObjectProperty ;
+  rdfs:label "topic role"@en ;
+  rdfs:label "주제 역할"@ko ;
+  rdfs:domain core:LearningTopic ;
+  rdfs:range skos:Concept ;
+  rdfs:comment "Whether the topic anchors its achievement standard, carries one facet of it, or is an auxiliary facet a tutor may skip. Exactly one anchor per achievement standard."@en .
+
+core:collapseInto a owl:ObjectProperty ;
+  rdfs:label "collapse into"@en ;
+  rdfs:label "축약 대상"@ko ;
+  rdfs:domain core:LearningTopic ;
+  rdfs:range core:LearningTopic ;
+  rdfs:comment "The sibling topic of the same achievement standard a tutor shows instead of this one. Asserted only on auxiliary topics, and never pointing at another auxiliary topic."@en .
+
 core:contentKind a owl:ObjectProperty ;
   rdfs:label "content kind"@en ;
   rdfs:label "콘텐츠 종류"@ko ;
@@ -342,6 +356,16 @@ core:ContentKindScheme a skos:ConceptScheme ;
 
 core:content-mechanical-derivative a skos:Concept ; skos:inScheme core:ContentKindScheme ; skos:notation "mechanical-derivative" ; skos:prefLabel "mechanical-derivative"@en ; skos:definition "Generated from the standard record by a deterministic template; not authored against a source passage."@en .
 core:content-source-grounded-draft a skos:Concept ; skos:inScheme core:ContentKindScheme ; skos:notation "source-grounded-draft" ; skos:prefLabel "source-grounded-draft"@en ; skos:definition "Authored against a cited source passage and awaiting subject-expert review."@en .
+
+core:TopicRoleScheme a skos:ConceptScheme ;
+  skos:prefLabel "Topic role"@en ;
+  skos:prefLabel "주제 역할"@ko ;
+  skos:definition "How a topic stands in relation to the achievement standard it decomposes."@en ;
+  skos:hasTopConcept core:topic-role-anchor, core:topic-role-facet, core:topic-role-auxiliary .
+
+core:topic-role-anchor a skos:Concept ; skos:inScheme core:TopicRoleScheme ; skos:notation "anchor" ; skos:prefLabel "anchor"@en ; skos:prefLabel "대표 주제"@ko ; skos:definition "Stands for the whole achievement standard; exactly one per standard, and the endpoint official relations expand to."@en .
+core:topic-role-facet a skos:Concept ; skos:inScheme core:TopicRoleScheme ; skos:notation "facet" ; skos:prefLabel "facet"@en ; skos:prefLabel "facet 주제"@ko ; skos:definition "Carries one facet of the achievement standard alongside the anchor."@en .
+core:topic-role-auxiliary a skos:Concept ; skos:inScheme core:TopicRoleScheme ; skos:notation "auxiliary" ; skos:prefLabel "auxiliary"@en ; skos:prefLabel "보조 주제"@ko ; skos:definition "A facet an authored collapse rule judged artificial; a tutor shows the sibling named by collapseInto instead."@en .
 
 core:LocatorKindScheme a skos:ConceptScheme ;
   skos:prefLabel "Source locator kind"@en ;

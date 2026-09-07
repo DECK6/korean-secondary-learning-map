@@ -5,9 +5,9 @@
   "recordType": "elementaryTopicInventory",
   "source": "DECK6/korean-elementary-learning-map data/kr/topics.json",
   "sourcePin": {
-    "bytes": 6123005,
+    "bytes": 6181369,
     "file": "data/kr/topics.json",
-    "sha256": "91849c2a6cfed14f7474510c2fd9b4527e86c6124d295cacb92a05669f177cc7",
+    "sha256": "6f420070a04aa4f54f9304dd389a185848d8091931f5653667dacbdae84377d6",
     "taxonomyVersion": "kr-full-depth-v0.5"
   },
   "standardCount": 620,

@@ -339,6 +339,44 @@ function validateLearningGraph(profile, collections, errors) {
 }
 
 // 주제 콘텐츠 오버레이(P3-2): 스키마·dangling·원문 복사·중복·빌드 반영 여부를 함께 본다.
+// 계약 8절: 성취기준마다 anchor 주제가 정확히 하나이고, auxiliary 주제는 같은 성취기준의
+// non-auxiliary 형제를 가리킨다. official 층과 bridge 전개는 anchor를 쓰므로 endpoint에 auxiliary가
+//나오면 경고한다(빌드 실패는 아니다).
+function validateTopicRoles(profile, collections, errors, warnings) {
+  const topics = collections.topics?.records ?? [];
+  const topicsById = new Map(topics.map((topic) => [topic.id, topic]));
+  const anchorCounts = new Map();
+  for (const topic of topics) {
+    for (const alignment of topic.standardAlignments ?? []) {
+      const count = anchorCounts.get(alignment.standardId) ?? 0;
+      anchorCounts.set(alignment.standardId, topic.topicRole === 'anchor' ? count + 1 : count);
+    }
+  }
+  for (const [standardId, count] of anchorCounts) {
+    if (count !== 1) errors.push(`${profile}/standards/${standardId}: expected exactly one anchor topic, found ${count}`);
+  }
+  for (const topic of topics) {
+    if (topic.topicRole !== 'auxiliary') continue;
+    const target = topicsById.get(topic.collapseInto);
+    if (!target) {
+      errors.push(`${profile}/topics/${topic.id}: collapseInto ${topic.collapseInto} is not a topic of this release`);
+      continue;
+    }
+    if (target.topicRole === 'auxiliary') errors.push(`${profile}/topics/${topic.id}: collapseInto must name a non-auxiliary sibling`);
+    const standardIds = new Set((topic.standardAlignments ?? []).map((alignment) => alignment.standardId));
+    if (!(target.standardAlignments ?? []).some((alignment) => standardIds.has(alignment.standardId))) {
+      errors.push(`${profile}/topics/${topic.id}: collapseInto must stay inside the same achievement standard`);
+    }
+  }
+  for (const relation of collections.learningRelations?.records ?? []) {
+    for (const [role, topicId] of [['prerequisite', relation.prerequisiteTopicId], ['dependent', relation.dependentTopicId]]) {
+      if (topicsById.get(topicId)?.topicRole === 'auxiliary') {
+        warnings.push(`${profile}/learningRelations/${relation.id}: official ${role} endpoint ${topicId} is an auxiliary topic`);
+      }
+    }
+  }
+}
+
 async function validateContentOverlays(root, profile, collections, sourceIds, ajv, errors) {
   const overlays = await readContentOverlays(contentOverlayDirectory(root, profile));
   const validate = ajv.getSchema(OVERLAY_SCHEMA_ID);
@@ -415,6 +453,7 @@ async function validateDataFileSizes(root, errors) {
 
 export async function validateRepository(root = projectRoot) {
   const errors = [];
+  const warnings = [];
   const ajv = await createAjv(root);
   const dataFileCount = await validateDataFileSizes(root, errors);
 
@@ -525,6 +564,7 @@ export async function validateRepository(root = projectRoot) {
       validateProfileReferences(profile, collections, indexes, errors, siblingTopics);
       validateLearningGraph(profile, collections, errors);
       validateRelationLayers(profile, collections, errors);
+      validateTopicRoles(profile, collections, errors, warnings);
       await validateContentOverlays(root, profile, collections, sourceIds, ajv, errors);
       if (release.rightsStatus !== 'cleared') errors.push(`${profile}/release.json: rights status must be cleared (public official documents)`);
     }
@@ -537,7 +577,19 @@ export async function validateRepository(root = projectRoot) {
   if (bridge.release.highReleaseId !== loaded.high.release.releaseId) {
     errors.push('bridges/release.json: highReleaseId does not pin the current high release');
   }
+  // 계약 8절: bridge 전개도 anchor 주제를 쓴다. auxiliary endpoint는 축약 규칙과 어긋나므로 경고한다.
+  const auxiliaryTopicIds = new Set(
+    ['middle', 'high'].flatMap((profile) => (loaded[profile]?.collections.topics?.records ?? [])
+      .filter((topic) => topic.topicRole === 'auxiliary')
+      .map((topic) => topic.id)),
+  );
+  const warnAuxiliaryEndpoint = (label, topicIds) => {
+    for (const topicId of topicIds) {
+      if (auxiliaryTopicIds.has(topicId)) warnings.push(`${label}: bridge endpoint ${topicId} is an auxiliary topic`);
+    }
+  };
   for (const alignment of bridge.collections.transitionAlignments.records) {
+    warnAuxiliaryEndpoint(`bridges/transitionAlignments/${alignment.id}`, [...alignment.fromTopicIds, ...alignment.toTopicIds]);
     requireRefs(alignment.fromCourseIds, loaded.middle.indexes.courses, `bridges/transitionAlignments/${alignment.id}`, errors);
     requireRefs(alignment.fromTopicIds, loaded.middle.indexes.topics, `bridges/transitionAlignments/${alignment.id}`, errors);
     requireRefs(alignment.toCourseIds, loaded.high.indexes.courses, `bridges/transitionAlignments/${alignment.id}`, errors);
@@ -555,6 +607,7 @@ export async function validateRepository(root = projectRoot) {
       errors.push('bridges/elementary-transitions.json: elementaryReleaseVersion does not pin the inventory version');
     }
     for (const record of collection.records) {
+      warnAuxiliaryEndpoint(`bridges/elementaryTransitions/${record.id}`, [record.dependentTopicId]);
       if (record.layer !== 'official') errors.push(`bridges/elementaryTransitions/${record.id}: bridge file must carry layer=official`);
       requireRefs([record.prerequisiteTopicId], elementaryTopicIds, `bridges/elementaryTransitions/${record.id}`, errors);
       requireRefs([record.dependentTopicId], loaded.middle.indexes.topics, `bridges/elementaryTransitions/${record.id}`, errors);
@@ -577,6 +630,7 @@ export async function validateRepository(root = projectRoot) {
   return {
     ok: errors.length === 0,
     errors,
+    warnings,
     dataFileCount,
     loaded,
     sourceManifest,
@@ -593,8 +647,9 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
     console.error(result.errors.join('\n'));
     process.exit(1);
   }
+  for (const warning of result.warnings) console.warn(`warning: ${warning}`);
   const summary = Object.fromEntries(
     Object.entries(result.loaded).map(([profile, value]) => [profile, value.release.counts]),
   );
-  console.log(`validation passed: ${result.dataFileCount} data files under ${MAX_DATA_FILE_BYTES / 1048576} MB, ${JSON.stringify(summary)}`);
+  console.log(`validation passed: ${result.dataFileCount} data files under ${MAX_DATA_FILE_BYTES / 1048576} MB, ${result.warnings.length} warnings, ${JSON.stringify(summary)}`);
 }

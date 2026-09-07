@@ -87,8 +87,9 @@ official 층의 모든 관계는 내용 체계표의 학년(군) 진행 또는 �
 - 두 저장소가 **바이트 동일 사본**을 보관하고, `tests/k12-core-sync.test.mjs`가 파일 헤더의 `# k12-core-sync-sha256:` 기준 해시로 동기화를 검사한다.
 - `ontology/learning-map.ttl`이 `owl:imports`로 코어를 선언하지만 검증기는 로컬 사본에서 읽으므로 네트워크가 필요 없다. IRI의 실제 호스팅은 이 릴리스의 범위가 아니다.
 - `slm:` IRI는 하나도 재발급하지 않는다. 클래스는 `owl:equivalentClass`, 관계 한정자·locator 필드는 `owl:equivalentProperty`, facet 개념은 `skos:exactMatch`로 코어에 연결한다. 중등은 한정자를 토큰(문자열)으로 저장하므로 코어의 `*Token` 하위 속성에 잇는다.
-- ABox는 코어 어휘 `core:facetKey`·`core:contentKind`·`core:misconception`·`core:contentSourceLocator`·`core:layerConcept`를 함께 배출한다. 덕분에 `ontology/queries/scq-21-k12-core-vocabulary.rq`는 초등 저장소의 `cq-18-k12-core-vocabulary.rq`와 **질의문이 완전히 같고** 두 저장소 모두에서 답이 나온다.
+- ABox는 코어 어휘 `core:facetKey`·`core:topicRole`·`core:collapseInto`·`core:contentKind`·`core:misconception`·`core:contentSourceLocator`·`core:layerConcept`를 함께 배출한다. 덕분에 `ontology/queries/scq-21-k12-core-vocabulary.rq`는 초등 저장소의 `cq-18-k12-core-vocabulary.rq`와 **질의문이 완전히 같고** 두 저장소 모두에서 답이 나온다.
 - 출처 기반 초안(`core:contentKind = source-grounded-draft`)은 SHACL이 `core:contentSourceLocator`를 정확히 하나 요구한다. 적대 fixture `UNSOURCED_AUTHORED_DRAFT`가 이 제약을 검사한다.
+- 주제 역할 어휘(`core:TopicRoleScheme`의 anchor·facet·auxiliary)는 성취기준마다 대표 주제를 하나로 고정한다. SHACL `core:AnchorUniquenessShape`가 유일성을, `core:TopicRoleShape`가 `collapseInto`의 auxiliary 전용 규칙을 강제하고 적대 fixture `DUPLICATE_ANCHOR_ROLE`·`AUXILIARY_WITHOUT_COLLAPSE_TARGET`이 검사한다.
 - STAS 레코드 locator 어휘(`core:stasEndpoint`·`core:stasRecordId`·`core:collectedAt`·`core:fileSha256`)는 TBox·shape에만 있고 데이터 배출은 없다. `docs/decisions/2026-09-05-stas-source-assessment.md`의 판정에 따라 어디서 읽었는지만 기록하고 본문은 담지 않는다.
 
 ## 산출물
@@ -96,8 +97,8 @@ official 층의 모든 관계는 내용 체계표의 학년(군) 진행 또는 �
 - `sources/official`: 현행 고시 선택 근거, 첨부 번호, 파일 크기, SHA-256, 페이지 수 receipt
 - `schema`: 공통·중학교·고등학교·bridge·공식 원문 계약
 - `data/kr`: 네 정규화 JSON 데이터 제품(`middle`·`high`·`high-vocational`·`bridges`)과 통합 인벤토리 보고서
-- `ontology`: OWL/RDFS/SKOS TBox, 초등 저장소와 공유하는 K-12 코어 TBox `k12-core.ttl`, JSON-LD context, SHACL, SCQ-01~21, 양성·적대 fixture
-- `dist/ontology`: 결정적 JSON-LD/Turtle ABox와 manifest. 기본 빌드는 middle + high + bridges를 `learning-map.{ttl,jsonld}`로 내고 **23,455개 노드·301,269개 트리플**이다. `--include-vocational` 빌드는 직업계 ABox를 `high-vocational.{ttl,jsonld}`(**152,682개 노드**)로 따로 내며, 두 파일의 합집합은 **176,137개 노드·2,142,155개 트리플**이다
+- `ontology`: OWL/RDFS/SKOS TBox, 초등 저장소와 공유하는 K-12 코어 TBox `k12-core.ttl`, JSON-LD context, SHACL, SCQ-01~22, 양성·적대 fixture
+- `dist/ontology`: 결정적 JSON-LD/Turtle ABox와 manifest. 기본 빌드는 middle + high + bridges를 `learning-map.{ttl,jsonld}`로 내고 **25,954개 노드·330,750개 트리플**이다. `--include-vocational` 빌드는 직업계 ABox를 `high-vocational.{ttl,jsonld}`(**152,682개 노드**)로 따로 내며, 두 파일의 합집합은 **178,636개 노드·2,219,261개 트리플**이다
 - `ui`: 학교급→교과군→과목→영역→성취기준/주제→근거, 초→중·중→고 전이(층 구분), 비교, 예시 경로 UI
 - `dist/{middle,high,bridges,bundle,ui}`: 릴리스별 SHA-256 manifest
 
@@ -110,7 +111,7 @@ bun run verify
 bun run serve
 ```
 
-브라우저에서 `http://127.0.0.1:54321`을 열면 된다. `verify`는 데이터 schema·참조, JSON-LD↔Turtle 전체 RDF 동형성, 전체 ABox SHACL Advanced, 21개 SPARQL 실제 결과, 12개 적대 fixture, 콘텐츠·권리 경계, 테스트, 모든 manifest 해시를 확인한다. 여기에 `data/kr/**`의 모든 `.json`이 개당 25 MB를 넘지 않는지도 함께 본다(`MAX_DATA_FILE_BYTES`). GitHub 100 MB 하드 리밋에서 여유를 두기 위한 게이트이며, 한도를 넘길 컬렉션은 교과군 단위로 샤딩한다. 최초 실행 전 `bun run setup:ontology`로 Python 형식 검증 환경을 만든다.
+브라우저에서 `http://127.0.0.1:54321`을 열면 된다. `verify`는 데이터 schema·참조, JSON-LD↔Turtle 전체 RDF 동형성, 전체 ABox SHACL Advanced, 22개 SPARQL 실제 결과, 14개 적대 fixture, 콘텐츠·권리 경계, 테스트, 모든 manifest 해시를 확인한다. 여기에 `data/kr/**`의 모든 `.json`이 개당 25 MB를 넘지 않는지도 함께 본다(`MAX_DATA_FILE_BYTES`). GitHub 100 MB 하드 리밋에서 여유를 두기 위한 게이트이며, 한도를 넘길 컬렉션은 교과군 단위로 샤딩한다. 최초 실행 전 `bun run setup:ontology`로 Python 형식 검증 환경을 만든다.
 
 직업계 ABox까지 포함한 온톨로지가 필요하면 기본 빌드 대신 전체 빌드를 쓴다.
 
@@ -138,6 +139,7 @@ bun run verify:official
 - official 층의 모든 학습 관계는 `layer: official`, `basisKind: official-source`, `relationKind: required-prerequisite`이며 인쇄 쪽번호 근거를 가진다. 후보 층의 근거 종류(`official-code-order`, `decomposition-order`, `repository-authored`)는 official 파일에서 스키마 수준으로 거부된다.
 - 후보 층(`learning-relations.candidate.json`)은 공식 근거가 아니라 저장소가 만든 학습 순서 제안이다. UI는 이를 "권장 순서(후보)"로 official과 시각·문구로 구분해 표시한다.
 - 기계적 파생 요약·과목별 facet 주제·경로는 여전히 저장소 생성물이며 `candidate`·`mechanical-derivative`로 표시된다. 공식 근거 원칙은 **관계**에 적용된 것이고, 주제 분해·요약의 교육적 검토는 별도 과제다.
+- 성취기준마다 `topicRole: anchor` 주제가 정확히 하나다. 분해가 인위적이라고 집필 보고가 지목한 facet 주제 21건은 삭제하지 않고 `topicRole: auxiliary` + `collapseInto`로 표시해 튜터가 대표 주제로 대신하게 한다. 규칙표는 `scripts/lib/facet-collapse-rules.mjs`이며 추측으로 항목을 늘리지 않는다.
 - `required-prerequisite`는 공식 내용 체계·해설이 직접 뒷받침하는 경우에만 사용한다. 공식 문장이 학습 영역 전체를 지목한 경우 해당 영역의 성취기준으로 기계적으로 전개하며, 이 전개 방식은 과목별 검토 문서에 기록한다.
 - 모든 `internal-reviewed` 관계는 `review-records.json`의 검토 대상 ID에 포함되고, 관계 그래프는 DAG·참조 검사를 통과해야 한다. 공식 근거가 없는 과목은 관계 0건이 정상이다.
 - 경로는 `notOfficialRequirement: true`이며 진학·진로 적합성 판정이 아니다.
@@ -155,6 +157,7 @@ bun run verify:official
 - [라이선스](LICENSE) — MIT. 저장소 산출물은 DECK이 공개 정보를 바탕으로 독립 구축한 원저작물이며, 공식 문서 원문에 대한 권리는 부여하지 않는다.
 - [과목별 공식 관계 검토 기록](docs/reviews/) (`2026-07-17-*-official-relations-review.md`, 46건)
 - [facet 24종 → 공통 8종 사상 근거](docs/decisions/2026-09-05-facet-mapping.md)
+- [K-12 공통 계약 v1 — 관계 층·어휘·facet](docs/plans/2026-09-05-k12-relation-vocabulary-spec.md)
 - [후보 릴리스 보고서](docs/release/v0.6.0-candidate.md)
 
 이 프로젝트는 교육부·국가교육위원회·NCIC의 공식 온톨로지나 승인 제품이 아니다.

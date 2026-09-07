@@ -1,0 +1,13 @@
+PREFIX core: <https://dexa.art/learnmap/ontology/k12-core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX slm: <https://dexa.art/learnmap/secondary/ontology#>
+
+SELECT ?topic ?standard ?anchor ?anchorLabel
+WHERE {
+  ?topic core:topicRole core:topic-role-auxiliary ;
+         slm:alignsToStandard ?standard ;
+         core:collapseInto ?anchor .
+  ?anchor core:topicRole core:topic-role-anchor ;
+          rdfs:label ?anchorLabel .
+}
+ORDER BY ?topic

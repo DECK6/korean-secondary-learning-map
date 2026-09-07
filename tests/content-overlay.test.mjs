@@ -104,9 +104,18 @@ describe('content overlay contract', () => {
     onlyEntry(overlay).assessmentPrompts = ['너무 짧은 평가 프롬프트'];
     onlyEntry(overlay).misconceptions = ['짧은 오답'];
     const errors = analyze(overlay).errors;
-    expect(errors.some((error) => error.includes('evidence shorter than 25'))).toBe(true);
+    expect(errors.some((error) => error.includes('evidence shorter than 20'))).toBe(true);
     expect(errors.some((error) => error.includes('assessmentPrompts shorter than 40'))).toBe(true);
     expect(errors.some((error) => error.includes('misconceptions shorter than 15'))).toBe(true);
+  });
+
+  // 계약 9절: Korean observation sentences often close naturally at 20-24 characters.
+  test('accepts a 20-character evidence sentence', () => {
+    const overlay = clone(overlays[0]);
+    const sentence = '표로 정리한 자료에서 규칙을 찾는다.';
+    expect(sentence.length).toBe(20);
+    onlyEntry(overlay).evidence = [sentence];
+    expect(analyze(overlay).errors.some((error) => error.includes('evidence shorter than'))).toBe(false);
   });
 
   test('rejects exact duplicates inside one overlay file', () => {

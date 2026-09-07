@@ -163,7 +163,7 @@
         { "$ref": "core.schema.json#/$defs/baseRecord" },
         {
           "type": "object",
-          "required": ["schoolLevel", "courseIds", "domainId", "types", "description", "evidence", "assessmentPrompts", "contentKind", "standardAlignments", "decompositionKind", "facetKey", "facetKeyDetail"],
+          "required": ["schoolLevel", "courseIds", "domainId", "types", "description", "evidence", "assessmentPrompts", "contentKind", "standardAlignments", "decompositionKind", "facetKey", "facetKeyDetail", "topicRole"],
           "properties": {
             "schoolLevel": { "const": "middle" },
             "courseIds": {
@@ -188,6 +188,9 @@
             "decompositionKind": { "enum": ["standard-core", "subject-facet"] },
             "facetKey": { "$ref": "core.schema.json#/$defs/facetKey" },
             "facetKeyDetail": { "type": "string", "minLength": 1, "pattern": "^[a-z0-9-]+$" },
+            "topicRole": { "$ref": "core.schema.json#/$defs/topicRole" },
+            "collapseInto": { "$ref": "core.schema.json#/$defs/stableId" },
+            "collapseReason": { "$ref": "core.schema.json#/$defs/collapseReason" },
             "standardAlignments": {
               "type": "array",
               "minItems": 1,
@@ -206,16 +209,35 @@
           "allOf": [
             {
               "if": { "properties": { "decompositionKind": { "const": "standard-core" } } },
-              "then": { "properties": { "facetKey": { "const": "core" }, "facetKeyDetail": { "const": "core" } } }
+              "then": {
+                "properties": {
+                  "facetKey": { "const": "core" },
+                  "facetKeyDetail": { "const": "core" },
+                  "topicRole": { "const": "anchor" },
+                  "standardAlignments": { "items": { "properties": { "alignmentKind": { "const": "assesses" } } } }
+                }
+              }
             },
             {
               "if": { "properties": { "decompositionKind": { "const": "subject-facet" } } },
               "then": {
                 "properties": {
                   "facetKey": { "not": { "const": "core" } },
-                  "facetKeyDetail": { "not": { "const": "core" } }
+                  "facetKeyDetail": { "not": { "const": "core" } },
+                  "topicRole": { "enum": ["facet", "auxiliary"] }
                 }
               }
+            },
+            {
+              "if": { "required": ["topicRole"], "properties": { "topicRole": { "const": "auxiliary" } } },
+              "then": {
+                "required": ["collapseInto", "collapseReason"],
+                "properties": {
+                  "collapseInto": { "$ref": "core.schema.json#/$defs/stableId" },
+                  "collapseReason": { "$ref": "core.schema.json#/$defs/collapseReason" }
+                }
+              },
+              "else": { "properties": { "collapseInto": false, "collapseReason": false } }
             },
             {
               "if": { "required": ["contentKind"], "properties": { "contentKind": { "const": "source-grounded-draft" } } },

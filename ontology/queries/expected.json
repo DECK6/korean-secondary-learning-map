@@ -1,6 +1,6 @@
 {
   "version": "0.6.0-candidate",
-  "queryCount": 21,
+  "queryCount": 22,
   "results": {
     "scq-01-courses": 255,
     "scq-02-course-standards-topics": 5284,
@@ -22,7 +22,8 @@
     "scq-18-candidate-review-queue": 8040,
     "scq-19-elementary-bridge": 3989,
     "scq-20-no-learner-data": true,
-    "scq-21-k12-core-vocabulary": 10
+    "scq-21-k12-core-vocabulary": 10,
+    "scq-22-topic-role-collapse": 21
   },
   "invariants": {
     "scq-01": "course count equals the middle + high release course counts; the vocational mode adds the 528 specialised subjects of kr-2022-high-vocational",
@@ -37,7 +38,8 @@
     "scq-19": "elementary topic IRIs remain canonical; the query returns both bridge layers (official 290, pedagogical-candidate 3,699) and slm:layer separates them",
     "scq-20": true,
     "scq-17": "coverage gaps are 5 in the default graph and 7 with the vocational release",
-    "modes": "기본 build:ontology는 middle+high+bridges ABox(results)를 내고, --include-vocational은 dist/ontology/high-vocational.*를 추가로 내며 두 파일의 합집합이 resultsIncludingVocational에 대응한다."
+    "modes": "기본 build:ontology는 middle+high+bridges ABox(results)를 내고, --include-vocational은 dist/ontology/high-vocational.*를 추가로 내며 두 파일의 합집합이 resultsIncludingVocational에 대응한다.",
+    "scq-22": "auxiliary 주제는 모두 같은 성취기준의 anchor 주제를 collapseInto로 가리킨다(중학교 21건, 고등학교 0건)"
   },
   "resultsIncludingVocational": {
     "scq-01-courses": 783,
@@ -60,6 +62,7 @@
     "scq-18-candidate-review-queue": 8040,
     "scq-19-elementary-bridge": 3989,
     "scq-20-no-learner-data": true,
-    "scq-21-k12-core-vocabulary": 10
+    "scq-21-k12-core-vocabulary": 10,
+    "scq-22-topic-role-collapse": 21
   }
 }

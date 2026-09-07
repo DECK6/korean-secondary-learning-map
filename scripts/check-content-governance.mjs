@@ -2,10 +2,12 @@ import { readdir, readFile } from 'node:fs/promises';
 import { dirname, extname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { normalizeText } from './lib/content-overlay.mjs';
+import { AUTO_CANDIDATE_JACCARD, facetCollapseRuleByCode, jaccard, overlayTokens } from './lib/facet-collapse-rules.mjs';
 import { readProfileCollection, readRelease } from './lib/profile-collections.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const errors = [];
+const warnings = [];
 const contentMetrics = {};
 const readJson = async (path) => JSON.parse(await readFile(path, 'utf8'));
 
@@ -67,7 +69,7 @@ for (const profile of ['middle', 'high', 'high-vocational']) {
     }
     return shape;
   };
-  const metrics = { topics: topics.length, sourceGroundedDraft: 0, mechanicalDerivative: 0, duplicateEvidence: 0, duplicateAssessmentPrompts: 0, templateRatio: 0, misconceptions: 0 };
+  const metrics = { topics: topics.length, sourceGroundedDraft: 0, mechanicalDerivative: 0, duplicateEvidence: 0, duplicateAssessmentPrompts: 0, templateRatio: 0, misconceptions: 0, collapseCandidates: 0 };
   const seenEvidence = new Map();
   const seenPrompts = new Map();
   const shapes = new Set();
@@ -90,6 +92,33 @@ for (const profile of ['middle', 'high', 'high-vocational']) {
     }
   }
   metrics.templateRatio = shapeTotal ? Number(((shapeTotal - shapes.size) / shapeTotal).toFixed(4)) : 0;
+
+  // 계약 8절 자동 판정: 같은 성취기준에 걸린 두 authored 주제의 evidence+prompt 토큰 자카드가
+  // 0.6 이상이면 overlapping-facets 축약 후보다. 규칙표에 없는 후보는 경고만 낸다(빌드 실패 아님).
+  const standardCodeById = new Map(standards.map((standard) => [standard.id, standard.code]));
+  const authoredByStandard = new Map();
+  for (const topic of topics) {
+    if (topic.contentKind !== 'source-grounded-draft') continue;
+    for (const alignment of topic.standardAlignments ?? []) {
+      if (!authoredByStandard.has(alignment.standardId)) authoredByStandard.set(alignment.standardId, []);
+      authoredByStandard.get(alignment.standardId).push(topic);
+    }
+  }
+  for (const [standardId, siblings] of authoredByStandard) {
+    if (siblings.length < 2) continue;
+    const tokens = siblings.map((topic) => overlayTokens([...topic.evidence ?? [], ...topic.assessmentPrompts ?? []]));
+    for (let left = 0; left < siblings.length; left += 1) {
+      for (let right = left + 1; right < siblings.length; right += 1) {
+        const similarity = jaccard(tokens[left], tokens[right]);
+        if (similarity < AUTO_CANDIDATE_JACCARD) continue;
+        metrics.collapseCandidates += 1;
+        const code = standardCodeById.get(standardId);
+        if (!facetCollapseRuleByCode.has(code)) {
+          warnings.push(`${profile}/standards/${code}: ${siblings[left].facetKey}/${siblings[right].facetKey} overlay similarity ${similarity.toFixed(2)} is an unlisted overlapping-facets collapse candidate`);
+        }
+      }
+    }
+  }
   contentMetrics[profile] = metrics;
 
   if (profile === 'middle' && (topics.length < standards.length * 2 || topics.length > standards.length * 5)) errors.push('middle topic decomposition must remain within 2-5 topics per standard');
@@ -172,7 +201,8 @@ for (const path of await sourceFiles(root)) {
 }
 
 if (errors.length) { console.error(errors.slice(0, 100).join('\n')); process.exit(1); }
-console.log(`content/governance check passed: ${sources.length} sources, ${pathways.length} illustrative pathways, ${transitions.length} reviewed transitions`);
+for (const warning of warnings.slice(0, 100)) console.warn(`warning: ${warning}`);
+console.log(`content/governance check passed: ${sources.length} sources, ${pathways.length} illustrative pathways, ${transitions.length} reviewed transitions, ${warnings.length} collapse warnings`);
 for (const [profile, metrics] of Object.entries(contentMetrics)) {
-  console.log(`${profile} content: ${metrics.sourceGroundedDraft} source-grounded-draft / ${metrics.topics} topics, duplicates evidence ${metrics.duplicateEvidence} prompt ${metrics.duplicateAssessmentPrompts}, template ratio ${(metrics.templateRatio * 100).toFixed(1)}%, misconceptions ${metrics.misconceptions}`);
+  console.log(`${profile} content: ${metrics.sourceGroundedDraft} source-grounded-draft / ${metrics.topics} topics, duplicates evidence ${metrics.duplicateEvidence} prompt ${metrics.duplicateAssessmentPrompts}, template ratio ${(metrics.templateRatio * 100).toFixed(1)}%, misconceptions ${metrics.misconceptions}, collapse candidates ${metrics.collapseCandidates}`);
 }

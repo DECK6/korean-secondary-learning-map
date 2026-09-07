@@ -5,6 +5,7 @@ import { dirname, join, resolve } from 'node:path';
 import { printedPageFor, printedPageOffset } from './lib/printed-page-offsets.mjs';
 import { buildJoinLexicon, joinBrokenHangul } from './lib/text-normalize.mjs';
 import { applyContentOverlay, contentOverlayDirectory, indexOverlayEntries, readContentOverlays } from './lib/content-overlay.mjs';
+import { facetCollapseRuleByCode, facetCollapseRules } from './lib/facet-collapse-rules.mjs';
 import { profileSchemaNames, releaseIds, shardDirectories, vocationalSubjectGroupSlugs } from './lib/profile-collections.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
@@ -541,6 +542,7 @@ function buildProfile(profile) {
   const standards = [];
   const topics = [];
   const clustersByKey = new Map();
+  const appliedCollapseCodes = new Set();
 
   for (const record of profileRecords) {
     const groupLabel = record.category === 'specialized-common' ? '전문 공통' : record.subjectGroup;
@@ -649,15 +651,26 @@ function buildProfile(profile) {
       evidence: [`학습자가 ${summary}와 관련된 개념, 판단 근거 또는 수행 과정을 자신의 말이나 결과물로 보여 준다.`],
       assessmentPrompts: [`${summary}와 관련된 과제나 사례를 제시하고, 학습자가 해결 과정과 근거를 설명하거나 수행하게 한다.`],
       contentKind: 'mechanical-derivative',
-      standardAlignments: [{ standardId, alignmentKind: 'supports', basis: 'official-standard-derived-topic-v2' }],
+      // 계약 9절: the standard-core topic represents and assesses the whole standard.
+      standardAlignments: [{ standardId, alignmentKind: profile === 'middle' ? 'assesses' : 'supports', basis: 'official-standard-derived-topic-v2' }],
       ...(profile === 'middle' ? { decompositionKind: 'standard-core', facetKey: 'core', facetKeyDetail: 'core' } : { facetKey: 'core' }),
+      // 계약 8절: exactly one anchor per standard. High school is 1:1, so its single topic is it.
+      topicRole: 'anchor',
       sourceRefs: [...record.sourceIds].sort(),
       verificationStatus: 'public-doc-derived',
       reviewStatus: 'candidate',
       sourceTextIncluded: false,
     }];
     if (profile === 'middle') {
+      // 계약 8절: a report-flagged facet stays in the data but is marked auxiliary and points at
+      // the anchor a tutor should present instead. Unknown codes and facets fail the build so the
+      // rule table can never drift away from the decomposition it describes.
+      const collapseRule = facetCollapseRuleByCode.get(`[${record.code}]`);
+      const collapsedFacetKeys = new Set();
       for (const facetRecord of middleTopicFacets(record)) {
+        const facetKey = commonFacetKey(facetRecord.key);
+        const isAuxiliary = Boolean(collapseRule?.auxiliaryFacetKeys.includes(facetKey));
+        if (isAuxiliary) collapsedFacetKeys.add(facetKey);
         generatedTopics.push({
           id: `kr.topic.2022.middle.${hash(`${standardId}|${facetRecord.key}`, 20)}`,
           labelKorean: `${record.courseLabel} — ${summary} — ${facetRecord.label}`,
@@ -672,13 +685,20 @@ function buildProfile(profile) {
           contentKind: 'mechanical-derivative',
           standardAlignments: [{ standardId, alignmentKind: facetRecord.alignmentKind, basis: 'middle-subject-facet-decomposition-v1' }],
           decompositionKind: 'subject-facet',
-          facetKey: commonFacetKey(facetRecord.key),
+          facetKey,
           facetKeyDetail: facetRecord.key,
+          topicRole: isAuxiliary ? 'auxiliary' : 'facet',
+          ...(isAuxiliary ? { collapseInto: topicId, collapseReason: collapseRule.reason } : {}),
           sourceRefs: [...record.sourceIds].sort(),
           verificationStatus: 'public-doc-derived',
           reviewStatus: 'candidate',
           sourceTextIncluded: false,
         });
+      }
+      if (collapseRule) {
+        appliedCollapseCodes.add(collapseRule.code);
+        const unmatched = collapseRule.auxiliaryFacetKeys.filter((key) => !collapsedFacetKeys.has(key));
+        if (unmatched.length) throw new Error(`facet collapse rule ${collapseRule.code} names facets the decomposition does not produce: ${unmatched.join(', ')}`);
       }
     }
     topics.push(...generatedTopics);
@@ -700,6 +720,11 @@ function buildProfile(profile) {
       });
     }
     clustersByKey.get(clusterKey).topicIds.push(...generatedTopics.map((topic) => topic.id));
+  }
+
+  if (profile === 'middle') {
+    const unusedRules = facetCollapseRules.filter((rule) => !appliedCollapseCodes.has(rule.code));
+    if (unusedRules.length) throw new Error(`facet collapse rules name unknown middle standards: ${unusedRules.map((rule) => rule.code).join(', ')}`);
   }
 
   const overlay = contentOverlays[profile];

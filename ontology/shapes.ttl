@@ -225,6 +225,49 @@ core:FacetProjectionShape a sh:NodeShape ;
     )
   ] .
 
+## 계약 8절 주제 역할: 성취기준마다 anchor 주제가 정확히 하나이고, collapseInto는 auxiliary 전용이다.
+
+core:TopicRoleShape a sh:NodeShape ;
+  sh:targetSubjectsOf core:topicRole ;
+  sh:property [
+    sh:path core:topicRole ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:in (
+      <https://dexa.art/learnmap/ontology/k12-core#topic-role-anchor>
+      <https://dexa.art/learnmap/ontology/k12-core#topic-role-facet>
+      <https://dexa.art/learnmap/ontology/k12-core#topic-role-auxiliary>
+    )
+  ] ;
+  sh:property [ sh:path core:collapseInto ; sh:maxCount 1 ; sh:nodeKind sh:IRI ] ;
+  sh:xone (
+    [
+      sh:property [ sh:path core:topicRole ; sh:hasValue <https://dexa.art/learnmap/ontology/k12-core#topic-role-auxiliary> ] ;
+      sh:property [ sh:path core:collapseInto ; sh:minCount 1 ]
+    ]
+    [
+      sh:property [ sh:path core:topicRole ; sh:in (
+        <https://dexa.art/learnmap/ontology/k12-core#topic-role-anchor>
+        <https://dexa.art/learnmap/ontology/k12-core#topic-role-facet>
+      ) ] ;
+      sh:property [ sh:path core:collapseInto ; sh:maxCount 0 ]
+    ]
+  ) ;
+  sh:message "auxiliary 주제만 collapseInto를 가지며, auxiliary 주제는 반드시 하나를 가리켜야 한다."@ko .
+
+core:AnchorUniquenessShape a sh:NodeShape ;
+  sh:targetObjectsOf slm:alignsToStandard ;
+  sh:property [
+    sh:path [ sh:inversePath slm:alignsToStandard ] ;
+    sh:qualifiedValueShape [
+      sh:property [ sh:path core:topicRole ; sh:hasValue <https://dexa.art/learnmap/ontology/k12-core#topic-role-anchor> ]
+    ] ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedMaxCount 1 ;
+    sh:message "한 성취기준에 anchor 주제가 정확히 하나여야 한다."@ko
+  ] .
+
 core:LayerProjectionShape a sh:NodeShape ;
   sh:targetSubjectsOf core:layerConcept ;
   sh:property [

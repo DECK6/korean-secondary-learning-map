@@ -85,6 +85,7 @@ if (!app.includes('공식 문서가 명시한 선수학습 관계 없음')) erro
 if (!app.includes('권장 순서(후보)')) errors.push('ui/app.js: candidate layer section missing');
 if (!app.includes('권장(후보)')) errors.push('ui/app.js: elementary bridge candidate layer badge missing');
 if (!app.includes('검토 초안')) errors.push('ui/app.js: source-grounded content badge missing');
+if (!app.includes('축약 주제')) errors.push('ui/app.js: collapsed auxiliary topic section missing');
 if (app.includes('관계 후보')) errors.push('ui/app.js: candidate relation label remains');
 if (errors.length) { console.error(errors.join('\n')); process.exit(1); }
 console.log(`UI artifact check passed: ${manifest.courseDetailCount} course details, ${middleRelations.recordCount + highRelations.recordCount + vocationalRelations.recordCount + highCourseRelations.recordCount + transitions.recordCount} official relations, ${manifest.artifacts.length} files`);
