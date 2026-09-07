@@ -29,8 +29,12 @@
     "validate:sparql": ".venv-ontology/bin/python scripts/validate-sparql.py",
     "serve": "bun scripts/serve-ui.mjs",
     "test": "bun test",
-    "verify": "bun run build && bun run validate && bun run validate:ontology && bun run validate:shacl && bun run validate:sparql && bun run check:content && bun test && bun run check",
-    "verify:official": "bun run sources:check && bun run verify"
+    "verify": "bun run build && bun run validate && bun run validate:ontology && bun run validate:shacl && bun run validate:sparql && bun run check:content && bun test && bun run check && bun run build:hosting && bun run check:hosting",
+    "verify:official": "bun run sources:check && bun run verify",
+    "build:hosting": "bun scripts/build-hosting.mjs",
+    "check:hosting": "bun scripts/check-hosting.mjs",
+    "check:hosting:deploy": "bun scripts/check-hosting.mjs --deploy",
+    "check:hosting:live": "bun scripts/check-hosting.mjs --deploy --live"
   },
   "devDependencies": {
     "ajv": "8.17.1",

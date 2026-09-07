@@ -161,3 +161,7 @@ bun run verify:official
 - [후보 릴리스 보고서](docs/release/v0.6.0-candidate.md)
 
 이 프로젝트는 교육부·국가교육위원회·NCIC의 공식 온톨로지나 승인 제품이 아니다.
+
+## IRI 호스팅
+
+온톨로지 용어(`https://dexa.art/learnmap/secondary/ontology#…`), 버전 IRI, 자원 IRI 안내(`/secondary/resource/`), JSON Schema `$id`는 dexa.art의 정적 문서로 해석된다. `bun run build:hosting`이 `dist/hosting/`에 배포 트리와 매니페스트를 만들고 `bun run check:hosting`이 결정성과 IRI 커버리지를 검사한다(`verify`에 포함). 사이트 저장소의 `scripts/sync-learnmap-ontology.mjs`가 초등·중등 트리를 함께 복사하며 공용 `k12-core.ttl`은 두 사본이 동일해야 한다. `check:hosting:deploy`는 사이트 체크아웃과, `check:hosting:live`는 dexa.art 실제 응답과 비교한다. 고교 직업계 그래프는 GitHub Pages 파일 한도(100 MB)를 넘어 호스팅하지 않는다.

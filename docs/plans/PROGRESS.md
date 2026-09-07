@@ -39,6 +39,8 @@
 | R8 | R8-E 초등: topicRole·facet 축약, evidence 20자, 실과 type 정합, 영어 anchor, 즐 5건 종결, alignmentKind | 초등 | 완료(0dc6f72) | 111 테스트·CQ 19·SHACL·결정성·official ID 불변 | 규칙 22건→auxiliary 24, anchor 620(concept 580·communication 40), 후보 1,877 |
 | R8 | R8-M 중등: topicRole·facet 축약, evidence 20자, core alignmentKind=assesses | 중등 | 완료(5d35ed8) | 72 테스트·SPARQL 22 두 모드·SHACL·결정성·ID 불변 | 규칙 17건→auxiliary 21, anchor 714, 초등 sha 재핀 |
 
+| R9 | IRI 호스팅: 초등·중등 dist/hosting 빌더+검사, adxdeck 동기 스크립트, dexa.art 배포 | 3저장소 | 완료 | check:hosting(결정성·커버리지)·deploy·live | 초등 25파일 52.5MB(23,776 IRI→23문서), 중등 22파일 61.8MB(26,321 IRI→17문서) |
+
 ## 로그
 
 - 2026-09-05 점검 완료, 계획서·스펙 작성. R1 4태스크 pumasi 발주 준비.
@@ -106,3 +108,4 @@
 - 2026-09-07 08:50 R8-M 완료 보고: 축약 규칙 17건→auxiliary 21, 자동 후보 0(최대 자카드 0.25), alignmentKind assesses 714, ID 불변, 72 테스트·full SPARQL·SHACL·결정성 통과. k12-core 동기 해시 dba64373. 초등 topics sha 재핀은 R8-E 종료 후.
 - 2026-09-07 09:30 R8 완료·푸시(초등 0dc6f72, 중등 5d35ed8). k12-core 동기 해시 dba64373, 두 저장소 바이트 동일. 자동 축약 후보 0건(형제 facet 자카드 최대 0.32) — 임계 0.6은 회귀 감시용으로 유지. 남은 후속: 온톨로지 IRI 호스팅(dexa.art), 외부 교사 표본 검토(소유자 보류).
 - 2026-09-07 함정: 병렬 Bash 두 개를 같은 응답에서 띄우면 앞 명령의 `cd`가 뒤 명령 cwd에 새어 들어감 → 중등에서 잘못된 커밋이 먼저 생겨 amend + force-with-lease로 정정. **저장소 두 개를 오갈 땐 모든 Bash 호출 첫 줄에 절대경로 cd.** 초등 테스트 픽스처(.test-fixtures) 누적 1.1GB가 시스템 볼륨 압박의 또 다른 원인이었고 성공 시 삭제 로직 추가로 해소.
+- 2026-09-07 R9 IRI 호스팅. 설계: 주제 ID 불변 원칙과 같게 IRI 불변, GitHub Pages 정적 규칙(확장자 없는 IRI→<path>/index.html). 학부모용 앱이 0.3.0-p3 ABox를 이름으로 참조해 현재 릴리스는 ontology/<version>/ 아래에 둠(앱 투영 이관은 별도 과제: build-learnmap-data가 1,894 엣지 단층 모델 가정). 직업계 ABox는 100MB 초과로 미호스팅. 자원 IRI(51k)는 개별 문서 없이 prefix landing.

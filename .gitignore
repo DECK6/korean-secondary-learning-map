@@ -8,3 +8,5 @@ sources/official/text/
 dist/
 ui/data/
 sources/stas/raw/
+dist/hosting/
+dist/hosting-check/
